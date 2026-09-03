@@ -1,0 +1,13 @@
+{
+  "input_video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+  "method": "CHROM",
+  "fps": 30.0,
+  "frames": 600,
+  "duration_s": 20.0,
+  "face_detection_rate": 1.0,
+  "median_bpm": 72.0703125,
+  "mean_bpm": 72.0703125,
+  "bpm_std": 0.0,
+  "median_snr_db": 8.300895814632167,
+  "warning": "Camera-derived rPPG is an estimate, not contact-PPG ground truth."
+}

@@ -1,0 +1,13 @@
+{
+  "input_video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/clips/motion_first60.mp4",
+  "method": "POS",
+  "fps": 29.97002997002997,
+  "frames": 1799,
+  "duration_s": 60.026633333333336,
+  "face_detection_rate": 1.0,
+  "median_bpm": 68.48620129870129,
+  "mean_bpm": 69.38179008491507,
+  "bpm_std": 18.355192051520348,
+  "median_snr_db": -4.676735755763138,
+  "warning": "Camera-derived rPPG is an estimate, not contact-PPG ground truth."
+}

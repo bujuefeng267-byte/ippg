@@ -1,0 +1,14 @@
+{
+  "input_video": "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/kaggle_motion_subject001/video.mov",
+  "fps": 29.97002997002997,
+  "duration_s": 429.32890000000003,
+  "sample_hz_actual": 4.281432852861424,
+  "samples": 1839,
+  "face_detection_rate": 1.0,
+  "median_center_speed_face_heights_s": 0.012925244437183972,
+  "p95_center_speed_face_heights_s": 0.08168476325897482,
+  "median_face_flow_px_sample": 0.21695560216903687,
+  "p95_face_flow_px_sample": 2.4006275177001952,
+  "best_motion_window_start_s": 0.0,
+  "best_motion_window_stop_s": 30.0
+}

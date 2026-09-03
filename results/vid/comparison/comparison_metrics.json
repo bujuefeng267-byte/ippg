@@ -1,0 +1,146 @@
+[
+  {
+    "method": "POS",
+    "samples_compared": 1547,
+    "sampling_rate_hz": 29.26410599999992,
+    "edge_excluded_s": 3.0,
+    "waveform_zero_lag_r": -0.4717494544620191,
+    "waveform_best_abs_r": 0.474329821090239,
+    "waveform_polarity": -1,
+    "reference_lag_samples": -17,
+    "reference_lag_s": -0.5809164305241392,
+    "waveform_zscore_rmse": 1.0253488956532968,
+    "fundamental_coherence": 0.7309805685252824,
+    "reference_spectral_hr_bpm": 107.16835693359346,
+    "rppg_spectral_hr_bpm": 107.38269364746064,
+    "spectral_hr_absolute_error_bpm": 0.21433671386718345,
+    "local_waveform_r_median": 0.49321175043755355,
+    "local_waveform_r_min": 0.40004130188010867,
+    "local_waveform_fraction_r_ge_0_5": 0.43243243243243246,
+    "hr_windows": 44,
+    "hr_mae_bpm": 3.919914083362929,
+    "hr_rmse_bpm": 6.342320152279241,
+    "hr_mape_percent": 3.6454248221163033,
+    "hr_bias_bpm": -1.783400763938218,
+    "hr_error_sd_bpm": 6.156785426126138,
+    "bland_altman_lower_bpm": -13.850700199145448,
+    "bland_altman_upper_bpm": 10.283898671269013,
+    "hr_correlation_r": 0.17473239819472783,
+    "hr_fraction_within_5_bpm": 0.7727272727272727,
+    "median_snr_db": -3.710194809294819,
+    "worst_windows": [
+      {
+        "time_s": 46.6271,
+        "reference_bpm": 110.0,
+        "estimated_bpm": 86.592,
+        "error_bpm": -23.408,
+        "absolute_error_bpm": 23.408,
+        "snr_db": -6.0919
+      },
+      {
+        "time_s": 47.6181,
+        "reference_bpm": 110.0,
+        "estimated_bpm": 87.4494,
+        "error_bpm": -22.5506,
+        "absolute_error_bpm": 22.5506,
+        "snr_db": -5.3421
+      },
+      {
+        "time_s": 28.7895,
+        "reference_bpm": 110.0,
+        "estimated_bpm": 94.3082,
+        "error_bpm": -15.6918,
+        "absolute_error_bpm": 15.6918,
+        "snr_db": -4.0041
+      },
+      {
+        "time_s": 9.961,
+        "reference_bpm": 100.0,
+        "estimated_bpm": 107.1684,
+        "error_bpm": 7.1684,
+        "absolute_error_bpm": 7.1684,
+        "snr_db": -3.722
+      },
+      {
+        "time_s": 10.952,
+        "reference_bpm": 100.0,
+        "estimated_bpm": 107.1684,
+        "error_bpm": 7.1684,
+        "absolute_error_bpm": 7.1684,
+        "snr_db": -3.3436
+      }
+    ]
+  },
+  {
+    "method": "CHROM",
+    "samples_compared": 1547,
+    "sampling_rate_hz": 29.26410599999992,
+    "edge_excluded_s": 3.0,
+    "waveform_zero_lag_r": 0.5326802641297991,
+    "waveform_best_abs_r": 0.5326802641297991,
+    "waveform_polarity": 1,
+    "reference_lag_samples": 0,
+    "reference_lag_s": 0.0,
+    "waveform_zscore_rmse": 0.9667675375903656,
+    "fundamental_coherence": 0.790952567754582,
+    "reference_spectral_hr_bpm": 107.16835693359346,
+    "rppg_spectral_hr_bpm": 107.38269364746064,
+    "spectral_hr_absolute_error_bpm": 0.21433671386718345,
+    "local_waveform_r_median": 0.5383187967440857,
+    "local_waveform_r_min": 0.4407402090580624,
+    "local_waveform_fraction_r_ge_0_5": 0.6578947368421053,
+    "hr_windows": 44,
+    "hr_mae_bpm": 3.184891405362217,
+    "hr_rmse_bpm": 4.795511593936329,
+    "hr_mape_percent": 2.9879339789134463,
+    "hr_bias_bpm": -1.0234796875000078,
+    "hr_error_sd_bpm": 4.739184784625511,
+    "bland_altman_lower_bpm": -10.312281865366009,
+    "bland_altman_upper_bpm": 8.265322490365994,
+    "hr_correlation_r": 0.3618666247222141,
+    "hr_fraction_within_5_bpm": 0.8181818181818182,
+    "median_snr_db": -3.1117722295042114,
+    "worst_windows": [
+      {
+        "time_s": 46.6271,
+        "reference_bpm": 110.0,
+        "estimated_bpm": 88.3067,
+        "error_bpm": -21.6933,
+        "absolute_error_bpm": 21.6933,
+        "snr_db": -8.2611
+      },
+      {
+        "time_s": 9.961,
+        "reference_bpm": 100.0,
+        "estimated_bpm": 108.0257,
+        "error_bpm": 8.0257,
+        "absolute_error_bpm": 8.0257,
+        "snr_db": -2.8198
+      },
+      {
+        "time_s": 10.952,
+        "reference_bpm": 100.0,
+        "estimated_bpm": 108.0257,
+        "error_bpm": 8.0257,
+        "absolute_error_bpm": 8.0257,
+        "snr_db": -3.3583
+      },
+      {
+        "time_s": 11.943,
+        "reference_bpm": 100.0,
+        "estimated_bpm": 107.1684,
+        "error_bpm": 7.1684,
+        "absolute_error_bpm": 7.1684,
+        "snr_db": -4.5237
+      },
+      {
+        "time_s": 8.97,
+        "reference_bpm": 99.0,
+        "estimated_bpm": 105.4537,
+        "error_bpm": 6.4537,
+        "absolute_error_bpm": 6.4537,
+        "snr_db": -3.9757
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "input_video": "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/ubfc_subject1/vid.avi",
+  "fps": 29.264106,
+  "duration_s": 52.863395177696525,
+  "sample_hz_actual": 4.180586571428572,
+  "samples": 221,
+  "face_detection_rate": 1.0,
+  "median_center_speed_face_heights_s": 0.013181083762966712,
+  "p95_center_speed_face_heights_s": 0.035971708033660496,
+  "median_face_flow_px_sample": 0.2622317969799042,
+  "p95_face_flow_px_sample": 0.8032078742980957,
+  "best_motion_window_start_s": 0.0,
+  "best_motion_window_stop_s": 30.0
+}

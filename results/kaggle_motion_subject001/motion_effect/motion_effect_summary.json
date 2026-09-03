@@ -1,0 +1,43 @@
+{
+  "motion_low_threshold": 1.3641036795304333,
+  "motion_high_threshold": 3.7495364271137186,
+  "inter_method_disagreement_all_median_bpm": 1.7560564435564245,
+  "inter_method_disagreement_low_motion_median_bpm": 0.8780282217782229,
+  "inter_method_disagreement_high_motion_median_bpm": 0.8780282217782371,
+  "pos": {
+    "low_motion_windows": 13,
+    "low_motion_median_bpm": 64.09606018981017,
+    "low_motion_bpm_std": 10.135596575343923,
+    "low_motion_median_snr_db": -5.059436373771789,
+    "high_motion_windows": 13,
+    "high_motion_median_bpm": 76.3884552947053,
+    "high_motion_bpm_std": 28.816826432645318,
+    "high_motion_median_snr_db": -4.978603099918313,
+    "first_half_windows": 25,
+    "first_half_median_bpm": 59.70591908091907,
+    "first_half_bpm_std": 24.24848808953592,
+    "first_half_median_snr_db": -4.794566410010975,
+    "second_half_windows": 25,
+    "second_half_median_bpm": 70.24225774225772,
+    "second_half_bpm_std": 9.228506843042839,
+    "second_half_median_snr_db": -4.233333681053676
+  },
+  "chrom": {
+    "low_motion_windows": 13,
+    "low_motion_median_bpm": 64.09606018981017,
+    "low_motion_bpm_std": 13.202077430482442,
+    "low_motion_median_snr_db": -5.435096385229019,
+    "high_motion_windows": 13,
+    "high_motion_median_bpm": 77.2664835164835,
+    "high_motion_bpm_std": 22.21748051986238,
+    "high_motion_median_snr_db": -4.036826190117892,
+    "first_half_windows": 25,
+    "first_half_median_bpm": 61.46197552447551,
+    "first_half_bpm_std": 19.199279186882716,
+    "first_half_median_snr_db": -3.603355628305191,
+    "second_half_windows": 25,
+    "second_half_median_bpm": 63.21803196803196,
+    "second_half_bpm_std": 12.678387008345213,
+    "second_half_median_snr_db": -5.044116638783005
+  }
+}
