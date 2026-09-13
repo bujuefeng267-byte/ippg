@@ -1,0 +1,85 @@
+[
+  {
+    "segment_id": 0,
+    "sampling": {
+      "up": 1,
+      "down": 1,
+      "effective_polyphase_hz": 30.00003000003,
+      "target_hz": 30.0,
+      "source_start_frame": 41,
+      "source_frames": 7,
+      "target_frames": 6,
+      "antialias_applied": false,
+      "phase_correction": "linear interpolation onto global exact time grid"
+    },
+    "status": "shorter_than_181_frames"
+  },
+  {
+    "segment_id": 1,
+    "sampling": {
+      "up": 1,
+      "down": 1,
+      "effective_polyphase_hz": 30.00003000003,
+      "target_hz": 30.0,
+      "source_start_frame": 194,
+      "source_frames": 1338,
+      "target_frames": 1337,
+      "antialias_applied": false,
+      "phase_correction": "linear interpolation onto global exact time grid"
+    },
+    "neural": {
+      "status": "predicted",
+      "clips": 14,
+      "clip_starts": [
+        0,
+        90,
+        180,
+        270,
+        360,
+        450,
+        540,
+        630,
+        720,
+        810,
+        900,
+        990,
+        1080,
+        1156
+      ],
+      "scalar_mean": 151.49542358498925,
+      "scalar_std": 31.80132313025181,
+      "predicted_intervals": 1336,
+      "uncovered_intervals": 0
+    }
+  },
+  {
+    "segment_id": 2,
+    "sampling": {
+      "up": 1,
+      "down": 1,
+      "effective_polyphase_hz": 30.00003000003,
+      "target_hz": 30.0,
+      "source_start_frame": 1548,
+      "source_frames": 600,
+      "target_frames": 599,
+      "antialias_applied": false,
+      "phase_correction": "linear interpolation onto global exact time grid"
+    },
+    "neural": {
+      "status": "predicted",
+      "clips": 6,
+      "clip_starts": [
+        0,
+        90,
+        180,
+        270,
+        360,
+        418
+      ],
+      "scalar_mean": 149.69095801841658,
+      "scalar_std": 31.12036842392716,
+      "predicted_intervals": 598,
+      "uncovered_intervals": 0
+    }
+  }
+]

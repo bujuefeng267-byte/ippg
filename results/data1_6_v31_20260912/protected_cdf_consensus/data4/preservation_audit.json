@@ -1,0 +1,21 @@
+{
+  "reference_used": false,
+  "mode": "raw_consensus",
+  "offline": true,
+  "initial_eligible_windows": 0,
+  "final_eligible_windows": 0,
+  "withdrawn_windows": 0,
+  "guard_attempts": 1,
+  "modified_samples": 0,
+  "modified_seconds": 0.0,
+  "protected_samples": 10693,
+  "old_accepted_mask_preserved": true,
+  "old_waveform_finite_mask_preserved": true,
+  "protected_waveform_and_HR_preserved": true,
+  "old_jump_count": 0,
+  "new_jump_count": 0,
+  "old_maximum_jump_bpm": 2.0,
+  "new_maximum_jump_bpm": 2.0,
+  "preservation_scope": "All final noneligible complete HR windows are immutable; reference correctness is evaluated separately.",
+  "runtime_guard": "Monotone withdrawal on old accepted HR loss or excessive large-jump count/amplitude, followed by complete waveform and constrained-HR recomputation."
+}

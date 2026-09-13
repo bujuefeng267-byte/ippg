@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "inspected_images": {
+    "six_video_hr_short_window_comparison.png": "c305e2936f7b74eb348f229711159ee5be6e9b8e6cb0983695753923646b9486",
+    "data6_ppg_hr_short_window_comparison.png": "0dcc953f760090e65994e76da5423c477c3bd18ce4ae9eeae73f5dd26ee4f3c0"
+  },
+  "findings": "Both final PNGs inspected. Legends and titles no longer overlap; early HR outlier is visible; wave/HR gaps remain blank; units and independent waveform amplitude scales are disclosed.",
+  "generator_sha256": "459a0814e7d827b98ca0cf04c50ade5d484ef3cf4438e49cd50810a1f2e99789"
+}

@@ -1,0 +1,27 @@
+{
+  "version": "v25-development-1",
+  "created_before_candidate_evaluation": true,
+  "population": "Six previously inspected recordings; development/regression, not held-out validation",
+  "reference_policy": "Reuse each original V24 paired reference window and all seven fixed timing shifts; no offset selection and no reference input to inference",
+  "fixed_video_parameters": {"window_s": 10, "step_s": 1, "min_bpm": 42, "max_bpm": 210, "max_gap_s": 0.1},
+  "stages": [
+    {"name": "v24_replay", "motion_evidence": "legacy", "hr_mode": "legacy", "routing_mode": "legacy"},
+    {"name": "stage1_motion", "motion_evidence": "reliable", "hr_mode": "legacy", "routing_mode": "legacy"},
+    {"name": "stage2_hr", "motion_evidence": "reliable", "hr_mode": "evidence", "routing_mode": "legacy"},
+    {"name": "stage3_routing", "motion_evidence": "reliable", "hr_mode": "evidence", "routing_mode": "evidence"}
+  ],
+  "implementation_parameters": "Fix from physical units and synthetic counterexamples before running each candidate; record all subsequent development revisions",
+  "metrics": ["own-window MAE/RMSE/Bias", "P5_valid_pct", "R5_all_reference_pct", "waveform_coverage_pct", "hr_output_coverage_pct", "common-window MAE", "new and lost windows"],
+  "adoption_gate": {
+    "pooled_MAE_relative_reduction_min": 0.1,
+    "pooled_R5_gain_percentage_points_min": 5,
+    "max_any_case_MAE_increase_bpm": 5,
+    "protected_data2_data4_MAE_increase_max_bpm": 1,
+    "protected_data2_data4_R5_drop_max_percentage_points": 5,
+    "max_any_case_HR_coverage_drop_percentage_points": 5,
+    "max_any_case_waveform_coverage_drop_percentage_points": 5,
+    "common_window_pooled_MAE_must_decrease": true,
+    "interpretation": "Choose only a stage that improves accuracy and full-reference success without material coverage losses; otherwise keep V24 default and expose V25 as experimental only"
+  },
+  "integrity": ["all three pixel processing steps preserved", "cache accepted only with exact identity and source/checksum validation", "accepted HR from finite saved-waveform evidence", "missing HR not held or interpolated", "same 309 planned windows in all six recordings", "legacy flags reproduce frozen V24 core outputs", "source hashes frozen during each stage"]
+}

@@ -1,0 +1,14 @@
+{
+  "evaluator_sha256": "4ef630e6e78440469d1d7da8802b9fd2d0bdaf0eb1adfdd2505646e97733c06b",
+  "reference_core_sha256": "58628a885e80baa30ab1b4ec5aeee008a0615acc727bf3168d0b2c05409ed462",
+  "frozen_reference_files": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/evaluation/paired_windows.csv": "8621006dfd611958ebee93bff1f22d8ba3130caba4bdcf4a13d3e3804315fb3d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/evaluation/alignment.json": "bbd15449740e4ccb673790e54aaa7410c5dd1218511df149c7e45dc4ff47095f"
+  },
+  "inputs": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/summary.json": "9e6aa271ab090ce28fc0f5be3966ff9c17ff9b61c0024720e2d01c9dc53b4eb8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/fusion_waveform.csv": "ffd4c6dfd4aadb12d6213209931d8434226f18396abe939626ab3f736317ca86",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/fusion_heart_rate.csv": "aefd573ff46b2ae18c63764500eca98bb15e94d6095a3f0399f62374768f6403"
+  },
+  "reference_used_only_after_inference": true
+}

@@ -1,0 +1,41 @@
+before,after,version,side,population,scope,estimator,Ncaptures,weight_per_capture,primary_shift_s,source_Nvalid,source_balanced_MAE_bpm,source_balanced_RMSE_bpm,mean_R5_all_reference_pct,mean_C_out_pct,mean_finite_sample_pct
+trimmed_gap10,bounded_tracking_gap10,trimmed_gap10,before,human_reference_UBFC_and_estimated_data1,own,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.210669343385867,21.8162746956875,35.22727272727273,,
+trimmed_gap10,bounded_tracking_gap10,bounded_tracking_gap10,after,human_reference_UBFC_and_estimated_data1,own,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 37}",26.146118256287643,37.47607986580099,36.36363636363637,,
+trimmed_gap10,bounded_tracking_gap10,trimmed_gap10,before,human_reference_UBFC_and_estimated_data1,common,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.210669343385867,21.8162746956875,35.22727272727273,,
+trimmed_gap10,bounded_tracking_gap10,bounded_tracking_gap10,after,human_reference_UBFC_and_estimated_data1,common,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",25.684181319350706,36.71617645070011,36.36363636363637,,
+trimmed_gap10,bounded_tracking_gap10,trimmed_gap10,before,human_reference_UBFC_and_estimated_data1,own,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.86933078797105,10.025421326903897,40.90909090909091,,
+trimmed_gap10,bounded_tracking_gap10,bounded_tracking_gap10,after,human_reference_UBFC_and_estimated_data1,own,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 37}",17.193587555118825,25.363348925180883,40.90909090909091,,
+trimmed_gap10,bounded_tracking_gap10,trimmed_gap10,before,human_reference_UBFC_and_estimated_data1,common,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.86933078797105,10.025421326903897,40.90909090909091,,
+trimmed_gap10,bounded_tracking_gap10,bounded_tracking_gap10,after,human_reference_UBFC_and_estimated_data1,common,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",17.507101068632334,25.687562166968195,40.90909090909091,,
+trimmed_gap10,bounded_tracking_gap10,trimmed_gap10,before,five_human_captures,own,offline_ridge,5,0.2,0,,,,,79.83349188599786,86.01785185601645
+trimmed_gap10,bounded_tracking_gap10,bounded_tracking_gap10,after,five_human_captures,own,offline_ridge,5,0.2,0,,,,,77.84436724770853,80.93676150031328
+trimmed_gap15,bounded_tracking_gap15,trimmed_gap15,before,human_reference_UBFC_and_estimated_data1,own,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.210669343385867,21.8162746956875,35.22727272727273,,
+trimmed_gap15,bounded_tracking_gap15,bounded_tracking_gap15,after,human_reference_UBFC_and_estimated_data1,own,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 37}",26.146118256287643,37.47607986580099,36.36363636363637,,
+trimmed_gap15,bounded_tracking_gap15,trimmed_gap15,before,human_reference_UBFC_and_estimated_data1,common,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.210669343385867,21.8162746956875,35.22727272727273,,
+trimmed_gap15,bounded_tracking_gap15,bounded_tracking_gap15,after,human_reference_UBFC_and_estimated_data1,common,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",25.684181319350706,36.71617645070011,36.36363636363637,,
+trimmed_gap15,bounded_tracking_gap15,trimmed_gap15,before,human_reference_UBFC_and_estimated_data1,own,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.86933078797105,10.025421326903897,40.90909090909091,,
+trimmed_gap15,bounded_tracking_gap15,bounded_tracking_gap15,after,human_reference_UBFC_and_estimated_data1,own,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 37}",17.193587555118825,25.363348925180883,40.90909090909091,,
+trimmed_gap15,bounded_tracking_gap15,trimmed_gap15,before,human_reference_UBFC_and_estimated_data1,common,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.86933078797105,10.025421326903897,40.90909090909091,,
+trimmed_gap15,bounded_tracking_gap15,bounded_tracking_gap15,after,human_reference_UBFC_and_estimated_data1,common,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",17.507101068632334,25.687562166968195,40.90909090909091,,
+trimmed_gap15,bounded_tracking_gap15,trimmed_gap15,before,five_human_captures,own,offline_ridge,5,0.2,0,,,,,85.54777760028357,90.25677285794325
+trimmed_gap15,bounded_tracking_gap15,bounded_tracking_gap15,after,five_human_captures,own,offline_ridge,5,0.2,0,,,,,79.27293867627995,85.56103895696069
+trimmed_gap10,guarded_fusion_gap10,trimmed_gap10,before,human_reference_UBFC_and_estimated_data1,own,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.210669343385867,21.8162746956875,35.22727272727273,,
+trimmed_gap10,guarded_fusion_gap10,guarded_fusion_gap10,after,human_reference_UBFC_and_estimated_data1,own,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 37}",12.942351025067552,23.460225253075084,35.22727272727273,,
+trimmed_gap10,guarded_fusion_gap10,trimmed_gap10,before,human_reference_UBFC_and_estimated_data1,common,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.210669343385867,21.8162746956875,35.22727272727273,,
+trimmed_gap10,guarded_fusion_gap10,guarded_fusion_gap10,after,human_reference_UBFC_and_estimated_data1,common,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.113447121163645,21.685949302561102,35.22727272727273,,
+trimmed_gap10,guarded_fusion_gap10,trimmed_gap10,before,human_reference_UBFC_and_estimated_data1,own,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.86933078797105,10.025421326903897,40.90909090909091,,
+trimmed_gap10,guarded_fusion_gap10,guarded_fusion_gap10,after,human_reference_UBFC_and_estimated_data1,own,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 37}",7.829090547730811,9.959499251191902,40.90909090909091,,
+trimmed_gap10,guarded_fusion_gap10,trimmed_gap10,before,human_reference_UBFC_and_estimated_data1,common,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.86933078797105,10.025421326903897,40.90909090909091,,
+trimmed_gap10,guarded_fusion_gap10,guarded_fusion_gap10,after,human_reference_UBFC_and_estimated_data1,common,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.883219676859939,10.031515090162689,40.90909090909091,,
+trimmed_gap10,guarded_fusion_gap10,trimmed_gap10,before,five_human_captures,own,offline_ridge,5,0.2,0,,,,,79.83349188599786,86.01785185601645
+trimmed_gap10,guarded_fusion_gap10,guarded_fusion_gap10,after,five_human_captures,own,offline_ridge,5,0.2,0,,,,,80.30968236218833,86.40370394604862
+trimmed_gap15,guarded_fusion_gap15,trimmed_gap15,before,human_reference_UBFC_and_estimated_data1,own,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.210669343385867,21.8162746956875,35.22727272727273,,
+trimmed_gap15,guarded_fusion_gap15,guarded_fusion_gap15,after,human_reference_UBFC_and_estimated_data1,own,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 37}",12.942351025067552,23.460225253075084,35.22727272727273,,
+trimmed_gap15,guarded_fusion_gap15,trimmed_gap15,before,human_reference_UBFC_and_estimated_data1,common,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.210669343385867,21.8162746956875,35.22727272727273,,
+trimmed_gap15,guarded_fusion_gap15,guarded_fusion_gap15,after,human_reference_UBFC_and_estimated_data1,common,local_peak,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",12.113447121163645,21.685949302561102,35.22727272727273,,
+trimmed_gap15,guarded_fusion_gap15,trimmed_gap15,before,human_reference_UBFC_and_estimated_data1,own,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.86933078797105,10.025421326903897,40.90909090909091,,
+trimmed_gap15,guarded_fusion_gap15,guarded_fusion_gap15,after,human_reference_UBFC_and_estimated_data1,own,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 37}",7.829090547730811,9.959499251191902,40.90909090909091,,
+trimmed_gap15,guarded_fusion_gap15,trimmed_gap15,before,human_reference_UBFC_and_estimated_data1,common,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.86933078797105,10.025421326903897,40.90909090909091,,
+trimmed_gap15,guarded_fusion_gap15,guarded_fusion_gap15,after,human_reference_UBFC_and_estimated_data1,common,offline_ridge,2,0.5,0,"{""ubfc"": 40, ""data1"": 36}",7.883219676859939,10.031515090162689,40.90909090909091,,
+trimmed_gap15,guarded_fusion_gap15,trimmed_gap15,before,five_human_captures,own,offline_ridge,5,0.2,0,,,,,85.54777760028357,90.25677285794325
+trimmed_gap15,guarded_fusion_gap15,guarded_fusion_gap15,after,five_human_captures,own,offline_ridge,5,0.2,0,,,,,86.02396807647403,90.6426249479754

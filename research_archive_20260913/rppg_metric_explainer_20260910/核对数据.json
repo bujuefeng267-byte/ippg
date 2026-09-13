@@ -1,0 +1,112 @@
+{
+  "source_directory": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap15/user0907",
+  "version": "V2.2 trimmed_gap15",
+  "fps": 30.00003000003,
+  "frames": 1557,
+  "duration_s": 51.899948099999996,
+  "rgb_available_frames": 1415,
+  "waveform_finite_samples": 1260,
+  "waveform_observed_samples": 1149,
+  "waveform_interpolated_samples": 111,
+  "waveform_absent_samples": 297,
+  "wave_absent_but_rgb_present": 266,
+  "wave_and_rgb_absent": 31,
+  "waveform_spans_s": [
+    [
+      1.999998,
+      43.999956
+    ]
+  ],
+  "hr_accepted_windows": 25,
+  "hr_planned_windows": 42,
+  "hr_status_counts": {
+    "candidate_only": 25,
+    "gap_or_filter_edge": 9,
+    "insufficient_observed_rgb": 8
+  },
+  "hr_accepted_center_spans_s": [
+    [
+      6.999993,
+      15.999984
+    ],
+    [
+      17.999982,
+      17.999982
+    ],
+    [
+      20.999979,
+      21.999978
+    ],
+    [
+      27.999972,
+      38.999961
+    ]
+  ],
+  "examples": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "waveform_base": null,
+      "rgb_valid": false,
+      "covered": false,
+      "observed": false,
+      "interpolated": false
+    },
+    {
+      "frame": 30,
+      "time_s": 0.999999,
+      "waveform_base": null,
+      "rgb_valid": true,
+      "covered": false,
+      "observed": false,
+      "interpolated": false
+    },
+    {
+      "frame": 60,
+      "time_s": 1.999998,
+      "waveform_base": -0.7035427486166543,
+      "rgb_valid": true,
+      "covered": true,
+      "observed": true,
+      "interpolated": false
+    },
+    {
+      "frame": 300,
+      "time_s": 9.99999,
+      "waveform_base": -0.2904200675932781,
+      "rgb_valid": true,
+      "covered": true,
+      "observed": true,
+      "interpolated": false
+    },
+    {
+      "frame": 1320,
+      "time_s": 43.999956,
+      "waveform_base": null,
+      "rgb_valid": true,
+      "covered": false,
+      "observed": false,
+      "interpolated": false
+    },
+    {
+      "frame": 1500,
+      "time_s": 49.99995,
+      "waveform_base": null,
+      "rgb_valid": true,
+      "covered": false,
+      "observed": false,
+      "interpolated": false
+    }
+  ],
+  "reference_available": false,
+  "accuracy_claim": false,
+  "wave_missing_encoded_as": "empty CSV cell / NaN, never forced to 0",
+  "waveform_coverage_is_morphological_quality": false,
+  "checks_passed": true,
+  "source_hashes": {
+    "summary.json": "b34679879ed37b0b4e4e1cb60aed16ac478b07a61511fb5d49c65931008aa32a",
+    "frame_trace.csv": "a07b560041bcae2fe5c535402e37bedfc00cd4a1d25085a87b1c2e22d7b7d604",
+    "fusion_waveform.csv": "9417e03cc1abaf73de842883b22f6076407ed17b50e7028093f5106c18b37ffd",
+    "fusion_heart_rate.csv": "4536adaa9c605831ef5f9a704591c05fb091879966746de829a1092be9105509"
+  }
+}

@@ -1,0 +1,69 @@
+"""Create an evidence-linked Chinese delivery note; never changes model outputs."""
+from pathlib import Path
+from datetime import datetime, timezone
+import json
+
+P=Path('/home/fengbujue/项目/rppg识别')
+R=P/'results/data1_6_v26_20260911'
+D=P/'motion_upgrade_v26_20260911'
+VARIANTS=['log_projection_baseline','log_projection_guarded','neural_efficientphys',
+          'component_consensus','component_harmonics','conservative_components']
+LABELS=['对数RGB投影：基线','对数RGB投影：保护融合','固定EfficientPhys预训练',
+        '多区域成分融合','成分融合＋运动倍频','运动风险保守回退']
+
+def link(path):return '//wsl.localhost/Ubuntu'+str(Path(path).resolve())
+def md(label,path):return f'[{label}](<{link(path)}>)'
+
+def main():
+    reports=[json.loads((R/v/'evaluation_summary.json').read_text()) for v in VARIANTS]
+    assert all(not r['promotion_pass'] for r in reports)
+    assert all(not r['near_all_within_5bpm_target_met'] for r in reports)
+    v25=json.loads((P/'results/data1_6_v25_20260911/stage4_preserve_waveform/stage_evaluation.json').read_text())['pooled']
+    lines=['# V26 运动心率监测：代码改进与实际结果','',
+      '本轮完成六种固定候选的开发和六视频对照，但没有达到“基本所有心率误差≤5 bpm”。所有候选都至少违反一项事先固定的逐片保护条件，因此推荐入口仍是 V25；V26 新代码作为可运行实验版单独保存。','',
+      '这里暂把“基本所有”操作化为每片有效心率至少95%落在±5 bpm内，并同时检查全时段成功率与覆盖率。不能仅删除错误窗口后宣称达标。','',
+      '## 核心数值','',
+      '|统一方法|MAE bpm|±5 bpm成功／309计划窗|有效输出内成功率 P5|全参考窗成功率 R5|心率输出覆盖率|',
+      '|---|---:|---:|---:|---:|---:|',
+      '|原推荐 V25|25.20|93／309|35.77%|30.10%|84.14%|']
+    for label,r in zip(LABELS,reports):
+        a=r['pooled']; lines.append(f"|{label}|{a['MAE_bpm']:.2f}|{a['Nwithin5']}／{a['Nref']}|{a['P5_valid_pct']:.2f}%|{a['R5_all_reference_pct']:.2f}%|{a['HR_coverage_pct']:.2f}%|")
+    lines+=['',
+      '成分融合＋运动倍频的成功窗口最多，但这不是选择它作为全局推荐的依据。它在 data5 的 MAE 为 **60.72→3.66 bpm**，P5 为 **16.33%→87.76%**，心率覆盖率保持 **92.45%**；data1 的 MAE 却从 **13.10→32.66 bpm**，data3 从 **32.87→41.66 bpm**。','',
+      '保守回退保持了旧版每片的波形可用掩码和心率覆盖率，data2／3／4／6的心率不变，data5 的 MAE 降到19.44 bpm；但 data1 升到33.21 bpm。运动风险下降不能充分证明新频率是真实脉搏。','',
+      md('完整逐片指标、共同窗口比较与所有失败条件',R/'final_report/report.md'),' · '+md('六视频心率折线图：V25与倍频候选',R/'final_report/six_video_hr_fixed_comparison.png'),'',
+      '## 具体修改了什么','',
+      '1. 保留原像素跟踪、局部异常筛选、跟踪失败回退前端；从基线和跟踪分支的额头、双颊实际 POS／CHROM 信号中竞争候选频率。每个物理区域只投一票，防止重复方法虚增一致性。',
+      '2. 用实测复频谱系数提取被多个区域支持的成分，再输出波形，并从保存后的波形重新计算心率。没有按照参考心率生成正弦波或回填心率。',
+      '3. 加入 f、2f、f/2 的软运动证据，保留绝对运动强度、可靠性与缺失标记，避免把微弱运动归一化后误当强伪影。',
+      '4. 加入保守回退实验：只有旧频率运动风险≥0.50且候选风险降低≥0.30等固定条件满足时，才混合实际候选波形；旧波形缺口不填补。',
+      '5. 接入固定 PURE EfficientPhys 权重作为完整六视频对照，处理180 fps→30 Hz抗混叠、导数输出积分和缺帧。其本轮结果未整体优于V25。EfficientPhys是2023年方法，不能称为2026年最新或当前最高精度模型。','',
+      '## 为什么还不能达到目标','',
+      'data1、data6 的现有光学通道中，真实心率附近常只是较弱的候选，多个区域也可能同时含有运动干扰。data3 还存在基频／谐波混淆；仅靠更平滑的曲线或更强选峰，不能确认所选频率是真实心率。data6 有24／62个计划窗在已保存光学信号中均缺少完整有限波形支持，这既不是输出0，也不能作为正确心率计分。','',
+      '上述真实频率附近信息的检查用到了参考，仅用于失效诊断，不是可部署准确率，不参与推理选频。它也不证明原视频中完全没有可恢复信息。','',
+      '下一步应优先验证更稳定的皮肤局部坐标与独立光照参照，再用新录制的同步数据检验；不能继续凭这六段开发录像调门槛后把提高当作泛化。若进一步训练，应按受试者和整段录制划分训练、验证、测试，避免把相邻重叠窗口拆开。现有逐秒Polar HR能检验心率，但不足以单独验证原始PPG形态。','',
+      md('新论文与公开模型调研、许可证和适配差异',D/'neural_efficientphys/model_research.md'),'；其中 FacePhys 与 CanonicalPhys 属于后续研究候选，本轮未运行，不把论文指标当成本项目结果。','',
+      '## 运行与输出','',
+      '在 WSL 项目目录运行实验入口，输出目录必须是尚未存在的新目录：','',
+      '```bash',
+      'cd /home/fengbujue/项目/rppg识别',
+      './run_motion_v26_experimental.sh --video "videos/你的新视频.mp4" --out "results/新视频_v26_harmonic" --variant harmonic',
+      '```','',
+      '`--variant component` 对应原成分融合；`--variant harmonic` 对应运动倍频候选。两个入口都为离线实验，不承诺优于V25。保守回退另保留完整六视频批处理脚本，不作为新的默认模式。','',
+      '- `waveform.csv`：逐帧时间、真实重建波形成分及 covered／observed／interpolated 标记。缺失为 NaN，图上断线；不是0。',
+      '- `heart_rate.csv`：10秒窗、约1秒步长的心率，accepted、status和起止时间。拒绝窗的最终心率为空。',
+      '- `component_proposals.csv`、`all_roi_candidates.json`：候选频率、实际来源区域和内部诊断。proposal不是最终心率。',
+      '- `summary.json`及运行清单：固定参数、输入／源码哈希和来源记录。新入口严格验证视频与缓存身份。','',
+      '成分波形是自适应窄带重建，含归一化与极性对齐；不能宣称恢复了真实PPG幅度、相位或重搏切迹。通用入口从序列化trace重算ROI时，极小浮点差可能触发同分路径变化；data2缓存回归的最终心率与接受掩码完全一致，但波形并非逐值相同，详见入口测试记录。','',
+      md('实验入口说明',D/'README_components_v26.md'),' · '+md('代码目录',D),' · '+md('安装文件哈希与旧入口保留记录',R/'installation_receipt.json'),'',
+      '## 评价边界','',
+      '六段均为此前已观察的开发视频，不是独立测试集。所有方法使用同一309个计划窗、原先冻结的参考值和估计时间对齐；另检验−5、−2、−1、0、1、2、5秒敏感性，没有按误差取最优偏移。参考是Polar设备心率通知的窗口均值，并非直接ECG。不能把309个重叠窗口当作309个独立样本。','',
+      '已保留所有原视频、参考数据、旧版代码和本轮失败实验；本地推理，未上传原视频。','']
+    note=R/'V26运动心率改进结果.md'
+    with note.open('x',encoding='utf-8') as stream:stream.write('\n'.join(lines))
+    quick=P/'V26运动心率改进说明.md'
+    with quick.open('x',encoding='utf-8') as stream:
+        stream.write('# V26 运动心率改进\n\n本轮已有局部收益，但仍未达到基本所有心率误差≤5 bpm。推荐入口保留 V25，V26 为独立实验代码。\n\n'+md('查看本轮完整结果与代码入口',note)+'\n')
+    print(json.dumps(dict(report=str(note),project_index=str(quick),created_utc=datetime.now(timezone.utc).isoformat()),ensure_ascii=False))
+
+if __name__=='__main__':main()

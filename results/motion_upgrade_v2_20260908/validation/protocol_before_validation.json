@@ -1,0 +1,55 @@
+{
+  "fusion_config": {
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "methods": [
+      "pos",
+      "chrom"
+    ],
+    "min_rois": 2,
+    "min_observed_fraction": 0.9,
+    "min_roi_quality": 0.2,
+    "min_signal_std": 1e-08,
+    "grid_step_bpm": 1.0,
+    "support_tolerance_bpm": 6.0,
+    "max_peaks_per_channel": 4,
+    "min_relative_power": 0.2,
+    "min_peak_concentration": 0.15,
+    "min_prominence_ratio": 0.08,
+    "single_method_factor": 0.65,
+    "min_consensus_quality": 0.2,
+    "ambiguity_ratio": 0.8,
+    "max_motion_penalty": 0.25,
+    "max_slew_bpm_per_s": 12.0,
+    "rejected_windows_to_reset": 2,
+    "min_waveform_correlation": 0.15,
+    "normalize_clip": 8.0,
+    "huber_delta": 2.5
+  },
+  "window_s": 10,
+  "step_s": 1,
+  "gap_s": 0.1,
+  "band_bpm": [
+    42,
+    210
+  ],
+  "files": {
+    "analyze_motion_v2.py": "d64b904413b0a17b886b6a457c8c45f2e51c38288180495bd94d97d9af236753",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "evaluate_v2.py": "fdaa76c9982ce25a2622bb284866d48c64aa77a213c6e3dd54c644bf56a22bae",
+    "extract_validation_traces.py": "4b9a96ee2899ad37970119cba0c2d68a90178ffde23c25c231bd0e22b6cd9ebd",
+    "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+    "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+    "motion_fusion.py": "27473f356f02a7f93181ce6fa9f0f7e72dcc58686b2e2a83b47e7fcd5e060632",
+    "run_validation_v2.py": "2b6801d0acbe922232caac2c90a7c0e4bccd2bde14da596c16f64faa8862da8d",
+    "seal_trace_caches.py": "f502e84b0cae164844e43ea4e99d27fb8d871bfee99c608a15114f73c0529285",
+    "synthetic_motion_benchmark.py": "5e7ca4ebb398b7d778580c2f90e220c55b3e890ae3f1d9aae111c412516c9afa",
+    "test_cli_v2.py": "2939921ad15626c23a79997a482dad2a3ddbe8df0753f37f973828cc2c69d72e",
+    "test_frontend_v2.py": "b0fbb912cd0147d0675e1a93c44641d3e92cd0271e506b6080c4ed212cad3b96",
+    "test_fusion_v2.py": "1a6568a3bf80c44df5da60bb29ae6b4720ed906149e2543a38a30e0992f6c52c"
+  },
+  "note": "Defaults frozen after synthetic logic tests; no real-reference parameter search."
+}

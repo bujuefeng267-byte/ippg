@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-09-11T14:30:18.668247+00:00",
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "component_fusion_v26.py": "7a15fedaf099f8dfcb7684e3eb0184596b080c9b9f9a1731dcf2bbd1344a4390",
+    "run_component_fusion.py": "958a7dae81e4d873d0d03bd6a7945a46c5cb754299fa5cd9c9fefcfacae5d529",
+    "test_component_fusion_v26.py": "c1568ef275aea248f614e6e182ef669d43911933d704fac400e32d16d5f03040",
+    "evaluate_v26.py": "5ed2e421c99f5c7390eb06df507096a4a24093f4f602f45f5b5ccf4f14f625ab"
+  },
+  "component_config": {
+    "min_rois": 2,
+    "min_observed": 0.9,
+    "min_quality": 0.2,
+    "pass_half_width_bpm": 6.0,
+    "stop_half_width_bpm": 12.0,
+    "min_component_correlation": 0.15,
+    "min_tracked_fraction": 0.6,
+    "max_reset_fraction": 0.05
+  },
+  "reference_used": false,
+  "post_diagnosis_development": true,
+  "reason": "ROI diagnostic showed complementary weak supported peaks lost before HR estimation; test joint frequency competition with one vote per physical ROI, then phase-preserving measured-component filtering.",
+  "source_candidate_and_DP_defaults": "Exactly existing V25 evidence_hr defaults; no per-video values or target-frequency input",
+  "waveform_interpretation": "Adaptively band-limited measured component, not PPG morphology validation",
+  "validation": "Same 309 reference/planned windows, original offsets, evaluate_v26.py unchanged",
+  "previously_observed_development_reports": {
+    "log_projection_baseline": "db650d3759436a6feb3532b3ccfd3fb7f75083642b445604095ce0d5d18ecf71",
+    "log_projection_guarded": "8df1382cfa4fea38ebfc5b157798b23d481644c779a4c6a11837f3c6eb62fb14"
+  },
+  "input_hashes": {
+    "data1": {
+      "frame_trace.csv": "a72012d6920d64971833fbc0370138b3efad8cc0134f34ac5bb029e3d54122ac",
+      "frame_trace.json": "a9be0110543a8a25f3d6247bbe85f64a22a87cd41cd46984af9666ef5070b15e",
+      "baseline_roi_waveforms.csv": "06a0803be9bc6a60eb9e6fe765ff9d28627affc01f2e92fd1c708398bf674cbc",
+      "roi_waveforms.csv": "3643f76f992862c399bb2c26a4dec41653aa8b44a6e39931206b051f54e8f053"
+    },
+    "data2": {
+      "frame_trace.csv": "b199f2d09dea171754ff6042688c0bfd2964d3672ef748a04c604a1ed1eb53c2",
+      "frame_trace.json": "8cdd6490cf924fef8782980996b5fe573c344a3b204011d242b9354d6c2e2835",
+      "baseline_roi_waveforms.csv": "8ea243b293e90c56a0608efe508750348a0b2395ea34d2e2f1d44fec593ff33d",
+      "roi_waveforms.csv": "148cc780c9c45f7d3a8676e157cecde1e44668bc536af415da210017ebc1d92e"
+    },
+    "data3": {
+      "frame_trace.csv": "1f43aee4a224536933b58e7e616e60d00936e158d1260eb18fb44618fb74f5e3",
+      "frame_trace.json": "d8b92b8ca113d85f13682cb4d97db8c55accb850992315c250292c37b8ec50bb",
+      "baseline_roi_waveforms.csv": "3f97f232e6a611dcb1e65fa8d2ff457cdea85181ccee74f4feb465ba056e410c",
+      "roi_waveforms.csv": "c21ae08516e411e80c551bd3609d654e4460b1fd4af10b81ef1d3e6001a3d6b9"
+    },
+    "data4": {
+      "frame_trace.csv": "9ac57523f498642409c4217c5945f133619ba81568ca19010cfa36b91593053f",
+      "frame_trace.json": "12c74765510f8d350b85665b6644e88444787bab6f270a8f9580ab4f8627d587",
+      "baseline_roi_waveforms.csv": "d61ed7e4607ae80efb480215c972cc9623cbe6fa17b85fe9f031bc7e9ee1c537",
+      "roi_waveforms.csv": "9b12ce35c1a610af3faebfe2d90e841bd55091153aedf443d6fef0f74f17883b"
+    },
+    "data5": {
+      "frame_trace.csv": "9762dc041c7414e1d1dcb5e89535a4ecebd96cd5b79cc1da9aa925e21dc80c1d",
+      "frame_trace.json": "61551dbb6f325eb4d5609513111fc57bf5174807c43e7b18610aa274c7f346ba",
+      "baseline_roi_waveforms.csv": "38f73b2ff48653c741b9b666a0b6adff421e70daa29040fb86ec60dc1ae0cc6d",
+      "roi_waveforms.csv": "5f5544bce04c77eac576cd902e7a53eda3487a5e8a960d57ce34d1ff72ddae7b"
+    },
+    "data6": {
+      "frame_trace.csv": "c9f027f1cc90b87bfbb8a462e84b7bd72adf565a09ed313394bbb204c764c907",
+      "frame_trace.json": "71948127b59cbbe68407d2da6ed8945aa55ad462e26c7bc4b3f58559a885240f",
+      "baseline_roi_waveforms.csv": "57cf915cc09356cd3dc118967d6ee6ce6ebd160b957eb091db60752a634b1d8f",
+      "roi_waveforms.csv": "f4343d73c3bda669ccef7f8c7d54d5d0ff69d92c219432d1f3af622ec1833fc5"
+    }
+  }
+}

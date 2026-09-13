@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "metrics_rows": 36,
+  "source": "evaluation/*.csv",
+  "rounding": "2 decimals, full precision retained in CSV"
+}

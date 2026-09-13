@@ -1,0 +1,1362 @@
+[
+  {
+    "case": "data1",
+    "archive": "/mnt/c/Users/15011/Desktop/视频/data1.zip",
+    "archive_bytes": 824089924,
+    "video": {
+      "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2.zip",
+      "member": "Video_20260909_YJC_2.avi",
+      "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2_unpacked/Video_20260909_YJC_2.avi",
+      "bytes": 843755520,
+      "crc32": 290344108,
+      "sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e",
+      "zip_dos_datetime": [
+        2026,
+        9,
+        9,
+        15,
+        33,
+        42
+      ],
+      "extended_unix_mtime_s": 1788939223
+    },
+    "files": [
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data1.zip",
+        "member": "data1/20260909_YJC_2.zip",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2.zip",
+        "bytes": 259717,
+        "crc32": 3859327549,
+        "sha256": "ff85cd1180078657a3db19d207242186fbf558840df3080d6e7a1f917d01a0ea",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          36,
+          52
+        ],
+        "extended_unix_mtime_s": 1788939412
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data1.zip",
+        "member": "data1/Video_20260909_YJC_2.zip",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2.zip",
+        "bytes": 823580287,
+        "crc32": 3144679898,
+        "sha256": "63dd9d48d3745420ba0839a850880009883e83cba2398e4badb0b96f0fc11d24",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          35,
+          46
+        ],
+        "extended_unix_mtime_s": 1788939346
+      },
+      {
+        "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2.zip",
+        "member": "20260909_YJC_2/events.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2_unpacked/20260909_YJC_2/events.csv",
+        "bytes": 628,
+        "crc32": 3164779366,
+        "sha256": "67626e6514b0c85e9da0d04e414bb3db63b3905a3afeaae02713019b060da26b",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          50
+        ],
+        "extended_unix_mtime_s": 1788939230
+      },
+      {
+        "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2.zip",
+        "member": "20260909_YJC_2/meta.json",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2_unpacked/20260909_YJC_2/meta.json",
+        "bytes": 3977,
+        "crc32": 518250505,
+        "sha256": "d8d8045a259fc4d97edba6488bc12d9fa410520dfd795a3b27cba2a23fb74212",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          50
+        ],
+        "extended_unix_mtime_s": 1788939230
+      },
+      {
+        "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2.zip",
+        "member": "20260909_YJC_2/polar_acc.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2_unpacked/20260909_YJC_2/polar_acc.csv",
+        "bytes": 443847,
+        "crc32": 813273361,
+        "sha256": "0e5813f7dbc2ff6d514b534ff852bd0646a3b360a59fcbb11b4baabc5df49ef7",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          50
+        ],
+        "extended_unix_mtime_s": 1788939230
+      },
+      {
+        "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2.zip",
+        "member": "20260909_YJC_2/polar_hr.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2_unpacked/20260909_YJC_2/polar_hr.csv",
+        "bytes": 4880,
+        "crc32": 1393458133,
+        "sha256": "ecdd31359f0285ebb0d91834d85fc9faeaf0c1bea9e75a331b3a64bcc2f5daa6",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          48
+        ],
+        "extended_unix_mtime_s": 1788939229
+      },
+      {
+        "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2.zip",
+        "member": "20260909_YJC_2/polar_ppg.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2_unpacked/20260909_YJC_2/polar_ppg.csv",
+        "bytes": 542309,
+        "crc32": 2429055797,
+        "sha256": "799b425b0981abec1c739f57f1c9744574ceaf53b67b793831d4fe91b97ef2f3",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          50
+        ],
+        "extended_unix_mtime_s": 1788939230
+      },
+      {
+        "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2.zip",
+        "member": "20260909_YJC_2/quality_summary.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2_unpacked/20260909_YJC_2/quality_summary.csv",
+        "bytes": 511,
+        "crc32": 162974335,
+        "sha256": "884960338ebb20aed152793c730971e884f6a01a6d53d413e7fd7b6c6bd1f9ca",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          50
+        ],
+        "extended_unix_mtime_s": 1788939230
+      },
+      {
+        "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2.zip",
+        "member": "20260909_YJC_2/waveform.png",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2_unpacked/20260909_YJC_2/waveform.png",
+        "bytes": 70030,
+        "crc32": 4035300657,
+        "sha256": "a8750c6b1e34f4cda7d9eb4d9ab197459a1546c9114a752b837b060ab5b5087c",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          50
+        ],
+        "extended_unix_mtime_s": 1788939230
+      },
+      {
+        "archive": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2.zip",
+        "member": "Video_20260909_YJC_2.avi",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2_unpacked/Video_20260909_YJC_2.avi",
+        "bytes": 843755520,
+        "crc32": 290344108,
+        "sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          42
+        ],
+        "extended_unix_mtime_s": 1788939223
+      }
+    ],
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mjpeg",
+          "codec_long_name": "Motion JPEG",
+          "profile": "Baseline",
+          "codec_type": "video",
+          "codec_tag_string": "MJPG",
+          "codec_tag": "0x47504a4d",
+          "width": 3840,
+          "height": 2160,
+          "coded_width": 3840,
+          "coded_height": 2160,
+          "closed_captions": 0,
+          "has_b_frames": 0,
+          "pix_fmt": "yuvj422p",
+          "level": -99,
+          "color_range": "pc",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "refs": 1,
+          "r_frame_rate": "10000000/333333",
+          "avg_frame_rate": "10000000/333333",
+          "time_base": "333333/10000000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1555,
+          "duration": "51.833282",
+          "bit_rate": "130232340",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1555",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "format": {
+        "filename": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2_unpacked/Video_20260909_YJC_2.avi",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "avi",
+        "format_long_name": "AVI (Audio Video Interleaved)",
+        "start_time": "0.000000",
+        "duration": "51.833282",
+        "size": "843755520",
+        "bit_rate": "130226061",
+        "probe_score": 100
+      }
+    }
+  },
+  {
+    "case": "data2",
+    "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+    "archive_bytes": 765083486,
+    "video": {
+      "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+      "member": "data2/Video_20260911_162146381.avi",
+      "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/Video_20260911_162146381.avi",
+      "bytes": 783268352,
+      "crc32": 224223472,
+      "sha256": "63c87a836f56f699b7960c34b12f847017878bd1e372cbc7cb0b0a380c227f11",
+      "zip_dos_datetime": [
+        2026,
+        9,
+        11,
+        16,
+        22,
+        32
+      ],
+      "extended_unix_mtime_s": 1789114953
+    },
+    "files": [
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+        "member": "data2/20260911_CHP_1/events.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/20260911_CHP_1/events.csv",
+        "bytes": 628,
+        "crc32": 1186286580,
+        "sha256": "3036544cda2234041cd206191371caa2304416ee56b77d64e56d480fad428648",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          38
+        ],
+        "extended_unix_mtime_s": 1789114959
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+        "member": "data2/20260911_CHP_1/meta.json",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/20260911_CHP_1/meta.json",
+        "bytes": 3979,
+        "crc32": 2861312887,
+        "sha256": "a2957f0ae9d6450070d9cd8d6e5516940b7ab8fe87d0157c71fd28b09e9e41ef",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          38
+        ],
+        "extended_unix_mtime_s": 1789114959
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+        "member": "data2/20260911_CHP_1/polar_acc.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/20260911_CHP_1/polar_acc.csv",
+        "bytes": 367080,
+        "crc32": 895806651,
+        "sha256": "dc03fd6ec9be8564675b01fe2f0be44b8983d5ee4d364527dc57a48cdbaf5a07",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          38
+        ],
+        "extended_unix_mtime_s": 1789114958
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+        "member": "data2/20260911_CHP_1/polar_hr.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/20260911_CHP_1/polar_hr.csv",
+        "bytes": 4141,
+        "crc32": 2973060248,
+        "sha256": "4503fde6587c0236c060af91dea3d4d69ddd715aac872f5af74b4a0f23b22665",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          38
+        ],
+        "extended_unix_mtime_s": 1789114958
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+        "member": "data2/20260911_CHP_1/polar_ppg.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/20260911_CHP_1/polar_ppg.csv",
+        "bytes": 440264,
+        "crc32": 757684113,
+        "sha256": "fa672c3d2b94b3137da24afb64093f9a18d32ec22550e8b168721f536a0e0301",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          38
+        ],
+        "extended_unix_mtime_s": 1789114959
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+        "member": "data2/20260911_CHP_1/quality_summary.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/20260911_CHP_1/quality_summary.csv",
+        "bytes": 513,
+        "crc32": 240206068,
+        "sha256": "298b12c8983dcb8c55f821e6ae83ab9aa099314a3190b20bf125a40965e6886d",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          38
+        ],
+        "extended_unix_mtime_s": 1789114959
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+        "member": "data2/20260911_CHP_1/waveform.png",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/20260911_CHP_1/waveform.png",
+        "bytes": 60270,
+        "crc32": 4205019913,
+        "sha256": "ced493220ae13cd47a2c0b4e7e20558e3a0e0e5e8c0f428427b1a0ec1b675353",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          38
+        ],
+        "extended_unix_mtime_s": 1789114958
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data2.zip",
+        "member": "data2/Video_20260911_162146381.avi",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/Video_20260911_162146381.avi",
+        "bytes": 783268352,
+        "crc32": 224223472,
+        "sha256": "63c87a836f56f699b7960c34b12f847017878bd1e372cbc7cb0b0a380c227f11",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          32
+        ],
+        "extended_unix_mtime_s": 1789114953
+      }
+    ],
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mjpeg",
+          "codec_long_name": "Motion JPEG",
+          "profile": "Baseline",
+          "codec_type": "video",
+          "codec_tag_string": "MJPG",
+          "codec_tag": "0x47504a4d",
+          "width": 3840,
+          "height": 2160,
+          "coded_width": 3840,
+          "coded_height": 2160,
+          "closed_captions": 0,
+          "has_b_frames": 0,
+          "pix_fmt": "yuvj422p",
+          "level": -99,
+          "color_range": "pc",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "refs": 1,
+          "r_frame_rate": "10000000/333333",
+          "avg_frame_rate": "10000000/333333",
+          "time_base": "333333/10000000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1393,
+          "duration": "46.433287",
+          "bit_rate": "134966162",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1393",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "format": {
+        "filename": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/Video_20260911_162146381.avi",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "avi",
+        "format_long_name": "AVI (Audio Video Interleaved)",
+        "start_time": "0.000000",
+        "duration": "46.433287",
+        "size": "783268352",
+        "bit_rate": "134949455",
+        "probe_score": 100
+      }
+    }
+  },
+  {
+    "case": "data3",
+    "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+    "archive_bytes": 1259260496,
+    "video": {
+      "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+      "member": "data3/Video_20260911_YJC_3.avi",
+      "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/Video_20260911_YJC_3.avi",
+      "bytes": 1284782080,
+      "crc32": 2849812926,
+      "sha256": "de8d446956c0d5c782a646bf60587fc85c291d57f61271d3b198ec059d86cb68",
+      "zip_dos_datetime": [
+        2026,
+        9,
+        11,
+        16,
+        29,
+        30
+      ],
+      "extended_unix_mtime_s": 1789115371
+    },
+    "files": [
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+        "member": "data3/20260911_YJC_3/events.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/20260911_YJC_3/events.csv",
+        "bytes": 628,
+        "crc32": 1127722716,
+        "sha256": "8f4bfe713138e881efd77f5aba80f7e674d6122c538a66824a0650fdadc8616f",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          36
+        ],
+        "extended_unix_mtime_s": 1789115376
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+        "member": "data3/20260911_YJC_3/meta.json",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/20260911_YJC_3/meta.json",
+        "bytes": 3979,
+        "crc32": 470802789,
+        "sha256": "7ea878dcd34807c30b32e348f6d8c90d04b8fbe175515d8797301d291acce889",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          36
+        ],
+        "extended_unix_mtime_s": 1789115376
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+        "member": "data3/20260911_YJC_3/polar_acc.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/20260911_YJC_3/polar_acc.csv",
+        "bytes": 427488,
+        "crc32": 1018621581,
+        "sha256": "56bc84c70f20f1243ce635c23de64f066e4295ae92fe29dbb252aa603b523b7b",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          36
+        ],
+        "extended_unix_mtime_s": 1789115376
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+        "member": "data3/20260911_YJC_3/polar_hr.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/20260911_YJC_3/polar_hr.csv",
+        "bytes": 4773,
+        "crc32": 196276773,
+        "sha256": "0c1855930b1bb3920184bdcbfc1508c7ccd8332c6abb68effc24685c73d10fee",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          36
+        ],
+        "extended_unix_mtime_s": 1789115376
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+        "member": "data3/20260911_YJC_3/polar_ppg.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/20260911_YJC_3/polar_ppg.csv",
+        "bytes": 505694,
+        "crc32": 3693799500,
+        "sha256": "1314361979b30c40b469c419ccf8b91bd75209b9eb8e2000d6fd7f7c2eebd5ae",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          36
+        ],
+        "extended_unix_mtime_s": 1789115376
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+        "member": "data3/20260911_YJC_3/quality_summary.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/20260911_YJC_3/quality_summary.csv",
+        "bytes": 514,
+        "crc32": 1416464264,
+        "sha256": "a2e0be145a80b22cf71fbc3725ab9ab03a940784bd53c1d4ab424a07023543b4",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          36
+        ],
+        "extended_unix_mtime_s": 1789115376
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+        "member": "data3/20260911_YJC_3/waveform.png",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/20260911_YJC_3/waveform.png",
+        "bytes": 62181,
+        "crc32": 2403684984,
+        "sha256": "86faf1d0c588a37f978ed98d2e70ea7aa96f4939a2793e8ece9f085a4b5d0350",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          36
+        ],
+        "extended_unix_mtime_s": 1789115376
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data3.zip",
+        "member": "data3/Video_20260911_YJC_3.avi",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/Video_20260911_YJC_3.avi",
+        "bytes": 1284782080,
+        "crc32": 2849812926,
+        "sha256": "de8d446956c0d5c782a646bf60587fc85c291d57f61271d3b198ec059d86cb68",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          30
+        ],
+        "extended_unix_mtime_s": 1789115371
+      }
+    ],
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mjpeg",
+          "codec_long_name": "Motion JPEG",
+          "profile": "Baseline",
+          "codec_type": "video",
+          "codec_tag_string": "MJPG",
+          "codec_tag": "0x47504a4d",
+          "width": 3840,
+          "height": 2160,
+          "coded_width": 3840,
+          "coded_height": 2160,
+          "closed_captions": 0,
+          "has_b_frames": 0,
+          "pix_fmt": "yuvj422p",
+          "level": -99,
+          "color_range": "pc",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "refs": 1,
+          "r_frame_rate": "10000000/333333",
+          "avg_frame_rate": "10000000/333333",
+          "time_base": "333333/10000000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 2221,
+          "duration": "74.033259",
+          "bit_rate": "138819799",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "2221",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "format": {
+        "filename": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/Video_20260911_YJC_3.avi",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "avi",
+        "format_long_name": "AVI (Audio Video Interleaved)",
+        "start_time": "0.000000",
+        "duration": "74.033259",
+        "size": "1284782080",
+        "bit_rate": "138832962",
+        "probe_score": 100
+      }
+    }
+  },
+  {
+    "case": "data4",
+    "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+    "archive_bytes": 1204498447,
+    "video": {
+      "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+      "member": "data4/Video_20260911_XUEZHANG1.avi",
+      "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/Video_20260911_XUEZHANG1.avi",
+      "bytes": 1206016000,
+      "crc32": 1643256318,
+      "sha256": "c89625ff40f604b3b8e8ad2df66a0d94d319d1a6142c99765b53c7a210d6965b",
+      "zip_dos_datetime": [
+        2026,
+        9,
+        11,
+        16,
+        35,
+        40
+      ],
+      "extended_unix_mtime_s": 1789115740
+    },
+    "files": [
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+        "member": "data4/20260911_XUEZHANG1/events.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/events.csv",
+        "bytes": 628,
+        "crc32": 1251461808,
+        "sha256": "398151b522d69fe2e155983c55acb765909e03bfd9ed8cba5595f2fa4e7f7ae0",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          38,
+          30
+        ],
+        "extended_unix_mtime_s": 1789115911
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+        "member": "data4/20260911_XUEZHANG1/meta.json",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/meta.json",
+        "bytes": 3990,
+        "crc32": 257047914,
+        "sha256": "7a2bf52ba0113a01d79756378f93a82afb4b96181215350eb7555a8e33fb75da",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          38,
+          30
+        ],
+        "extended_unix_mtime_s": 1789115911
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+        "member": "data4/20260911_XUEZHANG1/polar_acc.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/polar_acc.csv",
+        "bytes": 1234094,
+        "crc32": 3682705899,
+        "sha256": "0d6f3a07a606d4f926bfbc083d2f69cfe4e1b7041895765799d10129e20de383",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          38,
+          30
+        ],
+        "extended_unix_mtime_s": 1789115911
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+        "member": "data4/20260911_XUEZHANG1/polar_hr.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/polar_hr.csv",
+        "bytes": 12899,
+        "crc32": 857705418,
+        "sha256": "e01a81c9b64133c8ad705b16ffcf545c6f55e5c821f469123868f9415fbdd7f0",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          38,
+          28
+        ],
+        "extended_unix_mtime_s": 1789115909
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+        "member": "data4/20260911_XUEZHANG1/polar_ppg.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/polar_ppg.csv",
+        "bytes": 1438811,
+        "crc32": 3893963582,
+        "sha256": "3365a9b01f86f38be5ef234d9153a602d91f2974673f74fa855614080088a0ee",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          38,
+          30
+        ],
+        "extended_unix_mtime_s": 1789115911
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+        "member": "data4/20260911_XUEZHANG1/quality_summary.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/quality_summary.csv",
+        "bytes": 521,
+        "crc32": 1498029168,
+        "sha256": "cd7ef6b1b81cad8a9ba75898068d46d75485e3d02a020546de9e5698f57e287f",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          38,
+          30
+        ],
+        "extended_unix_mtime_s": 1789115911
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+        "member": "data4/20260911_XUEZHANG1/waveform.png",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/waveform.png",
+        "bytes": 62144,
+        "crc32": 647431432,
+        "sha256": "dd3213a4567e0d9024adb57d58a9c61b25bf62dd8c1bf2ae68a41534e82ffe7a",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          38,
+          30
+        ],
+        "extended_unix_mtime_s": 1789115910
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data4.zip",
+        "member": "data4/Video_20260911_XUEZHANG1.avi",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/Video_20260911_XUEZHANG1.avi",
+        "bytes": 1206016000,
+        "crc32": 1643256318,
+        "sha256": "c89625ff40f604b3b8e8ad2df66a0d94d319d1a6142c99765b53c7a210d6965b",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          35,
+          40
+        ],
+        "extended_unix_mtime_s": 1789115740
+      }
+    ],
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mjpeg",
+          "codec_long_name": "Motion JPEG",
+          "profile": "Baseline",
+          "codec_type": "video",
+          "codec_tag_string": "MJPG",
+          "codec_tag": "0x47504a4d",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 1280,
+          "coded_height": 720,
+          "closed_captions": 0,
+          "has_b_frames": 0,
+          "pix_fmt": "yuvj422p",
+          "level": -99,
+          "color_range": "pc",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "refs": 1,
+          "r_frame_rate": "2000000/11111",
+          "avg_frame_rate": "2000000/11111",
+          "time_base": "11111/2000000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 10693,
+          "duration": "59.404961",
+          "bit_rate": "162008276",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "10693",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "format": {
+        "filename": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/Video_20260911_XUEZHANG1.avi",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "avi",
+        "format_long_name": "AVI (Audio Video Interleaved)",
+        "start_time": "0.000000",
+        "duration": "59.404962",
+        "size": "1206016000",
+        "bit_rate": "162412830",
+        "probe_score": 100
+      }
+    }
+  },
+  {
+    "case": "data5",
+    "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+    "archive_bytes": 1044665361,
+    "video": {
+      "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+      "member": "data5/Video_20260911_XUEZHANG2.avi",
+      "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/Video_20260911_XUEZHANG2.avi",
+      "bytes": 1064165888,
+      "crc32": 1421901876,
+      "sha256": "3920d5b1fc9799830aa7027fe60b02f93384dae202ab56c8a5b8ed2b93f69a17",
+      "zip_dos_datetime": [
+        2026,
+        9,
+        11,
+        16,
+        40,
+        24
+      ],
+      "extended_unix_mtime_s": 1789116025
+    },
+    "files": [
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+        "member": "data5/20260911_XUEZHANG2/events.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/events.csv",
+        "bytes": 628,
+        "crc32": 3717537233,
+        "sha256": "4f64de3052e2cc30d12971c0550585c4aaf6ee6f69340ef12f089f1c65ffcb8c",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          28
+        ],
+        "extended_unix_mtime_s": 1789116028
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+        "member": "data5/20260911_XUEZHANG2/meta.json",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/meta.json",
+        "bytes": 3980,
+        "crc32": 4043953794,
+        "sha256": "b12457be07829968b4c1ecfa65094471c510c66c32194f4988e97bbce5c1fb2f",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          28
+        ],
+        "extended_unix_mtime_s": 1789116028
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+        "member": "data5/20260911_XUEZHANG2/polar_acc.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/polar_acc.csv",
+        "bytes": 368927,
+        "crc32": 1165434792,
+        "sha256": "14276f14652c2d98e9198e535c941d28fabd0bb23ef99076f35010b4e40df0f4",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          28
+        ],
+        "extended_unix_mtime_s": 1789116028
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+        "member": "data5/20260911_XUEZHANG2/polar_hr.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/polar_hr.csv",
+        "bytes": 4121,
+        "crc32": 3913850337,
+        "sha256": "e8537eec47f655260208fc9f90d218b3430cbbff128b0fac8bfc3f1aa0731867",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          28
+        ],
+        "extended_unix_mtime_s": 1789116028
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+        "member": "data5/20260911_XUEZHANG2/polar_ppg.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/polar_ppg.csv",
+        "bytes": 428703,
+        "crc32": 2720022640,
+        "sha256": "72bb8b0949f5dea6ba6dc4e26d3a2707bfec9210ace0b9e43ace0d746d6da66b",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          28
+        ],
+        "extended_unix_mtime_s": 1789116028
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+        "member": "data5/20260911_XUEZHANG2/quality_summary.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/quality_summary.csv",
+        "bytes": 515,
+        "crc32": 4023422593,
+        "sha256": "197906cd44c88e0974141f2466cc3b2ee8ba3f97647854cf36f09a724d8af19f",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          28
+        ],
+        "extended_unix_mtime_s": 1789116028
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+        "member": "data5/20260911_XUEZHANG2/waveform.png",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/waveform.png",
+        "bytes": 80469,
+        "crc32": 2236290516,
+        "sha256": "3da01ccedfd723e60d87a14a30f5824efdc36e1eafb8e49cfc51e435f8aff88a",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          28
+        ],
+        "extended_unix_mtime_s": 1789116028
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data5.zip",
+        "member": "data5/Video_20260911_XUEZHANG2.avi",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/Video_20260911_XUEZHANG2.avi",
+        "bytes": 1064165888,
+        "crc32": 1421901876,
+        "sha256": "3920d5b1fc9799830aa7027fe60b02f93384dae202ab56c8a5b8ed2b93f69a17",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          24
+        ],
+        "extended_unix_mtime_s": 1789116025
+      }
+    ],
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mjpeg",
+          "codec_long_name": "Motion JPEG",
+          "profile": "Baseline",
+          "codec_type": "video",
+          "codec_tag_string": "MJPG",
+          "codec_tag": "0x47504a4d",
+          "width": 3840,
+          "height": 2160,
+          "coded_width": 3840,
+          "coded_height": 2160,
+          "closed_captions": 0,
+          "has_b_frames": 0,
+          "pix_fmt": "yuvj422p",
+          "level": -99,
+          "color_range": "pc",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "refs": 1,
+          "r_frame_rate": "10000000/333333",
+          "avg_frame_rate": "10000000/333333",
+          "time_base": "333333/10000000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1866,
+          "duration": "62.199938",
+          "bit_rate": "136866752",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1866",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "format": {
+        "filename": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/Video_20260911_XUEZHANG2.avi",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "avi",
+        "format_long_name": "AVI (Audio Video Interleaved)",
+        "start_time": "0.000000",
+        "duration": "62.199938",
+        "size": "1064165888",
+        "bit_rate": "136870347",
+        "probe_score": 100
+      }
+    }
+  },
+  {
+    "case": "data6",
+    "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+    "archive_bytes": 1245376019,
+    "video": {
+      "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+      "member": "data6/Video_20260911_YJC_4.avi",
+      "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/Video_20260911_YJC_4.avi",
+      "bytes": 1267192320,
+      "crc32": 3181909315,
+      "sha256": "78208661610ca27e1de7ade6e8e079411e120df0248c87c066250df3f25c7ea6",
+      "zip_dos_datetime": [
+        2026,
+        9,
+        11,
+        16,
+        46,
+        38
+      ],
+      "extended_unix_mtime_s": 1789116398
+    },
+    "files": [
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+        "member": "data6/20260911_YJC_4/events.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/20260911_YJC_4/events.csv",
+        "bytes": 628,
+        "crc32": 2734990051,
+        "sha256": "bc3e7888170c260816a0e7f4419548d5f31c8456ba6d483d943f93c64160460c",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          40
+        ],
+        "extended_unix_mtime_s": 1789116401
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+        "member": "data6/20260911_YJC_4/meta.json",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/20260911_YJC_4/meta.json",
+        "bytes": 3961,
+        "crc32": 4180019539,
+        "sha256": "bb1fb0588f4c495904a175818487b26fe6ff7bb7b12be8602311af2058c0a56f",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          40
+        ],
+        "extended_unix_mtime_s": 1789116401
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+        "member": "data6/20260911_YJC_4/polar_acc.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/20260911_YJC_4/polar_acc.csv",
+        "bytes": 416701,
+        "crc32": 4267261132,
+        "sha256": "7bbc263205107bb52e22157644ca8773115c97a87fd6ac554a4180052b09f6af",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          40
+        ],
+        "extended_unix_mtime_s": 1789116401
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+        "member": "data6/20260911_YJC_4/polar_hr.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/20260911_YJC_4/polar_hr.csv",
+        "bytes": 4696,
+        "crc32": 2638823308,
+        "sha256": "a13a9d0f38d7e476588e7595a10674bc88fe974d12f53bc0bf343772b13a0223",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          40
+        ],
+        "extended_unix_mtime_s": 1789116401
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+        "member": "data6/20260911_YJC_4/polar_ppg.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/20260911_YJC_4/polar_ppg.csv",
+        "bytes": 503317,
+        "crc32": 2909225773,
+        "sha256": "e25d71ddffb48854a6a663529b3abf0a2ae2c74489f5e4a2e0a6a6dede0faf30",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          40
+        ],
+        "extended_unix_mtime_s": 1789116401
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+        "member": "data6/20260911_YJC_4/quality_summary.csv",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/20260911_YJC_4/quality_summary.csv",
+        "bytes": 513,
+        "crc32": 2981087858,
+        "sha256": "dbee033420eb015eed8f27dbf1e984c2425cdbd81404e39b785ce0e1b8ff4f7c",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          40
+        ],
+        "extended_unix_mtime_s": 1789116401
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+        "member": "data6/20260911_YJC_4/waveform.png",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/20260911_YJC_4/waveform.png",
+        "bytes": 70678,
+        "crc32": 1391868044,
+        "sha256": "32f6284fb50c9f791438eb99b6dc364c18f93519553bf5cf45fe657879fcd2ff",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          40
+        ],
+        "extended_unix_mtime_s": 1789116401
+      },
+      {
+        "archive": "/mnt/c/Users/15011/Desktop/视频/data6.zip",
+        "member": "data6/Video_20260911_YJC_4.avi",
+        "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/Video_20260911_YJC_4.avi",
+        "bytes": 1267192320,
+        "crc32": 3181909315,
+        "sha256": "78208661610ca27e1de7ade6e8e079411e120df0248c87c066250df3f25c7ea6",
+        "zip_dos_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          38
+        ],
+        "extended_unix_mtime_s": 1789116398
+      }
+    ],
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "mjpeg",
+          "codec_long_name": "Motion JPEG",
+          "profile": "Baseline",
+          "codec_type": "video",
+          "codec_tag_string": "MJPG",
+          "codec_tag": "0x47504a4d",
+          "width": 3840,
+          "height": 2160,
+          "coded_width": 3840,
+          "coded_height": 2160,
+          "closed_captions": 0,
+          "has_b_frames": 0,
+          "pix_fmt": "yuvj422p",
+          "level": -99,
+          "color_range": "pc",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "refs": 1,
+          "r_frame_rate": "10000000/333333",
+          "avg_frame_rate": "10000000/333333",
+          "time_base": "333333/10000000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 2148,
+          "duration": "71.599928",
+          "bit_rate": "141576263",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "2148",
+          "disposition": {
+            "default": 0,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0
+          }
+        }
+      ],
+      "format": {
+        "filename": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/Video_20260911_YJC_4.avi",
+        "nb_streams": 1,
+        "nb_programs": 0,
+        "format_name": "avi",
+        "format_long_name": "AVI (Audio Video Interleaved)",
+        "start_time": "0.000000",
+        "duration": "71.599928",
+        "size": "1267192320",
+        "bit_rate": "141585876",
+        "probe_score": 100
+      }
+    }
+  }
+]

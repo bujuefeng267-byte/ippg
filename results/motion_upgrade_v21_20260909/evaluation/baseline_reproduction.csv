@@ -1,0 +1,11 @@
+﻿case,method,max_abs_difference_time_s,max_abs_difference_spectral_peak_bpm,max_abs_difference_ridge_bpm,Nplanned,accepted_and_status_equal,numeric_atol,all_prediction_numbers_exact,max_abs_difference_waveform,waveform_numerically_equal_at_1e_minus9
+user0904,pos,0.0,0.0,0.0,39,True,1e-09,True,1.0902390101819037e-13,True
+user0904,chrom,0.0,0.0,0.0,39,True,1e-09,True,1.9978463328129692e-13,True
+user0907,pos,0.0,0.0,0.0,42,True,1e-09,True,2.7422508708241367e-14,True
+user0907,chrom,0.0,0.0,0.0,42,True,1e-09,True,4.574118861455645e-14,True
+ubfc,pos,0.0,0.0,0.0,44,True,1e-09,True,7.188694084447889e-14,True
+ubfc,chrom,0.0,0.0,0.0,44,True,1e-09,True,1.3522516439934407e-13,True
+kaggle_full,pos,0.0,0.0,0.0,419,True,1e-09,True,1.4277468096679513e-13,True
+kaggle_full,chrom,0.0,0.0,0.0,419,True,1e-09,True,2.667865928174251e-13,True
+synthetic72,pos,0.0,0.0,0.0,11,True,1e-09,True,1.942890293094024e-14,True
+synthetic72,chrom,0.0,0.0,0.0,11,True,1e-09,True,1.0880185641326534e-14,True

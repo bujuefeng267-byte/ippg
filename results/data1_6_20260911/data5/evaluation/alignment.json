@@ -1,0 +1,30 @@
+{
+  "case": "data5",
+  "video_start_utc_ns": 1789115962800062200,
+  "video_start_beijing_estimate": "2026-09-11T16:39:22.800062+08:00",
+  "archived_video_end_utc_s": 1789116025,
+  "decoded_frames": 1866,
+  "fps": 30.00003000003,
+  "duration_s": 62.199937799999994,
+  "method": "Original ZIP extended Unix mtime minus decoded duration; no predicted HR used.",
+  "sync_status": "estimated_from_archived_mtime_not_hardware_synchronized",
+  "assumption": "mtime approximates recording end; flush latency and clock differences unknown.",
+  "primary_shift_s": 0,
+  "sensitivity_shifts_s": [
+    -5,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    5
+  ],
+  "shift_interpretation": "Positive shift moves video later on reference clock; not confidence limits or offset optimization.",
+  "reference_path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/polar_hr.csv",
+  "reference_sha256": "e8537eec47f655260208fc9f90d218b3430cbbff128b0fac8bfc3f1aa0731867",
+  "reference_time": "host_utc_ns",
+  "reference_value": "hr_bpm",
+  "aggregation": "Arithmetic mean of finite positive notifications in each half-open video window.",
+  "quality_rule": "Window within reference recording, >=2 notifications, <=2s gap including window edges.",
+  "original_video_sha256": "3920d5b1fc9799830aa7027fe60b02f93384dae202ab56c8a5b8ed2b93f69a17"
+}

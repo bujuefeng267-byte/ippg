@@ -1,0 +1,227 @@
+{
+  "created_utc": "2026-09-12T04:39:45.637031+00:00",
+  "passed": true,
+  "errors": [],
+  "comparisons": 218,
+  "maximum_absolute_difference": 1.4210854715202004e-14,
+  "comparison_scope": [
+    "Both profiles: data6 native 6s and strict common 10s MAE/P5/R5/coverage.",
+    "Both profiles: data6 newly covered common 10s accuracy and common-output accuracy.",
+    "Both profiles: data6/V28 waveform durations, coverage, first finite point and longest missing gap.",
+    "Both profiles: data6 native/common10/V28 first accepted HR center/start/end.",
+    "Both profiles: all six common10 case metrics and pooled metrics (309 original planned windows).",
+    "References recomputed directly from original Polar int64 timestamps and unchanged alignment; no evaluator/model imports, no offset search."
+  ],
+  "results": {
+    "short6": {
+      "data6": {
+        "common10s": {
+          "Nplanned": 62,
+          "Noutput": 38,
+          "Nref": 62,
+          "Nvalid": 38,
+          "Nwithin5": 0,
+          "MAE_bpm": 22.626315789473683,
+          "RMSE_bpm": 23.582654196408185,
+          "P5_valid_pct": 0.0,
+          "R5_all_reference_pct": 0.0,
+          "hr_output_coverage_pct": 61.29032258064516
+        },
+        "newly_covered_common10s": {
+          "Nplanned": 2,
+          "Noutput": 2,
+          "Nref": 2,
+          "Nvalid": 2,
+          "Nwithin5": 0,
+          "MAE_bpm": 29.85000000000001,
+          "RMSE_bpm": 30.179877402004145,
+          "P5_valid_pct": 0.0,
+          "R5_all_reference_pct": 0.0,
+          "hr_output_coverage_pct": 100.0
+        },
+        "native6s": {
+          "Nplanned": 66,
+          "Noutput": 46,
+          "Nref": 66,
+          "Nvalid": 46,
+          "Nwithin5": 0,
+          "MAE_bpm": 24.18478260869565,
+          "RMSE_bpm": 25.802541255963536,
+          "P5_valid_pct": 0.0,
+          "R5_all_reference_pct": 0.0,
+          "hr_output_coverage_pct": 69.6969696969697
+        },
+        "waveform": {
+          "total_duration_s": 71.5999284,
+          "finite_frames": 1680,
+          "finite_duration_s": 55.999944,
+          "waveform_coverage_pct": 78.2122905027933,
+          "first_finite_time_s": 8.999991,
+          "missing_duration_s": 15.599984399999999,
+          "longest_missing_s": 8.999991
+        },
+        "V28_waveform": {
+          "total_duration_s": 71.5999284,
+          "finite_frames": 1620,
+          "finite_duration_s": 53.999945999999994,
+          "waveform_coverage_pct": 75.41899441340783,
+          "first_finite_time_s": 8.999991,
+          "missing_duration_s": 17.5999824,
+          "longest_missing_s": 8.999991
+        },
+        "native6s_hr": {
+          "first_accepted_center_s": 11.999988,
+          "first_accepted_window_start_s": 8.999991,
+          "first_accepted_window_end_s": 14.999985
+        },
+        "common10s_hr": {
+          "first_accepted_center_s": 13.999986,
+          "first_accepted_window_start_s": 8.999991,
+          "first_accepted_window_end_s": 18.999981
+        },
+        "V28_hr": {
+          "first_accepted_center_s": 13.999986,
+          "first_accepted_window_start_s": 8.999991,
+          "first_accepted_window_end_s": 18.999981
+        }
+      },
+      "all_six_common10s_pooled": {
+        "Nplanned": 309,
+        "Noutput": 258,
+        "Nref": 309,
+        "Nvalid": 258,
+        "Nwithin5": 92,
+        "MAE_bpm": 19.276356589147287,
+        "RMSE_bpm": 26.852699689605792,
+        "P5_valid_pct": 35.65891472868217,
+        "R5_all_reference_pct": 29.77346278317152,
+        "hr_output_coverage_pct": 83.49514563106796
+      }
+    },
+    "short6_relaxed": {
+      "data6": {
+        "common10s": {
+          "Nplanned": 62,
+          "Noutput": 38,
+          "Nref": 62,
+          "Nvalid": 38,
+          "Nwithin5": 0,
+          "MAE_bpm": 22.91578947368421,
+          "RMSE_bpm": 23.868047348087075,
+          "P5_valid_pct": 0.0,
+          "R5_all_reference_pct": 0.0,
+          "hr_output_coverage_pct": 61.29032258064516
+        },
+        "newly_covered_common10s": {
+          "Nplanned": 2,
+          "Noutput": 2,
+          "Nref": 2,
+          "Nvalid": 2,
+          "Nwithin5": 0,
+          "MAE_bpm": 29.85000000000001,
+          "RMSE_bpm": 30.179877402004145,
+          "P5_valid_pct": 0.0,
+          "R5_all_reference_pct": 0.0,
+          "hr_output_coverage_pct": 100.0
+        },
+        "native6s": {
+          "Nplanned": 66,
+          "Noutput": 46,
+          "Nref": 66,
+          "Nvalid": 46,
+          "Nwithin5": 0,
+          "MAE_bpm": 25.192028985507246,
+          "RMSE_bpm": 27.92853414205034,
+          "P5_valid_pct": 0.0,
+          "R5_all_reference_pct": 0.0,
+          "hr_output_coverage_pct": 69.6969696969697
+        },
+        "waveform": {
+          "total_duration_s": 71.5999284,
+          "finite_frames": 1680,
+          "finite_duration_s": 55.999944,
+          "waveform_coverage_pct": 78.2122905027933,
+          "first_finite_time_s": 8.999991,
+          "missing_duration_s": 15.599984399999999,
+          "longest_missing_s": 8.999991
+        },
+        "V28_waveform": {
+          "total_duration_s": 71.5999284,
+          "finite_frames": 1620,
+          "finite_duration_s": 53.999945999999994,
+          "waveform_coverage_pct": 75.41899441340783,
+          "first_finite_time_s": 8.999991,
+          "missing_duration_s": 17.5999824,
+          "longest_missing_s": 8.999991
+        },
+        "native6s_hr": {
+          "first_accepted_center_s": 11.999988,
+          "first_accepted_window_start_s": 8.999991,
+          "first_accepted_window_end_s": 14.999985
+        },
+        "common10s_hr": {
+          "first_accepted_center_s": 13.999986,
+          "first_accepted_window_start_s": 8.999991,
+          "first_accepted_window_end_s": 18.999981
+        },
+        "V28_hr": {
+          "first_accepted_center_s": 13.999986,
+          "first_accepted_window_start_s": 8.999991,
+          "first_accepted_window_end_s": 18.999981
+        }
+      },
+      "all_six_common10s_pooled": {
+        "Nplanned": 309,
+        "Noutput": 260,
+        "Nref": 309,
+        "Nvalid": 260,
+        "Nwithin5": 91,
+        "MAE_bpm": 19.345,
+        "RMSE_bpm": 26.8436419918128,
+        "P5_valid_pct": 35.0,
+        "R5_all_reference_pct": 29.449838187702266,
+        "hr_output_coverage_pct": 84.14239482200647
+      }
+    }
+  },
+  "source_hashes": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/evaluation_summary.json": "87734af2fd488b4166bcadddf2ef76450fdaadd7d2da58c6ad16c3cc86980a53",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v29/qa_metrics_v29.py": "937aeab0ae90a7abb60d712ce20f32c70f89394d0caf916661f1f4cef672eaf2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6/data1/heart_rate_10s.csv": "051ec154088fdeb8c84e2b6e740c17846b6aa9789c1c9878c8fd22c61f265b62",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data1/heart_rate.csv": "492d3e447ee21008065105fd696e54b60e12da1bbe8a8b9e81129f7d91877b0a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/evaluation/alignment.json": "d907850ce5cf94245b0ac07f92956651566d05b8e0a481524eeac5cdca016424",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/20260909_YJC_2_unpacked/20260909_YJC_2/polar_hr.csv": "ecdd31359f0285ebb0d91834d85fc9faeaf0c1bea9e75a331b3a64bcc2f5daa6",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6/data2/heart_rate_10s.csv": "e92004364e2f2192d7862db7b91a9ebad4fd8625e53bb19b9416f58e6bf7ff35",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data2/heart_rate.csv": "c8981a22babfb87c3da58dc2d8afd94b0bba5da29d52b599b24ec9d124a85187",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/evaluation/alignment.json": "8b3dfb1cd27aac2e459c65c2b3d4c13f1c73fa8ca6fa0addb66f4163d3f1f4d6",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/20260911_CHP_1/polar_hr.csv": "4503fde6587c0236c060af91dea3d4d69ddd715aac872f5af74b4a0f23b22665",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6/data3/heart_rate_10s.csv": "e35ea24296ad1b635c0dab52f997d7e0c6dc83497877285f2c43a8731ebd7ac8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data3/heart_rate.csv": "cdcb4292d5a2cb0af127c600a66a5fbba91c70dadf00fda0062207a5abe8ff1d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/evaluation/alignment.json": "b85cec37468ddcc58129122392e24c31937bf01abdc569697061ce23b0a25079",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/20260911_YJC_3/polar_hr.csv": "0c1855930b1bb3920184bdcbfc1508c7ccd8332c6abb68effc24685c73d10fee",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6/data4/heart_rate_10s.csv": "71d0fe1e5d3b4e53eb1397c12031cab725567cfb15b64e22b4383f79aeeaa309",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data4/heart_rate.csv": "4cbd019af77e66f9a653145286dbcf9cf141c0a74b81929d71e98fc46e3bdcba",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/evaluation/alignment.json": "bbd15449740e4ccb673790e54aaa7410c5dd1218511df149c7e45dc4ff47095f",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/polar_hr.csv": "e01a81c9b64133c8ad705b16ffcf545c6f55e5c821f469123868f9415fbdd7f0",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6/data5/heart_rate_10s.csv": "080614d50e0b56d2dc28e6e28838cf9232f4bb75af2c4d4c1c9a4642d585de0a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data5/heart_rate.csv": "9818872ff0140b67e9a9fb8d32202cee3a6bab0fdd76f5c8e4dd92802ed551be",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/evaluation/alignment.json": "302900b2a48e725e4378cd0f9d62268ad49fd191c9270b06a38825b0c49ef2a5",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/20260911_XUEZHANG2/polar_hr.csv": "e8537eec47f655260208fc9f90d218b3430cbbff128b0fac8bfc3f1aa0731867",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6/data6/heart_rate_10s.csv": "94a97a171e3249eef3dec7a2be4d02443679efb87e37588a26563cc3fe5bcff1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data6/heart_rate.csv": "2c4054e57b5d03560cf4cc51aa8b9d69a9023eb0d84e0648942be4b26297d964",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/evaluation/alignment.json": "1a4c292a598a785bd86ecec8e573c81643cc44dec42ce727455f778be7b0e2dd",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/20260911_YJC_4/polar_hr.csv": "a13a9d0f38d7e476588e7595a10674bc88fe974d12f53bc0bf343772b13a0223",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6/data6/heart_rate.csv": "68b5dd68d9c2b5ef9d1cc8ffbc4403396eb471544cf104af3b7f93d4ab2e026d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6/data6/waveform.csv": "82676b9517924c289a71d9b8a96d72fee33f1f1bfc3d9d16910e2cd095905190",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data6/waveform.csv": "6729f7ad7a79512691e53661cae883458ffdfae0b11edcbf50c7de35c5f899e8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/summary.json": "5469bd35ab447e76f8af889a1d27490f65c1e9dedde19a87bfd287200a57a8ea",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6_relaxed/data1/heart_rate_10s.csv": "b76b7fb18751f616ea654c310595bdeb42e555eb49a1e5dde46a9e1859960eb3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6_relaxed/data2/heart_rate_10s.csv": "0ed23bce47daaa15feb35aba4d15744b6f38234074e2f4d9ae09cc9560b9d8b6",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6_relaxed/data3/heart_rate_10s.csv": "6ac828bbf5c86fc3b21c35bc169babb651a6856768ea7f4e388029909f74f737",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6_relaxed/data4/heart_rate_10s.csv": "da99a1e005e798f48f36a3dafacd771a2d60ab174593683f353b18f257bd6cdb",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6_relaxed/data5/heart_rate_10s.csv": "d71ffc0fab3aaa6e2048682d059b9af3c7c3f86dc453352f3ab17f46425dea96",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6_relaxed/data6/heart_rate_10s.csv": "d1686f0662607daebd1538cc6b167e2267ffc6bf37f274b14890d4b3d606da25",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6_relaxed/data6/heart_rate.csv": "6aa4017f651318d63038472f7a167a432b5cf1d4dc93ff8df71ca487f9c9c1c8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/short6_relaxed/data6/waveform.csv": "ec46865363e7041a131e717b7130b59dc627df40bb9150d7170bc0f4459d376b"
+  }
+}

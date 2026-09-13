@@ -1,0 +1,63 @@
+{
+  "frozen_utc": "2026-09-10T10:08:18.244215+00:00",
+  "freeze_stage": "Before first V24 candidate accuracy scoring; after parameter/source/measurement freeze and reference-free inference",
+  "evaluator_sha256": "528c5d6584ae147a7db6adab9b906db82c1c90d1acdffdee24e9c9579b528d2b",
+  "evaluation_protocol_sha256": "0600d5ea430b69dcf54c5513e8d94a111336311b8e0afcf9eb6d3959fbedb2c1",
+  "frozen_v22_evaluator_sha256": "691a6c594c926892fab94fe69e197a391f39d27b22b3b28eaf972bc7aa7f733e",
+  "v23_compatibility_criteria_sha256": "234b52a58868329105992236f7affdae24d0c745b3f21f4b62d7ba79c0ab8a68",
+  "source_hashes": {
+    "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+  },
+  "new_candidate_accuracy_scored_before_freeze": false,
+  "baseline_reproduction": {
+    "path": "rppg_motion_v24\\evaluation_baseline_precheck_final\\summary.json",
+    "sha256": "3c679bf5fe98e9be3073944682e900e4d1116a3a9775c4cdd322c5e9c53c004d",
+    "baseline_metrics_reproduced": true,
+    "baseline_SNR_reproduced": true
+  },
+  "self_check": {
+    "passed": true,
+    "checks": [
+      "hand-calculated error and P5/R5 denominators",
+      "zero output versus no reference NA",
+      "run breaks and overlapping support union",
+      "fixed-reference frequency, not algorithm-selected peak"
+    ],
+    "v23_checks": [
+      "HR rejection duration uses explicit decision-grid convention",
+      "added/lost errors preserve full planned reference denominator"
+    ],
+    "v24_checks": [
+      "Equal-capture MAE and mean-MSE-then-root RMSE, not pooled windows",
+      "Missing reference capture never dropped from macro denominator",
+      "Integer frame-ratio UTC centers and shift sign",
+      "Gate permits unchanged zero-error synthetic but requires real macro gains",
+      "Local-peak noninferiority guards reject regression despite primary gains"
+    ]
+  },
+  "nonreference_contract_precheck": {
+    "path": "rppg_motion_v24\\evaluation_contract_precheck.json",
+    "sha256": "90bb47b1965348b5c1a53e17db292e950327e4cc2a7387aaa67a17e1de1b8255",
+    "cases": 6,
+    "modes": 4,
+    "routing_windows": 1194,
+    "reference_read": false,
+    "note": "Provenance/source/branch contracts checked under pre-freeze adapter; final edits only bound the independent receipts and this freeze guard."
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  },
+  "note": "No inference source, parameter, reference alignment or measurement gate changed while finishing the evaluator. Main gate and V23 compatibility reported separately; execution success is not performance success."
+}

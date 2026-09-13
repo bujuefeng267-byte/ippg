@@ -1,0 +1,13 @@
+{
+  "input_video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+  "method": "POS",
+  "fps": 30.00003000003,
+  "frames": 1557,
+  "duration_s": 51.899948099999996,
+  "face_detection_rate": 0.6730892742453436,
+  "median_bpm": 108.10557685557687,
+  "mean_bpm": 112.20714345714347,
+  "bpm_std": 29.12396063361848,
+  "median_snr_db": -4.274184253696971,
+  "warning": "Camera-derived rPPG is an estimate, not contact-PPG ground truth."
+}

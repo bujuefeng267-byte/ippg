@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "launcher": "/home/fengbujue/项目/rppg识别/run_paper_replay.sh",
+  "launcher_sha256": "7376f2edcfb5508fa14075e378f32cd8e4c3a4860f488789a854b470b7d5f86c",
+  "bash_syntax_passed": true,
+  "help_passed": true,
+  "prepare_only_passed": true,
+  "prepare_output": "{\"prepared\": \"/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_paper_replay_entrycheck_20260909\", \"method\": \"both\", \"files_verified\": 33, \"inference_started\": false}\nPrepare-only completed. Use a NEW name for a full replay; existing names are never resumed.\n",
+  "models_rerun": false,
+  "existing_defaults_changed": false,
+  "post_license_update_help_passed": true,
+  "current_source_plan_verified": true,
+  "current_snapshot_file_count": 35,
+  "current_wrapper_sha256": "f1a15ff1eb80424c88b1c45c6a2324551e39cfdd1adccd245b2e52d0f24053ab",
+  "prepare_only_snapshot_note": "Original 33-file smoke snapshot precedes addition of two license files; final 35-file plan hashes and installed help rechecked without additional inference."
+}

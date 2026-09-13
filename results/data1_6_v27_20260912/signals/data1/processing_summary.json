@@ -1,0 +1,23 @@
+{
+  "case": "data1",
+  "elapsed_s": 13.239519322999968,
+  "patch_availability": {
+    "mean_patch_observed_pct": 89.05680600214362,
+    "at_least_two_regions_observed_pct": 97.36334405144694,
+    "face_detection_pct": 90.16077170418006,
+    "per_patch_observed_pct": {
+      "forehead_0": 97.36334405144694,
+      "forehead_1": 97.36334405144694,
+      "forehead_2": 97.36334405144694,
+      "forehead_3": 97.36334405144694,
+      "left_cheek_0": 97.36334405144694,
+      "left_cheek_1": 84.11575562700965,
+      "left_cheek_2": 97.10610932475883,
+      "left_cheek_3": 97.36334405144694,
+      "right_cheek_0": 97.36334405144694,
+      "right_cheek_1": 97.36334405144694,
+      "right_cheek_2": 97.36334405144694,
+      "right_cheek_3": 11.189710610932476
+    }
+  }
+}

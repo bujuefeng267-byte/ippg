@@ -1,0 +1,7 @@
+{
+  "checked_accepted_candidate_sets": 260,
+  "matched": true,
+  "errors": [],
+  "all_original_input_hashes_unchanged": true,
+  "limits": "Candidate equality verifies diagnostic arithmetic only. It does not validate physiological truth or achieve the oracle."
+}

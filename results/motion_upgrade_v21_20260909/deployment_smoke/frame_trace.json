@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "video": "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/self_test_72bpm.mp4",
+    "size": 3140871,
+    "mtime_ns": 1788402445618247234,
+    "max_seconds": null,
+    "frontend_hashes": {
+      "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+      "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+    }
+  },
+  "fps": 30.0,
+  "n_frames": 600,
+  "trace_sha256": "ec1933755360382c21c3d529e7c205e3669f301933f8623116faa15f27a89da4"
+}

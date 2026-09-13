@@ -1,0 +1,12 @@
+time_s,observed_fraction,interpolated_fraction,spectral_peak_bpm,peak_concentration,accepted,status,ridge_bpm,raw_spectral_peak_bpm,hr_source
+5.0,0.84,0.0,,,False,gap_or_filter_edge,,,saved_rhythm_waveform_offline
+6.0,0.94,0.0,,,False,gap_or_filter_edge,,,saved_rhythm_waveform_offline
+7.0,1.0,0.0,72.0,0.834733483848382,True,candidate_only,72.0,72.0,saved_rhythm_waveform_offline
+8.0,1.0,0.0,72.0,0.8460267074146653,True,candidate_only,72.0,72.0,saved_rhythm_waveform_offline
+9.0,1.0,0.0,71.0,0.8757842566930646,True,candidate_only,72.0,71.0,saved_rhythm_waveform_offline
+10.0,0.94,0.0,,,False,gap_or_filter_edge,,,saved_rhythm_waveform_offline
+11.0,0.84,0.0,,,False,gap_or_filter_edge,,,saved_rhythm_waveform_offline
+12.0,0.74,0.0,,,False,gap_or_filter_edge,,,saved_rhythm_waveform_offline
+13.0,0.64,0.0,,,False,gap_or_filter_edge,,,saved_rhythm_waveform_offline
+14.0,0.54,0.0,,,False,gap_or_filter_edge,,,saved_rhythm_waveform_offline
+15.0,0.44,0.0,,,False,gap_or_filter_edge,,,saved_rhythm_waveform_offline

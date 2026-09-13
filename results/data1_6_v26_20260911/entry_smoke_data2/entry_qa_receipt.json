@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "reference_used": false,
+  "roi_reconstruction_tolerance": 1e-08,
+  "scope": "one data2 cache smoke; fresh no-face synthetic CLI tested separately",
+  "files": {
+    "waveform.csv": {
+      "rows": 1393,
+      "max_abs_difference": {
+        "time_s": 0.0,
+        "base": 0.0853141485823317
+      },
+      "exact_columns": [
+        "time_s",
+        "covered",
+        "observed",
+        "interpolated"
+      ],
+      "structured_json_max_difference": {},
+      "a_sha256": "3cd3e19511a584a59ebd20a91fc59ffde0d171ae99c03155152f76c0a918be05",
+      "b_sha256": "c548dbdc8d9cd8fa6dd261ce95f2bc9ac1b9c30d862bbf87c26e5d30e9a4626e"
+    },
+    "heart_rate.csv": {
+      "rows": 37,
+      "max_abs_difference": {
+        "time_s": 0.0,
+        "observed_fraction": 0.0,
+        "interpolated_fraction": 0.0,
+        "spectral_peak_bpm": 0.0,
+        "peak_concentration": 0.013937833717145298,
+        "ridge_bpm": 0.0,
+        "legacy_ridge_bpm": 0.0,
+        "evidence_local_bpm": 0.0,
+        "evidence_score": 0.008394193965121977,
+        "evidence_runner_up_margin": 2.5646151868841116e-14,
+        "evidence_selected_relative_power": 0.0022809998461098546,
+        "evidence_selected_peak_bpm": 0.0,
+        "evidence_selected_periodic_support": 0.007637693631471154,
+        "evidence_selected_motion_overlap": 0.0,
+        "evidence_candidate_count": 0.0,
+        "raw_spectral_peak_bpm": 0.0,
+        "window_start_s": 0.0,
+        "window_end_s": 0.0,
+        "component_proposal_bpm": 1.0
+      },
+      "exact_columns": [
+        "time_s",
+        "observed_fraction",
+        "interpolated_fraction",
+        "spectral_peak_bpm",
+        "accepted",
+        "status",
+        "ridge_bpm",
+        "legacy_ridge_bpm",
+        "evidence_local_bpm",
+        "evidence_selected_peak_bpm",
+        "evidence_selected_motion_overlap",
+        "evidence_candidate_count",
+        "evidence_reacquired",
+        "evidence_tracker_state",
+        "evidence_motion_available",
+        "raw_spectral_peak_bpm",
+        "window_start_s",
+        "window_end_s",
+        "hr_source"
+      ],
+      "structured_json_max_difference": {
+        "evidence_candidates_json": 0.03129153926954431
+      },
+      "a_sha256": "8ab4251f77f195b7201d82fac7749aae8a0312fff1e33cb780d8dcc2027ae715",
+      "b_sha256": "0081526cdae7b6adfd117454f64e0032b679aaee7ca20ec1a2a5d18b0c767f74"
+    },
+    "component_proposals.csv": {
+      "rows": 37,
+      "max_abs_difference": {
+        "window_index": 0.0,
+        "time_s": 0.0,
+        "proposal_bpm": 1.0,
+        "contributing_rois": 0.0,
+        "score": 0.02500000000001068
+      },
+      "exact_columns": [
+        "window_index",
+        "time_s",
+        "proposal_supported",
+        "reacquired",
+        "generated",
+        "contributing_rois",
+        "channels"
+      ],
+      "structured_json_max_difference": {},
+      "a_sha256": "793c1ccc9812cfdbdc914fcf186b2198a5c839f4e58e5d71d0ff9cf8c895d70c",
+      "b_sha256": "a0283d9b0af03e6869db8f8f1bcc5c081f14a0cdef3edd04b091ccef698aca31"
+    },
+    "baseline_roi_waveforms.csv": {
+      "rows": 1393,
+      "max_abs_difference": {
+        "time_s": 0.0,
+        "forehead_pos": 9.420242363944453e-14,
+        "forehead_chrom": 1.0177969578251123e-13,
+        "left_cheek_pos": 1.3217205108162489e-13,
+        "left_cheek_chrom": 1.6653345369377348e-13,
+        "right_cheek_pos": 1.7799650642302822e-13,
+        "right_cheek_chrom": 1.4566126083082054e-13
+      },
+      "exact_columns": [
+        "time_s",
+        "forehead_observed",
+        "forehead_interpolated",
+        "left_cheek_observed",
+        "left_cheek_interpolated",
+        "right_cheek_observed",
+        "right_cheek_interpolated"
+      ],
+      "structured_json_max_difference": {},
+      "a_sha256": "62c875f96ab6249fa78e75bc5ceb2288cc66f5ba2451d0d824b9aeb6dd4453f5",
+      "b_sha256": "8ea243b293e90c56a0608efe508750348a0b2395ea34d2e2f1d44fec593ff33d"
+    },
+    "roi_waveforms.csv": {
+      "rows": 1393,
+      "max_abs_difference": {
+        "time_s": 0.0,
+        "forehead_pos": 5.206945985491984e-14,
+        "forehead_chrom": 5.10702591327572e-14,
+        "left_cheek_pos": 7.926992395823618e-14,
+        "left_cheek_chrom": 6.217248937900877e-14,
+        "right_cheek_pos": 1.533911886397732e-13,
+        "right_cheek_chrom": 1.0141887329950805e-13
+      },
+      "exact_columns": [
+        "time_s",
+        "forehead_observed",
+        "forehead_interpolated",
+        "left_cheek_observed",
+        "left_cheek_interpolated",
+        "right_cheek_observed",
+        "right_cheek_interpolated"
+      ],
+      "structured_json_max_difference": {},
+      "a_sha256": "0c5c8634ba574cd725d035dc90868957792f6fef1b142e6d1fc6048feb3d3724",
+      "b_sha256": "148cc780c9c45f7d3a8676e157cecde1e44668bc536af415da210017ebc1d92e"
+    }
+  },
+  "all_candidates_max_abs_difference": 1.4077627952246985e-13,
+  "trace_bytes_exact": true,
+  "waveform_relative_rmse": 0.026250438095812508,
+  "waveform_equal_within_1e_8": false,
+  "proposal_differences": [
+    {
+      "window_index": 3,
+      "new_bpm": 75.0,
+      "historical_bpm": 74.0
+    },
+    {
+      "window_index": 4,
+      "new_bpm": 76.0,
+      "historical_bpm": 75.0
+    }
+  ],
+  "path_comparison_using_new_input_candidates": [
+    {
+      "start_window": 2,
+      "stop_window_exclusive": 35,
+      "own_score": 16.75397058920774,
+      "alternative_score": 16.75397058920774,
+      "difference": 0.0,
+      "equivalent_within_1e_10": true
+    }
+  ],
+  "path_comparison_using_historical_input_candidates": [
+    {
+      "start_window": 2,
+      "stop_window_exclusive": 35,
+      "own_score": 16.753970589207693,
+      "alternative_score": 16.753970589207693,
+      "difference": 0.0,
+      "equivalent_within_1e_10": true
+    }
+  ],
+  "pass_criteria": "Original trace exact; recomputed ROI inputs within 1e-8; all masks/channels exact; final local/DP HR exact. Waveform/proposals are separately quantified, not required exact."
+}

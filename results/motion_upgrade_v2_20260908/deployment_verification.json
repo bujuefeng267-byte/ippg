@@ -1,0 +1,58 @@
+{
+  "installed_manifest_verified": true,
+  "original_entry_unchanged": true,
+  "full_video_smoke": "synthetic72: 600 frames, all branches 7/11 accepted, all accepted HR=72 bpm",
+  "tolerance": {
+    "rtol": 1e-12,
+    "atol": 1e-09
+  },
+  "checks": [
+    {
+      "file": "frame_trace.csv",
+      "rows": 600,
+      "match": true
+    },
+    {
+      "file": "roi_waveforms.csv",
+      "rows": 600,
+      "match": true
+    },
+    {
+      "file": "fusion_diagnostics.csv",
+      "rows": 66,
+      "match": true
+    },
+    {
+      "file": "pos_heart_rate.csv",
+      "rows": 11,
+      "match": true
+    },
+    {
+      "file": "pos_waveform.csv",
+      "rows": 600,
+      "match": true
+    },
+    {
+      "file": "chrom_heart_rate.csv",
+      "rows": 11,
+      "match": true
+    },
+    {
+      "file": "chrom_waveform.csv",
+      "rows": 600,
+      "match": true
+    },
+    {
+      "file": "fusion_heart_rate.csv",
+      "rows": 11,
+      "match": true
+    },
+    {
+      "file": "fusion_waveform.csv",
+      "rows": 600,
+      "match": true
+    }
+  ],
+  "unit_tests_passed": 21,
+  "default_replacement": false
+}

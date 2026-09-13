@@ -1,0 +1,221 @@
+{
+  "repository": "https://github.com/hschn58/rPPG",
+  "commit": "8dd44360d159eccde7f85a5a6542e3b44c621029",
+  "commit_date": "2026-06-15T05:30:54Z",
+  "retrieved_utc": "2026-09-10T07:12:51.979027+00:00",
+  "repository_code_executed": false,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 66,
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+      "git_blob_sha1": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/.gitattributes"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 711,
+      "sha256": "3cee60fce5a2598ed56dbbe8df2e3c367e00b26b2d5a7545ef33b48fb452053d",
+      "git_blob_sha1": "76739e13213d3ee37b20dfa28295b570788c32b4",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/.github/workflows/ci.yml"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 342,
+      "sha256": "9d8227a6adcb28641fababcb6a69ccb4151ffc98b2c11c51dc95c93041c990e4",
+      "git_blob_sha1": "6aafb2696dc1826462a2f32f7c30c511a20392fa",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/.gitignore"
+    },
+    {
+      "path": "Full_Stack/CHROM_method/CHROM_method_improved.ipynb",
+      "bytes": 53670,
+      "sha256": "9afddbb12e5fcaed89ab495abc57b6d2a544bb1497e60c60ad72f09818e4a017",
+      "git_blob_sha1": "164c5fe6fd1e0b522942dace032986e973b59d44",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/CHROM_method/CHROM_method_improved.ipynb"
+    },
+    {
+      "path": "Full_Stack/CHROM_method/CHROM_method_npy_input.py",
+      "bytes": 5602,
+      "sha256": "215d1e3c5f90315f4c1e97f063c63232f253d47569414eb2c960032abd2332ff",
+      "git_blob_sha1": "1c69e4bad0c88c5cffb6fe975e5967d15a45d946",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/CHROM_method/CHROM_method_npy_input.py"
+    },
+    {
+      "path": "Full_Stack/CHROM_method/CHROM_method_npz_input.py",
+      "bytes": 5514,
+      "sha256": "6fd75143390b9ecc497e1fa404fbcbe89d2dd54c1b440be572010a6cae759a3c",
+      "git_blob_sha1": "69e9b47e1fd72fb213a26bfca85c47b618ea5cf6",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/CHROM_method/CHROM_method_npz_input.py"
+    },
+    {
+      "path": "Full_Stack/POS_method/POS_method.py",
+      "bytes": 4674,
+      "sha256": "63a1618c3e8cbde1b0569b47f542be98cdb32ac79b480e8781f10285f4ccaab4",
+      "git_blob_sha1": "e29ea7d203b05042e795ff287c374eb70d3ad87f",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/POS_method/POS_method.py"
+    },
+    {
+      "path": "Full_Stack/Sensor_formation/dynamic_roi.py",
+      "bytes": 15466,
+      "sha256": "a9da7de064665fadf00d1f959c5649b1ba42a3153f68fa71b9edbf167bc6a67f",
+      "git_blob_sha1": "ac50bfaba17643ea8bfde5e6cf57dee698d68cef",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/Sensor_formation/dynamic_roi.py"
+    },
+    {
+      "path": "Full_Stack/Video_get_to_npy/YuNet_and_Template_match/VID_TO_DATA_5_Regions.py",
+      "bytes": 12507,
+      "sha256": "6e3ab18e177060d20f35169e80ae0eb8020d337dbf76e583c510caa9b6a6d4f1",
+      "git_blob_sha1": "9e874cb835ce1b557d1ecbb9a04d4fbfde0f692f",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/Video_get_to_npy/YuNet_and_Template_match/VID_TO_DATA_5_Regions.py"
+    },
+    {
+      "path": "Full_Stack/Video_get_to_npy/YuNet_and_Template_match/VID_TO_DATA_whole_face.py",
+      "bytes": 18169,
+      "sha256": "596353de619bf735a51120f754860c1f74a45c2928e051655de0c17bec18a89b",
+      "git_blob_sha1": "6bc2571e9842e41f10337d68021e2d8726545fec",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/Video_get_to_npy/YuNet_and_Template_match/VID_TO_DATA_whole_face.py"
+    },
+    {
+      "path": "Full_Stack/Video_get_to_npy/YuNet_and_Template_match/params.py",
+      "bytes": 2955,
+      "sha256": "2746c96eec54dea8f05b7db6e317b7aa0723c8db58276bc11c0caa7575113aca",
+      "git_blob_sha1": "cd7c309c424868e3e5042286889ef8e7dd197c90",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/Video_get_to_npy/YuNet_and_Template_match/params.py"
+    },
+    {
+      "path": "Full_Stack/Video_get_to_npy/YuNet_and_Template_match/tests.ipynb",
+      "bytes": 4195,
+      "sha256": "09fe79890875c4682bf713ad1f2bc239a0957f3589da2abe93ab2668692b3cb4",
+      "git_blob_sha1": "546e9bbadd81e3618b48a93a11250bd604ad7800",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/Video_get_to_npy/YuNet_and_Template_match/tests.ipynb"
+    },
+    {
+      "path": "Full_Stack/Video_get_to_npy/basic_to_npy.py",
+      "bytes": 12734,
+      "sha256": "0743e92286a222048bde0fd8bc1da9b211dbed7c2e688cbe3f93d02be55400cf",
+      "git_blob_sha1": "1ed46b7ecf59db2ae9eb74d13346ac735a29d345",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/Video_get_to_npy/basic_to_npy.py"
+    },
+    {
+      "path": "Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/motion_process_5regs.ipynb",
+      "bytes": 24824,
+      "sha256": "7ba7d4563f97e4bcc3f5d13c2baca3f03c9a565ebd4113ec4fcc185e6104a354",
+      "git_blob_sha1": "fd622031dcb99fc75ef7727338581a25e12d61e5",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/motion_process_5regs.ipynb"
+    },
+    {
+      "path": "Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/motion_process_FB.ipynb",
+      "bytes": 58308,
+      "sha256": "514ca979976ff05b6b2e6a715b86d7fac76beffdf1685a337b014e175bde267a",
+      "git_blob_sha1": "8b5c540081deb374eaf0d71f4bcc335215d248c7",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/motion_process_FB.ipynb"
+    },
+    {
+      "path": "Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/motion_process_breakdown_5regs.ipynb",
+      "bytes": 13994,
+      "sha256": "3bb9382f8f9773c21f1fad3f665be8c010259f2d666321ad730c4917950d1e03",
+      "git_blob_sha1": "fa8cc52faa4fb5d67f2da147cdc49128947c6255",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/motion_process_breakdown_5regs.ipynb"
+    },
+    {
+      "path": "Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/motion_process_fb.py",
+      "bytes": 14470,
+      "sha256": "f7213816493548b499de62031f24460b262391010a1caf22f3f83061b648ec9d",
+      "git_blob_sha1": "f3872bba2138c6aeca8ee98a13ceeddc6919d14a",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/motion_process_fb.py"
+    },
+    {
+      "path": "Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/params.py",
+      "bytes": 4465,
+      "sha256": "68db83a3eff18cd8fcbe5be11e0c054c3b8602640a7a329b9b84c487f33384f7",
+      "git_blob_sha1": "ecb4bf529eff1b7acf897288ada9bcaa72e16e80",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/occulsion_processing/YuNet_and_Template_match/params.py"
+    },
+    {
+      "path": "Full_Stack/motion_process/temporal_pixel_matching/forward_backward_pixel_matching_regions.py",
+      "bytes": 7388,
+      "sha256": "da7f3e48c4d66141dba628ff72816580927f0d5be5a1ae33f56bd5a3fe650ea2",
+      "git_blob_sha1": "790094b38bf65acf1a50de5d717daa9020234c4b",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/temporal_pixel_matching/forward_backward_pixel_matching_regions.py"
+    },
+    {
+      "path": "Full_Stack/motion_process/temporal_pixel_matching/forward_backward_pixel_matching_wholeface.py",
+      "bytes": 8465,
+      "sha256": "b937dfe10d91c228080b78aaf5285c1a30a2c0ff47e1aacb03aa122cf42b33b5",
+      "git_blob_sha1": "3c86dc9c72edd22066c457e84915a6330d3709cb",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/temporal_pixel_matching/forward_backward_pixel_matching_wholeface.py"
+    },
+    {
+      "path": "Full_Stack/motion_process/temporal_pixel_matching/params.py",
+      "bytes": 4465,
+      "sha256": "68db83a3eff18cd8fcbe5be11e0c054c3b8602640a7a329b9b84c487f33384f7",
+      "git_blob_sha1": "ecb4bf529eff1b7acf897288ada9bcaa72e16e80",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/temporal_pixel_matching/params.py"
+    },
+    {
+      "path": "Full_Stack/motion_process/temporal_pixel_matching/wholeface_pixels.ipynb",
+      "bytes": 783,
+      "sha256": "e06f201950559717053057bb2d40943ddef65d9108d56e19c1df01b5a7f276b7",
+      "git_blob_sha1": "ae01f59a65e2087cf4e64076419e6217cc15071a",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/temporal_pixel_matching/wholeface_pixels.ipynb"
+    },
+    {
+      "path": "Full_Stack/motion_process/view_frame_brightness.py",
+      "bytes": 1913,
+      "sha256": "c786bac9b880e660e30cc3c6abb49f323ed7354439114f46eb0a87ca9a878c11",
+      "git_blob_sha1": "c02f3ea8d19f5bfaa95f44fd7d48cac7c4d70026",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/motion_process/view_frame_brightness.py"
+    },
+    {
+      "path": "Full_Stack/total_driver.py",
+      "bytes": 11019,
+      "sha256": "6d72b1460decca617244b3c41e5c8334d15068934300f75f150580d8b6f13a1f",
+      "git_blob_sha1": "4c1265fc10770d7339362350a141b1033309cd7e",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/total_driver.py"
+    },
+    {
+      "path": "Full_Stack/total_driver_from_prior_recording.py",
+      "bytes": 9721,
+      "sha256": "fd0e4a70b864242483e6291c3b9d89d6c59a51cb0b62fe048fef4de2526843f2",
+      "git_blob_sha1": "31d41d4e7f6c71d7bccf04c4b95bffcf95bebf54",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/Full_Stack/total_driver_from_prior_recording.py"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "sha256": "3fe08731075e5ae277b4c26c51b8f75a3df699e3358b21429182ddf46ddc56f8",
+      "git_blob_sha1": "5921ca2db3fa0aaa93f136ec7901099a0938d0f6",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5147,
+      "sha256": "9e3fb96a78ee6b5e8c01b9952847855344b9f04ac3d0c80156a60bacce4bb30c",
+      "git_blob_sha1": "971cf35f38c9bf956be26c700123da1bf97acbbc",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/README.md"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 737,
+      "sha256": "12dcf791e5c3e3c5dfe0c9d3e0a086dbf66eb1efe1b1ded844cfed0318d82274",
+      "git_blob_sha1": "3ddf8715950d5d9289362180d2a617e73b4bf3e5",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/requirements.txt"
+    },
+    {
+      "path": "tests/test_signal_utils.py",
+      "bytes": 349,
+      "sha256": "d879f9aa71fbbb71ea2a6a6e0d914cb5a222ef4b6237f91a01f654a930ce013f",
+      "git_blob_sha1": "64a889519a1b3bf779fa67323e63bc009f273233",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/tests/test_signal_utils.py"
+    },
+    {
+      "path": "tests/test_smoke.py",
+      "bytes": 147,
+      "sha256": "c6271c71fa8d7b3a6ed77e92fddbd09782416391a29bf4008a6ae48fd4214e86",
+      "git_blob_sha1": "f5a9451e8dd661b46ff16c4906ea73e70e7fe6ed",
+      "url": "https://raw.githubusercontent.com/hschn58/rPPG/8dd44360d159eccde7f85a5a6542e3b44c621029/tests/test_smoke.py"
+    }
+  ],
+  "scope": "All non-Legacy text sources and notebooks; Legacy paths inventoried only; no repository code executed.",
+  "snapshot_complete": true
+}

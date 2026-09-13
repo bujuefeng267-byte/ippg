@@ -1,0 +1,132 @@
+{
+  "native6s": {
+    "profile": "short6_relaxed",
+    "case": "data5",
+    "window_s": 6,
+    "Nplanned": 57,
+    "Noutput": 53,
+    "Nref": 57,
+    "Nvalid": 53,
+    "Nwithin5": 24,
+    "Nwithin10": 38,
+    "hr_output_coverage_pct": 92.98245614035088,
+    "paired_reference_coverage_pct": 92.98245614035088,
+    "MAE_bpm": 19.31132075471698,
+    "RMSE_bpm": 33.89847185537984,
+    "Bias_bpm": 3.707547169811322,
+    "MAPE_pct": 20.187547969622553,
+    "P5_valid_pct": 45.283018867924525,
+    "P10_valid_pct": 71.69811320754717,
+    "R5_all_reference_pct": 42.10526315789474,
+    "R10_all_reference_pct": 66.66666666666667,
+    "P95_abs_error_bpm": 93.13333333333333,
+    "Max_abs_error_bpm": 93.66666666666667,
+    "LoA_lower_descriptive_bpm": -62.966869142460695,
+    "LoA_upper_descriptive_bpm": 70.38196348208334,
+    "first_accepted_center_s": 4.999995,
+    "first_accepted_window_start_s": 1.999998,
+    "first_accepted_window_end_s": 7.999992,
+    "waveform_coverage_pct": 93.2475884244373,
+    "first_finite_time_s": 1.999998,
+    "missing_duration_s": 4.1999958,
+    "longest_missing_s": 2.1999978
+  },
+  "common10s": {
+    "profile": "short6_relaxed",
+    "case": "data5",
+    "window_s": 10,
+    "Nplanned": 53,
+    "Noutput": 49,
+    "Nref": 53,
+    "Nvalid": 49,
+    "Nwithin5": 29,
+    "Nwithin10": 43,
+    "hr_output_coverage_pct": 92.45283018867924,
+    "paired_reference_coverage_pct": 92.45283018867924,
+    "MAE_bpm": 8.951020408163265,
+    "RMSE_bpm": 15.872733648284651,
+    "Bias_bpm": -2.889795918367348,
+    "MAPE_pct": 8.842218721046002,
+    "P5_valid_pct": 59.183673469387756,
+    "P10_valid_pct": 87.75510204081633,
+    "R5_all_reference_pct": 54.716981132075475,
+    "R10_all_reference_pct": 81.13207547169812,
+    "P95_abs_error_bpm": 43.68,
+    "Max_abs_error_bpm": 44.8,
+    "LoA_lower_descriptive_bpm": -33.79742377946339,
+    "LoA_upper_descriptive_bpm": 28.017831942728687,
+    "delta_MAE_bpm": -10.48571428571429,
+    "delta_RMSE_bpm": -22.768536453797147,
+    "delta_P5_valid_pct": 2.04081632653061,
+    "delta_R5_all_reference_pct": 1.8867924528301927,
+    "delta_hr_output_coverage_pct": 0.0,
+    "common_windows": 49,
+    "new_windows": 0,
+    "lost_windows": 0,
+    "common_MAE_bpm": 8.951020408163265,
+    "common_V28_MAE_bpm": 19.436734693877554,
+    "new_MAE_bpm": null,
+    "new_Nwithin5": 0,
+    "new_P5_valid_pct": null,
+    "lost_V28_MAE_bpm": null
+  },
+  "native_coverage_groups": {
+    "shared_center_both_output": {
+      "Nvalid": 49,
+      "Nwithin5": 24,
+      "MAE_bpm": 15.11904761904762,
+      "RMSE_bpm": 28.154507700453145,
+      "P5_valid_pct": 48.97959183673469
+    },
+    "shared_center_new_output": {
+      "Nvalid": 4,
+      "Nwithin5": 0,
+      "MAE_bpm": 70.66666666666667,
+      "RMSE_bpm": 74.26557075792255,
+      "P5_valid_pct": 0.0
+    },
+    "native_only_plan_output": {
+      "Nvalid": 0,
+      "Nwithin5": 0,
+      "MAE_bpm": null,
+      "RMSE_bpm": null,
+      "P5_valid_pct": null
+    },
+    "native_plan_only_windows": 4,
+    "shared_center_windows": 53,
+    "interpretation": "Native 6 s estimates scored against 6 s reference means; V28 10 s acceptance is used only to classify added coverage at matching actual centers"
+  },
+  "common_coverage_groups": {
+    "common_output_windows": 49,
+    "new_output_windows": 0,
+    "lost_output_windows": 0,
+    "common_new": {
+      "Nvalid": 49,
+      "Nwithin5": 29,
+      "MAE_bpm": 8.951020408163265,
+      "RMSE_bpm": 15.872733648284651,
+      "P5_valid_pct": 59.183673469387756
+    },
+    "common_V28": {
+      "Nvalid": 49,
+      "Nwithin5": 28,
+      "MAE_bpm": 19.436734693877554,
+      "RMSE_bpm": 38.6412701020818,
+      "P5_valid_pct": 57.14285714285714
+    },
+    "newly_covered": {
+      "Nvalid": 0,
+      "Nwithin5": 0,
+      "MAE_bpm": null,
+      "RMSE_bpm": null,
+      "P5_valid_pct": null
+    },
+    "lost_V28": {
+      "Nvalid": 0,
+      "Nwithin5": 0,
+      "MAE_bpm": null,
+      "RMSE_bpm": null,
+      "P5_valid_pct": null
+    }
+  }
+}

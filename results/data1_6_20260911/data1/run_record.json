@@ -1,0 +1,29 @@
+{
+  "case": "data1",
+  "exit_code": 0,
+  "elapsed_s": 165.14613474100042,
+  "command": [
+    "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+    "-B",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v24_20260910/analyze_motion_v2.py",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2_unpacked/Video_20260909_YJC_2.avi",
+    "--output",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference",
+    "--pixel-mode",
+    "tracking_screened",
+    "--algorithm-mode",
+    "guarded_fusion",
+    "--max-gap",
+    "0.10",
+    "--window",
+    "10",
+    "--step",
+    "1",
+    "--min-bpm",
+    "42",
+    "--max-bpm",
+    "210"
+  ],
+  "video_sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e",
+  "reference_supplied_to_inference": false
+}

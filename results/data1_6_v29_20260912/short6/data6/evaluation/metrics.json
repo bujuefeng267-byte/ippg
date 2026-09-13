@@ -1,0 +1,132 @@
+{
+  "native6s": {
+    "profile": "short6",
+    "case": "data6",
+    "window_s": 6,
+    "Nplanned": 66,
+    "Noutput": 46,
+    "Nref": 66,
+    "Nvalid": 46,
+    "Nwithin5": 0,
+    "Nwithin10": 0,
+    "hr_output_coverage_pct": 69.6969696969697,
+    "paired_reference_coverage_pct": 69.6969696969697,
+    "MAE_bpm": 24.18478260869565,
+    "RMSE_bpm": 25.802541255963536,
+    "Bias_bpm": -24.18478260869565,
+    "MAPE_pct": 20.61533450659035,
+    "P5_valid_pct": 0.0,
+    "P10_valid_pct": 0.0,
+    "R5_all_reference_pct": 0.0,
+    "R10_all_reference_pct": 0.0,
+    "P95_abs_error_bpm": 44.95833333333334,
+    "Max_abs_error_bpm": 48.83333333333333,
+    "LoA_lower_descriptive_bpm": -42.00510426154629,
+    "LoA_upper_descriptive_bpm": -6.364460955845008,
+    "first_accepted_center_s": 11.999988,
+    "first_accepted_window_start_s": 8.999991,
+    "first_accepted_window_end_s": 14.999985,
+    "waveform_coverage_pct": 78.2122905027933,
+    "first_finite_time_s": 8.999991,
+    "missing_duration_s": 15.599984399999999,
+    "longest_missing_s": 8.999991
+  },
+  "common10s": {
+    "profile": "short6",
+    "case": "data6",
+    "window_s": 10,
+    "Nplanned": 62,
+    "Noutput": 38,
+    "Nref": 62,
+    "Nvalid": 38,
+    "Nwithin5": 0,
+    "Nwithin10": 0,
+    "hr_output_coverage_pct": 61.29032258064516,
+    "paired_reference_coverage_pct": 61.29032258064516,
+    "MAE_bpm": 22.626315789473683,
+    "RMSE_bpm": 23.582654196408185,
+    "Bias_bpm": -22.626315789473683,
+    "MAPE_pct": 19.540711374449735,
+    "P5_valid_pct": 0.0,
+    "P10_valid_pct": 0.0,
+    "R5_all_reference_pct": 0.0,
+    "R10_all_reference_pct": 0.0,
+    "P95_abs_error_bpm": 32.715,
+    "Max_abs_error_bpm": 34.30000000000001,
+    "LoA_lower_descriptive_bpm": -35.83063304544347,
+    "LoA_upper_descriptive_bpm": -9.421998533503894,
+    "delta_MAE_bpm": -3.3764619883040936,
+    "delta_RMSE_bpm": -4.198899435853317,
+    "delta_P5_valid_pct": 0.0,
+    "delta_R5_all_reference_pct": 0.0,
+    "delta_hr_output_coverage_pct": 3.225806451612904,
+    "common_windows": 36,
+    "new_windows": 2,
+    "lost_windows": 0,
+    "common_MAE_bpm": 22.224999999999998,
+    "common_V28_MAE_bpm": 26.002777777777776,
+    "new_MAE_bpm": 29.85000000000001,
+    "new_Nwithin5": 0,
+    "new_P5_valid_pct": 0.0,
+    "lost_V28_MAE_bpm": null
+  },
+  "native_coverage_groups": {
+    "shared_center_both_output": {
+      "Nvalid": 36,
+      "Nwithin5": 0,
+      "MAE_bpm": 21.73611111111111,
+      "RMSE_bpm": 22.956598206933183,
+      "P5_valid_pct": 0.0
+    },
+    "shared_center_new_output": {
+      "Nvalid": 9,
+      "Nwithin5": 0,
+      "MAE_bpm": 32.74074074074073,
+      "RMSE_bpm": 34.001361628508235,
+      "P5_valid_pct": 0.0
+    },
+    "native_only_plan_output": {
+      "Nvalid": 1,
+      "Nwithin5": 0,
+      "MAE_bpm": 35.33333333333334,
+      "RMSE_bpm": 35.33333333333334,
+      "P5_valid_pct": 0.0
+    },
+    "native_plan_only_windows": 4,
+    "shared_center_windows": 62,
+    "interpretation": "Native 6 s estimates scored against 6 s reference means; V28 10 s acceptance is used only to classify added coverage at matching actual centers"
+  },
+  "common_coverage_groups": {
+    "common_output_windows": 36,
+    "new_output_windows": 2,
+    "lost_output_windows": 0,
+    "common_new": {
+      "Nvalid": 36,
+      "Nwithin5": 0,
+      "MAE_bpm": 22.224999999999998,
+      "RMSE_bpm": 23.16110844593679,
+      "P5_valid_pct": 0.0
+    },
+    "common_V28": {
+      "Nvalid": 36,
+      "Nwithin5": 0,
+      "MAE_bpm": 26.002777777777776,
+      "RMSE_bpm": 27.781553632261502,
+      "P5_valid_pct": 0.0
+    },
+    "newly_covered": {
+      "Nvalid": 2,
+      "Nwithin5": 0,
+      "MAE_bpm": 29.85000000000001,
+      "RMSE_bpm": 30.179877402004145,
+      "P5_valid_pct": 0.0
+    },
+    "lost_V28": {
+      "Nvalid": 0,
+      "Nwithin5": 0,
+      "MAE_bpm": null,
+      "RMSE_bpm": null,
+      "P5_valid_pct": null
+    }
+  }
+}

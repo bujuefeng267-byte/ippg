@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "installation_manifest_sha256": "97548410db3561a47a39ed37592a787a3275504170313befc8566854024de960",
+  "immutable_inference_sources_verified": 17,
+  "installed_unit_tests": 62,
+  "installed_CLI_data2_outputs_byte_identical_to_batch": {
+    "waveform.csv": "7a84b9c32de85ab3dfcd2cf5fc2f4d06fa1bd8c1deac95035f847de14314c36b",
+    "primary_hr.csv": "75d3109624e3b4544f6159234b6906fa2a71a50a09df9a023af9c7cc64de84aa",
+    "secondary_hr.csv": "38d9e6367025752a02143eea2e21cb0eee82ac50b041ddfcfa39c21d3ae3344e",
+    "patch_diagnostics.csv": "baa0ca0628c451748c1c3bbe13851752671d4cf3c098628621577d2b191aebe7"
+  },
+  "project_note": "/home/fengbujue/项目/rppg识别/V27运动心率改进说明.md",
+  "note_sha256": "4a47e11c63d63a0b8a743f29b887188f9556a6da8ba407b2550702f920c9ec7f",
+  "valid_note_links": 8,
+  "all_eight_candidates_fail_promotion": true,
+  "previous_entry_hashes_preserved": {
+    "/home/fengbujue/项目/rppg识别/run.sh": "d9eee11d650bb1a8938d48f16d5bedbb551739f0bc74e0559252dfd37bbf36ad",
+    "/home/fengbujue/项目/rppg识别/run_motion_v25.sh": "271b35d3411984bacf4db51fdc6c9910a3fde9ba46ac840c1494a65c3e5bf4de"
+  },
+  "result": "Experiment completed and installed separately; V25 remains recommended. Tests confirm implementation consistency, not accuracy improvement."
+}

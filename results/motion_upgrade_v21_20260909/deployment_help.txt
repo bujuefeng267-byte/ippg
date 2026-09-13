@@ -1,0 +1,28 @@
+usage: analyze_motion_v2.py [-h] --output OUTPUT [--cache CACHE]
+                            [--max-seconds MAX_SECONDS] [--max-gap MAX_GAP]
+                            [--window WINDOW] [--step STEP]
+                            [--min-bpm MIN_BPM] [--max-bpm MAX_BPM]
+                            [--reference-ubfc REFERENCE_UBFC]
+                            video
+
+V2.1 offline multi-ROI rPPG with HR derived from the saved fused waveform. No
+reference HR is supplied to extraction, waveform fusion or candidate
+selection. The optional reference is applied only AFTER all predictions have
+been produced. Both filtering/overlap fusion and the final DP tracker are
+offline.
+
+positional arguments:
+  video
+
+options:
+  -h, --help            show this help message and exit
+  --output OUTPUT
+  --cache CACHE         Reuse an exact V2 frontend trace with matching
+                        identity
+  --max-seconds MAX_SECONDS
+  --max-gap MAX_GAP
+  --window WINDOW
+  --step STEP
+  --min-bpm MIN_BPM
+  --max-bpm MAX_BPM
+  --reference-ubfc REFERENCE_UBFC

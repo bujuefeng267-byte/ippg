@@ -1,0 +1,93 @@
+{
+  "seed": 20260908,
+  "fps": 30.0,
+  "duration_s": 60.0,
+  "scenarios": {
+    "clean": {
+      "pulse_bpm": 96.0,
+      "motion_bpm": 132.0,
+      "motion_amplitudes": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "one_patch_motion": {
+      "pulse_bpm": 96.0,
+      "motion_bpm": 132.0,
+      "motion_amplitudes": [
+        0.12,
+        0.0,
+        0.0
+      ]
+    },
+    "unequal_shared_motion": {
+      "pulse_bpm": 96.0,
+      "motion_bpm": 132.0,
+      "motion_amplitudes": [
+        0.12,
+        0.025,
+        0.005
+      ]
+    },
+    "global_motion": {
+      "pulse_bpm": 96.0,
+      "motion_bpm": 132.0,
+      "motion_amplitudes": [
+        0.08,
+        0.08,
+        0.08
+      ]
+    },
+    "pulse_motion_frequency_overlap": {
+      "pulse_bpm": 96.0,
+      "motion_bpm": 96.0,
+      "motion_amplitudes": [
+        0.12,
+        0.025,
+        0.005
+      ]
+    }
+  },
+  "fusion_config": {
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "methods": [
+      "pos",
+      "chrom"
+    ],
+    "min_rois": 2,
+    "min_observed_fraction": 0.9,
+    "min_roi_quality": 0.2,
+    "min_signal_std": 1e-08,
+    "grid_step_bpm": 1.0,
+    "support_tolerance_bpm": 6.0,
+    "max_peaks_per_channel": 4,
+    "min_relative_power": 0.2,
+    "min_peak_concentration": 0.15,
+    "min_prominence_ratio": 0.08,
+    "single_method_factor": 0.65,
+    "min_consensus_quality": 0.2,
+    "ambiguity_ratio": 0.8,
+    "max_motion_penalty": 0.25,
+    "max_slew_bpm_per_s": 12.0,
+    "rejected_windows_to_reset": 2,
+    "min_waveform_correlation": 0.15,
+    "normalize_clip": 8.0,
+    "huber_delta": 2.5
+  },
+  "source_hashes": {
+    "analyze_motion_v2.py": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+    "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+    "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115"
+  },
+  "code_sha256": "81ab8b14d69bf3bbad54af8a6df06dda4fee5892a00ed7c25beba984458ea811",
+  "limitation": "Synthetic RGB mixtures only: no actual video, geometry, blur or human generalization."
+}

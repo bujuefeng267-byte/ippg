@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-11T14:21:05.432639+00:00",
+  "diagnostic_script_sha256": "32d357652ca628e1ac1e31379ab9f7874730209194e695313baa6528648b85dc",
+  "purpose": "REFERENCE-CONDITIONED ORACLE / INFORMATION LIMIT ONLY; NOT INFERENCE OUTPUT OR ACHIEVED ACCURACY",
+  "data": "Frozen six V25 stage4 recordings, same nominal ten-second windows and original estimated zero-shift reference.",
+  "candidate_policy": {
+    "grid_bpm": [
+      42,
+      210,
+      1
+    ],
+    "window": "Hann",
+    "nfft": "max(2048,window samples)",
+    "detrend": "constant",
+    "relative_power_min": 0.05,
+    "prominence_min": 0.02,
+    "peak_distance_bpm": 6,
+    "max_peaks": 8,
+    "supported_state_radius_bpm": 3
+  },
+  "oracle_definitions": {
+    "primary": "Any actual retained local peak center within 5 bpm of the reference.",
+    "supported_state": "Any original <=3 bpm candidate neighborhood state with >=5% peak-relative energy within 5 bpm of reference; more permissive than peak-center oracle.",
+    "two_roi": "At least two physical ROIs with a matching peak, deduplicated across POS/CHROM and baseline/tracked branches; not independent sensors."
+  },
+  "energy_policy": {
+    "window": "Hann full-window Welch",
+    "nfft": "max(8192,window samples)",
+    "detrend": false,
+    "band_hz": [
+      0.7,
+      3.5
+    ],
+    "H1_radius_hz": 0.1
+  },
+  "raw_rgb_policy": "Window fractional color x/mean(x)-1 for each saved channel, no missing-data interpolation; diagnostic spectra only.",
+  "motion_policy": "Signed motion_x/y * fps / contemporaneous face height; full finite windows only; no interpolation or reference-derived adjustment.",
+  "prohibitions": [
+    "No new prediction column/HR file is produced.",
+    "No timing or candidate parameter is selected by reference error.",
+    "Oracle selection across channels cannot be reported as achieved accuracy."
+  ],
+  "original_outputs_immutable": true,
+  "source_hashes": {}
+}

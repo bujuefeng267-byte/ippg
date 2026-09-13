@@ -1,0 +1,38 @@
+window_index,time_s,proposal_bpm,proposal_supported,reacquired,generated,contributing_rois,channels,score
+0,4.999995,,False,False,False,0,[],
+1,5.999994,,False,False,False,0,[],
+2,6.999993,74.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.3112799889182163
+3,7.999992,74.0,True,False,True,2,"[""tracked/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.5999152437679868
+4,8.999991,75.0,True,False,True,2,"[""tracked/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.6091976159916863
+5,9.99999,76.0,True,False,True,2,"[""tracked/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.3891192222690129
+6,10.999989,77.0,True,False,False,0,[],
+7,11.999988,77.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.1786342443906718
+8,12.999986999999999,77.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/chrom""]",0.4451407611460773
+9,13.999986,78.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/pos""]",0.5554582452033616
+10,14.999984999999999,78.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/right_cheek/pos""]",0.6465759572030647
+11,15.999984,78.0,True,False,True,3,"[""tracked/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.5578711095723681
+12,16.999983,79.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.5806130844469779
+13,17.999982,80.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.4067296340913259
+14,18.999981,80.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.45719638570464916
+15,19.99998,80.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.6053811724041369
+16,20.999979,79.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.4125593578687959
+17,21.999978,78.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.3015477298051057
+18,22.999976999999998,78.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.3296884117401223
+19,23.999976,78.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.6192322707838468
+20,24.999975,78.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.8317670485023222
+21,25.999973999999998,78.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom""]",0.5522545753823935
+22,26.999972999999997,79.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.3615882361172229
+23,27.999972,80.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.7853702095231735
+24,28.999971,80.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.8527357730236607
+25,29.999969999999998,79.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.3159106427370977
+26,30.999969,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.4531775588228307
+27,31.999968,79.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom""]",0.8827535468041123
+28,32.999967,79.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom""]",0.7414386142224789
+29,33.999966,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.5854636720372727
+30,34.999964999999996,79.0,True,False,True,2,"[""tracked/forehead/pos"", ""baseline/left_cheek/chrom""]",0.7116489345449271
+31,35.999964,79.0,True,False,True,3,"[""tracked/forehead/pos"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.5306875137257703
+32,36.999963,79.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.6369153486496093
+33,37.999962,80.0,True,False,False,0,[],
+34,38.999961,81.0,True,False,False,0,[],
+35,39.99996,,False,False,False,0,[],
+36,40.999959,,False,False,False,0,[],

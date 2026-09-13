@@ -1,0 +1,76 @@
+{
+  "successful": true,
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "code_hashes": {
+    "run_cpace_trial.py": "a325a92c86a98eb0352da0f3754b03a4a697365c21c04ed679970eefb1f008d4",
+    "test_cpace_trial.py": "94fc43edfa73003de0dcbb0a059cc1757706fffd5fed9398a8465d52714d9db2",
+    "author_source/data_loaders.py": "d7c37022ca2c15e58c970c29a78e66cce93b7d50e3ea53208864aa0249ef2363",
+    "author_source/extract_rois.py": "19a80929f14cdb60698498ab10c0d3bf1be06240404af99204c88fc98a0a7634",
+    "author_source/homodyne.py": "a328e6fb6fda1d649a003145aca306d2da34063ed562d6da3769372477ebfb00",
+    "author_source/metrics.py": "8dbd6ddef79524c4620162a31c1b40259fdd8a5246d267da6c8bd80d949ab73a",
+    "author_source/pipeline.py": "f3d2d6a20203e715d4202908e07d51bc9029fac3806922656fc21a45332b79f7",
+    "author_source/projections.py": "2e6cd137b976382b49b6360ca81c2407a8fac53d8df8f4eaed8974fd091ae4f7",
+    "author_source/run_demo.py": "2de9c75786a9ad82c9284191a903326de84757210a708ce623ed6efa2167a671",
+    "author_source/run_ubfc_phys.py": "768462b40cf0d1f4e1df4a2c369687acdf94ef86e3380863a3b8b109c2b91f51",
+    "author_source/run_ubfc_rppg.py": "3f094edc8e186b458a0eea1038de6dc1dbcba9bd476618abc9193af7dfc35ec3",
+    "author_source/utils.py": "72d2d6b7d5f00c39c274f1b31c6d79edc526d5e4f929d0818112864df838c806",
+    "author_source/LICENSE": "6465b9b60cfc7e74aa958c7cc1d58355c939bdd2f6fac028e05a9213bd2c6589",
+    "author_source/README.md": "aed0b8027e27d2f3fec8ee5394a1ae23d299c27ba2d9d604c68405ff4d6c663e",
+    "project_estimator/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "project_estimator/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+  },
+  "observations": {
+    "pure_common_brightness": {
+      "true_cardiac_pulse_present": false,
+      "imposed_common_brightness_hz": 1.6,
+      "normalized_common_direction_residual_norm": 0.5252707900527456,
+      "seed_bpm": 95.99999495092503,
+      "default_output_std": 0.7077605570383896,
+      "accepted_windows": 22,
+      "accepted_ridge_bpm": [
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0,
+        96.0
+      ],
+      "interpretation": "Author core is not guaranteed to reject periodic common brightness; retain, do not repair for better results"
+    },
+    "known_pulse_default": {
+      "seed_bpm": 72.00001150063575,
+      "accepted_windows": 22,
+      "hr_range": [
+        72.0,
+        72.0
+      ]
+    },
+    "known_pulse_no_homodyne": {
+      "seed_bpm": 72.00001150063575,
+      "accepted_windows": 22,
+      "hr_range": [
+        72.0,
+        72.0
+      ]
+    }
+  },
+  "real_video_reference_read": false
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "case": "user0904",
+    "exit_code": 0,
+    "seconds": 2.3082272999999986,
+    "command": [
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/.venv/bin/python",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/analyze_motion_v2.py",
+      "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/validation/user0904",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/user0904/frame_trace.csv"
+    ]
+  },
+  {
+    "case": "user0907",
+    "exit_code": 0,
+    "seconds": 2.1762918820022605,
+    "command": [
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/.venv/bin/python",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/analyze_motion_v2.py",
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/user_0907/Video_20260907_171742478.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/validation/user0907",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/user0907/frame_trace.csv"
+    ]
+  },
+  {
+    "case": "ubfc",
+    "exit_code": 0,
+    "seconds": 2.6261404769975343,
+    "command": [
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/.venv/bin/python",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/analyze_motion_v2.py",
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/ubfc_subject1/vid.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/validation/ubfc",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/ubfc/frame_trace.csv",
+      "--reference-ubfc",
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/ubfc_subject1/ground_truth.txt"
+    ]
+  },
+  {
+    "case": "kaggle_full",
+    "exit_code": 0,
+    "seconds": 7.565655009999318,
+    "command": [
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/.venv/bin/python",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/analyze_motion_v2.py",
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/kaggle_motion_subject001/video.mov",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/validation/kaggle_full",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/kaggle_full/frame_trace.csv"
+    ]
+  },
+  {
+    "case": "synthetic72",
+    "exit_code": 0,
+    "seconds": 2.1747140680017765,
+    "command": [
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/.venv/bin/python",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/analyze_motion_v2.py",
+      "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/self_test_72bpm.mp4",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/validation/synthetic72",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/synthetic72/frame_trace.csv"
+    ]
+  }
+]

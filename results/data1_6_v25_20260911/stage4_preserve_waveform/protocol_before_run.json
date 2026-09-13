@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-11T13:51:28.118664+00:00",
+  "stage": {
+    "name": "stage4_preserve_waveform",
+    "motion_evidence": "legacy",
+    "hr_mode": "evidence",
+    "routing_mode": "legacy"
+  },
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd"
+  },
+  "runner_sha256": "2374ad5134db8214cb6870abee7b16bd78b81cbdcd48e1083380f0c2805ef453",
+  "original_protocol_sha256": "df3851b4f6738920a84c3266c00af5cfcd8dc6dd3a57858eeb4eb1a4ad7ab9cc",
+  "evaluator_sha256": "4ef630e6e78440469d1d7da8802b9fd2d0bdaf0eb1adfdd2505646e97733c06b",
+  "selection_context": "Post-development ablation after inspecting stages 1-3; not preregistered or held-out validation.",
+  "reason": "Stage 1 lost data6 waveform coverage; stage 2 improved HR. Isolate evidence HR while preserving original real waveform and gates. Motion evidence remains active inside evidence HR.",
+  "parameters_changed": false,
+  "original_adoption_gate_unchanged": true,
+  "observed_stage_reports": {
+    "v24_replay": "0e687a9016342be6e65ed3bc7469af5e4788d8655bf9a2d5fc8ad5d26b4653ce",
+    "stage1_motion": "45c862f9a7f34050fdea817b1cc021ec6a23b5bcf6c377e0ab2b3329b2b29876",
+    "stage2_hr": "3d1c1c82a47335ae8ecb8c9714fe77740be1fd5e43e3c60d7ee51afbd004db94",
+    "stage3_routing": "ff64435778bd4f017e378d5538f75029d23f9c19abc20b6ed23bf7f753f67c98"
+  }
+}

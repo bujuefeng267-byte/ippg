@@ -1,0 +1,54 @@
+window_index,time_s,proposal_bpm,proposal_supported,reacquired,generated,contributing_rois,channels,score
+0,4.999995,,False,False,False,0,[],
+1,5.999994,,False,False,False,0,[],
+2,6.999993,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.8487104211010577
+3,7.999992,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9474202674611769
+4,8.999991,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9120276990326683
+5,9.99999,92.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",1.436534055045671
+6,10.999989,92.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",1.5299657973934453
+7,11.999988,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""tracked/right_cheek/chrom""]",1.0609462341969402
+8,12.999986999999999,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.1384424150367873
+9,13.999986,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.2873530592729185
+10,14.999984999999999,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.4377930420598304
+11,15.999984,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.375982179709886
+12,16.999983,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.2296607768301226
+13,17.999982,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9917381368135533
+14,18.999981,92.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos""]",1.3124135744265637
+15,19.99998,93.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",0.9841422750884734
+16,20.999979,93.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/chrom""]",0.5518249371944214
+17,21.999978,93.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.7269034861731875
+18,22.999976999999998,93.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""tracked/right_cheek/pos""]",1.1403601203720595
+19,23.999976,92.0,True,False,False,0,[],
+20,24.999975,89.0,True,False,False,0,[],
+21,25.999973999999998,89.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",0.9635940828980685
+22,26.999972999999997,90.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.6578440558290399
+23,27.999972,91.0,True,False,False,0,[],
+24,28.999971,91.0,True,False,False,0,[],
+25,29.999969999999998,91.0,True,False,True,3,"[""tracked/forehead/pos"", ""tracked/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.4035912025347863
+26,30.999969,92.0,True,False,False,0,[],
+27,31.999968,93.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.2401407889889194
+28,32.999967,94.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.1680148717439575
+29,33.999966,95.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.37053871625038115
+30,34.999964999999996,101.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/pos"", ""baseline/right_cheek/pos""]",-0.2727923677394486
+31,35.999964,95.0,True,False,False,0,[],
+32,36.999963,94.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.5820808994980992
+33,37.999962,93.0,True,False,True,3,"[""tracked/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.401490698311767
+34,38.999961,93.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.6618543020194723
+35,39.99996,93.0,True,False,True,3,"[""tracked/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.27772683568720863
+36,40.999959,93.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.46193167169271465
+37,41.999958,93.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.38462336395514357
+38,42.999956999999995,93.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.4841358358371716
+39,43.999956,94.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.5613752847370641
+40,44.999955,94.0,True,False,False,0,[],
+41,45.999953999999995,94.0,True,False,False,0,[],
+42,46.999953,93.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""tracked/right_cheek/chrom""]",0.46630642096641933
+43,47.999952,93.0,True,False,True,3,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos"", ""tracked/right_cheek/chrom""]",0.8025878808889227
+44,48.999950999999996,93.0,True,False,True,3,"[""tracked/forehead/pos"", ""tracked/left_cheek/pos"", ""tracked/right_cheek/chrom""]",0.6050438064369482
+45,49.99995,93.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/pos"", ""tracked/right_cheek/chrom""]",0.4880241719813692
+46,50.999949,93.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.40044957217064825
+47,51.999947999999996,93.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.3540178167327426
+48,52.999947,93.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.3278230176364936
+49,53.999945999999994,92.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.26899479555604694
+50,54.999945,92.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.08711319260558355
+51,55.999944,,False,False,False,0,[],
+52,56.999942999999995,,False,False,False,0,[],

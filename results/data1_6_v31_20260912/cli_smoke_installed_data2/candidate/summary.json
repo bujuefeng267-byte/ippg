@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "variant": "cdf_v28",
+  "experimental": true,
+  "promoted": false,
+  "reference_used": false,
+  "fps": 30.00003000003,
+  "frames": 1393,
+  "output_hashes": {
+    "cdf_preprocessing.json": "b68a4eb0f4965a3571b5dc0a225fce6fcc2af53ecfcc4b599836514090b3f220",
+    "cdf_windows.csv": "e1e860ad7805b8f4289b0ed767a21d03413caf927e185e4834b885a63ee160c8",
+    "heart_rate.csv": "f1522980a9af64fef0f0b6771cda31cdc0b31bf32034b67e04d42efdd3e6db00",
+    "processed_trace.csv": "02236e68310212fba35feb2dfb84c88597cfaa2ced9c3c724f54ccec2b5bee99",
+    "processed_trace_metadata.json": "4fcf10a3abe8959cba5862819d793d71d120be9fa6baf0e7683ca6d55c9af2b0",
+    "routing_decisions.csv": "bb932287b8a8b9ba33fc77856aecd315cfafab4cd9a47b9e82e7273c5d3d2824",
+    "v25_fallback/baseline_roi_waveforms.csv": "8e194c41beaa9a95cba3a508c0be68805b99c26764ba16cee46379ee250ac13e",
+    "v25_fallback/branch_routing.csv": "489dfda6c19fd7d3b73627bf65f8562d4a92f195c0ddc4e4cb412a00cc35a973",
+    "v25_fallback/fusion_diagnostics.csv": "ba9bed95d256d696d1bd84804ccd5cb77bdb15f83e5b137fcbc0b7e7d3a7c84f",
+    "v25_fallback/fusion_proposals.csv": "d862ba20ab95a5dfa949dd9fe347758a35093e35d777425a96f148dcf7522cf4",
+    "v25_fallback/heart_rate.csv": "36014d9152ba72c9f6290a2770d94e6f265cfdb3dd6fdb33117498a84acbf59d",
+    "v25_fallback/tracked_roi_waveforms.csv": "bae983f2821dc2eaf4776aea081f6130c3442cf993350e4b8ad3484d56fb5dea",
+    "v25_fallback/waveform.csv": "e56a6368589bac1f50bf52da545bc72d38e6cd27de58db7593487c3601d3f7f0",
+    "v26_harmonic_candidate/all_roi_candidates.json": "fce8683483c7cc4e3c8d088f71e81af4864187cbd47ab754f9d25d95abe36e5f",
+    "v26_harmonic_candidate/baseline_roi_waveforms.csv": "8e194c41beaa9a95cba3a508c0be68805b99c26764ba16cee46379ee250ac13e",
+    "v26_harmonic_candidate/component_proposals.csv": "a4736a9a9c4b5e1cd1761e94f1871ec2cc75b12bfd5ac7388281839c77beace7",
+    "v26_harmonic_candidate/heart_rate.csv": "cb99cd6654dceb3358fedc200ced239d56975ab0766d61b44f9f2243684d3db0",
+    "v26_harmonic_candidate/tracked_roi_waveforms.csv": "bae983f2821dc2eaf4776aea081f6130c3442cf993350e4b8ad3484d56fb5dea",
+    "v26_harmonic_candidate/waveform.csv": "a601015b7a7f476c83ebfe242cb51fbc2b0d3c70b36e1b0307e137110e3233a6",
+    "waveform.csv": "3030a9dce31e110194581427bbc67daf1f9bf59c9c3ab67e06610e7e2ac3b159"
+  }
+}

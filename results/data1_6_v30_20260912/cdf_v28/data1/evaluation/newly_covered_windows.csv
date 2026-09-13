@@ -1,0 +1,2 @@
+window_index,time_s,window_start_s,window_end_s,reference_bpm,reference_valid,estimated_bpm,accepted,status,V28_bpm,V28_accepted,error_bpm,abs_error_bpm,common_output,new_output,lost_output
+3,7.999992,2.999997,12.999987,101.3,True,92.0,True,candidate_only,,False,-9.299999999999997,9.299999999999997,False,True,False

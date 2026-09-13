@@ -1,0 +1,12 @@
+window_index,time_s,selected_branch,selection_reason,baseline_bpm,tracked_bpm,baseline_score,tracked_score,baseline_generated,tracked_generated,tracking_eligible,minimum_tracked_fraction,second_largest_tracked_fraction,maximum_reset_fraction,baseline_motion_overlap,tracked_motion_overlap
+0,5.0,none,no_qualified_branch,,,0.0,0.0,False,False,False,0.9966666666666667,0.9966666666666667,0.0033333333333333335,0.0,0.0
+1,6.0,none,no_qualified_branch,,,0.0,0.0,False,False,False,1.0,1.0,0.0,0.0,0.0
+2,7.0,baseline,baseline_evidence_retained,72.0,72.0,0.688638673107501,0.6866028773384225,True,True,True,1.0,1.0,0.0,1.0,1.0
+3,8.0,baseline,baseline_evidence_retained,72.0,72.0,0.6949674594170671,0.6924860759895436,True,True,True,1.0,1.0,0.0,1.0,1.0
+4,9.0,baseline,baseline_evidence_retained,72.0,72.0,0.7028500113437951,0.7012622180766799,True,True,True,1.0,1.0,0.0,1.0,1.0
+5,10.0,baseline,baseline_evidence_retained,72.0,72.0,0.7063965433414774,0.7054183748806115,True,True,True,1.0,1.0,0.0,1.0,1.0
+6,11.0,baseline,baseline_evidence_retained,72.0,72.0,0.7039086065545032,0.7021010372139533,True,True,True,1.0,1.0,0.0,1.0,1.0
+7,12.0,baseline,baseline_evidence_retained,72.0,72.0,0.6998521387193163,0.6984197075807619,True,True,True,1.0,1.0,0.0,1.0,1.0
+8,13.0,baseline,baseline_evidence_retained,72.0,72.0,0.696831612859391,0.6964271118599209,True,True,True,1.0,1.0,0.0,1.0,1.0
+9,14.0,none,no_qualified_branch,,,0.0,0.0,False,False,False,1.0,1.0,0.0,0.0,0.0
+10,15.0,none,no_qualified_branch,,,0.0,0.0,False,False,False,1.0,1.0,0.0,0.0,0.0

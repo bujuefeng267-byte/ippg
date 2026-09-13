@@ -1,0 +1,1225 @@
+{
+  "created_utc": "2026-09-09T11:56:55.900Z",
+  "scope": {
+    "wsl_project": "/home/fengbujue/项目/rppg识别",
+    "windows_data1": "C:/Users/15011/Documents/ChatGPT/New project/rppg_data1_20260909",
+    "additional_explicit_cached_source": "C:/Users/15011/Desktop/Video_20260904_145402918.avi",
+    "excluded": [
+      ".git internals",
+      ".venv and .venv-neural dependency trees",
+      "__pycache__",
+      "paths containing gudb"
+    ],
+    "read_only_inputs": true,
+    "deleted_data_restored_or_sought": false,
+    "only_authored_files": [
+      "rppg_motion_v22/dataset_inventory.json",
+      "rppg_motion_v22/dataset_inventory.md"
+    ]
+  },
+  "AGENTS_audit": {
+    "found": [],
+    "wsl_project_subdirectories_checked": true,
+    "wsl_ancestors_checked": [
+      "/",
+      "/home",
+      "/home/fengbujue",
+      "/home/fengbujue/项目"
+    ],
+    "windows_workspace_and_ancestors_checked": true
+  },
+  "counts": {
+    "wsl_existing_video_files": 5,
+    "windows_data1_video_files": 1,
+    "additional_cached_desktop_original": 1,
+    "total_video_files_in_this_inventory": 7,
+    "original_source_groups_including_synthetic": 6,
+    "human_recording_groups": 5,
+    "synthetic_generator_groups": 1,
+    "paired_dataset_reference_groups": 1,
+    "estimated_alignment_reference_groups": 1,
+    "no_reference_groups": 3,
+    "verified_new_hardware_synchronized_user_captures": 0,
+    "independent_subject_count": null,
+    "untouched_next_version_test_groups": 0
+  },
+  "sources": [
+    {
+      "source_id": "ubfc",
+      "label": "UBFC subject1",
+      "category": "paired_dataset_reference",
+      "note": "Dataset-provided paired device HR/PPG/time rows; not ECG; supplied synchronization has not been independently calibrated.",
+      "recording_or_generator_group": "ubfc",
+      "independent_subject_identity": "not established across files",
+      "video": {
+        "path": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+        "bytes": 1425830568,
+        "mtime_ns": "1788405743301475200",
+        "fps": 29.264106,
+        "frames": 1547,
+        "duration_s": 52.863395177696525,
+        "width": 640,
+        "height": 480,
+        "sha256": "f6745be5e6b6fe2f00dd6f32dd234aa559bb30b45f38ec9d87cf9a1cc41f6954"
+      },
+      "planned_windows_10s_1s": 44,
+      "old_v21_cache": {
+        "version": "v21",
+        "case": "ubfc",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/ubfc",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+          "size": 1425830568,
+          "mtime_ns": "1788405743301475200",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 29.264106,
+        "frames": 1547,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/ubfc/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "5064189577d15b75b1e9f06b5cefedb880e3f6be6230fea693dc1f9acf3b311c",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 44,
+        "Nfusion_output": 40
+      },
+      "old_v21_windows_cache": {
+        "case": "ubfc",
+        "directory": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_motion_v21\\validation_final\\ubfc",
+        "trace_sha256": "5064189577d15b75b1e9f06b5cefedb880e3f6be6230fea693dc1f9acf3b311c",
+        "meta_trace_sha256": "5064189577d15b75b1e9f06b5cefedb880e3f6be6230fea693dc1f9acf3b311c"
+      },
+      "baseline_summary": {
+        "case": "ubfc",
+        "branch": "v21/fusion/offline_ridge",
+        "version": "v21",
+        "method": "fusion",
+        "estimator": "offline_ridge",
+        "reference_kind": "human_UBFC_device_HR",
+        "Nplanned": 44,
+        "Nref": 44,
+        "Noutput": 40,
+        "Nvalid": 40,
+        "Nscored": 40,
+        "MAE_bpm": 2.494146596799136,
+        "RMSE_bpm": 2.986197771932294,
+        "Bias_bpm": -0.8003926583732962,
+        "SD_error_bpm_ddof1": 2.913584227684313,
+        "Nwithin5": 39,
+        "Nwithin10": 40,
+        "P5_valid_pct": 97.5,
+        "P10_valid_pct": 100,
+        "LoA_lower_descriptive_bpm": -6.511017744634549,
+        "LoA_upper_descriptive_bpm": 4.910232427887958,
+        "P95_abs_error_bpm_linear": 4.629613776620415,
+        "Max_abs_error_bpm": 5.343965517241372,
+        "C_out_pct": 90.9090909090909,
+        "C_ref_pct": 90.9090909090909,
+        "R5_all_reference_pct": 88.63636363636364,
+        "R10_all_reference_pct": 90.9090909090909,
+        "source_csv": "rppg_motion_v21/validation_final/ubfc/fusion_heart_rate.csv",
+        "prediction_column": "ridge_bpm"
+      },
+      "previously_seen_during_development": true,
+      "next_version_role": "Regression/development evidence; not an untouched test recording."
+    },
+    {
+      "source_id": "data1",
+      "label": "data1 YJC 20260909",
+      "category": "estimated_alignment_reference",
+      "note": "User-designated Polar HR; fixed archived-mtime-minus-duration absolute origin; no verified shared hardware/event timestamp.",
+      "recording_or_generator_group": "data1",
+      "independent_subject_identity": "not established across files",
+      "video": {
+        "path": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_data1_20260909/inputs/video/Video_20260909_YJC_2.avi",
+        "windows_path": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_data1_20260909\\inputs\\video\\Video_20260909_YJC_2.avi",
+        "bytes": 843755520,
+        "mtime_ns": "1788952246020687100",
+        "fps": 30.00003000003,
+        "frames": 1555,
+        "duration_s": 51.8332815,
+        "width": 3840,
+        "height": 2160,
+        "sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e"
+      },
+      "planned_windows_10s_1s": 42,
+      "old_v21_cache": {
+        "directory": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_data1_20260909\\predictions",
+        "trace_sha256": "b2b702f7fae2134ac1ba8388ac8d13d9ff231fa52622e6d27d6a5423a7c2aded",
+        "trace_meta_hash_matches": true,
+        "frontend_hashes": {
+          "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+          "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+          "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+        },
+        "frames": 1555,
+        "Nplanned": 42,
+        "Noutput": 38
+      },
+      "old_v21_windows_cache": null,
+      "baseline_summary": {
+        "branch": "fusion/offline_ridge",
+        "shift_s": 0,
+        "scope": "own",
+        "Nplanned": 42,
+        "Noutput": 38,
+        "Nref": 42,
+        "Nvalid": 38,
+        "C_out_pct": 90.47619047619048,
+        "C_ref_pct": 90.47619047619048,
+        "MAE_bpm": 13.128947368421052,
+        "RMSE_bpm": 13.7090538657756,
+        "Bias_bpm": -13.128947368421052,
+        "error_SD_bpm": 3.998709784805718,
+        "LoA_low_bpm": -20.96641854664026,
+        "LoA_high_bpm": -5.291476190201845,
+        "P95_abs_error_bpm": 20.344999999999995,
+        "Max_abs_error_bpm": 20.90000000000001,
+        "Nwithin5": 0,
+        "Nwithin10": 10,
+        "P5_valid_pct": 0,
+        "P10_valid_pct": 26.31578947368421,
+        "R5_all_reference_pct": 0,
+        "R10_all_reference_pct": 23.80952380952381
+      },
+      "previously_seen_during_development": true,
+      "next_version_role": "Regression/development evidence; not an untouched test recording."
+    },
+    {
+      "source_id": "user0904",
+      "label": "user0904",
+      "category": "no_reference",
+      "note": "No synchronized physiological reference retained.",
+      "recording_or_generator_group": "user0904",
+      "independent_subject_identity": "not established across files",
+      "video": {
+        "path": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+        "windows_path": "C:/Users/15011/Desktop/Video_20260904_145402918.avi",
+        "bytes": 834174464,
+        "mtime_ns": "1788510654695560400",
+        "fps": 30.00003000003,
+        "frames": 1461,
+        "duration_s": 48.699951299999995,
+        "width": 3840,
+        "height": 2160,
+        "sha256": "90560ee1a6dd97acd15193a1459f65e3b595ba7e9891196cde8270942326ed92"
+      },
+      "planned_windows_10s_1s": 39,
+      "old_v21_cache": {
+        "version": "v21",
+        "case": "user0904",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/user0904",
+        "identity": {
+          "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+          "size": 834174464,
+          "mtime_ns": "1788510654695560400",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30.00003000003,
+        "frames": 1461,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/user0904/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "b04b627be9f18ca962b44109f8a215206d0fa9537cc6f03402b1a5b12eaecbfb",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 39,
+        "Nfusion_output": 36
+      },
+      "old_v21_windows_cache": {
+        "case": "user0904",
+        "directory": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_motion_v21\\validation_final\\user0904",
+        "trace_sha256": "b04b627be9f18ca962b44109f8a215206d0fa9537cc6f03402b1a5b12eaecbfb",
+        "meta_trace_sha256": "b04b627be9f18ca962b44109f8a215206d0fa9537cc6f03402b1a5b12eaecbfb"
+      },
+      "baseline_summary": {
+        "case": "user0904",
+        "branch": "v21/fusion/offline_ridge",
+        "version": "v21",
+        "method": "fusion",
+        "estimator": "offline_ridge",
+        "reference_kind": "none",
+        "Nplanned": 39,
+        "Nref": 0,
+        "Noutput": 36,
+        "Nvalid": 0,
+        "Nscored": 0,
+        "MAE_bpm": null,
+        "RMSE_bpm": null,
+        "Bias_bpm": null,
+        "SD_error_bpm_ddof1": null,
+        "Nwithin5": 0,
+        "Nwithin10": 0,
+        "P5_valid_pct": null,
+        "P10_valid_pct": null,
+        "LoA_lower_descriptive_bpm": null,
+        "LoA_upper_descriptive_bpm": null,
+        "P95_abs_error_bpm_linear": null,
+        "Max_abs_error_bpm": null,
+        "C_out_pct": 92.3076923076923,
+        "C_ref_pct": null,
+        "R5_all_reference_pct": null,
+        "R10_all_reference_pct": null,
+        "source_csv": "rppg_motion_v21/validation_final/user0904/fusion_heart_rate.csv",
+        "prediction_column": "ridge_bpm"
+      },
+      "previously_seen_during_development": true,
+      "next_version_role": "Regression/development evidence; not an untouched test recording."
+    },
+    {
+      "source_id": "user0907",
+      "label": "user0907",
+      "category": "no_reference",
+      "note": "No synchronized physiological reference retained.",
+      "recording_or_generator_group": "user0907",
+      "independent_subject_identity": "not established across files",
+      "video": {
+        "path": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+        "bytes": 867938304,
+        "mtime_ns": "1788772715000000000",
+        "fps": 30.00003000003,
+        "frames": 1557,
+        "duration_s": 51.899948099999996,
+        "width": 3840,
+        "height": 2160,
+        "sha256": "0f432e286772c7eb83e1198f2761d32ca06cd92dc201ddb8965462ed76e4d4d2"
+      },
+      "planned_windows_10s_1s": 42,
+      "old_v21_cache": {
+        "version": "v21",
+        "case": "user0907",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/user0907",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+          "size": 867938304,
+          "mtime_ns": "1788772715000000000",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30.00003000003,
+        "frames": 1557,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/user0907/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 42,
+        "Nfusion_output": 12
+      },
+      "old_v21_windows_cache": {
+        "case": "user0907",
+        "directory": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_motion_v21\\validation_final\\user0907",
+        "trace_sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433",
+        "meta_trace_sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433"
+      },
+      "baseline_summary": {
+        "case": "user0907",
+        "branch": "v21/fusion/offline_ridge",
+        "version": "v21",
+        "method": "fusion",
+        "estimator": "offline_ridge",
+        "reference_kind": "none",
+        "Nplanned": 42,
+        "Nref": 0,
+        "Noutput": 12,
+        "Nvalid": 0,
+        "Nscored": 0,
+        "MAE_bpm": null,
+        "RMSE_bpm": null,
+        "Bias_bpm": null,
+        "SD_error_bpm_ddof1": null,
+        "Nwithin5": 0,
+        "Nwithin10": 0,
+        "P5_valid_pct": null,
+        "P10_valid_pct": null,
+        "LoA_lower_descriptive_bpm": null,
+        "LoA_upper_descriptive_bpm": null,
+        "P95_abs_error_bpm_linear": null,
+        "Max_abs_error_bpm": null,
+        "C_out_pct": 28.571428571428573,
+        "C_ref_pct": null,
+        "R5_all_reference_pct": null,
+        "R10_all_reference_pct": null,
+        "source_csv": "rppg_motion_v21/validation_final/user0907/fusion_heart_rate.csv",
+        "prediction_column": "ridge_bpm"
+      },
+      "previously_seen_during_development": true,
+      "next_version_role": "Regression/development evidence; not an untouched test recording."
+    },
+    {
+      "source_id": "kaggle_full",
+      "label": "Kaggle motion subject001 full",
+      "category": "no_reference",
+      "note": "No physiological reference retained; first60 clip is a derivative of this recording.",
+      "recording_or_generator_group": "kaggle_full",
+      "independent_subject_identity": "not established across files",
+      "video": {
+        "path": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+        "bytes": 538497671,
+        "mtime_ns": "1788440483953150428",
+        "fps": 29.97002997002997,
+        "frames": 12867,
+        "duration_s": 429.32890000000003,
+        "width": 1920,
+        "height": 1080,
+        "sha256": "902d217c6661bb137c19059b4137c2bdc5879d9f4373b88377ecdafeb3bdb4ca"
+      },
+      "planned_windows_10s_1s": 419,
+      "old_v21_cache": {
+        "version": "v21",
+        "case": "kaggle_full",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/kaggle_full",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+          "size": 538497671,
+          "mtime_ns": "1788440483953150428",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 29.97002997002997,
+        "frames": 12867,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/kaggle_full/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "aa1884b52beeac34c61633ac72ce56f298b5b9c19293a4ec899fc1d248bfafce",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 419,
+        "Nfusion_output": 323
+      },
+      "old_v21_windows_cache": {
+        "case": "kaggle_full",
+        "directory": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_motion_v21\\validation_final\\kaggle_full",
+        "trace_sha256": "aa1884b52beeac34c61633ac72ce56f298b5b9c19293a4ec899fc1d248bfafce",
+        "meta_trace_sha256": "aa1884b52beeac34c61633ac72ce56f298b5b9c19293a4ec899fc1d248bfafce"
+      },
+      "baseline_summary": {
+        "case": "kaggle_full",
+        "branch": "v21/fusion/offline_ridge",
+        "version": "v21",
+        "method": "fusion",
+        "estimator": "offline_ridge",
+        "reference_kind": "none",
+        "Nplanned": 419,
+        "Nref": 0,
+        "Noutput": 323,
+        "Nvalid": 0,
+        "Nscored": 0,
+        "MAE_bpm": null,
+        "RMSE_bpm": null,
+        "Bias_bpm": null,
+        "SD_error_bpm_ddof1": null,
+        "Nwithin5": 0,
+        "Nwithin10": 0,
+        "P5_valid_pct": null,
+        "P10_valid_pct": null,
+        "LoA_lower_descriptive_bpm": null,
+        "LoA_upper_descriptive_bpm": null,
+        "P95_abs_error_bpm_linear": null,
+        "Max_abs_error_bpm": null,
+        "C_out_pct": 77.08830548926014,
+        "C_ref_pct": null,
+        "R5_all_reference_pct": null,
+        "R10_all_reference_pct": null,
+        "source_csv": "rppg_motion_v21/validation_final/kaggle_full/fusion_heart_rate.csv",
+        "prediction_column": "ridge_bpm"
+      },
+      "previously_seen_during_development": true,
+      "next_version_role": "Regression/development evidence; not an untouched test recording."
+    },
+    {
+      "source_id": "synthetic72",
+      "label": "Synthetic 72 bpm modulation",
+      "category": "synthetic_known_frequency",
+      "note": "skimage astronaut still image; green 3% sine, red 1% phase-shifted sine at 1.2 Hz; no human capture or mechanical motion.",
+      "recording_or_generator_group": "synthetic72",
+      "independent_subject_identity": "not established across files",
+      "video": {
+        "path": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+        "bytes": 3140871,
+        "mtime_ns": "1788402445618247234",
+        "fps": 30,
+        "frames": 600,
+        "duration_s": 20,
+        "width": 512,
+        "height": 512,
+        "sha256": "d9b7998a7fd9a7b42ddf8090c983acbce875e135a45dc714ab98ae154a18c988"
+      },
+      "planned_windows_10s_1s": 11,
+      "old_v21_cache": {
+        "version": "v21",
+        "case": "synthetic72",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/synthetic72",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+          "size": 3140871,
+          "mtime_ns": "1788402445618247234",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30,
+        "frames": 600,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/synthetic72/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "af08afefde4b22bd2bd869af3ac03f71faad58823f6ea2b76830ee6aeaf1d088",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 11,
+        "Nfusion_output": 7
+      },
+      "old_v21_windows_cache": {
+        "case": "synthetic72",
+        "directory": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_motion_v21\\validation_final\\synthetic72",
+        "trace_sha256": "af08afefde4b22bd2bd869af3ac03f71faad58823f6ea2b76830ee6aeaf1d088",
+        "meta_trace_sha256": "af08afefde4b22bd2bd869af3ac03f71faad58823f6ea2b76830ee6aeaf1d088"
+      },
+      "baseline_summary": {
+        "case": "synthetic72",
+        "branch": "v21/fusion/offline_ridge",
+        "version": "v21",
+        "method": "fusion",
+        "estimator": "offline_ridge",
+        "reference_kind": "synthetic_72bpm_modulation",
+        "Nplanned": 11,
+        "Nref": 11,
+        "Noutput": 7,
+        "Nvalid": 7,
+        "Nscored": 7,
+        "MAE_bpm": 0,
+        "RMSE_bpm": 0,
+        "Bias_bpm": 0,
+        "SD_error_bpm_ddof1": 0,
+        "Nwithin5": 7,
+        "Nwithin10": 7,
+        "P5_valid_pct": 100,
+        "P10_valid_pct": 100,
+        "LoA_lower_descriptive_bpm": 0,
+        "LoA_upper_descriptive_bpm": 0,
+        "P95_abs_error_bpm_linear": 0,
+        "Max_abs_error_bpm": 0,
+        "C_out_pct": 63.63636363636363,
+        "C_ref_pct": 63.63636363636363,
+        "R5_all_reference_pct": 63.63636363636363,
+        "R10_all_reference_pct": 63.63636363636363,
+        "source_csv": "rppg_motion_v21/validation_final/synthetic72/fusion_heart_rate.csv",
+        "prediction_column": "ridge_bpm"
+      },
+      "previously_seen_during_development": true,
+      "next_version_role": "Regression/development evidence; not an untouched test recording."
+    }
+  ],
+  "derivatives": [
+    {
+      "video": {
+        "path": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/clips/motion_first60.mp4",
+        "bytes": 1348280,
+        "mtime_ns": "1788442027840588856",
+        "fps": 29.97002997002997,
+        "frames": 1799,
+        "duration_s": 60.026633333333336,
+        "width": 640,
+        "height": 360,
+        "sha256": "45ca3ae3bf85c51be4fd06acba7a1e8bc27d2cc00e3c6da9e0896d61c86e6254"
+      },
+      "parent_source_id": "kaggle_full",
+      "derivation": "Saved first60 result points at motion_first60.mp4; 1799 frames at 29.97 Hz, 640x360, versus full source 12867 frames at 1920x1080. Treat as same recording despite re-encoding and distinct hash.",
+      "adds_independent_recording": false
+    }
+  ],
+  "references": {
+    "ubfc": {
+      "path": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/ground_truth.txt",
+      "sha256": "836852f57f9cc9e04ecab134ebe506f831ad3e7d95ee73771ab8ac32ce845b67",
+      "shape": [
+        3,
+        1547
+      ],
+      "first_time": 0,
+      "last_time": 52.691,
+      "duplicate_times": 1,
+      "HR_min": 97,
+      "HR_max": 113
+    },
+    "data1": {
+      "directory": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_data1_20260909\\inputs\\reference\\20260909_YJC_2",
+      "files": [
+        "events.csv",
+        "meta.json",
+        "polar_acc.csv",
+        "polar_hr.csv",
+        "polar_ppg.csv",
+        "quality_summary.csv",
+        "waveform.png"
+      ],
+      "manifest": {
+        "events.csv": {
+          "sha256": "67626e6514b0c85e9da0d04e414bb3db63b3905a3afeaae02713019b060da26b",
+          "bytes": 628
+        },
+        "meta.json": {
+          "sha256": "d8d8045a259fc4d97edba6488bc12d9fa410520dfd795a3b27cba2a23fb74212",
+          "bytes": 3977
+        },
+        "polar_acc.csv": {
+          "sha256": "0e5813f7dbc2ff6d514b534ff852bd0646a3b360a59fcbb11b4baabc5df49ef7",
+          "bytes": 443847
+        },
+        "polar_hr.csv": {
+          "sha256": "ecdd31359f0285ebb0d91834d85fc9faeaf0c1bea9e75a331b3a64bcc2f5daa6",
+          "bytes": 4880
+        },
+        "polar_ppg.csv": {
+          "sha256": "799b425b0981abec1c739f57f1c9744574ceaf53b67b793831d4fe91b97ef2f3",
+          "bytes": 542309
+        },
+        "quality_summary.csv": {
+          "sha256": "884960338ebb20aed152793c730971e884f6a01a6d53d413e7fd7b6c6bd1f9ca",
+          "bytes": 511
+        },
+        "waveform.png": {
+          "sha256": "a8750c6b1e34f4cda7d9eb4d9ab197459a1546c9114a752b837b060ab5b5087c",
+          "bytes": 70030
+        }
+      },
+      "hr_sample_count": 91,
+      "ppg_sample_count": 4640,
+      "acc_sample_count": 4497,
+      "video_start_utc_ns": "1788939171166718500",
+      "alignment_status": "estimated_from_file_mtime_not_hardware_synchronized",
+      "sensitivity_shifts_s": [
+        -5,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        5
+      ],
+      "sync_verified": false
+    },
+    "ubfc_convention": "Rows: raw contact PPG, device HR, timestamps. 1547 columns; duplicate timestamp merged by mean ->1546 times. Preserve existing relative dataset origin and nominal center +/-5 s arithmetic device-HR mean with endpoint coverage; do not align by peak-error fitting.",
+    "data1_convention": "Preserve video_start_utc_ns=1788939171166718500 and shifts [-5,-2,-1,0,1,2,5]. int64 subtraction before seconds; finite positive notification mean in nominal half-open center +/-5 s window; >=2 values, selected internal gaps <=2 s; no independent re-zeroing.",
+    "synthetic_convention": "Known generator frequency 72 bpm; no PPG waveform morphology truth supplied.",
+    "reference_quality_warning": "Calculable reference and available files do not independently establish sensor physiological accuracy or hardware synchronization."
+  },
+  "cache_audit": {
+    "wsl_v21_and_v2_caches": [
+      {
+        "version": "v21",
+        "case": "user0904",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/user0904",
+        "identity": {
+          "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+          "size": 834174464,
+          "mtime_ns": "1788510654695560400",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30.00003000003,
+        "frames": 1461,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/user0904/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "b04b627be9f18ca962b44109f8a215206d0fa9537cc6f03402b1a5b12eaecbfb",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 39,
+        "Nfusion_output": 36
+      },
+      {
+        "version": "v21",
+        "case": "user0907",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/user0907",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+          "size": 867938304,
+          "mtime_ns": "1788772715000000000",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30.00003000003,
+        "frames": 1557,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/user0907/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 42,
+        "Nfusion_output": 12
+      },
+      {
+        "version": "v21",
+        "case": "ubfc",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/ubfc",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+          "size": 1425830568,
+          "mtime_ns": "1788405743301475200",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 29.264106,
+        "frames": 1547,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/ubfc/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "5064189577d15b75b1e9f06b5cefedb880e3f6be6230fea693dc1f9acf3b311c",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 44,
+        "Nfusion_output": 40
+      },
+      {
+        "version": "v21",
+        "case": "kaggle_full",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/kaggle_full",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+          "size": 538497671,
+          "mtime_ns": "1788440483953150428",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 29.97002997002997,
+        "frames": 12867,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/kaggle_full/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "aa1884b52beeac34c61633ac72ce56f298b5b9c19293a4ec899fc1d248bfafce",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 419,
+        "Nfusion_output": 323
+      },
+      {
+        "version": "v21",
+        "case": "synthetic72",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909/validation_final/synthetic72",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+          "size": 3140871,
+          "mtime_ns": "1788402445618247234",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30,
+        "frames": 600,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/synthetic72/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "af08afefde4b22bd2bd869af3ac03f71faad58823f6ea2b76830ee6aeaf1d088",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 11,
+        "Nfusion_output": 7
+      },
+      {
+        "version": "v2",
+        "case": "user0904",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v2_20260908/validation/user0904",
+        "identity": {
+          "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+          "size": 834174464,
+          "mtime_ns": "1788510654695560400",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30.00003000003,
+        "frames": 1461,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/user0904/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "b04b627be9f18ca962b44109f8a215206d0fa9537cc6f03402b1a5b12eaecbfb",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 39,
+        "Nfusion_output": 31
+      },
+      {
+        "version": "v2",
+        "case": "user0907",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v2_20260908/validation/user0907",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+          "size": 867938304,
+          "mtime_ns": "1788772715000000000",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30.00003000003,
+        "frames": 1557,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/user0907/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 42,
+        "Nfusion_output": 12
+      },
+      {
+        "version": "v2",
+        "case": "ubfc",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v2_20260908/validation/ubfc",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+          "size": 1425830568,
+          "mtime_ns": "1788405743301475200",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 29.264106,
+        "frames": 1547,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/ubfc/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "5064189577d15b75b1e9f06b5cefedb880e3f6be6230fea693dc1f9acf3b311c",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 44,
+        "Nfusion_output": 35
+      },
+      {
+        "version": "v2",
+        "case": "kaggle_full",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v2_20260908/validation/kaggle_full",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+          "size": 538497671,
+          "mtime_ns": "1788440483953150428",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 29.97002997002997,
+        "frames": 12867,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/kaggle_full/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "aa1884b52beeac34c61633ac72ce56f298b5b9c19293a4ec899fc1d248bfafce",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 419,
+        "Nfusion_output": 246
+      },
+      {
+        "version": "v2",
+        "case": "synthetic72",
+        "directory": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v2_20260908/validation/synthetic72",
+        "identity": {
+          "video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+          "size": 3140871,
+          "mtime_ns": "1788402445618247234",
+          "max_seconds": null,
+          "frontend_hashes": {
+            "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+            "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+            "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+          }
+        },
+        "fps": 30,
+        "frames": 600,
+        "config": {
+          "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/synthetic72/frame_trace.csv",
+          "window": 10,
+          "step": 1,
+          "max_gap": 0.1,
+          "min_bpm": 42,
+          "max_bpm": 210
+        },
+        "trace_sha256": "af08afefde4b22bd2bd869af3ac03f71faad58823f6ea2b76830ee6aeaf1d088",
+        "trace_meta_hash_matches": true,
+        "video_exists": true,
+        "video_stat_matches": true,
+        "Nplanned": 11,
+        "Nfusion_output": 7
+      }
+    ],
+    "all10_wsl_metadata_trace_hashes_match": true,
+    "all10_wsl_original_video_size_mtime_match": true,
+    "v2_v21_trace_identical_for_all5": true,
+    "all5_windows_v21_copies_match_wsl": true,
+    "data1_trace_meta_hash_matches": true,
+    "identity_rules": "V2.1 --cache requires exact resolved video path, bytes, mtime_ns, max_seconds, and frontend_hashes for motion_frontend.py/legacy_motion.py/analyze_rppg.py; additionally SHA256 of trace and frame count must match.",
+    "what_is_saved": "Frame-level ROI RGB statistics, validity/quality, face boxes/source/motion and detection flags; not original pixel distributions.",
+    "what_can_be_reused": "Frozen V2.1 output/evaluation can serve as old baseline. Exact same frontend may reuse validated trace. V22 gap0.15 may reuse freshly extracted V22 gap0.10 trace if video/frontend identity and trace hash match.",
+    "what_cannot_be_reused": "V22 trimmed-mean RGB differs from V2.1 patch medians. Do not feed old V2.1 RGB trace as if re-extracted with trimmed mean, and do not edit metadata to bypass frontend identity. Read the original frames for new sampling.",
+    "frontend_metric_columns": [
+      "source",
+      "rgb_valid",
+      "face_detected",
+      "flow_available",
+      "bridge_age_frames"
+    ]
+  },
+  "legacy_evidence": {
+    "summaries_read": [
+      {
+        "path": "results/self_test_72bpm/pos/summary.json",
+        "data": {
+          "input_video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+          "method": "POS",
+          "fps": 30,
+          "frames": 600,
+          "duration_s": 20,
+          "face_detection_rate": 1,
+          "median_bpm": 72.0703125,
+          "mean_bpm": 71.91051136363636,
+          "bpm_std": 0.33898940149213036,
+          "median_snr_db": 7.265192052471923,
+          "warning": "Camera-derived rPPG is an estimate, not contact-PPG ground truth."
+        }
+      },
+      {
+        "path": "results/kaggle_motion_subject001/pos_first60/summary.json",
+        "data": {
+          "input_video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/clips/motion_first60.mp4",
+          "method": "POS",
+          "fps": 29.97002997002997,
+          "frames": 1799,
+          "duration_s": 60.026633333333336,
+          "face_detection_rate": 1,
+          "median_bpm": 68.48620129870129,
+          "mean_bpm": 69.38179008491507,
+          "bpm_std": 18.355192051520348,
+          "median_snr_db": -4.676735755763138,
+          "warning": "Camera-derived rPPG is an estimate, not contact-PPG ground truth."
+        }
+      },
+      {
+        "path": "results/Video_20260904_145402918/pos/summary.json",
+        "data": {
+          "input_video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+          "method": "POS",
+          "fps": 30.00003000003,
+          "frames": 1461,
+          "duration_s": 48.699951299999995,
+          "face_detection_rate": 1,
+          "median_bpm": 65.91803466803468,
+          "mean_bpm": 65.17434402049788,
+          "bpm_std": 1.6235365082415458,
+          "median_snr_db": -2.1925799303386135,
+          "warning": "Camera-derived rPPG is an estimate, not contact-PPG ground truth."
+        }
+      },
+      {
+        "path": "results/motion_upgrade_20260908/neural_ubfc_cv411/neural_summary.json",
+        "data": {
+          "model": "RhythmMamba.pure",
+          "open_rppg_version": "0.1.1",
+          "fps": 29.264106,
+          "model_meta": {
+            "fps": 30,
+            "input": [
+              160,
+              128,
+              128,
+              3
+            ]
+          },
+          "trace": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_20260908/ubfc_robust/frame_trace.csv",
+          "input_identity": {
+            "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+            "size": 1425830568,
+            "mtime_ns": "1788405743301475200",
+            "frontend": "robust",
+            "max_seconds": null,
+            "source_sha256": "5b6deab6e91ab3490f5f67efc39a07aa4fc6646b749eb90a1187eecf866dfc88"
+          },
+          "finite_prediction_fraction": 0.9392372333548804,
+          "segments": [
+            {
+              "start_frame": 0,
+              "stop_frame": 1547,
+              "statistics": {
+                "frames": 1586,
+                "key": 0,
+                "skipped": 0,
+                "filled": 39,
+                "dependent": 0,
+                "null": 0
+              }
+            }
+          ],
+          "warning": "Independent converted-weight comparison. Not official PyTorch replication. No claim of exercise accuracy."
+        }
+      },
+      {
+        "path": "results/motion_upgrade_20260908/neural_user0907/neural_summary.json",
+        "data": {
+          "model": "RhythmMamba.pure",
+          "open_rppg_version": "0.1.1",
+          "fps": 30.00003000003,
+          "model_meta": {
+            "fps": 30,
+            "input": [
+              160,
+              128,
+              128,
+              3
+            ]
+          },
+          "trace": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_20260908/user0907_robust/frame_trace.csv",
+          "input_identity": {
+            "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+            "size": 867938304,
+            "mtime_ns": "1788772715000000000",
+            "frontend": "robust",
+            "max_seconds": null,
+            "source_sha256": "5b6deab6e91ab3490f5f67efc39a07aa4fc6646b749eb90a1187eecf866dfc88"
+          },
+          "finite_prediction_fraction": 0.76043673731535,
+          "segments": [
+            {
+              "start_frame": 92,
+              "stop_frame": 610,
+              "statistics": {
+                "frames": 518,
+                "key": 0,
+                "skipped": 0,
+                "filled": 0,
+                "dependent": 0,
+                "null": 0
+              }
+            },
+            {
+              "start_frame": 699,
+              "stop_frame": 1557,
+              "statistics": {
+                "frames": 858,
+                "key": 0,
+                "skipped": 0,
+                "filled": 0,
+                "dependent": 0,
+                "null": 0
+              }
+            }
+          ],
+          "warning": "Independent converted-weight comparison. Not official PyTorch replication. No claim of exercise accuracy."
+        }
+      }
+    ],
+    "source_notes": [
+      {
+        "file": "make_self_test_video.py",
+        "finding": "Creates static astronaut with known 1.2Hz color modulation; a useful pipeline self-test, not a real movement/person experiment."
+      },
+      {
+        "file": "analyze_rppg.py",
+        "finding": "Legacy SNR chooses its target band around the algorithm spectrum maximum. Do not compare it directly with later reference-H1 SNR or treat low inter-method disagreement as true HR accuracy."
+      },
+      {
+        "file": "assess_motion_candidate.py",
+        "finding": "Groups the first60 motion score by within-recording quartiles and compares POS/CHROM variability/disagreement. No reference HR; these are within-recording engineering diagnostics."
+      },
+      {
+        "file": "motion_upgrade_v21_20260909/analyze_motion_v2.py",
+        "finding": "Cache identity and trace checksum are validated; optional reference is applied after predictions. Inference and DP remain offline."
+      },
+      {
+        "file": "rppg_motion_v2/evaluate_v2.py and rppg_motion_v21/evaluation",
+        "finding": "Retains nominal 10s reference aggregation, original Nref/R5 denominators, own/common comparisons and reference-H1 SNR. UBFC 40/44 output, MAE2.4941466; 72bpm synthetic MAE0; other old videos have no accuracy metrics."
+      },
+      {
+        "file": "rppg_data1_20260909/evaluation and comparison_qa",
+        "finding": "Fixed estimated-time alignment with all7 shifts; fusion DP 38/42, MAE13.1289474 and P5/R5=0 at primary0. Independent HR/SNR QA passed; accuracy remains conditional on timing assumption."
+      }
+    ],
+    "neural_warning": "Existing RhythmMamba.pure converted-weight outputs for the same UBFC/user0907 recordings do not add samples and are not official PyTorch benchmark replications."
+  },
+  "next_version_evaluation_checklist": [
+    {
+      "priority": 1,
+      "item": "Freeze protocol before reference scoring",
+      "detail": "Six source groups, old V21 and both V22 modes (trimmed_gap10 and trimmed_gap15), identical detector/ROI definitions, declared trim10%, exact frame/window grids. No per-video best-mode or best-time-shift selection."
+    },
+    {
+      "priority": 2,
+      "item": "Reference categories stay separate",
+      "detail": "UBFC paired dataset-reference regression; data1 estimated synchronization primary0 plus all7 shifts; three no-reference recordings get NA accuracy; synthetic72 engineering-frequency check. No pooled claim that treats these categories as one clinical sample."
+    },
+    {
+      "priority": 3,
+      "item": "Fair HR comparison",
+      "detail": "Report local and offline DP; Nplanned/Nref/Noutput/Nvalid, Cout/Cref, MAE/RMSE/Bias/descriptive LoA, P5 and full-reference R5. Include strict common-output windows and added/lost windows with separate errors and counts."
+    },
+    {
+      "priority": 4,
+      "item": "Continuity without inflated duration",
+      "detail": "Count rejected windows and output run breaks; report longest consecutive HR run using first/last center span and explicitly labeled union of actual frame support. Do not sum 10s overlapping windows as independent time."
+    },
+    {
+      "priority": 5,
+      "item": "Sampling and waveform provenance",
+      "detail": "Compare old/new face_detected, flow_available, source and rgb_valid masks. Separately report generated versus neighbor-covered waveform windows, finite waveform sample duration and longest finite run, interpolation fraction/gap limits. Detection success/output coverage is not accuracy."
+    },
+    {
+      "priority": 6,
+      "item": "Fixed SNR and sync limits",
+      "detail": "Saved base, periodic Hann full window, nfft8192, .7–3.5Hz, device/known reference H1±.1Hz; own/common and paired deltas. No morphology-r claim without validated timing/site waveform reference."
+    },
+    {
+      "priority": 7,
+      "item": "Cache and regression authenticity",
+      "detail": "Re-extract trimmed-mean traces from all6 original sources; second gap mode reuses only matching new trace. Freeze hashes, compare all12 new runs to old baseline, preserve old results. No renamed duplicate/re-encode/clip counts as a new recording."
+    },
+    {
+      "priority": 8,
+      "item": "Evidence needed beyond current data",
+      "detail": "Next independent validation needs prospectively synchronized camera and ECG/contact reference with shared hardware/visible trigger and recorded clock mapping, across new sessions/subjects and movement types. Current six groups have all already been inspected; this is a future measurement requirement, not a request to restore deleted data."
+    }
+  ],
+  "limitations": [
+    "No independent subjects can be inferred from filenames; multiple user videos may be the same participant.",
+    "UBFC is one supplied paired recording, not a multi-subject exercise validation.",
+    "Data1 is now a known development failure case for V22 after its V21 analysis, not an untouched V22 test.",
+    "No current local new user video has verified shared hardware synchronization.",
+    "Nanosecond file timestamps are stored as decimal strings to avoid JSON/JavaScript integer rounding."
+  ]
+}
+

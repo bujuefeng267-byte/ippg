@@ -1,0 +1,13 @@
+{
+  "version": "v26-development-1",
+  "request": "Improve toward almost all heart rates within error tolerance",
+  "interpretation": {"HR_tolerance_bpm": 5, "aspirational_each_case_P5_pct": 95, "report_full_reference_R5": true, "do_not_count_missing_as_correct": true},
+  "population": "Six previously inspected personal recordings; development, not held-out validation",
+  "fixed_evaluation": {"window_s": 10, "step_s": 1, "min_bpm": 42, "max_bpm": 210, "max_gap_s": 0.1, "reference": "Identical V24/V25 paired reference windows", "shifts_s": [-5,-2,-1,0,1,2,5]},
+  "candidate_families": ["Log-RGB chromatic projection with fixed common-mode illumination removal", "One fixed public EfficientPhys PURE checkpoint with documented 30Hz input adapter"],
+  "parameter_policy": "Freeze each implementation from physical models and synthetic tests before real-reference scoring. Record any later revisions explicitly. No truth-guided ROI/frequency routing, no per-video threshold or reference offset search.",
+  "promotion_guardrails": {"pooled_MAE_must_decrease_vs_V25": true, "pooled_R5_gain_min_pp": 5, "max_any_case_MAE_increase_bpm": 3, "max_any_case_P5_drop_pp": 3, "max_any_case_R5_drop_pp": 3, "max_any_case_HR_coverage_drop_pp": 3, "max_any_case_waveform_coverage_drop_pp": 3, "common_window_pooled_MAE_must_decrease": true},
+  "success_distinction": "Promoting a partial improvement does not mean the user's near-all-within-5bpm objective is met. Report each case separately and state unmet objectives.",
+  "oracle_policy": "Any truth-near candidate availability is diagnostic only, must be clearly marked not a deployable result and must never determine an inference frequency.",
+  "preservation": ["Keep V25 recommended entry and all previous outputs", "Preserve original videos and Polar data", "Pixel tracking, local screening and fallback remain in original branch", "Missing waveform/HR not replaced with zero or carried HR", "Never synthesize a pulse from reference HR", "Local inference only; no video upload"]
+}

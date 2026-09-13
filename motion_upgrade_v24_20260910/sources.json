@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-10",
+  "timezone": "Asia/Shanghai",
+  "scope": "Selected primary-source research on motion-robust rPPG published or updated during 2025–2026; not an exhaustive systematic review.",
+  "external_code_executed": false,
+  "weights_downloaded": false,
+  "project_inference_changed_by_researcher": false,
+  "local_report": "research_v24.md",
+  "sources": [
+    {
+      "id": "bspc_optical_flow_109300",
+      "title": "Exploiting optical flow guidance for motion-robust remote physiological measurements",
+      "doi": "10.1016/j.bspc.2025.109300",
+      "paper_url": "https://www.sciencedirect.com/science/article/pii/S1746809425018117",
+      "date": "2026-05-01",
+      "date_type": "journal_issue_date",
+      "venue": "Biomedical Signal Processing and Control, volume 116, article 109300",
+      "status": "journal_article",
+      "methods_verified": [
+        "OFET facial element alignment",
+        "OFKRS relative-motion region selection",
+        "dual-branch learned feature network"
+      ],
+      "verification_scope": "Publisher abstract, bibliographic metadata and targeted author-code search; full implementation not verified.",
+      "code_url": null,
+      "author_code_verified": false,
+      "commit_sha": null,
+      "code_license": "Not found in checked sources",
+      "weights": {
+        "available_verified": false,
+        "license": null,
+        "sha256": null
+      },
+      "applicability": "Supports geometry alignment and stable-region principles, not numerical improvement claims for classical implementation."
+    },
+    {
+      "id": "rppg_vqa_cvpr2026",
+      "title": "rPPG-VQA: A Video Quality Assessment Framework for Unsupervised rPPG Training",
+      "paper_url": "https://arxiv.org/abs/2604.11156",
+      "fulltext_url": "https://arxiv.org/html/2604.11156v1",
+      "venue_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Dai_rPPG-VQA_A_Video_Quality_Assessment_Framework_for_Unsupervised_rPPG_Training_CVPR_2026_paper.html",
+      "date": "2026-04-13",
+      "date_type": "arxiv_v1_submission",
+      "venue": "CVPR 2026",
+      "status": "conference_paper_verified_in_official_proceedings",
+      "code_url": "https://github.com/Tianyang-Dai/rPPG-VQA",
+      "author_code_verified": true,
+      "commit_sha": null,
+      "code_license": "No explicit license observed in checked repository root/README",
+      "weights": {
+        "available_verified": false,
+        "license": null,
+        "sha256": null
+      },
+      "verification_scope": "Paper HTML, CVF proceedings, GitHub root/README; visible release mainly README, overview image and prompt.py.",
+      "applicability": "Adapt deterministic consensus to inference only as an original engineering experiment; full method curates unsupervised training data.",
+      "limitation": "Common periodic illumination can yield misleading multi-method consensus and SNR."
+    },
+    {
+      "id": "sac_patchpca_2606",
+      "title": "Spatial Artifact Coherence Determines Codec Robustness in Patch-Based rPPG",
+      "paper_url": "https://arxiv.org/abs/2606.04198",
+      "fulltext_url": "https://arxiv.org/html/2606.04198v1",
+      "date": "2026-06-02",
+      "date_type": "arxiv_v1_submission",
+      "venue": "arXiv",
+      "status": "preprint",
+      "code_url": "https://github.com/baachraf/patchpca-codec-rppg",
+      "author_code_verified": true,
+      "commit_sha": null,
+      "code_license": "No explicit license observed in checked repository root/README",
+      "weights": {
+        "required": false,
+        "available_verified": null,
+        "license": null,
+        "sha256": null
+      },
+      "verification_scope": "Paper full text, repository root and README; no runtime verification.",
+      "applicability": "Optional CHROM-anchored residual PCA experiment; not a universal high-motion solution.",
+      "limitation": "SAC is condition-level evidence, not a validated per-window accuracy selector; study scope emphasizes low/moderate motion."
+    },
+    {
+      "id": "angle_graph_icassp2026",
+      "title": "Video-based Heart Rate Estimation with Angle-guided ROI Optimization and Graph Signal Denoising",
+      "paper_url": "https://arxiv.org/abs/2604.11395",
+      "fulltext_url": "https://arxiv.org/html/2604.11395v1",
+      "venue_url": "https://www.cmsworkshops.com/ICASSP2026/view_paper.php?PaperNum=5766",
+      "date": "2026-04-13",
+      "date_type": "arxiv_v1_submission",
+      "venue": "ICASSP 2026",
+      "status": "conference_program_entry_verified",
+      "code_url": null,
+      "author_code_verified": false,
+      "commit_sha": null,
+      "code_license": "Not found in checked sources",
+      "weights": {
+        "available_verified": false,
+        "license": null,
+        "sha256": null
+      },
+      "verification_scope": "Paper HTML and official ICASSP program; author-code search.",
+      "applicability": "Pose and geometry as region-quality evidence.",
+      "limitation": "Final removal/concatenation of global-motion segments cannot be copied into continuous monitoring coverage evaluation."
+    },
+    {
+      "id": "me_rppg_2025",
+      "title": "Memory-efficient Low-latency Remote Photoplethysmography through Temporal-Spatial State Space Duality",
+      "paper_url": "https://arxiv.org/abs/2504.01774",
+      "project_url": "https://health-hci-group.github.io/ME-rPPG-demo/",
+      "date": "2025-04-02",
+      "latest_checked_version_date": "2025-04-07",
+      "date_type": "arxiv_submission",
+      "venue": "arXiv",
+      "status": "preprint_as_verified",
+      "code_url": "https://github.com/KegangWangCCNU/ME-rPPG",
+      "author_code_verified": true,
+      "commit_sha": null,
+      "code_license": "MIT; repository LICENSE text inspected",
+      "license_url": "https://github.com/KegangWangCCNU/ME-rPPG/blob/main/LICENSE",
+      "weights": {
+        "available_verified": true,
+        "visible_filename": "model.onnx",
+        "training_dataset": "RLAP per README",
+        "sha256": null,
+        "license": "Repository MIT license inspected; no separate weight-specific license statement verified"
+      },
+      "verification_scope": "arXiv metadata/abstract, author repo root/README and LICENSE; ONNX not downloaded or executed.",
+      "applicability": "Independent fixed-model benchmark after preprocessing, weight and training split audit."
+    },
+    {
+      "id": "phasenet_2026",
+      "title": "PHASE-Net: Physics-Grounded Harmonic Attention System for Efficient Remote Photoplethysmography Measurement",
+      "paper_url": "https://arxiv.org/abs/2509.24850",
+      "date": "2025-09-29",
+      "latest_checked_version_date": "2026-03-07",
+      "date_type": "arxiv_v1_and_v3",
+      "venue": "CVPR 2026 per arXiv and author repository",
+      "status": "conference_acceptance_reported_by_author_sources",
+      "code_url": "https://github.com/Alex036225/PhaseNet",
+      "author_code_verified": true,
+      "commit_sha": null,
+      "code_license": "No explicit LICENSE observed in checked repository root/README",
+      "weights": {
+        "available_verified": true,
+        "verification": "PreTrainedModels directory visible",
+        "training_dataset": "UBFC in supplied configuration/checkpoint path",
+        "sha256": null,
+        "license": null
+      },
+      "verification_scope": "arXiv metadata and author repository root/README; implementation and weights not executed.",
+      "applicability": "Recent neural benchmark candidate only after training-membership verification.",
+      "limitation": "Do not present current UBFC subject1 as independent test data for a UBFC-trained checkpoint without inspecting the exact split."
+    },
+    {
+      "id": "open_rppg_author_linked",
+      "title": "Open-rppg",
+      "paper_url": null,
+      "code_url": "https://github.com/KegangWangCCNU/open-rppg",
+      "docs_url": "https://kegangwangccnu.github.io/open-rppg/",
+      "date": null,
+      "date_type": "repository_read_at_as_of_date",
+      "author_code_verified": true,
+      "author_relationship": "Linked from ME-rPPG author's repository",
+      "commit_sha": null,
+      "code_license": "MIT per README; third-party models/configurations subject to original author terms",
+      "weights": {
+        "available_verified": "README model zoo and named configurations",
+        "sha256": null,
+        "license": "Model-specific verification required"
+      },
+      "verification_scope": "Repository root and README only; actual inference outputs not validated.",
+      "default_model_at_read": "FacePhys.rlap",
+      "default_model_paper_status": "README reference column is '-' for FacePhys",
+      "applicability": "Unified BVP/timestamp interface for a separately frozen neural benchmark; not itself a new paper or measured improvement."
+    },
+    {
+      "id": "open_rppg_initial_lead",
+      "title": "Open-rppg initial candidate repository",
+      "paper_url": null,
+      "code_url": "https://github.com/chnbld/open-rppg",
+      "date": null,
+      "date_type": "repository_read_at_as_of_date",
+      "author_code_verified": false,
+      "commit_sha": null,
+      "code_license": "README states MIT for source; model terms separate",
+      "weights": {
+        "sha256": null,
+        "license": "Unverified per model"
+      },
+      "verification_scope": "Root/README; author/canonical status not established.",
+      "applicability": "Retained as initial research lead; prefer explicitly author-linked KegangWangCCNU repository for future audit."
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "A",
+      "priority": 1,
+      "label": "Geometry-stabilized RGB with local anchoring and V22 fallback",
+      "kind": "original implementation proposal",
+      "training_required": false,
+      "source_ids": [
+        "bspc_optical_flow_109300"
+      ]
+    },
+    {
+      "id": "B",
+      "priority": 1,
+      "label": "Independent-ROI spectral consensus with baseline protection",
+      "kind": "original implementation proposal",
+      "training_required": false,
+      "source_ids": [
+        "rppg_vqa_cvpr2026"
+      ]
+    },
+    {
+      "id": "C",
+      "priority": 2,
+      "label": "Separate fixed CHROM-anchored residual PCA experiment",
+      "kind": "paper-inspired optional adaptation",
+      "training_required": false,
+      "source_ids": [
+        "sac_patchpca_2606"
+      ]
+    }
+  ],
+  "acquisition_status": {
+    "primary_web_pages": "Read via web tool",
+    "github_api": "403 rate limit exceeded for initial three repository metadata calls",
+    "git_https": "Connection failures during read-only ls-remote attempts",
+    "commit_pinning": "Not completed; all commit_sha fields intentionally null",
+    "failed_fetch_log": "research_sources/repository_metadata.json",
+    "no_full_reproduction_claim": true,
+    "no_measured_v24_improvement_claim": true
+  }
+}

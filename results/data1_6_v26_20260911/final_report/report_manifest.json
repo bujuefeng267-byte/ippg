@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-09-11T14:53:50.440963+00:00",
+  "status": "final",
+  "variants": [
+    "V25",
+    "log_projection_baseline",
+    "log_projection_guarded",
+    "component_consensus",
+    "neural_efficientphys",
+    "component_harmonics",
+    "conservative_components"
+  ],
+  "fixed_HR_comparators": [
+    "V25",
+    "component_harmonics",
+    "Polar"
+  ],
+  "case_specific_best_selection": false,
+  "additional_fixed_HR_comparators": [
+    "conservative_components"
+  ],
+  "missing_HR_interpolated": false,
+  "source_hashes": {
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v26/build_report_v26.py": "debe28cbdc6662d4f4ac6d102765cee6de9e2285ceb9023aa765606230e94eb8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/stage_evaluation.json": "0a70e7d896a4a2dc9f0e0ece5554d463c566b4c37ddbe3b0f0ce488e1c5b999d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/log_projection_baseline/evaluation_summary.json": "db650d3759436a6feb3532b3ccfd3fb7f75083642b445604095ce0d5d18ecf71",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/log_projection_guarded/evaluation_summary.json": "8df1382cfa4fea38ebfc5b157798b23d481644c779a4c6a11837f3c6eb62fb14",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_consensus/evaluation_summary.json": "29cbc9b715414c905af152053de12714c4c75ea9508095edb4f88302e0d88d1d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/neural_efficientphys/evaluation_summary.json": "fd82c8a63cb734c3f3c09f2f344b658e7e698e8b5108f8ef0ea50ef51acefa1b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/evaluation_summary.json": "877a24d4762d68ce6d80fee241483b470ff45df351a1f7911f90eca7c1c94ecb",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/conservative_components/evaluation_summary.json": "d4b202b98e43493ed6ba1c9a6f1c00902b3d687e4ad5aaf6cacef2054b40e043",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/evaluation/paired_windows.csv": "d712073f9dfdeee92e17456dcbd3189fdbaec48300938474bc81ba0356d154f2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/fusion_heart_rate.csv": "c17239940e85c5a639ad40cf9ebf6ade23653b1ef2923b68fe239b81846f5b43",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/data1/heart_rate.csv": "7bc1a9e4e423e2ecbdbc1cdb9af331d5f00fd2f8e609f330d3eca970d49e683e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/evaluation/paired_windows.csv": "24dd164ef62b06917bc506f5276e0d9f54cb6793e29032f410051199df03d318",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/fusion_heart_rate.csv": "c928ca20ed354e6b429dff639ffdaa432cbc4238c7f34c2955435cf080c714cd",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/data2/heart_rate.csv": "7a37ca2b7dfaee955e2bf164c7b88bc1118597b6fc14ddd7f20a1a8c41fd6d8d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/evaluation/paired_windows.csv": "9df3925eadbd9cef71005e25f73382fc24ffab33729c1f1d24e47023d368b3f8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/fusion_heart_rate.csv": "348485304edd1b2dd6d0981fc44f014492e05df948b9099d8e3b7b7579683165",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/data3/heart_rate.csv": "f658b189bfeef5ff6d7a51f978d608e5541ee7856a7ed11a5412b5e3185d7f95",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/evaluation/paired_windows.csv": "8621006dfd611958ebee93bff1f22d8ba3130caba4bdcf4a13d3e3804315fb3d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/fusion_heart_rate.csv": "e1325742cb27f0da5d0ffe62d4a12a25596fcc181c1e025fd7f8b199381dadce",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/data4/heart_rate.csv": "59c35250b15f0305777e29ce62d7eaf1cb4864b202485f900843a35820711a13",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/evaluation/paired_windows.csv": "4be20d34595e40e124e7f708b7bd75a06296bbfd1d5269c50f60d1aac1e0af41",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/fusion_heart_rate.csv": "e75b490458c83b8f453ddeee6180f8a0e11cbcf46896f70517b9f4dc07bae6c9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/data5/heart_rate.csv": "987a34a2081719a4cbc732f4825e85201452570907d6f1c9c78d7d5d542bf768",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/evaluation/paired_windows.csv": "a65ac803ac3e5589407e50f74283e5d6e29cc5875f6180ec25efbdf4917df238",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/fusion_heart_rate.csv": "8947ce2c18b99324e6d3963898dd5395c6ca1cfc967def88fabd9392cfb9ad43",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/data6/heart_rate.csv": "cf2b31d3bfec100d679bdb44f020997d980fad5997ee595508e6aa950c90a6b1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/conservative_components/data1/heart_rate.csv": "3e67076f0c98bace3416f8b6d9b605979df533d2d73ab32ef611fa8ee234f1e9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/conservative_components/data2/heart_rate.csv": "f709dc7147aa878ec1a757a61df08029baa368c5f1af5c4aa3f6528335d31516",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/conservative_components/data3/heart_rate.csv": "7129a00fc1727de50cd2800ee9c62ad22349679f6aa73b84cce3094f8490df8d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/conservative_components/data4/heart_rate.csv": "57abe174031c1b87a9af947ee25f7dbdd061b8ccdf631226201e9986462f284d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/conservative_components/data5/heart_rate.csv": "b5e85f5f2b208caf23cc960cb12da6a41d464257fd35fa9853f8e4511d7310c6",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/conservative_components/data6/heart_rate.csv": "72b40d1b0b272fefc73be1737dd76b563b9f8d53875d6ba655988f04e675f58b"
+  },
+  "axis_policy": "Common 35–220 bpm y axis for six HR panels; per-video actual relative time.",
+  "display_link_policy": "Windows-accessible //wsl.localhost/Ubuntu absolute links, angle-bracket wrapped; metadata retains Linux paths.",
+  "report_content_checked_against_source": true,
+  "rendered_visual_review": "Pending human/agent inspection of generated PNGs",
+  "source_hashes_recorded_post_run": true
+}

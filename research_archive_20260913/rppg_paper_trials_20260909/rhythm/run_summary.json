@@ -1,0 +1,988 @@
+{
+  "all_six_successful": true,
+  "created_utc": "2026-09-09T12:56:06.798105+00:00",
+  "parameters": {
+    "checkpoint": "PURE_cross_RhythmMamba.pth",
+    "training": "none; frozen author PURE pretraining",
+    "crop": "V22 tracked normalized face box, 1.5 expansion, clamp at frame edges",
+    "rgb_valid_required": true,
+    "max_bbox_gap_s": 0.1,
+    "resize": "128x128 RGB, cv2.INTER_AREA",
+    "normalization": "one scalar mean/std(ddof=0) over all real cropped frames of each bounded segment, including discarded tail",
+    "clips": "160 frames, nonoverlapping, incomplete segment tail discarded",
+    "prediction_normalization": "per clip torch mean/std correction=1, as author trainer",
+    "sample_clock": "original video fps, no 30 Hz resampling",
+    "postprocessing": "project third-order zero-phase Butterworth 42-210 bpm per contiguous predicted segment",
+    "edge_mask_s": 1.6,
+    "final_hr": "legacy saved-waveform 10s/1s local peak and offline DP",
+    "reference_used": false,
+    "offline": true,
+    "benchmark_reproduction": false
+  },
+  "model": {
+    "backend": "official_selective_scan_ref_torch",
+    "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+    "official_repository": "https://github.com/zizheng-guo/RhythmMamba",
+    "official_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+    "source_files": {
+      "setup/mamba/mamba_ssm/modules/mamba_simple.py": {
+        "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+        "bytes": 14291,
+        "storage": "verbatim audited JSON",
+        "optional_snapshot_matches": false
+      },
+      "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": {
+        "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+        "bytes": 16835,
+        "storage": "verbatim audited JSON",
+        "optional_snapshot_matches": false
+      },
+      "neural_methods/model/RhythmMamba.py": {
+        "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+        "bytes": 11539,
+        "storage": "official_snapshot"
+      },
+      "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml": {
+        "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+        "bytes": 3333,
+        "storage": "official_snapshot"
+      },
+      "PreTrainedModels/PURE_cross_RhythmMamba.pth": {
+        "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+        "bytes": 20044634,
+        "storage": "official_snapshot",
+        "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+      }
+    },
+    "ast": {
+      "mamba_class": {
+        "name": "Mamba",
+        "line_start": 31,
+        "line_end": 294,
+        "ast_sha256": "1d3f0959daf1e0935879461d6aea115377b46c9952be3c425abc6aae07400f14"
+      },
+      "selective_scan_ref": {
+        "name": "selective_scan_ref",
+        "line_start": 91,
+        "line_end": 157,
+        "ast_sha256": "03581ddbfecd8172893dc8ab684e5080427921f1e460ec5a85bd7c50d83ceda7"
+      }
+    },
+    "official_Mamba_class_unchanged": true,
+    "official_model_text_unchanged": true,
+    "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+    "checkpoint_sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+    "weights_only": true,
+    "strict": true,
+    "removed_uniform_module_prefix": true,
+    "state_dict_tensors": 781,
+    "state_dict_dtype_counts": {
+      "torch.float32": 728,
+      "torch.int64": 53
+    },
+    "parameters": 4922125,
+    "mamba_layers": 24,
+    "use_fast_path": false,
+    "causal_conv_extension": false,
+    "selective_scan_cuda_extension": false,
+    "model_eval": true,
+    "model_dtype": "float32",
+    "input_shape": "[B,160,3,128,128]",
+    "output_shape": "[B,160]",
+    "device": "cuda",
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "torch_version": "2.6.0+cu124",
+    "torch_cuda_version": "12.4",
+    "timm_version": "0.9.16",
+    "einops_version": "0.7.0",
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "official_cuda_kernel_parity_verified": false,
+    "official_performance_benchmark": false,
+    "preprocessing": "Caller must apply the frozen full-video standardization and 160-frame clip protocol.",
+    "limitations": [
+      "Pure Torch reference execution adapter, not the author's fused CUDA backend.",
+      "No inference speed claim for the original implementation.",
+      "This loader alone does not verify CUDA-kernel numerical parity or physiological accuracy."
+    ]
+  },
+  "cases": {
+    "user0904": {
+      "case": "user0904",
+      "method": "RhythmMamba_PURE_project_crop_reference_scan",
+      "fps": 30.00003000003,
+      "frames": 1461,
+      "parameters": {
+        "checkpoint": "PURE_cross_RhythmMamba.pth",
+        "training": "none; frozen author PURE pretraining",
+        "crop": "V22 tracked normalized face box, 1.5 expansion, clamp at frame edges",
+        "rgb_valid_required": true,
+        "max_bbox_gap_s": 0.1,
+        "resize": "128x128 RGB, cv2.INTER_AREA",
+        "normalization": "one scalar mean/std(ddof=0) over all real cropped frames of each bounded segment, including discarded tail",
+        "clips": "160 frames, nonoverlapping, incomplete segment tail discarded",
+        "prediction_normalization": "per clip torch mean/std correction=1, as author trainer",
+        "sample_clock": "original video fps, no 30 Hz resampling",
+        "postprocessing": "project third-order zero-phase Butterworth 42-210 bpm per contiguous predicted segment",
+        "edge_mask_s": 1.6,
+        "final_hr": "legacy saved-waveform 10s/1s local peak and offline DP",
+        "reference_used": false,
+        "offline": true,
+        "benchmark_reproduction": false
+      },
+      "model": {
+        "backend": "official_selective_scan_ref_torch",
+        "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "official_repository": "https://github.com/zizheng-guo/RhythmMamba",
+        "official_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+        "source_files": {
+          "setup/mamba/mamba_ssm/modules/mamba_simple.py": {
+            "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+            "bytes": 14291,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": {
+            "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+            "bytes": 16835,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "neural_methods/model/RhythmMamba.py": {
+            "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+            "bytes": 11539,
+            "storage": "official_snapshot"
+          },
+          "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml": {
+            "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+            "bytes": 3333,
+            "storage": "official_snapshot"
+          },
+          "PreTrainedModels/PURE_cross_RhythmMamba.pth": {
+            "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+            "bytes": 20044634,
+            "storage": "official_snapshot",
+            "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+          }
+        },
+        "ast": {
+          "mamba_class": {
+            "name": "Mamba",
+            "line_start": 31,
+            "line_end": 294,
+            "ast_sha256": "1d3f0959daf1e0935879461d6aea115377b46c9952be3c425abc6aae07400f14"
+          },
+          "selective_scan_ref": {
+            "name": "selective_scan_ref",
+            "line_start": 91,
+            "line_end": 157,
+            "ast_sha256": "03581ddbfecd8172893dc8ab684e5080427921f1e460ec5a85bd7c50d83ceda7"
+          }
+        },
+        "official_Mamba_class_unchanged": true,
+        "official_model_text_unchanged": true,
+        "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+        "checkpoint_sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+        "weights_only": true,
+        "strict": true,
+        "removed_uniform_module_prefix": true,
+        "state_dict_tensors": 781,
+        "state_dict_dtype_counts": {
+          "torch.float32": 728,
+          "torch.int64": 53
+        },
+        "parameters": 4922125,
+        "mamba_layers": 24,
+        "use_fast_path": false,
+        "causal_conv_extension": false,
+        "selective_scan_cuda_extension": false,
+        "model_eval": true,
+        "model_dtype": "float32",
+        "input_shape": "[B,160,3,128,128]",
+        "output_shape": "[B,160]",
+        "device": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch_version": "2.6.0+cu124",
+        "torch_cuda_version": "12.4",
+        "timm_version": "0.9.16",
+        "einops_version": "0.7.0",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "official_cuda_kernel_parity_verified": false,
+        "official_performance_benchmark": false,
+        "preprocessing": "Caller must apply the frozen full-video standardization and 160-frame clip protocol.",
+        "limitations": [
+          "Pure Torch reference execution adapter, not the author's fused CUDA backend.",
+          "No inference speed claim for the original implementation.",
+          "This loader alone does not verify CUDA-kernel numerical parity or physiological accuracy."
+        ]
+      },
+      "trace_sha256": "375905b32705e7bcdbb35b5d6ffffcc53d0ba48aae7457e65b4638b30ba838a5",
+      "source_trace": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/user0904/frame_trace.csv",
+      "source_video_sha256": "90560ee1a6dd97acd15193a1459f65e3b595ba7e9891196cde8270942326ed92",
+      "source_video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+      "reference_used": false,
+      "offline": true,
+      "code_hashes": {
+        "rhythm/run_rhythm_trial.py": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c",
+        "rhythm/backend.py": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "rhythm/backend_test.py": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3",
+        "rhythm/test_preprocessing.py": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0",
+        "cpace/project_estimator/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "cpace/project_estimator/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+      },
+      "accepted_windows": 35,
+      "total_windows": 39,
+      "waveform_coverage": 0.919917864476386,
+      "status_counts": {
+        "candidate_only": 35,
+        "gap_or_filter_edge": 4
+      },
+      "wall_seconds": 43.4048380949971,
+      "limitations": [
+        "Project dynamic tracked crops differ from author static first-frame Haar crops",
+        "Normalization spans each bounded segment and includes discarded tail; offline",
+        "Reference scan backend speed does not reproduce author CUDA kernel speed",
+        "160-frame clip tails and long tracking gaps retain missing outputs",
+        "Original fps and project filter/10s HR differ from author nominal FS30 whole-record scoring"
+      ],
+      "output_hashes": {
+        "waveform.csv": "403657400ae094d657a853ca576cb94fd16ce42154ca6668f66c57409f67bccf",
+        "heart_rate.csv": "0b9a2278fa577de59b0167ba55293d184f8bb153e06333a2a64866bd15d8f31a",
+        "raw_network.csv": "23983539d2a3111c9ad3cdcd7d3c57c584a5737b3ffa7559037927a659fccd47",
+        "segment_diagnostics.json": "4536dac5cb9e845fd4bda63fa4c4e0dbb27d24cba7a35f79540cfc97e664cb3f"
+      }
+    },
+    "user0907": {
+      "case": "user0907",
+      "method": "RhythmMamba_PURE_project_crop_reference_scan",
+      "fps": 30.00003000003,
+      "frames": 1557,
+      "parameters": {
+        "checkpoint": "PURE_cross_RhythmMamba.pth",
+        "training": "none; frozen author PURE pretraining",
+        "crop": "V22 tracked normalized face box, 1.5 expansion, clamp at frame edges",
+        "rgb_valid_required": true,
+        "max_bbox_gap_s": 0.1,
+        "resize": "128x128 RGB, cv2.INTER_AREA",
+        "normalization": "one scalar mean/std(ddof=0) over all real cropped frames of each bounded segment, including discarded tail",
+        "clips": "160 frames, nonoverlapping, incomplete segment tail discarded",
+        "prediction_normalization": "per clip torch mean/std correction=1, as author trainer",
+        "sample_clock": "original video fps, no 30 Hz resampling",
+        "postprocessing": "project third-order zero-phase Butterworth 42-210 bpm per contiguous predicted segment",
+        "edge_mask_s": 1.6,
+        "final_hr": "legacy saved-waveform 10s/1s local peak and offline DP",
+        "reference_used": false,
+        "offline": true,
+        "benchmark_reproduction": false
+      },
+      "model": {
+        "backend": "official_selective_scan_ref_torch",
+        "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "official_repository": "https://github.com/zizheng-guo/RhythmMamba",
+        "official_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+        "source_files": {
+          "setup/mamba/mamba_ssm/modules/mamba_simple.py": {
+            "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+            "bytes": 14291,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": {
+            "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+            "bytes": 16835,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "neural_methods/model/RhythmMamba.py": {
+            "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+            "bytes": 11539,
+            "storage": "official_snapshot"
+          },
+          "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml": {
+            "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+            "bytes": 3333,
+            "storage": "official_snapshot"
+          },
+          "PreTrainedModels/PURE_cross_RhythmMamba.pth": {
+            "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+            "bytes": 20044634,
+            "storage": "official_snapshot",
+            "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+          }
+        },
+        "ast": {
+          "mamba_class": {
+            "name": "Mamba",
+            "line_start": 31,
+            "line_end": 294,
+            "ast_sha256": "1d3f0959daf1e0935879461d6aea115377b46c9952be3c425abc6aae07400f14"
+          },
+          "selective_scan_ref": {
+            "name": "selective_scan_ref",
+            "line_start": 91,
+            "line_end": 157,
+            "ast_sha256": "03581ddbfecd8172893dc8ab684e5080427921f1e460ec5a85bd7c50d83ceda7"
+          }
+        },
+        "official_Mamba_class_unchanged": true,
+        "official_model_text_unchanged": true,
+        "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+        "checkpoint_sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+        "weights_only": true,
+        "strict": true,
+        "removed_uniform_module_prefix": true,
+        "state_dict_tensors": 781,
+        "state_dict_dtype_counts": {
+          "torch.float32": 728,
+          "torch.int64": 53
+        },
+        "parameters": 4922125,
+        "mamba_layers": 24,
+        "use_fast_path": false,
+        "causal_conv_extension": false,
+        "selective_scan_cuda_extension": false,
+        "model_eval": true,
+        "model_dtype": "float32",
+        "input_shape": "[B,160,3,128,128]",
+        "output_shape": "[B,160]",
+        "device": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch_version": "2.6.0+cu124",
+        "torch_cuda_version": "12.4",
+        "timm_version": "0.9.16",
+        "einops_version": "0.7.0",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "official_cuda_kernel_parity_verified": false,
+        "official_performance_benchmark": false,
+        "preprocessing": "Caller must apply the frozen full-video standardization and 160-frame clip protocol.",
+        "limitations": [
+          "Pure Torch reference execution adapter, not the author's fused CUDA backend.",
+          "No inference speed claim for the original implementation.",
+          "This loader alone does not verify CUDA-kernel numerical parity or physiological accuracy."
+        ]
+      },
+      "trace_sha256": "2f94a61d67dc94f1617331158c4e03220a1e3133a89503134c2255a0bd8e389a",
+      "source_trace": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/user0907/frame_trace.csv",
+      "source_video_sha256": "0f432e286772c7eb83e1198f2761d32ca06cd92dc201ddb8965462ed76e4d4d2",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+      "reference_used": false,
+      "offline": true,
+      "code_hashes": {
+        "rhythm/run_rhythm_trial.py": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c",
+        "rhythm/backend.py": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "rhythm/backend_test.py": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3",
+        "rhythm/test_preprocessing.py": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0",
+        "cpace/project_estimator/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "cpace/project_estimator/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+      },
+      "accepted_windows": 13,
+      "total_windows": 42,
+      "waveform_coverage": 0.6987797045600513,
+      "status_counts": {
+        "gap_or_filter_edge": 25,
+        "candidate_only": 13,
+        "insufficient_observed_rgb": 4
+      },
+      "wall_seconds": 38.27730498100209,
+      "limitations": [
+        "Project dynamic tracked crops differ from author static first-frame Haar crops",
+        "Normalization spans each bounded segment and includes discarded tail; offline",
+        "Reference scan backend speed does not reproduce author CUDA kernel speed",
+        "160-frame clip tails and long tracking gaps retain missing outputs",
+        "Original fps and project filter/10s HR differ from author nominal FS30 whole-record scoring"
+      ],
+      "output_hashes": {
+        "waveform.csv": "086d91ca0f098ca9fd8a9ef08644a51a070f664b61d4ab0ed5ef8a6f9fb30866",
+        "heart_rate.csv": "e2414e290f61577b82cff08d9f38f0c4ebe31e7cccbc76774b7c569dd039cd37",
+        "raw_network.csv": "955691fcad0dab8ffbb57ff98b5cde85907d1965406eb0b84f0777608b4bd95f",
+        "segment_diagnostics.json": "f378fae395dd72aaa94f9f3dd8b289ea233c3efacf46c94bace85c396e38e86d"
+      }
+    },
+    "ubfc": {
+      "case": "ubfc",
+      "method": "RhythmMamba_PURE_project_crop_reference_scan",
+      "fps": 29.264106,
+      "frames": 1547,
+      "parameters": {
+        "checkpoint": "PURE_cross_RhythmMamba.pth",
+        "training": "none; frozen author PURE pretraining",
+        "crop": "V22 tracked normalized face box, 1.5 expansion, clamp at frame edges",
+        "rgb_valid_required": true,
+        "max_bbox_gap_s": 0.1,
+        "resize": "128x128 RGB, cv2.INTER_AREA",
+        "normalization": "one scalar mean/std(ddof=0) over all real cropped frames of each bounded segment, including discarded tail",
+        "clips": "160 frames, nonoverlapping, incomplete segment tail discarded",
+        "prediction_normalization": "per clip torch mean/std correction=1, as author trainer",
+        "sample_clock": "original video fps, no 30 Hz resampling",
+        "postprocessing": "project third-order zero-phase Butterworth 42-210 bpm per contiguous predicted segment",
+        "edge_mask_s": 1.6,
+        "final_hr": "legacy saved-waveform 10s/1s local peak and offline DP",
+        "reference_used": false,
+        "offline": true,
+        "benchmark_reproduction": false
+      },
+      "model": {
+        "backend": "official_selective_scan_ref_torch",
+        "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "official_repository": "https://github.com/zizheng-guo/RhythmMamba",
+        "official_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+        "source_files": {
+          "setup/mamba/mamba_ssm/modules/mamba_simple.py": {
+            "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+            "bytes": 14291,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": {
+            "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+            "bytes": 16835,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "neural_methods/model/RhythmMamba.py": {
+            "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+            "bytes": 11539,
+            "storage": "official_snapshot"
+          },
+          "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml": {
+            "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+            "bytes": 3333,
+            "storage": "official_snapshot"
+          },
+          "PreTrainedModels/PURE_cross_RhythmMamba.pth": {
+            "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+            "bytes": 20044634,
+            "storage": "official_snapshot",
+            "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+          }
+        },
+        "ast": {
+          "mamba_class": {
+            "name": "Mamba",
+            "line_start": 31,
+            "line_end": 294,
+            "ast_sha256": "1d3f0959daf1e0935879461d6aea115377b46c9952be3c425abc6aae07400f14"
+          },
+          "selective_scan_ref": {
+            "name": "selective_scan_ref",
+            "line_start": 91,
+            "line_end": 157,
+            "ast_sha256": "03581ddbfecd8172893dc8ab684e5080427921f1e460ec5a85bd7c50d83ceda7"
+          }
+        },
+        "official_Mamba_class_unchanged": true,
+        "official_model_text_unchanged": true,
+        "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+        "checkpoint_sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+        "weights_only": true,
+        "strict": true,
+        "removed_uniform_module_prefix": true,
+        "state_dict_tensors": 781,
+        "state_dict_dtype_counts": {
+          "torch.float32": 728,
+          "torch.int64": 53
+        },
+        "parameters": 4922125,
+        "mamba_layers": 24,
+        "use_fast_path": false,
+        "causal_conv_extension": false,
+        "selective_scan_cuda_extension": false,
+        "model_eval": true,
+        "model_dtype": "float32",
+        "input_shape": "[B,160,3,128,128]",
+        "output_shape": "[B,160]",
+        "device": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch_version": "2.6.0+cu124",
+        "torch_cuda_version": "12.4",
+        "timm_version": "0.9.16",
+        "einops_version": "0.7.0",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "official_cuda_kernel_parity_verified": false,
+        "official_performance_benchmark": false,
+        "preprocessing": "Caller must apply the frozen full-video standardization and 160-frame clip protocol.",
+        "limitations": [
+          "Pure Torch reference execution adapter, not the author's fused CUDA backend.",
+          "No inference speed claim for the original implementation.",
+          "This loader alone does not verify CUDA-kernel numerical parity or physiological accuracy."
+        ]
+      },
+      "trace_sha256": "9420ea46bee731f431866c4d74ba574385d719f6c20576a547aceaa94071693b",
+      "source_trace": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/ubfc/frame_trace.csv",
+      "source_video_sha256": "f6745be5e6b6fe2f00dd6f32dd234aa559bb30b45f38ec9d87cf9a1cc41f6954",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+      "reference_used": false,
+      "offline": true,
+      "code_hashes": {
+        "rhythm/run_rhythm_trial.py": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c",
+        "rhythm/backend.py": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "rhythm/backend_test.py": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3",
+        "rhythm/test_preprocessing.py": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0",
+        "cpace/project_estimator/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "cpace/project_estimator/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+      },
+      "accepted_windows": 36,
+      "total_windows": 44,
+      "waveform_coverage": 0.870071105365223,
+      "status_counts": {
+        "candidate_only": 36,
+        "gap_or_filter_edge": 8
+      },
+      "wall_seconds": 4.948859717002051,
+      "limitations": [
+        "Project dynamic tracked crops differ from author static first-frame Haar crops",
+        "Normalization spans each bounded segment and includes discarded tail; offline",
+        "Reference scan backend speed does not reproduce author CUDA kernel speed",
+        "160-frame clip tails and long tracking gaps retain missing outputs",
+        "Original fps and project filter/10s HR differ from author nominal FS30 whole-record scoring"
+      ],
+      "output_hashes": {
+        "waveform.csv": "a9b7056a1455e952f32037173d4a1f1b13c849579148a7e43a40bfa454679a69",
+        "heart_rate.csv": "88c775630dfba13916ed68442d71b4f896c856c4f1adee1ce18ed374a6ce5091",
+        "raw_network.csv": "4ea8b9d3912bbd6046eac07a18f3047a53cdf5fceab59f3bf72f2ad9d5bf54ec",
+        "segment_diagnostics.json": "fdc41036c9123fd10273c9e1a301c23ad2431b343ce055a93f235099880c09c0"
+      }
+    },
+    "kaggle_full": {
+      "case": "kaggle_full",
+      "method": "RhythmMamba_PURE_project_crop_reference_scan",
+      "fps": 29.97002997002997,
+      "frames": 12867,
+      "parameters": {
+        "checkpoint": "PURE_cross_RhythmMamba.pth",
+        "training": "none; frozen author PURE pretraining",
+        "crop": "V22 tracked normalized face box, 1.5 expansion, clamp at frame edges",
+        "rgb_valid_required": true,
+        "max_bbox_gap_s": 0.1,
+        "resize": "128x128 RGB, cv2.INTER_AREA",
+        "normalization": "one scalar mean/std(ddof=0) over all real cropped frames of each bounded segment, including discarded tail",
+        "clips": "160 frames, nonoverlapping, incomplete segment tail discarded",
+        "prediction_normalization": "per clip torch mean/std correction=1, as author trainer",
+        "sample_clock": "original video fps, no 30 Hz resampling",
+        "postprocessing": "project third-order zero-phase Butterworth 42-210 bpm per contiguous predicted segment",
+        "edge_mask_s": 1.6,
+        "final_hr": "legacy saved-waveform 10s/1s local peak and offline DP",
+        "reference_used": false,
+        "offline": true,
+        "benchmark_reproduction": false
+      },
+      "model": {
+        "backend": "official_selective_scan_ref_torch",
+        "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "official_repository": "https://github.com/zizheng-guo/RhythmMamba",
+        "official_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+        "source_files": {
+          "setup/mamba/mamba_ssm/modules/mamba_simple.py": {
+            "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+            "bytes": 14291,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": {
+            "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+            "bytes": 16835,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "neural_methods/model/RhythmMamba.py": {
+            "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+            "bytes": 11539,
+            "storage": "official_snapshot"
+          },
+          "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml": {
+            "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+            "bytes": 3333,
+            "storage": "official_snapshot"
+          },
+          "PreTrainedModels/PURE_cross_RhythmMamba.pth": {
+            "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+            "bytes": 20044634,
+            "storage": "official_snapshot",
+            "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+          }
+        },
+        "ast": {
+          "mamba_class": {
+            "name": "Mamba",
+            "line_start": 31,
+            "line_end": 294,
+            "ast_sha256": "1d3f0959daf1e0935879461d6aea115377b46c9952be3c425abc6aae07400f14"
+          },
+          "selective_scan_ref": {
+            "name": "selective_scan_ref",
+            "line_start": 91,
+            "line_end": 157,
+            "ast_sha256": "03581ddbfecd8172893dc8ab684e5080427921f1e460ec5a85bd7c50d83ceda7"
+          }
+        },
+        "official_Mamba_class_unchanged": true,
+        "official_model_text_unchanged": true,
+        "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+        "checkpoint_sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+        "weights_only": true,
+        "strict": true,
+        "removed_uniform_module_prefix": true,
+        "state_dict_tensors": 781,
+        "state_dict_dtype_counts": {
+          "torch.float32": 728,
+          "torch.int64": 53
+        },
+        "parameters": 4922125,
+        "mamba_layers": 24,
+        "use_fast_path": false,
+        "causal_conv_extension": false,
+        "selective_scan_cuda_extension": false,
+        "model_eval": true,
+        "model_dtype": "float32",
+        "input_shape": "[B,160,3,128,128]",
+        "output_shape": "[B,160]",
+        "device": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch_version": "2.6.0+cu124",
+        "torch_cuda_version": "12.4",
+        "timm_version": "0.9.16",
+        "einops_version": "0.7.0",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "official_cuda_kernel_parity_verified": false,
+        "official_performance_benchmark": false,
+        "preprocessing": "Caller must apply the frozen full-video standardization and 160-frame clip protocol.",
+        "limitations": [
+          "Pure Torch reference execution adapter, not the author's fused CUDA backend.",
+          "No inference speed claim for the original implementation.",
+          "This loader alone does not verify CUDA-kernel numerical parity or physiological accuracy."
+        ]
+      },
+      "trace_sha256": "4d1afa5d9e68a2a565292d9b09d6198fa7f1051846e2f3465c584a1b4c0a76ae",
+      "source_trace": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/kaggle_full/frame_trace.csv",
+      "source_video_sha256": "902d217c6661bb137c19059b4137c2bdc5879d9f4373b88377ecdafeb3bdb4ca",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+      "reference_used": false,
+      "offline": true,
+      "code_hashes": {
+        "rhythm/run_rhythm_trial.py": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c",
+        "rhythm/backend.py": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "rhythm/backend_test.py": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3",
+        "rhythm/test_preprocessing.py": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0",
+        "cpace/project_estimator/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "cpace/project_estimator/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+      },
+      "accepted_windows": 414,
+      "total_windows": 419,
+      "waveform_coverage": 0.9873319344058444,
+      "status_counts": {
+        "candidate_only": 414,
+        "gap_or_filter_edge": 5
+      },
+      "wall_seconds": 60.64465781800027,
+      "limitations": [
+        "Project dynamic tracked crops differ from author static first-frame Haar crops",
+        "Normalization spans each bounded segment and includes discarded tail; offline",
+        "Reference scan backend speed does not reproduce author CUDA kernel speed",
+        "160-frame clip tails and long tracking gaps retain missing outputs",
+        "Original fps and project filter/10s HR differ from author nominal FS30 whole-record scoring"
+      ],
+      "output_hashes": {
+        "waveform.csv": "3535049f3dc2db5c9817935a834aa4e13b6d1884167560bbbb71ad97dc05051f",
+        "heart_rate.csv": "44e5263efad7404ab95f2b719d238bca230d1ec2a3518c5f6910bc3efd8792c5",
+        "raw_network.csv": "27b4c12e014395b657404f7aa6f42da5ddd67e65384973de279101c3a1969977",
+        "segment_diagnostics.json": "e7e4447dc3e17ea6dad9e6b6fdfe3aa4a664837dce16aa2c8401cca0f7faa507"
+      }
+    },
+    "synthetic72": {
+      "case": "synthetic72",
+      "method": "RhythmMamba_PURE_project_crop_reference_scan",
+      "fps": 30.0,
+      "frames": 600,
+      "parameters": {
+        "checkpoint": "PURE_cross_RhythmMamba.pth",
+        "training": "none; frozen author PURE pretraining",
+        "crop": "V22 tracked normalized face box, 1.5 expansion, clamp at frame edges",
+        "rgb_valid_required": true,
+        "max_bbox_gap_s": 0.1,
+        "resize": "128x128 RGB, cv2.INTER_AREA",
+        "normalization": "one scalar mean/std(ddof=0) over all real cropped frames of each bounded segment, including discarded tail",
+        "clips": "160 frames, nonoverlapping, incomplete segment tail discarded",
+        "prediction_normalization": "per clip torch mean/std correction=1, as author trainer",
+        "sample_clock": "original video fps, no 30 Hz resampling",
+        "postprocessing": "project third-order zero-phase Butterworth 42-210 bpm per contiguous predicted segment",
+        "edge_mask_s": 1.6,
+        "final_hr": "legacy saved-waveform 10s/1s local peak and offline DP",
+        "reference_used": false,
+        "offline": true,
+        "benchmark_reproduction": false
+      },
+      "model": {
+        "backend": "official_selective_scan_ref_torch",
+        "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "official_repository": "https://github.com/zizheng-guo/RhythmMamba",
+        "official_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+        "source_files": {
+          "setup/mamba/mamba_ssm/modules/mamba_simple.py": {
+            "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+            "bytes": 14291,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": {
+            "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+            "bytes": 16835,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "neural_methods/model/RhythmMamba.py": {
+            "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+            "bytes": 11539,
+            "storage": "official_snapshot"
+          },
+          "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml": {
+            "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+            "bytes": 3333,
+            "storage": "official_snapshot"
+          },
+          "PreTrainedModels/PURE_cross_RhythmMamba.pth": {
+            "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+            "bytes": 20044634,
+            "storage": "official_snapshot",
+            "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+          }
+        },
+        "ast": {
+          "mamba_class": {
+            "name": "Mamba",
+            "line_start": 31,
+            "line_end": 294,
+            "ast_sha256": "1d3f0959daf1e0935879461d6aea115377b46c9952be3c425abc6aae07400f14"
+          },
+          "selective_scan_ref": {
+            "name": "selective_scan_ref",
+            "line_start": 91,
+            "line_end": 157,
+            "ast_sha256": "03581ddbfecd8172893dc8ab684e5080427921f1e460ec5a85bd7c50d83ceda7"
+          }
+        },
+        "official_Mamba_class_unchanged": true,
+        "official_model_text_unchanged": true,
+        "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+        "checkpoint_sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+        "weights_only": true,
+        "strict": true,
+        "removed_uniform_module_prefix": true,
+        "state_dict_tensors": 781,
+        "state_dict_dtype_counts": {
+          "torch.float32": 728,
+          "torch.int64": 53
+        },
+        "parameters": 4922125,
+        "mamba_layers": 24,
+        "use_fast_path": false,
+        "causal_conv_extension": false,
+        "selective_scan_cuda_extension": false,
+        "model_eval": true,
+        "model_dtype": "float32",
+        "input_shape": "[B,160,3,128,128]",
+        "output_shape": "[B,160]",
+        "device": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch_version": "2.6.0+cu124",
+        "torch_cuda_version": "12.4",
+        "timm_version": "0.9.16",
+        "einops_version": "0.7.0",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "official_cuda_kernel_parity_verified": false,
+        "official_performance_benchmark": false,
+        "preprocessing": "Caller must apply the frozen full-video standardization and 160-frame clip protocol.",
+        "limitations": [
+          "Pure Torch reference execution adapter, not the author's fused CUDA backend.",
+          "No inference speed claim for the original implementation.",
+          "This loader alone does not verify CUDA-kernel numerical parity or physiological accuracy."
+        ]
+      },
+      "trace_sha256": "23f2c558ea6df945c1139af7c71d07727ae60196622ec504a1061559fc76237e",
+      "source_trace": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/synthetic72/frame_trace.csv",
+      "source_video_sha256": "d9b7998a7fd9a7b42ddf8090c983acbce875e135a45dc714ab98ae154a18c988",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+      "reference_used": false,
+      "offline": true,
+      "code_hashes": {
+        "rhythm/run_rhythm_trial.py": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c",
+        "rhythm/backend.py": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "rhythm/backend_test.py": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3",
+        "rhythm/test_preprocessing.py": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0",
+        "cpace/project_estimator/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "cpace/project_estimator/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+      },
+      "accepted_windows": 3,
+      "total_windows": 11,
+      "waveform_coverage": 0.64,
+      "status_counts": {
+        "gap_or_filter_edge": 8,
+        "candidate_only": 3
+      },
+      "wall_seconds": 1.9032155320019228,
+      "limitations": [
+        "Project dynamic tracked crops differ from author static first-frame Haar crops",
+        "Normalization spans each bounded segment and includes discarded tail; offline",
+        "Reference scan backend speed does not reproduce author CUDA kernel speed",
+        "160-frame clip tails and long tracking gaps retain missing outputs",
+        "Original fps and project filter/10s HR differ from author nominal FS30 whole-record scoring"
+      ],
+      "output_hashes": {
+        "waveform.csv": "d4109c6c6b2c47b0ca7ac4b692272de3882f81a89c39c8c3192aa643e6fd2cfa",
+        "heart_rate.csv": "9d18b2705215aca9c930e685aed2714484a4684fac4e6718ef5bf77ab10654e9",
+        "raw_network.csv": "a66723b25fcccffb910ad40c6c6fd453a117d6a599a81aefffd632f2d7c66355",
+        "segment_diagnostics.json": "675f091de4b011cfd9549eac8b7802eef2f4d19dc4ca2b8ce90fd91c6e197242"
+      }
+    },
+    "data1": {
+      "case": "data1",
+      "method": "RhythmMamba_PURE_project_crop_reference_scan",
+      "fps": 30.00003000003,
+      "frames": 1555,
+      "parameters": {
+        "checkpoint": "PURE_cross_RhythmMamba.pth",
+        "training": "none; frozen author PURE pretraining",
+        "crop": "V22 tracked normalized face box, 1.5 expansion, clamp at frame edges",
+        "rgb_valid_required": true,
+        "max_bbox_gap_s": 0.1,
+        "resize": "128x128 RGB, cv2.INTER_AREA",
+        "normalization": "one scalar mean/std(ddof=0) over all real cropped frames of each bounded segment, including discarded tail",
+        "clips": "160 frames, nonoverlapping, incomplete segment tail discarded",
+        "prediction_normalization": "per clip torch mean/std correction=1, as author trainer",
+        "sample_clock": "original video fps, no 30 Hz resampling",
+        "postprocessing": "project third-order zero-phase Butterworth 42-210 bpm per contiguous predicted segment",
+        "edge_mask_s": 1.6,
+        "final_hr": "legacy saved-waveform 10s/1s local peak and offline DP",
+        "reference_used": false,
+        "offline": true,
+        "benchmark_reproduction": false
+      },
+      "model": {
+        "backend": "official_selective_scan_ref_torch",
+        "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "official_repository": "https://github.com/zizheng-guo/RhythmMamba",
+        "official_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+        "source_files": {
+          "setup/mamba/mamba_ssm/modules/mamba_simple.py": {
+            "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+            "bytes": 14291,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": {
+            "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+            "bytes": 16835,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "neural_methods/model/RhythmMamba.py": {
+            "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+            "bytes": 11539,
+            "storage": "official_snapshot"
+          },
+          "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml": {
+            "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+            "bytes": 3333,
+            "storage": "official_snapshot"
+          },
+          "PreTrainedModels/PURE_cross_RhythmMamba.pth": {
+            "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+            "bytes": 20044634,
+            "storage": "official_snapshot",
+            "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+          }
+        },
+        "ast": {
+          "mamba_class": {
+            "name": "Mamba",
+            "line_start": 31,
+            "line_end": 294,
+            "ast_sha256": "1d3f0959daf1e0935879461d6aea115377b46c9952be3c425abc6aae07400f14"
+          },
+          "selective_scan_ref": {
+            "name": "selective_scan_ref",
+            "line_start": 91,
+            "line_end": 157,
+            "ast_sha256": "03581ddbfecd8172893dc8ab684e5080427921f1e460ec5a85bd7c50d83ceda7"
+          }
+        },
+        "official_Mamba_class_unchanged": true,
+        "official_model_text_unchanged": true,
+        "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+        "checkpoint_sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+        "weights_only": true,
+        "strict": true,
+        "removed_uniform_module_prefix": true,
+        "state_dict_tensors": 781,
+        "state_dict_dtype_counts": {
+          "torch.float32": 728,
+          "torch.int64": 53
+        },
+        "parameters": 4922125,
+        "mamba_layers": 24,
+        "use_fast_path": false,
+        "causal_conv_extension": false,
+        "selective_scan_cuda_extension": false,
+        "model_eval": true,
+        "model_dtype": "float32",
+        "input_shape": "[B,160,3,128,128]",
+        "output_shape": "[B,160]",
+        "device": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch_version": "2.6.0+cu124",
+        "torch_cuda_version": "12.4",
+        "timm_version": "0.9.16",
+        "einops_version": "0.7.0",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": false,
+        "official_cuda_kernel_parity_verified": false,
+        "official_performance_benchmark": false,
+        "preprocessing": "Caller must apply the frozen full-video standardization and 160-frame clip protocol.",
+        "limitations": [
+          "Pure Torch reference execution adapter, not the author's fused CUDA backend.",
+          "No inference speed claim for the original implementation.",
+          "This loader alone does not verify CUDA-kernel numerical parity or physiological accuracy."
+        ]
+      },
+      "trace_sha256": "e09493c4887e5f300e8dbe33cfebf4b1e90fe05d5e2e877ab7a2496775f78c84",
+      "source_trace": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/data1/frame_trace.csv",
+      "source_video_sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e",
+      "source_video": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_data1_20260909/inputs/video/Video_20260909_YJC_2.avi",
+      "reference_used": false,
+      "offline": true,
+      "code_hashes": {
+        "rhythm/run_rhythm_trial.py": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c",
+        "rhythm/backend.py": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "rhythm/backend_test.py": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3",
+        "rhythm/test_preprocessing.py": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0",
+        "cpace/project_estimator/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "cpace/project_estimator/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+      },
+      "accepted_windows": 35,
+      "total_windows": 42,
+      "waveform_coverage": 0.8643086816720257,
+      "status_counts": {
+        "candidate_only": 35,
+        "gap_or_filter_edge": 7
+      },
+      "wall_seconds": 50.87681751399941,
+      "limitations": [
+        "Project dynamic tracked crops differ from author static first-frame Haar crops",
+        "Normalization spans each bounded segment and includes discarded tail; offline",
+        "Reference scan backend speed does not reproduce author CUDA kernel speed",
+        "160-frame clip tails and long tracking gaps retain missing outputs",
+        "Original fps and project filter/10s HR differ from author nominal FS30 whole-record scoring"
+      ],
+      "output_hashes": {
+        "waveform.csv": "cee1d2321fe97c9e87c723d97be3b5de540c65eb768992c4ec5ba182e773a8aa",
+        "heart_rate.csv": "ddd5a6792bd5db0e4758bc24a78b310372d422a1c6d3c0bf5656364ad07eec9d",
+        "raw_network.csv": "f42b2930b9acc053b476805e819933dd6ef60fdf382e2ab1c6c560ffdc717bcd",
+        "segment_diagnostics.json": "bb597df761aac86c468118314eaed68d3c3485ec681673641cbae3bb60e07ac9"
+      }
+    }
+  }
+}

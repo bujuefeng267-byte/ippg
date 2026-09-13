@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "six-recordings",
+      "title": "六组视频的心率准确率与输出覆盖率",
+      "queries": [
+        {
+          "id": "frozen-v24-comparison",
+          "source": {
+            "label": "用户六组录像与 Polar 参考的本地评估",
+            "files": [
+              {
+                "label": "comparison_metrics.csv"
+              },
+              {
+                "label": "paired_windows.csv（六组）"
+              },
+              {
+                "label": "evaluation_protocol.json"
+              },
+              {
+                "label": "waveform_replay_qa.json"
+              }
+            ],
+            "metricDefinitions": [
+              {
+                "label": "心率误差",
+                "definition": "MAE 和 RMSE 在程序有效输出且参考合格的相同10秒窗口计算，单位bpm。"
+              },
+              {
+                "label": "±5 bpm占比",
+                "definition": "P5的分母为有效配对输出窗口；R5的分母为所有参考合格的计划窗口，缺失输出计入失败。"
+              },
+              {
+                "label": "输出覆盖率",
+                "definition": "心率覆盖率为接受窗口/计划窗口；波形覆盖率为有限数值样本/完整解码帧数。"
+              }
+            ],
+            "filters": [
+              "六段完整录像",
+              "V2.4 guarded_fusion、tracking_screened、gap 0.10秒",
+              "10秒窗口、约1秒步长、离线DP心率"
+            ],
+            "caveats": [
+              "视频与Polar按原始文件时间估计同步，尚非硬件同步；预定七个偏移未按误差挑选。",
+              "波形覆盖不等于波形形态准确；重叠窗口和重复录制不等于独立受试者。",
+              "本次核心算法未修改，不是版本升级对比。"
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "validation",
+                "title": "保存结果回算",
+                "detail": "六段共18条保存波形的局部心率与DP心率独立回算均通过；此检查证明结果与处理规则一致，不证明生理测量准确。"
+              }
+            ]
+          },
+          "reportingPeriod": "录像日期：2026年9月9日和9月11日",
+          "columns": [
+            "case",
+            "waveform_coverage_pct",
+            "hr_output_coverage_pct",
+            "MAE_bpm",
+            "RMSE_bpm",
+            "Nplanned",
+            "Nvalid",
+            "Nwithin5",
+            "P5_valid_pct",
+            "R5_all_reference_pct"
+          ],
+          "rows": [
+            {
+              "case": "data1",
+              "waveform_coverage_pct": 88.7459807073955,
+              "hr_output_coverage_pct": 88.0952380952381,
+              "MAE_bpm": 13.097297297297297,
+              "RMSE_bpm": 13.722106843200729,
+              "Nplanned": 42,
+              "Nvalid": 37,
+              "Nwithin5": 0,
+              "P5_valid_pct": 0.0,
+              "R5_all_reference_pct": 0.0
+            },
+            {
+              "case": "data2",
+              "waveform_coverage_pct": 90.45226130653266,
+              "hr_output_coverage_pct": 89.1891891891892,
+              "MAE_bpm": 3.16060606060606,
+              "RMSE_bpm": 3.8200031730908592,
+              "Nplanned": 37,
+              "Nvalid": 33,
+              "Nwithin5": 29,
+              "P5_valid_pct": 87.87878787878788,
+              "R5_all_reference_pct": 78.37837837837837
+            },
+            {
+              "case": "data3",
+              "waveform_coverage_pct": 91.85051778478163,
+              "hr_output_coverage_pct": 90.76923076923077,
+              "MAE_bpm": 43.952542372881354,
+              "RMSE_bpm": 44.94166086557029,
+              "Nplanned": 65,
+              "Nvalid": 59,
+              "Nwithin5": 0,
+              "P5_valid_pct": 0.0,
+              "R5_all_reference_pct": 0.0
+            },
+            {
+              "case": "data4",
+              "waveform_coverage_pct": 92.58393341438324,
+              "hr_output_coverage_pct": 92.0,
+              "MAE_bpm": 2.78695652173913,
+              "RMSE_bpm": 3.0390931141578634,
+              "Nplanned": 50,
+              "Nvalid": 46,
+              "Nwithin5": 46,
+              "P5_valid_pct": 100.0,
+              "R5_all_reference_pct": 92.0
+            },
+            {
+              "case": "data5",
+              "waveform_coverage_pct": 93.2475884244373,
+              "hr_output_coverage_pct": 92.45283018867924,
+              "MAE_bpm": 86.2734693877551,
+              "RMSE_bpm": 86.47621355149681,
+              "Nplanned": 53,
+              "Nvalid": 49,
+              "Nwithin5": 0,
+              "P5_valid_pct": 0.0,
+              "R5_all_reference_pct": 0.0
+            },
+            {
+              "case": "data6",
+              "waveform_coverage_pct": 75.41899441340783,
+              "hr_output_coverage_pct": 58.064516129032256,
+              "MAE_bpm": 73.41388888888888,
+              "RMSE_bpm": 73.64964546946426,
+              "Nplanned": 62,
+              "Nvalid": 36,
+              "Nwithin5": 0,
+              "P5_valid_pct": 0.0,
+              "R5_all_reference_pct": 0.0
+            }
+          ],
+          "methods": [
+            {
+              "language": "calculation",
+              "code": "MAE = mean(abs(estimated_bpm - reference_bpm)) on paired valid windows\nP5 = within5 / Nvalid * 100\nR5 = within5 / Nref * 100\nThe main offset is archived video modification time minus decoded duration, not the offset minimizing MAE."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "optimization-evidence",
+      "title": "代码优化方向的依据",
+      "queries": [
+        {
+          "id": "frequency-diagnosis",
+          "source": {
+            "label": "六组保存输出的频率与分支诊断",
+            "files": [
+              {
+                "label": "frequency_diagnosis.json"
+              },
+              {
+                "label": "diagnosis.md"
+              }
+            ],
+            "caveats": [
+              "诊断使用既有预测作事后解释；建议尚未实现或验证为新版本。"
+            ],
+            "evidenceFlow": [
+              {
+                "kind": "result",
+                "title": "错误频率与反例",
+                "detail": "data1/5/6部分完整运动窗口的错误频率与运动谱强峰重叠，但data4准确窗口也有重叠，因此需要联合运动幅度与可靠性。"
+              },
+              {
+                "kind": "result",
+                "title": "轨迹与分支选择",
+                "detail": "data2的DP比最大局部峰更准确；data3/5/6并非全部为严格半频或倍频。不同视频的baseline与tracked优劣不一致，不能统一乘除二或反转分支选择。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

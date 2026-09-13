@@ -1,0 +1,63 @@
+window_index,time_s,proposal_bpm,proposal_supported,reacquired,generated,contributing_rois,channels,score
+0,4.999995,,False,False,False,0,[],
+1,5.999994,,False,False,False,0,[],
+2,6.999993,,False,False,False,0,[],
+3,7.999992,,False,False,False,0,[],
+4,8.999991,,False,False,False,0,[],
+5,9.99999,,False,False,False,0,[],
+6,10.999989,,False,False,False,0,[],
+7,11.999988,,False,False,False,0,[],
+8,12.999986999999999,,False,False,False,0,[],
+9,13.999986,95.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/pos""]",0.40599472294886363
+10,14.999984999999999,95.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/pos""]",0.5618773597810607
+11,15.999984,95.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/pos""]",0.5034458674098253
+12,16.999983,95.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/pos""]",0.38415729678348026
+13,17.999982,94.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/chrom""]",0.3193483933202625
+14,18.999981,94.0,True,False,False,0,[],
+15,19.99998,94.0,True,False,False,0,[],
+16,20.999979,94.0,True,False,False,0,[],
+17,21.999978,94.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/pos""]",0.3062374262944234
+18,22.999976999999998,94.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/pos""]",0.7014857158671034
+19,23.999976,94.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/pos""]",0.5178279103131423
+20,24.999975,95.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/right_cheek/pos""]",0.14582869935062642
+21,25.999973999999998,95.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/pos""]",-0.014903615350964156
+22,26.999972999999997,94.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/chrom""]",-0.39593429390996304
+23,27.999972,93.0,True,False,False,0,[],
+24,28.999971,90.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/right_cheek/chrom""]",-0.4550515130127876
+25,29.999969999999998,86.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/right_cheek/chrom""]",-0.0283520957207401
+26,30.999969,87.0,True,False,False,0,[],
+27,31.999968,88.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/right_cheek/chrom""]",0.6850927870627025
+28,32.999967,89.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/right_cheek/chrom""]",0.4594457007381795
+29,33.999966,90.0,True,False,False,0,[],
+30,34.999964999999996,91.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/chrom""]",0.4431148978371172
+31,35.999964,92.0,True,False,False,0,[],
+32,36.999963,92.0,True,False,True,2,"[""tracked/forehead/pos"", ""baseline/right_cheek/chrom""]",0.5390917790202564
+33,37.999962,92.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/pos""]",0.21195683993755537
+34,38.999961,92.0,True,False,True,2,"[""tracked/forehead/pos"", ""baseline/right_cheek/pos""]",0.373271379823684
+35,39.99996,91.0,True,False,True,2,"[""tracked/forehead/chrom"", ""tracked/right_cheek/chrom""]",0.3415618585270305
+36,40.999959,92.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/chrom""]",-0.19058886377763806
+37,41.999958,92.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.005040071930009919
+38,42.999956999999995,92.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.13048713263475076
+39,43.999956,91.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/right_cheek/pos""]",0.8045700837470029
+40,44.999955,,False,False,False,0,[],
+41,45.999953999999995,,False,False,False,0,[],
+42,46.999953,,False,False,False,0,[],
+43,47.999952,,False,False,False,0,[],
+44,48.999950999999996,,False,False,False,0,[],
+45,49.99995,,False,False,False,0,[],
+46,50.999949,,False,False,False,0,[],
+47,51.999947999999996,,False,False,False,0,[],
+48,52.999947,,False,False,False,0,[],
+49,53.999945999999994,,False,False,False,0,[],
+50,54.999945,,False,False,False,0,[],
+51,55.999944,,False,False,False,0,[],
+52,56.999942999999995,,False,False,False,0,[],
+53,57.999942,,False,False,False,0,[],
+54,58.999941,69.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/chrom""]",-0.3295782388987317
+55,59.999939999999995,69.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/chrom""]",-0.2555606893102286
+56,60.999939,67.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/chrom""]",0.0068689545556764875
+57,61.999938,66.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/chrom""]",0.33591564300201865
+58,62.999936999999996,65.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/chrom""]",0.20143428699091295
+59,63.999936,64.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/pos""]",0.030408650563090778
+60,64.999935,63.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/pos""]",-0.12787437257507298
+61,65.999934,,False,False,False,0,[],

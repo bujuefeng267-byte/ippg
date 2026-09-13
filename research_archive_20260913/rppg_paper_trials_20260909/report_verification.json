@@ -1,0 +1,372 @@
+{
+  "passed": true,
+  "independent_standard_library_arithmetic_check": true,
+  "metric_rows_checked": 72,
+  "checks": [
+    {
+      "case": "user0904",
+      "branch": "v21/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "v21/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "trimmed_gap10/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "trimmed_gap10/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "trimmed_gap15/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "trimmed_gap15/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "cpace/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "cpace/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "rhythm/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "rhythm/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "cpace_no_homodyne/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0904",
+      "branch": "cpace_no_homodyne/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "v21/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "v21/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "trimmed_gap10/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "trimmed_gap10/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "trimmed_gap15/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "trimmed_gap15/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "cpace/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "cpace/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "rhythm/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "rhythm/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "cpace_no_homodyne/local_peak",
+      "passed": true
+    },
+    {
+      "case": "user0907",
+      "branch": "cpace_no_homodyne/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "v21/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "v21/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "trimmed_gap10/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "trimmed_gap10/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "trimmed_gap15/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "trimmed_gap15/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "cpace/local_peak",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "cpace/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "rhythm/local_peak",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "rhythm/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "cpace_no_homodyne/local_peak",
+      "passed": true
+    },
+    {
+      "case": "ubfc",
+      "branch": "cpace_no_homodyne/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "v21/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "v21/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "trimmed_gap10/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "trimmed_gap10/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "trimmed_gap15/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "trimmed_gap15/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "cpace/local_peak",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "cpace/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "rhythm/local_peak",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "rhythm/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "cpace_no_homodyne/local_peak",
+      "passed": true
+    },
+    {
+      "case": "kaggle_full",
+      "branch": "cpace_no_homodyne/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "v21/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "v21/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "trimmed_gap10/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "trimmed_gap10/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "trimmed_gap15/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "trimmed_gap15/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "cpace/local_peak",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "cpace/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "rhythm/local_peak",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "rhythm/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "cpace_no_homodyne/local_peak",
+      "passed": true
+    },
+    {
+      "case": "synthetic72",
+      "branch": "cpace_no_homodyne/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "v21/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "v21/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "trimmed_gap10/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "trimmed_gap10/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "trimmed_gap15/fusion/local_peak",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "trimmed_gap15/fusion/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "cpace/local_peak",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "cpace/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "rhythm/local_peak",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "rhythm/offline_ridge",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "cpace_no_homodyne/local_peak",
+      "passed": true
+    },
+    {
+      "case": "data1",
+      "branch": "cpace_no_homodyne/offline_ridge",
+      "passed": true
+    }
+  ],
+  "plot_visually_inspected": true,
+  "report_sha256": "164ad6dc01066f037fd84d6717804ceb398ae76a81b19e141bd050728ff77489",
+  "plot_sha256": "0093e9563ef5a139ae5a948c2735e8bea9e0d360ca794bd035aa30fc10fc9f46",
+  "metrics_sha256": "4b39c6e054b690caf9b38c24ad199f611cb12bbee6d384927237c275968d73ce",
+  "aligned_windows_sha256": "f2329a2c61c99384aeedf077bcf2dc6d2e4755601f9e402bd9def5ccd9a849c1"
+}

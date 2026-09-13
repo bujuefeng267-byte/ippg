@@ -1,0 +1,58 @@
+window_index,time_s,proposal_bpm,proposal_supported,reacquired,generated,contributing_rois,channels,score,window_start_s,window_end_s
+0,2.999997,,False,False,False,0,[],,0.0,5.999994
+1,3.999996,,False,False,False,0,[],,0.999999,6.999993
+2,4.999995,89.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.6829040365386165,1.999998,7.999992
+3,5.999994,90.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0324593258935226,2.999997,8.999991
+4,6.999993,89.0,True,False,False,0,[],,3.999996,9.99999
+5,7.999992,90.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.5135981493735181,4.999995,10.999989
+6,8.999991,91.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.31346616267844685,5.999994,11.999988
+7,9.99999,92.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",0.7647868822099702,6.999993,12.999986999999999
+8,10.999989,93.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",0.8121179886098846,7.999992,13.999986
+9,11.999988,93.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""tracked/right_cheek/chrom""]",0.21935956054096972,8.999991,14.999984999999999
+10,12.999986999999999,93.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.39645969047041546,9.99999,15.999984
+11,13.999986,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.44922692959595384,10.999989,16.999983
+12,14.999984999999999,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.5798455838008074,11.999988,17.999982
+13,15.999984,91.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.6372054275628233,12.999986999999999,18.999981
+14,16.999983,91.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.7336035427949928,13.999986,19.99998
+15,17.999982,91.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.8869568201953403,14.999984999999999,20.999979
+16,18.999981,92.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos""]",0.9758119850814735,15.999984,21.999978
+17,19.99998,92.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos""]",0.5763341481781201,16.999983,22.999976999999998
+18,20.999979,92.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/chrom""]",0.18704632399706225,17.999982,23.999976
+19,21.999978,92.0,True,False,True,2,"[""tracked/forehead/pos"", ""baseline/left_cheek/chrom""]",0.44837030511792103,18.999981,24.999975
+20,22.999976999999998,92.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.36890078445588365,19.99998,25.999973999999998
+21,23.999976,91.0,True,False,False,0,[],,20.999979,26.999972999999997
+22,24.999975,90.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",0.5761967353446736,21.999978,27.999972
+23,25.999973999999998,89.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",0.7187536876017057,22.999976999999998,28.999971
+24,26.999972999999997,90.0,True,False,False,0,[],,23.999976,29.999969999999998
+25,27.999972,93.0,True,False,True,3,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos"", ""tracked/right_cheek/pos""]",-0.02462520933766425,24.999975,30.999969
+26,28.999971,96.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",0.24790362724730935,25.999973999999998,31.999968
+27,29.999969999999998,99.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/chrom""]",0.5231782116817403,26.999972999999997,32.999967
+28,30.999969,102.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/right_cheek/chrom""]",0.3035870824128575,27.999972,33.999966
+29,31.999968,102.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",-0.18210559450540603,28.999971,34.999964999999996
+30,32.999967,101.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",-0.15080745115348543,29.999969999999998,35.999964
+31,33.999966,101.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom""]",0.5056161742260156,30.999969,36.999963
+32,34.999964999999996,101.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.030177525545019804,31.999968,37.999962
+33,35.999964,101.0,True,False,True,2,"[""tracked/forehead/chrom"", ""tracked/left_cheek/pos""]",0.17532055355224663,32.999967,38.999961
+34,36.999963,102.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/pos""]",0.2626188813632888,33.999966,39.99996
+35,37.999962,103.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/right_cheek/chrom""]",0.4566527446147601,34.999964999999996,40.999959
+36,38.999961,102.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.24834585798740763,35.999964,41.999958
+37,39.99996,104.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.09993321678293073,36.999963,42.999956999999995
+38,40.999959,106.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/right_cheek/chrom""]",0.24932047083816367,37.999962,43.999956
+39,41.999958,104.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/right_cheek/chrom""]",-0.1832133702763013,38.999961,44.999955
+40,42.999956999999995,103.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",0.14111342735178578,39.99996,45.999953999999995
+41,43.999956,102.0,True,False,True,3,"[""tracked/forehead/chrom"", ""tracked/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.14804892132899336,40.999959,46.999953
+42,44.999955,102.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.24469075837459814,41.999958,47.999952
+43,45.999953999999995,102.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom""]",0.27557984670731644,42.999956999999995,48.999950999999996
+44,46.999953,99.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom""]",0.452792503678042,43.999956,49.99995
+45,47.999952,97.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/chrom"", ""tracked/right_cheek/chrom""]",-0.09085593448631239,44.999955,50.999949
+46,48.999950999999996,96.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/right_cheek/chrom""]",-0.04783884925020357,45.999953999999995,51.999947999999996
+47,49.99995,63.0,True,True,True,3,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.18662698071030634,46.999953,52.999947
+48,50.999949,62.0,True,False,True,2,"[""tracked/forehead/pos"", ""baseline/right_cheek/chrom""]",0.208574051829449,47.999952,53.999945999999994
+49,51.999947999999996,62.0,True,False,True,2,"[""tracked/forehead/chrom"", ""baseline/right_cheek/chrom""]",0.19490557397110192,48.999950999999996,54.999945
+50,52.999947,61.0,True,False,True,3,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.33550242105714156,49.99995,55.999944
+51,53.999945999999994,61.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom""]",0.660150935849604,50.999949,56.999942999999995
+52,54.999945,61.0,True,False,True,3,"[""tracked/forehead/chrom"", ""tracked/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.05679474728062508,51.999947999999996,57.999942
+53,55.999944,59.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.3710365668273298,52.999947,58.999941
+54,56.999942999999995,58.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""tracked/right_cheek/chrom""]",0.2515562613388652,53.999945999999994,59.999939999999995
+55,57.999942,,False,False,False,0,[],,54.999945,60.999939
+56,58.999941,,False,False,False,0,[],,55.999944,61.999938

@@ -1,0 +1,12 @@
+time_s,observed_fraction,interpolated_fraction,spectral_peak_bpm,peak_concentration,accepted,status,ridge_bpm
+5.0,1.0,0.0,,,False,gap_or_filter_edge,
+6.0,1.0,0.0,,,False,gap_or_filter_edge,
+7.0,1.0,0.0,72.0,0.906649614484769,True,candidate_only,72.0
+8.0,1.0,0.0,72.0,0.9249346695548336,True,candidate_only,72.0
+9.0,1.0,0.0,72.0,0.9498111068678504,True,candidate_only,72.0
+10.0,1.0,0.0,72.0,0.959501454355024,True,candidate_only,72.0
+11.0,1.0,0.0,72.0,0.9476736663830284,True,candidate_only,72.0
+12.0,1.0,0.0,72.0,0.932946485771455,True,candidate_only,72.0
+13.0,1.0,0.0,72.0,0.9234391292980564,True,candidate_only,72.0
+14.0,1.0,0.0,,,False,gap_or_filter_edge,
+15.0,1.0,0.0,,,False,gap_or_filter_edge,

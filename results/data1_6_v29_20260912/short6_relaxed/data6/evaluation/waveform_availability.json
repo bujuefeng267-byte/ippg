@@ -1,0 +1,236 @@
+{
+  "profile": "short6_relaxed",
+  "case": "data6",
+  "waveform": {
+    "frames": 2148,
+    "fps": 30.00003000003,
+    "total_duration_s": 71.5999284,
+    "finite_frames": 1680,
+    "finite_duration_s": 55.999944,
+    "waveform_coverage_pct": 78.2122905027933,
+    "first_finite_time_s": 8.999991,
+    "last_finite_time_s": 69.9665967,
+    "leading_missing_s": 8.999991,
+    "trailing_missing_s": 1.5999983999999998,
+    "internal_missing_s": 4.999994999999999,
+    "missing_duration_s": 15.599984399999999,
+    "longest_missing_s": 8.999991,
+    "missing_runs": 3,
+    "no_finite_output": false,
+    "missing_intervals": [
+      {
+        "start_frame": 0,
+        "stop_frame_exclusive": 270,
+        "start_s": 0.0,
+        "end_s_exclusive": 8.999991,
+        "duration_s": 8.999991
+      },
+      {
+        "start_frame": 1470,
+        "stop_frame_exclusive": 1620,
+        "start_s": 48.999950999999996,
+        "end_s_exclusive": 53.999945999999994,
+        "duration_s": 4.999995
+      },
+      {
+        "start_frame": 2100,
+        "stop_frame_exclusive": 2148,
+        "start_s": 69.99992999999999,
+        "end_s_exclusive": 71.5999284,
+        "duration_s": 1.5999983999999998
+      }
+    ],
+    "timing_interpretation": "Offline source timestamps; first finite sample is not processing latency or an online availability guarantee",
+    "all_missing_convention": "If no sample is finite, all missing time is assigned to leading_missing_s; trailing/internal are zero"
+  },
+  "V28_waveform": {
+    "frames": 2148,
+    "fps": 30.00003000003,
+    "total_duration_s": 71.5999284,
+    "finite_frames": 1620,
+    "finite_duration_s": 53.999945999999994,
+    "waveform_coverage_pct": 75.41899441340783,
+    "first_finite_time_s": 8.999991,
+    "last_finite_time_s": 68.9665977,
+    "leading_missing_s": 8.999991,
+    "trailing_missing_s": 2.5999974,
+    "internal_missing_s": 5.999993999999999,
+    "missing_duration_s": 17.5999824,
+    "longest_missing_s": 8.999991,
+    "missing_runs": 3,
+    "no_finite_output": false,
+    "missing_intervals": [
+      {
+        "start_frame": 0,
+        "stop_frame_exclusive": 270,
+        "start_s": 0.0,
+        "end_s_exclusive": 8.999991,
+        "duration_s": 8.999991
+      },
+      {
+        "start_frame": 1470,
+        "stop_frame_exclusive": 1650,
+        "start_s": 48.999950999999996,
+        "end_s_exclusive": 54.999945,
+        "duration_s": 5.999994
+      },
+      {
+        "start_frame": 2070,
+        "stop_frame_exclusive": 2148,
+        "start_s": 68.99993099999999,
+        "end_s_exclusive": 71.5999284,
+        "duration_s": 2.5999974
+      }
+    ],
+    "timing_interpretation": "Offline source timestamps; first finite sample is not processing latency or an online availability guarantee",
+    "all_missing_convention": "If no sample is finite, all missing time is assigned to leading_missing_s; trailing/internal are zero"
+  },
+  "native6s_hr": {
+    "first_accepted_center_s": 11.999988,
+    "first_accepted_window_start_s": 8.999991,
+    "first_accepted_window_end_s": 14.999985,
+    "Nplanned": 66,
+    "Noutput": 46,
+    "rejected_updates": 20,
+    "rejected_update_duration_s": 19.99998,
+    "longest_rejected_run_updates": 10,
+    "longest_rejected_update_duration_s": 9.99999,
+    "rejected_runs": [
+      {
+        "first_window_index": 0,
+        "stop_window_index_exclusive": 9,
+        "first_center_s": 2.999997,
+        "last_center_s": 10.999989,
+        "unavailable_updates": 9,
+        "nominal_duration_s": 8.999991
+      },
+      {
+        "first_window_index": 44,
+        "stop_window_index_exclusive": 54,
+        "first_center_s": 46.999953,
+        "last_center_s": 55.999944,
+        "unavailable_updates": 10,
+        "nominal_duration_s": 9.99999
+      },
+      {
+        "first_window_index": 65,
+        "stop_window_index_exclusive": 66,
+        "first_center_s": 67.999932,
+        "last_center_s": 67.999932,
+        "unavailable_updates": 1,
+        "nominal_duration_s": 0.999999
+      }
+    ],
+    "status_counts": {
+      "candidate_only": 46,
+      "gap_or_filter_edge": 20
+    },
+    "duration_definition": "Rejected update counts times the actual frame-rounded hop; excludes unplanned leading/trailing margins and is not union of analysis-window durations",
+    "timing_interpretation": "Window end is required input time for that analysis window, not measured online latency; the estimator is offline"
+  },
+  "common10s_hr": {
+    "first_accepted_center_s": 13.999986,
+    "first_accepted_window_start_s": 8.999991,
+    "first_accepted_window_end_s": 18.999981,
+    "Nplanned": 62,
+    "Noutput": 38,
+    "rejected_updates": 24,
+    "rejected_update_duration_s": 23.999976,
+    "longest_rejected_run_updates": 14,
+    "longest_rejected_update_duration_s": 13.999986,
+    "rejected_runs": [
+      {
+        "first_window_index": 0,
+        "stop_window_index_exclusive": 9,
+        "first_center_s": 4.999995,
+        "last_center_s": 12.999987,
+        "unavailable_updates": 9,
+        "nominal_duration_s": 8.999991
+      },
+      {
+        "first_window_index": 40,
+        "stop_window_index_exclusive": 54,
+        "first_center_s": 44.999955,
+        "last_center_s": 57.999942,
+        "unavailable_updates": 14,
+        "nominal_duration_s": 13.999986
+      },
+      {
+        "first_window_index": 61,
+        "stop_window_index_exclusive": 62,
+        "first_center_s": 65.999934,
+        "last_center_s": 65.999934,
+        "unavailable_updates": 1,
+        "nominal_duration_s": 0.999999
+      }
+    ],
+    "status_counts": {
+      "candidate_only": 38,
+      "gap_or_filter_edge": 24
+    },
+    "duration_definition": "Rejected update counts times the actual frame-rounded hop; excludes unplanned leading/trailing margins and is not union of analysis-window durations",
+    "timing_interpretation": "Window end is required input time for that analysis window, not measured online latency; the estimator is offline"
+  },
+  "V28_hr": {
+    "first_accepted_center_s": 13.999986,
+    "first_accepted_window_start_s": 8.999991,
+    "first_accepted_window_end_s": 18.999981,
+    "Nplanned": 62,
+    "Noutput": 36,
+    "rejected_updates": 26,
+    "rejected_update_duration_s": 25.999973999999998,
+    "longest_rejected_run_updates": 15,
+    "longest_rejected_update_duration_s": 14.999984999999999,
+    "rejected_runs": [
+      {
+        "first_window_index": 0,
+        "stop_window_index_exclusive": 9,
+        "first_center_s": 4.999995,
+        "last_center_s": 12.999987,
+        "unavailable_updates": 9,
+        "nominal_duration_s": 8.999991
+      },
+      {
+        "first_window_index": 40,
+        "stop_window_index_exclusive": 55,
+        "first_center_s": 44.999955,
+        "last_center_s": 58.999941,
+        "unavailable_updates": 15,
+        "nominal_duration_s": 14.999984999999999
+      },
+      {
+        "first_window_index": 60,
+        "stop_window_index_exclusive": 62,
+        "first_center_s": 64.999935,
+        "last_center_s": 65.999934,
+        "unavailable_updates": 2,
+        "nominal_duration_s": 1.999998
+      }
+    ],
+    "status_counts": {
+      "candidate_only": 36,
+      "gap_or_filter_edge": 26
+    },
+    "duration_definition": "Rejected update counts times the actual frame-rounded hop; excludes unplanned leading/trailing margins and is not union of analysis-window durations",
+    "timing_interpretation": "Window end is required input time for that analysis window, not measured online latency; the estimator is offline"
+  },
+  "new_waveform_seconds": 1.999998,
+  "lost_waveform_seconds": 0.0,
+  "new_waveform_intervals": [
+    {
+      "start_frame": 1620,
+      "stop_frame_exclusive": 1650,
+      "start_s": 53.999945999999994,
+      "end_s_exclusive": 54.999945,
+      "duration_s": 0.999999
+    },
+    {
+      "start_frame": 2070,
+      "stop_frame_exclusive": 2100,
+      "start_s": 68.99993099999999,
+      "end_s_exclusive": 69.99992999999999,
+      "duration_s": 0.999999
+    }
+  ],
+  "lost_waveform_intervals": []
+}

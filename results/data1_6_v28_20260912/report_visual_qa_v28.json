@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checked_artifact_hashes": 16,
+  "checked_markdown_targets": 29,
+  "visually_inspected_pngs": [
+    "data1_v28_ppg_heart_rate.png",
+    "data2_v28_ppg_heart_rate.png",
+    "data3_v28_ppg_heart_rate.png",
+    "data4_v28_ppg_heart_rate.png",
+    "data5_v28_ppg_heart_rate.png",
+    "data6_v28_ppg_heart_rate.png",
+    "six_video_hr_v25_v26conservative_v28.png",
+    "six_video_hr_v26harmonic_v28.png",
+    "six_video_v28_ppg.png"
+  ],
+  "visual_findings": "All 9 PNGs inspected: readable labels, no clipping or overlap; data6 missing waveform and HR remain unconnected; common HR scales, independent waveform amplitude scales disclosed.",
+  "report_sha256": "fcf40959ba2f36a7741f75a2d1c622d1e90c9a532a5330a8a83c5ed818198fa3"
+}

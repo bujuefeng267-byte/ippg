@@ -1,0 +1,29 @@
+{
+  "case": "data4",
+  "exit_code": 0,
+  "elapsed_s": 275.79523632600103,
+  "command": [
+    "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+    "-B",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v24_20260910/analyze_motion_v2.py",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/Video_20260911_XUEZHANG1.avi",
+    "--output",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference",
+    "--pixel-mode",
+    "tracking_screened",
+    "--algorithm-mode",
+    "guarded_fusion",
+    "--max-gap",
+    "0.10",
+    "--window",
+    "10",
+    "--step",
+    "1",
+    "--min-bpm",
+    "42",
+    "--max-bpm",
+    "210"
+  ],
+  "video_sha256": "c89625ff40f604b3b8e8ad2df66a0d94d319d1a6142c99765b53c7a210d6965b",
+  "reference_supplied_to_inference": false
+}

@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "video": "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/user_0907/Video_20260907_171742478.avi",
+    "size": 867938304,
+    "mtime_ns": 1788772715000000000,
+    "max_seconds": null,
+    "frontend_hashes": {
+      "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+      "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+    }
+  },
+  "fps": 30.00003000003,
+  "n_frames": 1557,
+  "trace_sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433"
+}

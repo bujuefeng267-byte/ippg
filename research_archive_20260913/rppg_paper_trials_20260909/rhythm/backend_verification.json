@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "status": "passed",
+  "test_count": 6,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [],
+  "gpu_available": true,
+  "torch_version": "2.6.0+cu124",
+  "torch_cuda_version": "12.4",
+  "numpy_version": "1.26.4",
+  "elapsed_seconds": 2.808900186999381,
+  "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+  "test_sha256": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3",
+  "details": {
+    "scan_cpu": {
+      "shape": [
+        2,
+        7,
+        11
+      ],
+      "max_abs_vs_float64_scalar": 1.430511474609375e-06,
+      "last_state_max_abs": 4.76837158203125e-07
+    },
+    "scan_gpu": {
+      "max_abs_vs_float64_scalar": 6.854534149169922e-07,
+      "max_abs_vs_cpu": 1.430511474609375e-06
+    },
+    "mamba_forward_vs_step_cpu": {
+      "shape": [
+        2,
+        13,
+        96
+      ],
+      "max_abs": 8.940696716308594e-08
+    },
+    "full_model": {
+      "metadata": {
+        "backend": "official_selective_scan_ref_torch",
+        "adapter_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+        "official_repository": "https://github.com/zizheng-guo/RhythmMamba",
+        "official_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+        "source_files": {
+          "setup/mamba/mamba_ssm/modules/mamba_simple.py": {
+            "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+            "bytes": 14291,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": {
+            "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+            "bytes": 16835,
+            "storage": "verbatim audited JSON",
+            "optional_snapshot_matches": false
+          },
+          "neural_methods/model/RhythmMamba.py": {
+            "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+            "bytes": 11539,
+            "storage": "official_snapshot"
+          },
+          "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml": {
+            "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+            "bytes": 3333,
+            "storage": "official_snapshot"
+          },
+          "PreTrainedModels/PURE_cross_RhythmMamba.pth": {
+            "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+            "bytes": 20044634,
+            "storage": "official_snapshot",
+            "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+          }
+        },
+        "ast": {
+          "mamba_class": {
+            "name": "Mamba",
+            "line_start": 31,
+            "line_end": 294,
+            "ast_sha256": "1d3f0959daf1e0935879461d6aea115377b46c9952be3c425abc6aae07400f14"
+          },
+          "selective_scan_ref": {
+            "name": "selective_scan_ref",
+            "line_start": 91,
+            "line_end": 157,
+            "ast_sha256": "03581ddbfecd8172893dc8ab684e5080427921f1e460ec5a85bd7c50d83ceda7"
+          }
+        },
+        "official_Mamba_class_unchanged": true,
+        "official_model_text_unchanged": true,
+        "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+        "checkpoint_sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+        "weights_only": true,
+        "strict": true,
+        "removed_uniform_module_prefix": true,
+        "state_dict_tensors": 781,
+        "state_dict_dtype_counts": {
+          "torch.float32": 728,
+          "torch.int64": 53
+        },
+        "parameters": 4922125,
+        "mamba_layers": 24,
+        "use_fast_path": false,
+        "causal_conv_extension": false,
+        "selective_scan_cuda_extension": false,
+        "model_eval": true,
+        "model_dtype": "float32",
+        "input_shape": "[B,160,3,128,128]",
+        "output_shape": "[B,160]",
+        "device": "cuda",
+        "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "torch_version": "2.6.0+cu124",
+        "torch_cuda_version": "12.4",
+        "timm_version": "0.9.16",
+        "einops_version": "0.7.0",
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "official_cuda_kernel_parity_verified": false,
+        "official_performance_benchmark": false,
+        "preprocessing": "Caller must apply the frozen full-video standardization and 160-frame clip protocol.",
+        "limitations": [
+          "Pure Torch reference execution adapter, not the author's fused CUDA backend.",
+          "No inference speed claim for the original implementation.",
+          "This loader alone does not verify CUDA-kernel numerical parity or physiological accuracy."
+        ]
+      },
+      "input_shape": [
+        1,
+        160,
+        3,
+        128,
+        128
+      ],
+      "output_shape": [
+        1,
+        160
+      ],
+      "output_finite": true,
+      "raw_output_mean": -4.795224666595459,
+      "raw_output_sample_sd": 0.6804614663124084,
+      "execution_seconds": 0.39550727999812807,
+      "performance_interpretation": "Single synthetic smoke test of the reference backend; not an official benchmark.",
+      "peak_allocated_gpu_bytes": 500277248
+    }
+  },
+  "failures_detail": [],
+  "official_cuda_kernel_parity_verified": false,
+  "inference_accuracy_claim": false,
+  "limitation": "Manual recurrence and CPU/GPU reference parity are tested. Official fused CUDA kernels are not tested."
+}

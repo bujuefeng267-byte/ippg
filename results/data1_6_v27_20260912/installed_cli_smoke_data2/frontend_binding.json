@@ -1,0 +1,29 @@
+{
+  "extraction_mode": "verified_frontend_cache",
+  "frontend_path": "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/frontend/data2",
+  "metadata_sha256": "109f8f8833cf00fdecff3640810ba76faf97806237124d80977c98ebb2cf8731",
+  "video_sha256": "63c87a836f56f699b7960c34b12f847017878bd1e372cbc7cb0b0a380c227f11",
+  "output_hashes": {
+    "patch_trace.csv": "7cedac571b70d466b96dadc6a8c0b52d1ca3b4aea029e6c3d70cd648960e72ab",
+    "frame_trace.csv": "447de83df5f432b3079fadf6e18add1d92af9255c461bc14bd615a00fc619c1c",
+    "patch_anchors.json": "62395fc992f6e9b3104ff240581cec88213087b3ac224aa54636d98f67c53b9d",
+    "landmark_trace.npz": "1c6c3821a982f85ac4d91c415cabc2fba1480793e7151f80a797eaf25dc92c35"
+  },
+  "source_hashes": {
+    "stable_patch_frontend_v27.py": "e69787cd4c3a0148af01d704b97619bc9cf41e6107a0c7295ddb66fe839420d7",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec"
+  },
+  "frames": 1393,
+  "fps": 30.00003000003,
+  "probe": {
+    "fps": 30.00003000003,
+    "declared_frames": 1393,
+    "independently_decoded_frames": 1393
+  },
+  "complete_clock_verified": true,
+  "twelve_patch_identity_and_support_verified": true,
+  "reference_used": false
+}

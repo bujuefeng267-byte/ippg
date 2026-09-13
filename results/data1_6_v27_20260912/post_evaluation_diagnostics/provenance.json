@@ -1,0 +1,31 @@
+{
+  "input_hashes": {
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data1/frame_trace.csv": "661c8ad89a169f534f49ebb36383d28ed421756514787ab1319388ee742e8511",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data1/metadata.json": "59233827b1f10f4fdcfe14dc8ef0c36104bffb56ab4dfcf13942dbab327015e4",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data1/evaluation/paired_windows.csv": "57a8a47fd39eab1d812d7ada0890edaeab4a5343944ae9b6bafe8f35f418a015",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data1/patch_diagnostics.csv": "a2272a0173a90d50150bd1404d38438e8eb5c3e79dab689ee811c131284b06e0",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data2/frame_trace.csv": "447de83df5f432b3079fadf6e18add1d92af9255c461bc14bd615a00fc619c1c",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data2/metadata.json": "109f8f8833cf00fdecff3640810ba76faf97806237124d80977c98ebb2cf8731",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data2/evaluation/paired_windows.csv": "b52ad6cd05a741f89417e822a650614a1e58443a463c6a7c255eb911a161d225",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data2/patch_diagnostics.csv": "baa0ca0628c451748c1c3bbe13851752671d4cf3c098628621577d2b191aebe7",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data3/frame_trace.csv": "cd776a4569cd2c07080fa0e09a40830b3fc11275ac18d67af7e25f67ab58d075",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data3/metadata.json": "197e5b459edba63e82f32ca55295d8ab58a05abd0b3f2fd3fdf87892548c68e9",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data3/evaluation/paired_windows.csv": "9a26327fbde8af72b220536012b18ed1d97d36b3fad4e379edf9c49ea06227c1",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data3/patch_diagnostics.csv": "a5ed408cf4aa04778b1744a23796e243d838eb1ae7e853298a40cb3aa82fa0ca",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data4/frame_trace.csv": "139ea112e5a8a8f598cbf60cdb1e0d2ec84011fcca878b8767e42350b81468bf",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data4/metadata.json": "9ff73c87859fb4b28eb12c506348cf57be99c698df357038fd9a0d172093e0ae",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data4/evaluation/paired_windows.csv": "1e4a3e166789e15e3936cf520e0b59859f11b4c8c5b59e61baa0678417e18164",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data4/patch_diagnostics.csv": "d2360eb6ad066f48271806b8ea2c33afccdbc53dbdf8ef1664769f2e6ac36cbc",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data5/frame_trace.csv": "23967195b030a2277daf561481ae1156a7a111ca82a49f37b8c81700acb75f0a",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data5/metadata.json": "6888110bd4aa4c344f3ccbe9af94c2561eb76a76e8e27e3d206bf7595011b6bd",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data5/evaluation/paired_windows.csv": "17e5eacc4ffdd779d4cf66a35323fe727bbec118f4fe7f62b4e2c23681730e6a",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data5/patch_diagnostics.csv": "abfc9b8e0a814efd131317fc689825f0a918866e9d6a05ee8f78cc21f0ffb750",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data6/frame_trace.csv": "bea578b39110717c9af22e5427fa001ef792a076a8443bb6559d110c1fdeb9d0",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/frontend/data6/metadata.json": "70f31e4a3c19d5922a6e5909edc1ff080bbcc124c787d112ab7d94dac3af6aff",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data6/evaluation/paired_windows.csv": "43761041a26737fe9b2fe0050a1c543d3d9d27394183f33b0a5fa613eb92e692",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v27_20260912/late_psd_cluster/data6/patch_diagnostics.csv": "393f2a00ffaf09181d93968b9de02380b4205c1e217b54e1bb5ffd66b236d0e9"
+  },
+  "post_evaluation_only": true,
+  "parameters_changed": false,
+  "interpretation": "Descriptive associations, not causal isolation. Motion profile is a geometric proxy; relative PSD is not artifact probability. No prediction or threshold is altered."
+}

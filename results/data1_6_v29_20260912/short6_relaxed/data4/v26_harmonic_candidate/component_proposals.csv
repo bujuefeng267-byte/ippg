@@ -1,0 +1,55 @@
+window_index,time_s,proposal_bpm,proposal_supported,reacquired,generated,contributing_rois,channels,score,window_start_s,window_end_s
+0,2.99997,,False,False,False,0,[],,0.0,5.99994
+1,3.9999599999999997,,False,False,False,0,[],,0.9999899999999999,6.99993
+2,4.99995,75.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]",1.072409652028265,1.9999799999999999,7.9999199999999995
+3,5.99994,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0981834483388033,2.99997,8.99991
+4,6.99993,75.0,True,False,True,3,"[""tracked/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.8933544687784986,3.9999599999999997,9.9999
+5,7.9999199999999995,76.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.8966583677419547,4.99995,10.99989
+6,8.99991,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.17647876739421,5.99994,11.99988
+7,9.9999,74.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.1753577889303914,6.99993,12.99987
+8,10.99989,74.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0683783853231843,7.9999199999999995,13.99986
+9,11.99988,74.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.976677914035726,8.99991,14.99985
+10,12.99987,74.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9238277612136989,9.9999,15.999839999999999
+11,13.99986,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.8609489451576015,10.99989,16.99983
+12,14.99985,76.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.782677769912996,11.99988,17.99982
+13,15.999839999999999,78.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9024416893298263,12.99987,18.99981
+14,16.99983,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0037679534795736,13.99986,19.9998
+15,17.99982,81.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0180529515095615,14.99985,20.99979
+16,18.99981,82.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0742098319107114,15.999839999999999,21.99978
+17,19.9998,81.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9345333062012448,16.99983,22.999769999999998
+18,20.99979,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0545300727276883,17.99982,23.99976
+19,21.99978,78.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom""]",0.9648880431079364,18.99981,24.99975
+20,22.999769999999998,76.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9052963261021466,19.9998,25.99974
+21,23.99976,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.1191486470585226,20.99979,26.99973
+22,24.99975,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.1566737270009997,21.99978,27.99972
+23,25.99974,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.106709165992516,22.999769999999998,28.99971
+24,26.99973,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.048253620617702,23.99976,29.9997
+25,27.99972,76.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9552676912184173,24.99975,30.99969
+26,28.99971,77.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.9211375190964476,25.99974,31.999679999999998
+27,29.9997,78.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",1.0247691587022523,26.99973,32.99967
+28,30.99969,79.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom""]",1.0227211740648572,27.99972,33.99966
+29,31.999679999999998,79.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom""]",1.0346736642631589,28.99971,34.99965
+30,32.99967,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",1.1126637352273292,29.9997,35.99964
+31,33.99966,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",1.080327041822506,30.99969,36.999629999999996
+32,34.99965,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0130483066093314,31.999679999999998,37.99962
+33,35.99964,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9606438029152167,32.99967,38.99961
+34,36.999629999999996,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.6814409486222649,33.99966,39.9996
+35,37.99962,79.0,True,False,True,2,"[""tracked/forehead/pos"", ""baseline/right_cheek/chrom""]",0.7939366076611506,34.99965,40.99959
+36,38.99961,79.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",1.1336569168608057,35.99964,41.99958
+37,39.9996,79.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",1.1961985401634874,36.999629999999996,42.99957
+38,40.99959,78.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.053960132301066,37.99962,43.99956
+39,41.99958,77.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.9903237687044201,38.99961,44.99955
+40,42.99957,76.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9050170793556452,39.9996,45.999539999999996
+41,43.99956,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.088595293298244,40.99959,46.99953
+42,44.99955,75.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.1709667621260278,41.99958,47.99952
+43,45.999539999999996,75.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.1604150547220733,42.99957,48.99951
+44,46.99953,75.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",1.1493612142912102,43.99956,49.9995
+45,47.99952,76.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9942558274037276,44.99955,50.99949
+46,48.99951,78.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/right_cheek/pos""]",0.8703610765988078,45.999539999999996,51.99948
+47,49.9995,80.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.9118668771277272,46.99953,52.99947
+48,50.99949,82.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.8094097285208205,47.99952,53.99946
+49,51.99948,82.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.7866992575573951,48.99951,54.999449999999996
+50,52.99947,81.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.8588215807240962,49.9995,55.99944
+51,53.99946,80.0,True,False,True,3,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.0372861814448737,50.99949,56.99943
+52,54.999449999999996,,False,False,False,0,[],,51.99948,57.99942
+53,55.99944,,False,False,False,0,[],,52.99947,58.99941

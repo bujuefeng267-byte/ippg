@@ -1,0 +1,41 @@
+[
+  {
+    "segment_id": 0,
+    "sampling": {
+      "up": 1,
+      "down": 1,
+      "effective_polyphase_hz": 30.00003000003,
+      "target_hz": 30.0,
+      "source_start_frame": 0,
+      "source_frames": 1393,
+      "target_frames": 1392,
+      "antialias_applied": false,
+      "phase_correction": "linear interpolation onto global exact time grid"
+    },
+    "neural": {
+      "status": "predicted",
+      "clips": 15,
+      "clip_starts": [
+        0,
+        90,
+        180,
+        270,
+        360,
+        450,
+        540,
+        630,
+        720,
+        810,
+        900,
+        990,
+        1080,
+        1170,
+        1211
+      ],
+      "scalar_mean": 123.59237460339192,
+      "scalar_std": 46.06732987993158,
+      "predicted_intervals": 1391,
+      "uncovered_intervals": 0
+    }
+  }
+]

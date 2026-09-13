@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-09-09T02:58:25.276644+00:00",
+  "command": "python -B record_tests.py (unittest discover test_*v2*.py)",
+  "tests_run": 45,
+  "passed": 45,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "source_hashes": {
+    "analyze_motion_v2.py": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+    "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+    "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115"
+  },
+  "test_hashes": {
+    "test_cli_v2.py": "2939921ad15626c23a79997a482dad2a3ddbe8df0753f37f973828cc2c69d72e",
+    "test_frontend_v2.py": "b0fbb912cd0147d0675e1a93c44641d3e92cd0271e506b6080c4ed212cad3b96",
+    "test_fusion_v2.py": "1a6568a3bf80c44df5da60bb29ae6b4720ed906149e2543a38a30e0992f6c52c",
+    "test_stable_groups_v21.py": "b4f17913006f458b18a82ef44d9b366f11df992fd4855bcdbf6c46b939d0f2a6",
+    "test_waveform_hr_v21.py": "f3803f5393125ced0927dc47ca0d5879e8795cfa12850e567928c47426f50646"
+  }
+}

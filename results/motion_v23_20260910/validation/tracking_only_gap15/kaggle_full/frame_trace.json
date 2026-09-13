@@ -1,0 +1,29 @@
+{
+  "identity": {
+    "video": "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/kaggle_motion_subject001/video.mov",
+    "size": 538497671,
+    "mtime_ns": 1788440483953150428,
+    "max_seconds": null,
+    "rgb_aggregation": "trimmed_mean",
+    "pixel_mode": "tracking_only",
+    "pixel_config": {
+      "max_points_per_roi": 100,
+      "patch_radius": 3,
+      "min_tracks": 12,
+      "fb_max_px": 0.5,
+      "screen_z": 3.0,
+      "screen_floor": 0.003,
+      "tracking_width": 960
+    },
+    "frontend_hashes": {
+      "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+      "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+      "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+      "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+    }
+  },
+  "fps": 29.97002997002997,
+  "n_frames": 12867,
+  "trace_sha256": "98b8b4309e0cb9cb8ceb779a0667c7dc1f4b348bdf0485076567385800a1ef34"
+}

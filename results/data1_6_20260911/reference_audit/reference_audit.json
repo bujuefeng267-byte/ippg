@@ -1,0 +1,3946 @@
+{
+  "audit_version": 1,
+  "created_utc": "2026-09-11T13:05:08.736456+00:00",
+  "scope": "Read-only reference and archive audit of data1.zip through data6.zip",
+  "case_count": 6,
+  "source_archive_folder": "C:\\Users\\15011\\Desktop\\视频",
+  "cases": [
+    {
+      "case": "data1",
+      "source_archive": "C:\\Users\\15011\\Desktop\\视频\\data1.zip",
+      "archive_bytes": 824089924,
+      "archive_mtime_not_used_for_alignment": true,
+      "members": [
+        {
+          "member": "data1/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            9,
+            15,
+            37,
+            26
+          ],
+          "extended_unix_mtime_s": 1788939447,
+          "mtime_utc": "2026-09-09T07:37:27.000000000Z",
+          "mtime_china": "2026-09-09T15:37:27.000000000 +08:00"
+        },
+        {
+          "member": "data1/20260909_YJC_2.zip",
+          "bytes": 259717,
+          "crc32": "e608aa3d",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            9,
+            15,
+            36,
+            52
+          ],
+          "extended_unix_mtime_s": 1788939412,
+          "mtime_utc": "2026-09-09T07:36:52.000000000Z",
+          "mtime_china": "2026-09-09T15:36:52.000000000 +08:00"
+        },
+        {
+          "member": "data1/Video_20260909_YJC_2.zip",
+          "bytes": 823580287,
+          "crc32": "bb7001da",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            9,
+            15,
+            35,
+            46
+          ],
+          "extended_unix_mtime_s": 1788939346,
+          "mtime_utc": "2026-09-09T07:35:46.000000000Z",
+          "mtime_china": "2026-09-09T15:35:46.000000000 +08:00"
+        }
+      ],
+      "video_count": 1,
+      "video_inner_archive": "data1/Video_20260909_YJC_2.zip",
+      "video": {
+        "member": "Video_20260909_YJC_2.avi",
+        "bytes": 843755520,
+        "crc32": "114e4cac",
+        "zip_compression_method": 8,
+        "dos_local_datetime": [
+          2026,
+          9,
+          9,
+          15,
+          33,
+          42
+        ],
+        "extended_unix_mtime_s": 1788939223,
+        "mtime_utc": "2026-09-09T07:33:43.000000000Z",
+        "mtime_china": "2026-09-09T15:33:43.000000000 +08:00",
+        "header_bytes_read": 65536,
+        "width": 3840,
+        "height": 2160,
+        "avih_total_frames": 1555,
+        "strh_length_frames": 1555,
+        "frame_count_header_agreement": true,
+        "fps_numerator": 10000000,
+        "fps_denominator": 333333,
+        "fps": 30.00003000003,
+        "provisional_stream_duration_ns": 51833281500,
+        "provisional_stream_duration_s": 51.8332815,
+        "avih_count_duration_s": 51.8332815,
+        "header_embedded_wallclock_marker_found": false,
+        "full_video_payload_crc_or_decode_validated": false
+      },
+      "reference_inner_archive": "data1/20260909_YJC_2.zip",
+      "reference_folder": "20260909_YJC_2",
+      "reference_files": {
+        "events.csv": {
+          "member": "20260909_YJC_2/events.csv",
+          "bytes": 628,
+          "sha256": "67626e6514b0c85e9da0d04e414bb3db63b3905a3afeaae02713019b060da26b"
+        },
+        "meta.json": {
+          "member": "20260909_YJC_2/meta.json",
+          "bytes": 3977,
+          "sha256": "d8d8045a259fc4d97edba6488bc12d9fa410520dfd795a3b27cba2a23fb74212"
+        },
+        "polar_acc.csv": {
+          "member": "20260909_YJC_2/polar_acc.csv",
+          "bytes": 443847,
+          "sha256": "0e5813f7dbc2ff6d514b534ff852bd0646a3b360a59fcbb11b4baabc5df49ef7"
+        },
+        "polar_hr.csv": {
+          "member": "20260909_YJC_2/polar_hr.csv",
+          "bytes": 4880,
+          "sha256": "ecdd31359f0285ebb0d91834d85fc9faeaf0c1bea9e75a331b3a64bcc2f5daa6"
+        },
+        "polar_ppg.csv": {
+          "member": "20260909_YJC_2/polar_ppg.csv",
+          "bytes": 542309,
+          "sha256": "799b425b0981abec1c739f57f1c9744574ceaf53b67b793831d4fe91b97ef2f3"
+        },
+        "quality_summary.csv": {
+          "member": "20260909_YJC_2/quality_summary.csv",
+          "bytes": 511,
+          "sha256": "884960338ebb20aed152793c730971e884f6a01a6d53d413e7fd7b6c6bd1f9ca"
+        }
+      },
+      "waveform_png_present": true,
+      "collector": {
+        "software_git_commit": "6dfe3cffcc37f0c9d2542c19036c93f685107831",
+        "library": "polar-python==1.1.1",
+        "device_model_family": "Polar Sense (as recorded by collector)",
+        "reference_kind": "User-supplied Polar optical device HR notifications, not ECG",
+        "device_address_omitted": true,
+        "start_utc": "2026-09-09T07:31:50.760842+00:00",
+        "stop_utc": "2026-09-09T07:33:50.541380+00:00",
+        "session_duration_s": 119.780538,
+        "reported_queue_drops": 0,
+        "reported_connection_count": 1,
+        "reported_reconnect_count": 1,
+        "per_sample_time_definition": "Estimated per-sample time: integer interpolation between consecutive frame endpoints when 0 < frame interval <= 1.5 times nominal batch duration; otherwise nominal-rate backward reconstruction. Interpolation state resets on every connection."
+      },
+      "events": [
+        {
+          "event": "session_started",
+          "source": "app",
+          "utc_ns": 1788939110807692200,
+          "utc": "2026-09-09T07:31:50.807692200Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1788939110834699200,
+          "utc": "2026-09-09T07:31:50.834699200Z"
+        },
+        {
+          "event": "disconnected",
+          "source": "polar",
+          "utc_ns": 1788939124837581800,
+          "utc": "2026-09-09T07:32:04.837581800Z"
+        },
+        {
+          "event": "reconnect_wait",
+          "source": "polar",
+          "utc_ns": 1788939124837581800,
+          "utc": "2026-09-09T07:32:04.837581800Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1788939125842358800,
+          "utc": "2026-09-09T07:32:05.842358800Z"
+        },
+        {
+          "event": "connected",
+          "source": "polar",
+          "utc_ns": 1788939138937814000,
+          "utc": "2026-09-09T07:32:18.937814000Z"
+        },
+        {
+          "event": "stream_started",
+          "source": "polar",
+          "utc_ns": 1788939144697433100,
+          "utc": "2026-09-09T07:32:24.697433100Z"
+        },
+        {
+          "event": "session_stopped",
+          "source": "app",
+          "utc_ns": 1788939230541380200,
+          "utc": "2026-09-09T07:33:50.541380200Z"
+        }
+      ],
+      "streams": {
+        "hr": {
+          "reference_member": "20260909_YJC_2/polar_hr.csv",
+          "reference_inner_archive": "data1/20260909_YJC_2.zip",
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "hr_bpm",
+            "rr_ms"
+          ],
+          "rows": 91,
+          "sha256": "ecdd31359f0285ebb0d91834d85fc9faeaf0c1bea9e75a331b3a64bcc2f5daa6",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 91,
+            "device_frame_time_ns": 91,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "hr_bpm": 0,
+            "rr_ms": 91
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "host_utc_ns",
+          "first_time_ns": 1788939139117937300,
+          "last_time_ns": 1788939229086708500,
+          "first_utc": "2026-09-09T07:32:19.117937300Z",
+          "last_utc": "2026-09-09T07:33:49.086708500Z",
+          "first_china": "2026-09-09T15:32:19.117937300 +08:00",
+          "last_china": "2026-09-09T15:33:49.086708500 +08:00",
+          "duration_first_to_last_s": 89.9687712,
+          "endpoint_rate_hz": 1.000347107108205,
+          "configured_rate_hz": null,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 899.7918,
+            "median": 990.6491,
+            "max": 1081.1947
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "hr_bpm": {
+              "finite_count": 91,
+              "min": 95.0,
+              "max": 121.0,
+              "mean": 104.50549450549451,
+              "std_ddof1": 7.418256198765653
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "hr",
+            "expected_rate_hz": "",
+            "sample_count": "91",
+            "first_time_ns": "259245160773100",
+            "last_time_ns": "259335129261500",
+            "max_interval_ms": "1081.1629",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "89.9684884",
+            "actual_rate_hz": "1.0003502515220652"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 91,
+              "unique": 91
+            },
+            "host_utc_ns": {
+              "nonmissing": 91,
+              "unique": 91
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 0.9683,
+          "reported_quality_core_fields_match": true
+        },
+        "ppg": {
+          "reference_member": "20260909_YJC_2/polar_ppg.csv",
+          "reference_inner_archive": "data1/20260909_YJC_2.zip",
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "ppg_0",
+            "ppg_1",
+            "ppg_2",
+            "ambient"
+          ],
+          "rows": 4640,
+          "sha256": "799b425b0981abec1c739f57f1c9744574ceaf53b67b793831d4fe91b97ef2f3",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "ppg_0": 0,
+            "ppg_1": 0,
+            "ppg_2": 0,
+            "ambient": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1788939143542577202,
+          "last_time_ns": 1788939228280549012,
+          "first_utc": "2026-09-09T07:32:23.542577202Z",
+          "last_utc": "2026-09-09T07:33:48.280549012Z",
+          "first_china": "2026-09-09T15:32:23.542577202 +08:00",
+          "last_china": "2026-09-09T15:33:48.280549012 +08:00",
+          "duration_first_to_last_s": 84.73797181,
+          "endpoint_rate_hz": 54.745232873895006,
+          "configured_rate_hz": 55.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.181818,
+            "median": 18.267232,
+            "max": 18.270146
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "ppg_0": {
+              "finite_count": 4640,
+              "min": -395492.0,
+              "max": -358522.0,
+              "mean": -376206.31853448274,
+              "std_ddof1": 7928.4205706045805
+            },
+            "ppg_1": {
+              "finite_count": 4640,
+              "min": -379951.0,
+              "max": -342027.0,
+              "mean": -359612.4349137931,
+              "std_ddof1": 8510.86317320877
+            },
+            "ppg_2": {
+              "finite_count": 4640,
+              "min": -303838.0,
+              "max": -263730.0,
+              "mean": -282188.2885775862,
+              "std_ddof1": 9101.677119599235
+            },
+            "ambient": {
+              "finite_count": 4640,
+              "min": -612530.0,
+              "max": -609367.0,
+              "mean": -611531.4025862069,
+              "std_ddof1": 602.0272245011172
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "ppg",
+            "expected_rate_hz": "55.0",
+            "sample_count": "4640",
+            "first_time_ns": "1788939143542577202",
+            "last_time_ns": "1788939228280549012",
+            "max_interval_ms": "18.270146",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "84.73797181",
+            "actual_rate_hz": "54.745232873895"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 4640,
+              "unique": 4640
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 4640,
+              "unique": 121
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 4640,
+              "unique": 121
+            },
+            "host_utc_ns": {
+              "nonmissing": 4640,
+              "unique": 121
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.0113,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.841769406,
+            "median": 0.997579632,
+            "max": 1.248962672
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": -0.4632129565545373
+        },
+        "acc": {
+          "reference_member": "20260909_YJC_2/polar_acc.csv",
+          "reference_inner_archive": "data1/20260909_YJC_2.zip",
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "acc_x_mg",
+            "acc_y_mg",
+            "acc_z_mg"
+          ],
+          "rows": 4497,
+          "sha256": "0e5813f7dbc2ff6d514b534ff852bd0646a3b360a59fcbb11b4baabc5df49ef7",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "acc_x_mg": 0,
+            "acc_y_mg": 0,
+            "acc_z_mg": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1788939143986644929,
+          "last_time_ns": 1788939228468864907,
+          "first_utc": "2026-09-09T07:32:23.986644929Z",
+          "last_utc": "2026-09-09T07:33:48.468864907Z",
+          "first_china": "2026-09-09T15:32:23.986644929 +08:00",
+          "last_china": "2026-09-09T15:33:48.468864907 +08:00",
+          "duration_first_to_last_s": 84.482219978,
+          "endpoint_rate_hz": 53.21829849133702,
+          "configured_rate_hz": 52.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.780998,
+            "median": 18.782557,
+            "max": 19.23077
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "acc_x_mg": {
+              "finite_count": 4497,
+              "min": -2399.0,
+              "max": 1075.0,
+              "mean": -548.6184122748499,
+              "std_ddof1": 588.4430538115496
+            },
+            "acc_y_mg": {
+              "finite_count": 4497,
+              "min": -2723.0,
+              "max": 1449.0,
+              "mean": -377.6546586613298,
+              "std_ddof1": 651.9523872093137
+            },
+            "acc_z_mg": {
+              "finite_count": 4497,
+              "min": -1818.0,
+              "max": 3997.0,
+              "mean": 573.6244162775183,
+              "std_ddof1": 805.9047440906654
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "acc",
+            "expected_rate_hz": "52.0",
+            "sample_count": "4497",
+            "first_time_ns": "1788939143986644929",
+            "last_time_ns": "1788939228468864907",
+            "max_interval_ms": "19.23077",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "84.482219978",
+            "actual_rate_hz": "53.21829849133702"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 4497,
+              "unique": 4497
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 4497,
+              "unique": 81
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 4497,
+              "unique": 81
+            },
+            "host_utc_ns": {
+              "nonmissing": 4497,
+              "unique": 81
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 0.9878,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.825074027,
+            "median": 1.025771043,
+            "max": 1.233838302
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": 2.342881714109657
+        }
+      },
+      "alignment": {
+        "status": "estimated_file_mtime_alignment_only_not_hardware_synchronized",
+        "has_shared_camera_event": false,
+        "has_verified_first_frame_utc": false,
+        "assumption": "AVI archived original modification timestamp approximates recording end; subtract decoded N/fps duration, without using prediction HR. Header-based duration below must be confirmed by decoding.",
+        "provisional_start_utc_ns": 1788939171166718500,
+        "provisional_start_utc": "2026-09-09T07:32:51.166718500Z",
+        "provisional_start_china": "2026-09-09T15:32:51.166718500 +08:00",
+        "provisional_end_utc_ns": 1788939223000000000,
+        "duration_ready_to_freeze": true,
+        "reference_hr_starts_relative_to_video_s": -32.0487812,
+        "reference_hr_ends_relative_to_video_s": 57.91999,
+        "reference_ppg_starts_relative_to_video_s": -27.624141298,
+        "reference_ppg_ends_relative_to_video_s": 57.113830512,
+        "whole_video_inside_observed_hr_endpoint_span": true,
+        "mtime_resolution_s": 1,
+        "sensitivity_shifts_s": [
+          -5,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          5
+        ],
+        "prediction_based_alignment_fit": false,
+        "all_shifts_to_report": true,
+        "reference_file_mtime_minus_last_hr_notification_s": -0.08670854568481445,
+        "do_not_rezero_reference_and_video_independently": true
+      },
+      "prior_data1_identity_check": {
+        "same_reference_bytes_as_prior_data1": true,
+        "same_video_size_crc_and_strh_as_prior_audit": true,
+        "prior_alignment_protocol": "rppg_data1_20260909/alignment_protocol.json"
+      }
+    },
+    {
+      "case": "data2",
+      "source_archive": "C:\\Users\\15011\\Desktop\\视频\\data2.zip",
+      "archive_bytes": 765083486,
+      "archive_mtime_not_used_for_alignment": true,
+      "members": [
+        {
+          "member": "data2/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            23,
+            58
+          ],
+          "extended_unix_mtime_s": 1789115039,
+          "mtime_utc": "2026-09-11T08:23:59.000000000Z",
+          "mtime_china": "2026-09-11T16:23:59.000000000 +08:00"
+        },
+        {
+          "member": "data2/20260911_CHP_1/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            23,
+            58
+          ],
+          "extended_unix_mtime_s": 1789115039,
+          "mtime_utc": "2026-09-11T08:23:59.000000000Z",
+          "mtime_china": "2026-09-11T16:23:59.000000000 +08:00"
+        },
+        {
+          "member": "data2/20260911_CHP_1/events.csv",
+          "bytes": 628,
+          "crc32": "46b54bf4",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            22,
+            38
+          ],
+          "extended_unix_mtime_s": 1789114959,
+          "mtime_utc": "2026-09-11T08:22:39.000000000Z",
+          "mtime_china": "2026-09-11T16:22:39.000000000 +08:00"
+        },
+        {
+          "member": "data2/20260911_CHP_1/meta.json",
+          "bytes": 3979,
+          "crc32": "aa8c2b77",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            22,
+            38
+          ],
+          "extended_unix_mtime_s": 1789114959,
+          "mtime_utc": "2026-09-11T08:22:39.000000000Z",
+          "mtime_china": "2026-09-11T16:22:39.000000000 +08:00"
+        },
+        {
+          "member": "data2/20260911_CHP_1/polar_acc.csv",
+          "bytes": 367080,
+          "crc32": "3564ecbb",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            22,
+            38
+          ],
+          "extended_unix_mtime_s": 1789114958,
+          "mtime_utc": "2026-09-11T08:22:38.000000000Z",
+          "mtime_china": "2026-09-11T16:22:38.000000000 +08:00"
+        },
+        {
+          "member": "data2/20260911_CHP_1/polar_hr.csv",
+          "bytes": 4141,
+          "crc32": "b1354c98",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            22,
+            38
+          ],
+          "extended_unix_mtime_s": 1789114958,
+          "mtime_utc": "2026-09-11T08:22:38.000000000Z",
+          "mtime_china": "2026-09-11T16:22:38.000000000 +08:00"
+        },
+        {
+          "member": "data2/20260911_CHP_1/polar_ppg.csv",
+          "bytes": 440264,
+          "crc32": "2d295791",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            22,
+            38
+          ],
+          "extended_unix_mtime_s": 1789114959,
+          "mtime_utc": "2026-09-11T08:22:39.000000000Z",
+          "mtime_china": "2026-09-11T16:22:39.000000000 +08:00"
+        },
+        {
+          "member": "data2/20260911_CHP_1/quality_summary.csv",
+          "bytes": 513,
+          "crc32": "0e5140f4",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            22,
+            38
+          ],
+          "extended_unix_mtime_s": 1789114959,
+          "mtime_utc": "2026-09-11T08:22:39.000000000Z",
+          "mtime_china": "2026-09-11T16:22:39.000000000 +08:00"
+        },
+        {
+          "member": "data2/20260911_CHP_1/waveform.png",
+          "bytes": 60270,
+          "crc32": "faa38309",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            22,
+            38
+          ],
+          "extended_unix_mtime_s": 1789114958,
+          "mtime_utc": "2026-09-11T08:22:38.000000000Z",
+          "mtime_china": "2026-09-11T16:22:38.000000000 +08:00"
+        },
+        {
+          "member": "data2/Video_20260911_162146381.avi",
+          "bytes": 783268352,
+          "crc32": "0d5d60f0",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            22,
+            32
+          ],
+          "extended_unix_mtime_s": 1789114953,
+          "mtime_utc": "2026-09-11T08:22:33.000000000Z",
+          "mtime_china": "2026-09-11T16:22:33.000000000 +08:00"
+        }
+      ],
+      "video_count": 1,
+      "video_inner_archive": null,
+      "video": {
+        "member": "data2/Video_20260911_162146381.avi",
+        "bytes": 783268352,
+        "crc32": "0d5d60f0",
+        "zip_compression_method": 8,
+        "dos_local_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          22,
+          32
+        ],
+        "extended_unix_mtime_s": 1789114953,
+        "mtime_utc": "2026-09-11T08:22:33.000000000Z",
+        "mtime_china": "2026-09-11T16:22:33.000000000 +08:00",
+        "header_bytes_read": 65536,
+        "width": 3840,
+        "height": 2160,
+        "avih_total_frames": 1393,
+        "strh_length_frames": 1393,
+        "frame_count_header_agreement": true,
+        "fps_numerator": 10000000,
+        "fps_denominator": 333333,
+        "fps": 30.00003000003,
+        "provisional_stream_duration_ns": 46433286900,
+        "provisional_stream_duration_s": 46.4332869,
+        "avih_count_duration_s": 46.4332869,
+        "header_embedded_wallclock_marker_found": false,
+        "full_video_payload_crc_or_decode_validated": false
+      },
+      "reference_inner_archive": null,
+      "reference_folder": "data2/20260911_CHP_1",
+      "reference_files": {
+        "events.csv": {
+          "member": "data2/20260911_CHP_1/events.csv",
+          "bytes": 628,
+          "sha256": "3036544cda2234041cd206191371caa2304416ee56b77d64e56d480fad428648"
+        },
+        "meta.json": {
+          "member": "data2/20260911_CHP_1/meta.json",
+          "bytes": 3979,
+          "sha256": "a2957f0ae9d6450070d9cd8d6e5516940b7ab8fe87d0157c71fd28b09e9e41ef"
+        },
+        "polar_acc.csv": {
+          "member": "data2/20260911_CHP_1/polar_acc.csv",
+          "bytes": 367080,
+          "sha256": "dc03fd6ec9be8564675b01fe2f0be44b8983d5ee4d364527dc57a48cdbaf5a07"
+        },
+        "polar_hr.csv": {
+          "member": "data2/20260911_CHP_1/polar_hr.csv",
+          "bytes": 4141,
+          "sha256": "4503fde6587c0236c060af91dea3d4d69ddd715aac872f5af74b4a0f23b22665"
+        },
+        "polar_ppg.csv": {
+          "member": "data2/20260911_CHP_1/polar_ppg.csv",
+          "bytes": 440264,
+          "sha256": "fa672c3d2b94b3137da24afb64093f9a18d32ec22550e8b168721f536a0e0301"
+        },
+        "quality_summary.csv": {
+          "member": "data2/20260911_CHP_1/quality_summary.csv",
+          "bytes": 513,
+          "sha256": "298b12c8983dcb8c55f821e6ae83ab9aa099314a3190b20bf125a40965e6886d"
+        }
+      },
+      "waveform_png_present": true,
+      "collector": {
+        "software_git_commit": "6dfe3cffcc37f0c9d2542c19036c93f685107831",
+        "library": "polar-python==1.1.1",
+        "device_model_family": "Polar Sense (as recorded by collector)",
+        "reference_kind": "User-supplied Polar optical device HR notifications, not ECG",
+        "device_address_omitted": true,
+        "start_utc": "2026-09-11T08:20:52.285977+00:00",
+        "stop_utc": "2026-09-11T08:22:39.138769+00:00",
+        "session_duration_s": 106.852792,
+        "reported_queue_drops": 0,
+        "reported_connection_count": 1,
+        "reported_reconnect_count": 1,
+        "per_sample_time_definition": "Estimated per-sample time: integer interpolation between consecutive frame endpoints when 0 < frame interval <= 1.5 times nominal batch duration; otherwise nominal-rate backward reconstruction. Interpolation state resets on every connection."
+      },
+      "events": [
+        {
+          "event": "session_started",
+          "source": "app",
+          "utc_ns": 1789114852339359300,
+          "utc": "2026-09-11T08:20:52.339359300Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789114852374366400,
+          "utc": "2026-09-11T08:20:52.374366400Z"
+        },
+        {
+          "event": "disconnected",
+          "source": "polar",
+          "utc_ns": 1789114866188950100,
+          "utc": "2026-09-11T08:21:06.188950100Z"
+        },
+        {
+          "event": "reconnect_wait",
+          "source": "polar",
+          "utc_ns": 1789114866188950100,
+          "utc": "2026-09-11T08:21:06.188950100Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789114867218151200,
+          "utc": "2026-09-11T08:21:07.218151200Z"
+        },
+        {
+          "event": "connected",
+          "source": "polar",
+          "utc_ns": 1789114880163394100,
+          "utc": "2026-09-11T08:21:20.163394100Z"
+        },
+        {
+          "event": "stream_started",
+          "source": "polar",
+          "utc_ns": 1789114885802634000,
+          "utc": "2026-09-11T08:21:25.802634000Z"
+        },
+        {
+          "event": "session_stopped",
+          "source": "app",
+          "utc_ns": 1789114959137766300,
+          "utc": "2026-09-11T08:22:39.137766300Z"
+        }
+      ],
+      "streams": {
+        "hr": {
+          "reference_member": "data2/20260911_CHP_1/polar_hr.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "hr_bpm",
+            "rr_ms"
+          ],
+          "rows": 78,
+          "sha256": "4503fde6587c0236c060af91dea3d4d69ddd715aac872f5af74b4a0f23b22665",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 78,
+            "device_frame_time_ns": 78,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "hr_bpm": 0,
+            "rr_ms": 78
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "host_utc_ns",
+          "first_time_ns": 1789114880884769300,
+          "last_time_ns": 1789114957862146000,
+          "first_utc": "2026-09-11T08:21:20.884769300Z",
+          "last_utc": "2026-09-11T08:22:37.862146000Z",
+          "first_china": "2026-09-11T16:21:20.884769300 +08:00",
+          "last_china": "2026-09-11T16:22:37.862146000 +08:00",
+          "duration_first_to_last_s": 76.9773767,
+          "endpoint_rate_hz": 1.000293895440061,
+          "configured_rate_hz": null,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 926.3553,
+            "median": 990.7595,
+            "max": 1051.4225
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "hr_bpm": {
+              "finite_count": 78,
+              "min": 70.0,
+              "max": 83.0,
+              "mean": 76.73076923076923,
+              "std_ddof1": 3.6491346667646862
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "hr",
+            "expected_rate_hz": "",
+            "sample_count": "78",
+            "first_time_ns": "434991641193900",
+            "last_time_ns": "435068617992500",
+            "max_interval_ms": "1051.271",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "76.9767986",
+            "actual_rate_hz": "1.0003014077023464"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 78,
+              "unique": 78
+            },
+            "host_utc_ns": {
+              "nonmissing": 78,
+              "unique": 78
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 0.9948,
+          "reported_quality_core_fields_match": true
+        },
+        "ppg": {
+          "reference_member": "data2/20260911_CHP_1/polar_ppg.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "ppg_0",
+            "ppg_1",
+            "ppg_2",
+            "ambient"
+          ],
+          "rows": 3979,
+          "sha256": "fa672c3d2b94b3137da24afb64093f9a18d32ec22550e8b168721f536a0e0301",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "ppg_0": 0,
+            "ppg_1": 0,
+            "ppg_2": 0,
+            "ambient": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789114884986766388,
+          "last_time_ns": 1789114957637628499,
+          "first_utc": "2026-09-11T08:21:24.986766388Z",
+          "last_utc": "2026-09-11T08:22:37.637628499Z",
+          "first_china": "2026-09-11T16:21:24.986766388 +08:00",
+          "last_china": "2026-09-11T16:22:37.637628499 +08:00",
+          "duration_first_to_last_s": 72.650862111,
+          "endpoint_rate_hz": 54.755028149868224,
+          "configured_rate_hz": 55.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.181818,
+            "median": 18.263933,
+            "max": 18.267676
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "ppg_0": {
+              "finite_count": 3979,
+              "min": 369906.0,
+              "max": 411364.0,
+              "mean": 394557.0168384016,
+              "std_ddof1": 8133.9891032934565
+            },
+            "ppg_1": {
+              "finite_count": 3979,
+              "min": 306875.0,
+              "max": 339481.0,
+              "mean": 322095.4475998995,
+              "std_ddof1": 7852.69451441402
+            },
+            "ppg_2": {
+              "finite_count": 3979,
+              "min": 316980.0,
+              "max": 360752.0,
+              "mean": 334847.14300075395,
+              "std_ddof1": 12345.01743184542
+            },
+            "ambient": {
+              "finite_count": 3979,
+              "min": 2820.0,
+              "max": 3640.0,
+              "mean": 3036.601658708218,
+              "std_ddof1": 82.46042613029523
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "ppg",
+            "expected_rate_hz": "55.0",
+            "sample_count": "3979",
+            "first_time_ns": "1789114884986766388",
+            "last_time_ns": "1789114957637628499",
+            "max_interval_ms": "18.267676",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "72.650862111",
+            "actual_rate_hz": "54.75502814986823"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 3979,
+              "unique": 3979
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 3979,
+              "unique": 95
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 3979,
+              "unique": 95
+            },
+            "host_utc_ns": {
+              "nonmissing": 3979,
+              "unique": 95
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.0377,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.770393201,
+            "median": 0.962080132,
+            "max": 1.162302857
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": -0.44540336387595136
+        },
+        "acc": {
+          "reference_member": "data2/20260911_CHP_1/polar_acc.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "acc_x_mg",
+            "acc_y_mg",
+            "acc_z_mg"
+          ],
+          "rows": 3815,
+          "sha256": "dc03fd6ec9be8564675b01fe2f0be44b8983d5ee4d364527dc57a48cdbaf5a07",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "acc_x_mg": 0,
+            "acc_y_mg": 0,
+            "acc_z_mg": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789114885357905210,
+          "last_time_ns": 1789114957039535211,
+          "first_utc": "2026-09-11T08:21:25.357905210Z",
+          "last_utc": "2026-09-11T08:22:37.039535211Z",
+          "first_china": "2026-09-11T16:21:25.357905210 +08:00",
+          "last_china": "2026-09-11T16:22:37.039535211 +08:00",
+          "duration_first_to_last_s": 71.681630001,
+          "endpoint_rate_hz": 53.20749542033004,
+          "configured_rate_hz": 52.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.782826,
+            "median": 18.784307,
+            "max": 19.23077
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "acc_x_mg": {
+              "finite_count": 3815,
+              "min": 61.0,
+              "max": 2284.0,
+              "mean": 779.0319790301442,
+              "std_ddof1": 155.63670848634368
+            },
+            "acc_y_mg": {
+              "finite_count": 3815,
+              "min": -551.0,
+              "max": 1033.0,
+              "mean": 43.4,
+              "std_ddof1": 189.6775294570035
+            },
+            "acc_z_mg": {
+              "finite_count": 3815,
+              "min": -1715.0,
+              "max": 106.0,
+              "mean": -518.3769331585845,
+              "std_ddof1": 168.2553213562277
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "acc",
+            "expected_rate_hz": "52.0",
+            "sample_count": "3815",
+            "first_time_ns": "1789114885357905210",
+            "last_time_ns": "1789114957039535211",
+            "max_interval_ms": "19.23077",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "71.681630001",
+            "actual_rate_hz": "53.20749542033004"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 3815,
+              "unique": 3815
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 3815,
+              "unique": 44
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 3815,
+              "unique": 44
+            },
+            "host_utc_ns": {
+              "nonmissing": 3815,
+              "unique": 44
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 0.9221,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.782391784,
+            "median": 0.966006064,
+            "max": 1.205656676
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": 2.322106577557781
+        }
+      },
+      "alignment": {
+        "status": "estimated_file_mtime_alignment_only_not_hardware_synchronized",
+        "has_shared_camera_event": false,
+        "has_verified_first_frame_utc": false,
+        "assumption": "AVI archived original modification timestamp approximates recording end; subtract decoded N/fps duration, without using prediction HR. Header-based duration below must be confirmed by decoding.",
+        "provisional_start_utc_ns": 1789114906566713100,
+        "provisional_start_utc": "2026-09-11T08:21:46.566713100Z",
+        "provisional_start_china": "2026-09-11T16:21:46.566713100 +08:00",
+        "provisional_end_utc_ns": 1789114953000000000,
+        "duration_ready_to_freeze": true,
+        "reference_hr_starts_relative_to_video_s": -25.6819438,
+        "reference_hr_ends_relative_to_video_s": 51.2954329,
+        "reference_ppg_starts_relative_to_video_s": -21.579946712,
+        "reference_ppg_ends_relative_to_video_s": 51.070915399,
+        "whole_video_inside_observed_hr_endpoint_span": true,
+        "mtime_resolution_s": 1,
+        "sensitivity_shifts_s": [
+          -5,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          5
+        ],
+        "prediction_based_alignment_fit": false,
+        "all_shifts_to_report": true,
+        "reference_file_mtime_minus_last_hr_notification_s": 0.137854,
+        "do_not_rezero_reference_and_video_independently": true,
+        "filename_start_interpretation": "Video_20260911_162146381.avi suggests local 16:21:46.381; acquisition naming convention not independently documented.",
+        "filename_start_utc_ns": 1789114906381000000,
+        "mtime_minus_duration_start_minus_filename_start_s": 0.1857131
+      },
+      "prior_data1_identity_check": {}
+    },
+    {
+      "case": "data3",
+      "source_archive": "C:\\Users\\15011\\Desktop\\视频\\data3.zip",
+      "archive_bytes": 1259260496,
+      "archive_mtime_not_used_for_alignment": true,
+      "members": [
+        {
+          "member": "data3/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            33,
+            12
+          ],
+          "extended_unix_mtime_s": 1789115592,
+          "mtime_utc": "2026-09-11T08:33:12.000000000Z",
+          "mtime_china": "2026-09-11T16:33:12.000000000 +08:00"
+        },
+        {
+          "member": "data3/20260911_YJC_3/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            33,
+            12
+          ],
+          "extended_unix_mtime_s": 1789115592,
+          "mtime_utc": "2026-09-11T08:33:12.000000000Z",
+          "mtime_china": "2026-09-11T16:33:12.000000000 +08:00"
+        },
+        {
+          "member": "data3/20260911_YJC_3/events.csv",
+          "bytes": 628,
+          "crc32": "4337aedc",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            29,
+            36
+          ],
+          "extended_unix_mtime_s": 1789115376,
+          "mtime_utc": "2026-09-11T08:29:36.000000000Z",
+          "mtime_china": "2026-09-11T16:29:36.000000000 +08:00"
+        },
+        {
+          "member": "data3/20260911_YJC_3/meta.json",
+          "bytes": 3979,
+          "crc32": "1c0fe165",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            29,
+            36
+          ],
+          "extended_unix_mtime_s": 1789115376,
+          "mtime_utc": "2026-09-11T08:29:36.000000000Z",
+          "mtime_china": "2026-09-11T16:29:36.000000000 +08:00"
+        },
+        {
+          "member": "data3/20260911_YJC_3/polar_acc.csv",
+          "bytes": 427488,
+          "crc32": "3cb6ee8d",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            29,
+            36
+          ],
+          "extended_unix_mtime_s": 1789115376,
+          "mtime_utc": "2026-09-11T08:29:36.000000000Z",
+          "mtime_china": "2026-09-11T16:29:36.000000000 +08:00"
+        },
+        {
+          "member": "data3/20260911_YJC_3/polar_hr.csv",
+          "bytes": 4773,
+          "crc32": "0bb2f225",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            29,
+            36
+          ],
+          "extended_unix_mtime_s": 1789115376,
+          "mtime_utc": "2026-09-11T08:29:36.000000000Z",
+          "mtime_china": "2026-09-11T16:29:36.000000000 +08:00"
+        },
+        {
+          "member": "data3/20260911_YJC_3/polar_ppg.csv",
+          "bytes": 505694,
+          "crc32": "dc2ae84c",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            29,
+            36
+          ],
+          "extended_unix_mtime_s": 1789115376,
+          "mtime_utc": "2026-09-11T08:29:36.000000000Z",
+          "mtime_china": "2026-09-11T16:29:36.000000000 +08:00"
+        },
+        {
+          "member": "data3/20260911_YJC_3/quality_summary.csv",
+          "bytes": 514,
+          "crc32": "546d8788",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            29,
+            36
+          ],
+          "extended_unix_mtime_s": 1789115376,
+          "mtime_utc": "2026-09-11T08:29:36.000000000Z",
+          "mtime_china": "2026-09-11T16:29:36.000000000 +08:00"
+        },
+        {
+          "member": "data3/20260911_YJC_3/waveform.png",
+          "bytes": 62181,
+          "crc32": "8f455278",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            29,
+            36
+          ],
+          "extended_unix_mtime_s": 1789115376,
+          "mtime_utc": "2026-09-11T08:29:36.000000000Z",
+          "mtime_china": "2026-09-11T16:29:36.000000000 +08:00"
+        },
+        {
+          "member": "data3/Video_20260911_YJC_3.avi",
+          "bytes": 1284782080,
+          "crc32": "a9dcb1be",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            29,
+            30
+          ],
+          "extended_unix_mtime_s": 1789115371,
+          "mtime_utc": "2026-09-11T08:29:31.000000000Z",
+          "mtime_china": "2026-09-11T16:29:31.000000000 +08:00"
+        }
+      ],
+      "video_count": 1,
+      "video_inner_archive": null,
+      "video": {
+        "member": "data3/Video_20260911_YJC_3.avi",
+        "bytes": 1284782080,
+        "crc32": "a9dcb1be",
+        "zip_compression_method": 8,
+        "dos_local_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          29,
+          30
+        ],
+        "extended_unix_mtime_s": 1789115371,
+        "mtime_utc": "2026-09-11T08:29:31.000000000Z",
+        "mtime_china": "2026-09-11T16:29:31.000000000 +08:00",
+        "header_bytes_read": 65536,
+        "width": 3840,
+        "height": 2160,
+        "avih_total_frames": 2221,
+        "strh_length_frames": 2221,
+        "frame_count_header_agreement": true,
+        "fps_numerator": 10000000,
+        "fps_denominator": 333333,
+        "fps": 30.00003000003,
+        "provisional_stream_duration_ns": 74033259300,
+        "provisional_stream_duration_s": 74.0332593,
+        "avih_count_duration_s": 74.0332593,
+        "header_embedded_wallclock_marker_found": false,
+        "full_video_payload_crc_or_decode_validated": false
+      },
+      "reference_inner_archive": null,
+      "reference_folder": "data3/20260911_YJC_3",
+      "reference_files": {
+        "events.csv": {
+          "member": "data3/20260911_YJC_3/events.csv",
+          "bytes": 628,
+          "sha256": "8f4bfe713138e881efd77f5aba80f7e674d6122c538a66824a0650fdadc8616f"
+        },
+        "meta.json": {
+          "member": "data3/20260911_YJC_3/meta.json",
+          "bytes": 3979,
+          "sha256": "7ea878dcd34807c30b32e348f6d8c90d04b8fbe175515d8797301d291acce889"
+        },
+        "polar_acc.csv": {
+          "member": "data3/20260911_YJC_3/polar_acc.csv",
+          "bytes": 427488,
+          "sha256": "56bc84c70f20f1243ce635c23de64f066e4295ae92fe29dbb252aa603b523b7b"
+        },
+        "polar_hr.csv": {
+          "member": "data3/20260911_YJC_3/polar_hr.csv",
+          "bytes": 4773,
+          "sha256": "0c1855930b1bb3920184bdcbfc1508c7ccd8332c6abb68effc24685c73d10fee"
+        },
+        "polar_ppg.csv": {
+          "member": "data3/20260911_YJC_3/polar_ppg.csv",
+          "bytes": 505694,
+          "sha256": "1314361979b30c40b469c419ccf8b91bd75209b9eb8e2000d6fd7f7c2eebd5ae"
+        },
+        "quality_summary.csv": {
+          "member": "data3/20260911_YJC_3/quality_summary.csv",
+          "bytes": 514,
+          "sha256": "a2e0be145a80b22cf71fbc3725ab9ab03a940784bd53c1d4ab424a07023543b4"
+        }
+      },
+      "waveform_png_present": true,
+      "collector": {
+        "software_git_commit": "6dfe3cffcc37f0c9d2542c19036c93f685107831",
+        "library": "polar-python==1.1.1",
+        "device_model_family": "Polar Sense (as recorded by collector)",
+        "reference_kind": "User-supplied Polar optical device HR notifications, not ECG",
+        "device_address_omitted": true,
+        "start_utc": "2026-09-11T08:27:39.320221+00:00",
+        "stop_utc": "2026-09-11T08:29:36.933881+00:00",
+        "session_duration_s": 117.61366,
+        "reported_queue_drops": 0,
+        "reported_connection_count": 1,
+        "reported_reconnect_count": 1,
+        "per_sample_time_definition": "Estimated per-sample time: integer interpolation between consecutive frame endpoints when 0 < frame interval <= 1.5 times nominal batch duration; otherwise nominal-rate backward reconstruction. Interpolation state resets on every connection."
+      },
+      "events": [
+        {
+          "event": "session_started",
+          "source": "app",
+          "utc_ns": 1789115259410038200,
+          "utc": "2026-09-11T08:27:39.410038200Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789115259438038500,
+          "utc": "2026-09-11T08:27:39.438038500Z"
+        },
+        {
+          "event": "disconnected",
+          "source": "polar",
+          "utc_ns": 1789115273278592200,
+          "utc": "2026-09-11T08:27:53.278592200Z"
+        },
+        {
+          "event": "reconnect_wait",
+          "source": "polar",
+          "utc_ns": 1789115273278592200,
+          "utc": "2026-09-11T08:27:53.278592200Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789115274290774700,
+          "utc": "2026-09-11T08:27:54.290774700Z"
+        },
+        {
+          "event": "connected",
+          "source": "polar",
+          "utc_ns": 1789115287198297900,
+          "utc": "2026-09-11T08:28:07.198297900Z"
+        },
+        {
+          "event": "stream_started",
+          "source": "polar",
+          "utc_ns": 1789115292957953500,
+          "utc": "2026-09-11T08:28:12.957953500Z"
+        },
+        {
+          "event": "session_stopped",
+          "source": "app",
+          "utc_ns": 1789115376932882800,
+          "utc": "2026-09-11T08:29:36.932882800Z"
+        }
+      ],
+      "streams": {
+        "hr": {
+          "reference_member": "data3/20260911_YJC_3/polar_hr.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "hr_bpm",
+            "rr_ms"
+          ],
+          "rows": 89,
+          "sha256": "0c1855930b1bb3920184bdcbfc1508c7ccd8332c6abb68effc24685c73d10fee",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 89,
+            "device_frame_time_ns": 89,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "hr_bpm": 0,
+            "rr_ms": 89
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "host_utc_ns",
+          "first_time_ns": 1789115287858056000,
+          "last_time_ns": 1789115375848610500,
+          "first_utc": "2026-09-11T08:28:07.858056000Z",
+          "last_utc": "2026-09-11T08:29:35.848610500Z",
+          "first_china": "2026-09-11T16:28:07.858056000 +08:00",
+          "last_china": "2026-09-11T16:29:35.848610500 +08:00",
+          "duration_first_to_last_s": 87.9905545,
+          "endpoint_rate_hz": 1.0001073467493604,
+          "configured_rate_hz": null,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 929.4679,
+            "median": 990.53945,
+            "max": 1079.87
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "hr_bpm": {
+              "finite_count": 89,
+              "min": 93.0,
+              "max": 110.0,
+              "mean": 101.80898876404494,
+              "std_ddof1": 4.7717835537630195
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "hr",
+            "expected_rate_hz": "",
+            "sample_count": "89",
+            "first_time_ns": "435398614304300",
+            "last_time_ns": "435486604756200",
+            "max_interval_ms": "1079.9118",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "87.9904519",
+            "actual_rate_hz": "1.0001085129101377"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 89,
+              "unique": 89
+            },
+            "host_utc_ns": {
+              "nonmissing": 89,
+              "unique": 89
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.17,
+          "reported_quality_core_fields_match": true
+        },
+        "ppg": {
+          "reference_member": "data3/20260911_YJC_3/polar_ppg.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "ppg_0",
+            "ppg_1",
+            "ppg_2",
+            "ambient"
+          ],
+          "rows": 4566,
+          "sha256": "1314361979b30c40b469c419ccf8b91bd75209b9eb8e2000d6fd7f7c2eebd5ae",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "ppg_0": 0,
+            "ppg_1": 0,
+            "ppg_2": 0,
+            "ambient": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789115291873283247,
+          "last_time_ns": 1789115375236444824,
+          "first_utc": "2026-09-11T08:28:11.873283247Z",
+          "last_utc": "2026-09-11T08:29:35.236444824Z",
+          "first_china": "2026-09-11T16:28:11.873283247 +08:00",
+          "last_china": "2026-09-11T16:29:35.236444824 +08:00",
+          "duration_first_to_last_s": 83.363161577,
+          "endpoint_rate_hz": 54.76039912166058,
+          "configured_rate_hz": 55.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.181818,
+            "median": 18.262113,
+            "max": 18.264207
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "ppg_0": {
+              "finite_count": 4566,
+              "min": 64294.0,
+              "max": 85865.0,
+              "mean": 73827.16885676741,
+              "std_ddof1": 3798.856094351099
+            },
+            "ppg_1": {
+              "finite_count": 4566,
+              "min": 49197.0,
+              "max": 70322.0,
+              "mean": 58313.43123083662,
+              "std_ddof1": 3775.8885822151356
+            },
+            "ppg_2": {
+              "finite_count": 4566,
+              "min": 53841.0,
+              "max": 80829.0,
+              "mean": 64223.831581252736,
+              "std_ddof1": 4199.747247740492
+            },
+            "ambient": {
+              "finite_count": 4566,
+              "min": -160921.0,
+              "max": -159321.0,
+              "mean": -160511.98488830487,
+              "std_ddof1": 115.14903525098146
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "ppg",
+            "expected_rate_hz": "55.0",
+            "sample_count": "4566",
+            "first_time_ns": "1789115291873283247",
+            "last_time_ns": "1789115375236444824",
+            "max_interval_ms": "18.264207",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "83.363161577",
+            "actual_rate_hz": "54.76039912166058"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 4566,
+              "unique": 4566
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 4566,
+              "unique": 107
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 4566,
+              "unique": 107
+            },
+            "host_utc_ns": {
+              "nonmissing": 4566,
+              "unique": 107
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.4371,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.755253063,
+            "median": 0.938210492,
+            "max": 1.146633931
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": -0.435637960617119
+        },
+        "acc": {
+          "reference_member": "data3/20260911_YJC_3/polar_acc.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "acc_x_mg",
+            "acc_y_mg",
+            "acc_z_mg"
+          ],
+          "rows": 4369,
+          "sha256": "56bc84c70f20f1243ce635c23de64f066e4295ae92fe29dbb252aa603b523b7b",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "acc_x_mg": 0,
+            "acc_y_mg": 0,
+            "acc_z_mg": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789115292245668120,
+          "last_time_ns": 1789115374319900783,
+          "first_utc": "2026-09-11T08:28:12.245668120Z",
+          "last_utc": "2026-09-11T08:29:34.319900783Z",
+          "first_china": "2026-09-11T16:28:12.245668120 +08:00",
+          "last_china": "2026-09-11T16:29:34.319900783 +08:00",
+          "duration_first_to_last_s": 82.074232663,
+          "endpoint_rate_hz": 53.22011377109279,
+          "configured_rate_hz": 52.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.782061,
+            "median": 18.783926,
+            "max": 19.23077
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "acc_x_mg": {
+              "finite_count": 4369,
+              "min": -2258.0,
+              "max": -388.0,
+              "mean": -889.6594186312657,
+              "std_ddof1": 54.99143959131219
+            },
+            "acc_y_mg": {
+              "finite_count": 4369,
+              "min": -900.0,
+              "max": 1091.0,
+              "mean": -75.55825131609063,
+              "std_ddof1": 120.15702812083657
+            },
+            "acc_z_mg": {
+              "finite_count": 4369,
+              "min": -167.0,
+              "max": 748.0,
+              "mean": 462.4767681391623,
+              "std_ddof1": 80.75786556568248
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "acc",
+            "expected_rate_hz": "52.0",
+            "sample_count": "4369",
+            "first_time_ns": "1789115292245668120",
+            "last_time_ns": "1789115374319900783",
+            "max_interval_ms": "19.23077",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "82.074232663",
+            "actual_rate_hz": "53.22011377109279"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 4369,
+              "unique": 4369
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 4369,
+              "unique": 48
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 4369,
+              "unique": 48
+            },
+            "host_utc_ns": {
+              "nonmissing": 4369,
+              "unique": 48
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 0.9892,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.779238771,
+            "median": 0.9971065324999999,
+            "max": 1.135813138
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": 2.346372636716909
+        }
+      },
+      "alignment": {
+        "status": "estimated_file_mtime_alignment_only_not_hardware_synchronized",
+        "has_shared_camera_event": false,
+        "has_verified_first_frame_utc": false,
+        "assumption": "AVI archived original modification timestamp approximates recording end; subtract decoded N/fps duration, without using prediction HR. Header-based duration below must be confirmed by decoding.",
+        "provisional_start_utc_ns": 1789115296966740700,
+        "provisional_start_utc": "2026-09-11T08:28:16.966740700Z",
+        "provisional_start_china": "2026-09-11T16:28:16.966740700 +08:00",
+        "provisional_end_utc_ns": 1789115371000000000,
+        "duration_ready_to_freeze": true,
+        "reference_hr_starts_relative_to_video_s": -9.1086847,
+        "reference_hr_ends_relative_to_video_s": 78.8818698,
+        "reference_ppg_starts_relative_to_video_s": -5.093457453,
+        "reference_ppg_ends_relative_to_video_s": 78.269704124,
+        "whole_video_inside_observed_hr_endpoint_span": true,
+        "mtime_resolution_s": 1,
+        "sensitivity_shifts_s": [
+          -5,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          5
+        ],
+        "prediction_based_alignment_fit": false,
+        "all_shifts_to_report": true,
+        "reference_file_mtime_minus_last_hr_notification_s": 0.1513895,
+        "do_not_rezero_reference_and_video_independently": true
+      },
+      "prior_data1_identity_check": {}
+    },
+    {
+      "case": "data4",
+      "source_archive": "C:\\Users\\15011\\Desktop\\视频\\data4.zip",
+      "archive_bytes": 1204498447,
+      "archive_mtime_not_used_for_alignment": true,
+      "members": [
+        {
+          "member": "data4/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            52,
+            48
+          ],
+          "extended_unix_mtime_s": 1789116768,
+          "mtime_utc": "2026-09-11T08:52:48.000000000Z",
+          "mtime_china": "2026-09-11T16:52:48.000000000 +08:00"
+        },
+        {
+          "member": "data4/20260911_XUEZHANG1/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            52,
+            48
+          ],
+          "extended_unix_mtime_s": 1789116768,
+          "mtime_utc": "2026-09-11T08:52:48.000000000Z",
+          "mtime_china": "2026-09-11T16:52:48.000000000 +08:00"
+        },
+        {
+          "member": "data4/20260911_XUEZHANG1/events.csv",
+          "bytes": 628,
+          "crc32": "4a97cab0",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            38,
+            30
+          ],
+          "extended_unix_mtime_s": 1789115911,
+          "mtime_utc": "2026-09-11T08:38:31.000000000Z",
+          "mtime_china": "2026-09-11T16:38:31.000000000 +08:00"
+        },
+        {
+          "member": "data4/20260911_XUEZHANG1/meta.json",
+          "bytes": 3990,
+          "crc32": "0f523d6a",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            38,
+            30
+          ],
+          "extended_unix_mtime_s": 1789115911,
+          "mtime_utc": "2026-09-11T08:38:31.000000000Z",
+          "mtime_china": "2026-09-11T16:38:31.000000000 +08:00"
+        },
+        {
+          "member": "data4/20260911_XUEZHANG1/polar_acc.csv",
+          "bytes": 1234094,
+          "crc32": "db81a1eb",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            38,
+            30
+          ],
+          "extended_unix_mtime_s": 1789115911,
+          "mtime_utc": "2026-09-11T08:38:31.000000000Z",
+          "mtime_china": "2026-09-11T16:38:31.000000000 +08:00"
+        },
+        {
+          "member": "data4/20260911_XUEZHANG1/polar_hr.csv",
+          "bytes": 12899,
+          "crc32": "331f8bca",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            38,
+            28
+          ],
+          "extended_unix_mtime_s": 1789115909,
+          "mtime_utc": "2026-09-11T08:38:29.000000000Z",
+          "mtime_china": "2026-09-11T16:38:29.000000000 +08:00"
+        },
+        {
+          "member": "data4/20260911_XUEZHANG1/polar_ppg.csv",
+          "bytes": 1438811,
+          "crc32": "e8192b3e",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            38,
+            30
+          ],
+          "extended_unix_mtime_s": 1789115911,
+          "mtime_utc": "2026-09-11T08:38:31.000000000Z",
+          "mtime_china": "2026-09-11T16:38:31.000000000 +08:00"
+        },
+        {
+          "member": "data4/20260911_XUEZHANG1/quality_summary.csv",
+          "bytes": 521,
+          "crc32": "594a1c70",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            38,
+            30
+          ],
+          "extended_unix_mtime_s": 1789115911,
+          "mtime_utc": "2026-09-11T08:38:31.000000000Z",
+          "mtime_china": "2026-09-11T16:38:31.000000000 +08:00"
+        },
+        {
+          "member": "data4/20260911_XUEZHANG1/waveform.png",
+          "bytes": 62144,
+          "crc32": "26970508",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            38,
+            30
+          ],
+          "extended_unix_mtime_s": 1789115910,
+          "mtime_utc": "2026-09-11T08:38:30.000000000Z",
+          "mtime_china": "2026-09-11T16:38:30.000000000 +08:00"
+        },
+        {
+          "member": "data4/Video_20260911_XUEZHANG1.avi",
+          "bytes": 1206016000,
+          "crc32": "61f219fe",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            35,
+            40
+          ],
+          "extended_unix_mtime_s": 1789115740,
+          "mtime_utc": "2026-09-11T08:35:40.000000000Z",
+          "mtime_china": "2026-09-11T16:35:40.000000000 +08:00"
+        }
+      ],
+      "video_count": 1,
+      "video_inner_archive": null,
+      "video": {
+        "member": "data4/Video_20260911_XUEZHANG1.avi",
+        "bytes": 1206016000,
+        "crc32": "61f219fe",
+        "zip_compression_method": 8,
+        "dos_local_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          35,
+          40
+        ],
+        "extended_unix_mtime_s": 1789115740,
+        "mtime_utc": "2026-09-11T08:35:40.000000000Z",
+        "mtime_china": "2026-09-11T16:35:40.000000000 +08:00",
+        "header_bytes_read": 65536,
+        "width": 1280,
+        "height": 720,
+        "avih_total_frames": 10702,
+        "strh_length_frames": 10693,
+        "frame_count_header_agreement": false,
+        "fps_numerator": 10000000,
+        "fps_denominator": 55555,
+        "fps": 180.00180001800018,
+        "provisional_stream_duration_ns": 59404961500,
+        "provisional_stream_duration_s": 59.4049615,
+        "avih_count_duration_s": 59.454961,
+        "header_embedded_wallclock_marker_found": false,
+        "full_video_payload_crc_or_decode_validated": false
+      },
+      "reference_inner_archive": null,
+      "reference_folder": "data4/20260911_XUEZHANG1",
+      "reference_files": {
+        "events.csv": {
+          "member": "data4/20260911_XUEZHANG1/events.csv",
+          "bytes": 628,
+          "sha256": "398151b522d69fe2e155983c55acb765909e03bfd9ed8cba5595f2fa4e7f7ae0"
+        },
+        "meta.json": {
+          "member": "data4/20260911_XUEZHANG1/meta.json",
+          "bytes": 3990,
+          "sha256": "7a2bf52ba0113a01d79756378f93a82afb4b96181215350eb7555a8e33fb75da"
+        },
+        "polar_acc.csv": {
+          "member": "data4/20260911_XUEZHANG1/polar_acc.csv",
+          "bytes": 1234094,
+          "sha256": "0d6f3a07a606d4f926bfbc083d2f69cfe4e1b7041895765799d10129e20de383"
+        },
+        "polar_hr.csv": {
+          "member": "data4/20260911_XUEZHANG1/polar_hr.csv",
+          "bytes": 12899,
+          "sha256": "e01a81c9b64133c8ad705b16ffcf545c6f55e5c821f469123868f9415fbdd7f0"
+        },
+        "polar_ppg.csv": {
+          "member": "data4/20260911_XUEZHANG1/polar_ppg.csv",
+          "bytes": 1438811,
+          "sha256": "3365a9b01f86f38be5ef234d9153a602d91f2974673f74fa855614080088a0ee"
+        },
+        "quality_summary.csv": {
+          "member": "data4/20260911_XUEZHANG1/quality_summary.csv",
+          "bytes": 521,
+          "sha256": "cd7ef6b1b81cad8a9ba75898068d46d75485e3d02a020546de9e5698f57e287f"
+        }
+      },
+      "waveform_png_present": true,
+      "collector": {
+        "software_git_commit": "6dfe3cffcc37f0c9d2542c19036c93f685107831",
+        "library": "polar-python==1.1.1",
+        "device_model_family": "Polar Sense (as recorded by collector)",
+        "reference_kind": "User-supplied Polar optical device HR notifications, not ECG",
+        "device_address_omitted": true,
+        "start_utc": "2026-09-11T08:34:01.028162+00:00",
+        "stop_utc": "2026-09-11T08:38:31.021843+00:00",
+        "session_duration_s": 269.993681,
+        "reported_queue_drops": 0,
+        "reported_connection_count": 1,
+        "reported_reconnect_count": 1,
+        "per_sample_time_definition": "Estimated per-sample time: integer interpolation between consecutive frame endpoints when 0 < frame interval <= 1.5 times nominal batch duration; otherwise nominal-rate backward reconstruction. Interpolation state resets on every connection."
+      },
+      "events": [
+        {
+          "event": "session_started",
+          "source": "app",
+          "utc_ns": 1789115641081161700,
+          "utc": "2026-09-11T08:34:01.081161700Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789115641106137500,
+          "utc": "2026-09-11T08:34:01.106137500Z"
+        },
+        {
+          "event": "disconnected",
+          "source": "polar",
+          "utc_ns": 1789115655953786500,
+          "utc": "2026-09-11T08:34:15.953786500Z"
+        },
+        {
+          "event": "reconnect_wait",
+          "source": "polar",
+          "utc_ns": 1789115655953786500,
+          "utc": "2026-09-11T08:34:15.953786500Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789115656966848200,
+          "utc": "2026-09-11T08:34:16.966848200Z"
+        },
+        {
+          "event": "connected",
+          "source": "polar",
+          "utc_ns": 1789115669633270600,
+          "utc": "2026-09-11T08:34:29.633270600Z"
+        },
+        {
+          "event": "stream_started",
+          "source": "polar",
+          "utc_ns": 1789115675273867600,
+          "utc": "2026-09-11T08:34:35.273867600Z"
+        },
+        {
+          "event": "session_stopped",
+          "source": "app",
+          "utc_ns": 1789115911021843200,
+          "utc": "2026-09-11T08:38:31.021843200Z"
+        }
+      ],
+      "streams": {
+        "hr": {
+          "reference_member": "data4/20260911_XUEZHANG1/polar_hr.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "hr_bpm",
+            "rr_ms"
+          ],
+          "rows": 241,
+          "sha256": "e01a81c9b64133c8ad705b16ffcf545c6f55e5c821f469123868f9415fbdd7f0",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 241,
+            "device_frame_time_ns": 241,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "hr_bpm": 0,
+            "rr_ms": 241
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "host_utc_ns",
+          "first_time_ns": 1789115669872542300,
+          "last_time_ns": 1789115909840796700,
+          "first_utc": "2026-09-11T08:34:29.872542300Z",
+          "last_utc": "2026-09-11T08:38:29.840796700Z",
+          "first_china": "2026-09-11T16:34:29.872542300 +08:00",
+          "last_china": "2026-09-11T16:38:29.840796700 +08:00",
+          "duration_first_to_last_s": 239.9682544,
+          "endpoint_rate_hz": 1.0001322908318826,
+          "configured_rate_hz": null,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 870.9511,
+            "median": 990.73525,
+            "max": 1111.0942
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "hr_bpm": {
+              "finite_count": 241,
+              "min": 74.0,
+              "max": 91.0,
+              "mean": 81.50207468879668,
+              "std_ddof1": 4.532405984801561
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "hr",
+            "expected_rate_hz": "",
+            "sample_count": "241",
+            "first_time_ns": "435780629168900",
+            "last_time_ns": "436020597435300",
+            "max_interval_ms": "1110.5296",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "239.9682664",
+            "actual_rate_hz": "1.0001322408186553"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 241,
+              "unique": 241
+            },
+            "host_utc_ns": {
+              "nonmissing": 241,
+              "unique": 241
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.1737,
+          "reported_quality_core_fields_match": true
+        },
+        "ppg": {
+          "reference_member": "data4/20260911_XUEZHANG1/polar_ppg.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "ppg_0",
+            "ppg_1",
+            "ppg_2",
+            "ambient"
+          ],
+          "rows": 12852,
+          "sha256": "3365a9b01f86f38be5ef234d9153a602d91f2974673f74fa855614080088a0ee",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "ppg_0": 0,
+            "ppg_1": 0,
+            "ppg_2": 0,
+            "ambient": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789115674283254603,
+          "last_time_ns": 1789115908984460458,
+          "first_utc": "2026-09-11T08:34:34.283254603Z",
+          "last_utc": "2026-09-11T08:38:28.984460458Z",
+          "first_china": "2026-09-11T16:34:34.283254603 +08:00",
+          "last_china": "2026-09-11T16:38:28.984460458 +08:00",
+          "duration_first_to_last_s": 234.701205855,
+          "endpoint_rate_hz": 54.75472506919898,
+          "configured_rate_hz": 55.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.181818,
+            "median": 18.263497,
+            "max": 18.267007
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "ppg_0": {
+              "finite_count": 12852,
+              "min": -595701.0,
+              "max": 2016060.0,
+              "mean": 326467.54450669157,
+              "std_ddof1": 124579.73464438978
+            },
+            "ppg_1": {
+              "finite_count": 12852,
+              "min": -606196.0,
+              "max": 1874850.0,
+              "mean": 286155.5923591659,
+              "std_ddof1": 130348.68426449846
+            },
+            "ppg_2": {
+              "finite_count": 12852,
+              "min": -629246.0,
+              "max": 1918788.0,
+              "mean": 326145.06069094304,
+              "std_ddof1": 125704.44106062532
+            },
+            "ambient": {
+              "finite_count": 12852,
+              "min": -775485.0,
+              "max": 185484.0,
+              "mean": -6711.772019919079,
+              "std_ddof1": 98053.29626370808
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "ppg",
+            "expected_rate_hz": "55.0",
+            "sample_count": "12852",
+            "first_time_ns": "1789115674283254603",
+            "last_time_ns": "1789115908984460458",
+            "max_interval_ms": "18.267007",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "234.701205855",
+            "actual_rate_hz": "54.75472506919898"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 12852,
+              "unique": 12852
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 12852,
+              "unique": 345
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 12852,
+              "unique": 345
+            },
+            "host_utc_ns": {
+              "nonmissing": 12852,
+              "unique": 345
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.0016,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.736750001,
+            "median": 0.93129711,
+            "max": 1.192771818
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": -0.445954419638217
+        },
+        "acc": {
+          "reference_member": "data4/20260911_XUEZHANG1/polar_acc.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "acc_x_mg",
+            "acc_y_mg",
+            "acc_z_mg"
+          ],
+          "rows": 12496,
+          "sha256": "0d6f3a07a606d4f926bfbc083d2f69cfe4e1b7041895765799d10129e20de383",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "acc_x_mg": 0,
+            "acc_y_mg": 0,
+            "acc_z_mg": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789115674660591704,
+          "last_time_ns": 1789115909398876592,
+          "first_utc": "2026-09-11T08:34:34.660591704Z",
+          "last_utc": "2026-09-11T08:38:29.398876592Z",
+          "first_china": "2026-09-11T16:34:34.660591704 +08:00",
+          "last_china": "2026-09-11T16:38:29.398876592 +08:00",
+          "duration_first_to_last_s": 234.738284888,
+          "endpoint_rate_hz": 53.229493458903406,
+          "configured_rate_hz": 52.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.781158,
+            "median": 18.783193,
+            "max": 19.23077
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "acc_x_mg": {
+              "finite_count": 12496,
+              "min": -2523.0,
+              "max": 2255.0,
+              "mean": -652.8115396927017,
+              "std_ddof1": 261.454054439994
+            },
+            "acc_y_mg": {
+              "finite_count": 12496,
+              "min": -2302.0,
+              "max": 2355.0,
+              "mean": 424.5318501920615,
+              "std_ddof1": 429.07330159909503
+            },
+            "acc_z_mg": {
+              "finite_count": 12496,
+              "min": -1635.0,
+              "max": 673.0,
+              "mean": -160.61883802816902,
+              "std_ddof1": 392.27176408301546
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "acc",
+            "expected_rate_hz": "52.0",
+            "sample_count": "12496",
+            "first_time_ns": "1789115674660591704",
+            "last_time_ns": "1789115909398876592",
+            "max_interval_ms": "19.23077",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "234.738284888",
+            "actual_rate_hz": "53.229493458903406"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 12496,
+              "unique": 12496
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 12496,
+              "unique": 153
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 12496,
+              "unique": 153
+            },
+            "host_utc_ns": {
+              "nonmissing": 12496,
+              "unique": 153
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.303,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.745897497,
+            "median": 0.945974464,
+            "max": 1.178348383
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": 2.364410497891156
+        }
+      },
+      "alignment": {
+        "status": "estimated_file_mtime_alignment_only_not_hardware_synchronized",
+        "has_shared_camera_event": false,
+        "has_verified_first_frame_utc": false,
+        "assumption": "AVI archived original modification timestamp approximates recording end; subtract decoded N/fps duration, without using prediction HR. Header-based duration below must be confirmed by decoding.",
+        "provisional_start_utc_ns": 1789115680595038500,
+        "provisional_start_utc": "2026-09-11T08:34:40.595038500Z",
+        "provisional_start_china": "2026-09-11T16:34:40.595038500 +08:00",
+        "provisional_end_utc_ns": 1789115740000000000,
+        "duration_ready_to_freeze": false,
+        "reference_hr_starts_relative_to_video_s": -10.7224962,
+        "reference_hr_ends_relative_to_video_s": 229.2457582,
+        "reference_ppg_starts_relative_to_video_s": -6.311783897,
+        "reference_ppg_ends_relative_to_video_s": 228.389421958,
+        "whole_video_inside_observed_hr_endpoint_span": true,
+        "mtime_resolution_s": 1,
+        "sensitivity_shifts_s": [
+          -5,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          5
+        ],
+        "prediction_based_alignment_fit": false,
+        "all_shifts_to_report": true,
+        "reference_file_mtime_minus_last_hr_notification_s": -0.8407967,
+        "do_not_rezero_reference_and_video_independently": true
+      },
+      "prior_data1_identity_check": {}
+    },
+    {
+      "case": "data5",
+      "source_archive": "C:\\Users\\15011\\Desktop\\视频\\data5.zip",
+      "archive_bytes": 1044665361,
+      "archive_mtime_not_used_for_alignment": true,
+      "members": [
+        {
+          "member": "data5/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            53,
+            14
+          ],
+          "extended_unix_mtime_s": 1789116795,
+          "mtime_utc": "2026-09-11T08:53:15.000000000Z",
+          "mtime_china": "2026-09-11T16:53:15.000000000 +08:00"
+        },
+        {
+          "member": "data5/20260911_XUEZHANG2/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            53,
+            14
+          ],
+          "extended_unix_mtime_s": 1789116795,
+          "mtime_utc": "2026-09-11T08:53:15.000000000Z",
+          "mtime_china": "2026-09-11T16:53:15.000000000 +08:00"
+        },
+        {
+          "member": "data5/20260911_XUEZHANG2/events.csv",
+          "bytes": 628,
+          "crc32": "dd951dd1",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            40,
+            28
+          ],
+          "extended_unix_mtime_s": 1789116028,
+          "mtime_utc": "2026-09-11T08:40:28.000000000Z",
+          "mtime_china": "2026-09-11T16:40:28.000000000 +08:00"
+        },
+        {
+          "member": "data5/20260911_XUEZHANG2/meta.json",
+          "bytes": 3980,
+          "crc32": "f109d682",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            40,
+            28
+          ],
+          "extended_unix_mtime_s": 1789116028,
+          "mtime_utc": "2026-09-11T08:40:28.000000000Z",
+          "mtime_china": "2026-09-11T16:40:28.000000000 +08:00"
+        },
+        {
+          "member": "data5/20260911_XUEZHANG2/polar_acc.csv",
+          "bytes": 368927,
+          "crc32": "45771fa8",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            40,
+            28
+          ],
+          "extended_unix_mtime_s": 1789116028,
+          "mtime_utc": "2026-09-11T08:40:28.000000000Z",
+          "mtime_china": "2026-09-11T16:40:28.000000000 +08:00"
+        },
+        {
+          "member": "data5/20260911_XUEZHANG2/polar_hr.csv",
+          "bytes": 4121,
+          "crc32": "e9489de1",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            40,
+            28
+          ],
+          "extended_unix_mtime_s": 1789116028,
+          "mtime_utc": "2026-09-11T08:40:28.000000000Z",
+          "mtime_china": "2026-09-11T16:40:28.000000000 +08:00"
+        },
+        {
+          "member": "data5/20260911_XUEZHANG2/polar_ppg.csv",
+          "bytes": 428703,
+          "crc32": "a2204070",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            40,
+            28
+          ],
+          "extended_unix_mtime_s": 1789116028,
+          "mtime_utc": "2026-09-11T08:40:28.000000000Z",
+          "mtime_china": "2026-09-11T16:40:28.000000000 +08:00"
+        },
+        {
+          "member": "data5/20260911_XUEZHANG2/quality_summary.csv",
+          "bytes": 515,
+          "crc32": "efd08e81",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            40,
+            28
+          ],
+          "extended_unix_mtime_s": 1789116028,
+          "mtime_utc": "2026-09-11T08:40:28.000000000Z",
+          "mtime_china": "2026-09-11T16:40:28.000000000 +08:00"
+        },
+        {
+          "member": "data5/20260911_XUEZHANG2/waveform.png",
+          "bytes": 80469,
+          "crc32": "854b15d4",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            40,
+            28
+          ],
+          "extended_unix_mtime_s": 1789116028,
+          "mtime_utc": "2026-09-11T08:40:28.000000000Z",
+          "mtime_china": "2026-09-11T16:40:28.000000000 +08:00"
+        },
+        {
+          "member": "data5/Video_20260911_XUEZHANG2.avi",
+          "bytes": 1064165888,
+          "crc32": "54c08034",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            40,
+            24
+          ],
+          "extended_unix_mtime_s": 1789116025,
+          "mtime_utc": "2026-09-11T08:40:25.000000000Z",
+          "mtime_china": "2026-09-11T16:40:25.000000000 +08:00"
+        }
+      ],
+      "video_count": 1,
+      "video_inner_archive": null,
+      "video": {
+        "member": "data5/Video_20260911_XUEZHANG2.avi",
+        "bytes": 1064165888,
+        "crc32": "54c08034",
+        "zip_compression_method": 8,
+        "dos_local_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          40,
+          24
+        ],
+        "extended_unix_mtime_s": 1789116025,
+        "mtime_utc": "2026-09-11T08:40:25.000000000Z",
+        "mtime_china": "2026-09-11T16:40:25.000000000 +08:00",
+        "header_bytes_read": 65536,
+        "width": 3840,
+        "height": 2160,
+        "avih_total_frames": 1866,
+        "strh_length_frames": 1866,
+        "frame_count_header_agreement": true,
+        "fps_numerator": 10000000,
+        "fps_denominator": 333333,
+        "fps": 30.00003000003,
+        "provisional_stream_duration_ns": 62199937800,
+        "provisional_stream_duration_s": 62.1999378,
+        "avih_count_duration_s": 62.1999378,
+        "header_embedded_wallclock_marker_found": false,
+        "full_video_payload_crc_or_decode_validated": false
+      },
+      "reference_inner_archive": null,
+      "reference_folder": "data5/20260911_XUEZHANG2",
+      "reference_files": {
+        "events.csv": {
+          "member": "data5/20260911_XUEZHANG2/events.csv",
+          "bytes": 628,
+          "sha256": "4f64de3052e2cc30d12971c0550585c4aaf6ee6f69340ef12f089f1c65ffcb8c"
+        },
+        "meta.json": {
+          "member": "data5/20260911_XUEZHANG2/meta.json",
+          "bytes": 3980,
+          "sha256": "b12457be07829968b4c1ecfa65094471c510c66c32194f4988e97bbce5c1fb2f"
+        },
+        "polar_acc.csv": {
+          "member": "data5/20260911_XUEZHANG2/polar_acc.csv",
+          "bytes": 368927,
+          "sha256": "14276f14652c2d98e9198e535c941d28fabd0bb23ef99076f35010b4e40df0f4"
+        },
+        "polar_hr.csv": {
+          "member": "data5/20260911_XUEZHANG2/polar_hr.csv",
+          "bytes": 4121,
+          "sha256": "e8537eec47f655260208fc9f90d218b3430cbbff128b0fac8bfc3f1aa0731867"
+        },
+        "polar_ppg.csv": {
+          "member": "data5/20260911_XUEZHANG2/polar_ppg.csv",
+          "bytes": 428703,
+          "sha256": "72bb8b0949f5dea6ba6dc4e26d3a2707bfec9210ace0b9e43ace0d746d6da66b"
+        },
+        "quality_summary.csv": {
+          "member": "data5/20260911_XUEZHANG2/quality_summary.csv",
+          "bytes": 515,
+          "sha256": "197906cd44c88e0974141f2466cc3b2ee8ba3f97647854cf36f09a724d8af19f"
+        }
+      },
+      "waveform_png_present": true,
+      "collector": {
+        "software_git_commit": "6dfe3cffcc37f0c9d2542c19036c93f685107831",
+        "library": "polar-python==1.1.1",
+        "device_model_family": "Polar Sense (as recorded by collector)",
+        "reference_kind": "User-supplied Polar optical device HR notifications, not ECG",
+        "device_address_omitted": true,
+        "start_utc": "2026-09-11T08:38:42.581038+00:00",
+        "stop_utc": "2026-09-11T08:40:28.497848+00:00",
+        "session_duration_s": 105.91681,
+        "reported_queue_drops": 0,
+        "reported_connection_count": 1,
+        "reported_reconnect_count": 1,
+        "per_sample_time_definition": "Estimated per-sample time: integer interpolation between consecutive frame endpoints when 0 < frame interval <= 1.5 times nominal batch duration; otherwise nominal-rate backward reconstruction. Interpolation state resets on every connection."
+      },
+      "events": [
+        {
+          "event": "session_started",
+          "source": "app",
+          "utc_ns": 1789115922652041300,
+          "utc": "2026-09-11T08:38:42.652041300Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789115922677030500,
+          "utc": "2026-09-11T08:38:42.677030500Z"
+        },
+        {
+          "event": "disconnected",
+          "source": "polar",
+          "utc_ns": 1789115937170269000,
+          "utc": "2026-09-11T08:38:57.170269000Z"
+        },
+        {
+          "event": "reconnect_wait",
+          "source": "polar",
+          "utc_ns": 1789115937170269000,
+          "utc": "2026-09-11T08:38:57.170269000Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789115938180900400,
+          "utc": "2026-09-11T08:38:58.180900400Z"
+        },
+        {
+          "event": "connected",
+          "source": "polar",
+          "utc_ns": 1789115951029033100,
+          "utc": "2026-09-11T08:39:11.029033100Z"
+        },
+        {
+          "event": "stream_started",
+          "source": "polar",
+          "utc_ns": 1789115956789165500,
+          "utc": "2026-09-11T08:39:16.789165500Z"
+        },
+        {
+          "event": "session_stopped",
+          "source": "app",
+          "utc_ns": 1789116028496848200,
+          "utc": "2026-09-11T08:40:28.496848200Z"
+        }
+      ],
+      "streams": {
+        "hr": {
+          "reference_member": "data5/20260911_XUEZHANG2/polar_hr.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "hr_bpm",
+            "rr_ms"
+          ],
+          "rows": 77,
+          "sha256": "e8537eec47f655260208fc9f90d218b3430cbbff128b0fac8bfc3f1aa0731867",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 77,
+            "device_frame_time_ns": 77,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "hr_bpm": 0,
+            "rr_ms": 77
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "host_utc_ns",
+          "first_time_ns": 1789115951868752200,
+          "last_time_ns": 1789116027859241300,
+          "first_utc": "2026-09-11T08:39:11.868752200Z",
+          "last_utc": "2026-09-11T08:40:27.859241300Z",
+          "first_china": "2026-09-11T16:39:11.868752200 +08:00",
+          "last_china": "2026-09-11T16:40:27.859241300 +08:00",
+          "duration_first_to_last_s": 75.9904891,
+          "endpoint_rate_hz": 1.0001251590838887,
+          "configured_rate_hz": null,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 899.1363,
+            "median": 990.7826,
+            "max": 1080.9889
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "hr_bpm": {
+              "finite_count": 77,
+              "min": 82.0,
+              "max": 109.0,
+              "mean": 96.72727272727273,
+              "std_ddof1": 8.473855090553165
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "hr",
+            "expected_rate_hz": "",
+            "sample_count": "77",
+            "first_time_ns": "436062625107200",
+            "last_time_ns": "436138615516900",
+            "max_interval_ms": "1080.9123",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "75.9904097",
+            "actual_rate_hz": "1.0001262040833556"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 77,
+              "unique": 77
+            },
+            "host_utc_ns": {
+              "nonmissing": 77,
+              "unique": 77
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 0.9816,
+          "reported_quality_core_fields_match": true
+        },
+        "ppg": {
+          "reference_member": "data5/20260911_XUEZHANG2/polar_ppg.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "ppg_0",
+            "ppg_1",
+            "ppg_2",
+            "ambient"
+          ],
+          "rows": 3872,
+          "sha256": "72bb8b0949f5dea6ba6dc4e26d3a2707bfec9210ace0b9e43ace0d746d6da66b",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "ppg_0": 0,
+            "ppg_1": 0,
+            "ppg_2": 0,
+            "ambient": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789115955893108320,
+          "last_time_ns": 1789116026576869728,
+          "first_utc": "2026-09-11T08:39:15.893108320Z",
+          "last_utc": "2026-09-11T08:40:26.576869728Z",
+          "first_china": "2026-09-11T16:39:15.893108320 +08:00",
+          "last_china": "2026-09-11T16:40:26.576869728 +08:00",
+          "duration_first_to_last_s": 70.683761408,
+          "endpoint_rate_hz": 54.76505385240972,
+          "configured_rate_hz": 55.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.181818,
+            "median": 18.261806,
+            "max": 18.265808
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "ppg_0": {
+              "finite_count": 3872,
+              "min": 293065.0,
+              "max": 323996.0,
+              "mean": 310089.89901859505,
+              "std_ddof1": 5860.490543977233
+            },
+            "ppg_1": {
+              "finite_count": 3872,
+              "min": 285157.0,
+              "max": 315832.0,
+              "mean": 301660.22184917354,
+              "std_ddof1": 5883.592622221586
+            },
+            "ppg_2": {
+              "finite_count": 3872,
+              "min": 320133.0,
+              "max": 357491.0,
+              "mean": 340189.29132231406,
+              "std_ddof1": 7369.750318603792
+            },
+            "ambient": {
+              "finite_count": 3872,
+              "min": 3432.0,
+              "max": 6200.0,
+              "mean": 4495.79597107438,
+              "std_ddof1": 702.3717863615474
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "ppg",
+            "expected_rate_hz": "55.0",
+            "sample_count": "3872",
+            "first_time_ns": "1789115955893108320",
+            "last_time_ns": "1789116026576869728",
+            "max_interval_ms": "18.265808",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "70.683761408",
+            "actual_rate_hz": "54.76505385240973"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 3872,
+              "unique": 3872
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 3872,
+              "unique": 108
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 3872,
+              "unique": 108
+            },
+            "host_utc_ns": {
+              "nonmissing": 3872,
+              "unique": 108
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.0199,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.739361315,
+            "median": 0.931769117,
+            "max": 1.140995867
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": -0.4271748138005016
+        },
+        "acc": {
+          "reference_member": "data5/20260911_XUEZHANG2/polar_acc.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "acc_x_mg",
+            "acc_y_mg",
+            "acc_z_mg"
+          ],
+          "rows": 3777,
+          "sha256": "14276f14652c2d98e9198e535c941d28fabd0bb23ef99076f35010b4e40df0f4",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "acc_x_mg": 0,
+            "acc_y_mg": 0,
+            "acc_z_mg": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789115956027220783,
+          "last_time_ns": 1789116026997358937,
+          "first_utc": "2026-09-11T08:39:16.027220783Z",
+          "last_utc": "2026-09-11T08:40:26.997358937Z",
+          "first_china": "2026-09-11T16:39:16.027220783 +08:00",
+          "last_china": "2026-09-11T16:40:26.997358937 +08:00",
+          "duration_first_to_last_s": 70.970138154,
+          "endpoint_rate_hz": 53.205476249832806,
+          "configured_rate_hz": 52.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.780536,
+            "median": 18.782838,
+            "max": 19.23077
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "acc_x_mg": {
+              "finite_count": 3777,
+              "min": -2034.0,
+              "max": 318.0,
+              "mean": -672.8599417527138,
+              "std_ddof1": 404.70990110737324
+            },
+            "acc_y_mg": {
+              "finite_count": 3777,
+              "min": -99.0,
+              "max": 2074.0,
+              "mean": 859.3301562086311,
+              "std_ddof1": 391.115940404854
+            },
+            "acc_z_mg": {
+              "finite_count": 3777,
+              "min": -235.0,
+              "max": 754.0,
+              "mean": 151.7077045274027,
+              "std_ddof1": 155.94867326551017
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "acc",
+            "expected_rate_hz": "52.0",
+            "sample_count": "3777",
+            "first_time_ns": "1789115956027220783",
+            "last_time_ns": "1789116026997358937",
+            "max_interval_ms": "19.23077",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "70.970138154",
+            "actual_rate_hz": "53.205476249832806"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 3777,
+              "unique": 3777
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 3777,
+              "unique": 65
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 3777,
+              "unique": 65
+            },
+            "host_utc_ns": {
+              "nonmissing": 3777,
+              "unique": 65
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 0.9869,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.749685785,
+            "median": 0.96164798,
+            "max": 1.194783461
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": 2.318223557370791
+        }
+      },
+      "alignment": {
+        "status": "estimated_file_mtime_alignment_only_not_hardware_synchronized",
+        "has_shared_camera_event": false,
+        "has_verified_first_frame_utc": false,
+        "assumption": "AVI archived original modification timestamp approximates recording end; subtract decoded N/fps duration, without using prediction HR. Header-based duration below must be confirmed by decoding.",
+        "provisional_start_utc_ns": 1789115962800062200,
+        "provisional_start_utc": "2026-09-11T08:39:22.800062200Z",
+        "provisional_start_china": "2026-09-11T16:39:22.800062200 +08:00",
+        "provisional_end_utc_ns": 1789116025000000000,
+        "duration_ready_to_freeze": true,
+        "reference_hr_starts_relative_to_video_s": -10.93131,
+        "reference_hr_ends_relative_to_video_s": 65.0591791,
+        "reference_ppg_starts_relative_to_video_s": -6.90695388,
+        "reference_ppg_ends_relative_to_video_s": 63.776807528,
+        "whole_video_inside_observed_hr_endpoint_span": true,
+        "mtime_resolution_s": 1,
+        "sensitivity_shifts_s": [
+          -5,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          5
+        ],
+        "prediction_based_alignment_fit": false,
+        "all_shifts_to_report": true,
+        "reference_file_mtime_minus_last_hr_notification_s": 0.1407587,
+        "do_not_rezero_reference_and_video_independently": true
+      },
+      "prior_data1_identity_check": {}
+    },
+    {
+      "case": "data6",
+      "source_archive": "C:\\Users\\15011\\Desktop\\视频\\data6.zip",
+      "archive_bytes": 1245376019,
+      "archive_mtime_not_used_for_alignment": true,
+      "members": [
+        {
+          "member": "data6/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            53,
+            38
+          ],
+          "extended_unix_mtime_s": 1789116819,
+          "mtime_utc": "2026-09-11T08:53:39.000000000Z",
+          "mtime_china": "2026-09-11T16:53:39.000000000 +08:00"
+        },
+        {
+          "member": "data6/20260911_YJC_4/",
+          "bytes": 0,
+          "crc32": "00000000",
+          "zip_compression_method": 0,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            53,
+            38
+          ],
+          "extended_unix_mtime_s": 1789116819,
+          "mtime_utc": "2026-09-11T08:53:39.000000000Z",
+          "mtime_china": "2026-09-11T16:53:39.000000000 +08:00"
+        },
+        {
+          "member": "data6/20260911_YJC_4/events.csv",
+          "bytes": 628,
+          "crc32": "a304a2e3",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            46,
+            40
+          ],
+          "extended_unix_mtime_s": 1789116401,
+          "mtime_utc": "2026-09-11T08:46:41.000000000Z",
+          "mtime_china": "2026-09-11T16:46:41.000000000 +08:00"
+        },
+        {
+          "member": "data6/20260911_YJC_4/meta.json",
+          "bytes": 3961,
+          "crc32": "f9260953",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            46,
+            40
+          ],
+          "extended_unix_mtime_s": 1789116401,
+          "mtime_utc": "2026-09-11T08:46:41.000000000Z",
+          "mtime_china": "2026-09-11T16:46:41.000000000 +08:00"
+        },
+        {
+          "member": "data6/20260911_YJC_4/polar_acc.csv",
+          "bytes": 416701,
+          "crc32": "fe593ccc",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            46,
+            40
+          ],
+          "extended_unix_mtime_s": 1789116401,
+          "mtime_utc": "2026-09-11T08:46:41.000000000Z",
+          "mtime_china": "2026-09-11T16:46:41.000000000 +08:00"
+        },
+        {
+          "member": "data6/20260911_YJC_4/polar_hr.csv",
+          "bytes": 4696,
+          "crc32": "9d493f8c",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            46,
+            40
+          ],
+          "extended_unix_mtime_s": 1789116401,
+          "mtime_utc": "2026-09-11T08:46:41.000000000Z",
+          "mtime_china": "2026-09-11T16:46:41.000000000 +08:00"
+        },
+        {
+          "member": "data6/20260911_YJC_4/polar_ppg.csv",
+          "bytes": 503317,
+          "crc32": "ad67432d",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            46,
+            40
+          ],
+          "extended_unix_mtime_s": 1789116401,
+          "mtime_utc": "2026-09-11T08:46:41.000000000Z",
+          "mtime_china": "2026-09-11T16:46:41.000000000 +08:00"
+        },
+        {
+          "member": "data6/20260911_YJC_4/quality_summary.csv",
+          "bytes": 513,
+          "crc32": "b1afca72",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            46,
+            40
+          ],
+          "extended_unix_mtime_s": 1789116401,
+          "mtime_utc": "2026-09-11T08:46:41.000000000Z",
+          "mtime_china": "2026-09-11T16:46:41.000000000 +08:00"
+        },
+        {
+          "member": "data6/20260911_YJC_4/waveform.png",
+          "bytes": 70678,
+          "crc32": "52f6388c",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            46,
+            40
+          ],
+          "extended_unix_mtime_s": 1789116401,
+          "mtime_utc": "2026-09-11T08:46:41.000000000Z",
+          "mtime_china": "2026-09-11T16:46:41.000000000 +08:00"
+        },
+        {
+          "member": "data6/Video_20260911_YJC_4.avi",
+          "bytes": 1267192320,
+          "crc32": "bda81543",
+          "zip_compression_method": 8,
+          "dos_local_datetime": [
+            2026,
+            9,
+            11,
+            16,
+            46,
+            38
+          ],
+          "extended_unix_mtime_s": 1789116398,
+          "mtime_utc": "2026-09-11T08:46:38.000000000Z",
+          "mtime_china": "2026-09-11T16:46:38.000000000 +08:00"
+        }
+      ],
+      "video_count": 1,
+      "video_inner_archive": null,
+      "video": {
+        "member": "data6/Video_20260911_YJC_4.avi",
+        "bytes": 1267192320,
+        "crc32": "bda81543",
+        "zip_compression_method": 8,
+        "dos_local_datetime": [
+          2026,
+          9,
+          11,
+          16,
+          46,
+          38
+        ],
+        "extended_unix_mtime_s": 1789116398,
+        "mtime_utc": "2026-09-11T08:46:38.000000000Z",
+        "mtime_china": "2026-09-11T16:46:38.000000000 +08:00",
+        "header_bytes_read": 65536,
+        "width": 3840,
+        "height": 2160,
+        "avih_total_frames": 2148,
+        "strh_length_frames": 2148,
+        "frame_count_header_agreement": true,
+        "fps_numerator": 10000000,
+        "fps_denominator": 333333,
+        "fps": 30.00003000003,
+        "provisional_stream_duration_ns": 71599928400,
+        "provisional_stream_duration_s": 71.5999284,
+        "avih_count_duration_s": 71.5999284,
+        "header_embedded_wallclock_marker_found": false,
+        "full_video_payload_crc_or_decode_validated": false
+      },
+      "reference_inner_archive": null,
+      "reference_folder": "data6/20260911_YJC_4",
+      "reference_files": {
+        "events.csv": {
+          "member": "data6/20260911_YJC_4/events.csv",
+          "bytes": 628,
+          "sha256": "bc3e7888170c260816a0e7f4419548d5f31c8456ba6d483d943f93c64160460c"
+        },
+        "meta.json": {
+          "member": "data6/20260911_YJC_4/meta.json",
+          "bytes": 3961,
+          "sha256": "bb1fb0588f4c495904a175818487b26fe6ff7bb7b12be8602311af2058c0a56f"
+        },
+        "polar_acc.csv": {
+          "member": "data6/20260911_YJC_4/polar_acc.csv",
+          "bytes": 416701,
+          "sha256": "7bbc263205107bb52e22157644ca8773115c97a87fd6ac554a4180052b09f6af"
+        },
+        "polar_hr.csv": {
+          "member": "data6/20260911_YJC_4/polar_hr.csv",
+          "bytes": 4696,
+          "sha256": "a13a9d0f38d7e476588e7595a10674bc88fe974d12f53bc0bf343772b13a0223"
+        },
+        "polar_ppg.csv": {
+          "member": "data6/20260911_YJC_4/polar_ppg.csv",
+          "bytes": 503317,
+          "sha256": "e25d71ddffb48854a6a663529b3abf0a2ae2c74489f5e4a2e0a6a6dede0faf30"
+        },
+        "quality_summary.csv": {
+          "member": "data6/20260911_YJC_4/quality_summary.csv",
+          "bytes": 513,
+          "sha256": "dbee033420eb015eed8f27dbf1e984c2425cdbd81404e39b785ce0e1b8ff4f7c"
+        }
+      },
+      "waveform_png_present": true,
+      "collector": {
+        "software_git_commit": "6dfe3cffcc37f0c9d2542c19036c93f685107831",
+        "library": "polar-python==1.1.1",
+        "device_model_family": "Polar Sense (as recorded by collector)",
+        "reference_kind": "User-supplied Polar optical device HR notifications, not ECG",
+        "device_address_omitted": true,
+        "start_utc": "2026-09-11T08:44:43.192011+00:00",
+        "stop_utc": "2026-09-11T08:46:41.832665+00:00",
+        "session_duration_s": 118.640654,
+        "reported_queue_drops": 0,
+        "reported_connection_count": 1,
+        "reported_reconnect_count": 1,
+        "per_sample_time_definition": "Estimated per-sample time: integer interpolation between consecutive frame endpoints when 0 < frame interval <= 1.5 times nominal batch duration; otherwise nominal-rate backward reconstruction. Interpolation state resets on every connection."
+      },
+      "events": [
+        {
+          "event": "session_started",
+          "source": "app",
+          "utc_ns": 1789116283249003200,
+          "utc": "2026-09-11T08:44:43.249003200Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789116283272020000,
+          "utc": "2026-09-11T08:44:43.272020000Z"
+        },
+        {
+          "event": "disconnected",
+          "source": "polar",
+          "utc_ns": 1789116300245930900,
+          "utc": "2026-09-11T08:45:00.245930900Z"
+        },
+        {
+          "event": "reconnect_wait",
+          "source": "polar",
+          "utc_ns": 1789116300245930900,
+          "utc": "2026-09-11T08:45:00.245930900Z"
+        },
+        {
+          "event": "connecting",
+          "source": "polar",
+          "utc_ns": 1789116301257158200,
+          "utc": "2026-09-11T08:45:01.257158200Z"
+        },
+        {
+          "event": "connected",
+          "source": "polar",
+          "utc_ns": 1789116314024705900,
+          "utc": "2026-09-11T08:45:14.024705900Z"
+        },
+        {
+          "event": "stream_started",
+          "source": "polar",
+          "utc_ns": 1789116319664935700,
+          "utc": "2026-09-11T08:45:19.664935700Z"
+        },
+        {
+          "event": "session_stopped",
+          "source": "app",
+          "utc_ns": 1789116401832665900,
+          "utc": "2026-09-11T08:46:41.832665900Z"
+        }
+      ],
+      "streams": {
+        "hr": {
+          "reference_member": "data6/20260911_YJC_4/polar_hr.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "hr_bpm",
+            "rr_ms"
+          ],
+          "rows": 87,
+          "sha256": "a13a9d0f38d7e476588e7595a10674bc88fe974d12f53bc0bf343772b13a0223",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 87,
+            "device_frame_time_ns": 87,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "hr_bpm": 0,
+            "rr_ms": 87
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "host_utc_ns",
+          "first_time_ns": 1789116314864315700,
+          "last_time_ns": 1789116400873557300,
+          "first_utc": "2026-09-11T08:45:14.864315700Z",
+          "last_utc": "2026-09-11T08:46:40.873557300Z",
+          "first_china": "2026-09-11T16:45:14.864315700 +08:00",
+          "last_china": "2026-09-11T16:46:40.873557300 +08:00",
+          "duration_first_to_last_s": 86.0092416,
+          "endpoint_rate_hz": 0.9998925510813945,
+          "configured_rate_hz": null,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 898.9366,
+            "median": 990.54555,
+            "max": 1079.4533
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "hr_bpm": {
+              "finite_count": 87,
+              "min": 104.0,
+              "max": 136.0,
+              "mean": 118.03448275862068,
+              "std_ddof1": 8.127541857656292
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "hr",
+            "expected_rate_hz": "",
+            "sample_count": "87",
+            "first_time_ns": "436425620977400",
+            "last_time_ns": "436511629264000",
+            "max_interval_ms": "1079.0759",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "86.0082866",
+            "actual_rate_hz": "0.9999036534695948"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 0,
+              "unique": 0
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 87,
+              "unique": 87
+            },
+            "host_utc_ns": {
+              "nonmissing": 87,
+              "unique": 87
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.3778,
+          "reported_quality_core_fields_match": true
+        },
+        "ppg": {
+          "reference_member": "data6/20260911_YJC_4/polar_ppg.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "ppg_0",
+            "ppg_1",
+            "ppg_2",
+            "ambient"
+          ],
+          "rows": 4451,
+          "sha256": "e25d71ddffb48854a6a663529b3abf0a2ae2c74489f5e4a2e0a6a6dede0faf30",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "ppg_0": 0,
+            "ppg_1": 0,
+            "ppg_2": 0,
+            "ambient": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789116318970786919,
+          "last_time_ns": 1789116400236345731,
+          "first_utc": "2026-09-11T08:45:18.970786919Z",
+          "last_utc": "2026-09-11T08:46:40.236345731Z",
+          "first_china": "2026-09-11T16:45:18.970786919 +08:00",
+          "last_china": "2026-09-11T16:46:40.236345731 +08:00",
+          "duration_first_to_last_s": 81.265558812,
+          "endpoint_rate_hz": 54.75874484902816,
+          "configured_rate_hz": 55.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.181818,
+            "median": 18.262753,
+            "max": 18.26622
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "ppg_0": {
+              "finite_count": 4451,
+              "min": 149914.0,
+              "max": 197056.0,
+              "mean": 179161.95169624803,
+              "std_ddof1": 9526.647627477132
+            },
+            "ppg_1": {
+              "finite_count": 4451,
+              "min": 79570.0,
+              "max": 114868.0,
+              "mean": 96482.86564816895,
+              "std_ddof1": 6610.9918498342395
+            },
+            "ppg_2": {
+              "finite_count": 4451,
+              "min": 118144.0,
+              "max": 160262.0,
+              "mean": 145232.33363289147,
+              "std_ddof1": 8600.372083269802
+            },
+            "ambient": {
+              "finite_count": 4451,
+              "min": -160954.0,
+              "max": -160214.0,
+              "mean": -160665.2332060211,
+              "std_ddof1": 114.41760681292793
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "ppg",
+            "expected_rate_hz": "55.0",
+            "sample_count": "4451",
+            "first_time_ns": "1789116318970786919",
+            "last_time_ns": "1789116400236345731",
+            "max_interval_ms": "18.26622",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "81.265558812",
+            "actual_rate_hz": "54.75874484902816"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 4451,
+              "unique": 4451
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 4451,
+              "unique": 112
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 4451,
+              "unique": 112
+            },
+            "host_utc_ns": {
+              "nonmissing": 4451,
+              "unique": 112
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.0234,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.724511183,
+            "median": 0.9333187814999999,
+            "max": 1.162290395
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": -0.43864572903971055
+        },
+        "acc": {
+          "reference_member": "data6/20260911_YJC_4/polar_acc.csv",
+          "reference_inner_archive": null,
+          "columns": [
+            "sample_index",
+            "frame_index",
+            "device_time_ns",
+            "device_frame_time_ns",
+            "host_monotonic_ns",
+            "host_utc_ns",
+            "acc_x_mg",
+            "acc_y_mg",
+            "acc_z_mg"
+          ],
+          "rows": 4280,
+          "sha256": "7bbc263205107bb52e22157644ca8773115c97a87fd6ac554a4180052b09f6af",
+          "missing_by_column": {
+            "sample_index": 0,
+            "frame_index": 0,
+            "device_time_ns": 0,
+            "device_frame_time_ns": 0,
+            "host_monotonic_ns": 0,
+            "host_utc_ns": 0,
+            "acc_x_mg": 0,
+            "acc_y_mg": 0,
+            "acc_z_mg": 0
+          },
+          "exact_duplicate_rows": 0,
+          "sample_index_contiguous": true,
+          "time_axis_for_comparison": "device_time_ns",
+          "first_time_ns": 1789116318928357867,
+          "last_time_ns": 1789116399345804554,
+          "first_utc": "2026-09-11T08:45:18.928357867Z",
+          "last_utc": "2026-09-11T08:46:39.345804554Z",
+          "first_china": "2026-09-11T16:45:18.928357867 +08:00",
+          "last_china": "2026-09-11T16:46:39.345804554 +08:00",
+          "duration_first_to_last_s": 80.417446687,
+          "endpoint_rate_hz": 53.20984657290453,
+          "configured_rate_hz": 52.0,
+          "duplicate_axis_timestamps": 0,
+          "nonpositive_axis_intervals": 0,
+          "interval_ms": {
+            "min": 18.78335,
+            "median": 18.785355,
+            "max": 19.23077
+          },
+          "intervals_over_2s": 0,
+          "signal_summary": {
+            "acc_x_mg": {
+              "finite_count": 4280,
+              "min": -661.0,
+              "max": 2062.0,
+              "mean": 426.42056074766356,
+              "std_ddof1": 424.4377265657865
+            },
+            "acc_y_mg": {
+              "finite_count": 4280,
+              "min": -1132.0,
+              "max": 2829.0,
+              "mean": 366.23621495327103,
+              "std_ddof1": 546.990545810909
+            },
+            "acc_z_mg": {
+              "finite_count": 4280,
+              "min": -598.0,
+              "max": 3896.0,
+              "mean": 825.971261682243,
+              "std_ddof1": 905.8152734011512
+            }
+          },
+          "quality_report": {
+            "source": "polar",
+            "stream_type": "acc",
+            "expected_rate_hz": "52.0",
+            "sample_count": "4280",
+            "first_time_ns": "1789116318928357867",
+            "last_time_ns": "1789116399345804554",
+            "max_interval_ms": "19.23077",
+            "gap_count": "0",
+            "estimated_missing_samples": "0",
+            "sample_index_jumps": "0",
+            "nonpositive_interval_count": "0",
+            "duration_s": "80.417446687",
+            "actual_rate_hz": "53.20984657290454"
+          },
+          "time_column_counts": {
+            "device_time_ns": {
+              "nonmissing": 4280,
+              "unique": 4280
+            },
+            "device_frame_time_ns": {
+              "nonmissing": 4280,
+              "unique": 85
+            },
+            "host_monotonic_ns": {
+              "nonmissing": 4280,
+              "unique": 85
+            },
+            "host_utc_ns": {
+              "nonmissing": 4280,
+              "unique": 85
+            }
+          },
+          "host_utc_minus_monotonic_offset_spread_ms": 1.0051,
+          "reported_quality_core_fields_match": true,
+          "batch_host_minus_device_frame_endpoint_s": {
+            "min": 0.728378394,
+            "median": 0.95371539,
+            "max": 1.162133074
+          },
+          "intervals_over_1_5_nominal_period": 0,
+          "rate_difference_from_configured_pct": 2.3266280248164017
+        }
+      },
+      "alignment": {
+        "status": "estimated_file_mtime_alignment_only_not_hardware_synchronized",
+        "has_shared_camera_event": false,
+        "has_verified_first_frame_utc": false,
+        "assumption": "AVI archived original modification timestamp approximates recording end; subtract decoded N/fps duration, without using prediction HR. Header-based duration below must be confirmed by decoding.",
+        "provisional_start_utc_ns": 1789116326400071600,
+        "provisional_start_utc": "2026-09-11T08:45:26.400071600Z",
+        "provisional_start_china": "2026-09-11T16:45:26.400071600 +08:00",
+        "provisional_end_utc_ns": 1789116398000000000,
+        "duration_ready_to_freeze": true,
+        "reference_hr_starts_relative_to_video_s": -11.5357559,
+        "reference_hr_ends_relative_to_video_s": 74.4734857,
+        "reference_ppg_starts_relative_to_video_s": -7.429284681,
+        "reference_ppg_ends_relative_to_video_s": 73.836274131,
+        "whole_video_inside_observed_hr_endpoint_span": true,
+        "mtime_resolution_s": 1,
+        "sensitivity_shifts_s": [
+          -5,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          5
+        ],
+        "prediction_based_alignment_fit": false,
+        "all_shifts_to_report": true,
+        "reference_file_mtime_minus_last_hr_notification_s": 0.1264427,
+        "do_not_rezero_reference_and_video_independently": true
+      },
+      "prior_data1_identity_check": {}
+    }
+  ],
+  "comparison_recommendation": {
+    "primary_reference": {
+      "file": "polar_hr.csv",
+      "time_column": "host_utc_ns",
+      "value_column": "hr_bpm",
+      "time_dtype": "int64; never float64 for absolute nanoseconds"
+    },
+    "window_aggregation": "Same frozen 10 s nominal center +/-5 s: arithmetic mean of finite positive HR notifications in [center-5,center+5).",
+    "reference_eligibility": "Inside first-HR to last-HR + median interval, at least 2 values, no internal gap >2 s; do not extrapolate startup.",
+    "sensitivity_shifts_s": [
+      -5,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      5
+    ],
+    "shift_sign": "Positive places video start later on reference UTC.",
+    "waveform_reference": "Use timestamped raw PPG only as an exploratory optical reference; no channel or lag optimization against rPPG; do not claim verified cross-site morphology recovery."
+  },
+  "limitations": [
+    "All recordings lack a shared camera trigger, video first-frame UTC or shared visible marker in supplied metadata; timing remains conditional.",
+    "Use Polar hr_bpm with integer host_utc_ns as HR reference. Its internal averaging and notification delay are unknown; do not label it ECG truth.",
+    "PPG is three raw optical channels plus ambient. Negative values are not alone evidence of invalidity. Device sample times are collector reconstructions; host arrival repeats once per packet and must not be treated as PPG sampling timestamps.",
+    "Missing HR device timestamps and RR values are expected unavailable fields; HR bpm itself is populated. No beat-level RR or annotation truth is provided.",
+    "No index gaps or recorded queue drops supports record continuity only, not independent physiological validity or proof of no device/transport loss.",
+    "Video duration must use decoded frame count and stream rational fps, not rounded avih microseconds. data4 avih and strh disagree by 9 frames.",
+    "Whole-video overlap and window computability do not establish physical synchronization; report all predeclared shifts rather than selecting the best error.",
+    "data1 repeats the previously analyzed source, so it is not new independent validation. Six clips do not imply six independent participants.",
+    "This audit reads ZIP directory, small references and the first 64 KiB of each AVI, without extracting/modifying originals or loading video payloads into memory. Full video CRC/decode validation is owned by the execution task."
+  ],
+  "integrity_summary": {
+    "all_reference_expected_files_present": true,
+    "all_stream_indices_contiguous": true,
+    "all_stream_axis_strictly_increasing": true,
+    "all_signal_values_finite": true,
+    "all_reported_quality_core_fields_match": true,
+    "predictions_read": false,
+    "originals_modified_or_extracted": false
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "segment_index": 0,
+    "start_frame": 4,
+    "end_frame_exclusive": 88,
+    "used_frames": 0,
+    "tail_discarded_frames": 84,
+    "status": "shorter_than_160_frames"
+  },
+  {
+    "segment_index": 1,
+    "start_frame": 92,
+    "end_frame_exclusive": 610,
+    "used_frames": 480,
+    "tail_discarded_frames": 38,
+    "status": "predicted",
+    "scalar_mean": 146.86993592801088,
+    "scalar_std": 56.90052779233119
+  },
+  {
+    "segment_index": 2,
+    "start_frame": 614,
+    "end_frame_exclusive": 695,
+    "used_frames": 0,
+    "tail_discarded_frames": 81,
+    "status": "shorter_than_160_frames"
+  },
+  {
+    "segment_index": 3,
+    "start_frame": 699,
+    "end_frame_exclusive": 1557,
+    "used_frames": 800,
+    "tail_discarded_frames": 58,
+    "status": "predicted",
+    "scalar_mean": 146.67150987982288,
+    "scalar_std": 58.60714379329646
+  }
+]

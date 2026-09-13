@@ -1,0 +1,6 @@
+﻿case,positive_diagnostic_rows,generated_windows,covered_samples,observed_samples,interpolated_samples,neighbor_covered_windows,all_provenance_flags_exact,actual_ROI_counts_exact,method
+user0904,127,31,1350,1350,0,5,True,True,"Independent ROI-by-sample activity matrix from positive diagnostic weights; ALL observed, ANY interpolated across active ROIs"
+user0907,52,10,900,826,74,2,True,True,"Independent ROI-by-sample activity matrix from positive diagnostic weights; ALL observed, ANY interpolated across active ROIs"
+ubfc,148,34,1424,1424,0,6,True,True,"Independent ROI-by-sample activity matrix from positive diagnostic weights; ALL observed, ANY interpolated across active ROIs"
+kaggle_full,524,145,11850,11850,0,178,True,True,"Independent ROI-by-sample activity matrix from positive diagnostic weights; ALL observed, ANY interpolated across active ROIs"
+synthetic72,42,7,480,480,0,0,True,True,"Independent ROI-by-sample activity matrix from positive diagnostic weights; ALL observed, ANY interpolated across active ROIs"

@@ -1,0 +1,14 @@
+{
+  "input_video": "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/videos/user_0907/Video_20260907_171742478.avi",
+  "fps": 30.00003000003,
+  "duration_s": 51.899948099999996,
+  "sample_hz_actual": 3.7500037500037506,
+  "samples": 195,
+  "face_detection_rate": 0.5487179487179488,
+  "median_center_speed_face_heights_s": 0.40790884652215403,
+  "p95_center_speed_face_heights_s": 0.6207052134608279,
+  "median_face_flow_px_sample": 5.339662551879883,
+  "p95_face_flow_px_sample": 27.701829910278313,
+  "best_motion_window_start_s": 6.1999888,
+  "best_motion_window_stop_s": 16.1999888
+}

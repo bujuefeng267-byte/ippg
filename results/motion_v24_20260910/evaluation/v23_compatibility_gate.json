@@ -1,0 +1,1951 @@
+{
+  "evaluated": true,
+  "original_criteria_sha256": "234b52a58868329105992236f7affdae24d0c745b3f21f4b62d7ba79c0ab8a68",
+  "engineering_adaptation": "V24 manifest and declared architecture replace V23 unchanged-backend assumptions.",
+  "all_predefined_candidates": {
+    "bounded_tracking_gap10": {
+      "baseline": "trimmed_gap10",
+      "candidate": "bounded_tracking_gap10",
+      "primary_shift_s": 0,
+      "eligible_for_named_upgrade": false,
+      "failed_checks": [
+        {
+          "check": "ubfc/offline_ridge/own/MAE_bpm",
+          "passed": false,
+          "before": 2.5608837981643235,
+          "after": 2.6142021372646695,
+          "delta": 0.053318339100346
+        },
+        {
+          "check": "ubfc/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 2.5608837981643235,
+          "after": 2.6142021372646695,
+          "delta": 0.053318339100346
+        },
+        {
+          "check": "ubfc/offline_ridge/own/RMSE_bpm",
+          "passed": false,
+          "before": 3.176009202248615,
+          "after": 3.2030419824737226,
+          "delta": 0.0270327802251078
+        },
+        {
+          "check": "ubfc/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 3.176009202248615,
+          "after": 3.2030419824737226,
+          "delta": 0.0270327802251078
+        },
+        {
+          "check": "ubfc/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 3.5002721919318986,
+          "after": 3.5153162788166106,
+          "delta": 0.015044086884711927
+        },
+        {
+          "check": "ubfc/local_peak/common/RMSE_bpm",
+          "passed": false,
+          "before": 3.5002721919318986,
+          "after": 3.5153162788166106,
+          "delta": 0.015044086884711927
+        },
+        {
+          "check": "ubfc/paired_reference_H1_SNR",
+          "passed": false,
+          "before": 0,
+          "after": -0.03563024756825618,
+          "delta": -0.03563024756825618
+        },
+        {
+          "check": "data1/offline_ridge/own/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 31.772972972972976,
+          "delta": 18.5951951951952
+        },
+        {
+          "check": "data1/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 32.4,
+          "delta": 19.22222222222222
+        },
+        {
+          "check": "data1/offline_ridge/own/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 35.72589340323709,
+          "delta": 21.9081109794503
+        },
+        {
+          "check": "data1/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 36.186215914657645,
+          "delta": 22.368433490870856
+        },
+        {
+          "check": "data1/local_peak/own/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 49.54054054054054,
+          "delta": 27.88498498498499
+        },
+        {
+          "check": "data1/local_peak/common/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 48.61666666666667,
+          "delta": 26.961111111111116
+        },
+        {
+          "check": "data1/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 52.88247040065049,
+          "delta": 22.22879561641332
+        },
+        {
+          "check": "data1/local_peak/common/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 51.80538367561597,
+          "delta": 21.1517088913788
+        },
+        {
+          "check": "user0904/HR_coverage",
+          "passed": false,
+          "before": 92.3076923076923,
+          "after": 89.74358974358974,
+          "delta": -2.564102564102569
+        },
+        {
+          "check": "user0904/finite_waveform_coverage",
+          "passed": false,
+          "before": 92.40246406570843,
+          "after": 90.34907597535934,
+          "delta": -2.053388090349088
+        },
+        {
+          "check": "user0904/longest_waveform_missing_s",
+          "passed": false,
+          "before": 1.999998,
+          "after": 2.6999972999999997,
+          "delta": 0.6999992999999998
+        },
+        {
+          "check": "user0907/HR_coverage",
+          "passed": false,
+          "before": 30.952380952380953,
+          "after": 21.428571428571427,
+          "delta": -9.523809523809526
+        },
+        {
+          "check": "user0907/finite_waveform_coverage",
+          "passed": false,
+          "before": 59.73025048169557,
+          "after": 34.68208092485549,
+          "delta": -25.04816955684008
+        },
+        {
+          "check": "user0907/longest_HR_rejection_grid_s",
+          "passed": false,
+          "before": 15.999984,
+          "after": 24.999975,
+          "delta": 8.999991
+        },
+        {
+          "check": "user0907/longest_waveform_missing_s",
+          "passed": false,
+          "before": 7.8999920999999995,
+          "after": 24.999975,
+          "delta": 17.0999829
+        },
+        {
+          "check": "kaggle_full/HR_coverage",
+          "passed": false,
+          "before": 99.28400954653938,
+          "after": 99.0453460620525,
+          "delta": -0.23866348448687802
+        },
+        {
+          "check": "kaggle_full/finite_waveform_coverage",
+          "passed": false,
+          "before": 99.09069713219864,
+          "after": 98.85754255071112,
+          "delta": -0.23315458148752555
+        },
+        {
+          "check": "kaggle_full/longest_waveform_missing_s",
+          "passed": false,
+          "before": 2.0020000000000002,
+          "after": 2.9029000000000003,
+          "delta": 0.9009
+        },
+        {
+          "check": "at_least_one_frozen_meaningful_improvement",
+          "passed": false,
+          "improvements": []
+        }
+      ],
+      "checks": [
+        {
+          "check": "engineering_integrity_and_replay_QA",
+          "passed": true
+        },
+        {
+          "check": "ubfc/offline_ridge/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "ubfc/offline_ridge/own/MAE_bpm",
+          "passed": false,
+          "before": 2.5608837981643235,
+          "after": 2.6142021372646695,
+          "delta": 0.053318339100346
+        },
+        {
+          "check": "ubfc/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 2.5608837981643235,
+          "after": 2.6142021372646695,
+          "delta": 0.053318339100346
+        },
+        {
+          "check": "ubfc/offline_ridge/own/RMSE_bpm",
+          "passed": false,
+          "before": 3.176009202248615,
+          "after": 3.2030419824737226,
+          "delta": 0.0270327802251078
+        },
+        {
+          "check": "ubfc/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 3.176009202248615,
+          "after": 3.2030419824737226,
+          "delta": 0.0270327802251078
+        },
+        {
+          "check": "ubfc/offline_ridge/R5",
+          "passed": true,
+          "before": 81.81818181818181,
+          "after": 81.81818181818181,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "ubfc/local_peak/own/MAE_bpm",
+          "passed": true,
+          "before": 2.765783131216183,
+          "after": 2.7516959720347423,
+          "delta": -0.014087159181440878
+        },
+        {
+          "check": "ubfc/local_peak/common/MAE_bpm",
+          "passed": true,
+          "before": 2.765783131216183,
+          "after": 2.7516959720347423,
+          "delta": -0.014087159181440878
+        },
+        {
+          "check": "ubfc/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 3.5002721919318986,
+          "after": 3.5153162788166106,
+          "delta": 0.015044086884711927
+        },
+        {
+          "check": "ubfc/local_peak/common/RMSE_bpm",
+          "passed": false,
+          "before": 3.5002721919318986,
+          "after": 3.5153162788166106,
+          "delta": 0.015044086884711927
+        },
+        {
+          "check": "ubfc/local_peak/R5",
+          "passed": true,
+          "before": 70.45454545454545,
+          "after": 72.72727272727273,
+          "delta": 2.2727272727272805
+        },
+        {
+          "check": "ubfc/nonempty_paired_reference_H1_SNR",
+          "passed": true
+        },
+        {
+          "check": "ubfc/paired_reference_H1_SNR",
+          "passed": false,
+          "before": 0,
+          "after": -0.03563024756825618,
+          "delta": -0.03563024756825618
+        },
+        {
+          "check": "data1/offline_ridge/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "data1/offline_ridge/own/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 31.772972972972976,
+          "delta": 18.5951951951952
+        },
+        {
+          "check": "data1/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 32.4,
+          "delta": 19.22222222222222
+        },
+        {
+          "check": "data1/offline_ridge/own/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 35.72589340323709,
+          "delta": 21.9081109794503
+        },
+        {
+          "check": "data1/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 36.186215914657645,
+          "delta": 22.368433490870856
+        },
+        {
+          "check": "data1/offline_ridge/R5",
+          "passed": true,
+          "before": 0.0,
+          "after": 0.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/local_peak/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "data1/local_peak/own/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 49.54054054054054,
+          "delta": 27.88498498498499
+        },
+        {
+          "check": "data1/local_peak/common/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 48.61666666666667,
+          "delta": 26.961111111111116
+        },
+        {
+          "check": "data1/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 52.88247040065049,
+          "delta": 22.22879561641332
+        },
+        {
+          "check": "data1/local_peak/common/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 51.80538367561597,
+          "delta": 21.1517088913788
+        },
+        {
+          "check": "data1/local_peak/R5",
+          "passed": true,
+          "before": 0.0,
+          "after": 0.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/nonempty_paired_reference_H1_SNR",
+          "passed": true
+        },
+        {
+          "check": "data1/paired_reference_H1_SNR",
+          "passed": true,
+          "before": 0,
+          "after": 0.20164638626432452,
+          "delta": 0.20164638626432452
+        },
+        {
+          "check": "user0904/HR_coverage",
+          "passed": false,
+          "before": 92.3076923076923,
+          "after": 89.74358974358974,
+          "delta": -2.564102564102569
+        },
+        {
+          "check": "user0904/finite_waveform_coverage",
+          "passed": false,
+          "before": 92.40246406570843,
+          "after": 90.34907597535934,
+          "delta": -2.053388090349088
+        },
+        {
+          "check": "user0904/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 1.999998,
+          "after": 1.999998,
+          "delta": 0.0
+        },
+        {
+          "check": "user0904/longest_waveform_missing_s",
+          "passed": false,
+          "before": 1.999998,
+          "after": 2.6999972999999997,
+          "delta": 0.6999992999999998
+        },
+        {
+          "check": "user0907/HR_coverage",
+          "passed": false,
+          "before": 30.952380952380953,
+          "after": 21.428571428571427,
+          "delta": -9.523809523809526
+        },
+        {
+          "check": "user0907/finite_waveform_coverage",
+          "passed": false,
+          "before": 59.73025048169557,
+          "after": 34.68208092485549,
+          "delta": -25.04816955684008
+        },
+        {
+          "check": "user0907/longest_HR_rejection_grid_s",
+          "passed": false,
+          "before": 15.999984,
+          "after": 24.999975,
+          "delta": 8.999991
+        },
+        {
+          "check": "user0907/longest_waveform_missing_s",
+          "passed": false,
+          "before": 7.8999920999999995,
+          "after": 24.999975,
+          "delta": 17.0999829
+        },
+        {
+          "check": "ubfc/HR_coverage",
+          "passed": true,
+          "before": 90.9090909090909,
+          "after": 90.9090909090909,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/finite_waveform_coverage",
+          "passed": true,
+          "before": 92.04912734324499,
+          "after": 92.04912734324499,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 1.9819501747294108,
+          "after": 1.9819501747294108,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.2211510578864084,
+          "after": 2.2211510578864084,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/HR_coverage",
+          "passed": false,
+          "before": 99.28400954653938,
+          "after": 99.0453460620525,
+          "delta": -0.23866348448687802
+        },
+        {
+          "check": "kaggle_full/finite_waveform_coverage",
+          "passed": false,
+          "before": 99.09069713219864,
+          "after": 98.85754255071112,
+          "delta": -0.23315458148752555
+        },
+        {
+          "check": "kaggle_full/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 2.0020000000000002,
+          "after": 2.0020000000000002,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/longest_waveform_missing_s",
+          "passed": false,
+          "before": 2.0020000000000002,
+          "after": 2.9029000000000003,
+          "delta": 0.9009
+        },
+        {
+          "check": "synthetic72/HR_coverage",
+          "passed": true,
+          "before": 63.63636363636363,
+          "after": 63.63636363636363,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/finite_waveform_coverage",
+          "passed": true,
+          "before": 80.0,
+          "after": 80.0,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 2.0,
+          "after": 2.0,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.0,
+          "after": 2.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/HR_coverage",
+          "passed": true,
+          "before": 85.71428571428571,
+          "after": 88.0952380952381,
+          "delta": 2.380952380952394
+        },
+        {
+          "check": "data1/finite_waveform_coverage",
+          "passed": true,
+          "before": 86.81672025723472,
+          "after": 88.7459807073955,
+          "delta": 1.9292604501607826
+        },
+        {
+          "check": "data1/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 4.999995,
+          "after": 3.999996,
+          "delta": -0.9999990000000003
+        },
+        {
+          "check": "data1/longest_waveform_missing_s",
+          "passed": true,
+          "before": 4.999995,
+          "after": 3.999996,
+          "delta": -0.9999990000000003
+        },
+        {
+          "check": "synthetic72/offline_ridge/MAE_at_most_1bpm",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "check": "synthetic72/local_peak/MAE_at_most_1bpm",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "check": "at_least_one_frozen_meaningful_improvement",
+          "passed": false,
+          "improvements": []
+        }
+      ],
+      "note": "Development/regression gate only. data1 timing is estimated. Evaluator does not install or switch defaults."
+    },
+    "bounded_tracking_gap15": {
+      "baseline": "trimmed_gap15",
+      "candidate": "bounded_tracking_gap15",
+      "primary_shift_s": 0,
+      "eligible_for_named_upgrade": false,
+      "failed_checks": [
+        {
+          "check": "ubfc/offline_ridge/own/MAE_bpm",
+          "passed": false,
+          "before": 2.5608837981643235,
+          "after": 2.6142021372646695,
+          "delta": 0.053318339100346
+        },
+        {
+          "check": "ubfc/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 2.5608837981643235,
+          "after": 2.6142021372646695,
+          "delta": 0.053318339100346
+        },
+        {
+          "check": "ubfc/offline_ridge/own/RMSE_bpm",
+          "passed": false,
+          "before": 3.176009202248615,
+          "after": 3.2030419824737226,
+          "delta": 0.0270327802251078
+        },
+        {
+          "check": "ubfc/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 3.176009202248615,
+          "after": 3.2030419824737226,
+          "delta": 0.0270327802251078
+        },
+        {
+          "check": "ubfc/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 3.5002721919318986,
+          "after": 3.5153162788166106,
+          "delta": 0.015044086884711927
+        },
+        {
+          "check": "ubfc/local_peak/common/RMSE_bpm",
+          "passed": false,
+          "before": 3.5002721919318986,
+          "after": 3.5153162788166106,
+          "delta": 0.015044086884711927
+        },
+        {
+          "check": "ubfc/paired_reference_H1_SNR",
+          "passed": false,
+          "before": 0,
+          "after": -0.03563024756824685,
+          "delta": -0.03563024756824685
+        },
+        {
+          "check": "data1/offline_ridge/own/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 31.772972972972976,
+          "delta": 18.5951951951952
+        },
+        {
+          "check": "data1/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 32.4,
+          "delta": 19.22222222222222
+        },
+        {
+          "check": "data1/offline_ridge/own/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 35.72589340323709,
+          "delta": 21.9081109794503
+        },
+        {
+          "check": "data1/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 36.186215914657645,
+          "delta": 22.368433490870856
+        },
+        {
+          "check": "data1/local_peak/own/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 49.54054054054054,
+          "delta": 27.88498498498499
+        },
+        {
+          "check": "data1/local_peak/common/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 48.61666666666667,
+          "delta": 26.961111111111116
+        },
+        {
+          "check": "data1/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 52.88247040065049,
+          "delta": 22.22879561641332
+        },
+        {
+          "check": "data1/local_peak/common/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 51.80538367561597,
+          "delta": 21.1517088913788
+        },
+        {
+          "check": "user0904/HR_coverage",
+          "passed": false,
+          "before": 92.3076923076923,
+          "after": 89.74358974358974,
+          "delta": -2.564102564102569
+        },
+        {
+          "check": "user0904/finite_waveform_coverage",
+          "passed": false,
+          "before": 92.40246406570843,
+          "after": 90.34907597535934,
+          "delta": -2.053388090349088
+        },
+        {
+          "check": "user0904/longest_waveform_missing_s",
+          "passed": false,
+          "before": 1.999998,
+          "after": 2.6999972999999997,
+          "delta": 0.6999992999999998
+        },
+        {
+          "check": "user0907/HR_coverage",
+          "passed": false,
+          "before": 59.523809523809526,
+          "after": 28.571428571428573,
+          "delta": -30.952380952380953
+        },
+        {
+          "check": "user0907/finite_waveform_coverage",
+          "passed": false,
+          "before": 80.92485549132948,
+          "after": 57.80346820809249,
+          "delta": -23.12138728323699
+        },
+        {
+          "check": "user0907/longest_HR_rejection_grid_s",
+          "passed": false,
+          "before": 6.999993,
+          "after": 15.999984,
+          "delta": 8.999991
+        },
+        {
+          "check": "user0907/longest_waveform_missing_s",
+          "passed": false,
+          "before": 7.8999920999999995,
+          "after": 10.899989099999999,
+          "delta": 2.9999969999999996
+        },
+        {
+          "check": "kaggle_full/HR_coverage",
+          "passed": false,
+          "before": 99.28400954653938,
+          "after": 99.0453460620525,
+          "delta": -0.23866348448687802
+        },
+        {
+          "check": "kaggle_full/finite_waveform_coverage",
+          "passed": false,
+          "before": 99.09069713219864,
+          "after": 98.85754255071112,
+          "delta": -0.23315458148752555
+        },
+        {
+          "check": "kaggle_full/longest_waveform_missing_s",
+          "passed": false,
+          "before": 2.0020000000000002,
+          "after": 2.9029000000000003,
+          "delta": 0.9009
+        },
+        {
+          "check": "at_least_one_frozen_meaningful_improvement",
+          "passed": false,
+          "improvements": []
+        }
+      ],
+      "checks": [
+        {
+          "check": "engineering_integrity_and_replay_QA",
+          "passed": true
+        },
+        {
+          "check": "ubfc/offline_ridge/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "ubfc/offline_ridge/own/MAE_bpm",
+          "passed": false,
+          "before": 2.5608837981643235,
+          "after": 2.6142021372646695,
+          "delta": 0.053318339100346
+        },
+        {
+          "check": "ubfc/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 2.5608837981643235,
+          "after": 2.6142021372646695,
+          "delta": 0.053318339100346
+        },
+        {
+          "check": "ubfc/offline_ridge/own/RMSE_bpm",
+          "passed": false,
+          "before": 3.176009202248615,
+          "after": 3.2030419824737226,
+          "delta": 0.0270327802251078
+        },
+        {
+          "check": "ubfc/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 3.176009202248615,
+          "after": 3.2030419824737226,
+          "delta": 0.0270327802251078
+        },
+        {
+          "check": "ubfc/offline_ridge/R5",
+          "passed": true,
+          "before": 81.81818181818181,
+          "after": 81.81818181818181,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "ubfc/local_peak/own/MAE_bpm",
+          "passed": true,
+          "before": 2.765783131216183,
+          "after": 2.7516959720347423,
+          "delta": -0.014087159181440878
+        },
+        {
+          "check": "ubfc/local_peak/common/MAE_bpm",
+          "passed": true,
+          "before": 2.765783131216183,
+          "after": 2.7516959720347423,
+          "delta": -0.014087159181440878
+        },
+        {
+          "check": "ubfc/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 3.5002721919318986,
+          "after": 3.5153162788166106,
+          "delta": 0.015044086884711927
+        },
+        {
+          "check": "ubfc/local_peak/common/RMSE_bpm",
+          "passed": false,
+          "before": 3.5002721919318986,
+          "after": 3.5153162788166106,
+          "delta": 0.015044086884711927
+        },
+        {
+          "check": "ubfc/local_peak/R5",
+          "passed": true,
+          "before": 70.45454545454545,
+          "after": 72.72727272727273,
+          "delta": 2.2727272727272805
+        },
+        {
+          "check": "ubfc/nonempty_paired_reference_H1_SNR",
+          "passed": true
+        },
+        {
+          "check": "ubfc/paired_reference_H1_SNR",
+          "passed": false,
+          "before": 0,
+          "after": -0.03563024756824685,
+          "delta": -0.03563024756824685
+        },
+        {
+          "check": "data1/offline_ridge/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "data1/offline_ridge/own/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 31.772972972972976,
+          "delta": 18.5951951951952
+        },
+        {
+          "check": "data1/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 32.4,
+          "delta": 19.22222222222222
+        },
+        {
+          "check": "data1/offline_ridge/own/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 35.72589340323709,
+          "delta": 21.9081109794503
+        },
+        {
+          "check": "data1/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 36.186215914657645,
+          "delta": 22.368433490870856
+        },
+        {
+          "check": "data1/offline_ridge/R5",
+          "passed": true,
+          "before": 0.0,
+          "after": 0.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/local_peak/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "data1/local_peak/own/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 49.54054054054054,
+          "delta": 27.88498498498499
+        },
+        {
+          "check": "data1/local_peak/common/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 48.61666666666667,
+          "delta": 26.961111111111116
+        },
+        {
+          "check": "data1/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 52.88247040065049,
+          "delta": 22.22879561641332
+        },
+        {
+          "check": "data1/local_peak/common/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 51.80538367561597,
+          "delta": 21.1517088913788
+        },
+        {
+          "check": "data1/local_peak/R5",
+          "passed": true,
+          "before": 0.0,
+          "after": 0.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/nonempty_paired_reference_H1_SNR",
+          "passed": true
+        },
+        {
+          "check": "data1/paired_reference_H1_SNR",
+          "passed": true,
+          "before": 0,
+          "after": 0.20164638626426748,
+          "delta": 0.20164638626426748
+        },
+        {
+          "check": "user0904/HR_coverage",
+          "passed": false,
+          "before": 92.3076923076923,
+          "after": 89.74358974358974,
+          "delta": -2.564102564102569
+        },
+        {
+          "check": "user0904/finite_waveform_coverage",
+          "passed": false,
+          "before": 92.40246406570843,
+          "after": 90.34907597535934,
+          "delta": -2.053388090349088
+        },
+        {
+          "check": "user0904/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 1.999998,
+          "after": 1.999998,
+          "delta": 0.0
+        },
+        {
+          "check": "user0904/longest_waveform_missing_s",
+          "passed": false,
+          "before": 1.999998,
+          "after": 2.6999972999999997,
+          "delta": 0.6999992999999998
+        },
+        {
+          "check": "user0907/HR_coverage",
+          "passed": false,
+          "before": 59.523809523809526,
+          "after": 28.571428571428573,
+          "delta": -30.952380952380953
+        },
+        {
+          "check": "user0907/finite_waveform_coverage",
+          "passed": false,
+          "before": 80.92485549132948,
+          "after": 57.80346820809249,
+          "delta": -23.12138728323699
+        },
+        {
+          "check": "user0907/longest_HR_rejection_grid_s",
+          "passed": false,
+          "before": 6.999993,
+          "after": 15.999984,
+          "delta": 8.999991
+        },
+        {
+          "check": "user0907/longest_waveform_missing_s",
+          "passed": false,
+          "before": 7.8999920999999995,
+          "after": 10.899989099999999,
+          "delta": 2.9999969999999996
+        },
+        {
+          "check": "ubfc/HR_coverage",
+          "passed": true,
+          "before": 90.9090909090909,
+          "after": 90.9090909090909,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/finite_waveform_coverage",
+          "passed": true,
+          "before": 92.04912734324499,
+          "after": 92.04912734324499,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 1.9819501747294108,
+          "after": 1.9819501747294108,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.2211510578864084,
+          "after": 2.2211510578864084,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/HR_coverage",
+          "passed": false,
+          "before": 99.28400954653938,
+          "after": 99.0453460620525,
+          "delta": -0.23866348448687802
+        },
+        {
+          "check": "kaggle_full/finite_waveform_coverage",
+          "passed": false,
+          "before": 99.09069713219864,
+          "after": 98.85754255071112,
+          "delta": -0.23315458148752555
+        },
+        {
+          "check": "kaggle_full/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 2.0020000000000002,
+          "after": 2.0020000000000002,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/longest_waveform_missing_s",
+          "passed": false,
+          "before": 2.0020000000000002,
+          "after": 2.9029000000000003,
+          "delta": 0.9009
+        },
+        {
+          "check": "synthetic72/HR_coverage",
+          "passed": true,
+          "before": 63.63636363636363,
+          "after": 63.63636363636363,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/finite_waveform_coverage",
+          "passed": true,
+          "before": 80.0,
+          "after": 80.0,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 2.0,
+          "after": 2.0,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.0,
+          "after": 2.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/HR_coverage",
+          "passed": true,
+          "before": 85.71428571428571,
+          "after": 88.0952380952381,
+          "delta": 2.380952380952394
+        },
+        {
+          "check": "data1/finite_waveform_coverage",
+          "passed": true,
+          "before": 86.81672025723472,
+          "after": 88.7459807073955,
+          "delta": 1.9292604501607826
+        },
+        {
+          "check": "data1/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 4.999995,
+          "after": 3.999996,
+          "delta": -0.9999990000000003
+        },
+        {
+          "check": "data1/longest_waveform_missing_s",
+          "passed": true,
+          "before": 4.999995,
+          "after": 3.999996,
+          "delta": -0.9999990000000003
+        },
+        {
+          "check": "synthetic72/offline_ridge/MAE_at_most_1bpm",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "check": "synthetic72/local_peak/MAE_at_most_1bpm",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "check": "at_least_one_frozen_meaningful_improvement",
+          "passed": false,
+          "improvements": []
+        }
+      ],
+      "note": "Development/regression gate only. data1 timing is estimated. Evaluator does not install or switch defaults."
+    },
+    "guarded_fusion_gap10": {
+      "baseline": "trimmed_gap10",
+      "candidate": "guarded_fusion_gap10",
+      "primary_shift_s": 0,
+      "eligible_for_named_upgrade": false,
+      "failed_checks": [
+        {
+          "check": "data1/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 13.205555555555556,
+          "delta": 0.027777777777778567
+        },
+        {
+          "check": "data1/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 13.826624879396837,
+          "delta": 0.00884245561004704
+        },
+        {
+          "check": "data1/local_peak/own/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 23.118918918918922,
+          "delta": 1.4633633633633707
+        },
+        {
+          "check": "data1/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 32.992611785556356,
+          "delta": 2.3389370013191844
+        },
+        {
+          "check": "data1/paired_reference_H1_SNR",
+          "passed": false,
+          "before": 0,
+          "after": -0.03817444194870075,
+          "delta": -0.03817444194870075
+        },
+        {
+          "check": "at_least_one_frozen_meaningful_improvement",
+          "passed": false,
+          "improvements": []
+        }
+      ],
+      "checks": [
+        {
+          "check": "engineering_integrity_and_replay_QA",
+          "passed": true
+        },
+        {
+          "check": "ubfc/offline_ridge/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "ubfc/offline_ridge/own/MAE_bpm",
+          "passed": true,
+          "before": 2.5608837981643235,
+          "after": 2.5608837981643235,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/offline_ridge/common/MAE_bpm",
+          "passed": true,
+          "before": 2.5608837981643235,
+          "after": 2.5608837981643235,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/offline_ridge/own/RMSE_bpm",
+          "passed": true,
+          "before": 3.176009202248615,
+          "after": 3.176009202248615,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/offline_ridge/common/RMSE_bpm",
+          "passed": true,
+          "before": 3.176009202248615,
+          "after": 3.176009202248615,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/offline_ridge/R5",
+          "passed": true,
+          "before": 81.81818181818181,
+          "after": 81.81818181818181,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "ubfc/local_peak/own/MAE_bpm",
+          "passed": true,
+          "before": 2.765783131216183,
+          "after": 2.765783131216183,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/common/MAE_bpm",
+          "passed": true,
+          "before": 2.765783131216183,
+          "after": 2.765783131216183,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/own/RMSE_bpm",
+          "passed": true,
+          "before": 3.5002721919318986,
+          "after": 3.5002721919318986,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/common/RMSE_bpm",
+          "passed": true,
+          "before": 3.5002721919318986,
+          "after": 3.5002721919318986,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/R5",
+          "passed": true,
+          "before": 70.45454545454545,
+          "after": 70.45454545454545,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/nonempty_paired_reference_H1_SNR",
+          "passed": true
+        },
+        {
+          "check": "ubfc/paired_reference_H1_SNR",
+          "passed": true,
+          "before": 0,
+          "after": 3.608207482796999e-14,
+          "delta": 3.608207482796999e-14
+        },
+        {
+          "check": "data1/offline_ridge/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "data1/offline_ridge/own/MAE_bpm",
+          "passed": true,
+          "before": 13.177777777777777,
+          "after": 13.097297297297297,
+          "delta": -0.08048048048047995
+        },
+        {
+          "check": "data1/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 13.205555555555556,
+          "delta": 0.027777777777778567
+        },
+        {
+          "check": "data1/offline_ridge/own/RMSE_bpm",
+          "passed": true,
+          "before": 13.81778242378679,
+          "after": 13.722106843200729,
+          "delta": -0.09567558058606096
+        },
+        {
+          "check": "data1/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 13.826624879396837,
+          "delta": 0.00884245561004704
+        },
+        {
+          "check": "data1/offline_ridge/R5",
+          "passed": true,
+          "before": 0.0,
+          "after": 0.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/local_peak/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "data1/local_peak/own/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 23.118918918918922,
+          "delta": 1.4633633633633707
+        },
+        {
+          "check": "data1/local_peak/common/MAE_bpm",
+          "passed": true,
+          "before": 21.65555555555555,
+          "after": 21.46111111111111,
+          "delta": -0.19444444444444287
+        },
+        {
+          "check": "data1/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 32.992611785556356,
+          "delta": 2.3389370013191844
+        },
+        {
+          "check": "data1/local_peak/common/RMSE_bpm",
+          "passed": true,
+          "before": 30.65367478423717,
+          "after": 30.468161888911002,
+          "delta": -0.18551289532616977
+        },
+        {
+          "check": "data1/local_peak/R5",
+          "passed": true,
+          "before": 0.0,
+          "after": 0.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/nonempty_paired_reference_H1_SNR",
+          "passed": true
+        },
+        {
+          "check": "data1/paired_reference_H1_SNR",
+          "passed": false,
+          "before": 0,
+          "after": -0.03817444194870075,
+          "delta": -0.03817444194870075
+        },
+        {
+          "check": "user0904/HR_coverage",
+          "passed": true,
+          "before": 92.3076923076923,
+          "after": 92.3076923076923,
+          "delta": 0.0
+        },
+        {
+          "check": "user0904/finite_waveform_coverage",
+          "passed": true,
+          "before": 92.40246406570843,
+          "after": 92.40246406570843,
+          "delta": 0.0
+        },
+        {
+          "check": "user0904/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 1.999998,
+          "after": 1.999998,
+          "delta": 0.0
+        },
+        {
+          "check": "user0904/longest_waveform_missing_s",
+          "passed": true,
+          "before": 1.999998,
+          "after": 1.999998,
+          "delta": 0.0
+        },
+        {
+          "check": "user0907/HR_coverage",
+          "passed": true,
+          "before": 30.952380952380953,
+          "after": 30.952380952380953,
+          "delta": 0.0
+        },
+        {
+          "check": "user0907/finite_waveform_coverage",
+          "passed": true,
+          "before": 59.73025048169557,
+          "after": 59.73025048169557,
+          "delta": 0.0
+        },
+        {
+          "check": "user0907/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 15.999984,
+          "after": 15.999984,
+          "delta": 0.0
+        },
+        {
+          "check": "user0907/longest_waveform_missing_s",
+          "passed": true,
+          "before": 7.8999920999999995,
+          "after": 7.8999920999999995,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/HR_coverage",
+          "passed": true,
+          "before": 90.9090909090909,
+          "after": 90.9090909090909,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/finite_waveform_coverage",
+          "passed": true,
+          "before": 92.04912734324499,
+          "after": 92.04912734324499,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 1.9819501747294108,
+          "after": 1.9819501747294108,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.2211510578864084,
+          "after": 2.2211510578864084,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/HR_coverage",
+          "passed": true,
+          "before": 99.28400954653938,
+          "after": 99.28400954653938,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/finite_waveform_coverage",
+          "passed": true,
+          "before": 99.09069713219864,
+          "after": 99.09069713219864,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 2.0020000000000002,
+          "after": 2.0020000000000002,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.0020000000000002,
+          "after": 2.0020000000000002,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/HR_coverage",
+          "passed": true,
+          "before": 63.63636363636363,
+          "after": 63.63636363636363,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/finite_waveform_coverage",
+          "passed": true,
+          "before": 80.0,
+          "after": 80.0,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 2.0,
+          "after": 2.0,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.0,
+          "after": 2.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/HR_coverage",
+          "passed": true,
+          "before": 85.71428571428571,
+          "after": 88.0952380952381,
+          "delta": 2.380952380952394
+        },
+        {
+          "check": "data1/finite_waveform_coverage",
+          "passed": true,
+          "before": 86.81672025723472,
+          "after": 88.7459807073955,
+          "delta": 1.9292604501607826
+        },
+        {
+          "check": "data1/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 4.999995,
+          "after": 3.999996,
+          "delta": -0.9999990000000003
+        },
+        {
+          "check": "data1/longest_waveform_missing_s",
+          "passed": true,
+          "before": 4.999995,
+          "after": 3.999996,
+          "delta": -0.9999990000000003
+        },
+        {
+          "check": "synthetic72/offline_ridge/MAE_at_most_1bpm",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "check": "synthetic72/local_peak/MAE_at_most_1bpm",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "check": "at_least_one_frozen_meaningful_improvement",
+          "passed": false,
+          "improvements": []
+        }
+      ],
+      "note": "Development/regression gate only. data1 timing is estimated. Evaluator does not install or switch defaults."
+    },
+    "guarded_fusion_gap15": {
+      "baseline": "trimmed_gap15",
+      "candidate": "guarded_fusion_gap15",
+      "primary_shift_s": 0,
+      "eligible_for_named_upgrade": false,
+      "failed_checks": [
+        {
+          "check": "data1/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 13.205555555555556,
+          "delta": 0.027777777777778567
+        },
+        {
+          "check": "data1/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 13.826624879396837,
+          "delta": 0.00884245561004704
+        },
+        {
+          "check": "data1/local_peak/own/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 23.118918918918922,
+          "delta": 1.4633633633633707
+        },
+        {
+          "check": "data1/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 32.992611785556356,
+          "delta": 2.3389370013191844
+        },
+        {
+          "check": "data1/paired_reference_H1_SNR",
+          "passed": false,
+          "before": 0,
+          "after": -0.03817444194877825,
+          "delta": -0.03817444194877825
+        },
+        {
+          "check": "at_least_one_frozen_meaningful_improvement",
+          "passed": false,
+          "improvements": []
+        }
+      ],
+      "checks": [
+        {
+          "check": "engineering_integrity_and_replay_QA",
+          "passed": true
+        },
+        {
+          "check": "ubfc/offline_ridge/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "ubfc/offline_ridge/own/MAE_bpm",
+          "passed": true,
+          "before": 2.5608837981643235,
+          "after": 2.5608837981643235,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/offline_ridge/common/MAE_bpm",
+          "passed": true,
+          "before": 2.5608837981643235,
+          "after": 2.5608837981643235,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/offline_ridge/own/RMSE_bpm",
+          "passed": true,
+          "before": 3.176009202248615,
+          "after": 3.176009202248615,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/offline_ridge/common/RMSE_bpm",
+          "passed": true,
+          "before": 3.176009202248615,
+          "after": 3.176009202248615,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/offline_ridge/R5",
+          "passed": true,
+          "before": 81.81818181818181,
+          "after": 81.81818181818181,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "ubfc/local_peak/own/MAE_bpm",
+          "passed": true,
+          "before": 2.765783131216183,
+          "after": 2.765783131216183,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/common/MAE_bpm",
+          "passed": true,
+          "before": 2.765783131216183,
+          "after": 2.765783131216183,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/own/RMSE_bpm",
+          "passed": true,
+          "before": 3.5002721919318986,
+          "after": 3.5002721919318986,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/common/RMSE_bpm",
+          "passed": true,
+          "before": 3.5002721919318986,
+          "after": 3.5002721919318986,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/local_peak/R5",
+          "passed": true,
+          "before": 70.45454545454545,
+          "after": 70.45454545454545,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/nonempty_paired_reference_H1_SNR",
+          "passed": true
+        },
+        {
+          "check": "ubfc/paired_reference_H1_SNR",
+          "passed": true,
+          "before": 0,
+          "after": 1.1210910672021512e-14,
+          "delta": 1.1210910672021512e-14
+        },
+        {
+          "check": "data1/offline_ridge/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "data1/offline_ridge/own/MAE_bpm",
+          "passed": true,
+          "before": 13.177777777777777,
+          "after": 13.097297297297297,
+          "delta": -0.08048048048047995
+        },
+        {
+          "check": "data1/offline_ridge/common/MAE_bpm",
+          "passed": false,
+          "before": 13.177777777777777,
+          "after": 13.205555555555556,
+          "delta": 0.027777777777778567
+        },
+        {
+          "check": "data1/offline_ridge/own/RMSE_bpm",
+          "passed": true,
+          "before": 13.81778242378679,
+          "after": 13.722106843200729,
+          "delta": -0.09567558058606096
+        },
+        {
+          "check": "data1/offline_ridge/common/RMSE_bpm",
+          "passed": false,
+          "before": 13.81778242378679,
+          "after": 13.826624879396837,
+          "delta": 0.00884245561004704
+        },
+        {
+          "check": "data1/offline_ridge/R5",
+          "passed": true,
+          "before": 0.0,
+          "after": 0.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/local_peak/nonempty_common",
+          "passed": true
+        },
+        {
+          "check": "data1/local_peak/own/MAE_bpm",
+          "passed": false,
+          "before": 21.65555555555555,
+          "after": 23.118918918918922,
+          "delta": 1.4633633633633707
+        },
+        {
+          "check": "data1/local_peak/common/MAE_bpm",
+          "passed": true,
+          "before": 21.65555555555555,
+          "after": 21.46111111111111,
+          "delta": -0.19444444444444287
+        },
+        {
+          "check": "data1/local_peak/own/RMSE_bpm",
+          "passed": false,
+          "before": 30.65367478423717,
+          "after": 32.992611785556356,
+          "delta": 2.3389370013191844
+        },
+        {
+          "check": "data1/local_peak/common/RMSE_bpm",
+          "passed": true,
+          "before": 30.65367478423717,
+          "after": 30.468161888911002,
+          "delta": -0.18551289532616977
+        },
+        {
+          "check": "data1/local_peak/R5",
+          "passed": true,
+          "before": 0.0,
+          "after": 0.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/nonempty_paired_reference_H1_SNR",
+          "passed": true
+        },
+        {
+          "check": "data1/paired_reference_H1_SNR",
+          "passed": false,
+          "before": 0,
+          "after": -0.03817444194877825,
+          "delta": -0.03817444194877825
+        },
+        {
+          "check": "user0904/HR_coverage",
+          "passed": true,
+          "before": 92.3076923076923,
+          "after": 92.3076923076923,
+          "delta": 0.0
+        },
+        {
+          "check": "user0904/finite_waveform_coverage",
+          "passed": true,
+          "before": 92.40246406570843,
+          "after": 92.40246406570843,
+          "delta": 0.0
+        },
+        {
+          "check": "user0904/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 1.999998,
+          "after": 1.999998,
+          "delta": 0.0
+        },
+        {
+          "check": "user0904/longest_waveform_missing_s",
+          "passed": true,
+          "before": 1.999998,
+          "after": 1.999998,
+          "delta": 0.0
+        },
+        {
+          "check": "user0907/HR_coverage",
+          "passed": true,
+          "before": 59.523809523809526,
+          "after": 59.523809523809526,
+          "delta": 0.0
+        },
+        {
+          "check": "user0907/finite_waveform_coverage",
+          "passed": true,
+          "before": 80.92485549132948,
+          "after": 80.92485549132948,
+          "delta": 0.0
+        },
+        {
+          "check": "user0907/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 6.999993,
+          "after": 6.999993,
+          "delta": 0.0
+        },
+        {
+          "check": "user0907/longest_waveform_missing_s",
+          "passed": true,
+          "before": 7.8999920999999995,
+          "after": 7.8999920999999995,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/HR_coverage",
+          "passed": true,
+          "before": 90.9090909090909,
+          "after": 90.9090909090909,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/finite_waveform_coverage",
+          "passed": true,
+          "before": 92.04912734324499,
+          "after": 92.04912734324499,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 1.9819501747294108,
+          "after": 1.9819501747294108,
+          "delta": 0.0
+        },
+        {
+          "check": "ubfc/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.2211510578864084,
+          "after": 2.2211510578864084,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/HR_coverage",
+          "passed": true,
+          "before": 99.28400954653938,
+          "after": 99.28400954653938,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/finite_waveform_coverage",
+          "passed": true,
+          "before": 99.09069713219864,
+          "after": 99.09069713219864,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 2.0020000000000002,
+          "after": 2.0020000000000002,
+          "delta": 0.0
+        },
+        {
+          "check": "kaggle_full/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.0020000000000002,
+          "after": 2.0020000000000002,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/HR_coverage",
+          "passed": true,
+          "before": 63.63636363636363,
+          "after": 63.63636363636363,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/finite_waveform_coverage",
+          "passed": true,
+          "before": 80.0,
+          "after": 80.0,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 2.0,
+          "after": 2.0,
+          "delta": 0.0
+        },
+        {
+          "check": "synthetic72/longest_waveform_missing_s",
+          "passed": true,
+          "before": 2.0,
+          "after": 2.0,
+          "delta": 0.0
+        },
+        {
+          "check": "data1/HR_coverage",
+          "passed": true,
+          "before": 85.71428571428571,
+          "after": 88.0952380952381,
+          "delta": 2.380952380952394
+        },
+        {
+          "check": "data1/finite_waveform_coverage",
+          "passed": true,
+          "before": 86.81672025723472,
+          "after": 88.7459807073955,
+          "delta": 1.9292604501607826
+        },
+        {
+          "check": "data1/longest_HR_rejection_grid_s",
+          "passed": true,
+          "before": 4.999995,
+          "after": 3.999996,
+          "delta": -0.9999990000000003
+        },
+        {
+          "check": "data1/longest_waveform_missing_s",
+          "passed": true,
+          "before": 4.999995,
+          "after": 3.999996,
+          "delta": -0.9999990000000003
+        },
+        {
+          "check": "synthetic72/offline_ridge/MAE_at_most_1bpm",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "check": "synthetic72/local_peak/MAE_at_most_1bpm",
+          "passed": true,
+          "value": 0.0
+        },
+        {
+          "check": "at_least_one_frozen_meaningful_improvement",
+          "passed": false,
+          "improvements": []
+        }
+      ],
+      "note": "Development/regression gate only. data1 timing is estimated. Evaluator does not install or switch defaults."
+    }
+  }
+}

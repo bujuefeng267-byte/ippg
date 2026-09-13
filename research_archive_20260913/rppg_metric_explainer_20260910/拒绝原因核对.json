@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "version": "V2.2 trimmed_gap15/user0907",
+  "raw_diagnostic_rows": 364,
+  "unique_window_channels": 252,
+  "channel_counts": {
+    "gap_or_filter_edge": 12,
+    "usable": 150,
+    "insufficient_observed_roi": 90
+  },
+  "waveform_proposal_counts": {
+    "insufficient_rois": 17,
+    "accepted_consensus": 18,
+    "ambiguous_consensus": 7
+  },
+  "insufficient_rois_window_breakdown": {
+    "gap_or_filter_edge": 2,
+    "insufficient_observed_roi": 15
+  },
+  "final_hr_counts": {
+    "gap_or_filter_edge": 9,
+    "candidate_only": 25,
+    "insufficient_observed_rgb": 8
+  },
+  "stages_are_not_additive": true,
+  "physical_cause_not_proven": true,
+  "source_hashes": {
+    "fusion_diagnostics.csv": "18b717e805e25ee737629c108be7b151ccf3f62ae1bc1f98da8fb520726eafde",
+    "fusion_proposals.csv": "eba7d242ab38585606b648733f52e7deca9e3c022471fd45d94787e3d75c72ae",
+    "fusion_heart_rate.csv": "4536adaa9c605831ef5f9a704591c05fb091879966746de829a1092be9105509"
+  }
+}

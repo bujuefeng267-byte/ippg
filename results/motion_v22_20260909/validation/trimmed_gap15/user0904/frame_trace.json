@@ -1,0 +1,17 @@
+{
+  "identity": {
+    "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+    "size": 834174464,
+    "mtime_ns": 1788510654695560400,
+    "max_seconds": null,
+    "rgb_aggregation": "trimmed_mean",
+    "frontend_hashes": {
+      "motion_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+      "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+    }
+  },
+  "fps": 30.00003000003,
+  "n_frames": 1461,
+  "trace_sha256": "e3608539a02ab602fe9c260c1080f40dde0322ff3f2dc9df4f03558cdfc7d58d"
+}

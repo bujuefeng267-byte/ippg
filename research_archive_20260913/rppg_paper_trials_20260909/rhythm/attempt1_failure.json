@@ -1,0 +1,11 @@
+{
+  "stage": "user0904 segment completion log, before any case output was saved",
+  "exception": "TypeError: Object of type int64 is not JSON serializable",
+  "cause": "numpy int64 frame count passed to json.dumps in progress log",
+  "fix": "cast progress log frame count to Python int",
+  "inference_math_changed": false,
+  "parameters_changed": false,
+  "reference_scores_examined": false,
+  "previous_protocol": "protocol_attempt1_failed_logging.json",
+  "saved_case_outputs": 0
+}

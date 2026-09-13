@@ -1,0 +1,202 @@
+{
+  "version": "multi_roi_v2.4_experimental",
+  "identity": {
+    "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+    "size": 834174464,
+    "mtime_ns": 1788510654695560400,
+    "max_seconds": null,
+    "rgb_aggregation": "trimmed_mean",
+    "pixel_mode": "tracking_screened",
+    "pixel_config": {
+      "max_points_per_roi": 100,
+      "patch_radius": 3,
+      "min_tracks": 12,
+      "fb_max_px": 0.5,
+      "screen_z": 3.0,
+      "screen_floor": 0.003,
+      "tracking_width": 960
+    },
+    "rgb_reconstruction": "anchored_log",
+    "anchor_config": {
+      "anchor_hz": 0.15,
+      "anchor_order": 4
+    },
+    "frontend_hashes": {
+      "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+      "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+      "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+      "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+      "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c"
+    }
+  },
+  "source_hashes": {
+    "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+  },
+  "fps": 30.00003000003,
+  "frames": 1461,
+  "effective_window_s": 9.99999,
+  "effective_step_s": 0.999999,
+  "requested_window_s": 10,
+  "nominal_reference_window_s": 10,
+  "reference_identity": null,
+  "observed_rgb_fraction": 1.0,
+  "roi_observed_fraction": {
+    "forehead": 1.0,
+    "left_cheek": 1.0,
+    "right_cheek": 1.0
+  },
+  "source_counts": {
+    "mesh": 1461
+  },
+  "config": {
+    "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+    "output": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/validation/guarded_fusion_gap15/user0904",
+    "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/validation/bounded_tracking_gap10/user0904/frame_trace.csv",
+    "geometry_cache": null,
+    "tracking_cache": null,
+    "algorithm_mode": "guarded_fusion",
+    "pixel_mode": "tracking_screened",
+    "rgb_aggregation": "trimmed_mean",
+    "max_seconds": null,
+    "max_gap": 0.15,
+    "window": 10,
+    "step": 1,
+    "min_bpm": 42,
+    "max_bpm": 210,
+    "reference_ubfc": null
+  },
+  "fusion_config": {
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "methods": [
+      "pos",
+      "chrom"
+    ],
+    "min_rois": 2,
+    "min_observed_fraction": 0.9,
+    "min_roi_quality": 0.2,
+    "min_signal_std": 1e-08,
+    "grid_step_bpm": 1.0,
+    "support_tolerance_bpm": 6.0,
+    "max_peaks_per_channel": 4,
+    "min_relative_power": 0.2,
+    "min_peak_concentration": 0.15,
+    "min_prominence_ratio": 0.08,
+    "single_method_factor": 0.65,
+    "min_consensus_quality": 0.2,
+    "ambiguity_ratio": 0.8,
+    "max_motion_penalty": 0.25,
+    "max_slew_bpm_per_s": 12.0,
+    "rejected_windows_to_reset": 2,
+    "min_waveform_correlation": 0.15,
+    "normalize_clip": 8.0,
+    "huber_delta": 2.5
+  },
+  "variants": {
+    "pos": {
+      "total_windows": 39,
+      "accepted_windows": 36,
+      "accepted_fraction": 0.9230769230769231,
+      "status_counts": {
+        "candidate_only": 36,
+        "gap_or_filter_edge": 3
+      },
+      "finite_waveform_fraction": 0.9342915811088296
+    },
+    "chrom": {
+      "total_windows": 39,
+      "accepted_windows": 35,
+      "accepted_fraction": 0.8974358974358975,
+      "status_counts": {
+        "candidate_only": 35,
+        "gap_or_filter_edge": 3,
+        "diffuse_spectrum": 1
+      },
+      "finite_waveform_fraction": 0.9342915811088296
+    },
+    "fusion": {
+      "total_windows": 39,
+      "accepted_windows": 36,
+      "accepted_fraction": 0.9230769230769231,
+      "status_counts": {
+        "candidate_only": 36,
+        "gap_or_filter_edge": 3
+      },
+      "finite_waveform_fraction": 0.9240246406570842,
+      "waveform_generated_windows": 36,
+      "waveform_generated_fraction": 0.9230769230769231,
+      "neighbor_covered_windows": 0,
+      "proposal_accepted_windows": 36,
+      "hr_tracker": "offline_DP_on_saved_fused_waveform"
+    }
+  },
+  "elapsed_processing_seconds": 1.7511117700014438,
+  "limitations": [
+    "Waveforms use offline zero-phase filtering and overlap fusion.",
+    "Final local/DP HR is estimated from the saved fused waveform; DP uses future windows.",
+    "Consensus frequencies are proposals only. Coverage is not accuracy.",
+    "Sampling provenance uses ALL observed and ANY interpolated actual contributors.",
+    "Provenance does not describe full upstream filter support or physiological morphology.",
+    "accepted and proposal quality_proxy are engineering decisions, not accuracy probabilities.",
+    "Reference data is used exclusively for post-hoc evaluation.",
+    "Candidate RGB is paired relative-color reconstruction, not raw RGB.",
+    "Slow anchoring bounds integration drift but admits some original motion at pulse frequencies.",
+    "Guard scores are relative engineering evidence, not calibrated accuracy probabilities.",
+    "Tracking fallback preserves baseline sampling availability; it does not establish pulse quality.",
+    "Coherent motion or lighting can survive screening and produce non-physiological spectral peaks."
+  ],
+  "pixel_config": {
+    "max_points_per_roi": 100,
+    "patch_radius": 3,
+    "min_tracks": 12,
+    "fb_max_px": 0.5,
+    "screen_z": 3.0,
+    "screen_floor": 0.003,
+    "tracking_width": 960
+  },
+  "anchor_config": {
+    "anchor_hz": 0.15,
+    "anchor_order": 4
+  },
+  "guard_config": {
+    "min_tracked_fraction": 0.6,
+    "max_reset_fraction": 0.05,
+    "switch_score_ratio": 1.15,
+    "max_branch_disagreement_bpm": 12.0
+  },
+  "branch_selection_counts": {
+    "baseline": 32,
+    "tracked": 4,
+    "none": 3
+  },
+  "extraction_path": "validated_V24_frontend_cache",
+  "opencv_threads": 2,
+  "pixel_diagnostics": {
+    "forehead": {
+      "tracked_ratio": 1460,
+      "baseline_reset": 1
+    },
+    "left_cheek": {
+      "tracked_ratio": 1460,
+      "baseline_reset": 1
+    },
+    "right_cheek": {
+      "tracked_ratio": 1460,
+      "baseline_reset": 1
+    }
+  }
+}

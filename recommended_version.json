@@ -1,0 +1,10 @@
+{
+  "version": "V28",
+  "selected_utc": "2026-09-12T14:41:29.234605+00:00",
+  "reason": "User requested returning to the higher-accuracy baseline after V29 coverage experiment.",
+  "launcher": "/home/fengbujue/项目/rppg识别/run_recommended.sh",
+  "launcher_sha256": "5149ac992735cdaefacc5ad54da218013426ff51c30a37801b70a4eb9eb410f8",
+  "target_launcher_sha256": "83b0e3f1c9dca9e224205d6a72c49fd280d3f41318ba378b87a039a56b5d8c09",
+  "inference_sha256": "52880bfc562ff0872c9f63da78fb5cef2b3c8d7ebf1f5a095675b7af8a9497c8",
+  "evaluation_sha256": "cfe07c42516e7d334ef1fcf06c7b56d25f2b244abd02d7e8bfeb0eb237fd1f1c"
+}

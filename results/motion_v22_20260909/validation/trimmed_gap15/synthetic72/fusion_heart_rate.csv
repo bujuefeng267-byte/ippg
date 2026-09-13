@@ -1,0 +1,12 @@
+time_s,observed_fraction,interpolated_fraction,spectral_peak_bpm,peak_concentration,accepted,status,ridge_bpm,raw_spectral_peak_bpm,window_start_s,window_end_s,proposal_accepted,proposal_status,consensus_bpm,proposal_roi_count,waveform_roi_count,waveform_generated,neighbor_covered,hr_source
+5.0,0.8,0.0,,,False,gap_or_filter_edge,,,0.0,10.0,False,insufficient_rois,,0,0,False,False,saved_fused_waveform_offline
+6.0,0.9,0.0,,,False,gap_or_filter_edge,,,1.0,11.0,False,insufficient_rois,,0,0,False,False,saved_fused_waveform_offline
+7.0,1.0,0.0,72.0,0.9073238369242832,True,candidate_only,72.0,72.0,2.0,12.0,True,accepted_consensus,72.0,3,3,True,False,saved_fused_waveform_offline
+8.0,1.0,0.0,72.0,0.9194876724797623,True,candidate_only,72.0,72.0,3.0,13.0,True,accepted_consensus,72.0,3,3,True,False,saved_fused_waveform_offline
+9.0,1.0,0.0,72.0,0.9335530380497505,True,candidate_only,72.0,72.0,4.0,14.0,True,accepted_consensus,72.0,3,3,True,False,saved_fused_waveform_offline
+10.0,1.0,0.0,72.0,0.941563288674418,True,candidate_only,72.0,72.0,5.0,15.0,True,accepted_consensus,72.0,3,3,True,False,saved_fused_waveform_offline
+11.0,1.0,0.0,72.0,0.9413638892059137,True,candidate_only,72.0,72.0,6.0,16.0,True,accepted_consensus,72.0,3,3,True,False,saved_fused_waveform_offline
+12.0,1.0,0.0,72.0,0.936087072576722,True,candidate_only,72.0,72.0,7.0,17.0,True,accepted_consensus,72.0,3,3,True,False,saved_fused_waveform_offline
+13.0,1.0,0.0,72.0,0.9274264840514828,True,candidate_only,72.0,72.0,8.0,18.0,True,accepted_consensus,72.0,3,3,True,False,saved_fused_waveform_offline
+14.0,0.9,0.0,,,False,gap_or_filter_edge,,,9.0,19.0,False,insufficient_rois,,0,0,False,False,saved_fused_waveform_offline
+15.0,0.8,0.0,,,False,gap_or_filter_edge,,,10.0,20.0,False,insufficient_rois,,0,0,False,False,saved_fused_waveform_offline

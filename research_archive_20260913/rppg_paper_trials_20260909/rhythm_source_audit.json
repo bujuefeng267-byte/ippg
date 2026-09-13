@@ -1,0 +1,282 @@
+{
+  "audited_date": "2026-09-09",
+  "scope": "Read-only official-source audit; no checkpoint downloaded, no package installed, no video inference performed by this audit.",
+  "repository": {
+    "url": "https://github.com/zizheng-guo/RhythmMamba",
+    "commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+    "licence": "MIT as displayed by official repository"
+  },
+  "selection": {
+    "status": "freeze_before_outcomes",
+    "rule": "Use exactly the pretrained file named by the authors' PURE-to-UBFC inference YAML. Do not compare checkpoints on the user's videos or UBFC to select one.",
+    "config": "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml",
+    "checkpoint": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+    "raw_url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/PreTrainedModels/PURE_cross_RhythmMamba.pth",
+    "bytes_from_git_tree": 20044634,
+    "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293",
+    "file_sha256": null,
+    "downloaded_by_this_audit": false,
+    "training_provenance_limit": "PURE training is asserted by the authors' config/file naming. This audit did not examine training logs or authenticate the original training run."
+  },
+  "author_environment": {
+    "python": "3.8",
+    "torch": "2.1.2",
+    "torchvision": "0.16.2",
+    "torchaudio": "2.1.2",
+    "pytorch_cuda": "12.1",
+    "timm": "0.9.16",
+    "einops": "0.7.0",
+    "causal_conv1d": "1.4.0",
+    "mamba_ssm": "2.2.2",
+    "timm_imports": [
+      "trunc_normal_",
+      "lecun_normal_",
+      "DropPath",
+      "to_2tuple"
+    ],
+    "timm_note": "to_2tuple is imported but not used in the inspected model.",
+    "sources": [
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup.sh#L1",
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/requirements.txt#L1"
+    ]
+  },
+  "preprocess": {
+    "decode": "OpenCV sequential frames to EOF, BGR to RGB; UBFC loader does not resample video or retain timestamps.",
+    "face_detector": "Repository Haar XML dataset/haarcascade_frontalface_default.xml, called directly with RGB first frame.",
+    "dynamic_detection": false,
+    "face_box_multiplier": 1.5,
+    "resize": {
+      "height": 128,
+      "width": 128,
+      "interpolation": "cv2.INTER_AREA",
+      "output_buffer_dtype": "float64"
+    },
+    "normalization": {
+      "order": "After cropping/resizing the complete video and before chunking; includes any eventual discarded tail.",
+      "input": "one scalar (video - np.mean(video)) / np.std(video), population SD ddof=0 across all T,H,W,C; np.isnan replaced by zero",
+      "not_per_channel_or_per_frame_or_per_clip": true
+    },
+    "clips": {
+      "frames": 160,
+      "stride_frames": 160,
+      "tail": "Dropped by floor(total_frames/160); preserve these original-frame positions as missing in exported project timelines.",
+      "input_layout": "[batch,time,channel,height,width] = [B,160,3,128,128]",
+      "dtype": "float32 after transpose"
+    },
+    "output": {
+      "shape": "[B,160] for the frozen 160-frame input",
+      "normalization": "Per-clip temporal mean subtraction and torch.std default sample SD (correction=1), then concatenate in numeric clip order.",
+      "constant_prediction": "Official code has no epsilon in output normalization; nonfinite output must be reported, not silently advertised as a valid pulse."
+    },
+    "source_locations": [
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/dataset/data_loader/UBFCrPPGLoader.py#L95",
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/dataset/data_loader/BaseLoader.py#L219",
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/dataset/data_loader/BaseLoader.py#L272",
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/dataset/data_loader/BaseLoader.py#L585",
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/neural_methods/trainer/RhythmMambaTrainer.py#L126"
+    ]
+  },
+  "model": {
+    "constructor": "RhythmMamba(depth=24, embed_dim=96, mlp_ratio=2, drop_rate=0., drop_path_rate=0.1, initializer_cfg=None, device=None, dtype=None, **kwargs)",
+    "forward": "RhythmMamba.forward(x[B,D,3,128,128]) -> rPPG[B,2*floor(D/2)]",
+    "frozen_D": 160,
+    "mamba_dimensions": {
+      "d_model": 96,
+      "d_state": 48,
+      "d_conv": 4,
+      "expand": 2,
+      "d_inner": 192,
+      "dt_rank": 6
+    },
+    "offline_reasons": [
+      "Full-video input normalization",
+      "Temporal stem uses up to two future frames",
+      "Each Frequencydomain_FFN FFT covers the complete clip representation",
+      "Chunkwise output normalization",
+      "Project DP scoring, if used, is separately offline"
+    ],
+    "preserve_exactly": [
+      "Frequency FFN einsum('bnc,cc->bnc') uses matrix diagonals, not a dense channel transform; do not silently fix it.",
+      "FFT inverse complex-to-float32 cast discards the imaginary component; preserve this behavior.",
+      "MTP uses four shifted/repeated groups and the author's segment accumulation, not four independent conventional chunks.",
+      "Temporal Conv3d stride two plus nearest upsample two; retain even 160-frame clips and original index mapping."
+    ],
+    "source": "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/neural_methods/model/RhythmMamba.py#L258"
+  },
+  "cuda_and_reference": {
+    "official_path": "mamba_inner_fn / selective_scan_fn use custom CUDA kernels. selective_scan_interface imports selective_scan_cuda unconditionally.",
+    "use_fast_path_false_alone_is_sufficient": false,
+    "torch_reference_function": "selective_scan_ref(u, delta, A, B, C, D=None, z=None, delta_bias=None, delta_softplus=False, return_last_state=False)",
+    "reference_source": "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup/mamba/mamba_ssm/ops/selective_scan_interface.py#L91",
+    "fallback_scope": "PyTorch CPU or GPU reference path is possible after explicit adapter/import changes; it is not the unmodified package path or the published speed benchmark.",
+    "changes_required": [
+      "Route scan to the original selective_scan_ref, keeping delta bias, softplus, B/C shapes, D skip, z SiLU, state reset and dtype handling.",
+      "Disable fused mamba path and causal_conv1d_fn; use the same nn.Conv1d depthwise causal crop [:seqlen] followed by SiLU.",
+      "Avoid importing unconditional CUDA extension modules merely to reach the reference function; use a separately audited adapter and preserve checkpoint key names/shapes.",
+      "Keep model.eval(), inference_mode, float32; batch-size reduction for memory is a documented execution adaptation."
+    ],
+    "static_equivalence": "For real A and B,C shaped [batch,state,time], the implementation computes s_t=exp(delta_t*A)*s_(t-1)+delta_t*B_t*u_t, then (sum(C_t*s_t)+D*u_t)*silu(z_t). Same mathematical recurrence as the official Mamba forward/step; floating-point and extension parity not measured here.",
+    "runtime_parity_verified": false,
+    "bundled_version_label": "1.2.0.post1",
+    "required_pip_version": "2.2.2",
+    "parity_source_checks": {
+      "Mamba_class_lines31_294_exact_match_to_upstream_v222": true,
+      "scan_interface_entire_file_exact_match_to_upstream_v222": true,
+      "scan_sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+      "differences": "Bundled wrapper imports triton.layernorm versus upstream triton.layer_norm, and contains an extra unused Block class."
+    },
+    "test_plan": [
+      "Use fixed random/zero/stress tensors at B=4,Dinner=192,L=80,Nstate=48, compare reference scan with available official CUDA scan and causal Conv1d branches.",
+      "Compare a complete 160-frame model pass with identical weights/input on fused vs reference paths. Record max/mean absolute and relative differences; do not choose a path by reference HR error.",
+      "If the CUDA extension is unavailable, explicitly mark kernel/full-model parity unverified even if independent recurrence tests pass."
+    ]
+  },
+  "checkpoint_loading": {
+    "author_code": "Trainer saves self.model.state_dict() under DataParallel and calls bare torch.load in test.",
+    "recommended": "Use an updated PyTorch version with explicit torch.load(path, map_location='cpu', weights_only=True). Require a string-to-tensor state dict, strip only a verified uniform module. prefix if using an unwrapped model, validate all expected keys and tensor shapes, then load_state_dict(..., strict=True). Record downloaded SHA256 and selected commit. Never silently retry weights_only=False or strict=False.",
+    "payload_structure_verified": false,
+    "security_note": "Author torch 2.1.2 is a historical reproducibility environment, not a current secure deserialization recommendation. Official advisory reports weights_only RCE through 2.5.1, patched in 2.6.0.",
+    "security_source": "https://github.com/pytorch/pytorch/security/advisories/GHSA-53q9-r3pm-6pq6",
+    "documentation": "https://docs.pytorch.org/docs/2.1/generated/torch.load.html"
+  },
+  "evaluation_differences": {
+    "author_nominal_fs": 30,
+    "author_default_window": "whole concatenated retained video; USE_SMALLER_WINDOW=False, so WINDOW_SIZE=10 is inactive",
+    "author_hr": "Detrend lambda100 + zero-phase 1st order .75–2.5Hz bandpass; get_hr Welch max within 45–150 bpm.",
+    "author_reference": "HR estimated from supplied PPG labels, not the stored UBFC device-HR row used by the project's existing evaluation.",
+    "author_snr": "H1 and H2 +/-0.1Hz versus remainder .75–2.5Hz, and uses 20log10(power ratio); numerically different from project reference-H1-only 10log10 SNR.",
+    "project_protocol": "Keep native video t=frame_index/actual_fps, retain missing dropped-tail indices, apply frozen project 10s/1s HR and H1 SNR evaluation separately after inference. Label these as common-protocol evaluation, not reproduction of published aggregate metrics.",
+    "source_locations": [
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml#L97",
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/evaluation/metrics.py#L45",
+      "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/evaluation/post_process.py#L105"
+    ]
+  },
+  "implementation_caveats": [
+    {
+      "file": "dataset/data_loader/BaseLoader.py",
+      "line": 288,
+      "issue": "No-face fallback returns [0,0,H,W] but subsequent crop interprets [x,y,width,height]; width/height are swapped for nonsquare images. Record fallback, and label any correction as a preprocessing adaptation."
+    },
+    {
+      "file": "dataset/data_loader/BaseLoader.py",
+      "line": 290,
+      "issue": "Multiple detections choose maximum width, although the message calls it the biggest face. Preserve exact author choice for the frozen reproduction."
+    },
+    {
+      "file": "evaluation/post_process.py",
+      "line": 11,
+      "issue": "nfft=1e5/sr is a float; modern SciPy compatibility may differ. The shared project evaluator can avoid this separate author-postprocessing issue without changing neural predictions."
+    }
+  ],
+  "source_content": {
+    "setup/mamba/mamba_ssm/modules/mamba_simple.py": "# Copyright (c) 2023, Tri Dao, Albert Gu.\n\nimport math\nfrom typing import Optional\n\nimport torch\nimport torch.nn as nn\nimport torch.nn.functional as F\nfrom torch import Tensor\n\nfrom einops import rearrange, repeat\n\nfrom mamba_ssm.ops.selective_scan_interface import selective_scan_fn, mamba_inner_fn\n\ntry:\n    from causal_conv1d import causal_conv1d_fn, causal_conv1d_update\nexcept ImportError:\n    causal_conv1d_fn, causal_conv1d_update = None, None\n\ntry:\n    from mamba_ssm.ops.triton.selective_state_update import selective_state_update\nexcept ImportError:\n    selective_state_update = None\n\ntry:\n    from mamba_ssm.ops.triton.layernorm import RMSNorm, layer_norm_fn, rms_norm_fn\nexcept ImportError:\n    RMSNorm, layer_norm_fn, rms_norm_fn = None, None, None\n\n\nclass Mamba(nn.Module):\n    def __init__(\n        self,\n        d_model,\n        d_state=16,\n        d_conv=4,\n        expand=2,\n        dt_rank=\"auto\",\n        dt_min=0.001,\n        dt_max=0.1,\n        dt_init=\"random\",\n        dt_scale=1.0,\n        dt_init_floor=1e-4,\n        conv_bias=True,\n        bias=False,\n        use_fast_path=True,  # Fused kernel options\n        layer_idx=None,\n        device=None,\n        dtype=None,\n    ):\n        factory_kwargs = {\"device\": device, \"dtype\": dtype}\n        super().__init__()\n        self.d_model = d_model\n        self.d_state = d_state\n        self.d_conv = d_conv\n        self.expand = expand\n        self.d_inner = int(self.expand * self.d_model)\n        self.dt_rank = math.ceil(self.d_model / 16) if dt_rank == \"auto\" else dt_rank\n        self.use_fast_path = use_fast_path\n        self.layer_idx = layer_idx\n\n        self.in_proj = nn.Linear(self.d_model, self.d_inner * 2, bias=bias, **factory_kwargs)\n\n        self.conv1d = nn.Conv1d(\n            in_channels=self.d_inner,\n            out_channels=self.d_inner,\n            bias=conv_bias,\n            kernel_size=d_conv,\n            groups=self.d_inner,\n            padding=d_conv - 1,\n            **factory_kwargs,\n        )\n\n        self.activation = \"silu\"\n        self.act = nn.SiLU()\n\n        self.x_proj = nn.Linear(\n            self.d_inner, self.dt_rank + self.d_state * 2, bias=False, **factory_kwargs\n        )\n        self.dt_proj = nn.Linear(self.dt_rank, self.d_inner, bias=True, **factory_kwargs)\n\n        # Initialize special dt projection to preserve variance at initialization\n        dt_init_std = self.dt_rank**-0.5 * dt_scale\n        if dt_init == \"constant\":\n            nn.init.constant_(self.dt_proj.weight, dt_init_std)\n        elif dt_init == \"random\":\n            nn.init.uniform_(self.dt_proj.weight, -dt_init_std, dt_init_std)\n        else:\n            raise NotImplementedError\n\n        # Initialize dt bias so that F.softplus(dt_bias) is between dt_min and dt_max\n        dt = torch.exp(\n            torch.rand(self.d_inner, **factory_kwargs) * (math.log(dt_max) - math.log(dt_min))\n            + math.log(dt_min)\n        ).clamp(min=dt_init_floor)\n        # Inverse of softplus: https://github.com/pytorch/pytorch/issues/72759\n        inv_dt = dt + torch.log(-torch.expm1(-dt))\n        with torch.no_grad():\n            self.dt_proj.bias.copy_(inv_dt)\n        # Our initialization would set all Linear.bias to zero, need to mark this one as _no_reinit\n        self.dt_proj.bias._no_reinit = True\n\n        # S4D real initialization\n        A = repeat(\n            torch.arange(1, self.d_state + 1, dtype=torch.float32, device=device),\n            \"n -> d n\",\n            d=self.d_inner,\n        ).contiguous()\n        A_log = torch.log(A)  # Keep A_log in fp32\n        self.A_log = nn.Parameter(A_log)\n        self.A_log._no_weight_decay = True\n\n        # D \"skip\" parameter\n        self.D = nn.Parameter(torch.ones(self.d_inner, device=device))  # Keep in fp32\n        self.D._no_weight_decay = True\n\n        self.out_proj = nn.Linear(self.d_inner, self.d_model, bias=bias, **factory_kwargs)\n\n    def forward(self, hidden_states, inference_params=None):\n        \"\"\"\n        hidden_states: (B, L, D)\n        Returns: same shape as hidden_states\n        \"\"\"\n        batch, seqlen, dim = hidden_states.shape\n\n        conv_state, ssm_state = None, None\n        if inference_params is not None:\n            conv_state, ssm_state = self._get_states_from_cache(inference_params, batch)\n            if inference_params.seqlen_offset > 0:\n                # The states are updated inplace\n                out, _, _ = self.step(hidden_states, conv_state, ssm_state)\n                return out\n\n        # We do matmul and transpose BLH -> HBL at the same time\n        xz = rearrange(\n            self.in_proj.weight @ rearrange(hidden_states, \"b l d -> d (b l)\"),\n            \"d (b l) -> b d l\",\n            l=seqlen,\n        )\n        if self.in_proj.bias is not None:\n            xz = xz + rearrange(self.in_proj.bias.to(dtype=xz.dtype), \"d -> d 1\")\n\n        A = -torch.exp(self.A_log.float())  # (d_inner, d_state)\n        # In the backward pass we write dx and dz next to each other to avoid torch.cat\n        if self.use_fast_path and causal_conv1d_fn is not None and inference_params is None:  # Doesn't support outputting the states\n            out = mamba_inner_fn(\n                xz,\n                self.conv1d.weight,\n                self.conv1d.bias,\n                self.x_proj.weight,\n                self.dt_proj.weight,\n                self.out_proj.weight,\n                self.out_proj.bias,\n                A,\n                None,  # input-dependent B\n                None,  # input-dependent C\n                self.D.float(),\n                delta_bias=self.dt_proj.bias.float(),\n                delta_softplus=True,\n            )\n        else:\n            x, z = xz.chunk(2, dim=1)\n            # Compute short convolution\n            if conv_state is not None:\n                # If we just take x[:, :, -self.d_conv :], it will error if seqlen < self.d_conv\n                # Instead F.pad will pad with zeros if seqlen < self.d_conv, and truncate otherwise.\n                conv_state.copy_(F.pad(x, (self.d_conv - x.shape[-1], 0)))  # Update state (B D W)\n            if causal_conv1d_fn is None:\n                x = self.act(self.conv1d(x)[..., :seqlen])\n            else:\n                assert self.activation in [\"silu\", \"swish\"]\n                x = causal_conv1d_fn(\n                    x=x,\n                    weight=rearrange(self.conv1d.weight, \"d 1 w -> d w\"),\n                    bias=self.conv1d.bias,\n                    activation=self.activation,\n                )\n\n            # We're careful here about the layout, to avoid extra transposes.\n            # We want dt to have d as the slowest moving dimension\n            # and L as the fastest moving dimension, since those are what the ssm_scan kernel expects.\n            x_dbl = self.x_proj(rearrange(x, \"b d l -> (b l) d\"))  # (bl d)\n            dt, B, C = torch.split(x_dbl, [self.dt_rank, self.d_state, self.d_state], dim=-1)\n            dt = self.dt_proj.weight @ dt.t()\n            dt = rearrange(dt, \"d (b l) -> b d l\", l=seqlen)\n            B = rearrange(B, \"(b l) dstate -> b dstate l\", l=seqlen).contiguous()\n            C = rearrange(C, \"(b l) dstate -> b dstate l\", l=seqlen).contiguous()\n            assert self.activation in [\"silu\", \"swish\"]\n            y = selective_scan_fn(\n                x,\n                dt,\n                A,\n                B,\n                C,\n                self.D.float(),\n                z=z,\n                delta_bias=self.dt_proj.bias.float(),\n                delta_softplus=True,\n                return_last_state=ssm_state is not None,\n            )\n            if ssm_state is not None:\n                y, last_state = y\n                ssm_state.copy_(last_state)\n            y = rearrange(y, \"b d l -> b l d\")\n            out = self.out_proj(y)\n        return out\n\n    def step(self, hidden_states, conv_state, ssm_state):\n        dtype = hidden_states.dtype\n        assert hidden_states.shape[1] == 1, \"Only support decoding with 1 token at a time for now\"\n        xz = self.in_proj(hidden_states.squeeze(1))  # (B 2D)\n        x, z = xz.chunk(2, dim=-1)  # (B D)\n\n        # Conv step\n        if causal_conv1d_update is None:\n            conv_state.copy_(torch.roll(conv_state, shifts=-1, dims=-1))  # Update state (B D W)\n            conv_state[:, :, -1] = x\n            x = torch.sum(conv_state * rearrange(self.conv1d.weight, \"d 1 w -> d w\"), dim=-1)  # (B D)\n            if self.conv1d.bias is not None:\n                x = x + self.conv1d.bias\n            x = self.act(x).to(dtype=dtype)\n        else:\n            x = causal_conv1d_update(\n                x,\n                conv_state,\n                rearrange(self.conv1d.weight, \"d 1 w -> d w\"),\n                self.conv1d.bias,\n                self.activation,\n            )\n\n        x_db = self.x_proj(x)  # (B dt_rank+2*d_state)\n        dt, B, C = torch.split(x_db, [self.dt_rank, self.d_state, self.d_state], dim=-1)\n        # Don't add dt_bias here\n        dt = F.linear(dt, self.dt_proj.weight)  # (B d_inner)\n        A = -torch.exp(self.A_log.float())  # (d_inner, d_state)\n\n        # SSM step\n        if selective_state_update is None:\n            # Discretize A and B\n            dt = F.softplus(dt + self.dt_proj.bias.to(dtype=dt.dtype))\n            dA = torch.exp(torch.einsum(\"bd,dn->bdn\", dt, A))\n            dB = torch.einsum(\"bd,bn->bdn\", dt, B)\n            ssm_state.copy_(ssm_state * dA + rearrange(x, \"b d -> b d 1\") * dB)\n            y = torch.einsum(\"bdn,bn->bd\", ssm_state.to(dtype), C)\n            y = y + self.D.to(dtype) * x\n            y = y * self.act(z)  # (B D)\n        else:\n            y = selective_state_update(\n                ssm_state, x, dt, A, B, C, self.D, z=z, dt_bias=self.dt_proj.bias, dt_softplus=True\n            )\n\n        out = self.out_proj(y)\n        return out.unsqueeze(1), conv_state, ssm_state\n\n    def allocate_inference_cache(self, batch_size, max_seqlen, dtype=None, **kwargs):\n        device = self.out_proj.weight.device\n        conv_dtype = self.conv1d.weight.dtype if dtype is None else dtype\n        conv_state = torch.zeros(\n            batch_size, self.d_model * self.expand, self.d_conv, device=device, dtype=conv_dtype\n        )\n        ssm_dtype = self.dt_proj.weight.dtype if dtype is None else dtype\n        # ssm_dtype = torch.float32\n        ssm_state = torch.zeros(\n            batch_size, self.d_model * self.expand, self.d_state, device=device, dtype=ssm_dtype\n        )\n        return conv_state, ssm_state\n\n    def _get_states_from_cache(self, inference_params, batch_size, initialize_states=False):\n        assert self.layer_idx is not None\n        if self.layer_idx not in inference_params.key_value_memory_dict:\n            batch_shape = (batch_size,)\n            conv_state = torch.zeros(\n                batch_size,\n                self.d_model * self.expand,\n                self.d_conv,\n                device=self.conv1d.weight.device,\n                dtype=self.conv1d.weight.dtype,\n            )\n            ssm_state = torch.zeros(\n                batch_size,\n                self.d_model * self.expand,\n                self.d_state,\n                device=self.dt_proj.weight.device,\n                dtype=self.dt_proj.weight.dtype,\n                # dtype=torch.float32,\n            )\n            inference_params.key_value_memory_dict[self.layer_idx] = (conv_state, ssm_state)\n        else:\n            conv_state, ssm_state = inference_params.key_value_memory_dict[self.layer_idx]\n            # TODO: What if batch size changes between generation, and we reuse the same states?\n            if initialize_states:\n                conv_state.zero_()\n                ssm_state.zero_()\n        return conv_state, ssm_state\n\n\nclass Block(nn.Module):\n    def __init__(\n        self, dim, mixer_cls, norm_cls=nn.LayerNorm, fused_add_norm=False, residual_in_fp32=False\n    ):\n        \"\"\"\n        Simple block wrapping a mixer class with LayerNorm/RMSNorm and residual connection\"\n\n        This Block has a slightly different structure compared to a regular\n        prenorm Transformer block.\n        The standard block is: LN -> MHA/MLP -> Add.\n        [Ref: https://arxiv.org/abs/2002.04745]\n        Here we have: Add -> LN -> Mixer, returning both\n        the hidden_states (output of the mixer) and the residual.\n        This is purely for performance reasons, as we can fuse add and LayerNorm.\n        The residual needs to be provided (except for the very first block).\n        \"\"\"\n        super().__init__()\n        self.residual_in_fp32 = residual_in_fp32\n        self.fused_add_norm = fused_add_norm\n        self.mixer = mixer_cls(dim)\n        self.norm = norm_cls(dim)\n        if self.fused_add_norm:\n            assert RMSNorm is not None, \"RMSNorm import fails\"\n            assert isinstance(\n                self.norm, (nn.LayerNorm, RMSNorm)\n            ), \"Only LayerNorm and RMSNorm are supported for fused_add_norm\"\n\n    def forward(\n        self, hidden_states: Tensor, residual: Optional[Tensor] = None, inference_params=None\n    ):\n        r\"\"\"Pass the input through the encoder layer.\n\n        Args:\n            hidden_states: the sequence to the encoder layer (required).\n            residual: hidden_states = Mixer(LN(residual))\n        \"\"\"\n        if not self.fused_add_norm:\n            residual = (hidden_states + residual) if residual is not None else hidden_states\n            hidden_states = self.norm(residual.to(dtype=self.norm.weight.dtype))\n            if self.residual_in_fp32:\n                residual = residual.to(torch.float32)\n        else:\n            fused_add_norm_fn = rms_norm_fn if isinstance(self.norm, RMSNorm) else layer_norm_fn\n            hidden_states, residual = fused_add_norm_fn(\n                hidden_states,\n                self.norm.weight,\n                self.norm.bias,\n                residual=residual,\n                prenorm=True,\n                residual_in_fp32=self.residual_in_fp32,\n                eps=self.norm.eps,\n            )\n        hidden_states = self.mixer(hidden_states, inference_params=inference_params)\n        return hidden_states, residual\n\n    def allocate_inference_cache(self, batch_size, max_seqlen, dtype=None, **kwargs):\n        return self.mixer.allocate_inference_cache(batch_size, max_seqlen, dtype=dtype, **kwargs)\n",
+    "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": "# Copyright (c) 2023, Tri Dao, Albert Gu.\n\nimport torch\nimport torch.nn.functional as F\nfrom torch.cuda.amp import custom_bwd, custom_fwd\n\nfrom einops import rearrange, repeat\n\ntry:\n    from causal_conv1d import causal_conv1d_fn\n    import causal_conv1d_cuda\nexcept ImportError:\n    causal_conv1d_fn = None\n    causal_conv1d_cuda = None\n\nimport selective_scan_cuda\n\n\nclass SelectiveScanFn(torch.autograd.Function):\n\n    @staticmethod\n    def forward(ctx, u, delta, A, B, C, D=None, z=None, delta_bias=None, delta_softplus=False,\n                return_last_state=False):\n        if u.stride(-1) != 1:\n            u = u.contiguous()\n        if delta.stride(-1) != 1:\n            delta = delta.contiguous()\n        if D is not None:\n            D = D.contiguous()\n        if B.stride(-1) != 1:\n            B = B.contiguous()\n        if C.stride(-1) != 1:\n            C = C.contiguous()\n        if z is not None and z.stride(-1) != 1:\n            z = z.contiguous()\n        if B.dim() == 3:\n            B = rearrange(B, \"b dstate l -> b 1 dstate l\")\n            ctx.squeeze_B = True\n        if C.dim() == 3:\n            C = rearrange(C, \"b dstate l -> b 1 dstate l\")\n            ctx.squeeze_C = True\n        out, x, *rest = selective_scan_cuda.fwd(u, delta, A, B, C, D, z, delta_bias, delta_softplus)\n        ctx.delta_softplus = delta_softplus\n        ctx.has_z = z is not None\n        last_state = x[:, :, -1, 1::2]  # (batch, dim, dstate)\n        if not ctx.has_z:\n            ctx.save_for_backward(u, delta, A, B, C, D, delta_bias, x)\n            return out if not return_last_state else (out, last_state)\n        else:\n            ctx.save_for_backward(u, delta, A, B, C, D, z, delta_bias, x, out)\n            out_z = rest[0]\n            return out_z if not return_last_state else (out_z, last_state)\n\n    @staticmethod\n    def backward(ctx, dout, *args):\n        if not ctx.has_z:\n            u, delta, A, B, C, D, delta_bias, x = ctx.saved_tensors\n            z = None\n            out = None\n        else:\n            u, delta, A, B, C, D, z, delta_bias, x, out = ctx.saved_tensors\n        if dout.stride(-1) != 1:\n            dout = dout.contiguous()\n        # The kernel supports passing in a pre-allocated dz (e.g., in case we want to fuse the\n        # backward of selective_scan_cuda with the backward of chunk).\n        # Here we just pass in None and dz will be allocated in the C++ code.\n        du, ddelta, dA, dB, dC, dD, ddelta_bias, *rest = selective_scan_cuda.bwd(\n            u, delta, A, B, C, D, z, delta_bias, dout, x, out, None, ctx.delta_softplus,\n            False  # option to recompute out_z, not used here\n        )\n        dz = rest[0] if ctx.has_z else None\n        dB = dB.squeeze(1) if getattr(ctx, \"squeeze_B\", False) else dB\n        dC = dC.squeeze(1) if getattr(ctx, \"squeeze_C\", False) else dC\n        return (du, ddelta, dA, dB, dC,\n                dD if D is not None else None,\n                dz,\n                ddelta_bias if delta_bias is not None else None,\n                None,\n                None)\n\n\ndef selective_scan_fn(u, delta, A, B, C, D=None, z=None, delta_bias=None, delta_softplus=False,\n                     return_last_state=False):\n    \"\"\"if return_last_state is True, returns (out, last_state)\n    last_state has shape (batch, dim, dstate). Note that the gradient of the last state is\n    not considered in the backward pass.\n    \"\"\"\n    return SelectiveScanFn.apply(u, delta, A, B, C, D, z, delta_bias, delta_softplus, return_last_state)\n\n\ndef selective_scan_ref(u, delta, A, B, C, D=None, z=None, delta_bias=None, delta_softplus=False,\n                      return_last_state=False):\n    \"\"\"\n    u: r(B D L)\n    delta: r(B D L)\n    A: c(D N) or r(D N)\n    B: c(D N) or r(B N L) or r(B N 2L) or r(B G N L) or (B G N L)\n    C: c(D N) or r(B N L) or r(B N 2L) or r(B G N L) or (B G N L)\n    D: r(D)\n    z: r(B D L)\n    delta_bias: r(D), fp32\n\n    out: r(B D L)\n    last_state (optional): r(B D dstate) or c(B D dstate)\n    \"\"\"\n    dtype_in = u.dtype\n    u = u.float()\n    delta = delta.float()\n    if delta_bias is not None:\n        delta = delta + delta_bias[..., None].float()\n    if delta_softplus:\n        delta = F.softplus(delta)\n    batch, dim, dstate = u.shape[0], A.shape[0], A.shape[1]\n    is_variable_B = B.dim() >= 3\n    is_variable_C = C.dim() >= 3\n    if A.is_complex():\n        if is_variable_B:\n            B = torch.view_as_complex(rearrange(B.float(), \"... (L two) -> ... L two\", two=2))\n        if is_variable_C:\n            C = torch.view_as_complex(rearrange(C.float(), \"... (L two) -> ... L two\", two=2))\n    else:\n        B = B.float()\n        C = C.float()\n    x = A.new_zeros((batch, dim, dstate))\n    ys = []\n    deltaA = torch.exp(torch.einsum('bdl,dn->bdln', delta, A))\n    if not is_variable_B:\n        deltaB_u = torch.einsum('bdl,dn,bdl->bdln', delta, B, u)\n    else:\n        if B.dim() == 3:\n            deltaB_u = torch.einsum('bdl,bnl,bdl->bdln', delta, B, u)\n        else:\n            B = repeat(B, \"B G N L -> B (G H) N L\", H=dim // B.shape[1])\n            deltaB_u = torch.einsum('bdl,bdnl,bdl->bdln', delta, B, u)\n    if is_variable_C and C.dim() == 4:\n        C = repeat(C, \"B G N L -> B (G H) N L\", H=dim // C.shape[1])\n    last_state = None\n    for i in range(u.shape[2]):\n        x = deltaA[:, :, i] * x + deltaB_u[:, :, i]\n        if not is_variable_C:\n            y = torch.einsum('bdn,dn->bd', x, C)\n        else:\n            if C.dim() == 3:\n                y = torch.einsum('bdn,bn->bd', x, C[:, :, i])\n            else:\n                y = torch.einsum('bdn,bdn->bd', x, C[:, :, :, i])\n        if i == u.shape[2] - 1:\n            last_state = x\n        if y.is_complex():\n            y = y.real * 2\n        ys.append(y)\n    y = torch.stack(ys, dim=2) # (batch dim L)\n    out = y if D is None else y + u * rearrange(D, \"d -> d 1\")\n    if z is not None:\n        out = out * F.silu(z)\n    out = out.to(dtype=dtype_in)\n    return out if not return_last_state else (out, last_state)\n\n\nclass MambaInnerFn(torch.autograd.Function):\n\n    @staticmethod\n    @custom_fwd\n    def forward(ctx, xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,\n                out_proj_weight, out_proj_bias,\n                A, B=None, C=None, D=None, delta_bias=None, B_proj_bias=None,\n                C_proj_bias=None, delta_softplus=True, checkpoint_lvl=1):\n        \"\"\"\n             xz: (batch, dim, seqlen)\n        \"\"\"\n        assert causal_conv1d_cuda is not None, \"causal_conv1d_cuda is not available. Please install causal-conv1d.\"\n        assert checkpoint_lvl in [0, 1]\n        L = xz.shape[-1]\n        delta_rank = delta_proj_weight.shape[1]\n        d_state = A.shape[-1] * (1 if not A.is_complex() else 2)\n        if torch.is_autocast_enabled():\n            x_proj_weight = x_proj_weight.to(dtype=torch.get_autocast_gpu_dtype())\n            delta_proj_weight = delta_proj_weight.to(dtype=torch.get_autocast_gpu_dtype())\n            out_proj_weight = out_proj_weight.to(dtype=torch.get_autocast_gpu_dtype())\n            out_proj_bias = (out_proj_bias.to(dtype=torch.get_autocast_gpu_dtype())\n                             if out_proj_bias is not None else None)\n        if xz.stride(-1) != 1:\n            xz = xz.contiguous()\n        conv1d_weight = rearrange(conv1d_weight, \"d 1 w -> d w\")\n        x, z = xz.chunk(2, dim=1)\n        conv1d_bias = conv1d_bias.contiguous() if conv1d_bias is not None else None\n        conv1d_out = causal_conv1d_cuda.causal_conv1d_fwd(\n            x, conv1d_weight, conv1d_bias, None, None, None, True\n        )\n        # We're being very careful here about the layout, to avoid extra transposes.\n        # We want delta to have d as the slowest moving dimension\n        # and L as the fastest moving dimension, since those are what the ssm_scan kernel expects.\n        x_dbl = F.linear(rearrange(conv1d_out, 'b d l -> (b l) d'), x_proj_weight)  # (bl d)\n        delta = rearrange(delta_proj_weight @ x_dbl[:, :delta_rank].t(), \"d (b l) -> b d l\", l = L)\n        ctx.is_variable_B = B is None\n        ctx.is_variable_C = C is None\n        ctx.B_proj_bias_is_None = B_proj_bias is None\n        ctx.C_proj_bias_is_None = C_proj_bias is None\n        if B is None:  # variable B\n            B = x_dbl[:, delta_rank:delta_rank + d_state]  # (bl dstate)\n            if B_proj_bias is not None:\n                B = B + B_proj_bias.to(dtype=B.dtype)\n            if not A.is_complex():\n                # B = rearrange(B, \"(b l) dstate -> b dstate l\", l=L).contiguous()\n                B = rearrange(B, \"(b l) dstate -> b 1 dstate l\", l=L).contiguous()\n            else:\n                B = rearrange(B, \"(b l) (dstate two) -> b 1 dstate (l two)\", l=L, two=2).contiguous()\n        else:\n            if B.stride(-1) != 1:\n                B = B.contiguous()\n        if C is None:  # variable C\n            C = x_dbl[:, -d_state:]  # (bl dstate)\n            if C_proj_bias is not None:\n                C = C + C_proj_bias.to(dtype=C.dtype)\n            if not A.is_complex():\n                # C = rearrange(C, \"(b l) dstate -> b dstate l\", l=L).contiguous()\n                C = rearrange(C, \"(b l) dstate -> b 1 dstate l\", l=L).contiguous()\n            else:\n                C = rearrange(C, \"(b l) (dstate two) -> b 1 dstate (l two)\", l=L, two=2).contiguous()\n        else:\n            if C.stride(-1) != 1:\n                C = C.contiguous()\n        if D is not None:\n            D = D.contiguous()\n        out, scan_intermediates, out_z = selective_scan_cuda.fwd(\n            conv1d_out, delta, A, B, C, D, z, delta_bias, delta_softplus\n        )\n        ctx.delta_softplus = delta_softplus\n        ctx.out_proj_bias_is_None = out_proj_bias is None\n        ctx.checkpoint_lvl = checkpoint_lvl\n        if checkpoint_lvl >= 1:  # Will recompute conv1d_out and delta in the backward pass\n            conv1d_out, delta = None, None\n        ctx.save_for_backward(xz, conv1d_weight, conv1d_bias, x_dbl, x_proj_weight,\n                              delta_proj_weight, out_proj_weight, conv1d_out, delta,\n                              A, B, C, D, delta_bias, scan_intermediates, out)\n        return F.linear(rearrange(out_z, \"b d l -> b l d\"), out_proj_weight, out_proj_bias)\n\n    @staticmethod\n    @custom_bwd\n    def backward(ctx, dout):\n        # dout: (batch, seqlen, dim)\n        assert causal_conv1d_cuda is not None, \"causal_conv1d_cuda is not available. Please install causal-conv1d.\"\n        (xz, conv1d_weight, conv1d_bias, x_dbl, x_proj_weight, delta_proj_weight, out_proj_weight,\n         conv1d_out, delta, A, B, C, D, delta_bias, scan_intermediates, out) = ctx.saved_tensors\n        L = xz.shape[-1]\n        delta_rank = delta_proj_weight.shape[1]\n        d_state = A.shape[-1] * (1 if not A.is_complex() else 2)\n        x, z = xz.chunk(2, dim=1)\n        if dout.stride(-1) != 1:\n            dout = dout.contiguous()\n        if ctx.checkpoint_lvl == 1:\n            conv1d_out = causal_conv1d_cuda.causal_conv1d_fwd(\n                x, conv1d_weight, conv1d_bias, None, None, None, True\n            )\n            delta = rearrange(delta_proj_weight @ x_dbl[:, :delta_rank].t(),\n                              \"d (b l) -> b d l\", l = L)\n        # The kernel supports passing in a pre-allocated dz (e.g., in case we want to fuse the\n        # backward of selective_scan_cuda with the backward of chunk).\n        dxz = torch.empty_like(xz)  # (batch, dim, seqlen)\n        dx, dz = dxz.chunk(2, dim=1)\n        dout = rearrange(dout, \"b l e -> e (b l)\")\n        dout_y = rearrange(out_proj_weight.t() @ dout, \"d (b l) -> b d l\", l=L)\n        dconv1d_out, ddelta, dA, dB, dC, dD, ddelta_bias, dz, out_z = selective_scan_cuda.bwd(\n            conv1d_out, delta, A, B, C, D, z, delta_bias, dout_y, scan_intermediates, out, dz,\n            ctx.delta_softplus,\n            True  # option to recompute out_z\n        )\n        dout_proj_weight = torch.einsum(\"eB,dB->ed\", dout, rearrange(out_z, \"b d l -> d (b l)\"))\n        dout_proj_bias = dout.sum(dim=(0, 1)) if not ctx.out_proj_bias_is_None else None\n        dD = dD if D is not None else None\n        dx_dbl = torch.empty_like(x_dbl)\n        dB_proj_bias = None\n        if ctx.is_variable_B:\n            if not A.is_complex():\n                dB = rearrange(dB, \"b 1 dstate l -> (b l) dstate\").contiguous()\n            else:\n                dB = rearrange(dB, \"b 1 dstate (l two) -> (b l) (dstate two)\", two=2).contiguous()\n            dB_proj_bias = dB.sum(0) if not ctx.B_proj_bias_is_None else None\n            dx_dbl[:, delta_rank:delta_rank + d_state] = dB  # (bl d)\n            dB = None\n        dC_proj_bias = None\n        if ctx.is_variable_C:\n            if not A.is_complex():\n                dC = rearrange(dC, \"b 1 dstate l -> (b l) dstate\").contiguous()\n            else:\n                dC = rearrange(dC, \"b 1 dstate (l two) -> (b l) (dstate two)\", two=2).contiguous()\n            dC_proj_bias = dC.sum(0) if not ctx.C_proj_bias_is_None else None\n            dx_dbl[:, -d_state:] = dC  # (bl d)\n            dC = None\n        ddelta = rearrange(ddelta, \"b d l -> d (b l)\")\n        ddelta_proj_weight = torch.einsum(\"dB,Br->dr\", ddelta, x_dbl[:, :delta_rank])\n        dx_dbl[:, :delta_rank] = torch.einsum(\"dB,dr->Br\", ddelta, delta_proj_weight)\n        dconv1d_out = rearrange(dconv1d_out, \"b d l -> d (b l)\")\n        dx_proj_weight = torch.einsum(\"Br,Bd->rd\", dx_dbl, rearrange(conv1d_out, \"b d l -> (b l) d\"))\n        dconv1d_out = torch.addmm(dconv1d_out, x_proj_weight.t(), dx_dbl.t(), out=dconv1d_out)\n        dconv1d_out = rearrange(dconv1d_out, \"d (b l) -> b d l\", b=x.shape[0], l=x.shape[-1])\n        # The kernel supports passing in a pre-allocated dx (e.g., in case we want to fuse the\n        # backward of conv1d with the backward of chunk).\n        dx, dconv1d_weight, dconv1d_bias, *_ = causal_conv1d_cuda.causal_conv1d_bwd(\n            x, conv1d_weight, conv1d_bias, dconv1d_out, None, None, None, dx, False, True\n        )\n        dconv1d_bias = dconv1d_bias if conv1d_bias is not None else None\n        dconv1d_weight = rearrange(dconv1d_weight, \"d w -> d 1 w\")\n        return (dxz, dconv1d_weight, dconv1d_bias, dx_proj_weight, ddelta_proj_weight,\n                dout_proj_weight, dout_proj_bias,\n                dA, dB, dC, dD,\n                ddelta_bias if delta_bias is not None else None,\n                dB_proj_bias, dC_proj_bias, None)\n\n\ndef mamba_inner_fn(\n    xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,\n    out_proj_weight, out_proj_bias,\n    A, B=None, C=None, D=None, delta_bias=None, B_proj_bias=None,\n    C_proj_bias=None, delta_softplus=True\n):\n    return MambaInnerFn.apply(xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,\n                              out_proj_weight, out_proj_bias,\n                              A, B, C, D, delta_bias, B_proj_bias, C_proj_bias, delta_softplus)\n\n\ndef mamba_inner_ref(\n    xz, conv1d_weight, conv1d_bias, x_proj_weight, delta_proj_weight,\n    out_proj_weight, out_proj_bias,\n    A, B=None, C=None, D=None, delta_bias=None, B_proj_bias=None,\n    C_proj_bias=None, delta_softplus=True\n):\n    assert causal_conv1d_fn is not None, \"causal_conv1d_fn is not available. Please install causal-conv1d.\"\n    L = xz.shape[-1]\n    delta_rank = delta_proj_weight.shape[1]\n    d_state = A.shape[-1] * (1 if not A.is_complex() else 2)\n    x, z = xz.chunk(2, dim=1)\n    x = causal_conv1d_fn(x, rearrange(conv1d_weight, \"d 1 w -> d w\"), conv1d_bias, activation=\"silu\")\n    # We're being very careful here about the layout, to avoid extra transposes.\n    # We want delta to have d as the slowest moving dimension\n    # and L as the fastest moving dimension, since those are what the ssm_scan kernel expects.\n    x_dbl = F.linear(rearrange(x, 'b d l -> (b l) d'), x_proj_weight)  # (bl d)\n    delta = delta_proj_weight @ x_dbl[:, :delta_rank].t()\n    delta = rearrange(delta, \"d (b l) -> b d l\", l=L)\n    if B is None:  # variable B\n        B = x_dbl[:, delta_rank:delta_rank + d_state]  # (bl d)\n        if B_proj_bias is not None:\n            B = B + B_proj_bias.to(dtype=B.dtype)\n        if not A.is_complex():\n            B = rearrange(B, \"(b l) dstate -> b dstate l\", l=L).contiguous()\n        else:\n            B = rearrange(B, \"(b l) (dstate two) -> b dstate (l two)\", l=L, two=2).contiguous()\n    if C is None:  # variable B\n        C = x_dbl[:, -d_state:]  # (bl d)\n        if C_proj_bias is not None:\n            C = C + C_proj_bias.to(dtype=C.dtype)\n        if not A.is_complex():\n            C = rearrange(C, \"(b l) dstate -> b dstate l\", l=L).contiguous()\n        else:\n            C = rearrange(C, \"(b l) (dstate two) -> b dstate (l two)\", l=L, two=2).contiguous()\n    y = selective_scan_fn(x, delta, A, B, C, D, z=z, delta_bias=delta_bias, delta_softplus=True)\n    return F.linear(rearrange(y, \"b d l -> b l d\"), out_proj_weight, out_proj_bias)\n"
+  },
+  "source_manifest": [
+    {
+      "path": "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml",
+      "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+      "lines": 105
+    },
+    {
+      "path": "configs/train_configs/cross/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/configs/train_configs/cross/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml",
+      "sha256": "a36e237170044882b395f5e73a20c06ea7744c7f7ff57097b2f2a1ad3ef5a464",
+      "lines": 106
+    },
+    {
+      "path": "neural_methods/model/RhythmMamba.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/neural_methods/model/RhythmMamba.py",
+      "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "lines": 330
+    },
+    {
+      "path": "neural_methods/trainer/RhythmMambaTrainer.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/neural_methods/trainer/RhythmMambaTrainer.py",
+      "sha256": "cc25a1469497f4c9a21ef4d91b7a70d5e3e034c4facc368c83b1bfa401989a5a",
+      "lines": 226
+    },
+    {
+      "path": "dataset/data_loader/BaseLoader.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/dataset/data_loader/BaseLoader.py",
+      "sha256": "3269b44a9283743036589003f67cdc0836afca5c31c338d8191aacac7a818751",
+      "lines": 620
+    },
+    {
+      "path": "dataset/data_loader/UBFCrPPGLoader.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/dataset/data_loader/UBFCrPPGLoader.py",
+      "sha256": "716f6f66a53942b565f7d38af374a3e29f766455aefb0e6aaa37e1cb3332874f",
+      "lines": 117
+    },
+    {
+      "path": "config.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/config.py",
+      "sha256": "b718c9d5826549de22698bd4c8f061be87f2a8284a1aa864b8328e141ac424fb",
+      "lines": 559
+    },
+    {
+      "path": "requirements.txt",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/requirements.txt",
+      "sha256": "b500959f16313b21a59841391eb4a77455127641244ad5afb38039429a230f27",
+      "lines": 21
+    },
+    {
+      "path": "setup.sh",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup.sh",
+      "sha256": "891e16f58882e8ac4da0fe64e5366ec8a8ce3938574af471da06f305fa165f0b",
+      "lines": 2
+    },
+    {
+      "path": "setup/mamba/mamba_ssm/modules/mamba_simple.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup/mamba/mamba_ssm/modules/mamba_simple.py",
+      "sha256": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+      "lines": 354
+    },
+    {
+      "path": "setup/mamba/mamba_ssm/ops/selective_scan_interface.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup/mamba/mamba_ssm/ops/selective_scan_interface.py",
+      "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+      "lines": 358
+    },
+    {
+      "path": "setup/causal-conv1d-main/causal_conv1d/causal_conv1d_interface.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup/causal-conv1d-main/causal_conv1d/causal_conv1d_interface.py",
+      "sha256": "d76f71ab4e6f8e39ce7db056bb8475a2eee287806870949bab3bc7dafa798b4d",
+      "lines": 214
+    },
+    {
+      "path": "evaluation/post_process.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/evaluation/post_process.py",
+      "sha256": "eb7994bae3891f530e0f7192af075b54ee570bcbae5f04596739d7265bdd38cf",
+      "lines": 166
+    },
+    {
+      "path": "evaluation/metrics.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/evaluation/metrics.py",
+      "sha256": "18e98510fef1812ed598c7e7b757a76bc1dcfe1080b8dd5ebbedf987ef742e44",
+      "lines": 195
+    }
+  ],
+  "upstream_manifest": [
+    {
+      "path": "upstream_2.2.2_mamba_simple.py",
+      "url": "https://raw.githubusercontent.com/state-spaces/mamba/v2.2.2/mamba_ssm/modules/mamba_simple.py",
+      "sha256": "a17e4c51b582dc0d4d690a649eba521cd0c1ee3dc8f0473a0967cdc9ec0874e3",
+      "lines": 295
+    },
+    {
+      "path": "upstream_2.2.2_selective_scan_interface.py",
+      "url": "https://raw.githubusercontent.com/state-spaces/mamba/v2.2.2/mamba_ssm/ops/selective_scan_interface.py",
+      "sha256": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4",
+      "lines": 358
+    },
+    {
+      "path": "bundled_mamba_init.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup/mamba/mamba_ssm/__init__.py",
+      "sha256": "aaf9ecdaa48bf4d39af27e2ffebf1d227e32af1167d6a14e60bb653f2799dbae",
+      "lines": 6
+    }
+  ]
+}

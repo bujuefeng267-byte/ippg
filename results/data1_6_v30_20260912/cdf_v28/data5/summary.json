@@ -1,0 +1,135 @@
+{
+  "status": "complete",
+  "case": "data5",
+  "variant": "cdf_v28",
+  "reference_used": false,
+  "fps": 30.00003000003,
+  "frames": 1866,
+  "source_hashes": {
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/analyze_video_v28.py": "52880bfc562ff0872c9f63da78fb5cef2b3c8d7ebf1f5a095675b7af8a9497c8",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/analyze_components_v26.py": "9df2e246236619636f49c5b5e0d882734c197099df85f01378d3b23a07e1236e",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/component_fusion_v26.py": "7a15fedaf099f8dfcb7684e3eb0184596b080c9b9f9a1731dcf2bbd1344a4390",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/component_harmonics_v26.py": "be74e2675b78bde3d49e3ff50529bd8f76c4a5953da0d352844ae8abf11985b0",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/motion_harmonic_evidence_v26.py": "56ab06751863b070d1d748f5264b1401f07370d3ef3577315239dc6fd388bef9",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/conservative_component_router_v26.py": "1b2339b9992a6b3b86f36581edd8d617fc96282fea7acbca7a216230e3674e20",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/direct_guard_router_v28.py": "20c1e53fe2f5c2eb40726d0c7addf02198996cfaa0b72ecb1c7921297561614a",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v30/cdf_preprocess.py": "c07d1660ea27d0f7ebb197f3317f6910ef478bdbae069ee2023fd49713ee5ce7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v30/run_cdf_v28.py": "0257788b66ac0cf7cb61c11ea3f3cb601e9989be170f2fca94c21edc73e95eb6",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v30/test_cdf_preprocess.py": "286127d8f8140028c8944116bc2bbf619245a127a882862ef6f14898804fd7b1"
+  },
+  "input_hashes": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/frame_trace.csv": "9762dc041c7414e1d1dcb5e89535a4ecebd96cd5b79cc1da9aa925e21dc80c1d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/frame_trace.json": "61551dbb6f325eb4d5609513111fc57bf5174807c43e7b18610aa274c7f346ba"
+  },
+  "protocol_path": "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/freeze_cdf.json",
+  "protocol_sha256": "225faabef64d15944123b2c83983efe38171768067ad425f58137b1968595053",
+  "output_hashes": {
+    "cdf_preprocessing.json": "6e77c384d62e591e178aa7ac24bf786dcabb597a317c19aca057a13204f4bd69",
+    "cdf_windows.csv": "4414b06d439de90e165c11aae5d037928be59d35d6b8a31db435609c4b651087",
+    "heart_rate.csv": "4949107026814a1905e4b084b4b0e496a1c1498f6e9fb4dca6802f4ca66d57e3",
+    "processed_trace.csv": "9f2e7a963a5602a0bdc419c8f9d69b4e91cc64d921eafb8c91ea8b2f0e6149b3",
+    "processed_trace_metadata.json": "e05d618c2433f0746c68142560b17d85c9b122e0b69fe55a59ae35fbfb24eb1f",
+    "routing_decisions.csv": "950fac6791ab6ec9851f80b57958347eceaf78620e566375ce93db442f5d5be0",
+    "v25_fallback/baseline_roi_waveforms.csv": "6aa9b23028f055cccbce7cce5eea15bfd3de70e1bca6042c8c23a669f211828c",
+    "v25_fallback/branch_routing.csv": "c96c5a4973f37ec57d07c98816a7ee6ba8bd15c4940b0f197659f00fedaa4ea3",
+    "v25_fallback/fusion_diagnostics.csv": "ae3f9ced3e1d60b5b8733ac71d4e5f246becf47d839dca44252b56722b88baa7",
+    "v25_fallback/fusion_proposals.csv": "76f1ee0d83ec6d9f0859154aee7a24c0472bf23f400a4dfb799053221d75c408",
+    "v25_fallback/heart_rate.csv": "758ee96daca0f80c615ab5eb5511a73935d4afb01417c21294224c35d4738a57",
+    "v25_fallback/tracked_roi_waveforms.csv": "d1c09cd1f48f2d309e2e6f4d1613efaef72be597175667aeaaf331388754f991",
+    "v25_fallback/waveform.csv": "1cad5659aa95ba4694b16bccdddb12a70098bee89e2124f41d8bc687afc3b0f3",
+    "v26_harmonic_candidate/all_roi_candidates.json": "eaadc68dbe1bdd6f6034377303d6a5ff79d3d23f89c653e12206e107165669e7",
+    "v26_harmonic_candidate/baseline_roi_waveforms.csv": "6aa9b23028f055cccbce7cce5eea15bfd3de70e1bca6042c8c23a669f211828c",
+    "v26_harmonic_candidate/component_proposals.csv": "a1cc5f2ff5dd53f73f33071e1261162a9771c6e2d946766a0189b1241823dbcf",
+    "v26_harmonic_candidate/heart_rate.csv": "9e90f17d71a7e0c950a5ab638f1d4a8685d5037b0486bde08957fe9c2eb15ba9",
+    "v26_harmonic_candidate/tracked_roi_waveforms.csv": "d1c09cd1f48f2d309e2e6f4d1613efaef72be597175667aeaaf331388754f991",
+    "v26_harmonic_candidate/waveform.csv": "b95b5922083ddc8fe47bd7229be52a6db3f1a6839b447bee7212973273b37b96",
+    "waveform.csv": "b682fa44620bc9085d196a371c22b3656c86ee07341e7297715a41a83743bb7a"
+  },
+  "planned_windows": 53,
+  "accepted_windows": 49,
+  "hr_coverage_pct": 92.45283018867924,
+  "waveform_coverage_pct": 93.2475884244373,
+  "route_eligible_windows": 38,
+  "cdf_stream_statuses": {
+    "baseline/forehead": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "baseline/left_cheek": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "baseline/right_cheek": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "tracked/forehead": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "tracked/left_cheek": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "tracked/right_cheek": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    }
+  },
+  "cdf_config": {
+    "window_s": 10.0,
+    "step_s": 1.0,
+    "min_bpm": 42.0,
+    "max_bpm": 210.0
+  },
+  "hr_from_saved_waveform": true,
+  "offline": true,
+  "elapsed_s": 4.087098379000963,
+  "original_frontend_cache_unchanged": true,
+  "observation_masks_preserved": true,
+  "relative_mask_scope": "Final waveform finite mask is preserved relative to the CDF-derived fallback only, not the original V28 output.",
+  "inference_only": "No reference HR, reference alignment or accuracy report opened during CDF inference."
+}

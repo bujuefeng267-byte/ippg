@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "runner_sha256_before": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c",
+  "runner_sha256_after": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c",
+  "test_sha256": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0",
+  "torch_used": false,
+  "reference_or_model_weights_read": false,
+  "test_output": "test_bounded_bbox_interpolation_positions_and_no_tail_extrapolation (__main__.PreprocessingChecks) ... ok\ntest_bounds_clamp_and_reject_no_frame_intersection (__main__.PreprocessingChecks) ... ok\ntest_floor_gap_limit_interpolates_geometry_only (__main__.PreprocessingChecks) ... ok\ntest_long_gap_crops_remain_invalid_and_do_not_affect_statistics (__main__.PreprocessingChecks) ... ok\ntest_normalized_box_expands_width_height_by_one_point_five (__main__.PreprocessingChecks) ... ok\ntest_postprocess_gaps_and_future_segment_independence (__main__.PreprocessingChecks) ... ok\ntest_real_frame_crop_rgb_order_and_short_gap_pixels (__main__.PreprocessingChecks) ... ok\ntest_rgb_valid_and_bad_geometry_mask_before_interpolation (__main__.PreprocessingChecks) ... ok\ntest_run_case_saved_masks_and_original_time_axis_without_torch (__main__.PreprocessingChecks) ... ok\ntest_statistics_matches_numpy_ddof_zero_and_includes_tail (__main__.PreprocessingChecks) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.046s\n\nOK\n",
+  "evidence": {
+    "rgb_crop": {
+      "real_mock_frame_pixels_used": true,
+      "interpolated_bbox_middle_frame_red_value": 120,
+      "geometry_interpolation_does_not_synthesize_pixels": true
+    },
+    "output_masks_and_time": {
+      "original_fps": 29.999,
+      "frames": 1050,
+      "observed_or_interpolated_equals_covered": true,
+      "missing_hr_columns_are_nan": true,
+      "saved_wave_hr_recomputed_equal": true,
+      "torch_or_neural_model_used": false
+    },
+    "scalar_statistics": {
+      "frames": 323,
+      "discarded_tail_for_160_clips": 3,
+      "mean": 51.03196225858765,
+      "numpy_mean": 51.03196225858765,
+      "std": 34.57515849465214,
+      "numpy_std_ddof0": 34.57515849465215,
+      "whole_segment_including_tail": true
+    }
+  },
+  "scope": "Crop geometry, real RGB pixels, bbox gap handling, scalar statistics including tail, per-run filtering, saved masks/time/HR; no model accuracy or torch backend test.",
+  "nonblocking_observations": [
+    "read_crops releases VideoCapture on normal completion; exceptions before cap.release lack a finally cleanup.",
+    "Segment statistics intentionally use future frames and discarded tail; therefore preprocessing remains offline.",
+    "Postprocessing preserves gap separation but may mix adjacent finite network clips, as explicitly designed."
+  ]
+}

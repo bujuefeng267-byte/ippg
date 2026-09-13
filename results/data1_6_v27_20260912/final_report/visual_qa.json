@@ -1,0 +1,204 @@
+{
+  "passed": true,
+  "inspection": "Eight representative generated PNGs personally inspected via image tool; remaining seven use the same reviewed rendering functions",
+  "inspected_images": [
+    "all_eight_primary_metrics.png",
+    "factorial_spatial.png",
+    "factorial_readout.png",
+    "six_video_hr_late_psd_cluster.png",
+    "six_video_hr_fusion_motion_local.png",
+    "six_video_hr_early_psd_cluster.png",
+    "six_video_measured_wave_late_psd_cluster.png",
+    "six_video_measured_wave_early_psd_cluster.png"
+  ],
+  "image_sha256": {
+    "all_eight_primary_metrics.png": "4c72c2f6e514870fb4a2cf960a80aea95085134d6f43aa3e46f7b2ecdd69867a",
+    "factorial_spatial.png": "3199d70f6126ac26cb0ac66d661261eb2426b87d57698577cc7bb43200ddaac3",
+    "factorial_readout.png": "3124b4145a51e67efb59f5035a5623617220c8f36dcb76007315f616f36f1143",
+    "six_video_hr_late_psd_cluster.png": "c35faa67ef6d9c76422eb0bcccb4f5e4c59b1e8ff20d83077916b7b84f4a82ff",
+    "six_video_hr_fusion_motion_local.png": "a9e3a65f2a27ce1e82d355371e7ca7fdba21ad72f32e1970196f6018b277fc6d",
+    "six_video_hr_early_psd_cluster.png": "a2088b62f139952c8bf52e6d047f0c7347f30d65cc1c33d53d3d16cc0bb297bd",
+    "six_video_measured_wave_late_psd_cluster.png": "10faaaec42760817458daa6aae20e2a4b9c50c1f2fae97642b82767d356226b2",
+    "six_video_measured_wave_early_psd_cluster.png": "11d3a97432aaa597e43ed4d333d48a7feefbad96e69b64110f0d6141d765253c"
+  },
+  "image_count_total": 15,
+  "Chinese_text_readable": true,
+  "legends_and_axes_not_clipped": true,
+  "all_six_cases_retained": true,
+  "HR_NaN_gaps_visible": true,
+  "waveform_NaN_gaps_visible": true,
+  "waveform_arbitrary_units_explicit": true,
+  "primary_secondary_distinction_explicit": true,
+  "no_per_video_best_selection": true,
+  "grey_band_is_tolerance_not_CI": true,
+  "relative_links_checked": [
+    {
+      "document": "report.md",
+      "target": "all_eight_primary_metrics.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "factorial_spatial.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "factorial_readout.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "factor_effects.csv",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "v25_paired_common.csv",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "secondary_by_video.csv",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_hr_early_median.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_hr_early_psd_cluster.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_hr_late_median.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_hr_late_psd_cluster.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_hr_fusion_nomotion_local.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_hr_fusion_motion_local.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_hr_fusion_nomotion_dp.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_hr_fusion_motion_dp.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_measured_wave_early_median.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_measured_wave_early_psd_cluster.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_measured_wave_late_median.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "six_video_measured_wave_late_psd_cluster.png",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "primary_by_video.csv",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "primary_pooled.csv",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "secondary_pooled.csv",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "alignment_sensitivity.csv",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "all_hr_plot_data.csv",
+      "exists": true
+    },
+    {
+      "document": "report.md",
+      "target": "report_provenance.json",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "factor_effects.csv",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "v25_paired_common.csv",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "../post_evaluation_diagnostics/summary.csv",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "../post_evaluation_diagnostics/late_cluster_motion_and_branch.csv",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "../post_evaluation_diagnostics/provenance.json",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "secondary_pooled.csv",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "../qa_saved_readout_v27.json",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "../qa_v27.json",
+      "exists": true
+    },
+    {
+      "document": "interpretation_supplement.md",
+      "target": "report.md",
+      "exists": true
+    }
+  ],
+  "physiological_accuracy_claimed": false,
+  "supplement_sha256": "158133a781af0eb691ada8e9e1a2b475465de2985afa39d85b140fc8c7f65890",
+  "notes": "Plot arithmetic was independently checked during report generation. Audit success verifies rendering/calculation/provenance, not physiological quality. Supplement added after formal evaluations; no source/threshold/offset changed."
+}

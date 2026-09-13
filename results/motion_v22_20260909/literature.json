@@ -1,0 +1,141 @@
+{
+  "as_of": "2026-09-09",
+  "scope": "2024–2026 primary-source rPPG literature relevant to a small-video CPU project",
+  "external_models_executed": false,
+  "external_weights_downloaded": false,
+  "cpu_claim_type": "engineering feasibility assessment, not measured latency",
+  "papers": [
+    {
+      "id": "cpace_2026",
+      "title": "Missed isochromatic cardiac pulsation in remote photoplethysmography: detection, impact, and removal",
+      "status": "published journal article",
+      "venue": "Biomedical Optics Express 17(7)",
+      "online_date": "2026-06-24",
+      "issue_date": "2026-07-01",
+      "paper_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13372377/",
+      "doi_url": "https://doi.org/10.1364/BOE.599752",
+      "metadata_url": "https://pubmed.ncbi.nlm.nih.gov/42460368/",
+      "code_url": "https://github.com/gkaur102/cPACE",
+      "training_required": false,
+      "weights_status": "not applicable",
+      "cpu_fit": "independent NumPy/SciPy experiment using existing ROI RGB; not benchmarked",
+      "mechanisms": ["q-orthogonal color projection", "seed-band covariance eigenvectors", "cross-ROI PLV direction selection", "optional homodyne envelope correction"],
+      "source_audit": {
+        "files_read": ["projections.py", "pipeline.py", "run_ubfc_phys.py", "run_ubfc_rppg.py", "homodyne.py"],
+        "default_seed": "forehead GREEN PSD peak",
+        "external_seed_override_available": true,
+        "batch_passes_reference_seed": false,
+        "batch_reference_use": "scoring only in the two inspected batch scripts",
+        "eigen_half_band_hz": 0.30,
+        "eigen_selection_plv_half_band_hz": 0.25,
+        "homodyne_default_on_in_pipeline": true,
+        "homodyne_pre_bandpasses": true,
+        "homodyne_envelope_lowpass_hz": 0.30,
+        "homodyne_floor_fraction": 0.05,
+        "cross_roi_amplitude_gate_default": false
+      },
+      "limitations": ["seed may follow a common interferer", "default homodyne changes broadband morphology", "raw-mean q after per-channel normalization needs coordinate-consistency synthetic checks", "recording HR aggregation differs from project windowed HR", "not a demonstrated production solution"],
+      "recommended_use": "isolated inspired branch with video-only seed and frozen ablations; do not call trimmed-mean change a reproduction"
+    },
+    {
+      "id": "calirppg_2025",
+      "title": "Cali-rPPG: A Unified Uncertainty-Aware Framework for Remote Photoplethysmography",
+      "status": "published conference paper",
+      "venue": "ICIC 2025",
+      "online_date": "2025-07-25",
+      "paper_url": "https://link.springer.com/chapter/10.1007/978-981-95-0033-8_18",
+      "code_url": "https://github.com/stzzz99289/calirppg",
+      "training_required": "PSD–HR pairs for confidence fitting and labeled calibration data; inference can be reference-free",
+      "weights_status": "weights directory visible; final reusable calibration parameters not verified",
+      "cpu_fit": "classical estimator and low-dimensional diagnostics plausible; no local runtime test",
+      "recommended_use": "separate observation-quality diagnostics from calibrated confidence; evaluate error jointly with coverage",
+      "limitations": ["few current videos do not establish probability calibration", "reference-free inference is not label-free fitting"]
+    },
+    {
+      "id": "ibvp_2024",
+      "title": "iBVP Dataset: RGB-Thermal rPPG Dataset with High Resolution Signal Quality Labels",
+      "status": "published journal article",
+      "venue": "Electronics 13(7):1334",
+      "online_date": "2024-04-02",
+      "paper_url": "https://www.mdpi.com/2079-9292/13/7/1334",
+      "code_url": "https://github.com/PhysiologicAILab/iBVP-Dataset",
+      "training_required": "neural models need labeled data; reference-quality audit itself can be implemented without training",
+      "weights_status": "author repository provides SQA-PhysMD code/checkpoint links; not loaded",
+      "data_access": "academic EULA request; not obtained in this task",
+      "quality_label_target": "ear contact PPG reference, not automatically facial rPPG confidence",
+      "recommended_use": "audit reference quality and distinguish reference validity from estimator validity",
+      "limitations": ["contact-to-rPPG SQI transfer unverified", "no new dataset acquired"]
+    },
+    {
+      "id": "motion_matters_2024",
+      "title": "Motion Matters: Neural Motion Transfer for Better Camera Physiological Measurement",
+      "status": "published conference paper",
+      "venue": "WACV 2024",
+      "preprint_year": 2023,
+      "paper_url": "https://openaccess.thecvf.com/content/WACV2024/papers/Paruchuri_Motion_Matters_Neural_Motion_Transfer_for_Better_Camera_Physiological_Measurement_WACV_2024_paper.pdf",
+      "project_url": "https://motion-matters.github.io/",
+      "code_url": "https://github.com/yahskapar/MA-rPPG-Video-Toolbox",
+      "training_required": "neural synthesis model, labeled source rPPG videos and driving videos; augmented data for rPPG training",
+      "weights_status": "author release includes pretrained model and generator links; downloads not verified",
+      "cpu_fit": "controlled perturbation principle suitable now; full neural augmentation not a quick CPU upgrade",
+      "recommended_use": "vary motion type and magnitude separately; later evaluate pretrained or augmentation-trained neural baselines",
+      "limitations": ["simple geometric jitter is not neural motion-transfer reproduction", "old CUDA/PyTorch environment", "published performance is protocol specific"]
+    },
+    {
+      "id": "physmamba_slowfast_ccbr2024",
+      "title": "PhysMamba: Efficient Remote Physiological Measurement with SlowFast Temporal Difference Mamba",
+      "authors": ["Chaoqi Luo", "Yiping Xie", "Zitong Yu"],
+      "status": "published conference paper",
+      "venue": "CCBR 2024; proceedings publication in 2025",
+      "proceedings_ebook_date": "2025-02-07",
+      "preprint_year": 2024,
+      "paper_url": "https://link.springer.com/chapter/10.1007/978-981-96-1071-6_23",
+      "preprint_url": "https://arxiv.org/abs/2409.12031",
+      "code_url": "https://github.com/Chaoqi31/PhysMamba",
+      "training_required": "supervised paired video/physiology training; PURE/UBFC-rPPG/MMPD documented",
+      "weights_status": "usable released checkpoint not verified",
+      "cpu_fit": "not drop-in CPU; author setup uses cu118, causal-conv1d and Mamba",
+      "recommended_use": "medium-term model baseline after environment and checkpoint verification",
+      "limitations": ["do not conflate with PhysMamba arXiv:2408.01077 by different authors", "few current videos insufficient for generalization claims"]
+    },
+    {
+      "id": "rhythmmamba_aaai2025",
+      "title": "RhythmMamba: Fast, Lightweight, and Accurate Remote Physiological Measurement",
+      "status": "published conference paper",
+      "venue": "AAAI 2025",
+      "preprint_year": 2024,
+      "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/33204",
+      "preprint_url": "https://arxiv.org/abs/2404.06483",
+      "code_url": "https://github.com/zizheng-guo/RhythmMamba",
+      "weights_url": "https://github.com/zizheng-guo/RhythmMamba/tree/main/PreTrainedModels",
+      "training_required": "paired facial videos and physiological targets; frozen weights can avoid local retraining",
+      "weights_status": "file listing verified, not downloaded or loaded",
+      "verified_weight_examples": ["MMPD_intra_RhythmMamba.pth", "PURE_cross_RhythmMamba.pth", "UBFC_cross_RhythmMamba.pth", "VIPL_RhythmMamba_fold1.pth"],
+      "cpu_fit": "author requirements include mamba-ssm and causal-conv1d; CPU route not verified",
+      "recommended_use": "first isolated frozen neural baseline after dependencies/preprocessing and training overlap audit",
+      "limitations": ["FLOPs or paper latency do not prove CPU latency", "preprocessing and postprocessing must be fixed"]
+    }
+  ],
+  "infrastructure": {
+    "name": "rPPG-Toolbox",
+    "venue": "NeurIPS 2023 Datasets and Benchmarks",
+    "counted_as_2024_2026_paper": false,
+    "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/d7d0d548a6317407e02230f15ce75817-Paper-Datasets_and_Benchmarks.pdf",
+    "code_url": "https://github.com/ubicomplab/rPPG-Toolbox",
+    "use": "frozen baseline implementations and evaluation; detector/preprocessing must be specified"
+  },
+  "unresolved": [
+    {"name": "GPhys", "status": "no confirmed rPPG primary-source match in this search; exact title or author required"}
+  ],
+  "immediate_mechanisms": [
+    {"name": "isolated color normalization/projection ablation", "basis": "cPACE-inspired; not a completed reproduction", "requirements": ["no external HR seed", "synthetic coordinate-consistency tests", "save seed and pre/post spectra", "keep morphology effects separate from HR"]},
+    {"name": "uncalibrated quality diagnostics and controlled perturbation audit", "basis": "Cali-rPPG and Motion Matters principles, with iBVP reference-quality distinction", "requirements": ["record raw validity/gaps separately from physiological confidence", "joint error and coverage", "independent data required for calibration", "interpolation is not new measured coverage"]}
+  ],
+  "current_engineering_ablation": {
+    "spatial_sampling": "fixed 10 percent trimmed mean versus median",
+    "gap_policy_seconds": [0.10, 0.15],
+    "paper_reproduction_claim": false,
+    "parameter_optimality_claim": false,
+    "status": "proposed project changes; this literature task does not assert measured outcomes"
+  }
+}

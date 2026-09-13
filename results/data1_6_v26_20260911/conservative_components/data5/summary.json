@@ -1,0 +1,33 @@
+{
+  "case": "data5",
+  "variant": "conservative_components",
+  "fps": 30.00003000003,
+  "frames": 1866,
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "conservative_component_router_v26.py": "1b2339b9992a6b3b86f36581edd8d617fc96282fea7acbca7a216230e3674e20",
+    "test_conservative_component_router_v26.py": "8d38ca099b04a627fc2f1620db5738a071e6143677544f4cc7cc2349fd503a90",
+    "run_conservative_components.py": "0d5e5da2adcbad78e9867e7143becdb9b89a77d59afa79531d6661b9af9b3101",
+    "motion_harmonic_evidence_v26.py": "56ab06751863b070d1d748f5264b1401f07370d3ef3577315239dc6fd388bef9",
+    "evaluate_v26.py": "5ed2e421c99f5c7390eb06df507096a4a24093f4f602f45f5b5ccf4f14f625ab"
+  },
+  "reference_used": false,
+  "offline": true,
+  "hr_from_saved_waveform": true,
+  "old_finite_mask_preserved": true,
+  "waveform_coverage_pct": 93.2475884244373,
+  "hr_coverage_pct": 92.45283018867924,
+  "elapsed_s": 0.22500972300258582
+}

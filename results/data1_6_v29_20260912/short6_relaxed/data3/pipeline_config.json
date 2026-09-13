@@ -1,0 +1,102 @@
+{
+  "window_s": 6.0,
+  "step_s": 1.0,
+  "min_bpm": 42.0,
+  "max_bpm": 210.0,
+  "fusion_config": {
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "methods": [
+      "pos",
+      "chrom"
+    ],
+    "min_rois": 2,
+    "min_observed_fraction": 0.9,
+    "min_roi_quality": 0.2,
+    "min_signal_std": 1e-08,
+    "grid_step_bpm": 1.0,
+    "support_tolerance_bpm": 6.0,
+    "max_peaks_per_channel": 4,
+    "min_relative_power": 0.2,
+    "min_peak_concentration": 0.15,
+    "min_prominence_ratio": 0.08,
+    "single_method_factor": 0.65,
+    "min_consensus_quality": 0.2,
+    "ambiguity_ratio": 0.9,
+    "max_motion_penalty": 0.25,
+    "motion_evidence_mode": "legacy",
+    "reliable_motion_penalty": 0.75,
+    "max_slew_bpm_per_s": 12.0,
+    "rejected_windows_to_reset": 2,
+    "min_waveform_correlation": 0.15,
+    "normalize_clip": 8.0,
+    "huber_delta": 2.5
+  },
+  "guard_config": {
+    "min_tracked_fraction": 0.6,
+    "max_reset_fraction": 0.05,
+    "switch_score_ratio": 1.15,
+    "max_branch_disagreement_bpm": 12.0,
+    "routing_mode": "legacy",
+    "min_evidence_score": 0.2,
+    "max_motion_evidence_penalty": 0.45,
+    "disagreement_score_ratio": 1.35,
+    "min_disagreement_score_margin": 0.08
+  },
+  "component_config": {
+    "min_rois": 2,
+    "min_observed": 0.9,
+    "min_quality": 0.2,
+    "pass_half_width_bpm": 6.0,
+    "stop_half_width_bpm": 12.0,
+    "min_component_correlation": 0.15,
+    "min_tracked_fraction": 0.6,
+    "max_reset_fraction": 0.05
+  },
+  "hr_sampling": {
+    "min_observed": 0.9,
+    "max_interpolated": 0.1,
+    "min_concentration": 0.12
+  },
+  "evidence_config": {
+    "min_relative_power": 0.05,
+    "min_prominence": 0.02,
+    "peak_distance_bpm": 6.0,
+    "candidate_radius_bpm": 3.0,
+    "max_candidates": 8,
+    "spectral_weight": 0.35,
+    "periodic_weight": 1.1,
+    "harmonic_weight": 1.0,
+    "motion_weight": 1.25,
+    "third_harmonic_weight": 0.35,
+    "transition_penalty": 0.05,
+    "max_rate_bpm_per_s": 12.0,
+    "reacquisition_cost": 3.0,
+    "candidate_offset_penalty": 0.025
+  },
+  "max_gap_s": 0.1,
+  "pixel_config": {
+    "max_points_per_roi": 100,
+    "patch_radius": 3,
+    "min_tracks": 12,
+    "fb_max_px": 0.5,
+    "screen_z": 3.0,
+    "screen_floor": 0.003,
+    "tracking_width": 960
+  },
+  "anchor_config": {
+    "anchor_hz": 0.15,
+    "anchor_order": 4
+  },
+  "original_strict_readout_window_s": 10.0,
+  "min_physical_rois": 2,
+  "direct_router": {
+    "min_old_motion_risk": 0.5,
+    "min_old_direct_motion_risk": 0.5,
+    "min_motion_risk_decrease": 0.3
+  },
+  "offline": true
+}

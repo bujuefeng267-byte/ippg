@@ -1,0 +1,43 @@
+{
+  "evaluator_sha256": "58628a885e80baa30ab1b4ec5aeee008a0615acc727bf3168d0b2c05409ed462",
+  "inputs": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/inputs_manifest.json": "b4e0a49d3a65b5ab79c43325db4fdf8937511fd6a97f09813db030a42ceff14b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/protocol_before_inference.json": "7add66583fbb9b8934061ba2d3911a577bae09e303c570fb827cd1529123bf14",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/evaluation_protocol.json": "83249ab735ee122761a09549305139f4fe18e5ac531afd60449878c269b42f77",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/run_record.json": "d14964eea6e359a8ba1fc7955fdfef6a1e5f0478e1634f5dfd20f3db086cdc32",
+    "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/20260911_XUEZHANG1/polar_hr.csv": "e01a81c9b64133c8ad705b16ffcf545c6f55e5c821f469123868f9415fbdd7f0",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/baseline_branch_proposals.csv": "f612f3abb3cf617ba0808c4becbbb80073d738474fbcff3b60988cfde050be98",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/baseline_branch_waveform.csv": "e4340a1c8fbfe990a6185ceded08979b4adeb43465b75710afdad809e5d5f035",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/baseline_roi_waveforms.csv": "d61ed7e4607ae80efb480215c972cc9623cbe6fa17b85fe9f031bc7e9ee1c537",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/branch_routing.csv": "973110576522e1219a8d9020561b8c278524e766a913863a7f935ee1420620b8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/chrom_heart_rate.csv": "36b64a603fd3f489868a00756668ac84f5bddf97f9994af14a5b51a6b997a50b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/chrom_waveform.csv": "74bac01b0758ca63ae8acfa68bb40d2d6c0cd5ffb06fb1bd7b4bd10acd6dfe9a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/frame_trace.csv": "9ac57523f498642409c4217c5945f133619ba81568ca19010cfa36b91593053f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_diagnostics.csv": "6ca5f9c60e4ea58628e7ef66e66ebcbd36df84871eea441a41edc2de852e3161",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_heart_rate.csv": "fdabf65664dbc5945657b313450815857236f856d8c483d29ec86d2eee16c050",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_proposals.csv": "b08d3a7ae25f852f3786c43f865154bb353b07f95c2f684bef2fd61b426c6a4e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_waveform.csv": "918de3775bd32bf80253f11a92b33b27a36cbeb2336daaf492d9291b8d482250",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/pos_heart_rate.csv": "3acdb01457483c37569aef0ba6f058491eb52a8b19f3464dcb1ce765bfc981d6",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/pos_waveform.csv": "11eafbf9a9bc83900e8ad6ad38001b8ecfa94514a3f4f137501bdedc15d4182e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/roi_waveforms.csv": "9b12ce35c1a610af3faebfe2d90e841bd55091153aedf443d6fef0f74f17883b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/tracked_branch_proposals.csv": "d031b155a1ea96e0d52a162eae61c256a414f1ce939713ddb518ae141cb56639",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/tracked_branch_waveform.csv": "55c8dfa5f7f8485eebb8f158cdcffc4fd5e526c20aaab73ec984750f22965dcc",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/frame_trace.json": "12c74765510f8d350b85665b6644e88444787bab6f270a8f9580ab4f8627d587",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/summary.json": "24d8f8a43c8f35084a6c89b8d58ad8bb00e8ee5c046c9a74a0c21d6a005896ff"
+  },
+  "snr_definition": "Reference-frequency H1 +/-0.1Hz, 0.7-3.5Hz band, Hann full-window Welch, detrend=False, all reference-valid finite waveform windows; not identical to older SNR reports.",
+  "inference_source_hashes": {
+    "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+  },
+  "reference_used_only_after_predictions": true
+}

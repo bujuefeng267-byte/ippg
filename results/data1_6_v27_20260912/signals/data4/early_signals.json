@@ -1,0 +1,38 @@
+{
+  "spatial_mode": "early",
+  "patch_regions": {
+    "forehead": "forehead",
+    "left_cheek": "left_cheek",
+    "right_cheek": "right_cheek"
+  },
+  "channel_order": [
+    "baseline/forehead/pos",
+    "baseline/forehead/chrom",
+    "tracked/forehead/pos",
+    "tracked/forehead/chrom",
+    "baseline/left_cheek/pos",
+    "baseline/left_cheek/chrom",
+    "tracked/left_cheek/pos",
+    "tracked/left_cheek/chrom",
+    "baseline/right_cheek/pos",
+    "baseline/right_cheek/chrom",
+    "tracked/right_cheek/pos",
+    "tracked/right_cheek/chrom"
+  ],
+  "anchor": {
+    "anchor_hz": 0.15,
+    "anchor_order": 4
+  },
+  "methods": [
+    "pos",
+    "chrom"
+  ],
+  "window_s": 10,
+  "step_s": 1,
+  "band_bpm": [
+    42,
+    210
+  ],
+  "max_gap_s": 0.1,
+  "preprocessing": "unchanged V25 make_waveforms for each actual raw/anchored RGB series"
+}

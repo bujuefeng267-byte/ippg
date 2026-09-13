@@ -1,0 +1,12 @@
+[
+  {
+    "segment_index": 0,
+    "start_frame": 0,
+    "end_frame_exclusive": 1547,
+    "used_frames": 1440,
+    "tail_discarded_frames": 107,
+    "status": "predicted",
+    "scalar_mean": 113.44049441816992,
+    "scalar_std": 50.90152499073874
+  }
+]

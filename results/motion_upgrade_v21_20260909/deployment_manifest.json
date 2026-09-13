@@ -1,0 +1,1345 @@
+{
+  "installed_utc": "2026-09-09T03:07:53.280447+00:00",
+  "version": "2.1",
+  "project": "/home/fengbujue/项目/rppg识别",
+  "code": "/home/fengbujue/项目/rppg识别/motion_upgrade_v21_20260909",
+  "results": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_v21_20260909",
+  "launcher": "/home/fengbujue/项目/rppg识别/run_motion_v21.sh",
+  "source_workspace": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21",
+  "deployment_script_sha256": "11584cf8a0e8497dad040a60bf5b07eaf095c7dceed155486f1665096a0b4bcc",
+  "runtime": {
+    "python": "3.10.12",
+    "executable": "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "scipy": "1.11.4",
+      "matplotlib": "3.8.4",
+      "mediapipe": "0.10.21"
+    },
+    "opencv_cv2": "4.11.0"
+  },
+  "frozen_source_hashes": {
+    "analyze_motion_v2.py": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+    "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+    "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115"
+  },
+  "frozen_protocol_sha256": "a2e3fdec633f53205f31014a4d5c2e3025d23fb63a834bebc5327ebc82a2c2de",
+  "test_record": {
+    "created_utc": "2026-09-09T02:58:25.276644+00:00",
+    "command": "python -B record_tests.py (unittest discover test_*v2*.py)",
+    "tests_run": 45,
+    "passed": 45,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "source_hashes": {
+      "analyze_motion_v2.py": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+      "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+      "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+      "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+      "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+      "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115"
+    },
+    "test_hashes": {
+      "test_cli_v2.py": "2939921ad15626c23a79997a482dad2a3ddbe8df0753f37f973828cc2c69d72e",
+      "test_frontend_v2.py": "b0fbb912cd0147d0675e1a93c44641d3e92cd0271e506b6080c4ed212cad3b96",
+      "test_fusion_v2.py": "1a6568a3bf80c44df5da60bb29ae6b4720ed906149e2543a38a30e0992f6c52c",
+      "test_stable_groups_v21.py": "b4f17913006f458b18a82ef44d9b366f11df992fd4855bcdbf6c46b939d0f2a6",
+      "test_waveform_hr_v21.py": "f3803f5393125ced0927dc47ca0d5879e8795cfa12850e567928c47426f50646"
+    }
+  },
+  "required_cases": [
+    "user0904",
+    "user0907",
+    "ubfc",
+    "kaggle_full",
+    "synthetic72"
+  ],
+  "copied_result_trees": [
+    "validation_final",
+    "evaluation",
+    "synthetic_stress_final"
+  ],
+  "copied_sources": [
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/analyze_motion_v2.py",
+      "destination": "motion_upgrade_v21_20260909/analyze_motion_v2.py",
+      "source_sha256": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154",
+      "installed_sha256": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154",
+      "bytes": 12398
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/analyze_rppg.py",
+      "destination": "motion_upgrade_v21_20260909/analyze_rppg.py",
+      "source_sha256": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+      "installed_sha256": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+      "bytes": 11415
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/legacy_motion.py",
+      "destination": "motion_upgrade_v21_20260909/legacy_motion.py",
+      "source_sha256": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+      "installed_sha256": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+      "bytes": 20056
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/motion_frontend.py",
+      "destination": "motion_upgrade_v21_20260909/motion_frontend.py",
+      "source_sha256": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+      "installed_sha256": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+      "bytes": 10648
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/motion_fusion.py",
+      "destination": "motion_upgrade_v21_20260909/motion_fusion.py",
+      "source_sha256": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+      "installed_sha256": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+      "bytes": 19479
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/stable_groups.py",
+      "destination": "motion_upgrade_v21_20260909/stable_groups.py",
+      "source_sha256": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+      "installed_sha256": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+      "bytes": 7544
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/waveform_hr.py",
+      "destination": "motion_upgrade_v21_20260909/waveform_hr.py",
+      "source_sha256": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+      "installed_sha256": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+      "bytes": 6745
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/test_cli_v2.py",
+      "destination": "motion_upgrade_v21_20260909/test_cli_v2.py",
+      "source_sha256": "2939921ad15626c23a79997a482dad2a3ddbe8df0753f37f973828cc2c69d72e",
+      "installed_sha256": "2939921ad15626c23a79997a482dad2a3ddbe8df0753f37f973828cc2c69d72e",
+      "bytes": 2612
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/test_frontend_v2.py",
+      "destination": "motion_upgrade_v21_20260909/test_frontend_v2.py",
+      "source_sha256": "b0fbb912cd0147d0675e1a93c44641d3e92cd0271e506b6080c4ed212cad3b96",
+      "installed_sha256": "b0fbb912cd0147d0675e1a93c44641d3e92cd0271e506b6080c4ed212cad3b96",
+      "bytes": 9128
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/test_fusion_v2.py",
+      "destination": "motion_upgrade_v21_20260909/test_fusion_v2.py",
+      "source_sha256": "1a6568a3bf80c44df5da60bb29ae6b4720ed906149e2543a38a30e0992f6c52c",
+      "installed_sha256": "1a6568a3bf80c44df5da60bb29ae6b4720ed906149e2543a38a30e0992f6c52c",
+      "bytes": 7733
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/test_stable_groups_v21.py",
+      "destination": "motion_upgrade_v21_20260909/test_stable_groups_v21.py",
+      "source_sha256": "b4f17913006f458b18a82ef44d9b366f11df992fd4855bcdbf6c46b939d0f2a6",
+      "installed_sha256": "b4f17913006f458b18a82ef44d9b366f11df992fd4855bcdbf6c46b939d0f2a6",
+      "bytes": 10921
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/test_waveform_hr_v21.py",
+      "destination": "motion_upgrade_v21_20260909/test_waveform_hr_v21.py",
+      "source_sha256": "f3803f5393125ced0927dc47ca0d5879e8795cfa12850e567928c47426f50646",
+      "installed_sha256": "f3803f5393125ced0927dc47ca0d5879e8795cfa12850e567928c47426f50646",
+      "bytes": 14430
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/README.md",
+      "destination": "motion_upgrade_v21_20260909/README.md",
+      "source_sha256": "ac9576b335a4ee532043cfb160272a9fde20e1dabb5d80cdd6b2c88a54ef97a8",
+      "installed_sha256": "ac9576b335a4ee532043cfb160272a9fde20e1dabb5d80cdd6b2c88a54ef97a8",
+      "bytes": 4106
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/protocol_before_validation.json",
+      "destination": "motion_upgrade_v21_20260909/protocol_before_validation.json",
+      "source_sha256": "a2e3fdec633f53205f31014a4d5c2e3025d23fb63a834bebc5327ebc82a2c2de",
+      "installed_sha256": "a2e3fdec633f53205f31014a4d5c2e3025d23fb63a834bebc5327ebc82a2c2de",
+      "bytes": 3483
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/chrom_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/chrom_heart_rate.csv",
+      "source_sha256": "7f3bbe1bc78e2f379c23dbb10081cea856748cbd9b0cb93ffa860842a1335571",
+      "installed_sha256": "7f3bbe1bc78e2f379c23dbb10081cea856748cbd9b0cb93ffa860842a1335571",
+      "bytes": 28276
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/chrom_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/chrom_waveform.csv",
+      "source_sha256": "0159b8e4c193293424205b6ae44f4256fa4f72c113e0e590031ff2091912d281",
+      "installed_sha256": "0159b8e4c193293424205b6ae44f4256fa4f72c113e0e590031ff2091912d281",
+      "bytes": 592058
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/comparison.png",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/comparison.png",
+      "source_sha256": "1aa561153c4313e104c98b4369608186b82b3431f69488e4df659ecb5cf6e907",
+      "installed_sha256": "1aa561153c4313e104c98b4369608186b82b3431f69488e4df659ecb5cf6e907",
+      "bytes": 110685
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/frame_trace.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/frame_trace.csv",
+      "source_sha256": "aa1884b52beeac34c61633ac72ce56f298b5b9c19293a4ec899fc1d248bfafce",
+      "installed_sha256": "aa1884b52beeac34c61633ac72ce56f298b5b9c19293a4ec899fc1d248bfafce",
+      "bytes": 6585957
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/frame_trace.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/frame_trace.json",
+      "source_sha256": "57a386c00a58ff3fcf692a20f58cc4babcfee3ba482e3974972cd09d62b227b6",
+      "installed_sha256": "57a386c00a58ff3fcf692a20f58cc4babcfee3ba482e3974972cd09d62b227b6",
+      "bytes": 660
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/fusion_diagnostics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/fusion_diagnostics.csv",
+      "source_sha256": "7d3fe2fb0b8b400d3e29a454fb24f6e5e2a8b57ac241cc13f8e8134255be831c",
+      "installed_sha256": "7d3fe2fb0b8b400d3e29a454fb24f6e5e2a8b57ac241cc13f8e8134255be831c",
+      "bytes": 953687
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/fusion_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/fusion_heart_rate.csv",
+      "source_sha256": "90bbb3aa2a983c0df3e4c1da4ddc5fe1ffe3186a8eb1344ee215f4fb78b7bdcc",
+      "installed_sha256": "90bbb3aa2a983c0df3e4c1da4ddc5fe1ffe3186a8eb1344ee215f4fb78b7bdcc",
+      "bytes": 66567
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/fusion_proposals.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/fusion_proposals.csv",
+      "source_sha256": "de07d138d5d6569e62a6b85bae7fd781282f46c6c81db3d648757e6c9c56ab39",
+      "installed_sha256": "de07d138d5d6569e62a6b85bae7fd781282f46c6c81db3d648757e6c9c56ab39",
+      "bytes": 64424
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/fusion_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/fusion_waveform.csv",
+      "source_sha256": "5883e75a024b57bdbf77fc99e1c64170ccf9215d5aabb08aaddb2395ba56defb",
+      "installed_sha256": "5883e75a024b57bdbf77fc99e1c64170ccf9215d5aabb08aaddb2395ba56defb",
+      "bytes": 641675
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/pos_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/pos_heart_rate.csv",
+      "source_sha256": "85c968715432c9be4ce4cdb8f7c0a042ac4a1c5f1334a99b91cfd3323b58d734",
+      "installed_sha256": "85c968715432c9be4ce4cdb8f7c0a042ac4a1c5f1334a99b91cfd3323b58d734",
+      "bytes": 28339
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/pos_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/pos_waveform.csv",
+      "source_sha256": "f202ec981a5e19053b92c69ff32e4207e2334825c81d1deeab01e109bb99047b",
+      "installed_sha256": "f202ec981a5e19053b92c69ff32e4207e2334825c81d1deeab01e109bb99047b",
+      "bytes": 592079
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/roi_waveforms.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/roi_waveforms.csv",
+      "source_sha256": "c291afb30c774f6c4284b9243ef0b531c7529a13a59c1948ddb011ecd97d60bc",
+      "installed_sha256": "c291afb30c774f6c4284b9243ef0b531c7529a13a59c1948ddb011ecd97d60bc",
+      "bytes": 2132317
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full/summary.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/summary.json",
+      "source_sha256": "ff68aee2fa549e0a7a9785c332f05c57b538f67a4b9f753483416cf0f72271f9",
+      "installed_sha256": "ff68aee2fa549e0a7a9785c332f05c57b538f67a4b9f753483416cf0f72271f9",
+      "bytes": 4588
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/kaggle_full.log",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/kaggle_full.log",
+      "source_sha256": "8a53157c72f732893e08254af59bc4be7e77757cda91ebdfb41013c73d6fe7d4",
+      "installed_sha256": "8a53157c72f732893e08254af59bc4be7e77757cda91ebdfb41013c73d6fe7d4",
+      "bytes": 1016
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/protocol_before_validation.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/protocol_before_validation.json",
+      "source_sha256": "a2e3fdec633f53205f31014a4d5c2e3025d23fb63a834bebc5327ebc82a2c2de",
+      "installed_sha256": "a2e3fdec633f53205f31014a4d5c2e3025d23fb63a834bebc5327ebc82a2c2de",
+      "bytes": 3483
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/runs.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/runs.json",
+      "source_sha256": "ac2c4fc54b7b79d80585cf54b1cddb39d4957dc7b6a92bf5ce69a37fc1dd87b9",
+      "installed_sha256": "ac2c4fc54b7b79d80585cf54b1cddb39d4957dc7b6a92bf5ce69a37fc1dd87b9",
+      "bytes": 3225
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/chrom_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/chrom_heart_rate.csv",
+      "source_sha256": "87760e6604768ea33e191e651649d1180e2cc6f8e55229efb88566bec8ecec29",
+      "installed_sha256": "87760e6604768ea33e191e651649d1180e2cc6f8e55229efb88566bec8ecec29",
+      "bytes": 701
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/chrom_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/chrom_waveform.csv",
+      "source_sha256": "4aba7c1e2a13489b35b8e1acfd00946068a634ea9071bed7ce7668e75bbdc4be",
+      "installed_sha256": "4aba7c1e2a13489b35b8e1acfd00946068a634ea9071bed7ce7668e75bbdc4be",
+      "bytes": 24904
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/comparison.png",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/comparison.png",
+      "source_sha256": "3d49c9768a7680079004b52f7e584b22648211048200610fa01c0a0396640f3a",
+      "installed_sha256": "3d49c9768a7680079004b52f7e584b22648211048200610fa01c0a0396640f3a",
+      "bytes": 62335
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/frame_trace.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/frame_trace.csv",
+      "source_sha256": "af08afefde4b22bd2bd869af3ac03f71faad58823f6ea2b76830ee6aeaf1d088",
+      "installed_sha256": "af08afefde4b22bd2bd869af3ac03f71faad58823f6ea2b76830ee6aeaf1d088",
+      "bytes": 338955
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/frame_trace.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/frame_trace.json",
+      "source_sha256": "e91c8fdb0f5fa3bcdfe1b8f12597455749613b08c3521d1382c67ed19b5e3b67",
+      "installed_sha256": "e91c8fdb0f5fa3bcdfe1b8f12597455749613b08c3521d1382c67ed19b5e3b67",
+      "bytes": 628
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/fusion_diagnostics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/fusion_diagnostics.csv",
+      "source_sha256": "9624551bb15315f1ccd7a739f782d36dc10ef71415e0431d1f74597b9cf509c7",
+      "installed_sha256": "9624551bb15315f1ccd7a739f782d36dc10ef71415e0431d1f74597b9cf509c7",
+      "bytes": 10736
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/fusion_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/fusion_heart_rate.csv",
+      "source_sha256": "54bb17f2ff8d8e46dcfe9954e71dbf694a9aab6f40736552f591a9e1f93745a0",
+      "installed_sha256": "54bb17f2ff8d8e46dcfe9954e71dbf694a9aab6f40736552f591a9e1f93745a0",
+      "bytes": 1813
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/fusion_proposals.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/fusion_proposals.csv",
+      "source_sha256": "d32cab34b99e9de0438445c7629a83a61ba912de1df38701828abf60de850f9d",
+      "installed_sha256": "d32cab34b99e9de0438445c7629a83a61ba912de1df38701828abf60de850f9d",
+      "bytes": 1461
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/fusion_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/fusion_waveform.csv",
+      "source_sha256": "0953754ae565e4709b1d4454a77e4fc4f3feaa48fe43e44a1fbef7ee58051838",
+      "installed_sha256": "0953754ae565e4709b1d4454a77e4fc4f3feaa48fe43e44a1fbef7ee58051838",
+      "bytes": 27762
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/pos_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/pos_heart_rate.csv",
+      "source_sha256": "13d9d86cbe553bad31e051e100aca4cd8ff6f1dccb6f2e1e258ad3ef1a4150f9",
+      "installed_sha256": "13d9d86cbe553bad31e051e100aca4cd8ff6f1dccb6f2e1e258ad3ef1a4150f9",
+      "bytes": 702
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/pos_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/pos_waveform.csv",
+      "source_sha256": "4ef9b88fa479d1d59e38044f6b36629fad25c845f5bbf1a06db3319ae650400a",
+      "installed_sha256": "4ef9b88fa479d1d59e38044f6b36629fad25c845f5bbf1a06db3319ae650400a",
+      "bytes": 24920
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/roi_waveforms.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/roi_waveforms.csv",
+      "source_sha256": "a84bfbdf306f5fe404317e605300d778527eae8b41e33e39c81fe56e8c530dce",
+      "installed_sha256": "a84bfbdf306f5fe404317e605300d778527eae8b41e33e39c81fe56e8c530dce",
+      "bytes": 87965
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72/summary.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72/summary.json",
+      "source_sha256": "e7c0e090e9370a0182d91f161611b42d810f0da4c35113a00065cd5b0564bc8d",
+      "installed_sha256": "e7c0e090e9370a0182d91f161611b42d810f0da4c35113a00065cd5b0564bc8d",
+      "bytes": 4459
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/synthetic72.log",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/synthetic72.log",
+      "source_sha256": "3642c82f9bd1801923e333efad806bac060a0f3c40edd545d6b5a5a7fb44d27e",
+      "installed_sha256": "3642c82f9bd1801923e333efad806bac060a0f3c40edd545d6b5a5a7fb44d27e",
+      "bytes": 935
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/test_results.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/test_results.json",
+      "source_sha256": "d0596c639de8929b417530028ac6d3d12a34bedc96958d1b71e2d76e115d08bb",
+      "installed_sha256": "d0596c639de8929b417530028ac6d3d12a34bedc96958d1b71e2d76e115d08bb",
+      "bytes": 1384
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/test_results.log",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/test_results.log",
+      "source_sha256": "32e6fa89aa3a8970552df1a9c3d36b3f00c28a62988a80c11f271201fba60eb2",
+      "installed_sha256": "32e6fa89aa3a8970552df1a9c3d36b3f00c28a62988a80c11f271201fba60eb2",
+      "bytes": 4784
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/chrom_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/chrom_heart_rate.csv",
+      "source_sha256": "cba5db83d95096c57bf986208c84c9dc9f973a84b1468834a463711c9f3609c9",
+      "installed_sha256": "cba5db83d95096c57bf986208c84c9dc9f973a84b1468834a463711c9f3609c9",
+      "bytes": 4265
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/chrom_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/chrom_waveform.csv",
+      "source_sha256": "80b96982c767bb0699a0cac26944a07958b3048b0bbbace88203a1b1fddca6cb",
+      "installed_sha256": "80b96982c767bb0699a0cac26944a07958b3048b0bbbace88203a1b1fddca6cb",
+      "bytes": 73951
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/comparison.png",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/comparison.png",
+      "source_sha256": "dc6e92b005805d16dd20ddc9501df8c6c4af81d8fb7fe0a77abf1df35e090190",
+      "installed_sha256": "dc6e92b005805d16dd20ddc9501df8c6c4af81d8fb7fe0a77abf1df35e090190",
+      "bytes": 74592
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/frame_trace.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/frame_trace.csv",
+      "source_sha256": "5064189577d15b75b1e9f06b5cefedb880e3f6be6230fea693dc1f9acf3b311c",
+      "installed_sha256": "5064189577d15b75b1e9f06b5cefedb880e3f6be6230fea693dc1f9acf3b311c",
+      "bytes": 746173
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/frame_trace.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/frame_trace.json",
+      "source_sha256": "d92fa1659cecb0d7798e50baccc89c3ce2262d0c939fa2b07ea2a13192767a4d",
+      "installed_sha256": "d92fa1659cecb0d7798e50baccc89c3ce2262d0c939fa2b07ea2a13192767a4d",
+      "bytes": 639
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/fusion_diagnostics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/fusion_diagnostics.csv",
+      "source_sha256": "271cea811d6d598c9cf3c221406d762dc0b60b520a746e2a084ef5e583a634d2",
+      "installed_sha256": "271cea811d6d598c9cf3c221406d762dc0b60b520a746e2a084ef5e583a634d2",
+      "bytes": 96801
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/fusion_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/fusion_heart_rate.csv",
+      "source_sha256": "20eaf67f0042912c61d3d3d2a3c27912ac9093b47b1a5047a7da6e3971f7b9ad",
+      "installed_sha256": "20eaf67f0042912c61d3d3d2a3c27912ac9093b47b1a5047a7da6e3971f7b9ad",
+      "bytes": 9583
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/fusion_proposals.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/fusion_proposals.csv",
+      "source_sha256": "d9780ceb5e402a5efdbe3753b6fcd8af0974d9463413307f7970b09738044702",
+      "installed_sha256": "d9780ceb5e402a5efdbe3753b6fcd8af0974d9463413307f7970b09738044702",
+      "bytes": 8301
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/fusion_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/fusion_waveform.csv",
+      "source_sha256": "383af44686f5b071cedfef00f6763d498942a2997bde03896e540bb87f96ea16",
+      "installed_sha256": "383af44686f5b071cedfef00f6763d498942a2997bde03896e540bb87f96ea16",
+      "bytes": 81541
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/pos_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/pos_heart_rate.csv",
+      "source_sha256": "131d16319b8fd13e41ed89eac61243427352a62617850bd1a42e59343b2a6a54",
+      "installed_sha256": "131d16319b8fd13e41ed89eac61243427352a62617850bd1a42e59343b2a6a54",
+      "bytes": 4269
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/pos_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/pos_waveform.csv",
+      "source_sha256": "e92a213830325e885e208217aca2105dd1213c40e61e881ceaafe1f8552bc33d",
+      "installed_sha256": "e92a213830325e885e208217aca2105dd1213c40e61e881ceaafe1f8552bc33d",
+      "bytes": 73908
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/roi_waveforms.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/roi_waveforms.csv",
+      "source_sha256": "afbba8884fd08422bd427c54a454539ef45c1006cb381a8a731c17aca72deef6",
+      "installed_sha256": "afbba8884fd08422bd427c54a454539ef45c1006cb381a8a731c17aca72deef6",
+      "bytes": 251357
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc/summary.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc/summary.json",
+      "source_sha256": "17d582a56dcbdbac4fd1a1064329cc83c020ac6065a60e01b98c5e03dee9cd31",
+      "installed_sha256": "17d582a56dcbdbac4fd1a1064329cc83c020ac6065a60e01b98c5e03dee9cd31",
+      "bytes": 5710
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc.log",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/ubfc.log",
+      "source_sha256": "d3eb0eb0062ca2978e8b4b72dfb839bcacbe50f3790014c8364125b71e1e5f19",
+      "installed_sha256": "d3eb0eb0062ca2978e8b4b72dfb839bcacbe50f3790014c8364125b71e1e5f19",
+      "bytes": 1573
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/chrom_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/chrom_heart_rate.csv",
+      "source_sha256": "54d5a7a5946ddfd2161f53ba5f26752b1183614476e90572148a4dd86550ff02",
+      "installed_sha256": "54d5a7a5946ddfd2161f53ba5f26752b1183614476e90572148a4dd86550ff02",
+      "bytes": 2733
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/chrom_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/chrom_waveform.csv",
+      "source_sha256": "df86e23ffb2dd5e43297fd20b99abce1d66730779536b54717409523b463728b",
+      "installed_sha256": "df86e23ffb2dd5e43297fd20b99abce1d66730779536b54717409523b463728b",
+      "bytes": 59336
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/comparison.png",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/comparison.png",
+      "source_sha256": "3c701a5e8d61c350f3b49b4c2571f0c67bba82e7532b1d729a4099c4a67e6a2b",
+      "installed_sha256": "3c701a5e8d61c350f3b49b4c2571f0c67bba82e7532b1d729a4099c4a67e6a2b",
+      "bytes": 63741
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/frame_trace.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/frame_trace.csv",
+      "source_sha256": "b04b627be9f18ca962b44109f8a215206d0fa9537cc6f03402b1a5b12eaecbfb",
+      "installed_sha256": "b04b627be9f18ca962b44109f8a215206d0fa9537cc6f03402b1a5b12eaecbfb",
+      "bytes": 783799
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/frame_trace.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/frame_trace.json",
+      "source_sha256": "d10654b7108449c388e4bce7c747561fdc1f3e60097ec7a207f50d9bd4795d6e",
+      "installed_sha256": "d10654b7108449c388e4bce7c747561fdc1f3e60097ec7a207f50d9bd4795d6e",
+      "bytes": 624
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/fusion_diagnostics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/fusion_diagnostics.csv",
+      "source_sha256": "bd752b12ed172f804e8324dc9cc567a1950f3ac3844e283639dc2ffc48b8aa79",
+      "installed_sha256": "bd752b12ed172f804e8324dc9cc567a1950f3ac3844e283639dc2ffc48b8aa79",
+      "bytes": 79567
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/fusion_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/fusion_heart_rate.csv",
+      "source_sha256": "817d9b9dd0a44e579505daf1fc4a5df8694b76c5c3efdf4b74bf2a0c6604a7a0",
+      "installed_sha256": "817d9b9dd0a44e579505daf1fc4a5df8694b76c5c3efdf4b74bf2a0c6604a7a0",
+      "bytes": 6829
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/fusion_proposals.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/fusion_proposals.csv",
+      "source_sha256": "e3ad4930ef8b141432d42090c2d5473860aa149d539b04b73d1286dc1141c79a",
+      "installed_sha256": "e3ad4930ef8b141432d42090c2d5473860aa149d539b04b73d1286dc1141c79a",
+      "bytes": 6419
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/fusion_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/fusion_waveform.csv",
+      "source_sha256": "c9dad38bf202899e25887dad8295579614312bc9bf4c6a299f6d45863928bf6d",
+      "installed_sha256": "c9dad38bf202899e25887dad8295579614312bc9bf4c6a299f6d45863928bf6d",
+      "bytes": 66646
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/pos_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/pos_heart_rate.csv",
+      "source_sha256": "f3fe420615ed8fb9535f0f0d1e8d4c207aca8e756b3e8d31017efacb62cd4e5d",
+      "installed_sha256": "f3fe420615ed8fb9535f0f0d1e8d4c207aca8e756b3e8d31017efacb62cd4e5d",
+      "bytes": 2739
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/pos_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/pos_waveform.csv",
+      "source_sha256": "1ba53bb8a2e99a7ebf36ebc8c065bab7f44a3d982eba0b2b325a5f6a43eda348",
+      "installed_sha256": "1ba53bb8a2e99a7ebf36ebc8c065bab7f44a3d982eba0b2b325a5f6a43eda348",
+      "bytes": 59345
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/roi_waveforms.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/roi_waveforms.csv",
+      "source_sha256": "ae280507b8cb46b18a579c6db472d65fb35b83ed70458054fcc91bdf3fc39942",
+      "installed_sha256": "ae280507b8cb46b18a579c6db472d65fb35b83ed70458054fcc91bdf3fc39942",
+      "bytes": 226202
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904/summary.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904/summary.json",
+      "source_sha256": "a7c7b83cb45b8e1a7de7b998f7318cdbc2cbbe718110160ca41fe325c273148b",
+      "installed_sha256": "a7c7b83cb45b8e1a7de7b998f7318cdbc2cbbe718110160ca41fe325c273148b",
+      "bytes": 4516
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0904.log",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0904.log",
+      "source_sha256": "f8c71aa06b1dbe6842faf70b8d1ddd9b826418626ea1e535d2ce3be629954452",
+      "installed_sha256": "f8c71aa06b1dbe6842faf70b8d1ddd9b826418626ea1e535d2ce3be629954452",
+      "bytes": 982
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/chrom_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/chrom_heart_rate.csv",
+      "source_sha256": "ec3c6a26c467e9a1f0b66d355363d46780033f359ac37ef110b703cd09a725f8",
+      "installed_sha256": "ec3c6a26c467e9a1f0b66d355363d46780033f359ac37ef110b703cd09a725f8",
+      "bytes": 3285
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/chrom_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/chrom_waveform.csv",
+      "source_sha256": "792debb2b6e067ddc9db57c0a76f63908709385f45f73f98be90c383143a57ea",
+      "installed_sha256": "792debb2b6e067ddc9db57c0a76f63908709385f45f73f98be90c383143a57ea",
+      "bytes": 58150
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/comparison.png",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/comparison.png",
+      "source_sha256": "2dede2a953899a65be1afffdcdf23b8723015941d0049d178648b71b7f24cf43",
+      "installed_sha256": "2dede2a953899a65be1afffdcdf23b8723015941d0049d178648b71b7f24cf43",
+      "bytes": 148879
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/frame_trace.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/frame_trace.csv",
+      "source_sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433",
+      "installed_sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433",
+      "bytes": 721496
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/frame_trace.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/frame_trace.json",
+      "source_sha256": "a0ba9b20f2383186c506552a555f9eae375184d4e093fab6978235aa51a1852b",
+      "installed_sha256": "a0ba9b20f2383186c506552a555f9eae375184d4e093fab6978235aa51a1852b",
+      "bytes": 660
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/fusion_diagnostics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/fusion_diagnostics.csv",
+      "source_sha256": "51c44b0a08877a48ad126d4599c9738cff68e83c744e2cd29f140529c37acae2",
+      "installed_sha256": "51c44b0a08877a48ad126d4599c9738cff68e83c744e2cd29f140529c37acae2",
+      "bytes": 48953
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/fusion_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/fusion_heart_rate.csv",
+      "source_sha256": "560158cb8fc0dcd9251577b04e7b8d3cbb8271383a0772070cd77367b5ba5ee8",
+      "installed_sha256": "560158cb8fc0dcd9251577b04e7b8d3cbb8271383a0772070cd77367b5ba5ee8",
+      "bytes": 7390
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/fusion_proposals.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/fusion_proposals.csv",
+      "source_sha256": "884d056c9b0250a4ef576135b4113b6c737acd939fccda671eb360ed18545865",
+      "installed_sha256": "884d056c9b0250a4ef576135b4113b6c737acd939fccda671eb360ed18545865",
+      "bytes": 5232
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/fusion_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/fusion_waveform.csv",
+      "source_sha256": "71cc5464e178eb1f8b15e34081cef403cfba595ead192b36f04142303f7bdbfd",
+      "installed_sha256": "71cc5464e178eb1f8b15e34081cef403cfba595ead192b36f04142303f7bdbfd",
+      "bytes": 62057
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/pos_heart_rate.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/pos_heart_rate.csv",
+      "source_sha256": "ea5697e2316358832b651a609f6c0cf2229d50a262f9f44808251330dee4f81b",
+      "installed_sha256": "ea5697e2316358832b651a609f6c0cf2229d50a262f9f44808251330dee4f81b",
+      "bytes": 3270
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/pos_waveform.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/pos_waveform.csv",
+      "source_sha256": "89c7429cac10724610f172d1ed227aa7735adc691ad7dcb259fabbbdb7824b53",
+      "installed_sha256": "89c7429cac10724610f172d1ed227aa7735adc691ad7dcb259fabbbdb7824b53",
+      "bytes": 58135
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/roi_waveforms.csv",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/roi_waveforms.csv",
+      "source_sha256": "59ece247a61a93a32c3ad21f690889cd57c955fa7e09c60cb904c58035968343",
+      "installed_sha256": "59ece247a61a93a32c3ad21f690889cd57c955fa7e09c60cb904c58035968343",
+      "bytes": 210562
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907/summary.json",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907/summary.json",
+      "source_sha256": "bf38d85d1789a1ab65f32414630a187a50cafe73a9fbbb7c1ca59a5d533ecd3d",
+      "installed_sha256": "bf38d85d1789a1ab65f32414630a187a50cafe73a9fbbb7c1ca59a5d533ecd3d",
+      "bytes": 4771
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/user0907.log",
+      "destination": "results/motion_upgrade_v21_20260909/validation_final/user0907.log",
+      "source_sha256": "11639780500bcc92b069f17811ddeaf912c288f613b52a61f09273c651e3cc19",
+      "installed_sha256": "11639780500bcc92b069f17811ddeaf912c288f613b52a61f09273c651e3cc19",
+      "bytes": 1070
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/baseline_reproduction.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/baseline_reproduction.csv",
+      "source_sha256": "4e997ffc018318daba1e9bb88827179b0b580733c3d2b293d3ca98b947b88105",
+      "installed_sha256": "4e997ffc018318daba1e9bb88827179b0b580733c3d2b293d3ca98b947b88105",
+      "bytes": 984
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/common_metrics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/common_metrics.csv",
+      "source_sha256": "dcac50d11092505bcf7314074adc245909f61193bba1163e9e1002eeedf581fb",
+      "installed_sha256": "dcac50d11092505bcf7314074adc245909f61193bba1163e9e1002eeedf581fb",
+      "bytes": 6457
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/coverage_comparison.png",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/coverage_comparison.png",
+      "source_sha256": "f5032ab13449cb9fe9f526d9dbe4711995d92b02fdebadd6c6f209df65385111",
+      "installed_sha256": "f5032ab13449cb9fe9f526d9dbe4711995d92b02fdebadd6c6f209df65385111",
+      "bytes": 114433
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/deltas.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/deltas.csv",
+      "source_sha256": "6c3109a3c5d2a8bb4e380580638227759e909cafa7158239a7c5eaf1c33dbd84",
+      "installed_sha256": "6c3109a3c5d2a8bb4e380580638227759e909cafa7158239a7c5eaf1c33dbd84",
+      "bytes": 9052
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/final_hr_reproduction.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/final_hr_reproduction.csv",
+      "source_sha256": "8cd8a9769b72bab6d5c6f412e4af5a3c896ffb7745e6f3c71d1d85747f27b41c",
+      "installed_sha256": "8cd8a9769b72bab6d5c6f412e4af5a3c896ffb7745e6f3c71d1d85747f27b41c",
+      "bytes": 1770
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/heart_rate_windows.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/heart_rate_windows.csv",
+      "source_sha256": "e78b09894fe6f47ebbbb9c042bafdda47fe62c3c9d0cdaaaf2a0f58e5c2d525c",
+      "installed_sha256": "e78b09894fe6f47ebbbb9c042bafdda47fe62c3c9d0cdaaaf2a0f58e5c2d525c",
+      "bytes": 414411
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/metrics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/metrics.csv",
+      "source_sha256": "31db4d28b20a7133e47aed1a5dbb47c86745249b04e081eb2442b2d28fcfc153",
+      "installed_sha256": "31db4d28b20a7133e47aed1a5dbb47c86745249b04e081eb2442b2d28fcfc153",
+      "bytes": 9058
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/paired_metrics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/paired_metrics.csv",
+      "source_sha256": "c3869aa7f8e6502467b1bdd667a83790188004cf5c103beb1506bf3fde44c9f4",
+      "installed_sha256": "c3869aa7f8e6502467b1bdd667a83790188004cf5c103beb1506bf3fde44c9f4",
+      "bytes": 14435
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/provenance_reproduction.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/provenance_reproduction.csv",
+      "source_sha256": "6c9cc9316384dbf40fdcc06028fc76ce0f744eb3f8ca01390b59883766285e34",
+      "installed_sha256": "6c9cc9316384dbf40fdcc06028fc76ce0f744eb3f8ca01390b59883766285e34",
+      "bytes": 1029
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/summary.json",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/summary.json",
+      "source_sha256": "3dcd724437f30eb4fa7b01cbc67fb3d09650eb8c8150fef4156bdeed51f99ad8",
+      "installed_sha256": "3dcd724437f30eb4fa7b01cbc67fb3d09650eb8c8150fef4156bdeed51f99ad8",
+      "bytes": 175373
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/ubfc_accuracy_and_snr.png",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/ubfc_accuracy_and_snr.png",
+      "source_sha256": "cc92f2b272cda23261f0602eeb8799d80c9d3c0b27f5359f7ff9e06c22671d34",
+      "installed_sha256": "cc92f2b272cda23261f0602eeb8799d80c9d3c0b27f5359f7ff9e06c22671d34",
+      "bytes": 128288
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/waveform_metrics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/waveform_metrics.csv",
+      "source_sha256": "6d201ce866c314933dff7758911af451fe5fe1b5577e358e09bec2552f5bd9d7",
+      "installed_sha256": "6d201ce866c314933dff7758911af451fe5fe1b5577e358e09bec2552f5bd9d7",
+      "bytes": 25276
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/evaluation/waveform_windows.csv",
+      "destination": "results/motion_upgrade_v21_20260909/evaluation/waveform_windows.csv",
+      "source_sha256": "5085e0c72cbbb6179a92c16de41e70c3746383b7a4f73e7eb2e24409f3b60c26",
+      "installed_sha256": "5085e0c72cbbb6179a92c16de41e70c3746383b7a4f73e7eb2e24409f3b60c26",
+      "bytes": 185525
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/synthetic_stress_final/metrics.csv",
+      "destination": "results/motion_upgrade_v21_20260909/synthetic_stress_final/metrics.csv",
+      "source_sha256": "bb0e27d16fc6c593946734a761f34cc679e5dbbc5cb4ecfffba2b3b608ea87dd",
+      "installed_sha256": "bb0e27d16fc6c593946734a761f34cc679e5dbbc5cb4ecfffba2b3b608ea87dd",
+      "bytes": 3170
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/synthetic_stress_final/protocol.json",
+      "destination": "results/motion_upgrade_v21_20260909/synthetic_stress_final/protocol.json",
+      "source_sha256": "ab23fb9115c354a91fc7886aa05218aab11a194248e5b5857d22ab3c91926acf",
+      "installed_sha256": "ab23fb9115c354a91fc7886aa05218aab11a194248e5b5857d22ab3c91926acf",
+      "bytes": 2508
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/synthetic_stress_final/windows.csv",
+      "destination": "results/motion_upgrade_v21_20260909/synthetic_stress_final/windows.csv",
+      "source_sha256": "32fa6a94fed593fc44e32fd8d735a9d54321c03773b1515a1048ccddb8de6406",
+      "installed_sha256": "32fa6a94fed593fc44e32fd8d735a9d54321c03773b1515a1048ccddb8de6406",
+      "bytes": 131064
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rPPG_V2.1代码修复与指标变化_2026-09-09.md",
+      "destination": "results/motion_upgrade_v21_20260909/rPPG_V2.1代码修复与指标变化_2026-09-09.md",
+      "source_sha256": "18d748e3d5b1cc377b30d96a0ec76c8bdd76891b1e7091bcceba4fd6656253ce",
+      "installed_sha256": "d92b3518010317d6d183fe892de5a9c0b071f851887bf6941e85182928d3656d",
+      "bytes": 8875
+    },
+    {
+      "source": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/revision_audit.json",
+      "destination": "results/motion_upgrade_v21_20260909/revision_audit.json",
+      "source_sha256": "2bbb146c87b41808508486b11737d8673c879cacd4c3c268c87fc60f2c661330",
+      "installed_sha256": "2bbb146c87b41808508486b11737d8673c879cacd4c3c268c87fc60f2c661330",
+      "bytes": 80116
+    }
+  ],
+  "original_entry_hashes_before": {
+    "run.sh": "d9eee11d650bb1a8938d48f16d5bedbb551739f0bc74e0559252dfd37bbf36ad",
+    "run_motion_v2.sh": "5640dec0bf393573d7691172845794407fee3263af2067c0a84a7848a4e0ca00",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+  },
+  "original_entry_hashes_after": {
+    "run.sh": "d9eee11d650bb1a8938d48f16d5bedbb551739f0bc74e0559252dfd37bbf36ad",
+    "run_motion_v2.sh": "5640dec0bf393573d7691172845794407fee3263af2067c0a84a7848a4e0ca00",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+  },
+  "original_entry_unchanged": {
+    "run.sh": "d9eee11d650bb1a8938d48f16d5bedbb551739f0bc74e0559252dfd37bbf36ad",
+    "run_motion_v2.sh": "5640dec0bf393573d7691172845794407fee3263af2067c0a84a7848a4e0ca00",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+  },
+  "original_entries_unchanged": true,
+  "default_replacement": false,
+  "independent_new_data_validated": false,
+  "readme_append": {
+    "path": "/home/fengbujue/项目/rppg识别/README.md",
+    "before_sha256": "40a3a4a9e844189ccbdb28734aa56bc4ab402b4a65037e78f5f8dd65465a5079",
+    "after_sha256": "3a41c2d780d0c323a88d1878cecdce62caed03662708fc9725e5aa512474e9aa"
+  },
+  "files": {
+    "motion_upgrade_v21_20260909/README.md": {
+      "bytes": 4106,
+      "sha256": "ac9576b335a4ee532043cfb160272a9fde20e1dabb5d80cdd6b2c88a54ef97a8"
+    },
+    "motion_upgrade_v21_20260909/analyze_motion_v2.py": {
+      "bytes": 12398,
+      "sha256": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154"
+    },
+    "motion_upgrade_v21_20260909/analyze_rppg.py": {
+      "bytes": 11415,
+      "sha256": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+    },
+    "motion_upgrade_v21_20260909/legacy_motion.py": {
+      "bytes": 20056,
+      "sha256": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad"
+    },
+    "motion_upgrade_v21_20260909/motion_frontend.py": {
+      "bytes": 10648,
+      "sha256": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700"
+    },
+    "motion_upgrade_v21_20260909/motion_fusion.py": {
+      "bytes": 19479,
+      "sha256": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04"
+    },
+    "motion_upgrade_v21_20260909/protocol_before_validation.json": {
+      "bytes": 3483,
+      "sha256": "a2e3fdec633f53205f31014a4d5c2e3025d23fb63a834bebc5327ebc82a2c2de"
+    },
+    "motion_upgrade_v21_20260909/stable_groups.py": {
+      "bytes": 7544,
+      "sha256": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f"
+    },
+    "motion_upgrade_v21_20260909/test_cli_v2.py": {
+      "bytes": 2612,
+      "sha256": "2939921ad15626c23a79997a482dad2a3ddbe8df0753f37f973828cc2c69d72e"
+    },
+    "motion_upgrade_v21_20260909/test_frontend_v2.py": {
+      "bytes": 9128,
+      "sha256": "b0fbb912cd0147d0675e1a93c44641d3e92cd0271e506b6080c4ed212cad3b96"
+    },
+    "motion_upgrade_v21_20260909/test_fusion_v2.py": {
+      "bytes": 7733,
+      "sha256": "1a6568a3bf80c44df5da60bb29ae6b4720ed906149e2543a38a30e0992f6c52c"
+    },
+    "motion_upgrade_v21_20260909/test_stable_groups_v21.py": {
+      "bytes": 10921,
+      "sha256": "b4f17913006f458b18a82ef44d9b366f11df992fd4855bcdbf6c46b939d0f2a6"
+    },
+    "motion_upgrade_v21_20260909/test_waveform_hr_v21.py": {
+      "bytes": 14430,
+      "sha256": "f3803f5393125ced0927dc47ca0d5879e8795cfa12850e567928c47426f50646"
+    },
+    "motion_upgrade_v21_20260909/waveform_hr.py": {
+      "bytes": 6745,
+      "sha256": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/baseline_reproduction.csv": {
+      "bytes": 984,
+      "sha256": "4e997ffc018318daba1e9bb88827179b0b580733c3d2b293d3ca98b947b88105"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/common_metrics.csv": {
+      "bytes": 6457,
+      "sha256": "dcac50d11092505bcf7314074adc245909f61193bba1163e9e1002eeedf581fb"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/coverage_comparison.png": {
+      "bytes": 114433,
+      "sha256": "f5032ab13449cb9fe9f526d9dbe4711995d92b02fdebadd6c6f209df65385111"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/deltas.csv": {
+      "bytes": 9052,
+      "sha256": "6c3109a3c5d2a8bb4e380580638227759e909cafa7158239a7c5eaf1c33dbd84"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/final_hr_reproduction.csv": {
+      "bytes": 1770,
+      "sha256": "8cd8a9769b72bab6d5c6f412e4af5a3c896ffb7745e6f3c71d1d85747f27b41c"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/heart_rate_windows.csv": {
+      "bytes": 414411,
+      "sha256": "e78b09894fe6f47ebbbb9c042bafdda47fe62c3c9d0cdaaaf2a0f58e5c2d525c"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/metrics.csv": {
+      "bytes": 9058,
+      "sha256": "31db4d28b20a7133e47aed1a5dbb47c86745249b04e081eb2442b2d28fcfc153"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/paired_metrics.csv": {
+      "bytes": 14435,
+      "sha256": "c3869aa7f8e6502467b1bdd667a83790188004cf5c103beb1506bf3fde44c9f4"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/provenance_reproduction.csv": {
+      "bytes": 1029,
+      "sha256": "6c9cc9316384dbf40fdcc06028fc76ce0f744eb3f8ca01390b59883766285e34"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/summary.json": {
+      "bytes": 175373,
+      "sha256": "3dcd724437f30eb4fa7b01cbc67fb3d09650eb8c8150fef4156bdeed51f99ad8"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/ubfc_accuracy_and_snr.png": {
+      "bytes": 128288,
+      "sha256": "cc92f2b272cda23261f0602eeb8799d80c9d3c0b27f5359f7ff9e06c22671d34"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/waveform_metrics.csv": {
+      "bytes": 25276,
+      "sha256": "6d201ce866c314933dff7758911af451fe5fe1b5577e358e09bec2552f5bd9d7"
+    },
+    "results/motion_upgrade_v21_20260909/evaluation/waveform_windows.csv": {
+      "bytes": 185525,
+      "sha256": "5085e0c72cbbb6179a92c16de41e70c3746383b7a4f73e7eb2e24409f3b60c26"
+    },
+    "results/motion_upgrade_v21_20260909/rPPG_V2.1代码修复与指标变化_2026-09-09.md": {
+      "bytes": 8875,
+      "sha256": "d92b3518010317d6d183fe892de5a9c0b071f851887bf6941e85182928d3656d"
+    },
+    "results/motion_upgrade_v21_20260909/revision_audit.json": {
+      "bytes": 80116,
+      "sha256": "2bbb146c87b41808508486b11737d8673c879cacd4c3c268c87fc60f2c661330"
+    },
+    "results/motion_upgrade_v21_20260909/synthetic_stress_final/metrics.csv": {
+      "bytes": 3170,
+      "sha256": "bb0e27d16fc6c593946734a761f34cc679e5dbbc5cb4ecfffba2b3b608ea87dd"
+    },
+    "results/motion_upgrade_v21_20260909/synthetic_stress_final/protocol.json": {
+      "bytes": 2508,
+      "sha256": "ab23fb9115c354a91fc7886aa05218aab11a194248e5b5857d22ab3c91926acf"
+    },
+    "results/motion_upgrade_v21_20260909/synthetic_stress_final/windows.csv": {
+      "bytes": 131064,
+      "sha256": "32fa6a94fed593fc44e32fd8d735a9d54321c03773b1515a1048ccddb8de6406"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/chrom_heart_rate.csv": {
+      "bytes": 28276,
+      "sha256": "7f3bbe1bc78e2f379c23dbb10081cea856748cbd9b0cb93ffa860842a1335571"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/chrom_waveform.csv": {
+      "bytes": 592058,
+      "sha256": "0159b8e4c193293424205b6ae44f4256fa4f72c113e0e590031ff2091912d281"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/comparison.png": {
+      "bytes": 110685,
+      "sha256": "1aa561153c4313e104c98b4369608186b82b3431f69488e4df659ecb5cf6e907"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/frame_trace.csv": {
+      "bytes": 6585957,
+      "sha256": "aa1884b52beeac34c61633ac72ce56f298b5b9c19293a4ec899fc1d248bfafce"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/frame_trace.json": {
+      "bytes": 660,
+      "sha256": "57a386c00a58ff3fcf692a20f58cc4babcfee3ba482e3974972cd09d62b227b6"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/fusion_diagnostics.csv": {
+      "bytes": 953687,
+      "sha256": "7d3fe2fb0b8b400d3e29a454fb24f6e5e2a8b57ac241cc13f8e8134255be831c"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/fusion_heart_rate.csv": {
+      "bytes": 66567,
+      "sha256": "90bbb3aa2a983c0df3e4c1da4ddc5fe1ffe3186a8eb1344ee215f4fb78b7bdcc"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/fusion_proposals.csv": {
+      "bytes": 64424,
+      "sha256": "de07d138d5d6569e62a6b85bae7fd781282f46c6c81db3d648757e6c9c56ab39"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/fusion_waveform.csv": {
+      "bytes": 641675,
+      "sha256": "5883e75a024b57bdbf77fc99e1c64170ccf9215d5aabb08aaddb2395ba56defb"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/pos_heart_rate.csv": {
+      "bytes": 28339,
+      "sha256": "85c968715432c9be4ce4cdb8f7c0a042ac4a1c5f1334a99b91cfd3323b58d734"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/pos_waveform.csv": {
+      "bytes": 592079,
+      "sha256": "f202ec981a5e19053b92c69ff32e4207e2334825c81d1deeab01e109bb99047b"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/roi_waveforms.csv": {
+      "bytes": 2132317,
+      "sha256": "c291afb30c774f6c4284b9243ef0b531c7529a13a59c1948ddb011ecd97d60bc"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full/summary.json": {
+      "bytes": 4588,
+      "sha256": "ff68aee2fa549e0a7a9785c332f05c57b538f67a4b9f753483416cf0f72271f9"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/kaggle_full.log": {
+      "bytes": 1016,
+      "sha256": "8a53157c72f732893e08254af59bc4be7e77757cda91ebdfb41013c73d6fe7d4"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/protocol_before_validation.json": {
+      "bytes": 3483,
+      "sha256": "a2e3fdec633f53205f31014a4d5c2e3025d23fb63a834bebc5327ebc82a2c2de"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/runs.json": {
+      "bytes": 3225,
+      "sha256": "ac2c4fc54b7b79d80585cf54b1cddb39d4957dc7b6a92bf5ce69a37fc1dd87b9"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/chrom_heart_rate.csv": {
+      "bytes": 701,
+      "sha256": "87760e6604768ea33e191e651649d1180e2cc6f8e55229efb88566bec8ecec29"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/chrom_waveform.csv": {
+      "bytes": 24904,
+      "sha256": "4aba7c1e2a13489b35b8e1acfd00946068a634ea9071bed7ce7668e75bbdc4be"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/comparison.png": {
+      "bytes": 62335,
+      "sha256": "3d49c9768a7680079004b52f7e584b22648211048200610fa01c0a0396640f3a"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/frame_trace.csv": {
+      "bytes": 338955,
+      "sha256": "af08afefde4b22bd2bd869af3ac03f71faad58823f6ea2b76830ee6aeaf1d088"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/frame_trace.json": {
+      "bytes": 628,
+      "sha256": "e91c8fdb0f5fa3bcdfe1b8f12597455749613b08c3521d1382c67ed19b5e3b67"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/fusion_diagnostics.csv": {
+      "bytes": 10736,
+      "sha256": "9624551bb15315f1ccd7a739f782d36dc10ef71415e0431d1f74597b9cf509c7"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/fusion_heart_rate.csv": {
+      "bytes": 1813,
+      "sha256": "54bb17f2ff8d8e46dcfe9954e71dbf694a9aab6f40736552f591a9e1f93745a0"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/fusion_proposals.csv": {
+      "bytes": 1461,
+      "sha256": "d32cab34b99e9de0438445c7629a83a61ba912de1df38701828abf60de850f9d"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/fusion_waveform.csv": {
+      "bytes": 27762,
+      "sha256": "0953754ae565e4709b1d4454a77e4fc4f3feaa48fe43e44a1fbef7ee58051838"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/pos_heart_rate.csv": {
+      "bytes": 702,
+      "sha256": "13d9d86cbe553bad31e051e100aca4cd8ff6f1dccb6f2e1e258ad3ef1a4150f9"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/pos_waveform.csv": {
+      "bytes": 24920,
+      "sha256": "4ef9b88fa479d1d59e38044f6b36629fad25c845f5bbf1a06db3319ae650400a"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/roi_waveforms.csv": {
+      "bytes": 87965,
+      "sha256": "a84bfbdf306f5fe404317e605300d778527eae8b41e33e39c81fe56e8c530dce"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72/summary.json": {
+      "bytes": 4459,
+      "sha256": "e7c0e090e9370a0182d91f161611b42d810f0da4c35113a00065cd5b0564bc8d"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/synthetic72.log": {
+      "bytes": 935,
+      "sha256": "3642c82f9bd1801923e333efad806bac060a0f3c40edd545d6b5a5a7fb44d27e"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/test_results.json": {
+      "bytes": 1384,
+      "sha256": "d0596c639de8929b417530028ac6d3d12a34bedc96958d1b71e2d76e115d08bb"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/test_results.log": {
+      "bytes": 4784,
+      "sha256": "32e6fa89aa3a8970552df1a9c3d36b3f00c28a62988a80c11f271201fba60eb2"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/chrom_heart_rate.csv": {
+      "bytes": 4265,
+      "sha256": "cba5db83d95096c57bf986208c84c9dc9f973a84b1468834a463711c9f3609c9"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/chrom_waveform.csv": {
+      "bytes": 73951,
+      "sha256": "80b96982c767bb0699a0cac26944a07958b3048b0bbbace88203a1b1fddca6cb"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/comparison.png": {
+      "bytes": 74592,
+      "sha256": "dc6e92b005805d16dd20ddc9501df8c6c4af81d8fb7fe0a77abf1df35e090190"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/frame_trace.csv": {
+      "bytes": 746173,
+      "sha256": "5064189577d15b75b1e9f06b5cefedb880e3f6be6230fea693dc1f9acf3b311c"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/frame_trace.json": {
+      "bytes": 639,
+      "sha256": "d92fa1659cecb0d7798e50baccc89c3ce2262d0c939fa2b07ea2a13192767a4d"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/fusion_diagnostics.csv": {
+      "bytes": 96801,
+      "sha256": "271cea811d6d598c9cf3c221406d762dc0b60b520a746e2a084ef5e583a634d2"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/fusion_heart_rate.csv": {
+      "bytes": 9583,
+      "sha256": "20eaf67f0042912c61d3d3d2a3c27912ac9093b47b1a5047a7da6e3971f7b9ad"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/fusion_proposals.csv": {
+      "bytes": 8301,
+      "sha256": "d9780ceb5e402a5efdbe3753b6fcd8af0974d9463413307f7970b09738044702"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/fusion_waveform.csv": {
+      "bytes": 81541,
+      "sha256": "383af44686f5b071cedfef00f6763d498942a2997bde03896e540bb87f96ea16"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/pos_heart_rate.csv": {
+      "bytes": 4269,
+      "sha256": "131d16319b8fd13e41ed89eac61243427352a62617850bd1a42e59343b2a6a54"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/pos_waveform.csv": {
+      "bytes": 73908,
+      "sha256": "e92a213830325e885e208217aca2105dd1213c40e61e881ceaafe1f8552bc33d"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/roi_waveforms.csv": {
+      "bytes": 251357,
+      "sha256": "afbba8884fd08422bd427c54a454539ef45c1006cb381a8a731c17aca72deef6"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc/summary.json": {
+      "bytes": 5710,
+      "sha256": "17d582a56dcbdbac4fd1a1064329cc83c020ac6065a60e01b98c5e03dee9cd31"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/ubfc.log": {
+      "bytes": 1573,
+      "sha256": "d3eb0eb0062ca2978e8b4b72dfb839bcacbe50f3790014c8364125b71e1e5f19"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/chrom_heart_rate.csv": {
+      "bytes": 2733,
+      "sha256": "54d5a7a5946ddfd2161f53ba5f26752b1183614476e90572148a4dd86550ff02"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/chrom_waveform.csv": {
+      "bytes": 59336,
+      "sha256": "df86e23ffb2dd5e43297fd20b99abce1d66730779536b54717409523b463728b"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/comparison.png": {
+      "bytes": 63741,
+      "sha256": "3c701a5e8d61c350f3b49b4c2571f0c67bba82e7532b1d729a4099c4a67e6a2b"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/frame_trace.csv": {
+      "bytes": 783799,
+      "sha256": "b04b627be9f18ca962b44109f8a215206d0fa9537cc6f03402b1a5b12eaecbfb"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/frame_trace.json": {
+      "bytes": 624,
+      "sha256": "d10654b7108449c388e4bce7c747561fdc1f3e60097ec7a207f50d9bd4795d6e"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/fusion_diagnostics.csv": {
+      "bytes": 79567,
+      "sha256": "bd752b12ed172f804e8324dc9cc567a1950f3ac3844e283639dc2ffc48b8aa79"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/fusion_heart_rate.csv": {
+      "bytes": 6829,
+      "sha256": "817d9b9dd0a44e579505daf1fc4a5df8694b76c5c3efdf4b74bf2a0c6604a7a0"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/fusion_proposals.csv": {
+      "bytes": 6419,
+      "sha256": "e3ad4930ef8b141432d42090c2d5473860aa149d539b04b73d1286dc1141c79a"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/fusion_waveform.csv": {
+      "bytes": 66646,
+      "sha256": "c9dad38bf202899e25887dad8295579614312bc9bf4c6a299f6d45863928bf6d"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/pos_heart_rate.csv": {
+      "bytes": 2739,
+      "sha256": "f3fe420615ed8fb9535f0f0d1e8d4c207aca8e756b3e8d31017efacb62cd4e5d"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/pos_waveform.csv": {
+      "bytes": 59345,
+      "sha256": "1ba53bb8a2e99a7ebf36ebc8c065bab7f44a3d982eba0b2b325a5f6a43eda348"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/roi_waveforms.csv": {
+      "bytes": 226202,
+      "sha256": "ae280507b8cb46b18a579c6db472d65fb35b83ed70458054fcc91bdf3fc39942"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904/summary.json": {
+      "bytes": 4516,
+      "sha256": "a7c7b83cb45b8e1a7de7b998f7318cdbc2cbbe718110160ca41fe325c273148b"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0904.log": {
+      "bytes": 982,
+      "sha256": "f8c71aa06b1dbe6842faf70b8d1ddd9b826418626ea1e535d2ce3be629954452"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/chrom_heart_rate.csv": {
+      "bytes": 3285,
+      "sha256": "ec3c6a26c467e9a1f0b66d355363d46780033f359ac37ef110b703cd09a725f8"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/chrom_waveform.csv": {
+      "bytes": 58150,
+      "sha256": "792debb2b6e067ddc9db57c0a76f63908709385f45f73f98be90c383143a57ea"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/comparison.png": {
+      "bytes": 148879,
+      "sha256": "2dede2a953899a65be1afffdcdf23b8723015941d0049d178648b71b7f24cf43"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/frame_trace.csv": {
+      "bytes": 721496,
+      "sha256": "5712c5e8f1bbb10b5a66d3ec7e97e75587a2bb6a63cc306811cdfd7cfa9e4433"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/frame_trace.json": {
+      "bytes": 660,
+      "sha256": "a0ba9b20f2383186c506552a555f9eae375184d4e093fab6978235aa51a1852b"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/fusion_diagnostics.csv": {
+      "bytes": 48953,
+      "sha256": "51c44b0a08877a48ad126d4599c9738cff68e83c744e2cd29f140529c37acae2"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/fusion_heart_rate.csv": {
+      "bytes": 7390,
+      "sha256": "560158cb8fc0dcd9251577b04e7b8d3cbb8271383a0772070cd77367b5ba5ee8"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/fusion_proposals.csv": {
+      "bytes": 5232,
+      "sha256": "884d056c9b0250a4ef576135b4113b6c737acd939fccda671eb360ed18545865"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/fusion_waveform.csv": {
+      "bytes": 62057,
+      "sha256": "71cc5464e178eb1f8b15e34081cef403cfba595ead192b36f04142303f7bdbfd"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/pos_heart_rate.csv": {
+      "bytes": 3270,
+      "sha256": "ea5697e2316358832b651a609f6c0cf2229d50a262f9f44808251330dee4f81b"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/pos_waveform.csv": {
+      "bytes": 58135,
+      "sha256": "89c7429cac10724610f172d1ed227aa7735adc691ad7dcb259fabbbdb7824b53"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/roi_waveforms.csv": {
+      "bytes": 210562,
+      "sha256": "59ece247a61a93a32c3ad21f690889cd57c955fa7e09c60cb904c58035968343"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907/summary.json": {
+      "bytes": 4771,
+      "sha256": "bf38d85d1789a1ab65f32414630a187a50cafe73a9fbbb7c1ca59a5d533ecd3d"
+    },
+    "results/motion_upgrade_v21_20260909/validation_final/user0907.log": {
+      "bytes": 1070,
+      "sha256": "11639780500bcc92b069f17811ddeaf912c288f613b52a61f09273c651e3cc19"
+    },
+    "run_motion_v21.sh": {
+      "bytes": 204,
+      "sha256": "d88437a67b30101ecf4839e60a8849e0f00bca7e0165e5be32f1e4a9e34d1442"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/summary.json": {
+      "bytes": 4351,
+      "sha256": "825efd73a12a15e79c9691b7792feedd189bf39df1ab0e6ca5182784168860b1"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/fusion_waveform.csv": {
+      "bytes": 27796,
+      "sha256": "93fea7f9d8ea33aa9bfb1d5a31ebe7b7ca96e48e1d12c3179cf9e5e45d756a0d"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/frame_trace.json": {
+      "bytes": 628,
+      "sha256": "181aa3f96ffcf40ddb76c3f87e84f30594dbda2e89c288081a059b6f8ca2e94a"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/roi_waveforms.csv": {
+      "bytes": 87990,
+      "sha256": "c962873b338fbac689b8e1e4f92fd4b1d37722e24392ffecbcdfce2ff4fb5bb9"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/frame_trace.csv": {
+      "bytes": 340298,
+      "sha256": "ec1933755360382c21c3d529e7c205e3669f301933f8623116faa15f27a89da4"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/fusion_heart_rate.csv": {
+      "bytes": 1814,
+      "sha256": "dcca920c61726cb353db30c27168889e929773f3b1d1962cd80b5d0a06120a26"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/comparison.png": {
+      "bytes": 62335,
+      "sha256": "3d49c9768a7680079004b52f7e584b22648211048200610fa01c0a0396640f3a"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/chrom_heart_rate.csv": {
+      "bytes": 702,
+      "sha256": "b02f578351caa55b9b651c221a7e1f556d3fbac023275d54c82c724502bf16f6"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/fusion_proposals.csv": {
+      "bytes": 1463,
+      "sha256": "23b5fceba9402d1ab3e1e2fe7c8178d8c655530ba910fd81eeb3e433be4939dd"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/fusion_diagnostics.csv": {
+      "bytes": 10740,
+      "sha256": "a49f1a05b3517fc47edb25dee2e59026702b7bc1de58ff53f7483d3785ad374b"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/chrom_waveform.csv": {
+      "bytes": 24902,
+      "sha256": "89fe82802a8a374801e94e7229be6f903b733099d226c38ba12fb72cc8dd9a62"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/pos_heart_rate.csv": {
+      "bytes": 700,
+      "sha256": "d275ab8f7d14324cfa58fd83cd6c62b38836c5aad316cd6f068e39369867d8a6"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/pos_waveform.csv": {
+      "bytes": 24945,
+      "sha256": "5a551feffbed8a4a17215aed3ed724034847208b668475b2b96b490f2fabeb03"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/qa/00000_mesh.jpg": {
+      "bytes": 69337,
+      "sha256": "282f175ee07041ba5aa2acf8a0dcb2cbff3cea2840e1ae38a69f81067fbf5008"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke/qa/00300_mesh.jpg": {
+      "bytes": 85213,
+      "sha256": "d9fcdf1ea45df759e8a7a0df2acc45dfae54fa64b3661547cdce303a561bbb71"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_help.txt": {
+      "bytes": 1046,
+      "sha256": "b8902fbb492985b9e099e7c6dda3d291040050c16f4d315081dee536fdff1e12"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_smoke.log": {
+      "bytes": 2617,
+      "sha256": "aa34d5ee30fbb67878421adb0bded15823ac4e52ab434b4105b2498714131f04"
+    },
+    "results/motion_upgrade_v21_20260909/deployment_verification.json": {
+      "bytes": 1335,
+      "sha256": "a4c2dd4468ba16a4a1da571bdc9755bfb2204b0243ce94d43ba493766ac72298"
+    }
+  },
+  "manifest_excludes_its_own_files": true,
+  "audit_dependencies": [
+    "evaluate_v21.py remains in the original audit workspace and depends on retained V1/V2 evidence; it is not a standalone deployed entry point.",
+    "The recorded-candidate test in test_stable_groups_v21.py requires the original workspace UBFC candidate fixture; copied tests do not include all historical audit assets.",
+    "The deployed report links to copied evaluation outputs. Regression results do not establish independent new-data performance."
+  ],
+  "verified_after_deployment": true
+}

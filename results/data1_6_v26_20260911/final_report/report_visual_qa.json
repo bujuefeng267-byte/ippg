@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-11T14:56:06.592758+00:00",
+  "passed": true,
+  "metric_rows": 42,
+  "plot_rows": {
+    "six_video_hr_plot_data.csv": 309,
+    "six_video_hr_conservative_components_plot_data.csv": 309
+  },
+  "link_targets_exist": 7,
+  "all_source_hashes_unchanged": true,
+  "plot_missing_values_exact_to_source": true,
+  "visual_inspection": {
+    "metrics_overview.png": "Inspected full image; seven model rows and six cases readable, no clipping. Values printed inside cells.",
+    "six_video_hr_fixed_comparison.png": "Inspected full image; fixed harmonic candidate plus V25 and Polar in all six panels; legend, tolerance band and NaN gaps clear.",
+    "six_video_hr_conservative_components.png": "Inspected full image; fixed conservative candidate in all six panels; overlapping equal traces expected, gaps retained."
+  },
+  "windows_link_check": "Root-specific PowerShell Test-Path on \\wsl.localhost\\Ubuntu report returned True. Sandboxed view_image cannot directly read WSL UNC; inspected byte-copied Windows images.",
+  "caveat": "Gray band is ±5 bpm tolerance, not a confidence interval; no waveform morphology claim."
+}

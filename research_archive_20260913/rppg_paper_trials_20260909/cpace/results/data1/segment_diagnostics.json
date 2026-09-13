@@ -1,0 +1,83 @@
+[
+  {
+    "segment_index": 0,
+    "start_frame": 0,
+    "end_frame_exclusive": 28,
+    "start_s": 0.0,
+    "end_s": 0.9333324,
+    "roi_names": [],
+    "status": "insufficient_rois_with_fixed_forehead"
+  },
+  {
+    "segment_index": 1,
+    "start_frame": 28,
+    "end_frame_exclusive": 1555,
+    "start_s": 0.9333324,
+    "end_s": 51.8332815,
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "status": "processed",
+    "seed_bpm": 49.129208893328524,
+    "seed_source": "video Forehead GREEN only, recomputed per segment",
+    "retained_start_frame": 76,
+    "retained_end_frame_exclusive": 1507,
+    "native_author_results": {
+      "default": {
+        "method": "cPACE",
+        "fs": 30.00003000003,
+        "hr_seed_hz": 0.8188201482221421,
+        "hr_seed_bpm": 49.129208893328524,
+        "apply_homodyne": true,
+        "roi_names": [
+          "Forehead",
+          "L_Cheek",
+          "R_Cheek"
+        ],
+        "hr_per_roi": {
+          "Forehead": 52.278689640534836,
+          "L_Cheek": 58.303863955207056,
+          "R_Cheek": 58.57045468119138
+        },
+        "hr_consensus_bpm": 58.303863955207056,
+        "plv_lr_cheek": 0.6719057811936713,
+        "scope": "whole finite segment before edge mask; not final window HR",
+        "roi_waveform_std": {
+          "forehead": 0.4949419709243822,
+          "left_cheek": 0.44847274144140725,
+          "right_cheek": 0.4444952738540646
+        }
+      },
+      "no_homodyne": {
+        "method": "cPACE",
+        "fs": 30.00003000003,
+        "hr_seed_hz": 0.8188201482221421,
+        "hr_seed_bpm": 49.129208893328524,
+        "apply_homodyne": false,
+        "roi_names": [
+          "Forehead",
+          "L_Cheek",
+          "R_Cheek"
+        ],
+        "hr_per_roi": {
+          "Forehead": 90.21740881948384,
+          "L_Cheek": 93.5544044379221,
+          "R_Cheek": 92.8480749175526
+        },
+        "hr_consensus_bpm": 92.8480749175526,
+        "plv_lr_cheek": 0.7787597815517512,
+        "scope": "whole finite segment before edge mask; not final window HR",
+        "roi_waveform_std": {
+          "forehead": 0.01166645956229089,
+          "left_cheek": 0.01684823418490418,
+          "right_cheek": 0.008069521499312619
+        }
+      }
+    },
+    "forehead_selected_eigenvector_matches": [
+      "v1"
+    ]
+  }
+]

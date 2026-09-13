@@ -1,0 +1,1321 @@
+{
+  "passed": true,
+  "checked_cases": 6,
+  "checked_modes": 4,
+  "checked_variants": [
+    "fusion",
+    "pos",
+    "chrom"
+  ],
+  "checked_estimators": [
+    "local_peak",
+    "offline_ridge"
+  ],
+  "checked_utc": "2026-09-10T07:50:49.431959+00:00",
+  "methodology": "Independent saved-waveform Welch, gate and offline DP recomputation; fusion provenance rebuilt from positive contributor weights; no production estimator imported.",
+  "qa_script_sha256": "7577120d77eed5f45bd9d0e83ab9f70d5c4ff83e09e7e7eaae6e5db284de5130",
+  "reference_used": false,
+  "input_sha256": {
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/summary.json": "4817fbca352a281b94ac7ba33bb629d77145f6e766e1ccf1ed7875e5793dd257",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/frame_trace.csv": "946d5d183f99af899bed6ca56e1fabfaa3ad37ab88ed3a730d6db15b6d6f3c20",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/roi_waveforms.csv": "4cfd70dda2d280ed8e6d835138e479d1db08c0fe6b0c554e7a94b21894dd5bd7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/fusion_proposals.csv": "a945454abe67fbd167c7d9f259f2413ec4e8f4b9302605f3c71c5f0756fffdbc",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/fusion_diagnostics.csv": "80a9dcd5bd8393e68b27a5e88d2c15b3ca147a3438334f0373071d6ace9ca158",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/fusion_waveform.csv": "9e001819d748be1a34c684cc9f55a93dea764f2cb66861a8bfb52d571185ee75",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/fusion_heart_rate.csv": "219cbe5b73d960fac5973d27ca5d6e88fc0422a36c98e0700c1b91e331c615cb",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/pos_waveform.csv": "174b67c8fb110f3b295eb09803fc59a5224a553a456575acb3c2fce22c431c1f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/pos_heart_rate.csv": "ebb4a072b2b27912524b919a60fa5bc3518c10b42c85ac4b215e6e10ab699e40",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/chrom_waveform.csv": "59bab1e14e782a18c4995a95db5c1f2b2cbc5a3fe3602e1a8e4fe73a15afcc78",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0904/chrom_heart_rate.csv": "0f26233ee824e44d9a2863eded8b373de4b420753cfce090503de3fabcc350c5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/summary.json": "b7336f23c22d612c3bf63dea872acc195934384f7e769357bfb386fca1bbaef8",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/frame_trace.csv": "95d74316bd39df009be3234c3538093cb879d2ebbc1f9c0cacf068d92a475f61",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/roi_waveforms.csv": "d4f710329b06b1603c91c88a84e4b354ef08b0c667f0f5fe1cd89bfc6fbf678b",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/fusion_proposals.csv": "e89147e7fd81c3d7ffbe1f2c62ea43b6af2eb6426034931298259231e8707805",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/fusion_diagnostics.csv": "e760780176d65454bb9a836ec58a6ef6b885bab0bd7f1e388a83b8ec252c81bb",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/fusion_waveform.csv": "616aa6d88fade849e4349500eed23cfe8644ecbcbc0a6abdb5be25468631b2af",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/fusion_heart_rate.csv": "e0bf28e1d95ba1152a82ea32a83d2b9acc8e3ae2daa38feff2ecc92152821247",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/pos_waveform.csv": "d9f92ab0a62bdfce6ed8ffa15306c93d50c70b4415b15931b980b6b82e81d81a",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/pos_heart_rate.csv": "64843b3c52e46946ba3a424ea35e0c2a6c422bc43a606e7d688abf26f0d71d48",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/chrom_waveform.csv": "cac96a1318b0b41ec766165f97174af670c5aef0e1be239a7a6829400729731e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/user0907/chrom_heart_rate.csv": "1d0d37ba82956fd0c9b81bc0f93876bb710d58aefb44d48393e70bee99cfd074",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/summary.json": "9906c2946ceaebca625196f2a53ad8425f2be335a3ef125728421346c8753d8f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/frame_trace.csv": "6c4b48f4df70830c5a73e9840b3cdc0b33eaf7cad83c805e573b78adb6bb9784",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/roi_waveforms.csv": "6ffd6391bab0a03af98c6bbf6f7c2ce10ed6d8d9d742a9415a16fc5494c71037",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/fusion_proposals.csv": "7e94fa27b677d54d6ff713d590714868a6274fc7c921e7afe17d6fef90c1028f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/fusion_diagnostics.csv": "85df2230aab51a4f0802cbcca19749562782554f838c79281707c9a5830773a1",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/fusion_waveform.csv": "074ac49057da48c257872a834b6f5ec020226460f63fa23d86adad03042d77ee",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/fusion_heart_rate.csv": "535dbcae61da13611e7694138067642a3818ed17f8cfff2bf2234316b6641d95",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/pos_waveform.csv": "de71d568eed72411e043e6be666dd251cfd4b9af6447f048d1b7994df777f179",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/pos_heart_rate.csv": "4c0561b4546e567ca32eb99c97dd9fad45bcf62dbec71f8cd8589895b87deed3",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/chrom_waveform.csv": "b291c9e249297f26e97e266fa9a82726d762bd64e11b7ef84b22ea5bb4ca6d80",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/ubfc/chrom_heart_rate.csv": "66147d87fa45d7ec76aec9d6a21c6e606c456f5f6f7a87fa17f8fa9a9e967316",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/summary.json": "dc56012bd99643ede4b02bdf182f2219c89ef2f1668f0ff263c6e85f5ba4d2d9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/frame_trace.csv": "740a8ca30375678f8296bcfe215ffd52589ccddf245e62547d90abe7c9b247b8",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/roi_waveforms.csv": "8a27752b91b832d1385db2cd107065ef717ae7bde0a3e3396fd154dba6939dc6",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/fusion_proposals.csv": "2022e98e3d2f94843be3172b554db90af77ed890a21823ef3eb16735be5b38f5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/fusion_diagnostics.csv": "666185ed6c0b44b3ec7d0aedfa115af168ddaa7ab4a229c2bd7de3ea72b5738e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/fusion_waveform.csv": "0fcee8415f152ce41d03ac30b7fe58f4c845d32fb81e2d9aedc33f4f7d849040",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/fusion_heart_rate.csv": "898f9c427d0de2b786e5f3c228dacf7953cf99348e2ea346ac9852a855f5ef53",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/pos_waveform.csv": "2971da0f50921149639f6c17a32981039391bb6255af8823e8d75eceb72ccf49",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/pos_heart_rate.csv": "7196a18c50e27cff9b5a0127b97a11f42913a15f4d030d127dc9c25453d3ca5f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/chrom_waveform.csv": "028450ecfb58a67312a6fddcf2c586be160647a432e64d8d41758a7b235e2f0f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/kaggle_full/chrom_heart_rate.csv": "0e4eb8f8f0f1b89d660c7512343d99ebac16860cb50bf3f6eb4859fbf2f26058",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/summary.json": "73966c44aad14e4167966acb834320a3c39e3c5c56e3535a182d1c75941b9e8e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/frame_trace.csv": "0beae07dd196b0d3a116c31fe16602d9f2ed373458a382bc59e34bd1f72b15c0",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/roi_waveforms.csv": "e72390533792414998fb422e2cf2bd81fac2dcee58f4da72d85abd70e89ffef5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/fusion_proposals.csv": "0703d2ca1554a3c0bfcfa81cbfc15e22f51e1c92149daf3d20a2c22a7859f7f0",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/fusion_diagnostics.csv": "53b6e96e2d7ce11199a2b7f426bcc085f53551e213ac03a2221bef730d49f125",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/fusion_waveform.csv": "291cdd669950aab789b807368f38c5517ca6c195ddbe2e8b57ef47c19c6891b8",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/fusion_heart_rate.csv": "651bde6bf068ea0a7392b60f7e143b034cdcfff52b2cec2559af8380247d19ee",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/pos_waveform.csv": "4291d4d59cb58f3a81e188ad2a086534bc53221c02e72fa4f40578845168e8e4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/pos_heart_rate.csv": "08660a089b7ffc6a94dae3f6d9c7bdfd8eccc244337bce4843309c89bb9527e7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/chrom_waveform.csv": "ea8d501cfc2a8493330ef90f41af8af56c195a65aa14c28b8cbb3ea8d53fc994",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/synthetic72/chrom_heart_rate.csv": "619e6f02f9d4ec740ced19daf799ec98056395a7aa656cbacced343aff4e18e7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/summary.json": "c2b6fd6359fb9aa09c76d9f6df969b31de5d1545225a956a661f14b4997cbee6",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/frame_trace.csv": "c0091fae0c57149bad472764eb21653ee0b5c17243c75d0a76088554c3d0e34f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/roi_waveforms.csv": "7a8f516b8afa1e8b7f44d82f4fb298036ee12f0e65e972dc020a0b40126c8266",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/fusion_proposals.csv": "f6ec5868c9ad0e85defa516bc1be9dd505486a9373b42d3ed104e92ea938ba99",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/fusion_diagnostics.csv": "e2ef7594fb6675b28e5db9fb3ac425914139845bfd0e22938d8794d769d3d40b",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/fusion_waveform.csv": "009cacef2f1e738dada3c56f5806556d2d4a44659937342d0bd6c6a4cb4a14e5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/fusion_heart_rate.csv": "d23cac160a6491cf388cf4c0d79dcaeb3ef129372f9a91691eddb7dcc1333c8d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/pos_waveform.csv": "6fd37746cb60e7a20adb1d42cba30f4359d50bc51a7b880c9d3acec47e5357d0",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/pos_heart_rate.csv": "9995361bc5fcbd2b9c835e550940f7bfe3d92bedba528f9a59edf34589fd48db",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/chrom_waveform.csv": "80db12a398a035e9eb72b87110f494bc9243baaa65023357e24f1ae56d70819c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap10/data1/chrom_heart_rate.csv": "5c68880056d3bde698b545a75b0ad28f5ece18fcb749c2cfdee31af79f44fae7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/summary.json": "ced958865f043e0d6cfa5de6be612772f8c19fce768efc2b6ba62acc22e0d067",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/frame_trace.csv": "9214e07297e9b8998b8a3a7e77730c00395aa5b6a5aff8d0480d4c8761659943",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/roi_waveforms.csv": "58416c1ecbbc33790081da905211d7a21483b71437f1d55ed0df332a3c1994df",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/fusion_proposals.csv": "3672daadb3e1d6057588c631444e7925fc13a01947f4db31f5eab93913a6bbf4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/fusion_diagnostics.csv": "45884474d956a79cc5227f441df491bea394c5dd4030d20120c3d7b9685aff2d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/fusion_waveform.csv": "3f22c15c9fdbfd68c189b3ceb927bbe28800888849556f8ae49a15cc99aff8c6",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/fusion_heart_rate.csv": "5b165f1f6d05b750f40e77855bf582e9bcbef286f5c98f29c94adc946600096d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/pos_waveform.csv": "1129bb322cdff75bb7df47442f96ca2618ff84e9a13d400900ed12a0191a2621",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/pos_heart_rate.csv": "edc1b20d757710725f05ca390f0fb97fdfe84481432d873641d11288a2fedc0f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/chrom_waveform.csv": "3909f133849cd39ac16f400c51b21204b4fc834a828a88d7efd0e385775ed4b7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0904/chrom_heart_rate.csv": "3004b5d678f5f13e3b11712a45cb3e7be3d14d6db320a537d14a4c083fa17387",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/summary.json": "d29506be77f3e8babaac65bd817739bd4e07366c830b1908a6b14222f79459b9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/frame_trace.csv": "b856e5f4049dd07cdb7bccd8d4d13ba517e91cfd93cee9e1da25d97f261963a1",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/roi_waveforms.csv": "d1481437420e8b3e57df68a0e72bd25386901782ba7966952c42f900498077df",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/fusion_proposals.csv": "c01fda167cb29428db457ea98f790723baa8c418440121b42adb4ac7d43b3225",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/fusion_diagnostics.csv": "71e54fb21f0683054d155ad435896d2fabcde0d526805fddde068db72babf9cd",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/fusion_waveform.csv": "5582ede60e6184add6e204af14ecb32c853e47397528c2d8cea34a0b93c086f8",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/fusion_heart_rate.csv": "f49d366a4f8d2f5ad9721946ed3e7743e65a0227a4eeffcc26407bfc27218792",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/pos_waveform.csv": "ca4968ff65b929c170921c7f34bb2fb06d4d3a8f5f8c0ab0d3f7024f9e097994",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/pos_heart_rate.csv": "3282784c3d7686c87e852b81456eaeff3fbe755185b4de15819c3a5591d6e551",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/chrom_waveform.csv": "0b76292a946515487ed1e547961f994fa35c0c3526203659b736026926422b74",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/user0907/chrom_heart_rate.csv": "0ce20226f18c5d6a0357a2e98d85a7c9774fecc651e7b5925c388c6f2b181941",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/summary.json": "859b755886d0bc45e70624049d5cace883fb8c1191d859602c43083a2e7bdd0c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/frame_trace.csv": "211c0a225c6b4be547dff5c1397f29f529168d2b98116018c485a5bdc76d0d35",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/roi_waveforms.csv": "837219be8cd90e97dc296600ea060b14a335511e9c7513d48a2150e4bfad6e2b",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/fusion_proposals.csv": "a336099201ce014611cd4a094b7bb129b10d10b0951847be5ba0e98efb780130",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/fusion_diagnostics.csv": "76371fc272c7f0fc794a1e9d512d7e3cb0fb6092fff8f82184effa6a29797ece",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/fusion_waveform.csv": "d1178eef21d02c020d1b443908f9fdb80b285b40ddc53a81aeadfd601c987a59",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/fusion_heart_rate.csv": "adcd76e89ef7817aea1284f61bb49a71007140396eaa9b9eada94e6433f9d569",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/pos_waveform.csv": "e61de5296d3cc12a3caa2a8f44fd3366a7a7e05c9e3e7e7a239a4929347545cd",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/pos_heart_rate.csv": "6fb8ab1ffbbfb79b92c912e7beae4d4e1d61a4e00d15ca37acd85a9473ea0841",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/chrom_waveform.csv": "8170845aeb1d63228befcd2b2b0af01888589ccb647fa60861177647b938e134",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/ubfc/chrom_heart_rate.csv": "66ad028f6f23bf824942dae36ad81423f2bba9803f1cbdd6066784e6e8ccbfaf",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/summary.json": "dd97f509d2a96c1fa76e9ebd48a87d5909ca8559f51fef8614f80416c11e6ee3",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/frame_trace.csv": "98b8b4309e0cb9cb8ceb779a0667c7dc1f4b348bdf0485076567385800a1ef34",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/roi_waveforms.csv": "717f17e3ba3c076edb56f7f1cc370c0751e7324ecf8c763d117678ffeeb7f21d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/fusion_proposals.csv": "b250d95aa2790711b0e2b060286d5171d1831929f68cd1b7574357c2b00855de",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/fusion_diagnostics.csv": "bc68ea6b1cc63305b09c73c33662d11a67e7fbd003e1a8a7364cc8442247d43b",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/fusion_waveform.csv": "04cb3a61f8e4d23ac2f3f66a4e9c744064173391571d991e49b554a596a5d102",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/fusion_heart_rate.csv": "aee3c21eae9be21401cf296f790e37e1ad25ddd04865d15bbfb8e91c9d9ae248",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/pos_waveform.csv": "8c8f1e5f0a553639f93713996437f33925f72c2f2ea5c439a5ceab420bdf2367",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/pos_heart_rate.csv": "573f4f5c480bef3dac81b513aa8484e3ba1f4409ab9860ba1460b043cf6dfae8",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/chrom_waveform.csv": "3ca989c6efa8173dff3cadbc6cbdc059f0d87faf46a9e6e78536b44eca3da4d6",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/kaggle_full/chrom_heart_rate.csv": "e586d1a0ec7f7e7cb5589baff545747630ca0b2ce92acd72de0702452ab4d430",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/summary.json": "3244c18edfc46c021a76482b627a72b5e22d0a917efe9c232325727ef0ee91d7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/frame_trace.csv": "f362e61e723746328630048c3c5b00d947ce27c77260f0a226d8e468c5b997f4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/roi_waveforms.csv": "d9633b56c2af448f66ffafe3bfeec12996478b1a85b68f399fb1258504c0adf9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/fusion_proposals.csv": "a910a481b89039906b7ce53f6f48064dbcc4e7f12bf713c641e908e5331a1733",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/fusion_diagnostics.csv": "80bc5c9c3dea19551d6cf321a10aa5192f67d5a12d209c44f70b2b106fdad1e1",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/fusion_waveform.csv": "3a43fc8b82c896bcee904cd33be58239f365b2eefce029b00cdf91d67ec94136",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/fusion_heart_rate.csv": "aba21de430bd34843c12b3d89f2fbdbed1ad3a1b0c6ac7db0d3587ee44ffaea4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/pos_waveform.csv": "2cdeaa0dd44da04c2b35e7781ad07f32a1080944bb9bd65b5557a6f690e216ba",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/pos_heart_rate.csv": "d3cd845518f85924c5687eab110afcdf42a6bae50427d51743929b779829d5a5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/chrom_waveform.csv": "03310078c94196f7bca1f8aa34222b451afac77cc702a7a966fabeb97e668c26",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/synthetic72/chrom_heart_rate.csv": "7cda8f5185be018f87194d0520f184e01861e1f8f9abf9180b6474971c30f947",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/summary.json": "b77c9b3392a4367b3e8d87a297f7c3a645f592429ffa8f886c04d0de3b342312",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/frame_trace.csv": "16080d7ca8f58c1e0881c2160a328d406fe0d9504b63247a8f7252c56ebd3a3d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/roi_waveforms.csv": "a64bb333fbc1052e4d41b6d15264d09a6268d4bf6aa2d956f4bbc46ad425b351",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/fusion_proposals.csv": "f7fa0e9c09eb4059598f45e533de335a6b0227ab548b1c3537a076ff8ba19856",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/fusion_diagnostics.csv": "d587b3f0cd36fd89cebf68f703081564b7f0a6104c348a6e73bfe2474575bf07",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/fusion_waveform.csv": "50e217f813fd3ec5c7dd20d9fd1362b83f46d9f15b711ec1bdf1261c8e2edf82",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/fusion_heart_rate.csv": "952f7fd21085f02a247791cac7215ac15b6bc517d09b145f386801c4d79d5c4c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/pos_waveform.csv": "3f2a2cfc814690b4dfcc9badb4139c7684d24496bf7ade5153b53be852bf685e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/pos_heart_rate.csv": "fc0be88c96c9f978f0123c0207b18c18e597cf666c782ec5bf27f342e8d99cf2",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/chrom_waveform.csv": "338b91141eff172bdd7592ca9514d2fea8b6a325f4422707f6165a88d61d8b68",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_only_gap15/data1/chrom_heart_rate.csv": "a9e76266c0cffbdfdfbba2c4bfcfc6553146ce3cb89560cacaa1f91b14560db8",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/summary.json": "3f5f03e9fbe5fde5452de8cdb94e6e94fe04421813f894b609c96f61f13ed1d9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/frame_trace.csv": "ad386fc7f49dd82d3cf1cf9e931768a4573008e9bcc4e14b7613cf97e0e23cc5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/roi_waveforms.csv": "151f8a7f2a60ef56eda4562041f51f2639fa88982e7aa5f56323501062bc33e2",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/fusion_proposals.csv": "9ed09dd483f9c30acebf3528fe045a7fd51ca9c9192b950da718a3e4af9c71a6",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/fusion_diagnostics.csv": "4f4352ecb288f5c560c32287e420a18c6a16fe4be5c47d0f4074da8ae412cfdb",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/fusion_waveform.csv": "0b0e0e1b7e4ecce9dd29bb995e7c5585bb0093b4facbd4897169e72455dc7ca7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/fusion_heart_rate.csv": "83e01f3d056ae1b026492fdd4a16e152549fd4e94887e6a82a8141238577f419",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/pos_waveform.csv": "15581582846833e6223ee0e7ab25ed702bee6924381758865fd8a37775486dac",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/pos_heart_rate.csv": "f399d6e4512f929998a90f474ac74ed9245cfd0298573581350bd20cb2aea618",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/chrom_waveform.csv": "1fa6acef8855ea6a88b2c73a647e619db9bc2940ee6e9eb47f3590f885fae975",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0904/chrom_heart_rate.csv": "f5af95850b1faa26289b2a4e9604001de47de0a12b727cfe0523156309c79042",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/summary.json": "e240301e7d25cea65f3c113b974a7ccc85ba174ea646aebb259eaa5afa0ab2d8",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/frame_trace.csv": "79d1ca9d78562a70b6feb84e6ec82aaf91258aba1bbea267c098e9eb8e6871be",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/roi_waveforms.csv": "6c84fb551f6f3512dacbca055cac0a735069f2795b01d574517778a252a06137",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/fusion_proposals.csv": "ca56cea5214655ae09d488de49d2adb7306273e90a77199fb687ea4e0c3619fa",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/fusion_diagnostics.csv": "e32ec676e6e59298418ddc895f6871c108a9241baa9f7b9293b36d80d6c75fa4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/fusion_waveform.csv": "0d3a4a9755d97a35bef1fa4c1c0da964ba97e7d5eabd7f3ad7a5a8e8f3dfb22a",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/fusion_heart_rate.csv": "a3d548b0294e2b2c991b75ca7b9d9a07e92d07c1aacf5477a46aa3893f472fbf",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/pos_waveform.csv": "d57efb2c4754cc42995bc0f205f7d20e429e40c03af3dcbbe1e0422641f50077",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/pos_heart_rate.csv": "7c037d8a8fd15e9ff7dac231662e72d8e3f771118a0eb1da05d7cfb3043bf796",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/chrom_waveform.csv": "fccf1e368ae02d233808d4950c7c03ed42cae4fb7c47d52b055cea73c42e4cd4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/user0907/chrom_heart_rate.csv": "538c83db7accea10d686cdff577d07f18bf6a22400c3a1f92abac17ed3a794d5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/summary.json": "74c041b2135f71f26b1f71e9bb4f7694f7b48e733002a7ead4dc6c190120c69d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/frame_trace.csv": "7c3a80d54bc2c7a948f275abbb8ec21aa333a20d10550b129c5ec02bc3cff48c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/roi_waveforms.csv": "9df0df3adf4c13f66646b51013f027e63872962d4491bf5fac5e3612346e1afb",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/fusion_proposals.csv": "ff16b52ee2713b5fd30c30752954cebbd0dae255b484f57c054b4c3eccd8aa84",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/fusion_diagnostics.csv": "ab44aeafdb343233f9d3b5260460ed1130deac793dfc403d28567c5bd07908c4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/fusion_waveform.csv": "33c1b9cb7a4a781362ac6cab35ed02ee893e4faa85b1209b1ebef9f043db0883",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/fusion_heart_rate.csv": "7ab64382d4c2e72932674314c84d1690b0be3ff4452cbcb2180427fc7d69f248",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/pos_waveform.csv": "724d97743d58dc9ddba34d5dbf2a5e8032681d1b954886c73722dccdfdd91021",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/pos_heart_rate.csv": "b366a3f8332568c879249e555355014ce26feb9809fb497ac7e3224821dfd3bd",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/chrom_waveform.csv": "3b488f586b36d48981b9b0d64c950eadfbd9fa42460b6e435637d89603452f0e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/ubfc/chrom_heart_rate.csv": "e315fe89e9e7245b7f1f9ab45c57ef1ebd704328c1d5a966e170f630cb6430b7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/summary.json": "6a58e8b353d0ce920ccff18109cf05ebb111a80ac90cd6c154703b250e816a8d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/frame_trace.csv": "f1ea5b6545ef71b7ae9ec30cb57a2bce6ebceb1f5dbd25558856cfd4cd9ca4fa",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/roi_waveforms.csv": "2a10511399e8d81dcbab401388ddf6fca9e06db42b120084fdd5133a5b5a4892",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/fusion_proposals.csv": "10cd8c9c19ed9f5e0590098f1943a4e2e5bf27b356b1f1a5e015f0e2cf835261",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/fusion_diagnostics.csv": "55daccf536a5bad5c3b75ab11b73e587bfca26a3fb2b68a344079a416a6e8ccf",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/fusion_waveform.csv": "02a5f25fcc6639861702735cdf93b2cf5f4194c8489b3a24e786b110f950c79d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/fusion_heart_rate.csv": "a0705947a3aae101fd2deb1a30c799bf734647278884407b40cc43bb5432dd39",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/pos_waveform.csv": "cce47c565d7a91ee32a91636670b5e3c667cb28bb353420b417df1b15ea70c4a",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/pos_heart_rate.csv": "575e38550c9e65cc7aaaf7925ba18c7393a93f95ad2ef21a5f24da56f53bf0bd",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/chrom_waveform.csv": "73c54afb1195ac5f755cdbeff1bd0ee99e708ac567968530d8c6cd015f546354",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/kaggle_full/chrom_heart_rate.csv": "2f7ce5392a8fab3ee01b875b4ebd94e766d91694d53946f4019894c4992a65b1",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/summary.json": "e2af629542771a4ded13652322343408b1aa32dbf271ef297ccdc600d77adea9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/frame_trace.csv": "0124e600c49f58bc2d3e08b8bbc8005e4e36cd2ae477e192e1043b58cd0fda40",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/roi_waveforms.csv": "39e66636e0f2502b45c8165f40b72fa766d86bdf18c3289015daa10c8fbe8018",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/fusion_proposals.csv": "0be43e347f12154fe90c21badc8abe05cf031211cce1d3051cac8e86e117e339",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/fusion_diagnostics.csv": "f433e329ba410a2d8f4d6f74a07fe806daeb82c1e491fc101cbbbb8469088e5b",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/fusion_waveform.csv": "f4acf12af44f888ba74db1d6a8ef32a92fbc4ffc04e6d645a8098d59ec952def",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/fusion_heart_rate.csv": "9d89a36a77ef2913eb4b114a8572eb75861dffb128f77a14997c362ce6984095",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/pos_waveform.csv": "60d86d249365a1039157067a0a855e5f4bbf021b2c890fe07f250b75482dfcac",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/pos_heart_rate.csv": "148c7461a19321acdd6304e14222e8cb4546d1e5a9f8494c5002e8be0cd94ae9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/chrom_waveform.csv": "a378cd08abad5f00e65d9542ce996d0679619b46e3e099c325a9d3382503448c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/synthetic72/chrom_heart_rate.csv": "9adbae578704d623b0e3e31d1fdb13842d3a8ec63a8873017ffca95c077f4b1d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/summary.json": "091e0fe0cd7799815ebe251a0c699c235a2ef55b200ae6b64d7763d061d8f26e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/frame_trace.csv": "1012a4cc51571a76e9579d102386473033699fe3d26bbff9ee42bfe919cb96ce",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/roi_waveforms.csv": "217984bb044a821418c799e9a636db1cf46aa6fda7197d1598b4475a6e7a7ed2",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/fusion_proposals.csv": "f66a2dda0268e3a7f62977af68c62bd22bf4bfa73b8fad27fdc18d9ccac5a01d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/fusion_diagnostics.csv": "fb9cac3cf66553375530ceb12bfe0c15f5f7ea6fbf030dfd16082ecc7f2c7570",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/fusion_waveform.csv": "bea4bcc045fded72c1c16e5b7788e7bc27f7c8b149d6c8460c544543f5ef98f2",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/fusion_heart_rate.csv": "801f5d9b58a04e5359d250cd956d7fa0770c34437cd326622ef7fe10c669e163",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/pos_waveform.csv": "4407884ae54a41012be1f630ffc946a38af43c6e18e704f1e6e7e033410a7e3f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/pos_heart_rate.csv": "e16e98614a279939aded8f7ccd40588c22e7fd96f25718412a43bbd43de87198",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/chrom_waveform.csv": "a2b0f074537d110881ecc706386f4e139f37e2b0dd07f5a1b876e03f7b8282e5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap10/data1/chrom_heart_rate.csv": "d02ab5a56b27fc34a1f5bc9f5992ef9a1ecb25330162e15a325cd08a10d9f04d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/summary.json": "47de4868533dcdb71f4f9969857c5935c568a622d9630cd5b289019582dc36cb",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/frame_trace.csv": "3a6a983062bfedad87e14aeee5e9cd5ce7648bc3005575a2929aff7630dc8a8b",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/roi_waveforms.csv": "91a33c1d37bdd05ef488953ad38299b113ec33814a8e25a36a2ae6e09dfe3dcf",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/fusion_proposals.csv": "c52bdf60d0188e3b404a0455da71019a44b14e6d8a09935ba0a6a30e9be5da98",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/fusion_diagnostics.csv": "d645966064947c519cdf6ddd1ee6a8f81ece8df335d26f19c862c98a3a6cacc4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/fusion_waveform.csv": "84fef8f343a8e28385e992835ac10018dcd79bfea8ad7182e8d1d5621b3c0ae1",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/fusion_heart_rate.csv": "4969160d87c25c03b753d817f3a99770a9bf1380cc51f5bd60087e0eb2657dba",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/pos_waveform.csv": "52e16c7fed2477aaed1ddafd86861f4f1c0d958c7c03e1f6ab3d38aa3e6744a6",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/pos_heart_rate.csv": "9c51c772e38ef247ef23265c4dfb1e98cf4901348b35348f9d41c5c8283e80fa",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/chrom_waveform.csv": "cd777e61dd7542d8af85d39285fe0a8cb792b4a0147039664cf334b96ea446a0",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0904/chrom_heart_rate.csv": "a760ebf73a485caeb730164f9b62b9c0d89ff7eddd477112aafb65511b45ea87",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/summary.json": "0e2481900c6a261bb4b79887d0e8ca84643924542b84f5ee739a78f94cdc41dd",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/frame_trace.csv": "a1d119c3b87219014e89ba29d7f15dd5db1a30dbea6ad54dc9439e1e479d56b4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/roi_waveforms.csv": "541b6354f436bbab9136371eaf99b494f32776e35917328f5ce90996f7acf75a",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/fusion_proposals.csv": "74a0b69fb52401bea517cdea55a545184a61c7a58e06ff612b1fee598e41b3fb",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/fusion_diagnostics.csv": "d026ab893c2d3212ca30fe29944d7b525e35a1726647f9005c6fcd29935cd0db",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/fusion_waveform.csv": "ed5cdf6baeb56bfbcad81ef60c4bf64eadf7608f6db8eb8b6fee1e0bf6d7aa5d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/fusion_heart_rate.csv": "83b359b6e29e7dfa91bffa8891f605c9ecd6daa521b8dbc6ed4b36c553a1cbcf",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/pos_waveform.csv": "14899938253f3f403e9cfe32e7284b8d4a43612656aeaed455b9ba80e5f6e4d7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/pos_heart_rate.csv": "64fb063340ff3593edfcaf2c9c6c3dd3ab1b0df057b5ca991d74eadabc656ea5",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/chrom_waveform.csv": "cb6c12ae5720a8434fc0f262160867c15ce097adb49b22cec2c97b77676d902f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/user0907/chrom_heart_rate.csv": "bf09b5376b1e206a62f3dbee91b0c7bc2c29bfa8060a2df57773d4fdadc7cfb7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/summary.json": "fed4cb56d00cdb91c42dd9f3e46c81bbbefc93a23cc5bd2194f8577ce9090540",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/frame_trace.csv": "bf82d547bf4413d5e59034b64875be0ad073caa681f572a15f02a61b6e9d1774",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/roi_waveforms.csv": "dd21c7db18f779aefa3ec3c3b4392407991e6f3c99e4faff0fdefc7ffc8efb14",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/fusion_proposals.csv": "391500d5f111894cf44bc98f7e7226331ef045a3cbac30ae057ca03fbc6d1e09",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/fusion_diagnostics.csv": "8a1320d713484afb175b7530edbb026c730e1bb23aa3bdfcdc6224402dbcf706",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/fusion_waveform.csv": "ee20f69344ab3583576a55321abaf8fa6dc5217b4b5437d01a2d5d9831f4b745",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/fusion_heart_rate.csv": "6b2d0ef2bda6e9ecb82b6279e4b137a0501336d07aaae6326ff608bfcdd775b8",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/pos_waveform.csv": "fae2868ba15330aa2bfc1ae5b62cb147b5c2fba79eaf8d76c7895614f367a076",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/pos_heart_rate.csv": "24aba74bcb36c5423a0b3265aaff810f68680dd27a7face2bcfd876af3e762c9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/chrom_waveform.csv": "52d1b3ac963e49647bc6133f2c3e30078235449e31b683c0a523a2606ca96de7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/ubfc/chrom_heart_rate.csv": "fb4ceb336bd052075ffdeccd49d54a941caa3b14e71e0e9e31a673d1213ddb8a",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/summary.json": "50538081929142f774867f4b34033c60d43da2df27b351289d214ee1ab801ee7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/frame_trace.csv": "fa35512f6cc5eb610adda344e04a3caf0f60ecd90ba9c05e0a205d614e76f112",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/roi_waveforms.csv": "86716f113341bdb9e1d6b84b33135bf41a73579f7ba8a8aa8d0f04ee925a5a2b",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/fusion_proposals.csv": "d0f42830132f3a9430a5fd1d942552fec03dd273cd77a8c89989b8aea180fc9c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/fusion_diagnostics.csv": "054b8dc681696d05b444924edd857c9b2f2be4e7b347501db54d9f514076190f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/fusion_waveform.csv": "c5f649cc54f29f68509c78e91760a25e96e686b864c23757de0ff7ee7760dd9c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/fusion_heart_rate.csv": "008a3ffad3d06490fc52d1cf580011a87292080cf15475023550370abf773d4e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/pos_waveform.csv": "87a23132d4dbc9dca42d50e07f83607cc45967351b945e390d18e37bf50c1a5e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/pos_heart_rate.csv": "695635518a4188b7648aba3f177d9c19facfa5912c45e3630429ce18a0b3b101",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/chrom_waveform.csv": "b2fff3f176b9274b33aa8c4a35aa74cc81e401a30fcdb4669879e9066e67b034",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/kaggle_full/chrom_heart_rate.csv": "27e450d030d9bd60ba0c3b3c2dba81ef3115cf8db21855460815c9dfc3fa94e9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/summary.json": "0c8142204ec8e3e5a71ec642e30c21e73075da1e61f44e78b01b6144d4e10140",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/frame_trace.csv": "e856ba8f27a933ba67371243e51e3d7e53e3bb4005475225883b2bbbc7600e62",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/roi_waveforms.csv": "3440cd0c87870864d5282ec4a78af24c11a0a63af902a684e1bc5ff2fc2be2bd",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/fusion_proposals.csv": "c67d32334efc50df589a56b07ce3d0ba9637fbb7777ff4d2d4d85bae8f1f036c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/fusion_diagnostics.csv": "f080e50250b4737c7aca75d413a4fe610c07086b1eb0057f8e590684e34703a6",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/fusion_waveform.csv": "0195ccd3cbc5a72d5b417bc6e80ebe6557a484a795ff056c80ce85d518ec983a",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/fusion_heart_rate.csv": "2843e28cc5cbd4bd8f9547d51dd0e3ad993b45f2d94919e5867186e8b602da8c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/pos_waveform.csv": "a5129a1a3fdbd3eda1c44f44a69b2746a6e7b8ffdfbef41bc9d28e41997586e3",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/pos_heart_rate.csv": "f57935ba75c6403b69b80fdc559d35358703b3cce3019d9955734f19f7a1be52",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/chrom_waveform.csv": "0ff298612cc7e74037899a29d94cde52dfcbcde5659bae025958e1007cc3845e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/synthetic72/chrom_heart_rate.csv": "296979af12f681b3776ab6472a4c3f4366cf770fac27aaf36a0894bd5ffaf7b9",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/summary.json": "f7c33bff43d71935f4f747605162f382eeb0d7bc930f93651fb2f32fc75dd73d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/frame_trace.csv": "06e7a4debdb706f0568427f124307526f6e07f2e76a5980e176cb58ebfded9de",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/roi_waveforms.csv": "fc5a7e1c5604e4d7cb71e10cb3d4589d2d39468fecfa9e346dca61fff05434f1",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/fusion_proposals.csv": "4720c7ccbddb5622fa077d4d352f1bec53b7718bbd7a498fe44356b3582b2dd4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/fusion_diagnostics.csv": "2ebfacea734ab74e8db4a6b5dbd42489d50a3736b1840e48ff336735a827f4c0",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/fusion_waveform.csv": "040a5713bb0e16a293279d3bb7e26d35b4f2eb6a536e6f8ecd84888f5555a307",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/fusion_heart_rate.csv": "099ac255740a9a9a8aebbb2a4e63535cf2c6cf7c70df973d3b8cde6341605572",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/pos_waveform.csv": "eff229353b808fba5c4469729c8e56e27bd8c851cf714bcbbe5f6075e8a9111c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/pos_heart_rate.csv": "2c0837e635ae2ddfd96550d7301751dc7e3f28b5b60bca30c713880c587d2aab",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/chrom_waveform.csv": "36e33cacf386cad4037d571dfe49f82d405729ca02728fbb479068f4f68273c1",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v23/validation/tracking_screened_gap15/data1/chrom_heart_rate.csv": "1971de1a16f6ff7c4e5c97b6e108fe50ef62fe274f4b11609bf8b145df178740"
+  },
+  "hr_sha256": {
+    "tracking_only_gap10/user0904/fusion_heart_rate.csv": "219cbe5b73d960fac5973d27ca5d6e88fc0422a36c98e0700c1b91e331c615cb",
+    "tracking_only_gap10/user0904/pos_heart_rate.csv": "ebb4a072b2b27912524b919a60fa5bc3518c10b42c85ac4b215e6e10ab699e40",
+    "tracking_only_gap10/user0904/chrom_heart_rate.csv": "0f26233ee824e44d9a2863eded8b373de4b420753cfce090503de3fabcc350c5",
+    "tracking_only_gap10/user0907/fusion_heart_rate.csv": "e0bf28e1d95ba1152a82ea32a83d2b9acc8e3ae2daa38feff2ecc92152821247",
+    "tracking_only_gap10/user0907/pos_heart_rate.csv": "64843b3c52e46946ba3a424ea35e0c2a6c422bc43a606e7d688abf26f0d71d48",
+    "tracking_only_gap10/user0907/chrom_heart_rate.csv": "1d0d37ba82956fd0c9b81bc0f93876bb710d58aefb44d48393e70bee99cfd074",
+    "tracking_only_gap10/ubfc/fusion_heart_rate.csv": "535dbcae61da13611e7694138067642a3818ed17f8cfff2bf2234316b6641d95",
+    "tracking_only_gap10/ubfc/pos_heart_rate.csv": "4c0561b4546e567ca32eb99c97dd9fad45bcf62dbec71f8cd8589895b87deed3",
+    "tracking_only_gap10/ubfc/chrom_heart_rate.csv": "66147d87fa45d7ec76aec9d6a21c6e606c456f5f6f7a87fa17f8fa9a9e967316",
+    "tracking_only_gap10/kaggle_full/fusion_heart_rate.csv": "898f9c427d0de2b786e5f3c228dacf7953cf99348e2ea346ac9852a855f5ef53",
+    "tracking_only_gap10/kaggle_full/pos_heart_rate.csv": "7196a18c50e27cff9b5a0127b97a11f42913a15f4d030d127dc9c25453d3ca5f",
+    "tracking_only_gap10/kaggle_full/chrom_heart_rate.csv": "0e4eb8f8f0f1b89d660c7512343d99ebac16860cb50bf3f6eb4859fbf2f26058",
+    "tracking_only_gap10/synthetic72/fusion_heart_rate.csv": "651bde6bf068ea0a7392b60f7e143b034cdcfff52b2cec2559af8380247d19ee",
+    "tracking_only_gap10/synthetic72/pos_heart_rate.csv": "08660a089b7ffc6a94dae3f6d9c7bdfd8eccc244337bce4843309c89bb9527e7",
+    "tracking_only_gap10/synthetic72/chrom_heart_rate.csv": "619e6f02f9d4ec740ced19daf799ec98056395a7aa656cbacced343aff4e18e7",
+    "tracking_only_gap10/data1/fusion_heart_rate.csv": "d23cac160a6491cf388cf4c0d79dcaeb3ef129372f9a91691eddb7dcc1333c8d",
+    "tracking_only_gap10/data1/pos_heart_rate.csv": "9995361bc5fcbd2b9c835e550940f7bfe3d92bedba528f9a59edf34589fd48db",
+    "tracking_only_gap10/data1/chrom_heart_rate.csv": "5c68880056d3bde698b545a75b0ad28f5ece18fcb749c2cfdee31af79f44fae7",
+    "tracking_only_gap15/user0904/fusion_heart_rate.csv": "5b165f1f6d05b750f40e77855bf582e9bcbef286f5c98f29c94adc946600096d",
+    "tracking_only_gap15/user0904/pos_heart_rate.csv": "edc1b20d757710725f05ca390f0fb97fdfe84481432d873641d11288a2fedc0f",
+    "tracking_only_gap15/user0904/chrom_heart_rate.csv": "3004b5d678f5f13e3b11712a45cb3e7be3d14d6db320a537d14a4c083fa17387",
+    "tracking_only_gap15/user0907/fusion_heart_rate.csv": "f49d366a4f8d2f5ad9721946ed3e7743e65a0227a4eeffcc26407bfc27218792",
+    "tracking_only_gap15/user0907/pos_heart_rate.csv": "3282784c3d7686c87e852b81456eaeff3fbe755185b4de15819c3a5591d6e551",
+    "tracking_only_gap15/user0907/chrom_heart_rate.csv": "0ce20226f18c5d6a0357a2e98d85a7c9774fecc651e7b5925c388c6f2b181941",
+    "tracking_only_gap15/ubfc/fusion_heart_rate.csv": "adcd76e89ef7817aea1284f61bb49a71007140396eaa9b9eada94e6433f9d569",
+    "tracking_only_gap15/ubfc/pos_heart_rate.csv": "6fb8ab1ffbbfb79b92c912e7beae4d4e1d61a4e00d15ca37acd85a9473ea0841",
+    "tracking_only_gap15/ubfc/chrom_heart_rate.csv": "66ad028f6f23bf824942dae36ad81423f2bba9803f1cbdd6066784e6e8ccbfaf",
+    "tracking_only_gap15/kaggle_full/fusion_heart_rate.csv": "aee3c21eae9be21401cf296f790e37e1ad25ddd04865d15bbfb8e91c9d9ae248",
+    "tracking_only_gap15/kaggle_full/pos_heart_rate.csv": "573f4f5c480bef3dac81b513aa8484e3ba1f4409ab9860ba1460b043cf6dfae8",
+    "tracking_only_gap15/kaggle_full/chrom_heart_rate.csv": "e586d1a0ec7f7e7cb5589baff545747630ca0b2ce92acd72de0702452ab4d430",
+    "tracking_only_gap15/synthetic72/fusion_heart_rate.csv": "aba21de430bd34843c12b3d89f2fbdbed1ad3a1b0c6ac7db0d3587ee44ffaea4",
+    "tracking_only_gap15/synthetic72/pos_heart_rate.csv": "d3cd845518f85924c5687eab110afcdf42a6bae50427d51743929b779829d5a5",
+    "tracking_only_gap15/synthetic72/chrom_heart_rate.csv": "7cda8f5185be018f87194d0520f184e01861e1f8f9abf9180b6474971c30f947",
+    "tracking_only_gap15/data1/fusion_heart_rate.csv": "952f7fd21085f02a247791cac7215ac15b6bc517d09b145f386801c4d79d5c4c",
+    "tracking_only_gap15/data1/pos_heart_rate.csv": "fc0be88c96c9f978f0123c0207b18c18e597cf666c782ec5bf27f342e8d99cf2",
+    "tracking_only_gap15/data1/chrom_heart_rate.csv": "a9e76266c0cffbdfdfbba2c4bfcfc6553146ce3cb89560cacaa1f91b14560db8",
+    "tracking_screened_gap10/user0904/fusion_heart_rate.csv": "83e01f3d056ae1b026492fdd4a16e152549fd4e94887e6a82a8141238577f419",
+    "tracking_screened_gap10/user0904/pos_heart_rate.csv": "f399d6e4512f929998a90f474ac74ed9245cfd0298573581350bd20cb2aea618",
+    "tracking_screened_gap10/user0904/chrom_heart_rate.csv": "f5af95850b1faa26289b2a4e9604001de47de0a12b727cfe0523156309c79042",
+    "tracking_screened_gap10/user0907/fusion_heart_rate.csv": "a3d548b0294e2b2c991b75ca7b9d9a07e92d07c1aacf5477a46aa3893f472fbf",
+    "tracking_screened_gap10/user0907/pos_heart_rate.csv": "7c037d8a8fd15e9ff7dac231662e72d8e3f771118a0eb1da05d7cfb3043bf796",
+    "tracking_screened_gap10/user0907/chrom_heart_rate.csv": "538c83db7accea10d686cdff577d07f18bf6a22400c3a1f92abac17ed3a794d5",
+    "tracking_screened_gap10/ubfc/fusion_heart_rate.csv": "7ab64382d4c2e72932674314c84d1690b0be3ff4452cbcb2180427fc7d69f248",
+    "tracking_screened_gap10/ubfc/pos_heart_rate.csv": "b366a3f8332568c879249e555355014ce26feb9809fb497ac7e3224821dfd3bd",
+    "tracking_screened_gap10/ubfc/chrom_heart_rate.csv": "e315fe89e9e7245b7f1f9ab45c57ef1ebd704328c1d5a966e170f630cb6430b7",
+    "tracking_screened_gap10/kaggle_full/fusion_heart_rate.csv": "a0705947a3aae101fd2deb1a30c799bf734647278884407b40cc43bb5432dd39",
+    "tracking_screened_gap10/kaggle_full/pos_heart_rate.csv": "575e38550c9e65cc7aaaf7925ba18c7393a93f95ad2ef21a5f24da56f53bf0bd",
+    "tracking_screened_gap10/kaggle_full/chrom_heart_rate.csv": "2f7ce5392a8fab3ee01b875b4ebd94e766d91694d53946f4019894c4992a65b1",
+    "tracking_screened_gap10/synthetic72/fusion_heart_rate.csv": "9d89a36a77ef2913eb4b114a8572eb75861dffb128f77a14997c362ce6984095",
+    "tracking_screened_gap10/synthetic72/pos_heart_rate.csv": "148c7461a19321acdd6304e14222e8cb4546d1e5a9f8494c5002e8be0cd94ae9",
+    "tracking_screened_gap10/synthetic72/chrom_heart_rate.csv": "9adbae578704d623b0e3e31d1fdb13842d3a8ec63a8873017ffca95c077f4b1d",
+    "tracking_screened_gap10/data1/fusion_heart_rate.csv": "801f5d9b58a04e5359d250cd956d7fa0770c34437cd326622ef7fe10c669e163",
+    "tracking_screened_gap10/data1/pos_heart_rate.csv": "e16e98614a279939aded8f7ccd40588c22e7fd96f25718412a43bbd43de87198",
+    "tracking_screened_gap10/data1/chrom_heart_rate.csv": "d02ab5a56b27fc34a1f5bc9f5992ef9a1ecb25330162e15a325cd08a10d9f04d",
+    "tracking_screened_gap15/user0904/fusion_heart_rate.csv": "4969160d87c25c03b753d817f3a99770a9bf1380cc51f5bd60087e0eb2657dba",
+    "tracking_screened_gap15/user0904/pos_heart_rate.csv": "9c51c772e38ef247ef23265c4dfb1e98cf4901348b35348f9d41c5c8283e80fa",
+    "tracking_screened_gap15/user0904/chrom_heart_rate.csv": "a760ebf73a485caeb730164f9b62b9c0d89ff7eddd477112aafb65511b45ea87",
+    "tracking_screened_gap15/user0907/fusion_heart_rate.csv": "83b359b6e29e7dfa91bffa8891f605c9ecd6daa521b8dbc6ed4b36c553a1cbcf",
+    "tracking_screened_gap15/user0907/pos_heart_rate.csv": "64fb063340ff3593edfcaf2c9c6c3dd3ab1b0df057b5ca991d74eadabc656ea5",
+    "tracking_screened_gap15/user0907/chrom_heart_rate.csv": "bf09b5376b1e206a62f3dbee91b0c7bc2c29bfa8060a2df57773d4fdadc7cfb7",
+    "tracking_screened_gap15/ubfc/fusion_heart_rate.csv": "6b2d0ef2bda6e9ecb82b6279e4b137a0501336d07aaae6326ff608bfcdd775b8",
+    "tracking_screened_gap15/ubfc/pos_heart_rate.csv": "24aba74bcb36c5423a0b3265aaff810f68680dd27a7face2bcfd876af3e762c9",
+    "tracking_screened_gap15/ubfc/chrom_heart_rate.csv": "fb4ceb336bd052075ffdeccd49d54a941caa3b14e71e0e9e31a673d1213ddb8a",
+    "tracking_screened_gap15/kaggle_full/fusion_heart_rate.csv": "008a3ffad3d06490fc52d1cf580011a87292080cf15475023550370abf773d4e",
+    "tracking_screened_gap15/kaggle_full/pos_heart_rate.csv": "695635518a4188b7648aba3f177d9c19facfa5912c45e3630429ce18a0b3b101",
+    "tracking_screened_gap15/kaggle_full/chrom_heart_rate.csv": "27e450d030d9bd60ba0c3b3c2dba81ef3115cf8db21855460815c9dfc3fa94e9",
+    "tracking_screened_gap15/synthetic72/fusion_heart_rate.csv": "2843e28cc5cbd4bd8f9547d51dd0e3ad993b45f2d94919e5867186e8b602da8c",
+    "tracking_screened_gap15/synthetic72/pos_heart_rate.csv": "f57935ba75c6403b69b80fdc559d35358703b3cce3019d9955734f19f7a1be52",
+    "tracking_screened_gap15/synthetic72/chrom_heart_rate.csv": "296979af12f681b3776ab6472a4c3f4366cf770fac27aaf36a0894bd5ffaf7b9",
+    "tracking_screened_gap15/data1/fusion_heart_rate.csv": "099ac255740a9a9a8aebbb2a4e63535cf2c6cf7c70df973d3b8cde6341605572",
+    "tracking_screened_gap15/data1/pos_heart_rate.csv": "2c0837e635ae2ddfd96550d7301751dc7e3f28b5b60bca30c713880c587d2aab",
+    "tracking_screened_gap15/data1/chrom_heart_rate.csv": "1971de1a16f6ff7c4e5c97b6e108fe50ef62fe274f4b11609bf8b145df178740"
+  },
+  "results": [
+    {
+      "mode": "tracking_only_gap10",
+      "case": "user0904",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 39,
+          "accepted_windows": 35,
+          "finite_wave_samples": 1320,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 39,
+          "accepted_windows": 36,
+          "finite_wave_samples": 1365,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 39,
+          "accepted_windows": 36,
+          "finite_wave_samples": 1365,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap10",
+      "case": "user0907",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 4,
+          "finite_wave_samples": 660,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 14,
+          "finite_wave_samples": 1184,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 14,
+          "finite_wave_samples": 1184,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap10",
+      "case": "ubfc",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1424,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1453,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1453,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap10",
+      "case": "kaggle_full",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 419,
+          "accepted_windows": 415,
+          "finite_wave_samples": 12720,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 419,
+          "accepted_windows": 416,
+          "finite_wave_samples": 12771,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 419,
+          "accepted_windows": 416,
+          "finite_wave_samples": 12771,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap10",
+      "case": "synthetic72",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 480,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 504,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 504,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap10",
+      "case": "data1",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1410,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap15",
+      "case": "user0904",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 39,
+          "accepted_windows": 35,
+          "finite_wave_samples": 1320,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 39,
+          "accepted_windows": 36,
+          "finite_wave_samples": 1365,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 39,
+          "accepted_windows": 36,
+          "finite_wave_samples": 1365,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap15",
+      "case": "user0907",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 15,
+          "finite_wave_samples": 960,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 25,
+          "finite_wave_samples": 1457,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 25,
+          "finite_wave_samples": 1457,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap15",
+      "case": "ubfc",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1424,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1453,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1453,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap15",
+      "case": "kaggle_full",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 419,
+          "accepted_windows": 415,
+          "finite_wave_samples": 12720,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 419,
+          "accepted_windows": 416,
+          "finite_wave_samples": 12771,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 419,
+          "accepted_windows": 416,
+          "finite_wave_samples": 12771,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap15",
+      "case": "synthetic72",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 480,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 504,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 504,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_only_gap15",
+      "case": "data1",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1410,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap10",
+      "case": "user0904",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 39,
+          "accepted_windows": 35,
+          "finite_wave_samples": 1320,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 39,
+          "accepted_windows": 36,
+          "finite_wave_samples": 1365,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 39,
+          "accepted_windows": 34,
+          "finite_wave_samples": 1365,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap10",
+      "case": "user0907",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 10,
+          "finite_wave_samples": 840,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 14,
+          "finite_wave_samples": 1184,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 14,
+          "finite_wave_samples": 1184,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap10",
+      "case": "ubfc",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1424,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1453,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1453,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap10",
+      "case": "kaggle_full",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 419,
+          "accepted_windows": 414,
+          "finite_wave_samples": 12690,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 419,
+          "accepted_windows": 416,
+          "finite_wave_samples": 12771,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 419,
+          "accepted_windows": 416,
+          "finite_wave_samples": 12771,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap10",
+      "case": "synthetic72",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 480,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 504,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 504,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap10",
+      "case": "data1",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1410,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap15",
+      "case": "user0904",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 39,
+          "accepted_windows": 35,
+          "finite_wave_samples": 1320,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 39,
+          "accepted_windows": 36,
+          "finite_wave_samples": 1365,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 39,
+          "accepted_windows": 34,
+          "finite_wave_samples": 1365,
+          "total_frames": 1461,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap15",
+      "case": "user0907",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 9,
+          "finite_wave_samples": 810,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 25,
+          "finite_wave_samples": 1457,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 25,
+          "finite_wave_samples": 1457,
+          "total_frames": 1557,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap15",
+      "case": "ubfc",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1424,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1453,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 44,
+          "accepted_windows": 40,
+          "finite_wave_samples": 1453,
+          "total_frames": 1547,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap15",
+      "case": "kaggle_full",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 419,
+          "accepted_windows": 414,
+          "finite_wave_samples": 12690,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 419,
+          "accepted_windows": 416,
+          "finite_wave_samples": 12771,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 419,
+          "accepted_windows": 416,
+          "finite_wave_samples": 12771,
+          "total_frames": 12867,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap15",
+      "case": "synthetic72",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 480,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 504,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 11,
+          "accepted_windows": 7,
+          "finite_wave_samples": 504,
+          "total_frames": 600,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "tracking_screened_gap15",
+      "case": "data1",
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1410,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,5 @@
+{
+  "total_windows": 42,
+  "accepted_windows": 14,
+  "protocol": "10 s windows, 1 s step, 42-210 bpm; no fitted time shift"
+}

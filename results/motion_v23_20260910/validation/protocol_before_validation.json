@@ -1,0 +1,164 @@
+{
+  "created_utc": "2026-09-10T07:40:28.030346+00:00",
+  "source_hashes": {
+    "analyze_motion_v2.py": "7ea6de8087ffe1bba6b0627f455d89dc183f505eb077d9274af6ba33946ea060",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec"
+  },
+  "runner_sha256": "4eebb6f5f26a1a60930244e0f0753d21e5edf881c19b812534126865bc7f7140",
+  "criteria_sha256": "234b52a58868329105992236f7affdae24d0c745b3f21f4b62d7ba79c0ab8a68",
+  "upgrade_criteria_sha256": "234b52a58868329105992236f7affdae24d0c745b3f21f4b62d7ba79c0ab8a68",
+  "cases": {
+    "user0904": {
+      "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+      "bytes": 834174464,
+      "sha256": "90560ee1a6dd97acd15193a1459f65e3b595ba7e9891196cde8270942326ed92"
+    },
+    "user0907": {
+      "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+      "bytes": 867938304,
+      "sha256": "0f432e286772c7eb83e1198f2761d32ca06cd92dc201ddb8965462ed76e4d4d2"
+    },
+    "ubfc": {
+      "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+      "bytes": 1425830568,
+      "sha256": "f6745be5e6b6fe2f00dd6f32dd234aa559bb30b45f38ec9d87cf9a1cc41f6954"
+    },
+    "kaggle_full": {
+      "video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+      "bytes": 538497671,
+      "sha256": "902d217c6661bb137c19059b4137c2bdc5879d9f4373b88377ecdafeb3bdb4ca"
+    },
+    "synthetic72": {
+      "video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+      "bytes": 3140871,
+      "sha256": "d9b7998a7fd9a7b42ddf8090c983acbce875e135a45dc714ab98ae154a18c988"
+    },
+    "data1": {
+      "video": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_data1_20260909/inputs/video/Video_20260909_YJC_2.avi",
+      "bytes": 843755520,
+      "sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e"
+    }
+  },
+  "candidates": {
+    "tracking_only_gap10": {
+      "pixel_mode": "tracking_only",
+      "max_gap_s": 0.1,
+      "pixel_config": {
+        "max_points_per_roi": 100,
+        "patch_radius": 3,
+        "min_tracks": 12,
+        "fb_max_px": 0.5,
+        "screen_z": 3.0,
+        "screen_floor": 0.003,
+        "tracking_width": 960
+      }
+    },
+    "tracking_only_gap15": {
+      "pixel_mode": "tracking_only",
+      "max_gap_s": 0.15,
+      "pixel_config": {
+        "max_points_per_roi": 100,
+        "patch_radius": 3,
+        "min_tracks": 12,
+        "fb_max_px": 0.5,
+        "screen_z": 3.0,
+        "screen_floor": 0.003,
+        "tracking_width": 960
+      }
+    },
+    "tracking_screened_gap10": {
+      "pixel_mode": "tracking_screened",
+      "max_gap_s": 0.1,
+      "pixel_config": {
+        "max_points_per_roi": 100,
+        "patch_radius": 3,
+        "min_tracks": 12,
+        "fb_max_px": 0.5,
+        "screen_z": 3.0,
+        "screen_floor": 0.003,
+        "tracking_width": 960
+      }
+    },
+    "tracking_screened_gap15": {
+      "pixel_mode": "tracking_screened",
+      "max_gap_s": 0.15,
+      "pixel_config": {
+        "max_points_per_roi": 100,
+        "patch_radius": 3,
+        "min_tracks": 12,
+        "fb_max_px": 0.5,
+        "screen_z": 3.0,
+        "screen_floor": 0.003,
+        "tracking_width": 960
+      }
+    }
+  },
+  "default_candidate": "tracking_screened_gap10",
+  "baseline": "V22 trimmed_gap10",
+  "data1_alignment_protocol_sha256": "cdde1ebc76692ebe8dd88b7670c6dd1fb56d1a83048c939f5cdb791d5df0ddc5",
+  "geometry_caches": {
+    "user0904": {
+      "path": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/user0904/frame_trace.csv",
+      "sha256": "375905b32705e7bcdbb35b5d6ffffcc53d0ba48aae7457e65b4638b30ba838a5"
+    },
+    "user0907": {
+      "path": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/user0907/frame_trace.csv",
+      "sha256": "2f94a61d67dc94f1617331158c4e03220a1e3133a89503134c2255a0bd8e389a"
+    },
+    "ubfc": {
+      "path": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/ubfc/frame_trace.csv",
+      "sha256": "9420ea46bee731f431866c4d74ba574385d719f6c20576a547aceaa94071693b"
+    },
+    "kaggle_full": {
+      "path": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/kaggle_full/frame_trace.csv",
+      "sha256": "4d1afa5d9e68a2a565292d9b09d6198fa7f1051846e2f3465c584a1b4c0a76ae"
+    },
+    "synthetic72": {
+      "path": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/synthetic72/frame_trace.csv",
+      "sha256": "23f2c558ea6df945c1139af7c71d07727ae60196622ec504a1061559fc76237e"
+    },
+    "data1": {
+      "path": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/data1/frame_trace.csv",
+      "sha256": "e09493c4887e5f300e8dbe33cfebf4b1e90fe05d5e2e877ab7a2496775f78c84"
+    }
+  },
+  "reference_policy": "No references in inference; frozen existing alignment and all seven data1 sensitivity shifts.",
+  "unchanged": "V22 face geometry/decisions/masks, 10s windows, 1s step, quality gates, POS/CHROM, fusion, actual-waveform HR readout.",
+  "candidate_signal": "Paired patch log-color changes, with explicitly marked baseline ratio fallback and gap resets; relative-color reconstruction, not raw RGB.",
+  "population": "Five human source videos plus one synthetic control; overlapping windows are not independent subjects; development/regression only.",
+  "tests": {
+    "run": 73,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": true,
+    "source_hashes": {
+      "analyze_motion_v2.py": "7ea6de8087ffe1bba6b0627f455d89dc183f505eb077d9274af6ba33946ea060",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+      "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+      "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+      "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+      "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+      "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+      "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+      "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec"
+    },
+    "test_hashes": {
+      "test_cli_v2.py": "2939921ad15626c23a79997a482dad2a3ddbe8df0753f37f973828cc2c69d72e",
+      "test_frontend_v2.py": "b0fbb912cd0147d0675e1a93c44641d3e92cd0271e506b6080c4ed212cad3b96",
+      "test_fusion_v2.py": "1a6568a3bf80c44df5da60bb29ae6b4720ed906149e2543a38a30e0992f6c52c",
+      "test_gap_policy_v22.py": "9d07060667d8af0ded1026a76aea9d158f2c62a839f6d5321664e9d538172bf5",
+      "test_pixel_tracking_v23.py": "5218af7773c3993e1e49becfc3f1d89fd9d56814fc4836a86ecf348f3563e032",
+      "test_sampling_v22.py": "2020afcd5f6fd209ff8eb05f0c400fae4289cd1b227a61d74b81e9fe33a1df43",
+      "test_stable_groups_v21.py": "b4f17913006f458b18a82ef44d9b366f11df992fd4855bcdbf6c46b939d0f2a6",
+      "test_waveform_hr_v21.py": "f3803f5393125ced0927dc47ca0d5879e8795cfa12850e567928c47426f50646"
+    }
+  }
+}

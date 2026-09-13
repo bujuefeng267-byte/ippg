@@ -1,0 +1,191 @@
+{
+  "profile": "short6_relaxed",
+  "case": "data2",
+  "waveform": {
+    "frames": 1393,
+    "fps": 30.00003000003,
+    "total_duration_s": 46.4332869,
+    "finite_frames": 1140,
+    "finite_duration_s": 37.999962,
+    "waveform_coverage_pct": 81.83776022972002,
+    "first_finite_time_s": 5.999994,
+    "last_finite_time_s": 43.966622699999995,
+    "leading_missing_s": 5.999994,
+    "trailing_missing_s": 2.4333309,
+    "internal_missing_s": -1.3322676295501878e-15,
+    "missing_duration_s": 8.433324899999999,
+    "longest_missing_s": 5.999994,
+    "missing_runs": 2,
+    "no_finite_output": false,
+    "missing_intervals": [
+      {
+        "start_frame": 0,
+        "stop_frame_exclusive": 180,
+        "start_s": 0.0,
+        "end_s_exclusive": 5.999994,
+        "duration_s": 5.999994
+      },
+      {
+        "start_frame": 1320,
+        "stop_frame_exclusive": 1393,
+        "start_s": 43.999956,
+        "end_s_exclusive": 46.4332869,
+        "duration_s": 2.4333309
+      }
+    ],
+    "timing_interpretation": "Offline source timestamps; first finite sample is not processing latency or an online availability guarantee",
+    "all_missing_convention": "If no sample is finite, all missing time is assigned to leading_missing_s; trailing/internal are zero"
+  },
+  "V28_waveform": {
+    "frames": 1393,
+    "fps": 30.00003000003,
+    "total_duration_s": 46.4332869,
+    "finite_frames": 1260,
+    "finite_duration_s": 41.999958,
+    "waveform_coverage_pct": 90.45226130653266,
+    "first_finite_time_s": 1.999998,
+    "last_finite_time_s": 43.966622699999995,
+    "leading_missing_s": 1.999998,
+    "trailing_missing_s": 2.4333309,
+    "internal_missing_s": -4.440892098500626e-16,
+    "missing_duration_s": 4.433328899999999,
+    "longest_missing_s": 2.4333309,
+    "missing_runs": 2,
+    "no_finite_output": false,
+    "missing_intervals": [
+      {
+        "start_frame": 0,
+        "stop_frame_exclusive": 60,
+        "start_s": 0.0,
+        "end_s_exclusive": 1.999998,
+        "duration_s": 1.999998
+      },
+      {
+        "start_frame": 1320,
+        "stop_frame_exclusive": 1393,
+        "start_s": 43.999956,
+        "end_s_exclusive": 46.4332869,
+        "duration_s": 2.4333309
+      }
+    ],
+    "timing_interpretation": "Offline source timestamps; first finite sample is not processing latency or an online availability guarantee",
+    "all_missing_convention": "If no sample is finite, all missing time is assigned to leading_missing_s; trailing/internal are zero"
+  },
+  "native6s_hr": {
+    "first_accepted_center_s": 8.999991,
+    "first_accepted_window_start_s": 5.999994,
+    "first_accepted_window_end_s": 11.999988,
+    "Nplanned": 41,
+    "Noutput": 33,
+    "rejected_updates": 8,
+    "rejected_update_duration_s": 7.999992,
+    "longest_rejected_run_updates": 6,
+    "longest_rejected_update_duration_s": 5.999994,
+    "rejected_runs": [
+      {
+        "first_window_index": 0,
+        "stop_window_index_exclusive": 6,
+        "first_center_s": 2.999997,
+        "last_center_s": 7.999992,
+        "unavailable_updates": 6,
+        "nominal_duration_s": 5.999994
+      },
+      {
+        "first_window_index": 39,
+        "stop_window_index_exclusive": 41,
+        "first_center_s": 41.999958,
+        "last_center_s": 42.999957,
+        "unavailable_updates": 2,
+        "nominal_duration_s": 1.999998
+      }
+    ],
+    "status_counts": {
+      "candidate_only": 33,
+      "gap_or_filter_edge": 8
+    },
+    "duration_definition": "Rejected update counts times the actual frame-rounded hop; excludes unplanned leading/trailing margins and is not union of analysis-window durations",
+    "timing_interpretation": "Window end is required input time for that analysis window, not measured online latency; the estimator is offline"
+  },
+  "common10s_hr": {
+    "first_accepted_center_s": 10.999989,
+    "first_accepted_window_start_s": 5.999994,
+    "first_accepted_window_end_s": 15.999984,
+    "Nplanned": 37,
+    "Noutput": 29,
+    "rejected_updates": 8,
+    "rejected_update_duration_s": 7.999992,
+    "longest_rejected_run_updates": 6,
+    "longest_rejected_update_duration_s": 5.999994,
+    "rejected_runs": [
+      {
+        "first_window_index": 0,
+        "stop_window_index_exclusive": 6,
+        "first_center_s": 4.999995,
+        "last_center_s": 9.99999,
+        "unavailable_updates": 6,
+        "nominal_duration_s": 5.999994
+      },
+      {
+        "first_window_index": 35,
+        "stop_window_index_exclusive": 37,
+        "first_center_s": 39.99996,
+        "last_center_s": 40.999959,
+        "unavailable_updates": 2,
+        "nominal_duration_s": 1.999998
+      }
+    ],
+    "status_counts": {
+      "candidate_only": 29,
+      "gap_or_filter_edge": 8
+    },
+    "duration_definition": "Rejected update counts times the actual frame-rounded hop; excludes unplanned leading/trailing margins and is not union of analysis-window durations",
+    "timing_interpretation": "Window end is required input time for that analysis window, not measured online latency; the estimator is offline"
+  },
+  "V28_hr": {
+    "first_accepted_center_s": 6.999993,
+    "first_accepted_window_start_s": 1.999998,
+    "first_accepted_window_end_s": 11.999988,
+    "Nplanned": 37,
+    "Noutput": 33,
+    "rejected_updates": 4,
+    "rejected_update_duration_s": 3.999996,
+    "longest_rejected_run_updates": 2,
+    "longest_rejected_update_duration_s": 1.999998,
+    "rejected_runs": [
+      {
+        "first_window_index": 0,
+        "stop_window_index_exclusive": 2,
+        "first_center_s": 4.999995,
+        "last_center_s": 5.999994,
+        "unavailable_updates": 2,
+        "nominal_duration_s": 1.999998
+      },
+      {
+        "first_window_index": 35,
+        "stop_window_index_exclusive": 37,
+        "first_center_s": 39.99996,
+        "last_center_s": 40.999959,
+        "unavailable_updates": 2,
+        "nominal_duration_s": 1.999998
+      }
+    ],
+    "status_counts": {
+      "candidate_only": 33,
+      "gap_or_filter_edge": 4
+    },
+    "duration_definition": "Rejected update counts times the actual frame-rounded hop; excludes unplanned leading/trailing margins and is not union of analysis-window durations",
+    "timing_interpretation": "Window end is required input time for that analysis window, not measured online latency; the estimator is offline"
+  },
+  "new_waveform_seconds": 0.0,
+  "lost_waveform_seconds": 3.999996,
+  "new_waveform_intervals": [],
+  "lost_waveform_intervals": [
+    {
+      "start_frame": 60,
+      "stop_frame_exclusive": 180,
+      "start_s": 1.999998,
+      "end_s_exclusive": 5.999994,
+      "duration_s": 3.999996
+    }
+  ]
+}

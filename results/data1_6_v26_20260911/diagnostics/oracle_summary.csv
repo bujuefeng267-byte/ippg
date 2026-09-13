@@ -1,0 +1,7 @@
+case,Nplanned,Nreference_eligible,actual_outputs,actual_within5,saved_final_supported_state_oracle_hits,fusion_top8_peak_oracle_hits,any_original_ROI_peak_oracle_hits,two_physical_ROI_peak_oracle_hits,two_physical_ROI_20pct_peak_oracle_hits,any_optical_waveform_peak_oracle_hits,any_optical_waveform_supported_state_oracle_hits,raw_RGB_diagnostic_peak_hits,motion_reference_peak_coincidences,near_half_reference_actual_outputs,near_double_reference_actual_outputs,fusion_H1_energy_median,fusion_H1_snr_median_db
+data1,42,42,37,0,13,5,35,27,14,36,38,19,0,0,0,0.03648952030540583,-14.216882885270117
+data2,37,37,33,29,31,29,33,33,33,33,33,37,25,0,0,0.21084507953590564,-5.731987983376294
+data3,65,65,59,11,34,20,60,51,39,60,61,65,23,27,0,0.06393979772071705,-11.655325230769149
+data4,50,50,46,45,46,44,46,46,46,46,46,50,44,0,0,0.6776066925211803,3.225916713761397
+data5,53,53,49,8,39,30,49,44,41,49,49,53,1,0,1,0.06812517733685766,-11.360499323508693
+data6,62,62,36,0,16,10,38,29,11,38,38,45,0,0,0,0.02648237122538926,-15.65437091398033

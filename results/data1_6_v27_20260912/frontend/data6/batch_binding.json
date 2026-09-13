@@ -1,0 +1,28 @@
+{
+  "case": "data6",
+  "video": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/Video_20260911_YJC_4.avi",
+  "video_sha256": "78208661610ca27e1de7ade6e8e079411e120df0248c87c066250df3f25c7ea6",
+  "frames": 2148,
+  "fps": 30.00003000003,
+  "metadata_sha256": "70f31e4a3c19d5922a6e5909edc1ff080bbcc124c787d112ab7d94dac3af6aff",
+  "fixed_protocol_sha256": "a5f04a9353cdb516b06a7e79932072cfa72c6dd50322dd76747441074b379963",
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "stable_patch_frontend_v27.py": "e69787cd4c3a0148af01d704b97619bc9cf41e6107a0c7295ddb66fe839420d7",
+    "prepare_patch_signals_v27.py": "2316e789187727ba4a3dfab2464c1a4540a008c1dcbd31c7509097525bb8c4be",
+    "patch_hr_v27.py": "e88024369c13d1ab76711d5b6c20e8cbec7f2079546b0f92a649f069b401b4fa",
+    "run_v27.py": "90eee215a59723be2d6ef50d40f66ae95cb209204b48ed8efd2998c9aae96039"
+  }
+}

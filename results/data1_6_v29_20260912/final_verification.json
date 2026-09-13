@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "created_utc": "2026-09-12T04:44:24.354857+00:00",
+  "installed_sources": 38,
+  "frozen_inference_sources": 24,
+  "installed_tests": 17,
+  "installed_tests_sha256": "974bc38429d3ae2864323d75eb3b0203d7f5a5810aeb5479e0ec84618ed20a09",
+  "receipts": {
+    "qa_metrics_v29.json": "8334141badd39f1d61bb1b0dfdd1fc0ce097abb3355c2d937010df4a88a8b837",
+    "qa_installed_cli_smoke_v29.json": "7bb405f83d9a585dec694d5c4b3c529c748d9b3834a2daab2e0dcb37c49342de",
+    "visual_qa_v29.json": "c320b6077cfca43b1a26576dbb9cdae670f0f1c92619b4cd23b30712bbb48140"
+  },
+  "document": "/home/fengbujue/项目/rppg识别/V29短窗口与连续性说明.md",
+  "document_sha256": "25150c5013dcfd4e336f4aa360aa8672741bb073a9f36a38160147f1ed532f6f",
+  "document_links": [
+    {
+      "path": "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/figures/data6_ppg_hr_short_window_comparison.png",
+      "sha256": "0dcc953f760090e65994e76da5423c477c3bd18ce4ae9eeae73f5dd26ee4f3c0"
+    },
+    {
+      "path": "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/figures/six_video_hr_short_window_comparison.png",
+      "sha256": "c305e2936f7b74eb348f229711159ee5be6e9b8e6cb0983695753923646b9486"
+    },
+    {
+      "path": "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/evaluation_summary.json",
+      "sha256": "87734af2fd488b4166bcadddf2ef76450fdaadd7d2da58c6ad16c3cc86980a53"
+    },
+    {
+      "path": "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/metrics_native6s.csv",
+      "sha256": "c32fb2755f76d3ed68ed4f66913794a8dcd3fce9ce77e0d95da5d57d46a01046"
+    },
+    {
+      "path": "/home/fengbujue/项目/rppg识别/results/data1_6_v29_20260912/metrics_common10s.csv",
+      "sha256": "494a86e324d53af219bf5f76fea67a9b727892effe0a0797503ab3caf7916043"
+    }
+  ],
+  "protected_entries": {
+    "/home/fengbujue/项目/rppg识别/run.sh": "d9eee11d650bb1a8938d48f16d5bedbb551739f0bc74e0559252dfd37bbf36ad",
+    "/home/fengbujue/项目/rppg识别/run_motion_v25.sh": "271b35d3411984bacf4db51fdc6c9910a3fde9ba46ac840c1494a65c3e5bf4de",
+    "/home/fengbujue/项目/rppg识别/run_motion_v26_experimental.sh": "04f4e91150c790948c167ebce08579999e79d98ab57769f7ad74cb73cb4f65f6",
+    "/home/fengbujue/项目/rppg识别/run_motion_v27_experimental.sh": "00062e5fb94f91bc743a9bcc4c0dd5d7c99ea97c03a6d8585cfcccad072ea218",
+    "/home/fengbujue/项目/rppg识别/run_motion_v28.sh": "83b0e3f1c9dca9e224205d6a72c49fd280d3f41318ba378b87a039a56b5d8c09",
+    "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/installation_manifest.json": "c6332913c71e6ebecf28edcb5ab3faa231fc4b9370d810bca1af2d6b2ad18123"
+  },
+  "limits": "Optional short-window mode. Existing development videos and estimated sync. More coverage is not improved accuracy or validated real-time performance."
+}

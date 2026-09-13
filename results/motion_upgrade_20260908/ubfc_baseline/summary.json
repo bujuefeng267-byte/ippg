@@ -1,0 +1,100 @@
+{
+  "identity": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+    "size": 1425830568,
+    "mtime_ns": 1788405743301475200,
+    "frontend": "baseline",
+    "max_seconds": null,
+    "source_sha256": "5b6deab6e91ab3490f5f67efc39a07aa4fc6646b749eb90a1187eecf866dfc88"
+  },
+  "fps": 29.264106,
+  "frames": 1547,
+  "observed_rgb_fraction": 1.0,
+  "source_counts": {
+    "mesh": 1547
+  },
+  "config": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+    "output": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_upgrade/validation_final/ubfc_baseline",
+    "frontend": "baseline",
+    "cache": null,
+    "max_seconds": null,
+    "max_gap": 0.1,
+    "window": 10,
+    "step": 1,
+    "min_bpm": 42,
+    "max_bpm": 210,
+    "reference_ubfc": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/ground_truth.txt"
+  },
+  "warning": "Experimental offline estimates. Coverage/continuity are not accuracy. DP uses future windows. NLMS may suppress pulse correlated with motion.",
+  "variants": {
+    "pos": {
+      "total_windows": 44,
+      "accepted_windows": 40,
+      "accepted_fraction": 0.9090909090909091,
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 40,
+          "mae_bpm": 3.209058217721374,
+          "rmse_bpm": 4.30546855769563
+        },
+        "ridge_bpm": {
+          "n": 40,
+          "mae_bpm": 2.5608837981643235,
+          "rmse_bpm": 3.0610386147775506
+        }
+      }
+    },
+    "pos_nlms": {
+      "total_windows": 44,
+      "accepted_windows": 40,
+      "accepted_fraction": 0.9090909090909091,
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 40,
+          "mae_bpm": 27.334550718568295,
+          "rmse_bpm": 37.53127891677925
+        },
+        "ridge_bpm": {
+          "n": 40,
+          "mae_bpm": 2.947550946826788,
+          "rmse_bpm": 3.5827408944974466
+        }
+      }
+    },
+    "chrom": {
+      "total_windows": 44,
+      "accepted_windows": 40,
+      "accepted_fraction": 0.9090909090909091,
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 40,
+          "mae_bpm": 2.767321016356186,
+          "rmse_bpm": 3.5635732593936837
+        },
+        "ridge_bpm": {
+          "n": 40,
+          "mae_bpm": 2.545308846981956,
+          "rmse_bpm": 3.141175422904123
+        }
+      }
+    },
+    "chrom_nlms": {
+      "total_windows": 44,
+      "accepted_windows": 40,
+      "accepted_fraction": 0.9090909090909091,
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 40,
+          "mae_bpm": 28.478644911161744,
+          "rmse_bpm": 37.38485862896326
+        },
+        "ridge_bpm": {
+          "n": 40,
+          "mae_bpm": 2.949039001434296,
+          "rmse_bpm": 3.695859365391914
+        }
+      }
+    }
+  }
+}

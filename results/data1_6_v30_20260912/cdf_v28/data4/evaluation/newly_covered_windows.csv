@@ -1,0 +1,1 @@
+window_index,time_s,window_start_s,window_end_s,reference_bpm,reference_valid,estimated_bpm,accepted,status,V28_bpm,V28_accepted,error_bpm,abs_error_bpm,common_output,new_output,lost_output

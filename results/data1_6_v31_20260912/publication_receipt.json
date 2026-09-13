@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-12T15:57:11.584114+00:00",
+  "installed_sources": {
+    "analyze_v28_result_v31.py": "b1380c6fe5e7f4ff1bab52a16de9312043fc4e1d50539b9fd4edf3ebfecbbcbb",
+    "cdf_preprocess.py": "c07d1660ea27d0f7ebb197f3317f6910ef478bdbae069ee2023fd49713ee5ce7",
+    "evaluate_v31.py": "5bc373c2e5eff12670713b2496e77eafb5c84090c7905648dea00f4a1c45b755",
+    "evaluation_common_v31.py": "f646082b819965a491d425750f302a17bd0d04c30bf944a715ec12645dba9bcd",
+    "proposal_evidence_v31.py": "5fca688411418fdf061f313e978da0ccd186ec6fe510c1d261abaa4ce1ec346f",
+    "protected_inference_v31.py": "b176224b80e23b2a5625d4fb09aa8166409bcda4365b43336d85c3b6cb54d09a",
+    "protected_waveform_router.py": "65405527ef83655029115d0fabf2e74cf29be5d571348eec7bddcdea728a1a54",
+    "publish_v31.py": "356feefdc232bcf49cc4c6b9cb0ce7f14aba3bbd0d04394aba59ed4c5917798e",
+    "qa_evaluation_v31.py": "84625f6527cf38c0739fd54489bd07658d433965b5bc74c9660e7f345ede5e60",
+    "qa_evaluation_v31_serialization_fix.py": "51754e83e101a46b6b1b39c9b54d9fa72c07ac7d52bfb8a6409e57338b087692",
+    "run_v31.py": "446c7acb550153e3ede5d1c18832d0403e1723d7a75c60569999ff7568a0add6",
+    "test_evaluate_v31.py": "5f0a7380c5d670bf4cc14692183fbce48f5a87a4dc3d64cf6733e8cee1d61cdb",
+    "test_proposal_evidence_v31.py": "afad63facd7a38cfecc43c4642dc15d617bb93f4c6f55c740b936ed90d6c3c19",
+    "test_protected_inference_v31.py": "1678eac5e06070fd17d03747121fb203df6a0930dbccf92e2b57540e5fe1b87e",
+    "test_protected_waveform_router.py": "90d7ea4399eb72b3ba556a28fe8300cc996b56cae2ed271865fa41e7cab34a63",
+    "test_v31_integration.py": "9fcfabd717c831b752571765548241ad816743116665518ee53365df7140331f"
+  },
+  "report_path": "/home/fengbujue/项目/rppg识别/V31保护机制与六视频结果_20260912.md",
+  "report_sha256": "aab37cf88e49042fd72bc11d43a505c7728d1af3c4ffc197a11d5d3ee2eca785",
+  "recommended_version": "V28",
+  "promoted": false,
+  "inference_protocol_sha256": "71f4a10beef453cded6b8e905080dfbe5ffdb869b7f8fab9c959d68b005fe9ef",
+  "evaluation_sha256": "3a0ba55ee50e398436cf4eabcc618851c0f23b8ea39a6864f84d12fbf1bd417d",
+  "completed_QA_sha256": "70b5e04864078afa855b1e34300aeae51347885fdc1c8853fb69162d2f193ac8",
+  "protected_entries": {
+    "/home/fengbujue/项目/rppg识别/run_recommended.sh": "5149ac992735cdaefacc5ad54da218013426ff51c30a37801b70a4eb9eb410f8",
+    "/home/fengbujue/项目/rppg识别/run_motion_v28.sh": "83b0e3f1c9dca9e224205d6a72c49fd280d3f41318ba378b87a039a56b5d8c09",
+    "/home/fengbujue/项目/rppg识别/recommended_version.json": "41cc8c873c4054d4c24b6b6edcd7e1f4954282c766aa71d278dd6761262b9172"
+  }
+}

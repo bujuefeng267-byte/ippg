@@ -1,0 +1,62 @@
+"""Publish the actual experiment outcome and geometry QA in the project."""
+from pathlib import Path
+import json,shutil
+
+HERE=Path(__file__).resolve().parent
+P=Path('/home/fengbujue/项目/rppg识别')
+R=P/'results/data1_6_v27_20260912'
+NAMES={'early_median':'先合并颜色＋中位数','early_psd_cluster':'先合并颜色＋频谱聚类',
+    'late_median':'独立小块＋中位数','late_psd_cluster':'独立小块＋频谱聚类',
+    'fusion_nomotion_local':'同一融合波形：逐窗选频',
+    'fusion_motion_local':'同一融合波形：运动评分',
+    'fusion_nomotion_dp':'同一融合波形：时间修正',
+    'fusion_motion_dp':'同一融合波形：运动评分＋时间修正'}
+
+def main():
+    target=P/'V27运动心率改进说明.md'
+    if target.exists():raise FileExistsError(target)
+    reports={name:json.loads((R/name/'evaluation_summary.json').read_text()) for name in NAMES}
+    assert not any(report['promotion_pass'] for report in reports.values())
+    old=json.loads((P/'results/data1_6_v25_20260911/stage4_preserve_waveform/stage_evaluation.json').read_text())['pooled']
+    old={**old,'P5_valid_pct':100*old['Nwithin5']/old['Nvalid'],'HR_coverage_pct':old['hr_output_coverage_pct']}
+    for receipt in ['qa_v27.json','qa_patch_geometry_v27.json','qa_saved_readout_v27.json','qa_cli_real_cache_v27.json']:
+        assert json.loads((R/receipt).read_text())['passed'],receipt
+    prefix='results/data1_6_v27_20260912/'
+    lines=['# V27 运动 rPPG 实测结果','',
+        '**已完成代码和六段原视频实测，但本轮未实现整体准确率提升。八种预先固定的主方案均未通过升级条件，继续推荐原 V25；V27 单独保留为实验入口。**','',
+        '这次新增固定 12 个局部小块的独立 RGB/BVP 记录、完整频谱聚类和可审计输出，保留像素跟踪、局部异常筛选及失败回退。所有配置使用同一批原视频、相同参数、原来的 309 个参考窗口；没有按视频挑选最好方法。','',
+        '| 方法 | MAE ↓（bpm） | 有效输出内 ±5 bpm 达标率 P5 ↑ | 全参考窗成功率 R5 ↑ | 心率覆盖率 ↑ |',
+        '|---|---:|---:|---:|---:|']
+    for label,row in [('原 V25',old)]+[(NAMES[k],r['pooled']) for k,r in reports.items()]:
+        lines.append(f"| {label} | {row['MAE_bpm']:.2f} | {row['P5_valid_pct']:.2f}% | {row['R5_all_reference_pct']:.2f}% | {row['HR_coverage_pct']:.2f}% |")
+    lines += ['',
+        '前四项是小块 BVP 心率的空间统计，后四项从同一保存融合波形读出。融合波形的覆盖率和逐片误差另见完整报告；覆盖率不能等同于波形正确率。缺失仍为 NaN，图中留空。','',
+        '**局部有改善，但不等于超过旧版：** 保留小块后，中位数方案 MAE 从 38.93 降到 35.90 bpm；在同一融合波形上启用运动评分，逐窗方案从 47.16 降到 35.68 bpm。它们仍差于 V25 的 25.20 bpm，加入时间修正也没有持续获益。','',
+        '另一个必须分开看的结果是：先合并颜色＋中位数所保存波形的二次心率读出 MAE 为 24.65 bpm，略低于 V25；但全参考窗成功率只有 27.83%，低于 V25 的 30.10%，data3 也明显退步。因此不能把这个二次结果替换主结果或作为整体升级成功。','',
+        '独立复算核对了全部评分、局部小块聚合和融合波形，未发现本轮计算或文件混用错误。运动视频 data1、data5、data6 中，聚类估计常与强运动频谱重合，说明“多个区域一致”不足以证明找到了心跳。这是关联证据；其他视频的低估仍需单独分析。','',
+        '下一步更有针对性的方向：在小块代表选择和聚类之前使用运动证据、保留多个频率候选，检验是否能避免先把共同运动选成主信号；再单独验证眼镜／非皮肤排除与小块尺寸。它们尚未在本轮实现或证明提升，需要另一个预先固定的实验及独立新数据。','',
+        '## 查看文件','',
+        f'- [完整 MD 报告及六视频所有指标](<{prefix}final_report/report.md>)',
+        f'- [独立小块＋频谱聚类：六视频心率图](<{prefix}final_report/six_video_hr_late_psd_cluster.png>)',
+        f'- [独立小块＋频谱聚类：六视频实测融合波形图](<{prefix}final_report/six_video_measured_wave_late_psd_cluster.png>)',
+        f'- [所有主方案比较图](<{prefix}final_report/all_eight_primary_metrics.png>)',
+        f'- [错误分布与运动频谱诊断数据](<{prefix}post_evaluation_diagnostics/summary.csv>)',
+        f'- [退步原因、运动关联与二次读出补充](<{prefix}final_report/interpretation_supplement.md>)',
+        '- [算法说明](<motion_upgrade_v27_20260912/README.md>)',
+        '- [新视频实验入口说明及输出格式](<motion_upgrade_v27_20260912/README_video_v27.md>)','',
+        '在 WSL 项目根目录可使用：','',
+        '```bash',
+        './run_motion_v27_experimental.sh /path/to/video.mp4 --output /path/to/new_result --variant all',
+        '```','',
+        '输出目录必须是新目录。原推荐入口 `run_motion_v25.sh`、原视频和旧结果均保留。通用入口不接收参考心率，默认 `late_psd_cluster` 是实验预设，不是推荐的最佳方案。','',
+        '六段均为已用于开发的数据；主评价沿用原先估计的时间对齐，固定 ±1/2/5 秒敏感性见报告。Polar 设备 HR 是比较参考，不能据此验证脉搏波形形态。','']
+    target.write_text('\n'.join(lines),encoding='utf-8')
+    preview=R/'geometry_preview';preview.mkdir()
+    for path in sorted((HERE/'geometry_preview').glob('data*.png')):shutil.copyfile(path,preview/path.name)
+    (preview/'visual_check.json').write_text(json.dumps(dict(
+        cases=[f'data{i}' for i in range(1,7)],fractions=[.1,.5,.9],checked=True,
+        observation='All 18 fixed snapshots viewed. Regions remain on the face. Some upper-cheek/forehead boundaries lie near glasses/brows; brightness mask is not semantic skin segmentation.',
+        limitation='Visual spot checks do not validate all frames or physiological signal quality; numeric geometry replay is recorded separately.'),indent=2))
+    print(target)
+
+if __name__=='__main__':main()

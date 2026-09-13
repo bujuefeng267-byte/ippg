@@ -1,0 +1,1448 @@
+{
+  "passed": true,
+  "checked_utc": "2026-09-11T14:00:48.520906+00:00",
+  "methodology": "Independent saved-output V25 evidence HR receipt; no reference or video reads.\n\nProduction estimators are never imported. The earlier independent V24 auditor\nsupplies only its separately expressed legacy Welch/gate/DP and provenance QA.\nThis file independently re-expresses V25 motion evidence, candidate scoring and\nreacquisition DP, checking every serialized candidate and supported output.\n",
+  "reference_used": false,
+  "raw_video_read": false,
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd"
+  },
+  "independent_evidence_config": {
+    "min_relative_power": 0.05,
+    "min_prominence": 0.02,
+    "peak_distance_bpm": 6.0,
+    "candidate_radius_bpm": 3.0,
+    "max_candidates": 8,
+    "spectral_weight": 0.35,
+    "periodic_weight": 1.1,
+    "harmonic_weight": 1.0,
+    "motion_weight": 1.25,
+    "third_harmonic_weight": 0.35,
+    "transition_penalty": 0.05,
+    "max_rate_bpm_per_s": 12.0,
+    "reacquisition_cost": 3.0,
+    "candidate_offset_penalty": 0.025
+  },
+  "qa_script_sha256": "a23fa90d95dd364c777d061323e3c6caea7409969e6468539b7b64d1e495bca9",
+  "input_sha256": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/protocol_before_validation.json": "df3851b4f6738920a84c3266c00af5cfcd8dc6dd3a57858eeb4eb1a4ad7ab9cc",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v25/qa_recompute_waveform_hr_v24.py": "34484cc6ce73f9b35b3f49c54bffaa212c165df1d63980ff2713624bdb81b96b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/runs.json": "40bd41b5f6aa1f2fef9fdf154ae039d10ac59620bc7f25682285f8ef8aeb7320",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/summary.json": "1b47cf01970b054dc05ed0066786b8f0e2eedf62bff82ccea17e1866dfd566fd",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/frame_trace.csv": "af133235070f9ca7d7d8d1aa92a30dc35eac534376f0048eee60ac0df9fd255a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/roi_waveforms.csv": "aa8f142cee4141a5fef6ff7266e8122b6e5ba79f8a7967ed2f3131914c1b73f1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/fusion_proposals.csv": "d11a4379fc054a51888d553e0d3fa70bea1805b259419c5f25e71ffc837d087c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/fusion_diagnostics.csv": "fbc6baf6b0a10665961fcb826077442823f599f34e1950fee51aded409d56299",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/pos_waveform.csv": "a9024a69c85a593686bad31d0c78ca8eb20d6973abcc48b4d8549c582b026d23",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/pos_heart_rate.csv": "bc68f8fa1963438f8a595e5c6f10fd76345aadeb1a5a8f3061bd3932a66408f1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/chrom_waveform.csv": "b6986e6c1ae03db0c6a053d7fc8913f113ae58a91e380dac853cd3ff2df47983",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/chrom_heart_rate.csv": "48a9ab4953f6990085f12bee62481d40adf3bc00daf7fea350b2658a2dc4d396",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/fusion_waveform.csv": "b355a46bdf5e2a6e4c0622f4763f8c62bfd1a53672a19f538b1bf0e8b2be5797",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/fusion_heart_rate.csv": "3ce81462bc5d990f4f72cda815b3fbb2cdbf9e8871e6e397d1efcc4a5dc8dd46",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data1/frame_trace.csv": "af133235070f9ca7d7d8d1aa92a30dc35eac534376f0048eee60ac0df9fd255a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data1/roi_waveforms.csv": "aa8f142cee4141a5fef6ff7266e8122b6e5ba79f8a7967ed2f3131914c1b73f1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data1/fusion_waveform.csv": "b355a46bdf5e2a6e4c0622f4763f8c62bfd1a53672a19f538b1bf0e8b2be5797",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data1/fusion_proposals.csv": "d11a4379fc054a51888d553e0d3fa70bea1805b259419c5f25e71ffc837d087c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data1/fusion_diagnostics.csv": "fbc6baf6b0a10665961fcb826077442823f599f34e1950fee51aded409d56299",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data1/branch_routing.csv": "44ad623329224fad6f5f3c6e421d104c889889a33fab663b7faaefa7c83e6941",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data1/branch_routing.csv": "44ad623329224fad6f5f3c6e421d104c889889a33fab663b7faaefa7c83e6941",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/summary.json": "303a447db8e0c8fbbf35eead09d174f2b8e187e58456e0b1a1288219d986d7bb",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/frame_trace.csv": "e8e3f891ca4521f13c2437454d6e06e23765d9f43af8a6d391fc9521757814f9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/roi_waveforms.csv": "0c5c8634ba574cd725d035dc90868957792f6fef1b142e6d1fc6048feb3d3724",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/fusion_proposals.csv": "8156532a3e560ab609beae466b6b8d7f9178da8ace7d8dcb826586e2ca6c0cf5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/fusion_diagnostics.csv": "2ebe413f55f2a2a81d8d3cc7295089f3bda9ec332fde387a988378c64c3d10fb",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/pos_waveform.csv": "de351f9c0d721f4dc88775dab7d9cfe077214a77fd4ce7796fc0dbcb9efacf9b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/pos_heart_rate.csv": "8cc3c1311282991165d90c8a28e9c5267324d7b7c82d729be670acc9e90ea3c7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/chrom_waveform.csv": "84db2ff54b346ab517cc7bae95e156a0ee73a3c39a602c160fa216c744bd84b5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/chrom_heart_rate.csv": "e84876db8a0cbf68ca18bf83baa841dcdbf7c96cb101bb726b84e0e067303a61",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/fusion_waveform.csv": "96ecdc7f1a8a4a711e98e6638f03b3e17ec2d699e4935f97d205fb4a1ee79c70",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/fusion_heart_rate.csv": "3808b069dd5a541d71d614772e9cc7cac1dfd668a70395de09a032611f158773",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data2/frame_trace.csv": "e8e3f891ca4521f13c2437454d6e06e23765d9f43af8a6d391fc9521757814f9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data2/roi_waveforms.csv": "0c5c8634ba574cd725d035dc90868957792f6fef1b142e6d1fc6048feb3d3724",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data2/fusion_waveform.csv": "96ecdc7f1a8a4a711e98e6638f03b3e17ec2d699e4935f97d205fb4a1ee79c70",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data2/fusion_proposals.csv": "8156532a3e560ab609beae466b6b8d7f9178da8ace7d8dcb826586e2ca6c0cf5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data2/fusion_diagnostics.csv": "2ebe413f55f2a2a81d8d3cc7295089f3bda9ec332fde387a988378c64c3d10fb",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data2/branch_routing.csv": "d76bf5be311cfda95acf123bb668d9e03c30070b0984d0ff5f28135c5a5033ab",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data2/branch_routing.csv": "d76bf5be311cfda95acf123bb668d9e03c30070b0984d0ff5f28135c5a5033ab",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/summary.json": "d86a60bba2e919a8c3c2aa0cd1b6fe8b7dc54a95966389256883b2187ded5e8d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/frame_trace.csv": "7d136a81667fcdcc99021c0202f8f863b6b7f27d22a6edce90dffad9d0d5d425",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/roi_waveforms.csv": "f809b5e4b1fef2428b9c004976b38397f09f29d1b8093118eac204831fc0a317",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/fusion_proposals.csv": "2306475ae63292ec424c62466af8500a0bd14d3d69939ab0f8f4e6e0ea3bc4c2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/fusion_diagnostics.csv": "0f02335da070a20c422bbb72e862b4d31798a35807a5eff1eac0886f589d04d1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/pos_waveform.csv": "da042a66f17723bb332e9bfe5c8b6b7a34f08be4c4e2411c1affe609e1934cf4",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/pos_heart_rate.csv": "7ca0d538bd22416ff91f0c6b5e2ccd0351a9717c4eae387d899ebd2429e746fa",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/chrom_waveform.csv": "e0c03c8880bbe38ee875cade05042964f2ae35efd2ec73b00ca6da849dd3f712",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/chrom_heart_rate.csv": "1dfaccff7b6a6fd071090ac8a81e57c989af9241063dbc24df958482c20f3436",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/fusion_waveform.csv": "2b935b57c3d1527b47f7653063ce431c986f32b007ed72de9a3d7d66c4a9728c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/fusion_heart_rate.csv": "039e83a555f92acf562c05d09b721bcf3239036229770b9bd12bae6b1679d9c3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data3/frame_trace.csv": "7d136a81667fcdcc99021c0202f8f863b6b7f27d22a6edce90dffad9d0d5d425",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data3/roi_waveforms.csv": "f809b5e4b1fef2428b9c004976b38397f09f29d1b8093118eac204831fc0a317",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data3/fusion_waveform.csv": "2b935b57c3d1527b47f7653063ce431c986f32b007ed72de9a3d7d66c4a9728c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data3/fusion_proposals.csv": "2306475ae63292ec424c62466af8500a0bd14d3d69939ab0f8f4e6e0ea3bc4c2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data3/fusion_diagnostics.csv": "0f02335da070a20c422bbb72e862b4d31798a35807a5eff1eac0886f589d04d1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data3/branch_routing.csv": "9a1ee2168b6318f0cfc12496e8884c1abba818ed53094e9df721a64ae4ac7e07",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data3/branch_routing.csv": "9a1ee2168b6318f0cfc12496e8884c1abba818ed53094e9df721a64ae4ac7e07",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/summary.json": "14ad742bf13390d6d2f2818230d9c258507ea0de6dc3c7df8ce878f39f8bb5a8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/frame_trace.csv": "6a53d537e04197cc1a9e31ab5cebf1792d12e82ed15ff100b2a2847e97d0701d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/roi_waveforms.csv": "d085797234ee5148fc67a8753eb54e823155d90f1dc67e30563b3cece88a878e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/fusion_proposals.csv": "1dc4067bd41b5efcf8ab09580761a183c18ca5230f1dd0d21f75706075f49621",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/fusion_diagnostics.csv": "82d94fe2db2470f621f7bdb8e8e2bba16326c6be9a99e91c7c37b220a1266ed7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/pos_waveform.csv": "eeb6bacc177dec7bbc7cbe03e2a08ae912de579b3b66207242621404e4998411",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/pos_heart_rate.csv": "6b8a3131dca4b7980d1370612c184406e47c0551c9137d57503a1045f2bcb6a8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/chrom_waveform.csv": "f04a455acb92753d013190be6ef4c1fa57ee1bf83807c0e02bd1a8221e312002",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/chrom_heart_rate.csv": "9d8c4266e7aee7e04affe973d112a6115800b1453c8c5c377fe6f961d2be3260",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/fusion_waveform.csv": "ffd4c6dfd4aadb12d6213209931d8434226f18396abe939626ab3f736317ca86",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/fusion_heart_rate.csv": "e1325742cb27f0da5d0ffe62d4a12a25596fcc181c1e025fd7f8b199381dadce",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data4/frame_trace.csv": "6a53d537e04197cc1a9e31ab5cebf1792d12e82ed15ff100b2a2847e97d0701d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data4/roi_waveforms.csv": "d085797234ee5148fc67a8753eb54e823155d90f1dc67e30563b3cece88a878e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data4/fusion_waveform.csv": "ffd4c6dfd4aadb12d6213209931d8434226f18396abe939626ab3f736317ca86",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data4/fusion_proposals.csv": "1dc4067bd41b5efcf8ab09580761a183c18ca5230f1dd0d21f75706075f49621",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data4/fusion_diagnostics.csv": "82d94fe2db2470f621f7bdb8e8e2bba16326c6be9a99e91c7c37b220a1266ed7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data4/branch_routing.csv": "f1e71a06793f9e393dac14c6995911cbc56a164e6642bbef5c26b3f83d102fd2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data4/branch_routing.csv": "f1e71a06793f9e393dac14c6995911cbc56a164e6642bbef5c26b3f83d102fd2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/summary.json": "3922f861f3875332bf32e51ab821b3b5db274b30cb1fc1d8ca30e7e8f1017e43",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/frame_trace.csv": "620ce0313de04a5a91564e0e930798d189b86dff4af05bd81b988efe3e16f859",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/roi_waveforms.csv": "c535b70c1a273d7eb54348c9f4f6abc7fd5847d206e805354657744a9a024a8c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/fusion_proposals.csv": "399bb26ae982bcb73990b4ef9779c1551c118dfc2e2a32158e410fad38820461",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/fusion_diagnostics.csv": "b2a0ac20e8f6ece91c5d0bdf0056ec3dea2f9111f05b3ce8511366a514099d33",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/pos_waveform.csv": "fb48d8013a467f2d54384468be22088f84171eca8115a297efd8ccb76ea800de",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/pos_heart_rate.csv": "42f42454235b848651ad3cb622ea303425967653804c465fcb59c13dcd671719",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/chrom_waveform.csv": "5f9c6d03fa5f6583f8910db2553abd39fa669a806de82ab5735a1cce0e6b522d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/chrom_heart_rate.csv": "e3079b7a8047e99a26162626b03b9011ab4c5b8729c6ef66bffd7939b444ff02",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/fusion_waveform.csv": "e6342a27298eff88c121bfd7152929f1379380c91d62287b709e5b0fb4ff1f83",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/fusion_heart_rate.csv": "1d74f15e93922ce1788e537f420dcc934ae3c3367a5dea5e2b6c7d09489e5dd3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data5/frame_trace.csv": "620ce0313de04a5a91564e0e930798d189b86dff4af05bd81b988efe3e16f859",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data5/roi_waveforms.csv": "c535b70c1a273d7eb54348c9f4f6abc7fd5847d206e805354657744a9a024a8c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data5/fusion_waveform.csv": "e6342a27298eff88c121bfd7152929f1379380c91d62287b709e5b0fb4ff1f83",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data5/fusion_proposals.csv": "399bb26ae982bcb73990b4ef9779c1551c118dfc2e2a32158e410fad38820461",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data5/fusion_diagnostics.csv": "b2a0ac20e8f6ece91c5d0bdf0056ec3dea2f9111f05b3ce8511366a514099d33",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data5/branch_routing.csv": "ffb1bbf4bc207a40aaf5e0b58a749c45ea3e2517245bc7c93ca781fbe0547582",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data5/branch_routing.csv": "ffb1bbf4bc207a40aaf5e0b58a749c45ea3e2517245bc7c93ca781fbe0547582",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/summary.json": "b5b75a71894b4d3fe0ed9faaba49d945f989e9d18ad6ab50440bb7ec90d3ddfe",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/frame_trace.csv": "8249c05e9cce0bec757c8d0fedfba693bdfe5f1a02ec9ba3944b071db2178379",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/roi_waveforms.csv": "f2bb4e1b4a5d5eee58c426877786ff64044735e1ec6d416935aa1729eb582238",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/fusion_proposals.csv": "b7ec7f5e540e8f4904e3f036ab5286f88511b293657e022d194378005f887028",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/fusion_diagnostics.csv": "9a2aa913f253bf918ac3a00a0479967eab7eb6728a0032959bf1ea2a768c3ee0",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/pos_waveform.csv": "aa881820dbf5376f31971f079780c8af5e28b4bc27568ebfa680222b893d4fad",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/pos_heart_rate.csv": "446fb36e88bf76b108f48f3038dbf60615cd55cef8e83ebd9e0f34059e097f7b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/chrom_waveform.csv": "62956b6b300710504381c64d6c99639c9fa6a9c65a14679f819b72d87ae5b32b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/chrom_heart_rate.csv": "f11041f731e7cf5860ef8290b3826993514947f8db59af7adc86a70a5a35c397",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/fusion_waveform.csv": "0ea27a8cbd68ad81b0c4df8aadf8042fbec87d169df43651dc348220188a8ecf",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/fusion_heart_rate.csv": "71bdf4f958cc7c75c152dedda08027a76d5a4c3e5dd4219dc001bd0e6a74cd59",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/frame_trace.csv": "8249c05e9cce0bec757c8d0fedfba693bdfe5f1a02ec9ba3944b071db2178379",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/roi_waveforms.csv": "f2bb4e1b4a5d5eee58c426877786ff64044735e1ec6d416935aa1729eb582238",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/fusion_waveform.csv": "0ea27a8cbd68ad81b0c4df8aadf8042fbec87d169df43651dc348220188a8ecf",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/fusion_proposals.csv": "b7ec7f5e540e8f4904e3f036ab5286f88511b293657e022d194378005f887028",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/fusion_diagnostics.csv": "9a2aa913f253bf918ac3a00a0479967eab7eb6728a0032959bf1ea2a768c3ee0",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/branch_routing.csv": "b2da81c0fd72a5cce060adde89aaec5f8a72a95f09eb700b982573ed4bbe8359",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage2_hr/data6/branch_routing.csv": "b2da81c0fd72a5cce060adde89aaec5f8a72a95f09eb700b982573ed4bbe8359",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/runs.json": "4f0bd6921959e29f056f361f036d093a2b31783958ba9bbef833c9c989d832e0",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/summary.json": "c3f5f28e96e9bb4c4ebc097203153eace9b6d3142ee2a7995bf310ff11c63f54",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/frame_trace.csv": "af133235070f9ca7d7d8d1aa92a30dc35eac534376f0048eee60ac0df9fd255a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/roi_waveforms.csv": "aa8f142cee4141a5fef6ff7266e8122b6e5ba79f8a7967ed2f3131914c1b73f1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/fusion_proposals.csv": "58fd0622c1ae8a2883eddca4efb39b687509114bbd16dd65eb654ab462c76d38",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/fusion_diagnostics.csv": "2fecd96b5fa8fb34c14b9194f6ee5265205921039001ad074a2a6f44ef9973a0",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/pos_waveform.csv": "a9024a69c85a593686bad31d0c78ca8eb20d6973abcc48b4d8549c582b026d23",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/pos_heart_rate.csv": "bc68f8fa1963438f8a595e5c6f10fd76345aadeb1a5a8f3061bd3932a66408f1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/chrom_waveform.csv": "b6986e6c1ae03db0c6a053d7fc8913f113ae58a91e380dac853cd3ff2df47983",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/chrom_heart_rate.csv": "48a9ab4953f6990085f12bee62481d40adf3bc00daf7fea350b2658a2dc4d396",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/fusion_waveform.csv": "88fa1ccc3e92f0a9cb5a9ec40c4c36e2ce4f70da52d27ed88e2c07b8f9d583f8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data1/fusion_heart_rate.csv": "e64ae6131497564c83c3f9336e1ec8134c5319ccd8aaee4eefebf150c66de55c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/summary.json": "f5da1d22a534f00ebc0e1fcf38ed862808900f6094b7106031d05231d86fbcca",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/frame_trace.csv": "e8e3f891ca4521f13c2437454d6e06e23765d9f43af8a6d391fc9521757814f9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/roi_waveforms.csv": "0c5c8634ba574cd725d035dc90868957792f6fef1b142e6d1fc6048feb3d3724",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/fusion_proposals.csv": "be2380e29bb5081080b0c3808d38787794e81d85274fb77b1379540041e76561",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/fusion_diagnostics.csv": "5b095cd5df3b1b3986c4cab39cfcd7df6239e5e9b0d807f4990dc5ca5da73a90",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/pos_waveform.csv": "de351f9c0d721f4dc88775dab7d9cfe077214a77fd4ce7796fc0dbcb9efacf9b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/pos_heart_rate.csv": "8cc3c1311282991165d90c8a28e9c5267324d7b7c82d729be670acc9e90ea3c7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/chrom_waveform.csv": "84db2ff54b346ab517cc7bae95e156a0ee73a3c39a602c160fa216c744bd84b5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/chrom_heart_rate.csv": "e84876db8a0cbf68ca18bf83baa841dcdbf7c96cb101bb726b84e0e067303a61",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/fusion_waveform.csv": "fdb028280625714c3f4a2159a7c2b6e1fcd4af9eeab33af7fc42e63268dd5229",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data2/fusion_heart_rate.csv": "326af250c39ec7597a8fc399e54b03a4d1da8f8a9dd03108f36d860ace154d09",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/summary.json": "7eec0f96c7cd9d243e1741aadb549f0c6cb20ec283f2ac84a71a2a81c9baaa62",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/frame_trace.csv": "7d136a81667fcdcc99021c0202f8f863b6b7f27d22a6edce90dffad9d0d5d425",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/roi_waveforms.csv": "f809b5e4b1fef2428b9c004976b38397f09f29d1b8093118eac204831fc0a317",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/fusion_proposals.csv": "a039a7a8870fb9adc4130574b45461309da381f9eb04363fc03eab34bd589d9a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/fusion_diagnostics.csv": "b9fe83541a99ad3d9bc8e63344d91da54f2da74257a0a3a9343602d8061ae013",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/pos_waveform.csv": "da042a66f17723bb332e9bfe5c8b6b7a34f08be4c4e2411c1affe609e1934cf4",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/pos_heart_rate.csv": "7ca0d538bd22416ff91f0c6b5e2ccd0351a9717c4eae387d899ebd2429e746fa",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/chrom_waveform.csv": "e0c03c8880bbe38ee875cade05042964f2ae35efd2ec73b00ca6da849dd3f712",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/chrom_heart_rate.csv": "1dfaccff7b6a6fd071090ac8a81e57c989af9241063dbc24df958482c20f3436",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/fusion_waveform.csv": "9775bfee3c5a760372486c8f26e4e4c083b21da9fc3b4e7e5d4472f30ffdcb92",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data3/fusion_heart_rate.csv": "f849461009d7a75350690d236f6adbb7298ba5428de307e0ca23f5e6a18d1494",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/summary.json": "ecf7c80b8128835ecf80d41cc867728cc4ad95209138f0a5ce8923e9118830f9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/frame_trace.csv": "6a53d537e04197cc1a9e31ab5cebf1792d12e82ed15ff100b2a2847e97d0701d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/roi_waveforms.csv": "d085797234ee5148fc67a8753eb54e823155d90f1dc67e30563b3cece88a878e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/fusion_proposals.csv": "c3f54620879f472a9c18d8cab67fa56dd67aed2db06dc618e046aeb3ca74f55c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/fusion_diagnostics.csv": "82d94fe2db2470f621f7bdb8e8e2bba16326c6be9a99e91c7c37b220a1266ed7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/pos_waveform.csv": "eeb6bacc177dec7bbc7cbe03e2a08ae912de579b3b66207242621404e4998411",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/pos_heart_rate.csv": "6b8a3131dca4b7980d1370612c184406e47c0551c9137d57503a1045f2bcb6a8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/chrom_waveform.csv": "f04a455acb92753d013190be6ef4c1fa57ee1bf83807c0e02bd1a8221e312002",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/chrom_heart_rate.csv": "9d8c4266e7aee7e04affe973d112a6115800b1453c8c5c377fe6f961d2be3260",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/fusion_waveform.csv": "ffd4c6dfd4aadb12d6213209931d8434226f18396abe939626ab3f736317ca86",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data4/fusion_heart_rate.csv": "796fd8fbbf7aceacc7aee406afa7bf992438abb79d182d95ace254b5483474a3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/summary.json": "08a8f129c31bf01d0e3c2d6fe24a81160c61ae6f10fb882df453a48748ee79ba",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/frame_trace.csv": "620ce0313de04a5a91564e0e930798d189b86dff4af05bd81b988efe3e16f859",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/roi_waveforms.csv": "c535b70c1a273d7eb54348c9f4f6abc7fd5847d206e805354657744a9a024a8c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/fusion_proposals.csv": "9316a62bc53f833f0c6ba99a264bb8dc7a878c8d2b2b4586302c4476d1e7d622",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/fusion_diagnostics.csv": "03912ae459e28f1b4afe07757bf44fbf1d7a336623735b31fbc628d3b4777d91",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/pos_waveform.csv": "fb48d8013a467f2d54384468be22088f84171eca8115a297efd8ccb76ea800de",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/pos_heart_rate.csv": "42f42454235b848651ad3cb622ea303425967653804c465fcb59c13dcd671719",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/chrom_waveform.csv": "5f9c6d03fa5f6583f8910db2553abd39fa669a806de82ab5735a1cce0e6b522d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/chrom_heart_rate.csv": "e3079b7a8047e99a26162626b03b9011ab4c5b8729c6ef66bffd7939b444ff02",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/fusion_waveform.csv": "d2b69a39673c2542e3a31d30474a120277d9cd23e14f24eb2690b25357b1fe55",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data5/fusion_heart_rate.csv": "06944a55665f8db2df67754a047f3509750d0cf99664d276d677b87561fcc3a3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/summary.json": "fa2b91252fd41c569c33a570a97be8aeeef0840c3b4a83df54ac29fe358e337b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/frame_trace.csv": "8249c05e9cce0bec757c8d0fedfba693bdfe5f1a02ec9ba3944b071db2178379",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/roi_waveforms.csv": "f2bb4e1b4a5d5eee58c426877786ff64044735e1ec6d416935aa1729eb582238",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/fusion_proposals.csv": "a13f157db7c04dd9fd84224ee5d22755f3ca9fa045944d227bd73c60adb212fc",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/fusion_diagnostics.csv": "9f7f8f0bb55dfd9949ac2132494d7ba46ca969bfd883a55fa021b275f6fb0fb8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/pos_waveform.csv": "aa881820dbf5376f31971f079780c8af5e28b4bc27568ebfa680222b893d4fad",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/pos_heart_rate.csv": "446fb36e88bf76b108f48f3038dbf60615cd55cef8e83ebd9e0f34059e097f7b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/chrom_waveform.csv": "62956b6b300710504381c64d6c99639c9fa6a9c65a14679f819b72d87ae5b32b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/chrom_heart_rate.csv": "f11041f731e7cf5860ef8290b3826993514947f8db59af7adc86a70a5a35c397",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/fusion_waveform.csv": "0603e7766b5383808eb13dd58c198cac1fa1a355be5e262bb02dfa1a375b3fa4",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage3_routing/data6/fusion_heart_rate.csv": "82acf42d1642e885d67b4cbac6a97ed321f7459f72c9070cbe67da9deb3bcebf",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/runs.json": "402737a36126464aa3a6a44538dfce234848e18a713f174dc2241a6218883041",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/summary.json": "360dd698c558c7a4494d9c3881346e8cf4408f68f535d9a8a350612c2a6f5c34",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/frame_trace.csv": "af133235070f9ca7d7d8d1aa92a30dc35eac534376f0048eee60ac0df9fd255a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/roi_waveforms.csv": "aa8f142cee4141a5fef6ff7266e8122b6e5ba79f8a7967ed2f3131914c1b73f1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/fusion_proposals.csv": "f9261d3607536ef40f8b44797866c47e48a3e21177213c76d9c3a11051c63162",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/fusion_diagnostics.csv": "b90b9d6ca236bc4bcded5ab0496c5a14a7dd32450a906547034fde8382a14d3b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/pos_waveform.csv": "a9024a69c85a593686bad31d0c78ca8eb20d6973abcc48b4d8549c582b026d23",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/pos_heart_rate.csv": "bc68f8fa1963438f8a595e5c6f10fd76345aadeb1a5a8f3061bd3932a66408f1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/chrom_waveform.csv": "b6986e6c1ae03db0c6a053d7fc8913f113ae58a91e380dac853cd3ff2df47983",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/chrom_heart_rate.csv": "48a9ab4953f6990085f12bee62481d40adf3bc00daf7fea350b2658a2dc4d396",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/fusion_waveform.csv": "e68a9132e0fa1d54aafde415ba4778d46a425272da4e44b3239ca7ecc0ecc9a9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/fusion_heart_rate.csv": "c17239940e85c5a639ad40cf9ebf6ade23653b1ef2923b68fe239b81846f5b43",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_waveform.csv": "a96c6841cb6ddf0e4df666407effdecfd796baf90576f9ce48351d09bcfd3dbd",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data1/fusion_waveform.csv": "e68a9132e0fa1d54aafde415ba4778d46a425272da4e44b3239ca7ecc0ecc9a9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/frame_trace.csv": "a72012d6920d64971833fbc0370138b3efad8cc0134f34ac5bb029e3d54122ac",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data1/frame_trace.csv": "af133235070f9ca7d7d8d1aa92a30dc35eac534376f0048eee60ac0df9fd255a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/roi_waveforms.csv": "3643f76f992862c399bb2c26a4dec41653aa8b44a6e39931206b051f54e8f053",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data1/roi_waveforms.csv": "aa8f142cee4141a5fef6ff7266e8122b6e5ba79f8a7967ed2f3131914c1b73f1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_proposals.csv": "08a78e40c504b9da371783a18b9051550c1a1c2ebf15996add14516c0f9327ed",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data1/fusion_proposals.csv": "f9261d3607536ef40f8b44797866c47e48a3e21177213c76d9c3a11051c63162",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_diagnostics.csv": "987f4e410958c16eb9f5165d97a304575559ebff71ce185e87c66f6393ca972f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data1/fusion_diagnostics.csv": "b90b9d6ca236bc4bcded5ab0496c5a14a7dd32450a906547034fde8382a14d3b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/branch_routing.csv": "63329387e02900d7cbf372cd2a5f07e59915beef9ed0988cd67c0f6a4f3ed581",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/branch_routing.csv": "d0232015ea813ee314c4f67250d3f529466a6a2697f71e54aebd2208c08a4890",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data1/branch_routing.csv": "d0232015ea813ee314c4f67250d3f529466a6a2697f71e54aebd2208c08a4890",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_heart_rate.csv": "ab9ec2463c8f6baa3637d4c83a9c5ba3059dcf28e5b405503d91271092e7ba7c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/summary.json": "5b1de8654a13d62662090a7441f1bde52cb1596222d87599c6edf389818f0d51",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/frame_trace.csv": "e8e3f891ca4521f13c2437454d6e06e23765d9f43af8a6d391fc9521757814f9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/roi_waveforms.csv": "0c5c8634ba574cd725d035dc90868957792f6fef1b142e6d1fc6048feb3d3724",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/fusion_proposals.csv": "8a7bc1a58eea906efe3d823f4e5aa83c226e79d491216060e391db1baf4ee3be",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/fusion_diagnostics.csv": "77b08fde63e59c1578a462ea9fd2b4f0f5a1caaa36b0b580fe6c932c97073eb2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/pos_waveform.csv": "de351f9c0d721f4dc88775dab7d9cfe077214a77fd4ce7796fc0dbcb9efacf9b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/pos_heart_rate.csv": "8cc3c1311282991165d90c8a28e9c5267324d7b7c82d729be670acc9e90ea3c7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/chrom_waveform.csv": "84db2ff54b346ab517cc7bae95e156a0ee73a3c39a602c160fa216c744bd84b5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/chrom_heart_rate.csv": "e84876db8a0cbf68ca18bf83baa841dcdbf7c96cb101bb726b84e0e067303a61",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/fusion_waveform.csv": "96ecdc7f1a8a4a711e98e6638f03b3e17ec2d699e4935f97d205fb4a1ee79c70",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/fusion_heart_rate.csv": "c928ca20ed354e6b429dff639ffdaa432cbc4238c7f34c2955435cf080c714cd",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_waveform.csv": "5014d1c31afd55ee7310c6388667641e64ccfd3bf2d920ac3d635a8db6f538d5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data2/fusion_waveform.csv": "96ecdc7f1a8a4a711e98e6638f03b3e17ec2d699e4935f97d205fb4a1ee79c70",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/frame_trace.csv": "b199f2d09dea171754ff6042688c0bfd2964d3672ef748a04c604a1ed1eb53c2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data2/frame_trace.csv": "e8e3f891ca4521f13c2437454d6e06e23765d9f43af8a6d391fc9521757814f9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/roi_waveforms.csv": "148cc780c9c45f7d3a8676e157cecde1e44668bc536af415da210017ebc1d92e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data2/roi_waveforms.csv": "0c5c8634ba574cd725d035dc90868957792f6fef1b142e6d1fc6048feb3d3724",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_proposals.csv": "a02fda729b9c5d52a4b43afaad188cf9c04e3cfd1dfefabb4d4fb2e761cb0885",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data2/fusion_proposals.csv": "8a7bc1a58eea906efe3d823f4e5aa83c226e79d491216060e391db1baf4ee3be",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_diagnostics.csv": "9a0f375b2c92bfbcded16e8732c4e24547bd76542f62790b206cd33ff009a2ff",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data2/fusion_diagnostics.csv": "77b08fde63e59c1578a462ea9fd2b4f0f5a1caaa36b0b580fe6c932c97073eb2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/branch_routing.csv": "a9839d4d3b0c64318389b4dc80e2cce4bbb459b4dceecb8e7751437fb46b80c9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data2/branch_routing.csv": "02112b7e6ce185970eeb0a4e0c3406937b46a00b7eef18cdc440cc46f4702dc4",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data2/branch_routing.csv": "02112b7e6ce185970eeb0a4e0c3406937b46a00b7eef18cdc440cc46f4702dc4",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_heart_rate.csv": "720cf4aa34cd29018cc9ec0fbc744e8d6d2dca91d393fedb1c971a884483a215",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/summary.json": "8d96c2c454ebd8df6e760db3843f2382b113237aa644663e879a7006f3c32ac3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/frame_trace.csv": "7d136a81667fcdcc99021c0202f8f863b6b7f27d22a6edce90dffad9d0d5d425",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/roi_waveforms.csv": "f809b5e4b1fef2428b9c004976b38397f09f29d1b8093118eac204831fc0a317",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/fusion_proposals.csv": "3f9c3d343acac88cc3f35bfadd5b7031d7cb7bee0cf74be8135ebff7a5830a28",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/fusion_diagnostics.csv": "f5a53e4c836e72032388bbf888c02883c8ba6584cb963718a10de78679c5becc",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/pos_waveform.csv": "da042a66f17723bb332e9bfe5c8b6b7a34f08be4c4e2411c1affe609e1934cf4",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/pos_heart_rate.csv": "7ca0d538bd22416ff91f0c6b5e2ccd0351a9717c4eae387d899ebd2429e746fa",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/chrom_waveform.csv": "e0c03c8880bbe38ee875cade05042964f2ae35efd2ec73b00ca6da849dd3f712",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/chrom_heart_rate.csv": "1dfaccff7b6a6fd071090ac8a81e57c989af9241063dbc24df958482c20f3436",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/fusion_waveform.csv": "397dfe78d06459f31edae1ca7a7993adc277fcaf0d0af1e8068c8dce4c9c0d97",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/fusion_heart_rate.csv": "348485304edd1b2dd6d0981fc44f014492e05df948b9099d8e3b7b7579683165",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_waveform.csv": "92b6ac0cc0291ca9b363a6acc94c61a017a9e893550ca0807a072d0cbfe24682",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data3/fusion_waveform.csv": "397dfe78d06459f31edae1ca7a7993adc277fcaf0d0af1e8068c8dce4c9c0d97",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/frame_trace.csv": "1f43aee4a224536933b58e7e616e60d00936e158d1260eb18fb44618fb74f5e3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data3/frame_trace.csv": "7d136a81667fcdcc99021c0202f8f863b6b7f27d22a6edce90dffad9d0d5d425",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/roi_waveforms.csv": "c21ae08516e411e80c551bd3609d654e4460b1fd4af10b81ef1d3e6001a3d6b9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data3/roi_waveforms.csv": "f809b5e4b1fef2428b9c004976b38397f09f29d1b8093118eac204831fc0a317",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_proposals.csv": "bfb5bdb76cc569b6d0427a6069f53608450991085574fbe4f503455b7100312b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data3/fusion_proposals.csv": "3f9c3d343acac88cc3f35bfadd5b7031d7cb7bee0cf74be8135ebff7a5830a28",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_diagnostics.csv": "a948fd511533c66b7909c48989cd3edb4bb413ed456bccd5e325a940221045fd",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data3/fusion_diagnostics.csv": "f5a53e4c836e72032388bbf888c02883c8ba6584cb963718a10de78679c5becc",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/branch_routing.csv": "f7403ebf75bde80acf77cf220bc8e7b4b7739e456461f1cf961f431c8e0c2242",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data3/branch_routing.csv": "297a1bbed1a170d06066701c52608f51038b5b26660e5c32011abf2fb918c962",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data3/branch_routing.csv": "297a1bbed1a170d06066701c52608f51038b5b26660e5c32011abf2fb918c962",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_heart_rate.csv": "c05fd47116b9799c8f9bf3b65853e58c808d64416bf5d30803fabdd6df829e39",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/summary.json": "214f5d8234f336323adfc807c4182c68d9cb8ea08b1907bd8708d03007708337",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/frame_trace.csv": "6a53d537e04197cc1a9e31ab5cebf1792d12e82ed15ff100b2a2847e97d0701d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/roi_waveforms.csv": "d085797234ee5148fc67a8753eb54e823155d90f1dc67e30563b3cece88a878e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/fusion_proposals.csv": "25a641fc91ab6f552f48307c2ba8c702e65afb7195966dede976a88853303641",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/fusion_diagnostics.csv": "8d2abfca5d9fb07e867e1452fcca4775708f9963f7774f8fab9e901361a6001c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/pos_waveform.csv": "eeb6bacc177dec7bbc7cbe03e2a08ae912de579b3b66207242621404e4998411",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/pos_heart_rate.csv": "6b8a3131dca4b7980d1370612c184406e47c0551c9137d57503a1045f2bcb6a8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/chrom_waveform.csv": "f04a455acb92753d013190be6ef4c1fa57ee1bf83807c0e02bd1a8221e312002",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/chrom_heart_rate.csv": "9d8c4266e7aee7e04affe973d112a6115800b1453c8c5c377fe6f961d2be3260",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/fusion_waveform.csv": "ffd4c6dfd4aadb12d6213209931d8434226f18396abe939626ab3f736317ca86",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/fusion_heart_rate.csv": "e1325742cb27f0da5d0ffe62d4a12a25596fcc181c1e025fd7f8b199381dadce",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_waveform.csv": "918de3775bd32bf80253f11a92b33b27a36cbeb2336daaf492d9291b8d482250",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/fusion_waveform.csv": "ffd4c6dfd4aadb12d6213209931d8434226f18396abe939626ab3f736317ca86",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/frame_trace.csv": "9ac57523f498642409c4217c5945f133619ba81568ca19010cfa36b91593053f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/frame_trace.csv": "6a53d537e04197cc1a9e31ab5cebf1792d12e82ed15ff100b2a2847e97d0701d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/roi_waveforms.csv": "9b12ce35c1a610af3faebfe2d90e841bd55091153aedf443d6fef0f74f17883b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/roi_waveforms.csv": "d085797234ee5148fc67a8753eb54e823155d90f1dc67e30563b3cece88a878e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_proposals.csv": "b08d3a7ae25f852f3786c43f865154bb353b07f95c2f684bef2fd61b426c6a4e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/fusion_proposals.csv": "25a641fc91ab6f552f48307c2ba8c702e65afb7195966dede976a88853303641",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_diagnostics.csv": "6ca5f9c60e4ea58628e7ef66e66ebcbd36df84871eea441a41edc2de852e3161",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/fusion_diagnostics.csv": "8d2abfca5d9fb07e867e1452fcca4775708f9963f7774f8fab9e901361a6001c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/branch_routing.csv": "973110576522e1219a8d9020561b8c278524e766a913863a7f935ee1420620b8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data4/branch_routing.csv": "ea4dd8fde5ef3b67283eb4837de0da806062916191962a3a52da415167911be3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data4/branch_routing.csv": "ea4dd8fde5ef3b67283eb4837de0da806062916191962a3a52da415167911be3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_heart_rate.csv": "fdabf65664dbc5945657b313450815857236f856d8c483d29ec86d2eee16c050",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/summary.json": "9aed4218ddd8d99c7c0436b57fb4b5323c3099f22abf23fc363fdcff6afaf49e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/frame_trace.csv": "620ce0313de04a5a91564e0e930798d189b86dff4af05bd81b988efe3e16f859",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/roi_waveforms.csv": "c535b70c1a273d7eb54348c9f4f6abc7fd5847d206e805354657744a9a024a8c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/fusion_proposals.csv": "5800d4737c64c351c4d63b0dd9926a4fa61c5ebdee2f27fe38ef3c5fe567bf08",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/fusion_diagnostics.csv": "a6aed8aa359e8519e686a7ebe7c84b6ac0af002c1c5ea20ad118dde32cc4a2ed",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/pos_waveform.csv": "fb48d8013a467f2d54384468be22088f84171eca8115a297efd8ccb76ea800de",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/pos_heart_rate.csv": "42f42454235b848651ad3cb622ea303425967653804c465fcb59c13dcd671719",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/chrom_waveform.csv": "5f9c6d03fa5f6583f8910db2553abd39fa669a806de82ab5735a1cce0e6b522d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/chrom_heart_rate.csv": "e3079b7a8047e99a26162626b03b9011ab4c5b8729c6ef66bffd7939b444ff02",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/fusion_waveform.csv": "0344f148ddd8191e3d88fd0a63740adf8bc4344375fa6e31addf0026fd25f740",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/fusion_heart_rate.csv": "e75b490458c83b8f453ddeee6180f8a0e11cbcf46896f70517b9f4dc07bae6c9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_waveform.csv": "cd95d6fcb1d711ec68e8ae4058806081a44f9a14a0842ae6e0a6577a551a30d1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data5/fusion_waveform.csv": "0344f148ddd8191e3d88fd0a63740adf8bc4344375fa6e31addf0026fd25f740",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/frame_trace.csv": "9762dc041c7414e1d1dcb5e89535a4ecebd96cd5b79cc1da9aa925e21dc80c1d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data5/frame_trace.csv": "620ce0313de04a5a91564e0e930798d189b86dff4af05bd81b988efe3e16f859",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/roi_waveforms.csv": "5f5544bce04c77eac576cd902e7a53eda3487a5e8a960d57ce34d1ff72ddae7b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data5/roi_waveforms.csv": "c535b70c1a273d7eb54348c9f4f6abc7fd5847d206e805354657744a9a024a8c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_proposals.csv": "ab50de9801b1e38def08c123ff87ad8e67242a1c47249a89ef932cfa8122c0f2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data5/fusion_proposals.csv": "5800d4737c64c351c4d63b0dd9926a4fa61c5ebdee2f27fe38ef3c5fe567bf08",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_diagnostics.csv": "1a2e3a87f7dc17ba01e418b466682abbf5e5893aa5d2e4716ddf6adc78eb4509",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data5/fusion_diagnostics.csv": "a6aed8aa359e8519e686a7ebe7c84b6ac0af002c1c5ea20ad118dde32cc4a2ed",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/branch_routing.csv": "8024984642929e50e516d8473e061a402be299af4d4bc53bb48c7dd70ff5eee9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data5/branch_routing.csv": "bbbab1b2ef737fd527c5acfb8499aa72b5243ed6d042e9d8666fec5f12eefeb8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data5/branch_routing.csv": "bbbab1b2ef737fd527c5acfb8499aa72b5243ed6d042e9d8666fec5f12eefeb8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_heart_rate.csv": "634090c0c3d030fe8f63e28ad17b51c5b0bb08961b31327d540553a17135367c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/summary.json": "aa407ccabb852b2961699700f3a592f9a62b43b9db21ac9405cb46224badf88b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/frame_trace.csv": "8249c05e9cce0bec757c8d0fedfba693bdfe5f1a02ec9ba3944b071db2178379",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/roi_waveforms.csv": "f2bb4e1b4a5d5eee58c426877786ff64044735e1ec6d416935aa1729eb582238",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/fusion_proposals.csv": "5e01113ff22936d3809c9eb22aaccfebe1d0829b078582f2d6e577e3866fb883",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/fusion_diagnostics.csv": "ac1ccf866e24ea63a2e69bf761e587a7930ec201e939f6e64e27017ae8c376f7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/pos_waveform.csv": "aa881820dbf5376f31971f079780c8af5e28b4bc27568ebfa680222b893d4fad",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/pos_heart_rate.csv": "446fb36e88bf76b108f48f3038dbf60615cd55cef8e83ebd9e0f34059e097f7b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/chrom_waveform.csv": "62956b6b300710504381c64d6c99639c9fa6a9c65a14679f819b72d87ae5b32b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/chrom_heart_rate.csv": "f11041f731e7cf5860ef8290b3826993514947f8db59af7adc86a70a5a35c397",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/fusion_waveform.csv": "2145350d8e580780f82135cee9125d167f827f64cbb3da81a3eb2f9f4b9b4146",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/fusion_heart_rate.csv": "8947ce2c18b99324e6d3963898dd5395c6ca1cfc967def88fabd9392cfb9ad43",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_waveform.csv": "5019ebc2664ee63411e143f44ea0f2ac9496af214119ace4dea35dbb5dcc9ae5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data6/fusion_waveform.csv": "2145350d8e580780f82135cee9125d167f827f64cbb3da81a3eb2f9f4b9b4146",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/frame_trace.csv": "c9f027f1cc90b87bfbb8a462e84b7bd72adf565a09ed313394bbb204c764c907",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data6/frame_trace.csv": "8249c05e9cce0bec757c8d0fedfba693bdfe5f1a02ec9ba3944b071db2178379",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/roi_waveforms.csv": "f4343d73c3bda669ccef7f8c7d54d5d0ff69d92c219432d1f3af622ec1833fc5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data6/roi_waveforms.csv": "f2bb4e1b4a5d5eee58c426877786ff64044735e1ec6d416935aa1729eb582238",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_proposals.csv": "f1b213d0e141c9f6181aa4b19c3fc8af395892fe8af7bdd2e2dbe3cea16d53a2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data6/fusion_proposals.csv": "5e01113ff22936d3809c9eb22aaccfebe1d0829b078582f2d6e577e3866fb883",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_diagnostics.csv": "a3ee2578d6710d63dbd9a4a6bfaf4e4bac736c1aba1417e9d165b29bd70a741e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data6/fusion_diagnostics.csv": "ac1ccf866e24ea63a2e69bf761e587a7930ec201e939f6e64e27017ae8c376f7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/branch_routing.csv": "eea67769df083ce3f3378422f1857025c24f6835833e80a8b6ebb398e7a15ee7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data6/branch_routing.csv": "075e2aadca68e6976ba07b8abd4db69a2f716da113909bf8bb26cfad1d313722",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/v24_replay/data6/branch_routing.csv": "075e2aadca68e6976ba07b8abd4db69a2f716da113909bf8bb26cfad1d313722",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_heart_rate.csv": "e948c072ba14b2ed28a996c3ad2c0e4a9cf62d9a73ee185e92f88511a83482d0"
+  },
+  "audit_cases": 18,
+  "results": [
+    {
+      "stage": "stage2_hr",
+      "case": "data1",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1410,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage2_hr",
+      "case": "data2",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1297,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1297,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1260,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage2_hr",
+      "case": "data3",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 61,
+          "finite_wave_samples": 2125,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 61,
+          "finite_wave_samples": 2125,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 59,
+          "finite_wave_samples": 2040,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage2_hr",
+      "case": "data4",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 10117,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 10117,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 9900,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage2_hr",
+      "case": "data5",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1770,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1770,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1740,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage2_hr",
+      "case": "data6",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1746,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1746,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 31,
+          "finite_wave_samples": 1200,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage3_routing",
+      "case": "data1",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 31,
+          "finite_wave_samples": 1200,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage3_routing",
+      "case": "data2",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1297,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1297,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1260,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage3_routing",
+      "case": "data3",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 61,
+          "finite_wave_samples": 2125,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 61,
+          "finite_wave_samples": 2125,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 59,
+          "finite_wave_samples": 2040,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage3_routing",
+      "case": "data4",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 10117,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 10117,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 9900,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage3_routing",
+      "case": "data5",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1770,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1770,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 45,
+          "finite_wave_samples": 1620,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage3_routing",
+      "case": "data6",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1746,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1746,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 30,
+          "finite_wave_samples": 1170,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage4_preserve_waveform",
+      "case": "data1",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1555,
+          "planned_windows": 42,
+          "accepted_windows": 37,
+          "finite_wave_samples": 1380,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage4_preserve_waveform",
+      "case": "data2",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1297,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1297,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1393,
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1260,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage4_preserve_waveform",
+      "case": "data3",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 61,
+          "finite_wave_samples": 2125,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 61,
+          "finite_wave_samples": 2125,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 2221,
+          "planned_windows": 65,
+          "accepted_windows": 59,
+          "finite_wave_samples": 2040,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage4_preserve_waveform",
+      "case": "data4",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 10117,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 10117,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 10693,
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 9900,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage4_preserve_waveform",
+      "case": "data5",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1770,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1770,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 1866,
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1740,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "stage4_preserve_waveform",
+      "case": "data6",
+      "passed": true,
+      "branches": [
+        {
+          "variant": "pos",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1746,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1746,
+          "independently_recomputed": [
+            "local_peak",
+            "legacy_DP"
+          ]
+        },
+        {
+          "variant": "fusion",
+          "frames": 2148,
+          "planned_windows": 62,
+          "accepted_windows": 36,
+          "finite_wave_samples": 1620,
+          "independently_recomputed": [
+            "local_peak",
+            "retained_legacy_DP",
+            "motion_profile",
+            "all_candidate_evidence",
+            "evidence_DP",
+            "reacquisition"
+          ]
+        }
+      ]
+    }
+  ],
+  "floating_point_tied_paths": [
+    {
+      "stage": "stage3_routing",
+      "case": "data5",
+      "contiguous_start_window": 6,
+      "contiguous_stop_window": 51,
+      "differing_window_indices": [
+        12,
+        13
+      ],
+      "saved_bpm": [
+        91.0,
+        90.0
+      ],
+      "independently_recomputed_bpm": [
+        92.0,
+        91.0
+      ],
+      "saved_path_objective": -5.136805687048842,
+      "independently_optimal_objective": -5.136805687048842,
+      "objective_difference": 0.0,
+      "maximum_emission_roundoff": 4.440892098500626e-16,
+      "saved_candidate_json_dp_exact_replay": true,
+      "interpretation": "Floating-point tied optima; output is supported and optimal, but the best sequence is not numerically unique."
+    }
+  ],
+  "stage4_waveform_preservation": [
+    {
+      "case": "data1",
+      "files": {
+        "fusion_waveform.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 8.659739592076221e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "frame_trace.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 5.684341886080802e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "roi_waveforms.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 8.43769498715119e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_proposals.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.3988810110276972e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_diagnostics.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 4.54081217071689e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "branch_routing.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 6.6058269965196814e-15,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        }
+      },
+      "accepted_mask_exactly_equal": true
+    },
+    {
+      "case": "data2",
+      "files": {
+        "fusion_waveform.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.0502709812953981e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "frame_trace.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 5.684341886080802e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "roi_waveforms.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.533911886397732e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_proposals.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 6.850076061937216e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_diagnostics.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.4999113062685865e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "branch_routing.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 6.850076061937216e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        }
+      },
+      "accepted_mask_exactly_equal": true
+    },
+    {
+      "case": "data3",
+      "files": {
+        "fusion_waveform.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 8.071321389024888e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "frame_trace.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 5.684341886080802e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "roi_waveforms.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.0724754417879012e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_proposals.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 2.3725466036239595e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_diagnostics.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 4.1966430330830917e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "branch_routing.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 2.3725466036239595e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        }
+      },
+      "accepted_mask_exactly_equal": true
+    },
+    {
+      "case": "data4",
+      "files": {
+        "fusion_waveform.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.0746958878371515e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "frame_trace.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 5.684341886080802e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "roi_waveforms.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 2.0761170560490427e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_proposals.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.5443202272535927e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_diagnostics.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 3.079758670310184e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "branch_routing.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.5443202272535927e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        }
+      },
+      "accepted_mask_exactly_equal": true
+    },
+    {
+      "case": "data5",
+      "files": {
+        "fusion_waveform.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 3.602673714908633e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "frame_trace.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 5.684341886080802e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "roi_waveforms.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.1113332476497817e-13,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_proposals.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 7.105427357601002e-15,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_diagnostics.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 3.941291737419306e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "branch_routing.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 2.7200464103316335e-15,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        }
+      },
+      "accepted_mask_exactly_equal": true
+    },
+    {
+      "case": "data6",
+      "files": {
+        "fusion_waveform.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 2.708944180085382e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "frame_trace.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 5.684341886080802e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "roi_waveforms.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 5.062616992290714e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_proposals.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 4.3298697960381105e-15,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "fusion_diagnostics.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 3.164135620181696e-14,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        },
+        "branch_routing.csv": {
+          "exactly_equal_to_same_round_legacy_replay": true,
+          "original_v24_maximum_absolute_numeric_difference": 1.2212453270876722e-15,
+          "original_v24_absolute_tolerance": 1e-09,
+          "original_discrete_and_missingness_masks_equal": true
+        }
+      },
+      "accepted_mask_exactly_equal": true
+    }
+  ],
+  "all_serialized_candidate_paths_replayed_exactly": true,
+  "all_recomputed_paths_unique_and_identical": false,
+  "errors": []
+}

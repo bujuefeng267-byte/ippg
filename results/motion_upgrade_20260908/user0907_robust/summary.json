@@ -1,0 +1,59 @@
+{
+  "identity": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+    "size": 867938304,
+    "mtime_ns": 1788772715000000000,
+    "frontend": "robust",
+    "max_seconds": null,
+    "source_sha256": "5b6deab6e91ab3490f5f67efc39a07aa4fc6646b749eb90a1187eecf866dfc88"
+  },
+  "fps": 30.00003000003,
+  "frames": 1557,
+  "observed_rgb_fraction": 0.9087989723827874,
+  "source_counts": {
+    "mesh": 1044,
+    "flow_tracked": 357,
+    "missing": 142,
+    "redetected": 14
+  },
+  "config": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+    "output": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_upgrade/validation_final/user0907_robust",
+    "frontend": "robust",
+    "cache": null,
+    "max_seconds": null,
+    "max_gap": 0.1,
+    "window": 10,
+    "step": 1,
+    "min_bpm": 42,
+    "max_bpm": 210,
+    "reference_ubfc": null
+  },
+  "warning": "Experimental offline estimates. Coverage/continuity are not accuracy. DP uses future windows. NLMS may suppress pulse correlated with motion.",
+  "variants": {
+    "pos": {
+      "total_windows": 42,
+      "accepted_windows": 14,
+      "accepted_fraction": 0.3333333333333333,
+      "reference": null
+    },
+    "pos_nlms": {
+      "total_windows": 42,
+      "accepted_windows": 14,
+      "accepted_fraction": 0.3333333333333333,
+      "reference": null
+    },
+    "chrom": {
+      "total_windows": 42,
+      "accepted_windows": 14,
+      "accepted_fraction": 0.3333333333333333,
+      "reference": null
+    },
+    "chrom_nlms": {
+      "total_windows": 42,
+      "accepted_windows": 14,
+      "accepted_fraction": 0.3333333333333333,
+      "reference": null
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-09-12T02:50:29.011325+00:00",
+  "status": "complete",
+  "experimental": true,
+  "video_path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/Video_20260911_162146381.avi",
+  "video_sha256": "63c87a836f56f699b7960c34b12f847017878bd1e372cbc7cb0b0a380c227f11",
+  "video_bytes": 783268352,
+  "reference_used": false,
+  "estimated_synchronization_used": false,
+  "physiological_accuracy_evaluated": false,
+  "requested_variants": [
+    "late_psd_cluster"
+  ],
+  "computed_variants": [
+    "late_psd_cluster"
+  ],
+  "support_variants": [],
+  "source_hashes": {
+    "analyze_video_v27.py": "a6dfb672a3c2696adbd6b5f0e004b9e1b3d28078b32010531cb84410db4b743c",
+    "stable_patch_frontend_v27.py": "e69787cd4c3a0148af01d704b97619bc9cf41e6107a0c7295ddb66fe839420d7",
+    "prepare_patch_signals_v27.py": "2316e789187727ba4a3dfab2464c1a4540a008c1dcbd31c7509097525bb8c4be",
+    "patch_hr_v27.py": "e88024369c13d1ab76711d5b6c20e8cbec7f2079546b0f92a649f069b401b4fa",
+    "run_v27.py": "90eee215a59723be2d6ef50d40f66ae95cb209204b48ed8efd2998c9aae96039",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491"
+  },
+  "fps": 30.00003000003,
+  "frames": 1393,
+  "frontend_binding": {
+    "frontend_path": "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/frontend/data2",
+    "metadata_sha256": "109f8f8833cf00fdecff3640810ba76faf97806237124d80977c98ebb2cf8731",
+    "video_sha256": "63c87a836f56f699b7960c34b12f847017878bd1e372cbc7cb0b0a380c227f11",
+    "output_hashes": {
+      "patch_trace.csv": "7cedac571b70d466b96dadc6a8c0b52d1ca3b4aea029e6c3d70cd648960e72ab",
+      "frame_trace.csv": "447de83df5f432b3079fadf6e18add1d92af9255c461bc14bd615a00fc619c1c",
+      "patch_anchors.json": "62395fc992f6e9b3104ff240581cec88213087b3ac224aa54636d98f67c53b9d",
+      "landmark_trace.npz": "1c6c3821a982f85ac4d91c415cabc2fba1480793e7151f80a797eaf25dc92c35"
+    },
+    "source_hashes": {
+      "stable_patch_frontend_v27.py": "e69787cd4c3a0148af01d704b97619bc9cf41e6107a0c7295ddb66fe839420d7",
+      "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+      "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+      "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec"
+    },
+    "frames": 1393,
+    "fps": 30.00003000003,
+    "probe": {
+      "fps": 30.00003000003,
+      "declared_frames": 1393,
+      "independently_decoded_frames": 1393
+    },
+    "complete_clock_verified": true,
+    "twelve_patch_identity_and_support_verified": true,
+    "reference_used": false
+  },
+  "primary_secondary_distinction": "Spatial HR statistics and fused-wave HR are separate named outputs; no truth-based selection.",
+  "outputs": {
+    "frontend_binding.json": "607922f7f17f84ffb3fd73635782888158598430424d675564d9eb5bfb42b378",
+    "variants/late_psd_cluster/primary_hr.csv": "75d3109624e3b4544f6159234b6906fa2a71a50a09df9a023af9c7cc64de84aa",
+    "variants/late_psd_cluster/patch_diagnostics.csv": "baa0ca0628c451748c1c3bbe13851752671d4cf3c098628621577d2b191aebe7",
+    "variants/late_psd_cluster/secondary_hr.csv": "38d9e6367025752a02143eea2e21cb0eee82ac50b041ddfcfa39c21d3ae3344e",
+    "variants/late_psd_cluster/ppg_hr.png": "01fd3763480019d2ee855d7635d4b37d879d36bcfe40d7db0f6bbe5957e394b5",
+    "variants/late_psd_cluster/manifest.json": "b29235a1a73490a7df56a7c35303dabc53e5124b64e3b4c190fd58008d6d23d8",
+    "variants/late_psd_cluster/waveform.csv": "7a84b9c32de85ab3dfcd2cf5fc2f4d06fa1bd8c1deac95035f847de14314c36b",
+    "frontend/patch_trace.csv": "7cedac571b70d466b96dadc6a8c0b52d1ca3b4aea029e6c3d70cd648960e72ab",
+    "frontend/landmark_trace.npz": "1c6c3821a982f85ac4d91c415cabc2fba1480793e7151f80a797eaf25dc92c35",
+    "frontend/frame_trace.csv": "447de83df5f432b3079fadf6e18add1d92af9255c461bc14bd615a00fc619c1c",
+    "frontend/metadata.json": "109f8f8833cf00fdecff3640810ba76faf97806237124d80977c98ebb2cf8731",
+    "frontend/patch_anchors.json": "62395fc992f6e9b3104ff240581cec88213087b3ac224aa54636d98f67c53b9d",
+    "signals/late_signals.json": "94d367bb46ff3ecea3c892189649180466d9bb7db43af6aec4f814ffd13cfe52",
+    "signals/anchored_patch_trace.csv": "fb46fb2cf9cde25e1f7120f4d83a5f32d376738279f8a9438378a21e8b216e69",
+    "signals/late_patch_waveforms.csv": "383141fd2c7e05d78648eef382236f822b4d575c452b8ca81ee54efad2355037"
+  }
+}

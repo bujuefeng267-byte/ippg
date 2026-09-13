@@ -1,0 +1,43 @@
+{
+  "total_windows": 44,
+  "accepted_windows": 40,
+  "protocol": "10 s windows, 1 s step, 42-210 bpm; no fitted time shift",
+  "reference": {
+    "spectral_peak_bpm": {
+      "n": 40,
+      "mae_bpm": 2.776695972034742,
+      "rmse_bpm": 3.4284764737369335
+    },
+    "ridge_bpm": {
+      "n": 40,
+      "mae_bpm": 2.5687811750653564,
+      "rmse_bpm": 3.0902219281984618
+    }
+  },
+  "common_window_ridge_comparison": {
+    "pos": {
+      "neural": {
+        "n": 40,
+        "mae_bpm": 2.5687811750653564,
+        "rmse_bpm": 3.0902219281984618
+      },
+      "pos": {
+        "n": 40,
+        "mae_bpm": 2.5608837981643235,
+        "rmse_bpm": 3.0610386147775506
+      }
+    },
+    "chrom": {
+      "neural": {
+        "n": 40,
+        "mae_bpm": 2.5687811750653564,
+        "rmse_bpm": 3.0902219281984618
+      },
+      "chrom": {
+        "n": 40,
+        "mae_bpm": 2.545308846981956,
+        "rmse_bpm": 3.141175422904123
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/zizheng-guo/RhythmMamba",
+  "commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+  "files": [
+    {
+      "path": "neural_methods/model/RhythmMamba.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/neural_methods/model/RhythmMamba.py",
+      "bytes": 11539,
+      "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6",
+      "git_blob_sha1": "3589ab8ce9c16398d4d4b2065670c09cdeb6ce93"
+    },
+    {
+      "path": "configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml",
+      "bytes": 3333,
+      "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8",
+      "git_blob_sha1": "fd0d242f5c4522d2ae59fef9ecb408595f70e83e"
+    },
+    {
+      "path": "dataset/data_loader/BaseLoader.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/dataset/data_loader/BaseLoader.py",
+      "bytes": 28517,
+      "sha256": "3269b44a9283743036589003f67cdc0836afca5c31c338d8191aacac7a818751",
+      "git_blob_sha1": "fbdc1d7c35a714c7b86b352b000d9dd3f5c74e70"
+    },
+    {
+      "path": "neural_methods/trainer/RhythmMambaTrainer.py",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/neural_methods/trainer/RhythmMambaTrainer.py",
+      "bytes": 11209,
+      "sha256": "cc25a1469497f4c9a21ef4d91b7a70d5e3e034c4facc368c83b1bfa401989a5a",
+      "git_blob_sha1": "8074086ddedbbe09a81da6f2d02fd9d68dd20b21"
+    },
+    {
+      "path": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/LICENSE.txt",
+      "bytes": 1068,
+      "sha256": "cf1b3ce3d89374b2f09351f5288fcbadf8296b13c83abb99a8be4b5a60dc18c2",
+      "git_blob_sha1": "e1e61ffd6b89112366720df12e78c73fcbcea188"
+    },
+    {
+      "path": "requirements.txt",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/requirements.txt",
+      "bytes": 353,
+      "sha256": "b500959f16313b21a59841391eb4a77455127641244ad5afb38039429a230f27",
+      "git_blob_sha1": "072a716839af222f0b03341c5053666c46a14040"
+    },
+    {
+      "path": "PreTrainedModels/PURE_cross_RhythmMamba.pth",
+      "url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/PreTrainedModels/PURE_cross_RhythmMamba.pth",
+      "bytes": 20044634,
+      "sha256": "442ec9ac71bfc299f41e2c7f671216cfa4f6749d8dd264e53f8eb9d8b65380ee",
+      "git_blob_sha1": "836e171ef226dc5ca72240f000592d5dbd84b293"
+    }
+  ],
+  "checkpoint_selection": "PURE_cross fixed before any local predictions/reference scores."
+}

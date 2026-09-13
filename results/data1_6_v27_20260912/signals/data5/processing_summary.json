@@ -1,0 +1,23 @@
+{
+  "case": "data5",
+  "elapsed_s": 11.40561783999965,
+  "patch_availability": {
+    "mean_patch_observed_pct": 100.0,
+    "at_least_two_regions_observed_pct": 100.0,
+    "face_detection_pct": 100.0,
+    "per_patch_observed_pct": {
+      "forehead_0": 100.0,
+      "forehead_1": 100.0,
+      "forehead_2": 100.0,
+      "forehead_3": 100.0,
+      "left_cheek_0": 100.0,
+      "left_cheek_1": 100.0,
+      "left_cheek_2": 100.0,
+      "left_cheek_3": 100.0,
+      "right_cheek_0": 100.0,
+      "right_cheek_1": 100.0,
+      "right_cheek_2": 100.0,
+      "right_cheek_3": 100.0
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-12T15:02:47.894446+00:00",
+  "selected_version": "V28",
+  "promoted_variant": null,
+  "evaluation_sha256": "984ef140d63f02b99483b0b46d1dc4cff62de6cb288abe4945bcf84caf3d6456",
+  "source_snapshot": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/cdf_preprocess.py": "c07d1660ea27d0f7ebb197f3317f6910ef478bdbae069ee2023fd49713ee5ce7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/diagnosis_v28_candidates.json": "71b8493f7a3f0acbcab669a353a3b68debb6ca342718c504f89f01b370bc5c90",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/diagnosis_v28_candidates.md": "cf0d5c34b6d105d2427af3838d52ba08a83632245b8041d68e27b325addeed76",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/diagnosis_v28_candidates.py": "032b9fbb4619d181bd3fe0b186d80fc10138f3da592ee5f454750a59f88169e9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/diagnosis_v28_windows.csv": "9ff934ad17ff160fc1591c109cd8cc7be5093e14e47f26714ad8424bcba59d6c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/evaluate_v30.py": "b36826219e89447b0dee95bd347deeb2c3e01528e98b0a82a1c49c840bdd3662",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/freeze_cdf.json": "225faabef64d15944123b2c83983efe38171768067ad425f58137b1968595053",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/motion_evidence_full_spectrum.py": "88054a93f3dedfbf00d34cb39f4589483bebaeebdb5a7af3d26e2cf629ecb1ca",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/publish_v30_report.py": "b4d8f44166b6c9d315609d9e0c904ce258b822d0674ead39f36c1ce4a892dc95",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/qa_evaluation_v30.py": "93c3fd9146e2337c754aff085891f9858dfa7bf89769f82a128634d61b11212b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/review_readout.md": "7f650f9a14775086b82bd2872f99e4572d112ccac7668ea7465f9967ec301a2d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/run_cdf_v28.py": "0257788b66ac0cf7cb61c11ea3f3cb601e9989be170f2fca94c21edc73e95eb6",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/run_motion_readout.py": "b7f2a318bfc755216362947cf07b659e8f2a66030acfe3853a3d5c6b3cb38e57",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/set_recommended_v28.py": "3b49e74e025fa32e9cfa955330346f595e2edacbfeafe71869f5afcead5912ff",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/synthetic_diagnostic.py": "0c7bec3838d7cd43acaf76b81d77e6be436cecf47eed35f2ce0bd621a04f3f73",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/synthetic_diagnostic_results.json": "73013d99f5afba7b29ac6fc3486702a51067a254ec932559ea1a5a0aead10655",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/test_cdf_preprocess.py": "286127d8f8140028c8944116bc2bbf619245a127a882862ef6f14898804fd7b1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/test_evaluate_v30.py": "d193cf97c4b4f8ea9f14ef80177a6d8cf06c2ea3cea8f95c777bcb2058c75f29",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/source_snapshot/test_motion_evidence_full_spectrum.py": "356a08e049fcb1c511b473a5bb74b3bfbea624514b69399f09273e14af9e8490"
+  },
+  "report_path": "/home/fengbujue/项目/rppg识别/V28精度排查与改进实验_20260912.md",
+  "report_sha256": "4755efe704598c479e1feb2443cbf76fb6b4b14fcb623cc258a34b8376d841c8",
+  "figure_path": "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/V28_CDF_six_video_heart_rate.png",
+  "figure_sha256": "5815488115ddf75f0e71c10e1df36e0cd95404b50a0ceb486a9034af552a1f29",
+  "recommendation_receipt_sha256": "41cc8c873c4054d4c24b6b6edcd7e1f4954282c766aa71d278dd6761262b9172"
+}

@@ -14,3 +14,21 @@ videos/**
 tmp/
 temp/
 *.log
+.venv-neural/
+
+# Local environments, caches and model downloads are not project source.
+.venv-*/
+.pytest_cache/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Human-subject preview frames and videos remain local; curve plots are shared.
+results/**/qa/*.jpg
+results/data1_6_20260911/data*/presentation/preview_*.png
+results/data1_6_20260911/data*/presentation/contact_first_middle_last.png
+results/data1_6_20260911/data*/presentation/result_video.mp4
+results/data1_6_20260911/reference_audit/source_contact_sheet.jpg
+results/data1_6_v27_20260912/geometry_preview/
+results/data1_6_20260911/六组PPG心率结果分享包.zip

@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/ubicomplab/rPPG-Toolbox",
+  "commit": "b7500b848f84ad7f86e277b4612563b69f4f88f9",
+  "downloaded_utc": "2026-09-11T14:16:57.5105541Z",
+  "files": [
+    {
+      "repo_path": "neural_methods/model/EfficientPhys.py",
+      "url": "https://raw.githubusercontent.com/ubicomplab/rPPG-Toolbox/b7500b848f84ad7f86e277b4612563b69f4f88f9/neural_methods/model/EfficientPhys.py",
+      "local_file": "EfficientPhys.py",
+      "bytes": 5134,
+      "sha256": "384b01b5c99d6d280b5ddb9e2358631f89747e40e3181b6a174e26d6e74798c9"
+    },
+    {
+      "repo_path": "neural_methods/trainer/EfficientPhysTrainer.py",
+      "url": "https://raw.githubusercontent.com/ubicomplab/rPPG-Toolbox/b7500b848f84ad7f86e277b4612563b69f4f88f9/neural_methods/trainer/EfficientPhysTrainer.py",
+      "local_file": "EfficientPhysTrainer.py",
+      "bytes": 11188,
+      "sha256": "21336fa95a36524eb754710ae7837ba3fdc37e9b370c3be67456db3024e3c5e8"
+    },
+    {
+      "repo_path": "configs/infer_configs/PURE_UBFC-rPPG_EFFICIENTPHYS.yaml",
+      "url": "https://raw.githubusercontent.com/ubicomplab/rPPG-Toolbox/b7500b848f84ad7f86e277b4612563b69f4f88f9/configs/infer_configs/PURE_UBFC-rPPG_EFFICIENTPHYS.yaml",
+      "local_file": "PURE_UBFC-rPPG_EFFICIENTPHYS.yaml",
+      "bytes": 1653,
+      "sha256": "579105d1799307b8e11b56d68b53f401f1f32ff59c65be6fd5f1fcafc6ece370"
+    },
+    {
+      "repo_path": "dataset/data_loader/BaseLoader.py",
+      "url": "https://raw.githubusercontent.com/ubicomplab/rPPG-Toolbox/b7500b848f84ad7f86e277b4612563b69f4f88f9/dataset/data_loader/BaseLoader.py",
+      "local_file": "BaseLoader.py",
+      "bytes": 29438,
+      "sha256": "8424eca26a90d45cfdb1db592591130666d1efe46468778ecbc33f7d5ec4e5a5"
+    },
+    {
+      "repo_path": "evaluation/post_process.py",
+      "url": "https://raw.githubusercontent.com/ubicomplab/rPPG-Toolbox/b7500b848f84ad7f86e277b4612563b69f4f88f9/evaluation/post_process.py",
+      "local_file": "post_process.py",
+      "bytes": 7275,
+      "sha256": "e7bd06b26440e741f6303b08aa01c012f72823732510b867e77fd8bf6438882b"
+    },
+    {
+      "repo_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/ubicomplab/rPPG-Toolbox/b7500b848f84ad7f86e277b4612563b69f4f88f9/LICENSE",
+      "local_file": "LICENSE",
+      "bytes": 8886,
+      "sha256": "a2d16c386a18fc6c88ce0ff9d4593082f74a041c96e92ca9e2d89731955f1e1c"
+    },
+    {
+      "repo_path": "final_model_release/PURE_EfficientPhys.pth",
+      "url": "https://raw.githubusercontent.com/ubicomplab/rPPG-Toolbox/b7500b848f84ad7f86e277b4612563b69f4f88f9/final_model_release/PURE_EfficientPhys.pth",
+      "local_file": "PURE_EfficientPhys.pth",
+      "bytes": 8659174,
+      "sha256": "e65a962e07bcac32a668e6acb9f8ed43cdb1b01cfb97262654dc5b55c0cf3a49"
+    }
+  ]
+}

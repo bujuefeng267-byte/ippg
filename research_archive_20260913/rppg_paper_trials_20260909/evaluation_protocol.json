@@ -1,0 +1,121 @@
+{
+  "created_utc": "2026-09-09T12:30:25.401878+00:00",
+  "status": "fixed_scoring_design_before_candidate_evaluation",
+  "cases": [
+    "user0904",
+    "user0907",
+    "ubfc",
+    "kaggle_full",
+    "synthetic72",
+    "data1"
+  ],
+  "source_groups": 6,
+  "human_recording_groups": 5,
+  "synthetic_generator_groups": 1,
+  "planned_evaluation_windows_total": 597,
+  "independent_training_examples": null,
+  "sample_count_correction": "597 means highly overlapping evaluation windows from six source groups. It is not 597 independent training samples; no training or evaluation-parameter fitting is performed here. Recordings do not establish six different subjects. All are previously inspected development/regression recordings.",
+  "systems": [
+    {
+      "system": "v21/fusion",
+      "role": "baseline",
+      "directory": "rppg_motion_v21/validation_final/{case}",
+      "data1_directory": "rppg_data1_20260909/predictions"
+    },
+    {
+      "system": "trimmed_gap10/fusion",
+      "role": "baseline",
+      "directory": "rppg_motion_v22/validation/trimmed_gap10/{case}"
+    },
+    {
+      "system": "trimmed_gap15/fusion",
+      "role": "baseline",
+      "directory": "rppg_motion_v22/validation/trimmed_gap15/{case}"
+    },
+    {
+      "system": "cpace",
+      "role": "primary",
+      "directory": "rppg_paper_trials_20260909/cpace/results/{case}",
+      "fixed_waveform": "Author cardiac_signals, fixed Forehead, default homodyne on; not a waveform synthesized from HR."
+    },
+    {
+      "system": "rhythm",
+      "role": "primary",
+      "directory": "rppg_paper_trials_20260909/rhythm/results/{case}"
+    },
+    {
+      "system": "cpace_no_homodyne",
+      "role": "diagnostic",
+      "directory": "rppg_paper_trials_20260909/cpace/results_no_homodyne/{case}",
+      "selection": "Prespecified diagnostic control; do not replace the default based on its error."
+    }
+  ],
+  "estimators": {
+    "local_peak": "spectral_peak_bpm",
+    "offline_ridge": "ridge_bpm"
+  },
+  "window_protocol": {
+    "nominal_window_s": 10,
+    "nominal_step_s": 1,
+    "actual_frames": "round(10*original_video_fps), step round(original_video_fps)",
+    "bpm_search": [
+      42,
+      210
+    ],
+    "readout": "Both reported outputs must be reproduced by the frozen V22 legacy estimator applied to the actual saved waveform and supplied observation/interpolation masks. Native author HR has a different protocol and is diagnostic only.",
+    "offline": "The full waveform preprocessing is offline; DP uses future windows. Do not label either pipeline real-time."
+  },
+  "references": {
+    "UBFC": "Existing duplicate-merged device HR mean in nominal center +/-5s; original dataset relative time origin and coverage rule. Not ECG.",
+    "data1": "Use the unchanged alignment_protocol.json origin and all seven [-5,-2,-1,0,1,2,5] shifts; primary shift 0, int64 UTC subtraction before float seconds; no per-file zeroing or fitted lag. This remains approximate mtime-derived synchronization.",
+    "synthetic72": "Known 1.2Hz color modulation, engineering check, not physiological validation.",
+    "others": "No reference: MAE/RMSE/Bias/P5/R5/reference-H1 SNR NA."
+  },
+  "comparisons": {
+    "own": "Cout/Cref, MAE/RMSE/Bias/descriptive LoA, P5 and original-Nref R5 for all systems/readouts.",
+    "common": "All-system strict common windows and every same-readout pair. Pair added/lost windows scored separately; original Nref remains denominator.",
+    "continuity": "Consecutive valid output windows, internal breaks, center span and union of actual raw-frame support, never sum overlapping 10s windows.",
+    "SNR": "Saved base, periodic Hann full window, mean detrend, nfft8192, .7-3.5Hz; known/device reference H1 +/-0.1Hz versus other band power. Own/common/paired deltas; not morphology recovery.",
+    "candidate_reporting": "All fixed candidates and diagnostic control fully reported; no per-case best-candidate selection."
+  },
+  "minimum_candidate_schema": {
+    "waveform.csv": [
+      "time_s",
+      "base",
+      "covered",
+      "observed",
+      "interpolated"
+    ],
+    "heart_rate.csv": [
+      "time_s",
+      "accepted",
+      "status",
+      "spectral_peak_bpm",
+      "ridge_bpm"
+    ],
+    "summary.json": [
+      "fps",
+      "frames",
+      "input identity or video SHA256",
+      "reference_used=false or reference_identity=null",
+      "model/source/weight and preprocessing metadata"
+    ],
+    "time_axis": "One row per original video frame; resampling must preserve the original video time axis, missing samples remain NA. HR rows cover all planned original 10s/1s windows, rejected final HR columns are NA."
+  },
+  "fairness_requirements": [
+    "Record author code version/hash, weight identity/hash, weight conversion/runtime and known pretraining dataset/split. Explicitly mark dataset/subject overlap or unknown provenance; do not silently call a potentially overlapping benchmark held-out.",
+    "Record input resolution, ROI selection, sampling fps/resampling, channel order, filtering band, context length, startup/adaptation period, segmentation/reset and output masking.",
+    "cPACE fixed Forehead is not the previous three-ROI fusion; its native .7-3.0Hz core differs from the common .7-3.5Hz scoring band. Native hr_consensus/hr_per_roi are separate diagnostics.",
+    "Uniform 10s readout compares saved waveforms under a shared decoder; it is not the original paper benchmark if native ROI fusion/windowing/HR readout differs.",
+    "Training on the retained videos, choosing channels/thresholds from reference, or optimizing the data1 time offset is outside this protocol."
+  ],
+  "frozen_input_hashes": {
+    "rppg_motion_v22/evaluate_v22.py": "691a6c594c926892fab94fe69e197a391f39d27b22b3b28eaf972bc7aa7f733e",
+    "rppg_motion_v22/evaluation/summary.json": "3d6eddb0d34e749a6897dbfcb77a439af3d56974c248872ed8630a7e7a4e0009",
+    "rppg_motion_v22/validation/protocol_before_validation.json": "91b2ff43c8b69bb9fa932da264c15a719c197713ba218946acd3cc9fe55cfff8",
+    "rppg_data1_20260909/alignment_protocol.json": "cdde1ebc76692ebe8dd88b7670c6dd1fb56d1a83048c939f5cdb791d5df0ddc5",
+    "rppg_motion_v22/dataset_inventory.json": "de6817bbb70ea56cc6b4876982543a97d6dfd32bf1b394b54a364933b70f1150",
+    "rppg_motion_v22/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "rppg_motion_v22/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+  }
+}

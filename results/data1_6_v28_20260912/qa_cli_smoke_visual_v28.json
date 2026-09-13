@@ -1,0 +1,13 @@
+{
+  "images": [
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v28_20260912/cli_smoke_data1/ppg_and_hr.png",
+    "/home/fengbujue/\u9879\u76ee/rppg\u8bc6\u522b/results/data1_6_v28_20260912/cli_smoke_data5/ppg_and_hr.png"
+  ],
+  "reviewed": true,
+  "readable": true,
+  "axis_units_present": true,
+  "missing_values_left_blank": true,
+  "no_reference_drawn": true,
+  "displayed_curves_match_saved_waveform_and_hr": true,
+  "minor_caption_issue": "Generic includes-components caption describes the algorithm output type; data1 actually has zero candidate weight and preserves V25. Prefer may-include wording in future revisions."
+}

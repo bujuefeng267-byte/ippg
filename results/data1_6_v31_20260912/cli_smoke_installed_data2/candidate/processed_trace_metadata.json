@@ -1,0 +1,14 @@
+{
+  "kind": "derived_CDF_RGB_view_not_frontend_cache",
+  "original_trace_path": "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/frame_trace.csv",
+  "original_trace_sha256": "b199f2d09dea171754ff6042688c0bfd2964d3672ef748a04c604a1ed1eb53c2",
+  "derived_trace_sha256": "02236e68310212fba35feb2dfb84c88597cfaa2ced9c3c724f54ccec2b5bee99",
+  "reference_used": false,
+  "offline": true,
+  "cdf_config": {
+    "window_s": 10.0,
+    "step_s": 1.0,
+    "min_bpm": 42.0,
+    "max_bpm": 210.0
+  }
+}

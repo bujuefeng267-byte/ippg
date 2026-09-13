@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-09-09T12:49:31.142628+00:00",
+  "parameters": {
+    "checkpoint": "PURE_cross_RhythmMamba.pth",
+    "training": "none; frozen author PURE pretraining",
+    "crop": "V22 tracked normalized face box, 1.5 expansion, clamp at frame edges",
+    "rgb_valid_required": true,
+    "max_bbox_gap_s": 0.1,
+    "resize": "128x128 RGB, cv2.INTER_AREA",
+    "normalization": "one scalar mean/std(ddof=0) over all real cropped frames of each bounded segment, including discarded tail",
+    "clips": "160 frames, nonoverlapping, incomplete segment tail discarded",
+    "prediction_normalization": "per clip torch mean/std correction=1, as author trainer",
+    "sample_clock": "original video fps, no 30 Hz resampling",
+    "postprocessing": "project third-order zero-phase Butterworth 42-210 bpm per contiguous predicted segment",
+    "edge_mask_s": 1.6,
+    "final_hr": "legacy saved-waveform 10s/1s local peak and offline DP",
+    "reference_used": false,
+    "offline": true,
+    "benchmark_reproduction": false
+  },
+  "code_hashes": {
+    "rhythm/run_rhythm_trial.py": "cddc71bd1292c0ac4b00f953dc83410e6691029d731522ed7f75aca4375df80e",
+    "rhythm/backend.py": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+    "rhythm/backend_test.py": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3",
+    "rhythm/test_preprocessing.py": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0",
+    "cpace/project_estimator/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "cpace/project_estimator/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+  },
+  "cases": {
+    "user0904": {
+      "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+      "bytes": 834174464,
+      "sha256": "90560ee1a6dd97acd15193a1459f65e3b595ba7e9891196cde8270942326ed92"
+    },
+    "user0907": {
+      "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+      "bytes": 867938304,
+      "sha256": "0f432e286772c7eb83e1198f2761d32ca06cd92dc201ddb8965462ed76e4d4d2"
+    },
+    "ubfc": {
+      "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+      "bytes": 1425830568,
+      "sha256": "f6745be5e6b6fe2f00dd6f32dd234aa559bb30b45f38ec9d87cf9a1cc41f6954"
+    },
+    "kaggle_full": {
+      "video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+      "bytes": 538497671,
+      "sha256": "902d217c6661bb137c19059b4137c2bdc5879d9f4373b88377ecdafeb3bdb4ca"
+    },
+    "synthetic72": {
+      "video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+      "bytes": 3140871,
+      "sha256": "d9b7998a7fd9a7b42ddf8090c983acbce875e135a45dc714ab98ae154a18c988"
+    },
+    "data1": {
+      "video": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_data1_20260909/inputs/video/Video_20260909_YJC_2.avi",
+      "bytes": 843755520,
+      "sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e"
+    }
+  },
+  "reference_used": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "case": "data1",
+    "returncode": 0,
+    "elapsed_s": 0.9963867740007117
+  },
+  {
+    "case": "data2",
+    "returncode": 0,
+    "elapsed_s": 0.8763400710013229
+  },
+  {
+    "case": "data3",
+    "returncode": 0,
+    "elapsed_s": 1.5095523500021955
+  },
+  {
+    "case": "data4",
+    "returncode": 0,
+    "elapsed_s": 1.389991229003499
+  },
+  {
+    "case": "data5",
+    "returncode": 0,
+    "elapsed_s": 1.1130448499970953
+  },
+  {
+    "case": "data6",
+    "returncode": 0,
+    "elapsed_s": 0.9567560859977675
+  }
+]

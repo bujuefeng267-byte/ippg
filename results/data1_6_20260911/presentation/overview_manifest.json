@@ -1,0 +1,61 @@
+{
+  "cases": [
+    "data1",
+    "data2",
+    "data3",
+    "data4",
+    "data5",
+    "data6"
+  ],
+  "renderer_sha256": "2fa4b3ca99f7ae80c062510143d7a4f99c022075dc74c2225c74acfd458472b0",
+  "source_hashes": {
+    "data1": {
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_waveform.csv": "a96c6841cb6ddf0e4df666407effdecfd796baf90576f9ce48351d09bcfd3dbd",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_heart_rate.csv": "ab9ec2463c8f6baa3637d4c83a9c5ba3059dcf28e5b405503d91271092e7ba7c",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/summary.json": "23940394c7502898464bdb9354ab47660b4b5e0de9ed9cfbb24cbe25f56b6eb2",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/evaluation/paired_windows.csv": "d712073f9dfdeee92e17456dcbd3189fdbaec48300938474bc81ba0356d154f2",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/evaluation/metrics.json": "080f796fe5c43289c33977baff94d7884c191c59754ffb9f6dcac32b2deddb40"
+    },
+    "data2": {
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_waveform.csv": "5014d1c31afd55ee7310c6388667641e64ccfd3bf2d920ac3d635a8db6f538d5",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_heart_rate.csv": "720cf4aa34cd29018cc9ec0fbc744e8d6d2dca91d393fedb1c971a884483a215",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/summary.json": "36f771aa5427adeee1720b0190699be557110e3689acfd0d5b90381f9256090a",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/evaluation/paired_windows.csv": "24dd164ef62b06917bc506f5276e0d9f54cb6793e29032f410051199df03d318",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/evaluation/metrics.json": "5e92b81985fe6ed53297e7621e997d6ada7b64cdd9e17a2be5332a0dc53be716"
+    },
+    "data3": {
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_waveform.csv": "92b6ac0cc0291ca9b363a6acc94c61a017a9e893550ca0807a072d0cbfe24682",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_heart_rate.csv": "c05fd47116b9799c8f9bf3b65853e58c808d64416bf5d30803fabdd6df829e39",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/summary.json": "457b42de1b821cd833f2e6e87c05e23a4be7c5f1395f756e99c873f45209a804",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/evaluation/paired_windows.csv": "9df3925eadbd9cef71005e25f73382fc24ffab33729c1f1d24e47023d368b3f8",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/evaluation/metrics.json": "decc3124d4b7161c33d75a3943a2406a1a47d5e939bf2a8b1557a6cf0447037f"
+    },
+    "data4": {
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_waveform.csv": "918de3775bd32bf80253f11a92b33b27a36cbeb2336daaf492d9291b8d482250",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_heart_rate.csv": "fdabf65664dbc5945657b313450815857236f856d8c483d29ec86d2eee16c050",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/summary.json": "24d8f8a43c8f35084a6c89b8d58ad8bb00e8ee5c046c9a74a0c21d6a005896ff",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/evaluation/paired_windows.csv": "8621006dfd611958ebee93bff1f22d8ba3130caba4bdcf4a13d3e3804315fb3d",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/evaluation/metrics.json": "c853e494f027f682a77111659eb6f91e085f8f1a8d0043d6968a1160f812489f"
+    },
+    "data5": {
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_waveform.csv": "cd95d6fcb1d711ec68e8ae4058806081a44f9a14a0842ae6e0a6577a551a30d1",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_heart_rate.csv": "634090c0c3d030fe8f63e28ad17b51c5b0bb08961b31327d540553a17135367c",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/summary.json": "a81882d3f45f4d5144268c324fbce90b188f06922d0c86f8e1959fc1a5f77436",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/evaluation/paired_windows.csv": "4be20d34595e40e124e7f708b7bd75a06296bbfd1d5269c50f60d1aac1e0af41",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/evaluation/metrics.json": "650536d548e49f14db4288e69c8f6be73ff67aa2d485fa1e757e4559ef140a8f"
+    },
+    "data6": {
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_waveform.csv": "5019ebc2664ee63411e143f44ea0f2ac9496af214119ace4dea35dbb5dcc9ae5",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_heart_rate.csv": "e948c072ba14b2ed28a996c3ad2c0e4a9cf62d9a73ee185e92f88511a83482d0",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/summary.json": "5469bd35ab447e76f8af889a1d27490f65c1e9dedde19a87bfd287200a57a8ea",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/evaluation/paired_windows.csv": "a65ac803ac3e5589407e50f74283e5d6e29cc5875f6180ec25efbdf4917df238",
+      "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/evaluation/metrics.json": "b2ac26a48c03b509f30a2c2ce5dadf88241bca122cb6b139377f876301686a53"
+    }
+  },
+  "metrics_recomputed": false,
+  "source_files_unchanged": true,
+  "outputs": {
+    "all_six_ppg_hr.png": "43fd8569d8e777cf3a95213028ab91b3897ca34275bc8950f0a7dc97b86e8810",
+    "all_six_ppg_hr.svg": "ee94aeae660f2b76584733b5f07dc7bc68d6291da497a2f8f15b74b4a49e094e"
+  }
+}

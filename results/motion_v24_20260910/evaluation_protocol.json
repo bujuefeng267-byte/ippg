@@ -1,0 +1,624 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-10T08:19:32.948788+00:00",
+  "status": "frozen_parameters_source_and_measurement_rules_before_V24_inference",
+  "inference_started_by_this_task": false,
+  "parameters_frozen": true,
+  "primary_candidate": "guarded_fusion_gap10",
+  "continuity_candidate": "guarded_fusion_gap15",
+  "freeze_required_before_inference": {
+    "candidate_parameters": true,
+    "primary_and_continuity_candidate_identity": true,
+    "source_module_hashes": true,
+    "runner_hash": true,
+    "tests_and_output_contract": true,
+    "reference_and_source_manifests": true,
+    "no_post_score_parameter_changes": true,
+    "scoring_definitions_and_pinned_reference_helpers": true
+  },
+  "question": "On the six existing source captures, preserve pixel tracking, local screening and explicit failure fallback while improving V22 accuracy and useful coverage; separately compare gap 0.10 and gap 0.15.",
+  "population": {
+    "cases": {
+      "user0904": {
+        "video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+        "bytes": 834174464,
+        "sha256": "90560ee1a6dd97acd15193a1459f65e3b595ba7e9891196cde8270942326ed92",
+        "frames": 1461,
+        "fps": 30.00003000003,
+        "duration_s": 48.699951299999995,
+        "Nplanned": 39,
+        "actual_window_s": 9.99999,
+        "actual_step_s": 0.999999,
+        "reference_kind": "none",
+        "population": "human_capture"
+      },
+      "user0907": {
+        "video": "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+        "bytes": 867938304,
+        "sha256": "0f432e286772c7eb83e1198f2761d32ca06cd92dc201ddb8965462ed76e4d4d2",
+        "frames": 1557,
+        "fps": 30.00003000003,
+        "duration_s": 51.899948099999996,
+        "Nplanned": 42,
+        "actual_window_s": 9.99999,
+        "actual_step_s": 0.999999,
+        "reference_kind": "none",
+        "population": "human_capture"
+      },
+      "ubfc": {
+        "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+        "bytes": 1425830568,
+        "sha256": "f6745be5e6b6fe2f00dd6f32dd234aa559bb30b45f38ec9d87cf9a1cc41f6954",
+        "frames": 1547,
+        "fps": 29.264106,
+        "duration_s": 52.863395177696525,
+        "Nplanned": 44,
+        "actual_window_s": 10.012265537857196,
+        "actual_step_s": 0.9909750873647054,
+        "reference_kind": "paired_UBFC_device_HR",
+        "population": "human_capture"
+      },
+      "kaggle_full": {
+        "video": "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+        "bytes": 538497671,
+        "sha256": "902d217c6661bb137c19059b4137c2bdc5879d9f4373b88377ecdafeb3bdb4ca",
+        "frames": 12867,
+        "fps": 29.97002997002997,
+        "duration_s": 429.32890000000003,
+        "Nplanned": 419,
+        "actual_window_s": 10.01,
+        "actual_step_s": 1.0010000000000001,
+        "reference_kind": "none",
+        "population": "human_capture"
+      },
+      "synthetic72": {
+        "video": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+        "bytes": 3140871,
+        "sha256": "d9b7998a7fd9a7b42ddf8090c983acbce875e135a45dc714ab98ae154a18c988",
+        "frames": 600,
+        "fps": 30.0,
+        "duration_s": 20.0,
+        "Nplanned": 11,
+        "actual_window_s": 10.0,
+        "actual_step_s": 1.0,
+        "reference_kind": "synthetic_72bpm_modulation",
+        "population": "synthetic_control"
+      },
+      "data1": {
+        "video": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_data1_20260909/inputs/video/Video_20260909_YJC_2.avi",
+        "bytes": 843755520,
+        "sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e",
+        "frames": 1555,
+        "fps": 30.00003000003,
+        "duration_s": 51.8332815,
+        "Nplanned": 42,
+        "actual_window_s": 9.99999,
+        "actual_step_s": 0.999999,
+        "reference_kind": "estimated_alignment_Polar_device_HR",
+        "population": "human_capture"
+      }
+    },
+    "human_cases": [
+      "user0904",
+      "user0907",
+      "ubfc",
+      "kaggle_full",
+      "data1"
+    ],
+    "real_reference_cases": [
+      "ubfc",
+      "data1"
+    ],
+    "no_reference_cases": [
+      "user0904",
+      "user0907",
+      "kaggle_full"
+    ],
+    "synthetic_cases": [
+      "synthetic72"
+    ],
+    "independent_source_capture_count": 6,
+    "human_source_capture_count": 5,
+    "planned_overlapping_window_count": 597,
+    "human_planned_overlapping_window_count": 586,
+    "statistical_unit": "source capture; windows overlap and are not independent subjects or training examples",
+    "set_role": "previously inspected development/regression data, including final frozen regression verification; not held-out generalization",
+    "excluded": "Known playback/transcoded/cropped derivatives are not new captures. Do not read, restore or search deleted _gudb data; no additional source collection in this round."
+  },
+  "baseline": {
+    "versions": [
+      "trimmed_gap10",
+      "trimmed_gap15"
+    ],
+    "directories": "rppg_motion_v22/validation/{version}/{case}",
+    "reuse_existing_predictions": true,
+    "must_reproduce_existing_fusion_metrics_and_SNR": true,
+    "manifest": {
+      "path": "rppg_motion_v22/validation/protocol_before_validation.json",
+      "sha256": "91b2ff43c8b69bb9fa932da264c15a719c197713ba218946acd3cc9fe55cfff8"
+    },
+    "evaluation": {
+      "path": "rppg_motion_v22/evaluation/summary.json",
+      "sha256": "3d6eddb0d34e749a6897dbfcb77a439af3d56974c248872ed8630a7e7a4e0009"
+    }
+  },
+  "bounded_candidate_round": {
+    "maximum_total_candidate_modes": 4,
+    "maximum_mechanism_families": 2,
+    "candidate_mapping": {
+      "bounded_tracking_gap10": {
+        "family": "bounded_tracking",
+        "max_gap_s": 0.1,
+        "baseline": "trimmed_gap10",
+        "output_directory_template": "rppg_motion_v24/validation/bounded_tracking_gap10/{case}",
+        "parameters": {
+          "algorithm_mode": "bounded_tracking",
+          "pixel_mode": "tracking_screened",
+          "max_gap_s": 0.1,
+          "pixel_config": {
+            "max_points_per_roi": 100,
+            "patch_radius": 3,
+            "min_tracks": 12,
+            "fb_max_px": 0.5,
+            "screen_z": 3.0,
+            "screen_floor": 0.003,
+            "tracking_width": 960
+          },
+          "anchor_config": {
+            "anchor_hz": 0.15,
+            "anchor_order": 4
+          },
+          "guard_config": null
+        },
+        "parameters_status": "frozen_before_V24_inference"
+      },
+      "bounded_tracking_gap15": {
+        "family": "bounded_tracking",
+        "max_gap_s": 0.15,
+        "baseline": "trimmed_gap15",
+        "output_directory_template": "rppg_motion_v24/validation/bounded_tracking_gap15/{case}",
+        "parameters": {
+          "algorithm_mode": "bounded_tracking",
+          "pixel_mode": "tracking_screened",
+          "max_gap_s": 0.15,
+          "pixel_config": {
+            "max_points_per_roi": 100,
+            "patch_radius": 3,
+            "min_tracks": 12,
+            "fb_max_px": 0.5,
+            "screen_z": 3.0,
+            "screen_floor": 0.003,
+            "tracking_width": 960
+          },
+          "anchor_config": {
+            "anchor_hz": 0.15,
+            "anchor_order": 4
+          },
+          "guard_config": null
+        },
+        "parameters_status": "frozen_before_V24_inference"
+      },
+      "guarded_fusion_gap10": {
+        "family": "guarded_fusion",
+        "max_gap_s": 0.1,
+        "baseline": "trimmed_gap10",
+        "output_directory_template": "rppg_motion_v24/validation/guarded_fusion_gap10/{case}",
+        "parameters": {
+          "algorithm_mode": "guarded_fusion",
+          "pixel_mode": "tracking_screened",
+          "max_gap_s": 0.1,
+          "pixel_config": {
+            "max_points_per_roi": 100,
+            "patch_radius": 3,
+            "min_tracks": 12,
+            "fb_max_px": 0.5,
+            "screen_z": 3.0,
+            "screen_floor": 0.003,
+            "tracking_width": 960
+          },
+          "anchor_config": {
+            "anchor_hz": 0.15,
+            "anchor_order": 4
+          },
+          "guard_config": {
+            "min_tracked_fraction": 0.6,
+            "max_reset_fraction": 0.05,
+            "switch_score_ratio": 1.15,
+            "max_branch_disagreement_bpm": 12.0
+          }
+        },
+        "parameters_status": "frozen_before_V24_inference"
+      },
+      "guarded_fusion_gap15": {
+        "family": "guarded_fusion",
+        "max_gap_s": 0.15,
+        "baseline": "trimmed_gap15",
+        "output_directory_template": "rppg_motion_v24/validation/guarded_fusion_gap15/{case}",
+        "parameters": {
+          "algorithm_mode": "guarded_fusion",
+          "pixel_mode": "tracking_screened",
+          "max_gap_s": 0.15,
+          "pixel_config": {
+            "max_points_per_roi": 100,
+            "patch_radius": 3,
+            "min_tracks": 12,
+            "fb_max_px": 0.5,
+            "screen_z": 3.0,
+            "screen_floor": 0.003,
+            "tracking_width": 960
+          },
+          "anchor_config": {
+            "anchor_hz": 0.15,
+            "anchor_order": 4
+          },
+          "guard_config": {
+            "min_tracked_fraction": 0.6,
+            "max_reset_fraction": 0.05,
+            "switch_score_ratio": 1.15,
+            "max_branch_disagreement_bpm": 12.0
+          }
+        },
+        "parameters_status": "frozen_before_V24_inference"
+      }
+    },
+    "family_intent": {
+      "bounded_tracking": "Causal fourth-order Butterworth at 0.15 Hz corrects accumulated log-relative-color drift against preserved original sampler: integrated paired delta + LP4(log baseline - integrated paired delta). Pixel tracking, local screening and explicit resets/fallback retained; later waveform/HR processing is offline.",
+      "guarded_fusion": "Same bounded tracking frontend plus preserved V22 baseline branch. Each branch independently passes existing waveform proposal gates. At least two ROIs meet tracked>=.60/reset<=.05; preserve baseline when branch disagreement>12 bpm; switch to qualified tracking only at score ratio>=1.15, or baseline unavailable; explicit none/fallback remains."
+    },
+    "comparison": "Each gap10 candidate versus trimmed_gap10; each gap15 candidate versus trimmed_gap15. Cross-gap comparisons are descriptive only.",
+    "reporting": "All four modes and all six cases must be retained and reported; no per-video oracle, best-window oracle, best-reference-shift selection or post-score candidate renaming.",
+    "default_selection": "guarded_fusion_gap10 is the predeclared primary; guarded_fusion_gap15 the separate named continuity option. Both bounded_tracking modes remain fully reported mechanism alternatives, not replacements selected after scoring.",
+    "further_iterations": "A failed round may inform a separately registered development round; retain this entire round. A fresh rerun on these same captures is still regression testing."
+  },
+  "window_protocol": {
+    "requested_window_s": 10,
+    "requested_step_s": 1,
+    "window_samples": "round(10*fps)",
+    "step_samples": "round(fps)",
+    "starts": "arange(0,frames-window_samples+1,step_samples)",
+    "centers": "(start_frame+window_samples/2)/fps",
+    "actual_support": "[start_frame/fps,(start_frame+window_samples)/fps)",
+    "nominal_reference_support": "[center_s-5,center_s+5)",
+    "max_gap_samples": "floor(max_gap_s*fps)",
+    "trailing_frames": "Retain on full sample timeline; do not invent a partial final HR window.",
+    "duration": "Use frames/fps and actual step/window durations. Never multiply overlapping accepted window count by 10 to claim unique monitored seconds.",
+    "identities": "One canonical grid per case shared by every compared mode; exact frame identities and finite/missing flags, numeric serialization checks atol=1e-9 rtol=0 unless a distinct earlier-frozen metadata convention applies."
+  },
+  "reference_protocol": {
+    "reference_access": "Reference files accessible only to offline evaluator after every frozen prediction has completed. No reference, HR target, source-specific HR range, alignment fit or ground-truth-based window choice in inference.",
+    "primary_shift_s": 0,
+    "data1_report_all_shifts_s": [
+      -5,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      5
+    ],
+    "data1_alignment": {
+      "path": "rppg_data1_20260909/alignment_protocol.json",
+      "sha256": "cdde1ebc76692ebe8dd88b7670c6dd1fb56d1a83048c939f5cdb791d5df0ddc5"
+    },
+    "data1_video_start_utc_ns": 1788939171166718500,
+    "data1_utc_rule": "Keep epoch ns as int64; subtract integer origin before conversion to seconds. Positive shift puts video start later on reference clock. Export UTC as nullable Int64, not float64.",
+    "data1_reference": "User-designated Polar HR notifications from host_utc_ns/hr_bpm. Original mtime-based synchronization estimate, not hardware sync or ECG.",
+    "ubfc_reference": "Read retained 3x1547 ground_truth.txt; relative device time = row3 minus first time; merge duplicate device timestamps by averaging row2 HR. Device-HR mean, not ECG and not PPG morphology ground truth.",
+    "window_reference": "Mean of finite positive HR in nominal [center-5,center+5). Window inside first retained reference time through last plus original median interval, at least two values; for data1 internal gap <=2s. Reuse pinned V22 reference_for unchanged.",
+    "synthetic_reference": "Known generator 72 bpm, separate engineering control; excluded from human accuracy macro.",
+    "no_reference": "MAE, RMSE, Bias, P5, R5, LoA and reference-H1 SNR are null/NA, never zero.",
+    "sensitivity": "Report all seven shifts with own/common/new/lost results, never select or average shifts into the primary result. These shifts are not a confidence interval. Opposite conclusions across shifts are disclosed.",
+    "morphology": "No qualified synchronized waveform truth in this set; r_wave is NA. Reference HR calculable does not establish audited physiological signal quality."
+  },
+  "estimators": {
+    "primary": "offline_ridge",
+    "secondary_guardrail": "local_peak",
+    "columns": {
+      "local_peak": "spectral_peak_bpm",
+      "offline_ridge": "ridge_bpm"
+    },
+    "required_variants": [
+      "fusion",
+      "pos",
+      "chrom"
+    ],
+    "main_gate_variant": "fusion",
+    "readout_integrity": "Both final HR readouts must reproduce from the actual saved base waveform using the declared frozen readout. Respect accepted mask; rejected finite diagnostic peaks never count as output. No sine-wave synthesis from HR.",
+    "timing_claim": "Offline waveform processing and offline DP must not be labelled online or real-time. Local peak readout alone does not establish end-to-end causality."
+  },
+  "metric_definitions": {
+    "Nplanned": "All canonical planned windows including rejected and reference-ineligible windows.",
+    "Noutput": "accepted AND finite prediction in the selected estimator.",
+    "Nref": "finite positive reference eligible under unchanged protocol, independent of candidate output.",
+    "Nvalid": "Noutput mask intersect Nref eligibility.",
+    "error_bpm": "prediction-reference",
+    "MAE_bpm": "mean(abs(error)) on valid windows; NA when no valid windows.",
+    "RMSE_bpm": "sqrt(mean(error**2)) on valid windows; NA when no valid windows.",
+    "Bias_bpm": "mean(error)",
+    "SD_error_bpm_ddof1": "sample SD(error), NA with <2 valid windows",
+    "LoA": "Bias +/-1.96*sample SD; descriptive limits only, not a CI or population-valid 95% claim with overlapping windows.",
+    "P5_valid_pct": "100*N(abs(error)<=5)/Nvalid; NA when Nvalid=0.",
+    "R5_all_reference_pct": "100*N(abs(error)<=5)/Nref; zero if Nref>0 and no correct output, NA if Nref=0.",
+    "C_out_pct": "100*Noutput/Nplanned",
+    "C_ref_pct": "100*Nvalid/Nref; NA if no reference.",
+    "identity": "R5=C_ref*P5/100 when Nvalid>0.",
+    "secondary_error_metrics": [
+      "P10_valid_pct",
+      "R10_all_reference_pct",
+      "P95_abs_error_bpm_linear",
+      "Max_abs_error_bpm"
+    ],
+    "pair_scopes": [
+      "common_before",
+      "common_after",
+      "added_after",
+      "lost_before"
+    ],
+    "pair_definition": "Common/added/lost from same-estimator output masks, independent of ground-truth values. All subsets keep original full Nplanned and Nref denominators; subset Nvalid and Nwithin5 change.",
+    "R5_decomposition": "delta Nwithin5 = common_after Nwithin5 - common_before Nwithin5 + added_after Nwithin5 - lost_before Nwithin5; divide by common full Nref for delta R5.",
+    "global_common": "All modes same-estimator intersection is descriptive only; same-gap baseline/candidate pairwise common is used for gate."
+  },
+  "coverage_and_continuity": {
+    "HR": [
+      "C_out_pct",
+      "C_ref_pct",
+      "output_runs",
+      "internal_breaks",
+      "output_state_transitions",
+      "longest_run_windows",
+      "longest_run_center_span_s",
+      "longest_run_support_union_s",
+      "output_support_union_s",
+      "longest_rejected_run_windows",
+      "longest_rejected_grid_run_s",
+      "longest_rejected_center_span_s"
+    ],
+    "actual_waveform": [
+      "finite_sample_count",
+      "finite_sample_pct",
+      "finite_sample_duration_s",
+      "longest_finite_run_s",
+      "longest_missing_run_s",
+      "longest_internal_missing_run_s",
+      "Nfinite_waveform_windows",
+      "waveform_generated_count",
+      "waveform_generated_pct_of_planned",
+      "waveform_generated_but_HR_rejected_count",
+      "neighbor_covered_count",
+      "accepted_neighbor_covered_count",
+      "observed_all_samples_pct",
+      "interpolated_all_samples_pct",
+      "interpolated_covered_samples_pct"
+    ],
+    "duration_definitions": "Finite/missing sample runs use sample count/fps; longest rejected HR grid run = longest consecutive rejected count*actual_step_s, also report first-last center span=(count-1)*actual_step_s. Include boundary gaps; report internal-only waveform gaps separately.",
+    "interpretation": "Finite saved waveform coverage is an output-availability metric, not validated morphology or physiological accuracy. HR windows, waveform generation, neighboring-window coverage and sample interpolation remain distinct. No last-HR hold or fabricated finite waveform counted as new observed evidence.",
+    "frontend_and_fallback_audit": [
+      "Face detection/flow source and rgb_valid masks versus same-gap baseline",
+      "Tracked/screened/fallback/invalid frame and ROI counts",
+      "Explicit window/branch selection and rejection reason counts",
+      "Which accepted windows depend on fallback, interpolation or neighbor contribution",
+      "No reference-driven quality score or fallback choice"
+    ]
+  },
+  "reference_H1_SNR": {
+    "reuse_function": "rppg_motion_v22/evaluate_v22.py:snr_h1 and wave_scores",
+    "band_hz": [
+      0.7,
+      3.5
+    ],
+    "reference_H1_halfwidth_hz": 0.1,
+    "window": "one full-window periodic Hann, mean detrend",
+    "nfft": "max(8192,Nwindow)",
+    "power": "one-sided density-scaled periodogram; 10log10(reference H1 band power / remaining .7-3.5Hz power)",
+    "eligibility": "accepted HR window AND complete finite saved base segment AND eligible reference; no algorithm-selected peak in numerator",
+    "required_scopes": [
+      "own",
+      "strict_common_all_modes_same_variant",
+      "pairwise_common_same_gap"
+    ],
+    "required_fields": [
+      "Nplanned",
+      "Nref",
+      "Naccepted",
+      "Nfinite_waveform_windows",
+      "Nscored",
+      "snr_mean_db",
+      "snr_median_db",
+      "Npaired_snr",
+      "mean_paired_delta_snr_db",
+      "median_paired_delta_snr_db"
+    ],
+    "claims": "SNR is specific to this HR-frequency band definition. It neither proves recovered pulse morphology nor supplies accuracy without a reference."
+  },
+  "V24_upgrade_gate": {
+    "status": "frozen_before_V24_inference",
+    "apply_separately_to_each_predeclared_same_gap_candidate": true,
+    "primary_shift_s": 0,
+    "noninferiority_numerical_tolerance": 1e-06,
+    "strict_improvement": "after < before - 1e-6 for lower-is-better; after > before + 1e-6 for higher-is-better. This is numerical tolerance, not a validated clinically meaningful threshold.",
+    "primary_error_estimators": [
+      "offline_ridge"
+    ],
+    "error_population": [
+      "ubfc",
+      "data1"
+    ],
+    "source_balanced_MAE": "mean of the two per-capture MAEs, equal source weights",
+    "source_balanced_RMSE": "sqrt(mean of the two per-capture RMSE**2)), equal source MSE weights; not arithmetic mean of RMSEs",
+    "error_required_scopes": [
+      "own",
+      "pairwise_common"
+    ],
+    "primary_error_rules": [
+      "Both source-balanced MAE and source-balanced RMSE strictly improve in each required scope.",
+      "Each real-reference capture MAE and RMSE is noninferior in own and same-gap pairwise-common windows.",
+      "Empty reference or empty valid own/common windows fails; never remove a hard capture from macro."
+    ],
+    "local_peak_guardrail": "Each real-reference capture MAE/RMSE noninferior in own and same-gap pairwise-common windows with 1e-6 tolerance; no strict improvement required. Report full local gate diagnostics.",
+    "R5_rules": "For both readouts, each real-reference capture own R5 and pairwise-common R5 must not decrease. Keep full Nref on pairwise scopes.",
+    "coverage_population": [
+      "user0904",
+      "user0907",
+      "ubfc",
+      "kaggle_full",
+      "data1"
+    ],
+    "coverage_macro": "Arithmetic mean of per-capture C_out_pct, and separately arithmetic mean of per-capture finite_sample_pct; each of five human captures has weight 1/5.",
+    "coverage_rules": [
+      "Both human macro HR-output coverage and human macro finite saved-waveform coverage strictly increase.",
+      "Each human capture HR-output coverage and finite saved-waveform coverage is noninferior.",
+      "For readout-specific masks, require coverage noninferiority for both readouts."
+    ],
+    "synthetic_rule": "Exclude from human macros. Both readouts own/common MAE, RMSE, R5 and output coverage, plus finite waveform coverage, must be noninferior. Improvement below baseline zero error is not required.",
+    "continuity_and_SNR_role": "Always report each-case longest gaps and paired SNR. They are additional explicit V23 compatibility checks, not silently added V24 pass/fail rules.",
+    "engineering_rules": [
+      "Every frozen mode and all six source videos complete successfully.",
+      "Candidate-specific source hashes, input identities and parameters match its V24 pre-inference manifest; do not require V23 module hashes.",
+      "V22 baseline metrics and SNR reproduced with pinned scoring functions.",
+      "Saved-waveform final HR replay, validity/provenance/neighbor coverage and fallback audit pass.",
+      "No reference supplied to inference; alignment and candidate identity not altered after scores.",
+      "Meaningful boundary/unit tests pass and independent metric/denominator/UTC audit passes."
+    ],
+    "deployment": "Only the predeclared primary gap10 candidate passing this gate is eligible for default upgrade after separately reported installed-entry verification; named gap15 evaluated versus its own V22 baseline. Otherwise retain current production entry and label candidate experimental. Evaluator never deploys."
+  },
+  "V23_compatibility_gate": {
+    "criteria": {
+      "path": "rppg_motion_v23/evaluation_upgrade_criteria.json",
+      "sha256": "234b52a58868329105992236f7affdae24d0c745b3f21f4b62d7ba79c0ab8a68"
+    },
+    "preserve_original_file": true,
+    "reuse_original_numeric_rules": true,
+    "semantic_candidate_mapping": "Replace only baseline/candidate names with matching-gap V24 identity; evaluate original V23 own/common error, R5, each-case HR/waveform coverage/longest-gap, paired-SNR, synthetic <=1bpm and original meaningful-improvement disjunction.",
+    "report_separately": true,
+    "label": "V23 original compatibility gate; additional constraints differ from V24 aggregate AND-improvement rule, so the two gates are not a mathematical subset relation.",
+    "engineering_mapping": "Use the V24 frozen manifest and declared architecture/replay contract for engineering validity. Any original V23 unchanged-backend assumption that V24 intentionally changes must be listed, never silently asserted or used to exclude its scores."
+  },
+  "evaluator_adapter": {
+    "mode_name_mapping": {
+      "bounded_tracking_gap10": {
+        "version": "bounded_tracking_gap10",
+        "baseline": "trimmed_gap10",
+        "max_gap_s": 0.1,
+        "root": "rppg_motion_v24/validation"
+      },
+      "bounded_tracking_gap15": {
+        "version": "bounded_tracking_gap15",
+        "baseline": "trimmed_gap15",
+        "max_gap_s": 0.15,
+        "root": "rppg_motion_v24/validation"
+      },
+      "guarded_fusion_gap10": {
+        "version": "guarded_fusion_gap10",
+        "baseline": "trimmed_gap10",
+        "max_gap_s": 0.1,
+        "root": "rppg_motion_v24/validation"
+      },
+      "guarded_fusion_gap15": {
+        "version": "guarded_fusion_gap15",
+        "baseline": "trimmed_gap15",
+        "max_gap_s": 0.15,
+        "root": "rppg_motion_v24/validation"
+      }
+    },
+    "baseline_root": "rppg_motion_v22/validation",
+    "validation_root_option": "--validation-root",
+    "output_option": "--output",
+    "refuse_existing_output_directory": true,
+    "core_scoring_dependency": {
+      "path": "rppg_motion_v22/evaluate_v22.py",
+      "sha256": "691a6c594c926892fab94fe69e197a391f39d27b22b3b28eaf972bc7aa7f733e"
+    },
+    "schema_common_files": [
+      "frame_trace.csv",
+      "frame_trace.json",
+      "summary.json",
+      "fusion_waveform.csv",
+      "fusion_heart_rate.csv",
+      "pos_waveform.csv",
+      "pos_heart_rate.csv",
+      "chrom_waveform.csv",
+      "chrom_heart_rate.csv"
+    ],
+    "waveform_columns": [
+      "time_s",
+      "base",
+      "covered",
+      "observed",
+      "interpolated"
+    ],
+    "HR_columns": [
+      "time_s",
+      "accepted",
+      "status",
+      "spectral_peak_bpm",
+      "ridge_bpm",
+      "waveform_generated",
+      "neighbor_covered"
+    ],
+    "optional_mechanism_diagnostics": "Guarded fusion emits branch_routing.csv, baseline_branch_proposals.csv, tracked_branch_proposals.csv, baseline_roi_waveforms.csv. diagnostic method is baseline_pos/chrom or tracked_pos/chrom; channel=roi+underscore+method; roi remains forehead/left_cheek/right_cheek. Count unique actual ROI, never correlated branches as six ROIs.",
+    "source_hash_resolution": "Baseline expected hashes from V22 protocol; each new mode hashes/config from V24 protocol_before_validation.json. New source module names allowed when explicitly frozen; never substitute V23 hashes or hardcode V23 candidates/backends.",
+    "readout_schema_treatment": "Respect legacy POS/CHROM diagnostic peak exception on rejected diffuse_spectrum windows, always apply accepted mask. Final fusion rejected readout columns must be NaN.",
+    "geometry_contract": "Common frame/time/source geometry if deliberately unchanged must be checked separately; intentional V24 signal-validity changes are measured and disclosed, not force-equal to V23 or omitted from evaluation.",
+    "source_provenance": "bounded_tracking_gap10 starts from hash-verified V23 screened paired increments/frame trace, reconstruction recomputed and labelled validated_V23_paired_increments. Other three modes reuse same V24 frontend cache. Preserve unanchored_* and baseline_* evidence. Compare baseline_* and geometry/masks to V22, not newly anchored RGB.",
+    "core_module_count": 11,
+    "implementation_freeze": "before scoring any V24 candidate; fixed metric helper dependency and measurement/gate definitions frozen before inference"
+  },
+  "planned_outputs": [
+    "metrics.csv",
+    "common_metrics.csv",
+    "paired_metrics.csv",
+    "deltas.csv",
+    "macro_metrics.csv",
+    "continuity.csv",
+    "waveform_metrics.csv",
+    "waveform_deltas.csv",
+    "waveform_windows.csv",
+    "aligned_windows.csv",
+    "reference_windows.csv",
+    "sensitivity.csv",
+    "sensitivity_common.csv",
+    "sensitivity_pairs.csv",
+    "waveform_sensitivity.csv",
+    "waveform_pair_sensitivity.csv",
+    "frontend_comparison.csv",
+    "fallback_audit.csv",
+    "summary.json",
+    "upgrade_gate.json",
+    "v23_compatibility_gate.json"
+  ],
+  "required_validation": [
+    "Baseline reproduction numeric checks.",
+    "Nvalid<=Nref<=Nplanned; Nvalid<=Noutput<=Nplanned; zero-output versus no-reference cases.",
+    "P5/R5/C_ref arithmetic and added/lost/common correct-output decomposition.",
+    "Case-balanced macro errors and coverage computed from full declared population.",
+    "Nanoseconds roundtrip as nullable Int64 and fixed seven-shift reference centers.",
+    "Saved-waveform readout reproduction and sample provenance.",
+    "Source/flags/missingness exact checks with explicit serialization tolerance for numbers.",
+    "All original inputs unchanged before/after; output directory cannot overwrite previous evidence."
+  ],
+  "limitations": [
+    "Only two human captures have usable HR references; data1 synchronization is estimated.",
+    "All six captures are development/regression data already inspected in prior rounds; a final frozen rerun does not become an unseen validation set.",
+    "Five source captures need not mean five distinct people; identity independence is not established.",
+    "597 overlapping windows are not 597 independent samples, participants or training records.",
+    "No-reference accuracy, qualified morphology correlation and clinical validation are unavailable.",
+    "Small numerical gains can pass the stated numerical gate but are not automatically practically meaningful; report actual magnitudes."
+  ],
+  "frozen_utc": "2026-09-10T09:57:24.103279+00:00",
+  "source_hashes": {
+    "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+  },
+  "freeze_authorization": "Root confirmed code review and 85/85 unit tests passed, fixed 11 source modules/parameters and authorized freeze before 24 candidate runs; runner independently records test receipt.",
+  "evaluator_implementation_status": "Adapter implementation is in progress under already fixed formulas, references, candidates and gate. Final implementation/hash and self-check/baseline reproduction must be recorded before any new-candidate score inspection; no new-candidate results have been scored.",
+  "evaluation_round": "V24 round 1: 2 declared structures x 2 gaps x 6 existing captures"
+}

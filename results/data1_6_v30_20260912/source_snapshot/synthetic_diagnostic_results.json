@@ -1,0 +1,181 @@
+{
+  "source": "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912",
+  "reference_read": false,
+  "production_code_changed": false,
+  "fps": 30.0,
+  "seconds": 10.0,
+  "motion_band_normalization": [
+    {
+      "motion_bpm": 20.0,
+      "candidate_band_peak_bpm": 42.0,
+      "current_max_motion_risk": 0.8028610746656589,
+      "full_spectrum_normalized_max_risk": 2.811240463969512e-05,
+      "max_candidate_band_psd_over_full_peak": 3.5015279139547485e-05,
+      "band_energy_fraction": 8.39183374976409e-06,
+      "strength": 0.8028610746656589,
+      "reliability": 1.0
+    },
+    {
+      "motion_bpm": 30.0,
+      "candidate_band_peak_bpm": 44.0,
+      "current_max_motion_risk": 0.8,
+      "full_spectrum_normalized_max_risk": 0.0005575218532228381,
+      "max_candidate_band_psd_over_full_peak": 0.0006969023165285476,
+      "band_energy_fraction": 0.00025293091564181395,
+      "strength": 0.8,
+      "reliability": 1.0
+    },
+    {
+      "motion_bpm": 60.0,
+      "candidate_band_peak_bpm": 60.0,
+      "current_max_motion_risk": 0.8,
+      "full_spectrum_normalized_max_risk": 0.7999205823611959,
+      "max_candidate_band_psd_over_full_peak": 0.9999007279514949,
+      "band_energy_fraction": 0.9999687925171634,
+      "strength": 0.8,
+      "reliability": 1.0
+    },
+    {
+      "motion_bpm": 120.0,
+      "candidate_band_peak_bpm": 120.0,
+      "current_max_motion_risk": 0.8,
+      "full_spectrum_normalized_max_risk": 0.7998648857174429,
+      "max_candidate_band_psd_over_full_peak": 0.9998311071468036,
+      "band_energy_fraction": 0.999999965371632,
+      "strength": 0.8,
+      "reliability": 1.0
+    },
+    {
+      "motion_bpm": 240.0,
+      "candidate_band_peak_bpm": 207.0,
+      "current_max_motion_risk": 0.8000000000000004,
+      "full_spectrum_normalized_max_risk": 3.1317622563312052e-06,
+      "max_candidate_band_psd_over_full_peak": 3.914702820414005e-06,
+      "band_energy_fraction": 2.224861665182516e-06,
+      "strength": 0.8000000000000004,
+      "reliability": 1.0
+    }
+  ],
+  "subharmonic_pair": [
+    {
+      "bpm": 54.0,
+      "relative_power": 0.24902422643011987,
+      "peak_concentration": 0.18834163133995566,
+      "prominence": 0.24902422186148682,
+      "period_correlation": 0.9999884078319695,
+      "split_period_correlation": 0.9999885231642796,
+      "periodic_support": 0.999988436665047,
+      "harmonic2_relative_power": 1.0,
+      "harmonic3_relative_power": 9.336988324529584e-09,
+      "harmonic_support": 0.4990401493168635,
+      "motion_profile": 0.0,
+      "motion_strength": null,
+      "motion_reliability": 0.0,
+      "motion_overlap": 0.0,
+      "motion_available": false,
+      "evidence_score": 1.1124556473258482,
+      "supported_bpm": [
+        51.0,
+        52.0,
+        53.0,
+        54.0,
+        55.0,
+        56.0,
+        57.0
+      ],
+      "supported_relative_power": [
+        0.1802198077918014,
+        0.21600075899869123,
+        0.2403161004834248,
+        0.24902422643011987,
+        0.2405896708609299,
+        0.21647960281039266,
+        0.18079964565207357
+      ],
+      "correlation_at_half_period": 0.5970598889072817,
+      "fundamental_contrast_diagnostic": 0.40292851892468784,
+      "hypothetical_contrast_score": 0.4556897378114531
+    },
+    {
+      "bpm": 108.0,
+      "relative_power": 1.0,
+      "peak_concentration": 0.7538574662737288,
+      "prominence": 1.0,
+      "period_correlation": 0.5970598889072817,
+      "split_period_correlation": 0.5961640453394744,
+      "periodic_support": 0.5968359280153298,
+      "harmonic2_relative_power": 1.3436443722118963e-10,
+      "harmonic3_relative_power": 2.4316849302934087e-12,
+      "harmonic_support": 1.213735263110461e-05,
+      "motion_profile": 0.0,
+      "motion_strength": null,
+      "motion_reliability": 0.0,
+      "motion_overlap": 0.0,
+      "motion_available": false,
+      "evidence_score": 0.6565316581694939,
+      "supported_bpm": [
+        105.0,
+        106.0,
+        107.0,
+        108.0,
+        109.0,
+        110.0,
+        111.0
+      ],
+      "supported_relative_power": [
+        0.7208899959112601,
+        0.8642989552543004,
+        0.9631105364865544,
+        1.0,
+        0.9669468798393727,
+        0.8656881975200799,
+        0.7208405826703317
+      ],
+      "correlation_at_half_period": -0.7904536077676686,
+      "fundamental_contrast_diagnostic": 1.3875134966749503,
+      "hypothetical_contrast_score": 1.100012137352631
+    }
+  ],
+  "same_waveform_ambiguity": [
+    "108 bpm pulse plus a 54 bpm nuisance component of half amplitude",
+    "54 bpm pulse whose second harmonic has twice the fundamental amplitude"
+  ],
+  "dp_check": {
+    "trajectory_bpm": [
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0,
+      54.0
+    ],
+    "reacquisition_flags": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "isolated_advantage_score_units": 2.0,
+    "two_jump_cost_score_units": 6.0,
+    "interpretation": "Intended smoothing preference, not an indexing or unsupported-frequency bug"
+  },
+  "source_hashes": {
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "component_harmonics_v26.py": "be74e2675b78bde3d49e3ff50529bd8f76c4a5953da0d352844ae8abf11985b0"
+  }
+}

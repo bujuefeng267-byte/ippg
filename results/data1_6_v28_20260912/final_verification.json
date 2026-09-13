@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-09-12T04:07:32.522939+00:00",
+  "passed": true,
+  "installed_directory": "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912",
+  "installed_file_count": 34,
+  "installation_manifest_sha256": "c6332913c71e6ebecf28edcb5ab3faa231fc4b9370d810bca1af2d6b2ad18123",
+  "frozen_inference_sources": 20,
+  "original_entry_hashes_preserved": {
+    "/home/fengbujue/项目/rppg识别/run.sh": "d9eee11d650bb1a8938d48f16d5bedbb551739f0bc74e0559252dfd37bbf36ad",
+    "/home/fengbujue/项目/rppg识别/run_motion_v25.sh": "271b35d3411984bacf4db51fdc6c9910a3fde9ba46ac840c1494a65c3e5bf4de",
+    "/home/fengbujue/项目/rppg识别/run_motion_v26_experimental.sh": "04f4e91150c790948c167ebce08579999e79d98ab57769f7ad74cb73cb4f65f6",
+    "/home/fengbujue/项目/rppg识别/run_motion_v27_experimental.sh": "00062e5fb94f91bc743a9bcc4c0dd5d7c99ea97c03a6d8585cfcccad072ea218"
+  },
+  "installed_tests": 30,
+  "installed_test_receipt_sha256": "2e3994ed4ab3eb32e964337aec73b5795d30d743aad365d329bb6c3a916e8fa4",
+  "evaluation_and_smoke_receipts": {
+    "qa_evaluation_v28.json": "098aaeeae34d1bb324425e72516367fa71e8a24de8d538bbba655d2e52d3a380",
+    "qa_cli_smoke_v28.json": "ae3b2209b6e93de7e1edb44f1e3c745164ede239a606e7344560cc033cd0b29c",
+    "qa_installed_cli_smoke_v28.json": "db9e5256c9d72e5715cd8680da03d5d5ac0079a068d1fe1e167fae7b3556b1a4"
+  },
+  "report_visual_receipt_sha256": "f479220e4f658edd26643d1ddd604aa967d6282443d936fdcdfcbc57d5d7a004",
+  "report_manifest_sha256": "392f6ac94588a08495a756e140a2e25133a904fc84ffd10de1dcba064998fd21",
+  "document": "/home/fengbujue/项目/rppg识别/V28运动心率改进说明.md",
+  "document_sha256": "5ac406df98b669c06c010e0791b91898cbd8fd1285eacd6df117d32e222e6ed4",
+  "document_links": [
+    {
+      "target": "//wsl.localhost/Ubuntu/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912/README_video_v28.md",
+      "sha256": "20c2a6feaca4e83195800cc31256e1c9d07839f3e06718020a7bf18c291b3917"
+    },
+    {
+      "target": "//wsl.localhost/Ubuntu/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/final_report/report.md",
+      "sha256": "fcf40959ba2f36a7741f75a2d1c622d1e90c9a532a5330a8a83c5ed818198fa3"
+    },
+    {
+      "target": "//wsl.localhost/Ubuntu/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/final_report/six_video_hr_v25_v26conservative_v28.png",
+      "sha256": "0d8e396f74165586afcb869d3b7aff0fb04bc7fca58d25ed9aeffd5669867c40"
+    },
+    {
+      "target": "//wsl.localhost/Ubuntu/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/final_report/six_video_v28_ppg.png",
+      "sha256": "e11b5cccd53cad58f60115d9d123b5e0cb1db48c2d1b055fc55cf2c45010a8c6"
+    },
+    {
+      "target": "//wsl.localhost/Ubuntu/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/evaluation_summary.json",
+      "sha256": "cfe07c42516e7d334ef1fcf06c7b56d25f2b244abd02d7e8bfeb0eb237fd1f1c"
+    },
+    {
+      "target": "//wsl.localhost/Ubuntu/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/qa_evaluation_v28.json",
+      "sha256": "098aaeeae34d1bb324425e72516367fa71e8a24de8d538bbba655d2e52d3a380"
+    }
+  ],
+  "promotion_checks": {
+    "pooled_MAE": true,
+    "pooled_R5_gain": true,
+    "each_MAE": true,
+    "each_P5": true,
+    "each_R5": true,
+    "each_HR_coverage": true,
+    "each_waveform_coverage": true,
+    "common_MAE": true
+  },
+  "near_all_within_5bpm_target_met": false,
+  "scope": "Six previously seen development videos; estimated alignment; not held-out validation.",
+  "cli_caption_change": "Includes -> May include; caption-only change verified and installed CLI tested."
+}

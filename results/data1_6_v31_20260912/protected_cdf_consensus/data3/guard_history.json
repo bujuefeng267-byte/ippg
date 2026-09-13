@@ -1,0 +1,13 @@
+[
+  {
+    "iteration": 0,
+    "eligible_windows": 0,
+    "accepted_windows": 59,
+    "quality_failures": [],
+    "large_jump_count": 1,
+    "maximum_jump_bpm": 34.0,
+    "excess_jump_guard": false,
+    "failed_windows": [],
+    "status": "accepted"
+  }
+]

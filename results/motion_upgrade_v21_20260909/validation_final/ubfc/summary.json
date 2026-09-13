@@ -1,0 +1,168 @@
+{
+  "version": "multi_roi_v2.1",
+  "identity": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+    "size": 1425830568,
+    "mtime_ns": 1788405743301475200,
+    "max_seconds": null,
+    "frontend_hashes": {
+      "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+      "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+    }
+  },
+  "source_hashes": {
+    "analyze_motion_v2.py": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+    "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+    "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115"
+  },
+  "fps": 29.264106,
+  "frames": 1547,
+  "effective_window_s": 10.012265537857196,
+  "effective_step_s": 0.9909750873647054,
+  "requested_window_s": 10,
+  "nominal_reference_window_s": 10,
+  "reference_identity": {
+    "path": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/ground_truth.txt",
+    "size": 74262,
+    "sha256": "836852f57f9cc9e04ecab134ebe506f831ad3e7d95ee73771ab8ac32ce845b67"
+  },
+  "observed_rgb_fraction": 1.0,
+  "roi_observed_fraction": {
+    "forehead": 1.0,
+    "left_cheek": 1.0,
+    "right_cheek": 1.0
+  },
+  "source_counts": {
+    "mesh": 1547
+  },
+  "config": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+    "output": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v21/validation_final/ubfc",
+    "cache": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v2/trace_cache/ubfc/frame_trace.csv",
+    "max_seconds": null,
+    "max_gap": 0.1,
+    "window": 10,
+    "step": 1,
+    "min_bpm": 42,
+    "max_bpm": 210,
+    "reference_ubfc": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/ground_truth.txt"
+  },
+  "fusion_config": {
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "methods": [
+      "pos",
+      "chrom"
+    ],
+    "min_rois": 2,
+    "min_observed_fraction": 0.9,
+    "min_roi_quality": 0.2,
+    "min_signal_std": 1e-08,
+    "grid_step_bpm": 1.0,
+    "support_tolerance_bpm": 6.0,
+    "max_peaks_per_channel": 4,
+    "min_relative_power": 0.2,
+    "min_peak_concentration": 0.15,
+    "min_prominence_ratio": 0.08,
+    "single_method_factor": 0.65,
+    "min_consensus_quality": 0.2,
+    "ambiguity_ratio": 0.8,
+    "max_motion_penalty": 0.25,
+    "max_slew_bpm_per_s": 12.0,
+    "rejected_windows_to_reset": 2,
+    "min_waveform_correlation": 0.15,
+    "normalize_clip": 8.0,
+    "huber_delta": 2.5
+  },
+  "variants": {
+    "pos": {
+      "total_windows": 44,
+      "accepted_windows": 40,
+      "accepted_fraction": 0.9090909090909091,
+      "status_counts": {
+        "candidate_only": 40,
+        "gap_or_filter_edge": 4
+      },
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 40,
+          "mae_bpm": 3.209058217721374,
+          "rmse_bpm": 4.30546855769563
+        },
+        "ridge_bpm": {
+          "n": 40,
+          "mae_bpm": 2.5608837981643235,
+          "rmse_bpm": 3.0610386147775506
+        }
+      },
+      "finite_waveform_fraction": 0.9392372333548804
+    },
+    "chrom": {
+      "total_windows": 44,
+      "accepted_windows": 40,
+      "accepted_fraction": 0.9090909090909091,
+      "status_counts": {
+        "candidate_only": 40,
+        "gap_or_filter_edge": 4
+      },
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 40,
+          "mae_bpm": 2.767321016356186,
+          "rmse_bpm": 3.5635732593936837
+        },
+        "ridge_bpm": {
+          "n": 40,
+          "mae_bpm": 2.545308846981956,
+          "rmse_bpm": 3.141175422904123
+        }
+      },
+      "finite_waveform_fraction": 0.9392372333548804
+    },
+    "fusion": {
+      "total_windows": 44,
+      "accepted_windows": 40,
+      "accepted_fraction": 0.9090909090909091,
+      "status_counts": {
+        "candidate_only": 40,
+        "gap_or_filter_edge": 4
+      },
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 40,
+          "mae_bpm": 2.6444771052737117,
+          "rmse_bpm": 3.3919180659489414
+        },
+        "ridge_bpm": {
+          "n": 40,
+          "mae_bpm": 2.4941465967991356,
+          "rmse_bpm": 2.986197771932294
+        }
+      },
+      "finite_waveform_fraction": 0.9204912734324499,
+      "waveform_generated_windows": 34,
+      "waveform_generated_fraction": 0.7727272727272727,
+      "neighbor_covered_windows": 6,
+      "proposal_accepted_windows": 35,
+      "hr_tracker": "offline_DP_on_saved_fused_waveform"
+    }
+  },
+  "elapsed_processing_seconds": 0.8325718890000644,
+  "limitations": [
+    "Waveforms use offline zero-phase filtering and overlap fusion.",
+    "Final local/DP HR is estimated from the saved fused waveform; DP uses future windows.",
+    "Consensus frequencies are proposals only. Coverage is not accuracy.",
+    "Sampling provenance uses ALL observed and ANY interpolated actual contributors.",
+    "Provenance does not describe full upstream filter support or physiological morphology.",
+    "accepted and proposal quality_proxy are engineering decisions, not accuracy probabilities.",
+    "Reference data is used exclusively for post-hoc evaluation."
+  ]
+}

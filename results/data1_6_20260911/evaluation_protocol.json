@@ -1,0 +1,25 @@
+{
+  "primary_algorithm": "frozen V2.4 guarded_fusion",
+  "primary_estimator": "ridge_bpm accepted windows",
+  "main_offset_policy": "ZIP UTC mtime minus decoded duration, independently of predictions",
+  "shifts_s": [
+    -5,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    5
+  ],
+  "primary_shift_s": 0,
+  "accuracy_thresholds_bpm": [
+    5,
+    10
+  ],
+  "P5_definition": "Count(abs error<=5)/paired output windows",
+  "R5_definition": "Count(abs error<=5)/all reference-valid planned windows; missing outputs remain failures",
+  "coverage_definition": "HR: accepted/planned windows; waveform: finite samples/all decoded frames",
+  "reference_window": "10s half-open sample support; mean positive finite device HR; min2 values and max2s gap including edges",
+  "no_waveform_truth_claim": "Reference-frequency SNR is a frequency agreement proxy; waveform morphology accuracy unverified.",
+  "uncertainty": "Overlapping windows and repeated subjects; descriptive metrics, no independent-window confidence claims."
+}

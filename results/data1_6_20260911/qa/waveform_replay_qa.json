@@ -1,0 +1,544 @@
+{
+  "passed": true,
+  "checked_utc": "2026-09-11T13:13:08.733562+00:00",
+  "checked_cases": 6,
+  "planned_cases": [
+    "data1",
+    "data2",
+    "data3",
+    "data4",
+    "data5",
+    "data6"
+  ],
+  "checked_waveform_branches": 18,
+  "checked_estimators": [
+    "local_peak",
+    "offline_ridge"
+  ],
+  "reference_read": false,
+  "videos_read": false,
+  "production_estimator_imported": false,
+  "input_sha256": {
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/qa_recompute_waveform_hr.py": "34484cc6ce73f9b35b3f49c54bffaa212c165df1d63980ff2713624bdb81b96b",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/batch_data1_6/qa_batch_saved_outputs.py": "f50760dcb8451e51bfe5952d28b7dcf19d3ce0fecbfad76407667c93e8b1868e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/batch_data1_6/expected_frames.json": "ebd0be9ea4dcbb30b68f99ee77cc549caf2abf2a43dbf1b1bc814493b3b70a63",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/summary.json": "23940394c7502898464bdb9354ab47660b4b5e0de9ed9cfbb24cbe25f56b6eb2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/frame_trace.csv": "a72012d6920d64971833fbc0370138b3efad8cc0134f34ac5bb029e3d54122ac",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/roi_waveforms.csv": "3643f76f992862c399bb2c26a4dec41653aa8b44a6e39931206b051f54e8f053",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_proposals.csv": "08a78e40c504b9da371783a18b9051550c1a1c2ebf15996add14516c0f9327ed",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_diagnostics.csv": "987f4e410958c16eb9f5165d97a304575559ebff71ce185e87c66f6393ca972f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_waveform.csv": "a96c6841cb6ddf0e4df666407effdecfd796baf90576f9ce48351d09bcfd3dbd",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/fusion_heart_rate.csv": "ab9ec2463c8f6baa3637d4c83a9c5ba3059dcf28e5b405503d91271092e7ba7c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/pos_waveform.csv": "9c6a865ceba301055b33e79116e972e8f2dfec329cf24dfef85e29e09d89d6ee",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/pos_heart_rate.csv": "96614e4524ab639de9fc62c4b34381526bcea4b5849e0c8c11727521d53e212c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/chrom_waveform.csv": "61cd18160ceb51fff5fd8814e98158b6e31adb3292f3e6bb90b61ff8f264d46f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/chrom_heart_rate.csv": "091bc46bc317d58348b99257c96c9eea5a3b261dbe1ccf7607a9fd9b89d90743",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/frame_trace.json": "a9be0110543a8a25f3d6247bbe85f64a22a87cd41cd46984af9666ef5070b15e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/baseline_roi_waveforms.csv": "06a0803be9bc6a60eb9e6fe765ff9d28627affc01f2e92fd1c708398bf674cbc",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data1/inference/branch_routing.csv": "63329387e02900d7cbf372cd2a5f07e59915beef9ed0988cd67c0f6a4f3ed581",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/summary.json": "36f771aa5427adeee1720b0190699be557110e3689acfd0d5b90381f9256090a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/frame_trace.csv": "b199f2d09dea171754ff6042688c0bfd2964d3672ef748a04c604a1ed1eb53c2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/roi_waveforms.csv": "148cc780c9c45f7d3a8676e157cecde1e44668bc536af415da210017ebc1d92e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_proposals.csv": "a02fda729b9c5d52a4b43afaad188cf9c04e3cfd1dfefabb4d4fb2e761cb0885",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_diagnostics.csv": "9a0f375b2c92bfbcded16e8732c4e24547bd76542f62790b206cd33ff009a2ff",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_waveform.csv": "5014d1c31afd55ee7310c6388667641e64ccfd3bf2d920ac3d635a8db6f538d5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/fusion_heart_rate.csv": "720cf4aa34cd29018cc9ec0fbc744e8d6d2dca91d393fedb1c971a884483a215",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/pos_waveform.csv": "cad20e037838e6414c2ad250bddcd57f12cf6baf63cf6a5f775070e6762095fc",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/pos_heart_rate.csv": "46d6e05178cb949021611b31b73089670108cd7bd7e225dd7efaf7b16df5e1fd",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/chrom_waveform.csv": "7bd1daea0e68d8de708aa92959c191f3a8cd26df7327c5f7f2103efcad1b6076",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/chrom_heart_rate.csv": "10ee2ec49d701d3c6e0b643ff920ca1bbbbcbbccf5fd3e227d7772f205f6cba9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/frame_trace.json": "8cdd6490cf924fef8782980996b5fe573c344a3b204011d242b9354d6c2e2835",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/baseline_roi_waveforms.csv": "8ea243b293e90c56a0608efe508750348a0b2395ea34d2e2f1d44fec593ff33d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/branch_routing.csv": "a9839d4d3b0c64318389b4dc80e2cce4bbb459b4dceecb8e7751437fb46b80c9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/summary.json": "457b42de1b821cd833f2e6e87c05e23a4be7c5f1395f756e99c873f45209a804",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/frame_trace.csv": "1f43aee4a224536933b58e7e616e60d00936e158d1260eb18fb44618fb74f5e3",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/roi_waveforms.csv": "c21ae08516e411e80c551bd3609d654e4460b1fd4af10b81ef1d3e6001a3d6b9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_proposals.csv": "bfb5bdb76cc569b6d0427a6069f53608450991085574fbe4f503455b7100312b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_diagnostics.csv": "a948fd511533c66b7909c48989cd3edb4bb413ed456bccd5e325a940221045fd",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_waveform.csv": "92b6ac0cc0291ca9b363a6acc94c61a017a9e893550ca0807a072d0cbfe24682",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/fusion_heart_rate.csv": "c05fd47116b9799c8f9bf3b65853e58c808d64416bf5d30803fabdd6df829e39",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/pos_waveform.csv": "ff298bba291be6876f367db6adf3d38cb117d341e2ef1cce18dc9c44b4d6b19a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/pos_heart_rate.csv": "e03cd85ab4ece511a845b871c97123dc640dc84d640df0370d4b31e755880cb8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/chrom_waveform.csv": "051459161b87987d01a8d9276c4ade24e1f02dd433fcddbe365c30416aaf16e1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/chrom_heart_rate.csv": "c9f6d9e65ce3b2d73b4a3bfa1b9bded68280b13077f84bf605a8090302f454f4",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/frame_trace.json": "d8b92b8ca113d85f13682cb4d97db8c55accb850992315c250292c37b8ec50bb",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/baseline_roi_waveforms.csv": "3f97f232e6a611dcb1e65fa8d2ff457cdea85181ccee74f4feb465ba056e410c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/branch_routing.csv": "f7403ebf75bde80acf77cf220bc8e7b4b7739e456461f1cf961f431c8e0c2242",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/summary.json": "24d8f8a43c8f35084a6c89b8d58ad8bb00e8ee5c046c9a74a0c21d6a005896ff",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/frame_trace.csv": "9ac57523f498642409c4217c5945f133619ba81568ca19010cfa36b91593053f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/roi_waveforms.csv": "9b12ce35c1a610af3faebfe2d90e841bd55091153aedf443d6fef0f74f17883b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_proposals.csv": "b08d3a7ae25f852f3786c43f865154bb353b07f95c2f684bef2fd61b426c6a4e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_diagnostics.csv": "6ca5f9c60e4ea58628e7ef66e66ebcbd36df84871eea441a41edc2de852e3161",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_waveform.csv": "918de3775bd32bf80253f11a92b33b27a36cbeb2336daaf492d9291b8d482250",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/fusion_heart_rate.csv": "fdabf65664dbc5945657b313450815857236f856d8c483d29ec86d2eee16c050",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/pos_waveform.csv": "11eafbf9a9bc83900e8ad6ad38001b8ecfa94514a3f4f137501bdedc15d4182e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/pos_heart_rate.csv": "3acdb01457483c37569aef0ba6f058491eb52a8b19f3464dcb1ce765bfc981d6",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/chrom_waveform.csv": "74bac01b0758ca63ae8acfa68bb40d2d6c0cd5ffb06fb1bd7b4bd10acd6dfe9a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/chrom_heart_rate.csv": "36b64a603fd3f489868a00756668ac84f5bddf97f9994af14a5b51a6b997a50b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/frame_trace.json": "12c74765510f8d350b85665b6644e88444787bab6f270a8f9580ab4f8627d587",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/baseline_roi_waveforms.csv": "d61ed7e4607ae80efb480215c972cc9623cbe6fa17b85fe9f031bc7e9ee1c537",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data4/inference/branch_routing.csv": "973110576522e1219a8d9020561b8c278524e766a913863a7f935ee1420620b8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/summary.json": "a81882d3f45f4d5144268c324fbce90b188f06922d0c86f8e1959fc1a5f77436",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/frame_trace.csv": "9762dc041c7414e1d1dcb5e89535a4ecebd96cd5b79cc1da9aa925e21dc80c1d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/roi_waveforms.csv": "5f5544bce04c77eac576cd902e7a53eda3487a5e8a960d57ce34d1ff72ddae7b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_proposals.csv": "ab50de9801b1e38def08c123ff87ad8e67242a1c47249a89ef932cfa8122c0f2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_diagnostics.csv": "1a2e3a87f7dc17ba01e418b466682abbf5e5893aa5d2e4716ddf6adc78eb4509",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_waveform.csv": "cd95d6fcb1d711ec68e8ae4058806081a44f9a14a0842ae6e0a6577a551a30d1",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/fusion_heart_rate.csv": "634090c0c3d030fe8f63e28ad17b51c5b0bb08961b31327d540553a17135367c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/pos_waveform.csv": "c9fd3188935f36fb8f68f9d5cb65baf1df4594d8b38887cef4b84c1cd2bcd988",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/pos_heart_rate.csv": "99c5b895d1f98881eece51de3d4eebbdd1e062835088c68023c5b73e26f1b55d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/chrom_waveform.csv": "794a42452073d933ff938d1550ea0335b065ffe554bf50dc29b4638d79167a71",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/chrom_heart_rate.csv": "8574ceeb7a4f0786d72cb63405ccdfeddbebe094ca7d1b6011a5ec171d676de0",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/frame_trace.json": "61551dbb6f325eb4d5609513111fc57bf5174807c43e7b18610aa274c7f346ba",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/baseline_roi_waveforms.csv": "38f73b2ff48653c741b9b666a0b6adff421e70daa29040fb86ec60dc1ae0cc6d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data5/inference/branch_routing.csv": "8024984642929e50e516d8473e061a402be299af4d4bc53bb48c7dd70ff5eee9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/summary.json": "5469bd35ab447e76f8af889a1d27490f65c1e9dedde19a87bfd287200a57a8ea",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/frame_trace.csv": "c9f027f1cc90b87bfbb8a462e84b7bd72adf565a09ed313394bbb204c764c907",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/roi_waveforms.csv": "f4343d73c3bda669ccef7f8c7d54d5d0ff69d92c219432d1f3af622ec1833fc5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_proposals.csv": "f1b213d0e141c9f6181aa4b19c3fc8af395892fe8af7bdd2e2dbe3cea16d53a2",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_diagnostics.csv": "a3ee2578d6710d63dbd9a4a6bfaf4e4bac736c1aba1417e9d165b29bd70a741e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_waveform.csv": "5019ebc2664ee63411e143f44ea0f2ac9496af214119ace4dea35dbb5dcc9ae5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/fusion_heart_rate.csv": "e948c072ba14b2ed28a996c3ad2c0e4a9cf62d9a73ee185e92f88511a83482d0",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/pos_waveform.csv": "6169eaf75ad0f9732248232675756606c9e1f7556a27434129858754866e4e9e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/pos_heart_rate.csv": "beec6711bf5c60bbce174efecae58dc82ed71efe0f8e63d11e4ea0fc8128439a",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/chrom_waveform.csv": "daa68e6f729c4351cc1aef013afc6ca2d23ce98a4446c5cf1be22be7dce4f554",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/chrom_heart_rate.csv": "538af4266ab5a7ce5ac73578d611ae0bfb5e3c28962ee660cc5a9215bc0804e7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/frame_trace.json": "71948127b59cbbe68407d2da6ed8945aa55ad462e26c7bc4b3f58559a885240f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/baseline_roi_waveforms.csv": "57cf915cc09356cd3dc118967d6ee6ce6ebd160b957eb091db60752a634b1d8f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/branch_routing.csv": "eea67769df083ce3f3378422f1857025c24f6835833e80a8b6ebb398e7a15ee7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v24/guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+  },
+  "source_hashes": {
+    "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+  },
+  "methodology": "Hash-pinned independent saved-waveform Welch/gate/offline-DP replay; time axes, summaries and actual ROI provenance checked; selected tracked ROI eligibility independently verified.",
+  "limitations": [
+    "Full unselected-branch routing is not reconstructed from zeroed final weights.",
+    "Accuracy versus reference and synchronization are separate from this arithmetic QA.",
+    "Container completeness uses supplied independent counts when present; no source video is read here."
+  ],
+  "results": [
+    {
+      "case": "data1",
+      "passed": true,
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 42,
+          "accepted_windows": 37,
+          "finite_wave_samples": 1380,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 42,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1431,
+          "total_frames": 1555,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "fps": 30.00003000003,
+      "frames": 1555,
+      "duration_frame_clock_s": 51.8332815,
+      "expected_frames": 1555,
+      "container_frame_count_independently_checked": true,
+      "window_frames": 300,
+      "step_frames": 30,
+      "planned_windows": 42,
+      "source_hashes": {
+        "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+        "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+        "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+        "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+        "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+        "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+        "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+        "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+        "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+        "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+      },
+      "branch_selection_counts": {
+        "baseline": 31,
+        "none": 7,
+        "tracked": 4
+      },
+      "selected_tracking_eligibility_verified": true,
+      "full_unselected_branch_routing_recomputed": false
+    },
+    {
+      "case": "data2",
+      "passed": true,
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1260,
+          "total_frames": 1393,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1297,
+          "total_frames": 1393,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 37,
+          "accepted_windows": 33,
+          "finite_wave_samples": 1297,
+          "total_frames": 1393,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "fps": 30.00003000003,
+      "frames": 1393,
+      "duration_frame_clock_s": 46.4332869,
+      "expected_frames": 1393,
+      "container_frame_count_independently_checked": true,
+      "window_frames": 300,
+      "step_frames": 30,
+      "planned_windows": 37,
+      "source_hashes": {
+        "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+        "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+        "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+        "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+        "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+        "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+        "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+        "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+        "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+        "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+      },
+      "branch_selection_counts": {
+        "baseline": 17,
+        "none": 15,
+        "tracked": 5
+      },
+      "selected_tracking_eligibility_verified": true,
+      "full_unselected_branch_routing_recomputed": false
+    },
+    {
+      "case": "data3",
+      "passed": true,
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 65,
+          "accepted_windows": 59,
+          "finite_wave_samples": 2040,
+          "total_frames": 2221,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 65,
+          "accepted_windows": 61,
+          "finite_wave_samples": 2125,
+          "total_frames": 2221,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 65,
+          "accepted_windows": 61,
+          "finite_wave_samples": 2125,
+          "total_frames": 2221,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "fps": 30.00003000003,
+      "frames": 2221,
+      "duration_frame_clock_s": 74.0332593,
+      "expected_frames": 2221,
+      "container_frame_count_independently_checked": true,
+      "window_frames": 300,
+      "step_frames": 30,
+      "planned_windows": 65,
+      "source_hashes": {
+        "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+        "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+        "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+        "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+        "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+        "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+        "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+        "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+        "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+        "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+      },
+      "branch_selection_counts": {
+        "baseline": 30,
+        "none": 19,
+        "tracked": 16
+      },
+      "selected_tracking_eligibility_verified": true,
+      "full_unselected_branch_routing_recomputed": false
+    },
+    {
+      "case": "data4",
+      "passed": true,
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 9900,
+          "total_frames": 10693,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 10117,
+          "total_frames": 10693,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 50,
+          "accepted_windows": 46,
+          "finite_wave_samples": 10117,
+          "total_frames": 10693,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "fps": 180.00180001800018,
+      "frames": 10693,
+      "duration_frame_clock_s": 59.4049615,
+      "expected_frames": 10693,
+      "container_frame_count_independently_checked": true,
+      "window_frames": 1800,
+      "step_frames": 180,
+      "planned_windows": 50,
+      "source_hashes": {
+        "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+        "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+        "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+        "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+        "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+        "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+        "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+        "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+        "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+        "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+      },
+      "branch_selection_counts": {
+        "baseline": 46,
+        "none": 4
+      },
+      "selected_tracking_eligibility_verified": true,
+      "full_unselected_branch_routing_recomputed": false
+    },
+    {
+      "case": "data5",
+      "passed": true,
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1740,
+          "total_frames": 1866,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1770,
+          "total_frames": 1866,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 53,
+          "accepted_windows": 49,
+          "finite_wave_samples": 1770,
+          "total_frames": 1866,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "fps": 30.00003000003,
+      "frames": 1866,
+      "duration_frame_clock_s": 62.199937799999994,
+      "expected_frames": 1866,
+      "container_frame_count_independently_checked": true,
+      "window_frames": 300,
+      "step_frames": 30,
+      "planned_windows": 53,
+      "source_hashes": {
+        "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+        "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+        "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+        "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+        "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+        "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+        "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+        "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+        "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+        "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+      },
+      "branch_selection_counts": {
+        "baseline": 37,
+        "none": 8,
+        "tracked": 8
+      },
+      "selected_tracking_eligibility_verified": true,
+      "full_unselected_branch_routing_recomputed": false
+    },
+    {
+      "case": "data6",
+      "passed": true,
+      "checked": [
+        {
+          "variant": "fusion",
+          "planned_windows": 62,
+          "accepted_windows": 36,
+          "finite_wave_samples": 1620,
+          "total_frames": 2148,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "pos",
+          "planned_windows": 62,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1746,
+          "total_frames": 2148,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        },
+        {
+          "variant": "chrom",
+          "planned_windows": 62,
+          "accepted_windows": 38,
+          "finite_wave_samples": 1746,
+          "total_frames": 2148,
+          "independently_recomputed_estimators": [
+            "local_peak",
+            "offline_ridge"
+          ]
+        }
+      ],
+      "fps": 30.00003000003,
+      "frames": 2148,
+      "duration_frame_clock_s": 71.5999284,
+      "expected_frames": 2148,
+      "container_frame_count_independently_checked": true,
+      "window_frames": 300,
+      "step_frames": 30,
+      "planned_windows": 62,
+      "source_hashes": {
+        "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+        "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+        "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+        "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+        "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+        "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+        "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+        "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+        "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+        "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+        "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+      },
+      "branch_selection_counts": {
+        "none": 28,
+        "tracked": 25,
+        "baseline": 9
+      },
+      "selected_tracking_eligibility_verified": true,
+      "full_unselected_branch_routing_recomputed": false
+    }
+  ],
+  "errors": []
+}

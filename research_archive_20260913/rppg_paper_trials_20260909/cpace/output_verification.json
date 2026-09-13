@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "outputs_checked": 12,
+  "reference_used": false,
+  "records": [
+    {
+      "variant": "results",
+      "case": "user0904",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results",
+      "case": "user0907",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results",
+      "case": "ubfc",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results",
+      "case": "kaggle_full",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results",
+      "case": "synthetic72",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results",
+      "case": "data1",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results_no_homodyne",
+      "case": "user0904",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results_no_homodyne",
+      "case": "user0907",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results_no_homodyne",
+      "case": "ubfc",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results_no_homodyne",
+      "case": "kaggle_full",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results_no_homodyne",
+      "case": "synthetic72",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    },
+    {
+      "variant": "results_no_homodyne",
+      "case": "data1",
+      "saved_waveform_hr_recomputed_equal": true,
+      "sample_and_hr_times_valid": true,
+      "provenance_mask_valid": true,
+      "source_and_output_hashes_valid": true
+    }
+  ],
+  "script_sha256": "6e7b4521f1baf74a5511a5ee8717a5d8ca4394201baaa06285e9e3572c681200"
+}

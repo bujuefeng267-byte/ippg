@@ -1,0 +1,90 @@
+{
+  "alignment_protocol.json": {
+    "bytes": 3274,
+    "sha256": "cdde1ebc76692ebe8dd88b7670c6dd1fb56d1a83048c939f5cdb791d5df0ddc5"
+  },
+  "comparison_qa.json": {
+    "bytes": 115990,
+    "sha256": "89289308f708de5094788338b2f6ce8eb9cb06e7acc7eb8d3bb76eb9d7e5dad9"
+  },
+  "comparison_qa.md": {
+    "bytes": 3230,
+    "sha256": "0d82bbe1cfb03af8b8cdcac52e09a113e22140c8348e462ef44115fc7334d6f2"
+  },
+  "data1_分析与参考比较.md": {
+    "bytes": 7648,
+    "sha256": "b20c186c71af12744aa536ab92dff0bbc034e1009ba4bacd2705ab13104ec319"
+  },
+  "data1_时间偏移敏感性.png": {
+    "bytes": 138704,
+    "sha256": "8d46acbda71ba4bed7a2372e6cd59813f1441b0f64cd601e1329ec953b2ba378"
+  },
+  "data1_波形与心率对比.png": {
+    "bytes": 383438,
+    "sha256": "4667ebc5d4586e7e5bc3fc52b978f3721244834edfb56be54e185060e16d29a7"
+  },
+  "evaluation/aligned_windows.csv": {
+    "bytes": 33469,
+    "sha256": "9fee379310e0f1140f12b0257103071181ad619d2175f0bfb1d7bbb623562348"
+  },
+  "evaluation/common_metrics.csv": {
+    "bytes": 2073,
+    "sha256": "69c24521702d88b5ae7a0681f55b850086169559d4eea13eebbd66bc5de29974"
+  },
+  "evaluation/metrics.csv": {
+    "bytes": 1885,
+    "sha256": "e1d3c0d6c813cfc8f5a4aea60d702ed2465ff1a33c13d8e6385351797e067636"
+  },
+  "evaluation/reference_aligned.csv": {
+    "bytes": 4113,
+    "sha256": "262b0a82c69c5b5e4eaa68be2dcd15b60d110e132f78d021672802127ed32174"
+  },
+  "evaluation/reference_windows.csv": {
+    "bytes": 48226,
+    "sha256": "2c0ff5a2225510c6ec4a1014ce72074fad4814b8b97766b5a51039b3f52b82ac"
+  },
+  "evaluation/sensitivity.csv": {
+    "bytes": 11502,
+    "sha256": "93dd8bfcad49c0c8612dc00f0dea81aba9796cc4006fe95f75b9f170771badc4"
+  },
+  "evaluation/sensitivity_common.csv": {
+    "bytes": 12554,
+    "sha256": "e80904310aa0fec02b20a88851c2ee2f72e4cb9290eb4644c58a110b9af3883a"
+  },
+  "evaluation/sensitivity_ranges.csv": {
+    "bytes": 1870,
+    "sha256": "69c94159e65382d95a1218f185c1f91213fa394b53b69069f12fc91a328a18b6"
+  },
+  "evaluation/waveform_snr.csv": {
+    "bytes": 765,
+    "sha256": "70cebe4e373b56f307d66c6781321c5c9b0a88a465d69413af2478ef3a1365b7"
+  },
+  "evaluation/waveform_windows.csv": {
+    "bytes": 8205,
+    "sha256": "8a72668eb87d18f1dcb6420e92dfcc687525ac88b2f71294855641a2f71e7dee"
+  },
+  "program/chrom_heart_rate.csv": {
+    "bytes": 3485,
+    "sha256": "04dc7094636e4cb086a460b149c9aa95b31410e9a02f0ca46ccdd19e6dcaf553"
+  },
+  "program/chrom_waveform.csv": {
+    "bytes": 66230,
+    "sha256": "f168c88c9c6f3905e2a3cb99418081bed870d90582a4dc2fc9cc1f1c78fdadaf"
+  },
+  "program/fusion_heart_rate.csv": {
+    "bytes": 7858,
+    "sha256": "729630f6e3275f6abbdc59b56437b8f75529558012733cba394ecec6615c67be"
+  },
+  "program/fusion_waveform.csv": {
+    "bytes": 73920,
+    "sha256": "616948bf929980ef632aaf9db2c0cf66505f153f2dedba1c9d138abc2f867382"
+  },
+  "program/pos_heart_rate.csv": {
+    "bytes": 3485,
+    "sha256": "bca0b1118f884aeef7ea4a01aeb8d9fad77323376702112f69ef3bb7c194b620"
+  },
+  "program/pos_waveform.csv": {
+    "bytes": 66032,
+    "sha256": "053978e4c834433c79a388f4808bbf6736a08170995af5a7715867635b4889a8"
+  }
+}

@@ -1,0 +1,607 @@
+{
+  "created_utc": "2026-09-11T13:15:07.526652+00:00",
+  "inputs_manifest_sha256": "b4e0a49d3a65b5ab79c43325db4fdf8937511fd6a97f09813db030a42ceff14b",
+  "audit_script_sha256": "07d2677834bfacdf32b902f8236de7945dca1ebec763e1e0b80d1e69daf17ef1",
+  "cases": [
+    {
+      "case": "data1",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2_unpacked/Video_20260909_YJC_2.avi",
+      "source_video_sha256_from_manifest": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e",
+      "source_hash_recomputed_here": false,
+      "source_bytes_match_manifest": true,
+      "method": "OpenCV full sequential read of every original-resolution frame; no resized or temporal-subsampled input",
+      "opencv_version": "4.11.0",
+      "opencv_reported_frame_count": 1555,
+      "opencv_reported_fps": 30.00003000003,
+      "ffprobe_initial_metadata": {
+        "index": 0,
+        "codec_name": "mjpeg",
+        "codec_long_name": "Motion JPEG",
+        "profile": "Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "MJPG",
+        "codec_tag": "0x47504a4d",
+        "width": 3840,
+        "height": 2160,
+        "coded_width": 3840,
+        "coded_height": 2160,
+        "closed_captions": 0,
+        "has_b_frames": 0,
+        "pix_fmt": "yuvj422p",
+        "level": -99,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "refs": 1,
+        "r_frame_rate": "10000000/333333",
+        "avg_frame_rate": "10000000/333333",
+        "time_base": "333333/10000000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1555,
+        "duration": "51.833282",
+        "bit_rate": "130232340",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1555",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        }
+      },
+      "decoded_frame_count": 1555,
+      "decoded_frame_dimensions": [
+        [
+          3840,
+          2160
+        ]
+      ],
+      "terminal_opencv_frame_position": 1555.0,
+      "header_count_matches_decoded": true,
+      "fps_numerator": 10000000,
+      "fps_denominator": 333333,
+      "duration_from_decoded_count_fraction_s": "103666563/2000000",
+      "duration_s": 51.8332815,
+      "duration_ns": 51833281500,
+      "last_frame_nominal_time_s": 51.7999482,
+      "original_zip_mtime_utc_s": 1788939223,
+      "conditional_video_start_utc_ns": 1788939171166718500,
+      "conditional_timing_note": "Retains mtime-minus-N/fps assumption; decoding does not establish physical synchronization.",
+      "ffprobe_full_count_crosscheck": null,
+      "contact_sheet_positions": [
+        {
+          "fraction_label": "10%",
+          "frame_index_zero_based": 156,
+          "nominal_time_s": 5.1999948
+        },
+        {
+          "fraction_label": "50%",
+          "frame_index_zero_based": 778,
+          "nominal_time_s": 25.9333074
+        },
+        {
+          "fraction_label": "90%",
+          "frame_index_zero_based": 1400,
+          "nominal_time_s": 46.66662
+        }
+      ],
+      "wall_time_s": 33.22968379700251
+    },
+    {
+      "case": "data2",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/Video_20260911_162146381.avi",
+      "source_video_sha256_from_manifest": "63c87a836f56f699b7960c34b12f847017878bd1e372cbc7cb0b0a380c227f11",
+      "source_hash_recomputed_here": false,
+      "source_bytes_match_manifest": true,
+      "method": "OpenCV full sequential read of every original-resolution frame; no resized or temporal-subsampled input",
+      "opencv_version": "4.11.0",
+      "opencv_reported_frame_count": 1393,
+      "opencv_reported_fps": 30.00003000003,
+      "ffprobe_initial_metadata": {
+        "index": 0,
+        "codec_name": "mjpeg",
+        "codec_long_name": "Motion JPEG",
+        "profile": "Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "MJPG",
+        "codec_tag": "0x47504a4d",
+        "width": 3840,
+        "height": 2160,
+        "coded_width": 3840,
+        "coded_height": 2160,
+        "closed_captions": 0,
+        "has_b_frames": 0,
+        "pix_fmt": "yuvj422p",
+        "level": -99,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "refs": 1,
+        "r_frame_rate": "10000000/333333",
+        "avg_frame_rate": "10000000/333333",
+        "time_base": "333333/10000000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1393,
+        "duration": "46.433287",
+        "bit_rate": "134966162",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1393",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        }
+      },
+      "decoded_frame_count": 1393,
+      "decoded_frame_dimensions": [
+        [
+          3840,
+          2160
+        ]
+      ],
+      "terminal_opencv_frame_position": 1393.0,
+      "header_count_matches_decoded": true,
+      "fps_numerator": 10000000,
+      "fps_denominator": 333333,
+      "duration_from_decoded_count_fraction_s": "464332869/10000000",
+      "duration_s": 46.4332869,
+      "duration_ns": 46433286900,
+      "last_frame_nominal_time_s": 46.3999536,
+      "original_zip_mtime_utc_s": 1789114953,
+      "conditional_video_start_utc_ns": 1789114906566713100,
+      "conditional_timing_note": "Retains mtime-minus-N/fps assumption; decoding does not establish physical synchronization.",
+      "ffprobe_full_count_crosscheck": null,
+      "contact_sheet_positions": [
+        {
+          "fraction_label": "10%",
+          "frame_index_zero_based": 139,
+          "nominal_time_s": 4.6333287
+        },
+        {
+          "fraction_label": "50%",
+          "frame_index_zero_based": 696,
+          "nominal_time_s": 23.1999768
+        },
+        {
+          "fraction_label": "90%",
+          "frame_index_zero_based": 1254,
+          "nominal_time_s": 41.7999582
+        }
+      ],
+      "wall_time_s": 30.069066420997842
+    },
+    {
+      "case": "data3",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data3/data3/Video_20260911_YJC_3.avi",
+      "source_video_sha256_from_manifest": "de8d446956c0d5c782a646bf60587fc85c291d57f61271d3b198ec059d86cb68",
+      "source_hash_recomputed_here": false,
+      "source_bytes_match_manifest": true,
+      "method": "OpenCV full sequential read of every original-resolution frame; no resized or temporal-subsampled input",
+      "opencv_version": "4.11.0",
+      "opencv_reported_frame_count": 2221,
+      "opencv_reported_fps": 30.00003000003,
+      "ffprobe_initial_metadata": {
+        "index": 0,
+        "codec_name": "mjpeg",
+        "codec_long_name": "Motion JPEG",
+        "profile": "Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "MJPG",
+        "codec_tag": "0x47504a4d",
+        "width": 3840,
+        "height": 2160,
+        "coded_width": 3840,
+        "coded_height": 2160,
+        "closed_captions": 0,
+        "has_b_frames": 0,
+        "pix_fmt": "yuvj422p",
+        "level": -99,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "refs": 1,
+        "r_frame_rate": "10000000/333333",
+        "avg_frame_rate": "10000000/333333",
+        "time_base": "333333/10000000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2221,
+        "duration": "74.033259",
+        "bit_rate": "138819799",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2221",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        }
+      },
+      "decoded_frame_count": 2221,
+      "decoded_frame_dimensions": [
+        [
+          3840,
+          2160
+        ]
+      ],
+      "terminal_opencv_frame_position": 2221.0,
+      "header_count_matches_decoded": true,
+      "fps_numerator": 10000000,
+      "fps_denominator": 333333,
+      "duration_from_decoded_count_fraction_s": "740332593/10000000",
+      "duration_s": 74.0332593,
+      "duration_ns": 74033259300,
+      "last_frame_nominal_time_s": 73.999926,
+      "original_zip_mtime_utc_s": 1789115371,
+      "conditional_video_start_utc_ns": 1789115296966740700,
+      "conditional_timing_note": "Retains mtime-minus-N/fps assumption; decoding does not establish physical synchronization.",
+      "ffprobe_full_count_crosscheck": null,
+      "contact_sheet_positions": [
+        {
+          "fraction_label": "10%",
+          "frame_index_zero_based": 222,
+          "nominal_time_s": 7.3999926
+        },
+        {
+          "fraction_label": "50%",
+          "frame_index_zero_based": 1110,
+          "nominal_time_s": 36.999963
+        },
+        {
+          "fraction_label": "90%",
+          "frame_index_zero_based": 1999,
+          "nominal_time_s": 66.6332667
+        }
+      ],
+      "wall_time_s": 50.325840869001695
+    },
+    {
+      "case": "data4",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data4/data4/Video_20260911_XUEZHANG1.avi",
+      "source_video_sha256_from_manifest": "c89625ff40f604b3b8e8ad2df66a0d94d319d1a6142c99765b53c7a210d6965b",
+      "source_hash_recomputed_here": false,
+      "source_bytes_match_manifest": true,
+      "method": "OpenCV full sequential read of every original-resolution frame; no resized or temporal-subsampled input",
+      "opencv_version": "4.11.0",
+      "opencv_reported_frame_count": 10693,
+      "opencv_reported_fps": 180.00180001800018,
+      "ffprobe_initial_metadata": {
+        "index": 0,
+        "codec_name": "mjpeg",
+        "codec_long_name": "Motion JPEG",
+        "profile": "Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "MJPG",
+        "codec_tag": "0x47504a4d",
+        "width": 1280,
+        "height": 720,
+        "coded_width": 1280,
+        "coded_height": 720,
+        "closed_captions": 0,
+        "has_b_frames": 0,
+        "pix_fmt": "yuvj422p",
+        "level": -99,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "refs": 1,
+        "r_frame_rate": "2000000/11111",
+        "avg_frame_rate": "2000000/11111",
+        "time_base": "11111/2000000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 10693,
+        "duration": "59.404961",
+        "bit_rate": "162008276",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "10693",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        }
+      },
+      "decoded_frame_count": 10693,
+      "decoded_frame_dimensions": [
+        [
+          1280,
+          720
+        ]
+      ],
+      "terminal_opencv_frame_position": 10693.0,
+      "header_count_matches_decoded": true,
+      "fps_numerator": 2000000,
+      "fps_denominator": 11111,
+      "duration_from_decoded_count_fraction_s": "118809923/2000000",
+      "duration_s": 59.4049615,
+      "duration_ns": 59404961500,
+      "last_frame_nominal_time_s": 59.399406,
+      "original_zip_mtime_utc_s": 1789115740,
+      "conditional_video_start_utc_ns": 1789115680595038500,
+      "conditional_timing_note": "Retains mtime-minus-N/fps assumption; decoding does not establish physical synchronization.",
+      "ffprobe_full_count_crosscheck": {
+        "command_without_input_path": [
+          "ffprobe",
+          "-v",
+          "error",
+          "-threads",
+          "1",
+          "-select_streams",
+          "v:0",
+          "-count_frames",
+          "-show_entries",
+          "stream=codec_name,width,height,avg_frame_rate,r_frame_rate,time_base,duration,nb_frames,nb_read_frames",
+          "-of",
+          "json"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "result": {
+          "programs": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "width": 1280,
+              "height": 720,
+              "r_frame_rate": "2000000/11111",
+              "avg_frame_rate": "2000000/11111",
+              "time_base": "11111/2000000",
+              "duration": "59.404961",
+              "nb_frames": "10693",
+              "nb_read_frames": "10693"
+            }
+          ]
+        }
+      },
+      "contact_sheet_positions": [
+        {
+          "fraction_label": "10%",
+          "frame_index_zero_based": 1069,
+          "nominal_time_s": 5.9388295
+        },
+        {
+          "fraction_label": "50%",
+          "frame_index_zero_based": 5346,
+          "nominal_time_s": 29.699703
+        },
+        {
+          "fraction_label": "90%",
+          "frame_index_zero_based": 9624,
+          "nominal_time_s": 53.466132
+        }
+      ],
+      "wall_time_s": 65.78084380300061
+    },
+    {
+      "case": "data5",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data5/data5/Video_20260911_XUEZHANG2.avi",
+      "source_video_sha256_from_manifest": "3920d5b1fc9799830aa7027fe60b02f93384dae202ab56c8a5b8ed2b93f69a17",
+      "source_hash_recomputed_here": false,
+      "source_bytes_match_manifest": true,
+      "method": "OpenCV full sequential read of every original-resolution frame; no resized or temporal-subsampled input",
+      "opencv_version": "4.11.0",
+      "opencv_reported_frame_count": 1866,
+      "opencv_reported_fps": 30.00003000003,
+      "ffprobe_initial_metadata": {
+        "index": 0,
+        "codec_name": "mjpeg",
+        "codec_long_name": "Motion JPEG",
+        "profile": "Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "MJPG",
+        "codec_tag": "0x47504a4d",
+        "width": 3840,
+        "height": 2160,
+        "coded_width": 3840,
+        "coded_height": 2160,
+        "closed_captions": 0,
+        "has_b_frames": 0,
+        "pix_fmt": "yuvj422p",
+        "level": -99,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "refs": 1,
+        "r_frame_rate": "10000000/333333",
+        "avg_frame_rate": "10000000/333333",
+        "time_base": "333333/10000000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1866,
+        "duration": "62.199938",
+        "bit_rate": "136866752",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "1866",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        }
+      },
+      "decoded_frame_count": 1866,
+      "decoded_frame_dimensions": [
+        [
+          3840,
+          2160
+        ]
+      ],
+      "terminal_opencv_frame_position": 1866.0,
+      "header_count_matches_decoded": true,
+      "fps_numerator": 10000000,
+      "fps_denominator": 333333,
+      "duration_from_decoded_count_fraction_s": "310999689/5000000",
+      "duration_s": 62.1999378,
+      "duration_ns": 62199937800,
+      "last_frame_nominal_time_s": 62.1666045,
+      "original_zip_mtime_utc_s": 1789116025,
+      "conditional_video_start_utc_ns": 1789115962800062200,
+      "conditional_timing_note": "Retains mtime-minus-N/fps assumption; decoding does not establish physical synchronization.",
+      "ffprobe_full_count_crosscheck": null,
+      "contact_sheet_positions": [
+        {
+          "fraction_label": "10%",
+          "frame_index_zero_based": 187,
+          "nominal_time_s": 6.2333271
+        },
+        {
+          "fraction_label": "50%",
+          "frame_index_zero_based": 933,
+          "nominal_time_s": 31.0999689
+        },
+        {
+          "fraction_label": "90%",
+          "frame_index_zero_based": 1679,
+          "nominal_time_s": 55.9666107
+        }
+      ],
+      "wall_time_s": 43.1182260400019
+    },
+    {
+      "case": "data6",
+      "source_video": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data6/data6/Video_20260911_YJC_4.avi",
+      "source_video_sha256_from_manifest": "78208661610ca27e1de7ade6e8e079411e120df0248c87c066250df3f25c7ea6",
+      "source_hash_recomputed_here": false,
+      "source_bytes_match_manifest": true,
+      "method": "OpenCV full sequential read of every original-resolution frame; no resized or temporal-subsampled input",
+      "opencv_version": "4.11.0",
+      "opencv_reported_frame_count": 2148,
+      "opencv_reported_fps": 30.00003000003,
+      "ffprobe_initial_metadata": {
+        "index": 0,
+        "codec_name": "mjpeg",
+        "codec_long_name": "Motion JPEG",
+        "profile": "Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "MJPG",
+        "codec_tag": "0x47504a4d",
+        "width": 3840,
+        "height": 2160,
+        "coded_width": 3840,
+        "coded_height": 2160,
+        "closed_captions": 0,
+        "has_b_frames": 0,
+        "pix_fmt": "yuvj422p",
+        "level": -99,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "refs": 1,
+        "r_frame_rate": "10000000/333333",
+        "avg_frame_rate": "10000000/333333",
+        "time_base": "333333/10000000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2148,
+        "duration": "71.599928",
+        "bit_rate": "141576263",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2148",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        }
+      },
+      "decoded_frame_count": 2148,
+      "decoded_frame_dimensions": [
+        [
+          3840,
+          2160
+        ]
+      ],
+      "terminal_opencv_frame_position": 2148.0,
+      "header_count_matches_decoded": true,
+      "fps_numerator": 10000000,
+      "fps_denominator": 333333,
+      "duration_from_decoded_count_fraction_s": "178999821/2500000",
+      "duration_s": 71.5999284,
+      "duration_ns": 71599928400,
+      "last_frame_nominal_time_s": 71.5665951,
+      "original_zip_mtime_utc_s": 1789116398,
+      "conditional_video_start_utc_ns": 1789116326400071600,
+      "conditional_timing_note": "Retains mtime-minus-N/fps assumption; decoding does not establish physical synchronization.",
+      "ffprobe_full_count_crosscheck": null,
+      "contact_sheet_positions": [
+        {
+          "fraction_label": "10%",
+          "frame_index_zero_based": 215,
+          "nominal_time_s": 7.1666595
+        },
+        {
+          "fraction_label": "50%",
+          "frame_index_zero_based": 1074,
+          "nominal_time_s": 35.7999642
+        },
+        {
+          "fraction_label": "90%",
+          "frame_index_zero_based": 1933,
+          "nominal_time_s": 64.4332689
+        }
+      ],
+      "wall_time_s": 52.73745752999821
+    }
+  ],
+  "originals_modified": false,
+  "predictions_read": false,
+  "inference_rerun_or_resampled": false,
+  "contact_sheet_sha256": "1d365d20f3e1664fe6d5570c49fa3c60d52ff84db37cfd6aea3a2f8feba5abba",
+  "limits": [
+    "OpenCV stopping at EOF is cross-checked with ffprobe full frame counting for data4.",
+    "No scene identity inference is performed.",
+    "Counts validate decodable frames; synchronization and device HR delay remain uncalibrated."
+  ]
+}

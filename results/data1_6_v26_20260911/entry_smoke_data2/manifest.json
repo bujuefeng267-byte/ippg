@@ -1,0 +1,148 @@
+{
+  "created_utc": "2026-09-11T14:47:02.367219+00:00",
+  "status": "complete",
+  "variant": "component",
+  "parameters": {
+    "rgb_aggregation": "trimmed_mean",
+    "pixel_mode": "tracking_screened",
+    "max_gap_s": 0.1,
+    "window_s": 10.0,
+    "step_s": 1.0,
+    "min_bpm": 42.0,
+    "max_bpm": 210.0,
+    "max_seconds": null,
+    "rgb_reconstruction": "anchored_log"
+  },
+  "component_config": {
+    "min_rois": 2,
+    "min_observed": 0.9,
+    "min_quality": 0.2,
+    "pass_half_width_bpm": 6.0,
+    "stop_half_width_bpm": 12.0,
+    "min_component_correlation": 0.15,
+    "min_tracked_fraction": 0.6,
+    "max_reset_fraction": 0.05
+  },
+  "pixel_config": {
+    "max_points_per_roi": 100,
+    "patch_radius": 3,
+    "min_tracks": 12,
+    "fb_max_px": 0.5,
+    "screen_z": 3.0,
+    "screen_floor": 0.003,
+    "tracking_width": 960
+  },
+  "anchor_config": {
+    "anchor_hz": 0.15,
+    "anchor_order": 4
+  },
+  "hr_config": {
+    "min_relative_power": 0.05,
+    "min_prominence": 0.02,
+    "peak_distance_bpm": 6.0,
+    "candidate_radius_bpm": 3.0,
+    "max_candidates": 8,
+    "spectral_weight": 0.35,
+    "periodic_weight": 1.1,
+    "harmonic_weight": 1.0,
+    "motion_weight": 1.25,
+    "third_harmonic_weight": 0.35,
+    "transition_penalty": 0.05,
+    "max_rate_bpm_per_s": 12.0,
+    "reacquisition_cost": 3.0,
+    "candidate_offset_penalty": 0.025
+  },
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "analyze_components_v26.py": "9df2e246236619636f49c5b5e0d882734c197099df85f01378d3b23a07e1236e",
+    "component_fusion_v26.py": "7a15fedaf099f8dfcb7684e3eb0184596b080c9b9f9a1731dcf2bbd1344a4390"
+  },
+  "video": {
+    "path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data2/data2/Video_20260911_162146381.avi",
+    "bytes": 783268352,
+    "sha256": "63c87a836f56f699b7960c34b12f847017878bd1e372cbc7cb0b0a380c227f11"
+  },
+  "container_probe": {
+    "fps": 30.00003000003,
+    "width": 3840,
+    "height": 2160,
+    "container_reported_frames": 1393
+  },
+  "trace_cache": {
+    "path": "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/frame_trace.csv",
+    "metadata_path": "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data2/inference/frame_trace.json",
+    "trace_sha256": "b199f2d09dea171754ff6042688c0bfd2964d3672ef748a04c604a1ed1eb53c2",
+    "metadata_sha256": "8cdd6490cf924fef8782980996b5fe573c344a3b204011d242b9354d6c2e2835",
+    "video_identity_registry": {
+      "path": "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/inputs_manifest.json",
+      "sha256": "b4e0a49d3a65b5ab79c43325db4fdf8937511fd6a97f09813db030a42ceff14b",
+      "use": "video path/bytes/SHA256 only; no reference file read"
+    }
+  },
+  "reference_used": false,
+  "offline": true,
+  "hr_from_saved_waveform": true,
+  "status_of_algorithm": "experimental; does not replace the V25 recommended entry point",
+  "limitations": [
+    "Fixed frame/FPS time axis assumes constant frame rate; VFR PTS are not modeled.",
+    "Adaptively band-limited measured components do not validate full PPG morphology.",
+    "Sampling and HR coverage are availability, not reference accuracy.",
+    "Quality and motion scores are engineering evidence, not accuracy probabilities.",
+    "Observation masks describe contributing samples, not the full filter receptive field.",
+    "No reference file, target HR, per-video tuning, or HR interpolation is used."
+  ],
+  "summary": {
+    "variant": "component",
+    "fps": 30.00003000003,
+    "frames": 1393,
+    "waveform_coverage_pct": 86.14501076812635,
+    "planned_windows": 37,
+    "accepted_windows": 31,
+    "hr_coverage_pct": 83.78378378378379,
+    "reference_used": false,
+    "offline": true,
+    "hr_from_saved_waveform": true,
+    "elapsed_s": 1.685583640999539,
+    "extraction_path": "verified_trace_cache",
+    "source_hashes": {
+      "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+      "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+      "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+      "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+      "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+      "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+      "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+      "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+      "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+      "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+      "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+      "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+      "analyze_components_v26.py": "9df2e246236619636f49c5b5e0d882734c197099df85f01378d3b23a07e1236e",
+      "component_fusion_v26.py": "7a15fedaf099f8dfcb7684e3eb0184596b080c9b9f9a1731dcf2bbd1344a4390"
+    }
+  },
+  "outputs": {
+    "all_roi_candidates.json": "19ca7ce1f8c38b04f0da7c1b5c803853bf15e4190b8b654c14683b178704cc8c",
+    "baseline_roi_waveforms.csv": "62c875f96ab6249fa78e75bc5ceb2288cc66f5ba2451d0d824b9aeb6dd4453f5",
+    "component_proposals.csv": "793c1ccc9812cfdbdc914fcf186b2198a5c839f4e58e5d71d0ff9cf8c895d70c",
+    "frame_trace.csv": "b199f2d09dea171754ff6042688c0bfd2964d3672ef748a04c604a1ed1eb53c2",
+    "frame_trace.json": "baa6dbb3112343bb2e41a1ed9b7a552fc536dadf90f689d38a8259de840d7dd4",
+    "heart_rate.csv": "8ab4251f77f195b7201d82fac7749aae8a0312fff1e33cb780d8dcc2027ae715",
+    "roi_waveforms.csv": "0c5c8634ba574cd725d035dc90868957792f6fef1b142e6d1fc6048feb3d3724",
+    "summary.json": "7807606723bd407fec342b21daaecd75dbcf4beb8bef256352c9fb2ccbe77979",
+    "waveform.csv": "3cd3e19511a584a59ebd20a91fc59ffde0d171ae99c03155152f76c0a918be05"
+  }
+}

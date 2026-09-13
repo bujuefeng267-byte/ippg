@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-09-09T11:19:19.168532+00:00",
+  "video_start_utc_ns": 1788939171166718500,
+  "video_start_utc_estimate": "2026-09-09T07:32:51.166718+00:00",
+  "video_mtime_utc_seconds": 1788939223,
+  "video_duration_seconds": 51.8332815,
+  "video_duration_ns": 51833281500,
+  "fps_numerator": 10000000,
+  "fps_denominator": 333333,
+  "frames": 1555,
+  "video_start_source": "Original inner-ZIP extended Unix modification time minus decoded video duration.",
+  "alignment_status": "estimated_from_file_mtime_not_hardware_synchronized",
+  "assumption": "The archived modification time is close to the end of recording; file flush latency and cross-device clock offsets are unknown.",
+  "timestamp_resolution_s": 1,
+  "supporting_evidence": "Reference ZIP file modification seconds coincide with the final recorded notification/session stop seconds; container and sampled video do not supply a verified shared timestamp.",
+  "sensitivity_shifts_s": [
+    -5,
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    5
+  ],
+  "shift_sign": "Positive shifts place video start later on the reference UTC clock.",
+  "sensitivity_interpretation": "Illustrative timestamp-assumption shifts only, not a confidence interval, error bound, or selection of the smallest error.",
+  "reference_csv": "inputs/reference/20260909_YJC_2/polar_hr.csv",
+  "reference_time_column": "host_utc_ns",
+  "reference_value_column": "hr_bpm",
+  "reference_kind": "User-designated Polar device HR notifications; not ECG; physiological notification delay is unknown.",
+  "reference_window_s": 10,
+  "reference_aggregation": "Arithmetic mean of finite positive HR notifications in [window_center-5,window_center+5).",
+  "reference_coverage": "Window must lie inside first-reference to last-reference plus median interval; at least two reference values; no internal timestamp gap greater than 2 seconds.",
+  "max_reference_gap_s": 2,
+  "reporting": "Primary metrics remain conditional on this timestamp assumption; all six frozen branches, own and common windows, output coverage and full-reference R5 denominators.",
+  "waveform_snr": "Hann full-window Welch, NFFT=8192, band 0.7–3.5 Hz, reference HR H1 +/-0.1 Hz.",
+  "inference_source_hashes": {
+    "analyze_motion_v2.py": "9a3fa21230ffde582770fb694787e01ac92c9baec75339533a2b17f0d78d8154",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+    "motion_frontend.py": "13d69f03d637acef1ed843712529f6640b00c73de5f7b3f29aef0d19b5558700",
+    "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115"
+  },
+  "input_hashes": {
+    "input_archives\\Video_20260909_YJC_2.zip": "63dd9d48d3745420ba0839a850880009883e83cba2398e4badb0b96f0fc11d24",
+    "inputs\\reference\\20260909_YJC_2\\polar_hr.csv": "ecdd31359f0285ebb0d91834d85fc9faeaf0c1bea9e75a331b3a64bcc2f5daa6",
+    "predictions\\summary.json": "205a7375817c72561fdf5ba52693945d4840296491848f791a167dbbbeaf7091"
+  }
+}

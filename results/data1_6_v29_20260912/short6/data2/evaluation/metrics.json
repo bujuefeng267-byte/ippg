@@ -1,0 +1,132 @@
+{
+  "native6s": {
+    "profile": "short6",
+    "case": "data2",
+    "window_s": 6,
+    "Nplanned": 41,
+    "Noutput": 33,
+    "Nref": 41,
+    "Nvalid": 33,
+    "Nwithin5": 13,
+    "Nwithin10": 20,
+    "hr_output_coverage_pct": 80.48780487804878,
+    "paired_reference_coverage_pct": 80.48780487804878,
+    "MAE_bpm": 11.843434343434343,
+    "RMSE_bpm": 16.043580169228584,
+    "Bias_bpm": -10.358585858585858,
+    "MAPE_pct": 15.098402767527071,
+    "P5_valid_pct": 39.39393939393939,
+    "P10_valid_pct": 60.60606060606061,
+    "R5_all_reference_pct": 31.70731707317073,
+    "R10_all_reference_pct": 48.78048780487805,
+    "P95_abs_error_bpm": 31.36666666666667,
+    "Max_abs_error_bpm": 32.33333333333333,
+    "LoA_lower_descriptive_bpm": -34.74359081554336,
+    "LoA_upper_descriptive_bpm": 14.026419098371637,
+    "first_accepted_center_s": 8.999991,
+    "first_accepted_window_start_s": 5.999994,
+    "first_accepted_window_end_s": 11.999988,
+    "waveform_coverage_pct": 81.83776022972002,
+    "first_finite_time_s": 5.999994,
+    "missing_duration_s": 8.433324899999999,
+    "longest_missing_s": 5.999994
+  },
+  "common10s": {
+    "profile": "short6",
+    "case": "data2",
+    "window_s": 10,
+    "Nplanned": 37,
+    "Noutput": 29,
+    "Nref": 37,
+    "Nvalid": 29,
+    "Nwithin5": 18,
+    "Nwithin10": 27,
+    "hr_output_coverage_pct": 78.37837837837837,
+    "paired_reference_coverage_pct": 78.37837837837837,
+    "MAE_bpm": 4.1724137931034475,
+    "RMSE_bpm": 5.447239098213282,
+    "Bias_bpm": -2.758620689655173,
+    "MAPE_pct": 5.245061770926631,
+    "P5_valid_pct": 62.06896551724138,
+    "P10_valid_pct": 93.10344827586206,
+    "R5_all_reference_pct": 48.648648648648646,
+    "R10_all_reference_pct": 72.97297297297297,
+    "P95_abs_error_bpm": 11.95999999999999,
+    "Max_abs_error_bpm": 14.099999999999994,
+    "LoA_lower_descriptive_bpm": -12.12782446107272,
+    "LoA_upper_descriptive_bpm": 6.610583081762375,
+    "delta_MAE_bpm": 1.1572622779519333,
+    "delta_RMSE_bpm": 1.6359719105501593,
+    "delta_P5_valid_pct": -25.809822361546495,
+    "delta_R5_all_reference_pct": -29.729729729729726,
+    "delta_hr_output_coverage_pct": -10.810810810810821,
+    "common_windows": 29,
+    "new_windows": 0,
+    "lost_windows": 4,
+    "common_MAE_bpm": 4.1724137931034475,
+    "common_V28_MAE_bpm": 3.09655172413793,
+    "new_MAE_bpm": null,
+    "new_Nwithin5": 0,
+    "new_P5_valid_pct": null,
+    "lost_V28_MAE_bpm": 2.4250000000000007
+  },
+  "native_coverage_groups": {
+    "shared_center_both_output": {
+      "Nvalid": 31,
+      "Nwithin5": 11,
+      "MAE_bpm": 12.526881720430106,
+      "RMSE_bpm": 16.549318061944795,
+      "P5_valid_pct": 35.483870967741936
+    },
+    "shared_center_new_output": {
+      "Nvalid": 2,
+      "Nwithin5": 2,
+      "MAE_bpm": 1.25,
+      "RMSE_bpm": 1.379412113103902,
+      "P5_valid_pct": 100.0
+    },
+    "native_only_plan_output": {
+      "Nvalid": 0,
+      "Nwithin5": 0,
+      "MAE_bpm": null,
+      "RMSE_bpm": null,
+      "P5_valid_pct": null
+    },
+    "native_plan_only_windows": 4,
+    "shared_center_windows": 37,
+    "interpretation": "Native 6 s estimates scored against 6 s reference means; V28 10 s acceptance is used only to classify added coverage at matching actual centers"
+  },
+  "common_coverage_groups": {
+    "common_output_windows": 29,
+    "new_output_windows": 0,
+    "lost_output_windows": 4,
+    "common_new": {
+      "Nvalid": 29,
+      "Nwithin5": 18,
+      "MAE_bpm": 4.1724137931034475,
+      "RMSE_bpm": 5.447239098213282,
+      "P5_valid_pct": 62.06896551724138
+    },
+    "common_V28": {
+      "Nvalid": 29,
+      "Nwithin5": 25,
+      "MAE_bpm": 3.09655172413793,
+      "RMSE_bpm": 3.9631927220013066,
+      "P5_valid_pct": 86.20689655172413
+    },
+    "newly_covered": {
+      "Nvalid": 0,
+      "Nwithin5": 0,
+      "MAE_bpm": null,
+      "RMSE_bpm": null,
+      "P5_valid_pct": null
+    },
+    "lost_V28": {
+      "Nvalid": 4,
+      "Nwithin5": 4,
+      "MAE_bpm": 2.4250000000000007,
+      "RMSE_bpm": 2.4418230894149566,
+      "P5_valid_pct": 100.0
+    }
+  }
+}

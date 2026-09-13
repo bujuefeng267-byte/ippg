@@ -1,0 +1,208 @@
+[
+  {
+    "segment_index": 0,
+    "start_frame": 0,
+    "end_frame_exclusive": 4,
+    "start_s": 0.0,
+    "end_s": 0.13333319999999999,
+    "roi_names": [],
+    "status": "insufficient_rois_with_fixed_forehead"
+  },
+  {
+    "segment_index": 1,
+    "start_frame": 4,
+    "end_frame_exclusive": 88,
+    "start_s": 0.13333319999999999,
+    "end_s": 2.9333304,
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "status": "segment_too_short"
+  },
+  {
+    "segment_index": 2,
+    "start_frame": 88,
+    "end_frame_exclusive": 92,
+    "start_s": 2.9333304,
+    "end_s": 3.0666636,
+    "roi_names": [],
+    "status": "insufficient_rois_with_fixed_forehead"
+  },
+  {
+    "segment_index": 3,
+    "start_frame": 92,
+    "end_frame_exclusive": 610,
+    "start_s": 3.0666636,
+    "end_s": 20.333313,
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "status": "processed",
+    "seed_bpm": 133.2982546868734,
+    "seed_source": "video Forehead GREEN only, recomputed per segment",
+    "retained_start_frame": 140,
+    "retained_end_frame_exclusive": 562,
+    "native_author_results": {
+      "default": {
+        "method": "cPACE",
+        "fs": 30.00003000003,
+        "hr_seed_hz": 2.221637578114557,
+        "hr_seed_bpm": 133.2982546868734,
+        "apply_homodyne": true,
+        "roi_names": [
+          "Forehead",
+          "L_Cheek",
+          "R_Cheek"
+        ],
+        "hr_per_roi": {
+          "Forehead": 134.9687736044607,
+          "L_Cheek": 132.62925742808932,
+          "R_Cheek": 132.08350998178383
+        },
+        "hr_consensus_bpm": 132.62925742808932,
+        "plv_lr_cheek": 0.9849259365252563,
+        "scope": "whole finite segment before edge mask; not final window HR",
+        "roi_waveform_std": {
+          "forehead": 0.6946309319440422,
+          "left_cheek": 0.6945331946212019,
+          "right_cheek": 0.6923216310506073
+        }
+      },
+      "no_homodyne": {
+        "method": "cPACE",
+        "fs": 30.00003000003,
+        "hr_seed_hz": 2.221637578114557,
+        "hr_seed_bpm": 133.2982546868734,
+        "apply_homodyne": false,
+        "roi_names": [
+          "Forehead",
+          "L_Cheek",
+          "R_Cheek"
+        ],
+        "hr_per_roi": {
+          "Forehead": 42.000042000042,
+          "L_Cheek": 132.57028478932074,
+          "R_Cheek": 131.70246495583694
+        },
+        "hr_consensus_bpm": 131.70246495583694,
+        "plv_lr_cheek": 0.9787124173717494,
+        "scope": "whole finite segment before edge mask; not final window HR",
+        "roi_waveform_std": {
+          "forehead": 0.05732725191771169,
+          "left_cheek": 0.02219787733376282,
+          "right_cheek": 0.014996660555052005
+        }
+      }
+    },
+    "forehead_selected_eigenvector_matches": [
+      "v1"
+    ]
+  },
+  {
+    "segment_index": 4,
+    "start_frame": 610,
+    "end_frame_exclusive": 614,
+    "start_s": 20.333313,
+    "end_s": 20.4666462,
+    "roi_names": [],
+    "status": "insufficient_rois_with_fixed_forehead"
+  },
+  {
+    "segment_index": 5,
+    "start_frame": 614,
+    "end_frame_exclusive": 695,
+    "start_s": 20.4666462,
+    "end_s": 23.1666435,
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "status": "segment_too_short"
+  },
+  {
+    "segment_index": 6,
+    "start_frame": 695,
+    "end_frame_exclusive": 699,
+    "start_s": 23.1666435,
+    "end_s": 23.2999767,
+    "roi_names": [],
+    "status": "insufficient_rois_with_fixed_forehead"
+  },
+  {
+    "segment_index": 7,
+    "start_frame": 699,
+    "end_frame_exclusive": 1557,
+    "start_s": 23.2999767,
+    "end_s": 51.899948099999996,
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "status": "processed",
+    "seed_bpm": 158.2494012934987,
+    "seed_source": "video Forehead GREEN only, recomputed per segment",
+    "retained_start_frame": 747,
+    "retained_end_frame_exclusive": 1509,
+    "native_author_results": {
+      "default": {
+        "method": "cPACE",
+        "fs": 30.00003000003,
+        "hr_seed_hz": 2.6374900215583117,
+        "hr_seed_bpm": 158.2494012934987,
+        "apply_homodyne": true,
+        "roi_names": [
+          "Forehead",
+          "L_Cheek",
+          "R_Cheek"
+        ],
+        "hr_per_roi": {
+          "Forehead": 156.7835022720814,
+          "L_Cheek": 156.49687038750054,
+          "R_Cheek": 153.81649605384632
+        },
+        "hr_consensus_bpm": 156.49687038750054,
+        "plv_lr_cheek": 0.899515339047057,
+        "scope": "whole finite segment before edge mask; not final window HR",
+        "roi_waveform_std": {
+          "forehead": 0.6212777083972126,
+          "left_cheek": 0.6419348249247138,
+          "right_cheek": 0.6543908060991233
+        }
+      },
+      "no_homodyne": {
+        "method": "cPACE",
+        "fs": 30.00003000003,
+        "hr_seed_hz": 2.6374900215583117,
+        "hr_seed_bpm": 158.2494012934987,
+        "apply_homodyne": false,
+        "roi_names": [
+          "Forehead",
+          "L_Cheek",
+          "R_Cheek"
+        ],
+        "hr_per_roi": {
+          "Forehead": 156.8093619873194,
+          "L_Cheek": 149.7304795030795,
+          "R_Cheek": 151.1850847319715
+        },
+        "hr_consensus_bpm": 151.1850847319715,
+        "plv_lr_cheek": 0.9171082932159607,
+        "scope": "whole finite segment before edge mask; not final window HR",
+        "roi_waveform_std": {
+          "forehead": 0.041217960304916944,
+          "left_cheek": 0.020644697073259787,
+          "right_cheek": 0.013730390031471381
+        }
+      }
+    },
+    "forehead_selected_eigenvector_matches": [
+      "v1"
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "installation_authorized": true,
+  "authorization": "User requested integrating pixel tracking/motion screening into their rPPG project; default upgrade conditional on verification.",
+  "mode": "experimental",
+  "performance_gate_passed": false,
+  "reason": "Engineering and arithmetic QA passed, but the frozen performance gate failed. Install only the independently named experimental entry; preserve all existing defaults.",
+  "source_hashes": {
+    "analyze_motion_v2.py": "7ea6de8087ffe1bba6b0627f455d89dc183f505eb077d9274af6ba33946ea060",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec"
+  },
+  "evidence": {
+    "validation/protocol_before_validation.json": "4d4caa0aa0c5c6ee46b1b1cd5c61db055a0e23f2131b46fdbec9e9368f6a5f85",
+    "validation/tests.json": "f72320c069635d6912c9ba3349e197a4ec634f36245941b2828790b5a147a167",
+    "validation/runs.json": "5674f45f79a47c435d13914b32c978e20538d3d8b08bcc510e5feeb304901c77",
+    "validation/waveform_replay_qa.json": "b44383aa5d7db28edfafecdb8c37b6f16ef6a98a4357eca9a5423b4710473316",
+    "evaluation_upgrade_criteria.json": "234b52a58868329105992236f7affdae24d0c745b3f21f4b62d7ba79c0ab8a68",
+    "evaluation/summary.json": "e972b314abb28cb250c7653e7ae4a44ec394b5fb02015b6845a48b25dd703f32",
+    "evaluation/upgrade_gate.json": "255a2b79e3e480ff274d6b9a132b1f1e93e4ae17e935ddc1fd558d0daccec932",
+    "independent_qa.json": "bcbef8ec558cd6794d66627c2e1406da590eb153a4bed5e461f3c5d838ff7853",
+    "independent_qa.md": "d1e73bd15df6972c8dad2345f385ebe681c1ecfe147924c6a620c28f6110a019",
+    "像素跟踪接入与实测报告.md": "3ffdffa2f78eda3ed50bd4de93de02e1380530a72219d0520737184f5af9f3b0",
+    "installation_usage.md": "d53a6d5d9193c19dff3b992d5ecf6be3e9d67763e947f0d04982cad294233c43",
+    "evaluate_v23.py": "ce7d736d811f090bdc9bb80304f80441e28e731669a5037aace7c64abb6d8db3",
+    "verify_results_v23.py": "db0fad1207c1391f6f8d9c002ad0d07999f4528d74be0f301b263519cdca4eca",
+    "qa_recompute_waveform_hr.py": "7577120d77eed5f45bd9d0e83ab9f70d5c4ff83e09e7e7eaae6e5db284de5130",
+    "run_validation_v23.py": "4eebb6f5f26a1a60930244e0f0753d21e5edf881c19b812534126865bc7f7140",
+    "export_upgrade_report.py": "15236b4f1ec109491edc61a43e1039950c9ef2c102f90d0b14619ba2829a19f8",
+    "verify_install_v23.py": "89b53149addeb6bdff6421a925322c5e805b635c16273894035074c5e1af44e9"
+  },
+  "entry_point": "analyze_motion_v2.py",
+  "launcher_args": [
+    "--pixel-mode",
+    "tracking_screened",
+    "--max-gap",
+    "0.10"
+  ],
+  "expected_prior_default_sha256": null
+}

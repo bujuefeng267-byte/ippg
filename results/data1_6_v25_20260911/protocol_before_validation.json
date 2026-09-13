@@ -1,0 +1,125 @@
+{
+  "created_utc": "2026-09-11T13:48:17.992566+00:00",
+  "protocol": {
+    "version": "v25-development-1",
+    "created_before_candidate_evaluation": true,
+    "population": "Six previously inspected recordings; development/regression, not held-out validation",
+    "reference_policy": "Reuse each original V24 paired reference window and all seven fixed timing shifts; no offset selection and no reference input to inference",
+    "fixed_video_parameters": {
+      "window_s": 10,
+      "step_s": 1,
+      "min_bpm": 42,
+      "max_bpm": 210,
+      "max_gap_s": 0.1
+    },
+    "stages": [
+      {
+        "name": "v24_replay",
+        "motion_evidence": "legacy",
+        "hr_mode": "legacy",
+        "routing_mode": "legacy"
+      },
+      {
+        "name": "stage1_motion",
+        "motion_evidence": "reliable",
+        "hr_mode": "legacy",
+        "routing_mode": "legacy"
+      },
+      {
+        "name": "stage2_hr",
+        "motion_evidence": "reliable",
+        "hr_mode": "evidence",
+        "routing_mode": "legacy"
+      },
+      {
+        "name": "stage3_routing",
+        "motion_evidence": "reliable",
+        "hr_mode": "evidence",
+        "routing_mode": "evidence"
+      }
+    ],
+    "implementation_parameters": "Fix from physical units and synthetic counterexamples before running each candidate; record all subsequent development revisions",
+    "metrics": [
+      "own-window MAE/RMSE/Bias",
+      "P5_valid_pct",
+      "R5_all_reference_pct",
+      "waveform_coverage_pct",
+      "hr_output_coverage_pct",
+      "common-window MAE",
+      "new and lost windows"
+    ],
+    "adoption_gate": {
+      "pooled_MAE_relative_reduction_min": 0.1,
+      "pooled_R5_gain_percentage_points_min": 5,
+      "max_any_case_MAE_increase_bpm": 5,
+      "protected_data2_data4_MAE_increase_max_bpm": 1,
+      "protected_data2_data4_R5_drop_max_percentage_points": 5,
+      "max_any_case_HR_coverage_drop_percentage_points": 5,
+      "max_any_case_waveform_coverage_drop_percentage_points": 5,
+      "common_window_pooled_MAE_must_decrease": true,
+      "interpretation": "Choose only a stage that improves accuracy and full-reference success without material coverage losses; otherwise keep V24 default and expose V25 as experimental only"
+    },
+    "integrity": [
+      "all three pixel processing steps preserved",
+      "cache accepted only with exact identity and source/checksum validation",
+      "accepted HR from finite saved-waveform evidence",
+      "missing HR not held or interpolated",
+      "same 309 planned windows in all six recordings",
+      "legacy flags reproduce frozen V24 core outputs",
+      "source hashes frozen during each stage"
+    ]
+  },
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd"
+  },
+  "runner_sha256": "d47b52c550eea6381cf84beb5019fc2ffcb7965d023cea135465c32496d0ac48",
+  "evaluator_sha256": "4ef630e6e78440469d1d7da8802b9fd2d0bdaf0eb1adfdd2505646e97733c06b",
+  "baseline_reference_hashes": {
+    "data1": "d712073f9dfdeee92e17456dcbd3189fdbaec48300938474bc81ba0356d154f2",
+    "data2": "24dd164ef62b06917bc506f5276e0d9f54cb6793e29032f410051199df03d318",
+    "data3": "9df3925eadbd9cef71005e25f73382fc24ffab33729c1f1d24e47023d368b3f8",
+    "data4": "8621006dfd611958ebee93bff1f22d8ba3130caba4bdcf4a13d3e3804315fb3d",
+    "data5": "4be20d34595e40e124e7f708b7bd75a06296bbfd1d5269c50f60d1aac1e0af41",
+    "data6": "a65ac803ac3e5589407e50f74283e5d6e29cc5875f6180ec25efbdf4917df238"
+  },
+  "caches": {
+    "data1": {
+      "csv": "a72012d6920d64971833fbc0370138b3efad8cc0134f34ac5bb029e3d54122ac",
+      "metadata": "a9be0110543a8a25f3d6247bbe85f64a22a87cd41cd46984af9666ef5070b15e"
+    },
+    "data2": {
+      "csv": "b199f2d09dea171754ff6042688c0bfd2964d3672ef748a04c604a1ed1eb53c2",
+      "metadata": "8cdd6490cf924fef8782980996b5fe573c344a3b204011d242b9354d6c2e2835"
+    },
+    "data3": {
+      "csv": "1f43aee4a224536933b58e7e616e60d00936e158d1260eb18fb44618fb74f5e3",
+      "metadata": "d8b92b8ca113d85f13682cb4d97db8c55accb850992315c250292c37b8ec50bb"
+    },
+    "data4": {
+      "csv": "9ac57523f498642409c4217c5945f133619ba81568ca19010cfa36b91593053f",
+      "metadata": "12c74765510f8d350b85665b6644e88444787bab6f270a8f9580ab4f8627d587"
+    },
+    "data5": {
+      "csv": "9762dc041c7414e1d1dcb5e89535a4ecebd96cd5b79cc1da9aa925e21dc80c1d",
+      "metadata": "61551dbb6f325eb4d5609513111fc57bf5174807c43e7b18610aa274c7f346ba"
+    },
+    "data6": {
+      "csv": "c9f027f1cc90b87bfbb8a462e84b7bd72adf565a09ed313394bbb204c764c907",
+      "metadata": "71948127b59cbbe68407d2da6ed8945aa55ad462e26c7bc4b3f58559a885240f"
+    }
+  },
+  "cache_policy": "Exact identity and frontend source hashes validated by unchanged V24 loader; all waveforms/proposals/HR regenerated.",
+  "inference_reference_access": "No reference file argument or read in inference modules"
+}

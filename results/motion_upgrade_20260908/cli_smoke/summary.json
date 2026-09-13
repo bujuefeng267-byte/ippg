@@ -1,0 +1,67 @@
+{
+  "identity": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+    "size": 1425830568,
+    "mtime_ns": 1788405743301475200,
+    "frontend": "robust",
+    "max_seconds": 15.0,
+    "source_sha256": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad"
+  },
+  "fps": 29.264106,
+  "frames": 439,
+  "observed_rgb_fraction": 1.0,
+  "source_counts": {
+    "mesh": 439
+  },
+  "config": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+    "output": "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_upgrade/validation_final/cli_smoke",
+    "frontend": "robust",
+    "cache": null,
+    "max_seconds": 15.0,
+    "max_gap": 0.1,
+    "window": 10,
+    "step": 1,
+    "min_bpm": 42,
+    "max_bpm": 210,
+    "reference_ubfc": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/ground_truth.txt",
+    "nlms": false
+  },
+  "warning": "Experimental offline estimates. Coverage/continuity are not accuracy. DP uses future windows. NLMS may suppress pulse correlated with motion.",
+  "variants": {
+    "pos": {
+      "total_windows": 6,
+      "accepted_windows": 2,
+      "accepted_fraction": 0.3333333333333333,
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 2,
+          "mae_bpm": 2.073458056711395,
+          "rmse_bpm": 2.2249534558341244
+        },
+        "ridge_bpm": {
+          "n": 2,
+          "mae_bpm": 1.5734580567113952,
+          "rmse_bpm": 1.6031209086502178
+        }
+      }
+    },
+    "chrom": {
+      "total_windows": 6,
+      "accepted_windows": 2,
+      "accepted_fraction": 0.3333333333333333,
+      "reference": {
+        "spectral_peak_bpm": {
+          "n": 2,
+          "mae_bpm": 1.0734580567113952,
+          "rmse_bpm": 1.342945183991299
+        },
+        "ridge_bpm": {
+          "n": 2,
+          "mae_bpm": 0.5734580567113952,
+          "rmse_bpm": 0.6504464115733979
+        }
+      }
+    }
+  }
+}

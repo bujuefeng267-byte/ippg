@@ -1,0 +1,14 @@
+{
+  "evaluator_sha256": "4ef630e6e78440469d1d7da8802b9fd2d0bdaf0eb1adfdd2505646e97733c06b",
+  "reference_core_sha256": "58628a885e80baa30ab1b4ec5aeee008a0615acc727bf3168d0b2c05409ed462",
+  "frozen_reference_files": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/evaluation/paired_windows.csv": "a65ac803ac3e5589407e50f74283e5d6e29cc5875f6180ec25efbdf4917df238",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/evaluation/alignment.json": "1a4c292a598a785bd86ecec8e573c81643cc44dec42ce727455f778be7b0e2dd"
+  },
+  "inputs": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/summary.json": "4592e4303f41f700aff57939910d0ce9f25e147cc2d07e624ce07e7e43cb3906",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/fusion_waveform.csv": "0ea27a8cbd68ad81b0c4df8aadf8042fbec87d169df43651dc348220188a8ecf",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage1_motion/data6/fusion_heart_rate.csv": "e018ff67640c85e7266d39911d120d4988872be28a3c30ce0cb1e1805cb15822"
+  },
+  "reference_used_only_after_inference": true
+}

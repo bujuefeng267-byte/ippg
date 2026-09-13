@@ -1,0 +1,43 @@
+{
+  "version": "v27-stable-local-patches-20260912",
+  "objective": "Improve motion rPPG heart-rate accuracy and continuity by preserving fixed local skin-patch time series before spatial aggregation.",
+  "population": "The same six previously seen development videos; no claim of held-out or subject-independent validation.",
+  "reference_policy": "All inference and patch selection are reference-free. Reuse the original frozen 309 planned reference windows and estimated alignment, never optimize time offsets or choose a method per video using reference error.",
+  "fixed_windows": {"window_s": 10, "step_s": 1, "min_bpm": 42, "max_bpm": 210, "max_gap_s": 0.1},
+  "frontend": "One configuration: twelve persistent patches (four within each of the original three facial regions), local landmark anchors, observed RGB and paired pixel tracking, local anomaly screening, same-ID fallback and explicit missing/reset provenance. Re-extract local geometry and pixels from original videos.",
+  "design": {
+    "spatial_factorial": ["early_median", "early_psd_cluster", "late_median", "late_psd_cluster"],
+    "early": "Pool the same measured local RGB traces within each of the three parent regions before POS/CHROM; use the same downstream patch representative selection and aggregation rules.",
+    "late": "Preserve each local patch through POS/CHROM; equalize parent-region influence during HR aggregation, so repeated methods, branches and neighboring patches do not create extra parent-region votes.",
+    "aggregators": "Standard hierarchical median versus fixed complete-link clustering of full normalized PSD vectors. The HR median may be between observed spectral peaks and is labeled as an aggregate, never used to generate a waveform.",
+    "motion_temporal_factorial": ["fusion_nomotion_local", "fusion_motion_local", "fusion_nomotion_dp", "fusion_motion_dp"],
+    "factorial_waveform": "All four readout experiments use the identical saved, measured broadband waveform from late_psd_cluster. Existing V25 spectral/periodic/harmonic scoring and gates are fixed; switch only existing motion evidence on/off and local choice versus DP.",
+    "maximum_global_variants": 8,
+    "no_post_score_threshold_search": true
+  },
+  "output_contract": {
+    "primary_spatial_HR": "Derived from saved patch BVPs, not asserted to be the HR of one averaged waveform.",
+    "waveform": "A traceable mixture of actual contributing broadband patch waveforms; no sine synthesis, reference-driven filtering or HR interpolation. It does not validate PPG morphology.",
+    "secondary_HR": "Save a separate V25 readout of each displayed fused waveform for consistency diagnostics.",
+    "missing": "NaN with explicit rejection/source flags; never zero or held HR.",
+    "coverage": "Keep every original planned window in denominator; distinguish framewise waveform availability, patch availability, accepted HR and correct HR."
+  },
+  "success": {"tolerance_bpm": 5, "aspirational_each_case_P5_pct": 95, "also_report_full_reference_R5_and_coverage": true},
+  "promotion_guardrails_vs_V25": {
+    "pooled_MAE_must_decrease": true,
+    "pooled_R5_gain_min_pp": 5,
+    "max_any_case_MAE_increase_bpm": 3,
+    "max_any_case_P5_drop_pp": 3,
+    "max_any_case_R5_drop_pp": 3,
+    "max_any_case_HR_coverage_drop_pp": 3,
+    "max_any_case_fused_waveform_coverage_drop_pp": 3,
+    "common_window_pooled_MAE_must_decrease": true
+  },
+  "preservation": "Keep V25 recommended entry, V26 experiments, original videos, references and failed trials. Install a new version only after tests and independent evaluation, with the actual outcome clearly reported.",
+  "inspiration": [
+    "https://github.com/phuselab/pyVHR",
+    "https://github.com/phuselab/pyVHR/blob/master/results/html/MAE_run_on_dataset_PURE.html",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9044207/"
+  ],
+  "implementation_claim": "Independent implementation inspired by patch preservation and PSD clustering; not a reproduction of the authors' exact benchmark or promised 1.70 bpm result."
+}

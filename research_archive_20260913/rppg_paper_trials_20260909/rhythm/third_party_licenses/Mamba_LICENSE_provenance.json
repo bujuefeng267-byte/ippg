@@ -1,0 +1,26 @@
+{
+  "retrieved_utc": "2026-09-09T13:02:10.874009+00:00",
+  "license": "Apache-2.0",
+  "copyright": "Copyright 2023 Tri Dao, Albert Gu",
+  "source_url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup/mamba/LICENSE",
+  "pinned_rhythm_repository": "https://github.com/zizheng-guo/RhythmMamba",
+  "pinned_rhythm_commit": "1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed",
+  "primary_vendored_license_url": "https://raw.githubusercontent.com/zizheng-guo/RhythmMamba/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup/mamba/LICENSE",
+  "primary_http_status": 200,
+  "fallback_used": false,
+  "fallback_upstream_tag": null,
+  "license_file": "Mamba_LICENSE",
+  "bytes": 11348,
+  "sha256": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5",
+  "unmodified_download": true,
+  "covered_vendored_source_paths": [
+    "setup/mamba/mamba_ssm/modules/mamba_simple.py",
+    "setup/mamba/mamba_ssm/ops/selective_scan_interface.py"
+  ],
+  "embedded_source_sha256": {
+    "setup/mamba/mamba_ssm/modules/mamba_simple.py": "dc035a4dcfbc9f9809e2bb60764f7bfe38259b6397968399fc33cad159300a43",
+    "setup/mamba/mamba_ssm/ops/selective_scan_interface.py": "fe606b4c7e81b47bb091cf59dc474aece1112a6ca01eb6f22309090e56030bc4"
+  },
+  "source_audit_sha256": "6a5e42b9b16be91e2b5a291748ffcda5f97eac3407d079fa7043f7308a07a0f3",
+  "scope": "License and attribution supplement only. No model, weights, inference, evaluation, or prior manifests changed."
+}

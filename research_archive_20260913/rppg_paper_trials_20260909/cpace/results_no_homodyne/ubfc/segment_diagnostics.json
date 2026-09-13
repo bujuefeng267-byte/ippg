@@ -1,0 +1,74 @@
+[
+  {
+    "segment_index": 0,
+    "start_frame": 0,
+    "end_frame_exclusive": 1547,
+    "start_s": 0.0,
+    "end_s": 52.863395177696525,
+    "roi_names": [
+      "forehead",
+      "left_cheek",
+      "right_cheek"
+    ],
+    "status": "processed",
+    "seed_bpm": 107.34119983808336,
+    "seed_source": "video Forehead GREEN only, recomputed per segment",
+    "retained_start_frame": 47,
+    "retained_end_frame_exclusive": 1500,
+    "native_author_results": {
+      "default": {
+        "method": "cPACE",
+        "fs": 29.264106,
+        "hr_seed_hz": 1.7890199973013892,
+        "hr_seed_bpm": 107.34119983808336,
+        "apply_homodyne": true,
+        "roi_names": [
+          "Forehead",
+          "L_Cheek",
+          "R_Cheek"
+        ],
+        "hr_per_roi": {
+          "Forehead": 107.05782863024335,
+          "L_Cheek": 107.41270205070722,
+          "R_Cheek": 107.39185094965264
+        },
+        "hr_consensus_bpm": 107.39185094965264,
+        "plv_lr_cheek": 0.9589468285148911,
+        "scope": "whole finite segment before edge mask; not final window HR",
+        "roi_waveform_std": {
+          "forehead": 0.7039002700036714,
+          "left_cheek": 0.7054345682291497,
+          "right_cheek": 0.7008263775809797
+        }
+      },
+      "no_homodyne": {
+        "method": "cPACE",
+        "fs": 29.264106,
+        "hr_seed_hz": 1.7890199973013892,
+        "hr_seed_bpm": 107.34119983808336,
+        "apply_homodyne": false,
+        "roi_names": [
+          "Forehead",
+          "L_Cheek",
+          "R_Cheek"
+        ],
+        "hr_per_roi": {
+          "Forehead": 107.01051148621029,
+          "L_Cheek": 107.45948697624567,
+          "R_Cheek": 107.34691752127945
+        },
+        "hr_consensus_bpm": 107.34691752127945,
+        "plv_lr_cheek": 0.9761420726468247,
+        "scope": "whole finite segment before edge mask; not final window HR",
+        "roi_waveform_std": {
+          "forehead": 0.003187212447514915,
+          "left_cheek": 0.0013584361165409808,
+          "right_cheek": 0.0015390790762650514
+        }
+      }
+    },
+    "forehead_selected_eigenvector_matches": [
+      "v1"
+    ]
+  }
+]

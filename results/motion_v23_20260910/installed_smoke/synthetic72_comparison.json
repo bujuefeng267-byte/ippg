@@ -1,0 +1,1879 @@
+{
+  "case": "synthetic72",
+  "mode": "tracking_screened_gap10",
+  "command": [
+    "/home/fengbujue/项目/rppg识别/run_motion_v23_experimental.sh",
+    "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+    "--output",
+    "/home/fengbujue/项目/rppg识别/results/motion_v23_20260910/installed_smoke/synthetic72"
+  ],
+  "output": "/home/fengbujue/项目/rppg识别/results/motion_v23_20260910/installed_smoke/synthetic72",
+  "inference_path": "fresh_original_video",
+  "used_cache": false,
+  "used_geometry_cache": false,
+  "matches_validation": false,
+  "source_video": {
+    "path": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+    "sha256": "d9b7998a7fd9a7b42ddf8090c983acbce875e135a45dc714ab98ae154a18c988",
+    "bytes": 3140871
+  },
+  "exit_code": 0,
+  "fresh_geometry_matches_validation": true,
+  "csv_checks": {
+    "frame_trace.csv": {
+      "expected_shape": [
+        600,
+        107
+      ],
+      "actual_shape": [
+        600,
+        107
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "frame": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 4.440892098500626e-16,
+          "first_differences": []
+        },
+        "source": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "rgb_valid": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 5.684341886080802e-14,
+          "first_differences": []
+        },
+        "motion_x": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 3.3881317890172014e-21,
+          "first_differences": []
+        },
+        "motion_y": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 8.470329472543003e-22,
+          "first_differences": []
+        },
+        "face_x0": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "face_y0": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "face_x1": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "face_y1": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "roi_status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "roi_valid_regions": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_valid": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_quality": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_valid_pixel_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_visible_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_pixel_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_valid_pixels": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_brightness": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_laplacian_var": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_rgb_aggregation": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_valid": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_quality": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_valid_pixel_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_visible_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_pixel_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_valid_pixels": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_brightness": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_laplacian_var": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_rgb_aggregation": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 4.263256414560601e-14,
+          "first_differences": []
+        },
+        "right_cheek_valid": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_quality": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_valid_pixel_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_visible_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_pixel_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_valid_pixels": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_brightness": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_laplacian_var": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_rgb_aggregation": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "face_detected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "flow_available": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "bridge_age_frames": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "baseline_forehead_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 5.684341886080802e-14,
+          "first_differences": []
+        },
+        "baseline_forehead_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 5.684341886080802e-14,
+          "first_differences": []
+        },
+        "baseline_forehead_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_pixel_source": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_pixel_tracks": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_pixel_seeds": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_pixel_screen_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_pixel_color_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_pixel_fb_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_pixel_geometry_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_pixel_fb_error_median": {
+          "passed": false,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 1,
+          "max_abs_difference": 2.1334504708699987e-05,
+          "first_differences": [
+            {
+              "row": 362,
+              "expected": "0.0011265572975389",
+              "actual": "0.0011478918022476"
+            }
+          ]
+        },
+        "forehead_pixel_reset": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_pixel_log_delta_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_pixel_log_delta_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_pixel_log_delta_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "baseline_left_cheek_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 5.684341886080802e-14,
+          "first_differences": []
+        },
+        "baseline_left_cheek_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "baseline_left_cheek_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_pixel_source": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pixel_tracks": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pixel_seeds": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pixel_screen_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pixel_color_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pixel_fb_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pixel_geometry_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pixel_fb_error_median": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_pixel_reset": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pixel_log_delta_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_pixel_log_delta_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_pixel_log_delta_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "baseline_right_cheek_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 5.684341886080802e-14,
+          "first_differences": []
+        },
+        "baseline_right_cheek_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "baseline_right_cheek_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_pixel_source": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pixel_tracks": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pixel_seeds": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pixel_screen_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pixel_color_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pixel_fb_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pixel_geometry_rejected": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pixel_fb_error_median": {
+          "passed": false,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 1,
+          "max_abs_difference": 3.809740883300002e-05,
+          "first_differences": [
+            {
+              "row": 459,
+              "expected": "0.0001887407997855",
+              "actual": "0.0002268382086185"
+            }
+          ]
+        },
+        "right_cheek_pixel_reset": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pixel_log_delta_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_pixel_log_delta_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "right_cheek_pixel_log_delta_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "baseline_r": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 5.684341886080802e-14,
+          "first_differences": []
+        },
+        "baseline_g": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "baseline_b": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "pixel_mode": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "pixel_rgb_kind": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        }
+      },
+      "passed": false,
+      "failed_columns": [
+        "forehead_pixel_fb_error_median",
+        "right_cheek_pixel_fb_error_median"
+      ]
+    },
+    "roi_waveforms.csv": {
+      "expected_shape": [
+        600,
+        13
+      ],
+      "actual_shape": [
+        600,
+        13
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 4.440892098500626e-16,
+          "first_differences": []
+        },
+        "forehead_pos": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_chrom": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "forehead_observed": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "forehead_interpolated": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_pos": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_chrom": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "left_cheek_observed": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "left_cheek_interpolated": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_pos": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 8.798517470154366e-15,
+          "first_differences": []
+        },
+        "right_cheek_chrom": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 1.0325074129013956e-14,
+          "first_differences": []
+        },
+        "right_cheek_observed": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "right_cheek_interpolated": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    },
+    "pos_waveform.csv": {
+      "expected_shape": [
+        600,
+        4
+      ],
+      "actual_shape": [
+        600,
+        4
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 4.440892098500626e-16,
+          "first_differences": []
+        },
+        "base": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 1.1546319456101628e-14,
+          "first_differences": []
+        },
+        "observed": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "interpolated": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    },
+    "chrom_waveform.csv": {
+      "expected_shape": [
+        600,
+        4
+      ],
+      "actual_shape": [
+        600,
+        4
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 4.440892098500626e-16,
+          "first_differences": []
+        },
+        "base": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 1.0547118733938987e-14,
+          "first_differences": []
+        },
+        "observed": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "interpolated": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    },
+    "fusion_waveform.csv": {
+      "expected_shape": [
+        600,
+        5
+      ],
+      "actual_shape": [
+        600,
+        5
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 4.440892098500626e-16,
+          "first_differences": []
+        },
+        "base": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 2.886579864025407e-15,
+          "first_differences": []
+        },
+        "covered": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "observed": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "interpolated": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    },
+    "pos_heart_rate.csv": {
+      "expected_shape": [
+        11,
+        8
+      ],
+      "actual_shape": [
+        11,
+        8
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "observed_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "interpolated_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "spectral_peak_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "peak_concentration": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 4.440892098500626e-16,
+          "first_differences": []
+        },
+        "accepted": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "ridge_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    },
+    "chrom_heart_rate.csv": {
+      "expected_shape": [
+        11,
+        8
+      ],
+      "actual_shape": [
+        11,
+        8
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "observed_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "interpolated_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "spectral_peak_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "peak_concentration": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 5.551115123125783e-16,
+          "first_differences": []
+        },
+        "accepted": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "ridge_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    },
+    "fusion_heart_rate.csv": {
+      "expected_shape": [
+        11,
+        19
+      ],
+      "actual_shape": [
+        11,
+        19
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "observed_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "interpolated_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "spectral_peak_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "peak_concentration": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 2.220446049250313e-16,
+          "first_differences": []
+        },
+        "accepted": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "ridge_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "raw_spectral_peak_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "window_start_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "window_end_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "proposal_accepted": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "proposal_status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "consensus_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "proposal_roi_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "waveform_roi_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "waveform_generated": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "neighbor_covered": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "hr_source": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    },
+    "fusion_proposals.csv": {
+      "expected_shape": [
+        11,
+        18
+      ],
+      "actual_shape": [
+        11,
+        18
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "window_start_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "window_end_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "proposal_accepted": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "proposal_status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "proposal_spectral_peak_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "consensus_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "roi_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "quality_proxy": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 2.220446049250313e-16,
+          "first_differences": []
+        },
+        "state": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "available_roi_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "method_agreement": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "motion_overlap": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "consensus_score": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 8.881784197001252e-16,
+          "first_differences": []
+        },
+        "runner_up_ratio": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "candidate_group_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "waveform_roi_count": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "waveform_generated": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    },
+    "fusion_diagnostics.csv": {
+      "expected_shape": [
+        66,
+        20
+      ],
+      "actual_shape": [
+        66,
+        20
+      ],
+      "columns_equal": true,
+      "numeric_atol": 1e-09,
+      "numeric_rtol": 0,
+      "discrete_and_missingness_exact": true,
+      "columns": {
+        "window_index": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "time_s": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "channel": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "roi": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "method": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "channel_status": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "observed_fraction": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "roi_quality": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 4.440892098500626e-16,
+          "first_differences": []
+        },
+        "signal_std": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 6.661338147750939e-16,
+          "first_differences": []
+        },
+        "candidate_rank": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "candidate_bpm": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "relative_power": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "peak_concentration": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 6.661338147750939e-16,
+          "first_differences": []
+        },
+        "prominence_ratio": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "candidate_weight": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 5.551115123125783e-16,
+          "first_differences": []
+        },
+        "motion_overlap": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "motion_weight": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 0.0,
+          "first_differences": []
+        },
+        "selected_consensus": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "proposal_accepted": {
+          "passed": true,
+          "comparison": "exact",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": null,
+          "first_differences": []
+        },
+        "waveform_weight": {
+          "passed": true,
+          "comparison": "absolute_tolerance",
+          "missingness_mismatches": 0,
+          "mismatch_count": 0,
+          "max_abs_difference": 2.7755575615628914e-16,
+          "first_differences": []
+        }
+      },
+      "passed": true,
+      "failed_columns": []
+    }
+  },
+  "summary_errors": [],
+  "trace_metadata_errors": [],
+  "expected_extraction_path": "V23 original pixels with frozen V22 geometry cache",
+  "actual_extraction_path": "fresh detector + fresh pixel tracking + frozen waveform/HR pipeline",
+  "ignored_noncomputational_differences": [
+    "output directory",
+    "geometry cache source path",
+    "processing wall time",
+    "generated tracking QA images and plot encoding"
+  ],
+  "note": "A mismatch is preserved. It is not automatically explained away as detector randomness or replaced by cache replay.",
+  "elapsed_s": 8.254221074999805
+}

@@ -1,0 +1,101 @@
+{
+  "config": {
+    "window_s": 10.0,
+    "step_s": 1.0,
+    "min_bpm": 42.0,
+    "max_bpm": 210.0
+  },
+  "streams": {
+    "baseline/forehead": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "baseline/left_cheek": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "baseline/right_cheek": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "tracked/forehead": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "tracked/left_cheek": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    },
+    "tracked/right_cheek": {
+      "observed_samples": 1866,
+      "status_counts": {
+        "cdf_applied": 1860,
+        "original_uncovered_tail": 6
+      },
+      "complete_windows": 53,
+      "applied_windows": 53
+    }
+  },
+  "changed_original_columns": [
+    "b",
+    "baseline_b",
+    "baseline_forehead_b",
+    "baseline_forehead_g",
+    "baseline_forehead_r",
+    "baseline_g",
+    "baseline_left_cheek_b",
+    "baseline_left_cheek_g",
+    "baseline_left_cheek_r",
+    "baseline_r",
+    "baseline_right_cheek_b",
+    "baseline_right_cheek_g",
+    "baseline_right_cheek_r",
+    "forehead_b",
+    "forehead_g",
+    "forehead_r",
+    "g",
+    "left_cheek_b",
+    "left_cheek_g",
+    "left_cheek_r",
+    "r",
+    "right_cheek_b",
+    "right_cheek_g",
+    "right_cheek_r"
+  ],
+  "observation_masks_preserved": true,
+  "per_channel_nan_masks_preserved": true,
+  "tracking_geometry_and_quality_preserved": true,
+  "offline": true,
+  "reference_used": false,
+  "segment_policy": "Independent contiguous fully observed RGB runs; no CDF interpolation across NaN",
+  "fallback_policy": "Original RGB for runs shorter than 10s, uncovered <1s tails, or nonpositive/nonfinite filtered windows",
+  "window_policy": "Frame-rounded 10s windows at frame-rounded 1s hop from each valid run start",
+  "overlap_policy": "Normalize positive Hann sum over complete windows, without creating new missing samples",
+  "source": "https://sstuijk.estue.nl/publications/fg17.pdf",
+  "adaptation": "Independent implementation; preserved fixed project band 42-210bpm and segment-aware overlap/fallback"
+}

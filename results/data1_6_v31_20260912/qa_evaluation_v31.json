@@ -1,0 +1,86 @@
+{
+  "created_utc": "2026-09-12T15:46:47.041204+00:00",
+  "evaluator_report": "/home/fengbujue/项目/rppg识别/results/data1_6_v31_20260912/evaluation_summary.json",
+  "evaluator_report_sha256": "3a0ba55ee50e398436cf4eabcc618851c0f23b8ea39a6864f84d12fbf1bd417d",
+  "qa_source_sha256": "84625f6527cf38c0739fd54489bd07658d433965b5bc74c9660e7f345ede5e60",
+  "model_imported": false,
+  "inference_run": false,
+  "variants": [
+    {
+      "variant": "protected_cdf_motion",
+      "cases": [
+        {
+          "case": "data1",
+          "Nplanned": 42,
+          "Noutput": 37,
+          "original_correct_damaged": 0,
+          "newly_large_errors": 0,
+          "protected_samples": 1555,
+          "metrics_verified": true,
+          "protection_verified": true
+        },
+        {
+          "case": "data2",
+          "Nplanned": 37,
+          "Noutput": 33,
+          "original_correct_damaged": 0,
+          "newly_large_errors": 0,
+          "protected_samples": 1393,
+          "metrics_verified": true,
+          "protection_verified": true
+        },
+        {
+          "case": "data3",
+          "Nplanned": 65,
+          "Noutput": 59,
+          "original_correct_damaged": 0,
+          "newly_large_errors": 0,
+          "protected_samples": 2221,
+          "metrics_verified": true,
+          "protection_verified": true
+        },
+        {
+          "case": "data4",
+          "Nplanned": 50,
+          "Noutput": 46,
+          "original_correct_damaged": 0,
+          "newly_large_errors": 0,
+          "protected_samples": 10693,
+          "metrics_verified": true,
+          "protection_verified": true
+        },
+        {
+          "case": "data5",
+          "Nplanned": 53,
+          "Noutput": 49,
+          "original_correct_damaged": 0,
+          "newly_large_errors": 0,
+          "protected_samples": 1866,
+          "metrics_verified": true,
+          "protection_verified": true
+        },
+        {
+          "case": "data6",
+          "Nplanned": 62,
+          "Noutput": 36,
+          "original_correct_damaged": 0,
+          "newly_large_errors": 0,
+          "protected_samples": 2148,
+          "metrics_verified": true,
+          "protection_verified": true
+        }
+      ],
+      "baseline_reproduced": true,
+      "all_metrics_recomputed": true,
+      "promotion_checks": {
+        "no_original_correct_damage": true,
+        "no_new_large_errors": true,
+        "each_MAE": true,
+        "each_P5": true,
+        "each_R5": true,
+        "each_HR_coverage": true,
+        "each_waveform_coverage": true,
+        "each_large_jump_count": true,
+        "pooled_MAE": true,
+        "pooled_P5": true,
+        "pooled_R5": 

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "frozen_date_local": "2026-09-10",
+  "frozen_before_v23_result_inspection": true,
+  "default_candidate": "tracking_screened_gap10",
+  "default_baseline": "trimmed_gap10",
+  "continuity_option_candidate": "tracking_screened_gap15",
+  "continuity_option_baseline": "trimmed_gap15",
+  "ablation_only": ["tracking_only_gap10", "tracking_only_gap15"],
+  "primary_variant": "fusion",
+  "required_estimators": ["offline_ridge", "local_peak"],
+  "reference_cases": ["ubfc", "data1"],
+  "all_cases": ["user0904", "user0907", "ubfc", "kaggle_full", "synthetic72", "data1"],
+  "primary_reference_shift_s": 0,
+  "data1_all_reported_shifts_s": [-5, -2, -1, 0, 1, 2, 5],
+  "noninferiority_numerical_tolerance": 0.000001,
+  "error_gates": {
+    "own_MAE_and_RMSE_must_not_increase": true,
+    "pair_common_MAE_and_RMSE_must_not_increase": true,
+    "R5_all_reference_must_not_decrease": true,
+    "empty_reference_or_common_scored_windows_fails": true
+  },
+  "coverage_gates_each_source": {
+    "HR_output_coverage_must_not_decrease": true,
+    "finite_saved_waveform_coverage_must_not_decrease": true,
+    "longest_rejected_HR_grid_run_s_must_not_increase": true,
+    "longest_missing_waveform_run_s_must_not_increase": true
+  },
+  "waveform_quality_gates": {
+    "reference_H1_SNR_paired_mean_delta_must_be_nonnegative": true,
+    "empty_paired_SNR_windows_fails": true,
+    "no_morphology_ground_truth_available": true
+  },
+  "synthetic_gate": {"MAE_bpm_at_most": 1, "each_required_estimator": true},
+  "meaningful_improvement_required": {
+    "any_real_reference_case_own_MAE_reduction_bpm_at_least": 1,
+    "or_any_real_video_HR_or_waveform_coverage_gain_percentage_points_at_least": 5
+  },
+  "engineering_gates": [
+    "All six source videos and four fixed v23 modes complete successfully",
+    "Frozen source hashes, input identities, reference alignment and evaluator dependencies verified",
+    "V22 baseline metrics and reference-H1 SNR reproduced",
+    "Same frontend trace shared exactly across its gap10/gap15 modes",
+    "Face source, detection/flow flags, bounding boxes and times equal frozen V22 geometry trace for every frame",
+    "Original fusion and HR gates unchanged; rejected final HR remains missing, not numeric",
+    "Saved waveform and HR timelines consistent; full-waveform replay QA receipt verified",
+    "Required meaningful unit and regression checks pass"
+  ],
+  "interpretation": [
+    "All videos are previously inspected development/regression data; passing is not held-out or clinical generalization evidence",
+    "data1 synchronization remains estimated; evaluate all seven shifts without choosing the best shift",
+    "No-reference MAE, RMSE, P5, R5 and reference-H1 SNR are NA, never zero accuracy error",
+    "Coverage is not accuracy; interpolation and neighboring-window coverage must be disclosed",
+    "Candidate identity and thresholds are never changed after seeing results",
+    "A failed default gate keeps the V22 default; gap15 is evaluated only as its separately named option"
+  ]
+}

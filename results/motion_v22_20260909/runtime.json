@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-09-09T11:59:33.516595+00:00",
+  "python": "3.10.12 (main, Jul 15 2026, 23:40:17) [GCC 11.4.0]",
+  "executable": "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "opencv": "4.11.0",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.11.4",
+    "matplotlib": "3.8.4",
+    "mediapipe": "0.10.21"
+  }
+}

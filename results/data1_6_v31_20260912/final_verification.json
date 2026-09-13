@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "recommended_version": "V28",
+  "installed_CLI_data2_matches_original_V28": true,
+  "original_successful_windows_damaged": 0,
+  "new_large_error_windows": 0,
+  "accuracy_gain": 0,
+  "report_sha256": "aab37cf88e49042fd72bc11d43a505c7728d1af3c4ffc197a11d5d3ee2eca785",
+  "installed_CLI_summary_sha256": "5619e6a09c1abed1c8f0ec9d5424c3d72d697df64f8be4d67e76beff0ec9e041",
+  "installed_sources_verified": 16
+}

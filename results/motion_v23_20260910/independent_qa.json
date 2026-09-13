@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checker_sha256": "db0fad1207c1391f6f8d9c002ad0d07999f4528d74be0f301b263519cdca4eca",
+  "metric_rows_recomputed": 216,
+  "saved_waveforms_counted": 108,
+  "all_seven_data1_shifts_preserved": true,
+  "evaluated_files_and_sources_unchanged": true,
+  "rejected_final_fusion_and_DP_HR_remains_missing": true,
+  "rejected_auxiliary_POS_CHROM_diagnostic_peaks_excluded": 4,
+  "tests_run": 73,
+  "saved_waveform_replay_passed": true,
+  "performance_gate_passed": false,
+  "evidence": {
+    "evaluation/summary.json": "e972b314abb28cb250c7653e7ae4a44ec394b5fb02015b6845a48b25dd703f32",
+    "evaluation/metrics.csv": "cfdcee5dfc57a6e38fb1fa47b5e3288996cdeb46bc82f98d8e6aa028058808fd",
+    "evaluation/reference_windows.csv": "9183f4f009c68e049ee773a81c21fa319500c275910e68ec0fdbc6d25391ebfc",
+    "evaluation/waveform_metrics.csv": "6a037c052f9dedef82fc80684465775bc4902aae8dfea43bb2b605266aec9d69",
+    "evaluation/upgrade_gate.json": "255a2b79e3e480ff274d6b9a132b1f1e93e4ae17e935ddc1fd558d0daccec932",
+    "validation/waveform_replay_qa.json": "b44383aa5d7db28edfafecdb8c37b6f16ef6a98a4357eca9a5423b4710473316",
+    "validation/tests.json": "f72320c069635d6912c9ba3349e197a4ec634f36245941b2828790b5a147a167"
+  },
+  "limitations": [
+    "References retain original protocols, including estimated data1 alignment.",
+    "Regression arithmetic QA does not establish clinical or held-out validity."
+  ]
+}

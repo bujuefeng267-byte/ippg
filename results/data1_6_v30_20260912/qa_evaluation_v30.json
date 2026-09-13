@@ -1,0 +1,135 @@
+{
+  "created_utc": "2026-09-12T15:00:05.681509+00:00",
+  "evaluator_report": "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/evaluation_summary.json",
+  "evaluator_report_sha256": "984ef140d63f02b99483b0b46d1dc4cff62de6cb288abe4945bcf84caf3d6456",
+  "qa_source_sha256": "93c3fd9146e2337c754aff085891f9858dfa7bf89769f82a128634d61b11212b",
+  "model_imported": false,
+  "inference_run": false,
+  "variants": [
+    {
+      "variant": "motion_full_spectrum",
+      "cases": [
+        {
+          "case": "data1",
+          "Nplanned": 42,
+          "Noutput": 37,
+          "paired_sha256": "54a68b5ead5f45404d6fc6c70ab23d713a58b7424767a60c5aee19cd9c263a8a",
+          "passed": true
+        },
+        {
+          "case": "data2",
+          "Nplanned": 37,
+          "Noutput": 33,
+          "paired_sha256": "3e0643cac1a625d1da1a6e32377c5bb36ff6a0061224993c8124260dc3081d67",
+          "passed": true
+        },
+        {
+          "case": "data3",
+          "Nplanned": 65,
+          "Noutput": 59,
+          "paired_sha256": "681f0ba9d13fe4dc5b18d20da23105a47bdf50e1fec8c01be09298192dd1474f",
+          "passed": true
+        },
+        {
+          "case": "data4",
+          "Nplanned": 50,
+          "Noutput": 46,
+          "paired_sha256": "f6e97d5485b11dc71cdfa9b88e2fdbf9dc66d1aedfc99cf7649965796cd439e8",
+          "passed": true
+        },
+        {
+          "case": "data5",
+          "Nplanned": 53,
+          "Noutput": 49,
+          "paired_sha256": "b56a8826cd98926676c61e25cf97e361f082c353abb3827c54e376b8202b3e63",
+          "passed": true
+        },
+        {
+          "case": "data6",
+          "Nplanned": 62,
+          "Noutput": 36,
+          "paired_sha256": "bd85910550b9b557b699cc4c70f01f08666418585bba25effbe2fd4c9595ca7b",
+          "passed": true
+        }
+      ],
+      "baseline_V28_reproduced": true,
+      "all_metrics_recomputed": true,
+      "time_weighted_waveform_coverage_verified": true,
+      "promotion_checks": {
+        "pooled_MAE": false,
+        "pooled_R5_gain": false,
+        "each_MAE": true,
+        "each_P5": true,
+        "each_R5": true,
+        "each_HR_coverage": true,
+        "each_waveform_coverage": true,
+        "common_MAE": false
+      },
+      "promotion_pass": false,
+      "passed": true
+    },
+    {
+      "variant": "cdf_v28",
+      "cases": [
+        {
+          "case": "data1",
+          "Nplanned": 42,
+          "Noutput": 38,
+          "paired_sha256": "a46c9db9ca1c39de2590859913ed008efb5d3080678daaa4c53fe8d060677594",
+          "passed": true
+        },
+        {
+          "case": "data2",
+          "Nplanned": 37,
+          "Noutput": 32,
+          "paired_sha256": "6713f865bc38fe23a2c0d59dd672401df2e790da5d5012eb8f68ee114f35eb9a",
+          "passed": true
+        },
+        {
+          "case": "data3",
+          "Nplanned": 65,
+          "Noutput": 44,
+          "paired_sha256": "2622c8463d7ff9b350e6bba03586675983634b0c6f07b2eb8cb538231afc2725",
+          "passed": true
+        },
+        {
+          "case": "data4",
+          "Nplanned": 50,
+          "Noutput": 46,
+          "paired_sha256": "5546a4a6280b5fe606d9f894b066964632e9d265c8d45798cbc1fd0baea45a3d",
+          "passed": true
+        },
+        {
+          "case": "data5",
+          "Nplanned": 53,
+          "Noutput": 49,
+          "paired_sha256": "d43b26a5d49198f25e4c943ca8151cabb6f6f632912168f3e1d3cecdc3d6e572",
+          "passed": true
+        },
+        {
+          "case": "data6",
+          "Nplanned": 62,
+          "Noutput": 38,
+          "paired_sha256": "670129ff2e665a757e1a2ec04163f367592cad7449eb1aa1e41da72426d01238",
+          "passed": true
+        }
+      ],
+      "baseline_V28_reproduced": true,
+      "all_metrics_recomputed": true,
+      "time_weighted_waveform_coverage_verified": true,
+      "promotion_checks": {
+        "pooled_MAE": true,
+        "pooled_R5_gain": false,
+        "each_MAE": false,
+        "each_P5": false,
+        "each_R5": false,
+        "each_HR_coverage": false,
+        "each_waveform_coverage": false,
+        "common_MAE": true
+      },
+      "promotion_pass": false,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

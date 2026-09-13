@@ -1,0 +1,1019 @@
+{
+  "common_pulse_exact_pairs/tracking_only": {
+    "screened_points": 0,
+    "variants": {
+      "unbounded": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105526
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744962
+          }
+        }
+      },
+      "anchor_0.1Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105526
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744962
+          }
+        }
+      },
+      "anchor_0.15Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_abs_log_error": [
+          8.881784197001252e-16,
+          0.0,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105531
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744967
+          }
+        }
+      },
+      "anchor_0.25Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          8.881784197001252e-16,
+          8.881784197001252e-16
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105527
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744962
+          }
+        }
+      },
+      "lp4_0.15Hz_causal": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          0.9999999999999991,
+          1.0
+        ],
+        "max_abs_log_error": [
+          8.881784197001252e-16,
+          1.7763568394002505e-15,
+          8.881784197001252e-16
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105526
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744967
+          }
+        }
+      }
+    }
+  },
+  "common_pulse_exact_pairs/screened": {
+    "screened_points": 0,
+    "variants": {
+      "unbounded": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105526
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744962
+          }
+        }
+      },
+      "anchor_0.1Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105526
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744962
+          }
+        }
+      },
+      "anchor_0.15Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_abs_log_error": [
+          8.881784197001252e-16,
+          0.0,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105531
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744967
+          }
+        }
+      },
+      "anchor_0.25Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          8.881784197001252e-16,
+          8.881784197001252e-16
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105527
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744962
+          }
+        }
+      },
+      "lp4_0.15Hz_causal": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          0.9999999999999991,
+          1.0
+        ],
+        "max_abs_log_error": [
+          8.881784197001252e-16,
+          1.7763568394002505e-15,
+          8.881784197001252e-16
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999984510105526
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999795995744967
+          }
+        }
+      }
+    }
+  },
+  "common_small_correspondence_bias/tracking_only": {
+    "screened_points": 0,
+    "variants": {
+      "unbounded": {
+        "last_rgb_ratio_to_truth": [
+          1.0554529380915088,
+          1.3097679708013281,
+          0.9646595864816947
+        ],
+        "max_abs_log_error": [
+          0.05396999999955465,
+          0.26984999999948656,
+          0.03598000000023571
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999793118524581
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9656658070655367
+          }
+        }
+      },
+      "anchor_0.1Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.001418451899906,
+          1.0071124081170828,
+          0.9990554817735249
+        ],
+        "max_abs_log_error": [
+          0.0014174468473102664,
+          0.007087234236598405,
+          0.0009449645648871297
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.999972097169587
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.999918573154061
+          }
+        }
+      },
+      "anchor_0.15Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.00094045014324,
+          1.0047111035026404,
+          0.9993735241865815
+        ],
+        "max_abs_log_error": [
+          0.0009400081970687424,
+          0.004700040985372134,
+          0.0006266721313874513
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999905409846191
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999558481266666
+          }
+        }
+      },
+      "anchor_0.25Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0005582444493062,
+          1.0027943403553818,
+          0.9996280100795142
+        ],
+        "max_abs_log_error": [
+          0.00055808868883922,
+          0.0027904434442165282,
+          0.00037205912589932666
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999968766188
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999695604168993
+          }
+        }
+      },
+      "lp4_0.15Hz_causal": {
+        "last_rgb_ratio_to_truth": [
+          1.002498261681731,
+          1.0125538776421124,
+          0.9983379519250462
+        ],
+        "max_abs_log_error": [
+          0.002655857261737893,
+          0.01327928630869124,
+          0.0017705715078264461
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9997593741845431
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9995149525268419
+          }
+        }
+      }
+    }
+  },
+  "common_small_correspondence_bias/screened": {
+    "screened_points": 0,
+    "variants": {
+      "unbounded": {
+        "last_rgb_ratio_to_truth": [
+          1.0554529380915088,
+          1.3097679708013281,
+          0.9646595864816947
+        ],
+        "max_abs_log_error": [
+          0.05396999999955465,
+          0.26984999999948656,
+          0.03598000000023571
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999793118524581
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9656658070655367
+          }
+        }
+      },
+      "anchor_0.1Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.001418451899906,
+          1.0071124081170828,
+          0.9990554817735249
+        ],
+        "max_abs_log_error": [
+          0.0014174468473102664,
+          0.007087234236598405,
+          0.0009449645648871297
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.999972097169587
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.999918573154061
+          }
+        }
+      },
+      "anchor_0.15Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.00094045014324,
+          1.0047111035026404,
+          0.9993735241865815
+        ],
+        "max_abs_log_error": [
+          0.0009400081970687424,
+          0.004700040985372134,
+          0.0006266721313874513
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999905409846191
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999558481266666
+          }
+        }
+      },
+      "anchor_0.25Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0005582444493062,
+          1.0027943403553818,
+          0.9996280100795142
+        ],
+        "max_abs_log_error": [
+          0.00055808868883922,
+          0.0027904434442165282,
+          0.00037205912589932666
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999968766188
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999695604168993
+          }
+        }
+      },
+      "lp4_0.15Hz_causal": {
+        "last_rgb_ratio_to_truth": [
+          1.002498261681731,
+          1.0125538776421124,
+          0.9983379519250462
+        ],
+        "max_abs_log_error": [
+          0.002655857261737893,
+          0.01327928630869124,
+          0.0017705715078264461
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9997593741845431
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9995149525268419
+          }
+        }
+      }
+    }
+  },
+  "asymmetric_zero_mean_patch_error/tracking_only": {
+    "screened_points": 0,
+    "variants": {
+      "unbounded": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.1064910036285813,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.10119375000016362,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999942640440981
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.995696698574882
+          }
+        }
+      },
+      "anchor_0.1Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0026612476883434,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.0026577128387321736,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999970027387151
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999737903004843
+          }
+        }
+      },
+      "anchor_0.15Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0017640695126675,
+          1.0
+        ],
+        "max_abs_log_error": [
+          8.881784197001252e-16,
+          0.0017625153695206563,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999980408898719
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.999975976804127
+          }
+        }
+      },
+      "anchor_0.25Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0010469639761304,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.0010464162915839736,
+          8.881784197001252e-16
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.999998089195534
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999770706455623
+          }
+        }
+      },
+      "lp4_0.15Hz_causal": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0046893599464564,
+          1.0
+        ],
+        "max_abs_log_error": [
+          8.881784197001252e-16,
+          0.004979732365759659,
+          8.881784197001252e-16
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999552565993994
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9998849890660222
+          }
+        }
+      }
+    }
+  },
+  "asymmetric_zero_mean_patch_error/screened": {
+    "screened_points": 0,
+    "variants": {
+      "unbounded": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.1064910036285813,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.10119375000016362,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999942640440981
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.995696698574882
+          }
+        }
+      },
+      "anchor_0.1Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0026612476883434,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.0026577128387321736,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999970027387151
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999737903004843
+          }
+        }
+      },
+      "anchor_0.15Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0017640695126675,
+          1.0
+        ],
+        "max_abs_log_error": [
+          8.881784197001252e-16,
+          0.0017625153695206563,
+          0.0
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999980408898719
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.999975976804127
+          }
+        }
+      },
+      "anchor_0.25Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0010469639761304,
+          1.0
+        ],
+        "max_abs_log_error": [
+          0.0,
+          0.0010464162915839736,
+          8.881784197001252e-16
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.999998089195534
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9999770706455623
+          }
+        }
+      },
+      "lp4_0.15Hz_causal": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0046893599464564,
+          1.0
+        ],
+        "max_abs_log_error": [
+          8.881784197001252e-16,
+          0.004979732365759659,
+          8.881784197001252e-16
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9999552565993994
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9998849890660222
+          }
+        }
+      }
+    }
+  },
+  "minority_large_local_artifact/tracking_only": {
+    "screened_points": 0,
+    "variants": {
+      "unbounded": {
+        "last_rgb_ratio_to_truth": [
+          1.0000000000000027,
+          1.0000000000000009,
+          1.000000000000008
+        ],
+        "max_abs_log_error": [
+          0.013686304660782689,
+          0.02737260932154495,
+          0.009124203107178985
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9980406668971852
+          },
+          "chrom": {
+            "peak_bpm": 156.005859375,
+            "correlation": -0.1991933463795323
+          }
+        }
+      },
+      "anchor_0.1Hz": {
+        "last_rgb_ratio_to_truth": [
+          0.9933171034427377,
+          0.9866788679918784,
+          1.0044802243962556
+        ],
+        "max_abs_log_error": [
+          0.012766977608793972,
+          0.025533955217591497,
+          0.008511318405862944
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9980068115541477
+          },
+          "chrom": {
+            "peak_bpm": 156.005859375,
+            "correlation": -0.20172453754736833
+          }
+        }
+      },
+      "anchor_0.15Hz": {
+        "last_rgb_ratio_to_truth": [
+          0.9933296870306664,
+          0.9867038671364451,
+          1.004471741149068
+        ],
+        "max_abs_log_error": [
+          0.012366894795301953,
+          0.02473378959060213,
+          0.008244596530201598
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9979835772259389
+          },
+          "chrom": {
+            "peak_bpm": 156.005859375,
+            "correlation": -0.20289395336645055
+          }
+        }
+      },
+      "anchor_0.25Hz": {
+        "last_rgb_ratio_to_truth": [
+          0.9933696455900443,
+          0.986783252779691,
+          1.0044448042057152
+        ],
+        "max_abs_log_error": [
+          0.011609618721591275,
+          0.023219237443184326,
+          0.0077397458143950715
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9979314534070151
+          },
+          "chrom": {
+            "peak_bpm": 156.005859375,
+            "correlation": -0.20547627996598847
+          }
+        }
+      },
+      "lp4_0.15Hz_causal": {
+        "last_rgb_ratio_to_truth": [
+          0.9933070720331744,
+          0.986658939351116,
+          1.0044869872163744
+        ],
+        "max_abs_log_error": [
+          0.013632448273741993,
+          0.027264896547485762,
+          0.009088298849161625
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9980511035259125
+          },
+          "chrom": {
+            "peak_bpm": 156.005859375,
+            "correlation": -0.20004197846154617
+          }
+        }
+      }
+    }
+  },
+  "minority_large_local_artifact/screened": {
+    "screened_points": 32640,
+    "variants": {
+      "unbounded": {
+        "last_rgb_ratio_to_truth": [
+          1.0,
+          1.0000000000000018,
+          1.0000000000000036
+        ],
+        "max_abs_log_error": [
+          0.0018816504796941302,
+          0.003763300959391813,
+          0.001254433653133269
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9978717205684174
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9820257838484787
+          }
+        }
+      },
+      "anchor_0.1Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.000799918404624,
+          1.001600476678709,
+          0.9994670762940372
+        ],
+        "max_abs_log_error": [
+          0.0010724446740475457,
+          0.0021448893480915387,
+          0.0007149631160299208
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9975898991036116
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.983205630663586
+          }
+        }
+      },
+      "anchor_0.15Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0006853765071781,
+          1.001371222755313,
+          0.9995433431368599
+        ],
+        "max_abs_log_error": [
+          0.0008776597677240261,
+          0.0017553195354409468,
+          0.0005851065118127607
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9975255185045296
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.98367232285196
+          }
+        }
+      },
+      "anchor_0.25Hz": {
+        "last_rgb_ratio_to_truth": [
+          1.0005006055539987,
+          1.001001461713917,
+          0.9996664021275862
+        ],
+        "max_abs_log_error": [
+          0.0006630688922744099,
+          0.001326137784545267,
+          0.0004420459281808675
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9975117172102584
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9845828440342091
+          }
+        }
+      },
+      "lp4_0.15Hz_causal": {
+        "last_rgb_ratio_to_truth": [
+          1.0010568693644146,
+          1.00211485570168,
+          0.9992960403818021
+        ],
+        "max_abs_log_error": [
+          0.001748814365322815,
+          0.0034976287306447418,
+          0.001165876243547359
+        ],
+        "readout": {
+          "pos": {
+            "peak_bpm": 83.935546875,
+            "correlation": 0.9980396277649397
+          },
+          "chrom": {
+            "peak_bpm": 83.935546875,
+            "correlation": -0.9809537462158313
+          }
+        }
+      }
+    }
+  },
+  "gradient_subpixel_offset_counterexample": {
+    "offset_px": 0.08,
+    "actual_motion_px": 0.0,
+    "kept_points": 100,
+    "screened_points": 0,
+    "log_delta": [
+      3.641102836620602e-05,
+      0.0001788916451647591,
+      2.3006336334447604e-05
+    ],
+    "sixty_second_ratio": [
+      1.0676964102157218,
+      1.3796447929879043,
+      1.0422568385237083
+    ],
+    "caveat": "Injected correspondence error; does not establish that real LK has this bias."
+  },
+  "fallback_algebra_counterexample": {
+    "virtual_previous": 150.0,
+    "baseline_previous": 100.0,
+    "baseline_current": 101.0,
+    "baseline_ratio_fallback_output": 151.5,
+    "baseline_current_after_missing_reset": 101.0,
+    "interpretation": "Existing 1.5x relative offset survives fallback and disappears abruptly at reset."
+  },
+  "anchor_motion_leakage_counterexample": {
+    "unbounded": {
+      "baseline_motion_gain_at_2p6Hz": 0.0,
+      "max_green_log_error_after_5s": 0.0,
+      "readout": {
+        "pos": {
+          "peak_bpm": 83.935546875,
+          "correlation": 0.9999984510105526
+        },
+        "chrom": {
+          "peak_bpm": 83.935546875,
+          "correlation": -0.9999795995744962
+        }
+      }
+    },
+    "anchor_0.1Hz": {
+      "baseline_motion_gain_at_2p6Hz": 0.03891210271364247,
+      "max_green_log_error_after_5s": 0.003209836185543935,
+      "readout": {
+        "pos": {
+          "peak_bpm": 156.005859375,
+          "correlation": 0.5737577859852472
+        },
+        "chrom": {
+          "peak_bpm": 156.005859375,
+          "correlation": -0.4912513870691539
+        }
+      }
+    },
+    "anchor_0.15Hz": {
+      "baseline_motion_gain_at_2p6Hz": 0.05831432366050317,
+      "max_green_log_error_after_5s": 0.004679993272988625,
+      "readout": {
+        "pos": {
+          "peak_bpm": 156.005859375,
+          "correlation": 0.4277505808493581
+        },
+        "chrom": {
+          "peak_bpm": 156.005859375,
+          "correlation": -0.35247194922860386
+        }
+      }
+    },
+    "anchor_0.25Hz": {
+      "baseline_motion_gain_at_2p6Hz": 0.096905102523376,
+      "max_green_log_error_after_5s": 0.0077519205697713645,
+      "readout": {
+        "pos": {
+          "peak_bpm": 156.005859375,
+          "correlation": 0.27622318262875767
+        },
+        "chrom": {
+          "peak_bpm": 156.005859375,
+          "correlation": -0.22134476991047525
+        }
+      }
+    },
+    "lp4_0.15Hz_causal": {
+      "baseline_motion_gain_at_2p6Hz": 1.0021425994950564e-05,
+      "max_green_log_error_after_5s": 0.000619020104206669,
+      "readout": {
+        "pos": {
+          "peak_bpm": 83.935546875,
+          "correlation": 0.9999930834262228
+        },
+        "chrom": {
+          "peak_bpm": 83.935546875,
+          "correlation": -0.9999218092033262
+        }
+      }
+    }
+  }
+}

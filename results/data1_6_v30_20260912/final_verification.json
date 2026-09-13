@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "recommended_version": "V28",
+  "source_snapshot_files": 19,
+  "V28_sources_unchanged": true,
+  "independent_evaluation_QA_passed": true,
+  "chart_visually_checked": true,
+  "report_sha256": "4755efe704598c479e1feb2443cbf76fb6b4b14fcb623cc258a34b8376d841c8",
+  "figure_sha256": "5815488115ddf75f0e71c10e1df36e0cd95404b50a0ceb486a9034af552a1f29"
+}

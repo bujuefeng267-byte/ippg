@@ -1,0 +1,16 @@
+{
+  "baseline_sha256": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+  "files": {
+    "交付验证.md": "c3efec4fa5da4d830262821315e6017436d231be0ae8f1ce4fdee514d70440ed",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "run_validation.py": "e95bef63c60a5e3e6db30ad7c29ddfb5117bdd4c42b2fe5dc96bf7f6e6eeef4d",
+    "README_运动升级.md": "378c1d17f43cd48ea387a59c5e75ccb3eae69cc1a221176468684b7798e41c6c",
+    "run_open_rppg.py": "82cf9e9a7e6c4c658e8fadd5603da06246d19fdc7fb2e545a624e98065a87599",
+    "requirements-neural.lock.txt": "7a868de50d2e713498ce86af9d5d18bfbf4d872818a9938344fdf09894d363f8",
+    "score_neural.py": "086f6f71e877ccc47cc44dde07ee906d4577a74bb72ede3d273810d384835237",
+    "analyze_rppg_motion.py": "0f6b7e22c87e484f3b6d39d2c4d1926ccb10bcf7da383b480fe25a01ccdd31ad",
+    "test_motion_upgrade.py": "9ebefbaad7fa0d2829e6916e1922753d928a0741bdd500c4f061586194666826"
+  },
+  "results": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_20260908",
+  "git_commit_or_push": false
+}

@@ -1,0 +1,230 @@
+[
+  {
+    "case": "user0904",
+    "mode": "trimmed_gap10",
+    "exit_code": 0,
+    "elapsed_s": 67.297644571001,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/user0904",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.1"
+    ]
+  },
+  {
+    "case": "user0904",
+    "mode": "trimmed_gap15",
+    "exit_code": 0,
+    "elapsed_s": 3.562961734001874,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap15/user0904",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.15",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/user0904/frame_trace.csv"
+    ]
+  },
+  {
+    "case": "user0907",
+    "mode": "trimmed_gap10",
+    "exit_code": 0,
+    "elapsed_s": 60.533375710001565,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/user0907",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.1"
+    ]
+  },
+  {
+    "case": "user0907",
+    "mode": "trimmed_gap15",
+    "exit_code": 0,
+    "elapsed_s": 3.021330632000172,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/home/fengbujue/项目/rppg识别/videos/user_0907/Video_20260907_171742478.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap15/user0907",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.15",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/user0907/frame_trace.csv"
+    ]
+  },
+  {
+    "case": "ubfc",
+    "mode": "trimmed_gap10",
+    "exit_code": 0,
+    "elapsed_s": 16.79957575899971,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/ubfc",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.1"
+    ]
+  },
+  {
+    "case": "ubfc",
+    "mode": "trimmed_gap15",
+    "exit_code": 0,
+    "elapsed_s": 3.5928973839982064,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap15/ubfc",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.15",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/ubfc/frame_trace.csv"
+    ]
+  },
+  {
+    "case": "kaggle_full",
+    "mode": "trimmed_gap10",
+    "exit_code": 0,
+    "elapsed_s": 181.99121441999887,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/kaggle_full",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.1"
+    ]
+  },
+  {
+    "case": "kaggle_full",
+    "mode": "trimmed_gap15",
+    "exit_code": 0,
+    "elapsed_s": 8.215780511000048,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/home/fengbujue/项目/rppg识别/videos/kaggle_motion_subject001/video.mov",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap15/kaggle_full",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.15",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/kaggle_full/frame_trace.csv"
+    ]
+  },
+  {
+    "case": "synthetic72",
+    "mode": "trimmed_gap10",
+    "exit_code": 0,
+    "elapsed_s": 9.12950101000024,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/synthetic72",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.1"
+    ]
+  },
+  {
+    "case": "synthetic72",
+    "mode": "trimmed_gap15",
+    "exit_code": 0,
+    "elapsed_s": 3.2078148379987397,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap15/synthetic72",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.15",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/synthetic72/frame_trace.csv"
+    ]
+  },
+  {
+    "case": "data1",
+    "mode": "trimmed_gap10",
+    "exit_code": 0,
+    "elapsed_s": 70.53869026100074,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_data1_20260909/inputs/video/Video_20260909_YJC_2.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/data1",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.1"
+    ]
+  },
+  {
+    "case": "data1",
+    "mode": "trimmed_gap15",
+    "exit_code": 0,
+    "elapsed_s": 3.613959217000229,
+    "command": [
+      "/home/fengbujue/项目/rppg识别/.venv/bin/python",
+      "-B",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/analyze_motion_v2.py",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_data1_20260909/inputs/video/Video_20260909_YJC_2.avi",
+      "--output",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap15/data1",
+      "--rgb-aggregation",
+      "trimmed_mean",
+      "--max-gap",
+      "0.15",
+      "--cache",
+      "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v22/validation/trimmed_gap10/data1/frame_trace.csv"
+    ]
+  }
+]

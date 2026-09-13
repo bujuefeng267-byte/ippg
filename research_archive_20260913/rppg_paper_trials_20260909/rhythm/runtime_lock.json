@@ -1,0 +1,295 @@
+{
+  "recorded_utc": "2026-09-09T12:52:31.753383+00:00",
+  "capture_scope": "Read-only runtime/package/driver inspection while six-video inference was running. No GPU test or inference was launched by this capture.",
+  "python_executable": "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/bin/python",
+  "python_version": "3.10.12 (main, Jul 15 2026, 23:40:17) [GCC 11.4.0]",
+  "python_version_info": [
+    3,
+    10,
+    12
+  ],
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "sys_prefix": "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial",
+  "sys_base_prefix": "/usr",
+  "sys_path": [
+    "",
+    "/usr/lib/python310.zip",
+    "/usr/lib/python3.10",
+    "/usr/lib/python3.10/lib-dynload",
+    "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/lib/python3.10/site-packages",
+    "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages"
+  ],
+  "PYTHONPATH": null,
+  "VIRTUAL_ENV": null,
+  "pyvenv_cfg": "home = /home/fengbujue/项目/rppg识别/.venv/bin\ninclude-system-site-packages = false\nversion = 3.10.12\n",
+  "scientific_environment_references": [
+    "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages"
+  ],
+  "scientific_reference_pth_files": [
+    {
+      "path": "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/lib/python3.10/site-packages/rppg_existing_scientific_runtime.pth",
+      "content": "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages\n",
+      "sha256": "62de620c01b7584fa4bbf90182048aae678d3019598171e85daf9e65e7398111"
+    }
+  ],
+  "packages": {
+    "torch": {
+      "version": "2.6.0+cu124",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/lib/python3.10/site-packages/torch/__init__.py"
+    },
+    "torchvision": {
+      "version": "0.21.0+cu124",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/lib/python3.10/site-packages/torchvision/__init__.py"
+    },
+    "timm": {
+      "version": "0.9.16",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/lib/python3.10/site-packages/timm/__init__.py"
+    },
+    "einops": {
+      "version": "0.7.0",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/lib/python3.10/site-packages/einops/__init__.py"
+    },
+    "numpy": {
+      "version": "1.26.4",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages/numpy/__init__.py"
+    },
+    "scipy": {
+      "version": "1.11.4",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages/scipy/__init__.py"
+    },
+    "pandas": {
+      "version": "2.2.3",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages/pandas/__init__.py"
+    },
+    "opencv-contrib-python": {
+      "version": "4.11.0.86",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages/cv2/__init__.py"
+    },
+    "matplotlib": {
+      "version": "3.8.4",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages/matplotlib/__init__.py"
+    },
+    "mediapipe": {
+      "version": "0.10.21",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv/lib/python3.10/site-packages/mediapipe/__init__.py"
+    },
+    "pip": {
+      "version": "22.0.2",
+      "module_origin": "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/lib/python3.10/site-packages/pip/__init__.py"
+    }
+  },
+  "gpus": [
+    {
+      "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "driver_version": "566.07",
+      "memory_total_MiB": 8188
+    }
+  ],
+  "nvidia_smi_command": [
+    "nvidia-smi",
+    "--query-gpu=name,driver_version,memory.total",
+    "--format=csv,noheader,nounits"
+  ],
+  "nvidia_smi_raw_query": "NVIDIA GeForce RTX 4060 Laptop GPU, 566.07, 8188\n",
+  "driver_reported_max_cuda_version": "12.7",
+  "pytorch_bundled_cuda_runtime_version": "12.4",
+  "cuda_version_note": "Driver capability and the PyTorch bundled CUDA runtime are separate values. Driver/display metadata was read without launching a GPU computation.",
+  "pip_freeze_command": [
+    "/home/fengbujue/项目/rppg识别/.venv-rhythm-trial/bin/python",
+    "-m",
+    "pip",
+    "freeze",
+    "--all"
+  ],
+  "pip_freeze_stderr": "",
+  "requirements_frozen_sha256": "412c45b3a4efc25aa0993007954cff19e3a9ea27f84a20dc6e41fec2d4f22158",
+  "pip_freeze_entries": 83,
+  "pip_freeze_lines": [
+    "absl-py==2.5.0",
+    "anyio==4.15.1",
+    "attrs==26.1.0",
+    "beautifulsoup4==4.15.0",
+    "certifi==2026.7.22",
+    "cffi==2.1.1",
+    "charset-normalizer==3.5.1",
+    "click==8.5.0",
+    "contourpy==1.3.2",
+    "cycler==0.12.1",
+    "einops==0.7.0",
+    "exceptiongroup==1.3.1",
+    "filelock==3.32.5",
+    "flatbuffers==25.12.19",
+    "fonttools==4.64.0",
+    "fsspec==2026.7.0",
+    "gdown==6.1.0",
+    "h11==0.16.0",
+    "hf-xet==1.6.0",
+    "httpcore==1.0.9",
+    "httpx==0.28.1",
+    "huggingface_hub==1.30.0",
+    "idna==3.19",
+    "ImageIO==2.37.4",
+    "jax==0.6.1",
+    "jaxlib==0.6.1",
+    "Jinja2==3.1.6",
+    "kiwisolver==1.5.1",
+    "lazy-loader==0.5",
+    "MarkupSafe==3.0.3",
+    "matplotlib==3.8.4",
+    "mediapipe==0.10.21",
+    "ml_dtypes==0.5.4",
+    "mpmath==1.3.0",
+    "networkx==3.4.2",
+    "numpy==1.26.4",
+    "nvidia-cublas-cu12==12.4.5.8",
+    "nvidia-cuda-cupti-cu12==12.4.127",
+    "nvidia-cuda-nvrtc-cu12==12.4.127",
+    "nvidia-cuda-runtime-cu12==12.4.127",
+    "nvidia-cudnn-cu12==9.1.0.70",
+    "nvidia-cufft-cu12==11.2.1.3",
+    "nvidia-curand-cu12==10.3.5.147",
+    "nvidia-cusolver-cu12==11.6.1.9",
+    "nvidia-cusparse-cu12==12.3.1.170",
+    "nvidia-cusparselt-cu12==0.6.2",
+    "nvidia-nccl-cu12==2.21.5",
+    "nvidia-nvjitlink-cu12==12.4.127",
+    "nvidia-nvtx-cu12==12.4.127",
+    "opencv-contrib-python==4.11.0.86",
+    "opt_einsum==3.4.0",
+    "packaging==26.3",
+    "pandas==2.2.3",
+    "pillow==12.3.0",
+    "pip==22.0.2",
+    "protobuf==4.25.9",
+    "pycparser==3.0",
+    "pyparsing==3.3.2",
+    "PySocks==1.7.1",
+    "python-dateutil==2.9.0.post0",
+    "pytz==2026.3.post1",
+    "pyVHR-cpu==1.0.2",
+    "PyYAML==6.0.3",
+    "requests==2.34.2",
+    "safetensors==0.8.0",
+    "scikit-image==0.24.0",
+    "scipy==1.11.4",
+    "sentencepiece==0.2.2",
+    "setuptools==59.6.0",
+    "six==1.17.0",
+    "sounddevice==0.5.6",
+    "soupsieve==2.9.2",
+    "sympy==1.13.1",
+    "tifffile==2025.5.10",
+    "timm==0.9.16",
+    "torch==2.6.0+cu124",
+    "torchvision==0.21.0+cu124",
+    "tqdm==4.70.0",
+    "triton==3.2.0",
+    "typing_extensions==4.16.0",
+    "tzdata==2026.3",
+    "urllib3==2.7.0",
+    "wheel==0.48.0"
+  ],
+  "freeze_scope": "All distributions visible on this Python sys.path, including the original scientific environment injected through .pth. This is a version inventory, not a wheel-hash or fully self-contained environment lock.",
+  "author_comparison": [
+    {
+      "component": "Python",
+      "author": "3.8",
+      "actual": "3.10.12",
+      "status": "different"
+    },
+    {
+      "component": "torch",
+      "author": "2.1.2",
+      "actual": "2.6.0+cu124",
+      "status": "different"
+    },
+    {
+      "component": "torchvision",
+      "author": "0.16.2",
+      "actual": "0.21.0+cu124",
+      "status": "different"
+    },
+    {
+      "component": "torchaudio",
+      "author": "2.1.2",
+      "actual": null,
+      "status": "different"
+    },
+    {
+      "component": "CUDA_runtime",
+      "author": "12.1",
+      "actual": "12.4",
+      "status": "different"
+    },
+    {
+      "component": "timm",
+      "author": "0.9.16",
+      "actual": "0.9.16",
+      "status": "same"
+    },
+    {
+      "component": "einops",
+      "author": "0.7.0",
+      "actual": "0.7.0",
+      "status": "same"
+    },
+    {
+      "component": "mamba-ssm",
+      "author": "2.2.2",
+      "actual": null,
+      "status": "not_installed_reference_backend"
+    },
+    {
+      "component": "causal-conv1d",
+      "author": "1.4.0",
+      "actual": null,
+      "status": "not_installed_reference_backend"
+    },
+    {
+      "component": "numpy",
+      "author": "1.22.0",
+      "actual": "1.26.4",
+      "status": "different"
+    },
+    {
+      "component": "scipy",
+      "author": "1.5.2",
+      "actual": "1.11.4",
+      "status": "different"
+    },
+    {
+      "component": "pandas",
+      "author": "1.1.5",
+      "actual": "2.2.3",
+      "status": "different"
+    },
+    {
+      "component": "opencv-python",
+      "author": "4.5.2.54",
+      "actual": "opencv-contrib-python 4.11.0.86",
+      "status": "different"
+    },
+    {
+      "component": "matplotlib",
+      "author": "3.1.2",
+      "actual": "3.8.4",
+      "status": "different"
+    }
+  ],
+  "author_sources": [
+    "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/setup.sh",
+    "https://github.com/zizheng-guo/RhythmMamba/blob/1533ad21cb4ae0d31e9dbb9afb0b1eefbed54aed/requirements.txt"
+  ],
+  "backend": "official_selective_scan_ref_torch",
+  "backend_sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41",
+  "backend_verification_sha256": "a6fa527001002914ccebfc612e509498f0eca861ce2cfdfeb25cd1301fb12837",
+  "official_cuda_kernels_installed": false,
+  "official_speed_benchmark": false,
+  "reproduction_notes": [
+    "The trial venv reads NumPy/SciPy/pandas/OpenCV and other packages from the original .venv site-packages; changing that environment can change a later rerun. Preserve these paths and versions or rebuild a standalone environment containing the frozen visible versions.",
+    "The new Torch/torchvision/timm/einops installations reside in .venv-rhythm-trial and take precedence over the scientific path.",
+    "The recorded torch/torchvision +cu124 wheels were installed using the PyTorch CUDA124 wheel source; requirements_frozen.txt alone does not encode wheel download indexes.",
+    "torchaudio is absent because this inspected rPPG model does not import it.",
+    "mamba-ssm and causal-conv1d are absent by design: the source-hashed adapter executes the authors' PyTorch reference recurrence and ordinary depthwise Conv1d."
+  ]
+}

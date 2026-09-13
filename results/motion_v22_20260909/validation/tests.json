@@ -1,0 +1,24 @@
+{
+  "run": 57,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "source_hashes": {
+    "analyze_motion_v2.py": "bc7a5973220528ed582cff6696f54b607c5bd090348f640f70975994fd54bb63",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "motion_fusion.py": "2ce91ed984d534dabf20c95ca23e1e995d1ace030c8677805267a21bde13ae04",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115"
+  },
+  "test_hashes": {
+    "test_cli_v2.py": "2939921ad15626c23a79997a482dad2a3ddbe8df0753f37f973828cc2c69d72e",
+    "test_frontend_v2.py": "b0fbb912cd0147d0675e1a93c44641d3e92cd0271e506b6080c4ed212cad3b96",
+    "test_fusion_v2.py": "1a6568a3bf80c44df5da60bb29ae6b4720ed906149e2543a38a30e0992f6c52c",
+    "test_gap_policy_v22.py": "9d07060667d8af0ded1026a76aea9d158f2c62a839f6d5321664e9d538172bf5",
+    "test_sampling_v22.py": "2020afcd5f6fd209ff8eb05f0c400fae4289cd1b227a61d74b81e9fe33a1df43",
+    "test_stable_groups_v21.py": "b4f17913006f458b18a82ef44d9b366f11df992fd4855bcdbf6c46b939d0f2a6",
+    "test_waveform_hr_v21.py": "f3803f5393125ced0927dc47ca0d5879e8795cfa12850e567928c47426f50646"
+  }
+}

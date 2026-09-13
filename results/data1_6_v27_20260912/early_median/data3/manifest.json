@@ -1,0 +1,126 @@
+{
+  "case": "data3",
+  "variant": "early_median",
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "stable_patch_frontend_v27.py": "e69787cd4c3a0148af01d704b97619bc9cf41e6107a0c7295ddb66fe839420d7",
+    "prepare_patch_signals_v27.py": "2316e789187727ba4a3dfab2464c1a4540a008c1dcbd31c7509097525bb8c4be",
+    "patch_hr_v27.py": "e88024369c13d1ab76711d5b6c20e8cbec7f2079546b0f92a649f069b401b4fa",
+    "run_v27.py": "90eee215a59723be2d6ef50d40f66ae95cb209204b48ed8efd2998c9aae96039"
+  },
+  "primary_hr_source": "patch_median",
+  "primary_hr_interpretation": "Hierarchical spatial aggregation from the saved independent patch BVPs. Not claimed to be the heart rate of the single displayed fused waveform.",
+  "patch_availability": {
+    "mean_patch_observed_pct": 100.0,
+    "at_least_two_regions_observed_pct": 100.0,
+    "face_detection_pct": 100.0,
+    "per_patch_observed_pct": {
+      "forehead_0": 100.0,
+      "forehead_1": 100.0,
+      "forehead_2": 100.0,
+      "forehead_3": 100.0,
+      "left_cheek_0": 100.0,
+      "left_cheek_1": 100.0,
+      "left_cheek_2": 100.0,
+      "left_cheek_3": 100.0,
+      "right_cheek_0": 100.0,
+      "right_cheek_1": 100.0,
+      "right_cheek_2": 100.0,
+      "right_cheek_3": 100.0
+    }
+  },
+  "patch_waveforms_path": "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/signals/data3/early_patch_waveforms.csv",
+  "patch_waveforms_sha256": "e9b3b6ecc602b83454b92099053eb6ec80f4b310a201d98e5e56158582bc370f",
+  "patch_signal_metadata": {
+    "spatial_mode": "early",
+    "patch_regions": {
+      "forehead": "forehead",
+      "left_cheek": "left_cheek",
+      "right_cheek": "right_cheek"
+    },
+    "channel_order": [
+      "baseline/forehead/pos",
+      "baseline/forehead/chrom",
+      "tracked/forehead/pos",
+      "tracked/forehead/chrom",
+      "baseline/left_cheek/pos",
+      "baseline/left_cheek/chrom",
+      "tracked/left_cheek/pos",
+      "tracked/left_cheek/chrom",
+      "baseline/right_cheek/pos",
+      "baseline/right_cheek/chrom",
+      "tracked/right_cheek/pos",
+      "tracked/right_cheek/chrom"
+    ],
+    "anchor": {
+      "anchor_hz": 0.15,
+      "anchor_order": 4
+    },
+    "methods": [
+      "pos",
+      "chrom"
+    ],
+    "window_s": 10,
+    "step_s": 1,
+    "band_bpm": [
+      42,
+      210
+    ],
+    "max_gap_s": 0.1,
+    "preprocessing": "unchanged V25 make_waveforms for each actual raw/anchored RGB series"
+  },
+  "patch_hr_config": {
+    "window_s": 10.0,
+    "step_s": 1.0,
+    "min_bpm": 42.0,
+    "max_bpm": 210.0,
+    "grid_step_bpm": 1.0,
+    "welch_nfft": 8192,
+    "min_observed": 0.9,
+    "min_quality": 0.2,
+    "max_gap_s": 0.1,
+    "min_tracked_fraction": 0.6,
+    "max_reset_fraction": 0.05,
+    "min_regions": 2,
+    "concentration_radius_bpm": 6.0,
+    "width_scale_bpm": 12.0,
+    "complete_link_cosine_distance": 0.25,
+    "flat_std": 1e-08
+  },
+  "source_files": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/frontend/data3/patch_trace.csv": "6132665e0f525845af7040d6556139c6e54df025bc7a88821f7e94d52fa1844c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/frontend/data3/frame_trace.csv": "cd776a4569cd2c07080fa0e09a40830b3fc11275ac18d67af7e25f67ab58d075",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/frontend/data3/patch_anchors.json": "8cb0dcbf486fb8ed31ced5a2abe26388d46a6997e418d8a85e2f8447cec5da23",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/frontend/data3/metadata.json": "197e5b459edba63e82f32ca55295d8ab58a05abd0b3f2fd3fdf87892548c68e9",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/frontend/data3/batch_binding.json": "978e2cc83e5c2b97bb94ae8075df54af1b8e92a27fe1223ec0aa3841c7540739",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/frontend/data3/landmark_trace.npz": "886f37235ba2a5725496da317573c72c10bd282671b98a0d78dec973970ba9bc",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/signals/data3/anchored_patch_trace.csv": "3160334fae1e24bc4125513985edc1706052030671b3615adc3b9dcc079306e5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/signals/data3/early_patch_waveforms.csv": "e9b3b6ecc602b83454b92099053eb6ec80f4b310a201d98e5e56158582bc370f",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/signals/data3/early_signals.json": "9fff849567390ce02178ee40ad3dad4d9a193b9b0d5460ff285d2426d5384a6b"
+  },
+  "fps": 30.00003000003,
+  "frames": 2221,
+  "reference_used": false,
+  "motion_on_primary": false,
+  "temporal_correction_on_primary": false,
+  "secondary_HR": "Unchanged V25 motion+DP readout of this saved measured broadband fused waveform",
+  "output_hashes": {
+    "fusion_heart_rate.csv": "df0f1a7664d1d50fa1a21bedcee0f41ae7717c9d97ca2e8bdc4e82444351e7f4",
+    "heart_rate.csv": "99bf5d7edc0e459aa710337733095bd6df051c539d5d49688d8dbf6c9520079c",
+    "patch_diagnostics.csv": "c50ac25ed074bd8701aa77b609e52ac6ea07461b27c1de91d214a95112cfe2e3",
+    "waveform.csv": "d6d6373c8e7e76c2cae7f7e219bf47085393728976c0cb79e741fba9f110ecd8"
+  },
+  "status": "complete"
+}

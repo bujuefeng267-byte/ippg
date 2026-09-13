@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "candidate": "guarded_fusion_gap10",
+  "cases": [
+    "ubfc",
+    "synthetic72"
+  ],
+  "launcher_args": [
+    "--pixel-mode",
+    "tracking_screened",
+    "--algorithm-mode",
+    "guarded_fusion",
+    "--max-gap",
+    "0.10"
+  ],
+  "files": [
+    "frame_trace.csv",
+    "roi_waveforms.csv",
+    "pos_waveform.csv",
+    "chrom_waveform.csv",
+    "fusion_waveform.csv",
+    "pos_heart_rate.csv",
+    "chrom_heart_rate.csv",
+    "fusion_heart_rate.csv",
+    "fusion_proposals.csv",
+    "fusion_diagnostics.csv",
+    "baseline_roi_waveforms.csv",
+    "branch_routing.csv",
+    "baseline_branch_proposals.csv",
+    "baseline_branch_waveform.csv",
+    "tracked_branch_proposals.csv",
+    "tracked_branch_waveform.csv"
+  ],
+  "numeric_atol": 1e-09,
+  "numeric_rtol": 0,
+  "discrete_values": "exact",
+  "missingness": "exact in every field including diagnostics",
+  "schema": "row count and ordered column names exact; complete CSV inventory exact",
+  "core_outputs": "All CSV values, including actual waveforms, HR, proposals, routing, source/time, masks, baseline and new RGB, except finite differences in the three named FB medians.",
+  "diagnostic_only_numeric_columns": [
+    "forehead_pixel_fb_error_median",
+    "left_cheek_pixel_fb_error_median",
+    "right_cheek_pixel_fb_error_median"
+  ],
+  "diagnostic_reporting": "Every frame/value of all six FB median/rejected columns exported; count/flag changes still fail core output matching.",
+  "no_cache": true,
+  "full_video": true,
+  "no_reference_during_inference": true,
+  "summary_runtime_fields_separate": [
+    "elapsed_processing_seconds",
+    "extraction_path",
+    "opencv_threads"
+  ],
+  "config_path_fields_separate": [
+    "cache",
+    "geometry_cache",
+    "output",
+    "tracking_cache"
+  ],
+  "pass_fields_separate": [
+    "core_outputs_match",
+    "diagnostic_values_match",
+    "strict_all_fields_match",
+    "runtime_integrity_passed"
+  ],
+  "no_automatic_default_promotion": true,
+  "frozen_utc": "2026-09-10T10:25:08.936843+00:00",
+  "verifier_sha256": "ee18b2107914f4ce0e7821a3b44140d2721c920834300abddec921ebebea12aa",
+  "installation_manifest_sha256": "fda4cc8e6b4ddc0d39be226bafd6157e283db00e1e545c49693003ab9ed45259",
+  "source_hashes": {
+    "analyze_motion_v2.py": "d502da4c08a7cdb4e00bc4173e3166c6a31ef89352b7bb8c1ae866ea3af26f2d",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "7db96570627f1e62c8362782f3d5c3da5e3bfae720207b4637d8f56e27724170",
+    "stable_groups.py": "182650facddca312d7279020813e2a9f067d5cb7704e4e918962db0a21640a5f",
+    "waveform_hr.py": "80f88f4e418c421554f7d34f64b70d8b3a8d261cf51a0562c0e386637a16f115",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "6a67f2fe1854eec715bc5d4af45f394cac3d9abdb966eca1eb9e0f53c896ff71"
+  },
+  "validation_input_hashes": {
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/frame_trace.csv": "96d52ecec9d81a4954943e88f05e13e2ea10b10f79b5c9d983dd80b0250e7232",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/roi_waveforms.csv": "f0caf1513100723967992c89bcdc523c657ee55c3f7f01dda70543c0c979a85d",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/pos_waveform.csv": "3e20b16b8f869e232d16182579c57a916c58c83de7694970df5541f3f3cfaffd",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/chrom_waveform.csv": "482a4ea5b2235a18e02cc63ad8fa98860da59b423be03d4136134ec763915eef",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/fusion_waveform.csv": "e338b33477180591b0d553d36e54961671a5bc61a4a478141f5d41124a8c5475",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/pos_heart_rate.csv": "c020c409f31c45c5636773aaf1d55ce0f36b3665b3e92270baae48d081260f12",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/chrom_heart_rate.csv": "ac30857ea94bdad565ab2c72cabe01d77d7a5d7d31a5e91d6355dc324f76cc2e",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/fusion_heart_rate.csv": "8541f42d223125177d8d923829c4b5f8a2a53ec45fdd97fb9079ff70c1d94753",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/fusion_proposals.csv": "05f3fc837345a7b8fab8273cde71a02e4286ce265e1604fb535c7894ce34a4d2",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/fusion_diagnostics.csv": "1141ab9075d666b4c3f2ec61523c0eeff04ece3952650395f0ca63d770cc1eea",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/baseline_roi_waveforms.csv": "6e9d6337fc92a692200ae756543268a03e289221acfa6195c893cd8c9649d79c",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/branch_routing.csv": "1431b7ea42d587180a4d37ea10c326e3dda35d1193d4176e75ec9f6a2e46623a",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/baseline_branch_proposals.csv": "b48fad8b22240d0e7c5def68e45baa61290fd378d8e273b141f495a83a2b3cd4",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/baseline_branch_waveform.csv": "ac69e4fa1e49cb1eca3864a307a36c69cf2c441f6a82c7217b4043584db67fa7",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/tracked_branch_proposals.csv": "c43e97cfbea9ec0945365719b911a03f6546869c425cef0113c6116abb43e926",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/tracked_branch_waveform.csv": "53a7157ccb24e4d686c524b3c651360e9fafb6589b796979c1df1162a84ed177",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/summary.json": "bb1c9e5c96e8f846038b7d1e2eb9a892f6ba314b3f5b8c64133c38cd22b8d2a0",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/ubfc/frame_trace.json": "e897568ee31b102e2da3fb044bf5c43d5fc92f36bf67169ad0806f6fe748488e",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/frame_trace.csv": "d99dc5cbb95ad88773b965e3a1a69fa84566b96869d0d6d789505a451311f93f",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/roi_waveforms.csv": "a53bcebce26b638c0d3cbedd7aefbbfd11a635353c1e3b8681d53225fd009cc0",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/pos_waveform.csv": "6bf3a783f4d1c2316fb18da3acc802b880560bb222bfa13646b1113466898e6b",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/chrom_waveform.csv": "118bd79d167a23874b7a2c2529507b9b1a20af78d0c970f2fe6a301dae30b575",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/fusion_waveform.csv": "b20396a23e0f506baa7c2ef5625ae9f3af6217c23d23f75721a0f4ab91fd8f77",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/pos_heart_rate.csv": "62d836e85828a484515eb0106ae1ad4af2594fd9f9076709febc0fd8b1cd0bd6",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/chrom_heart_rate.csv": "108bf2a404854afd57bc85b5e928aa7a21dd76f284f0d2a891de22a156753059",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/fusion_heart_rate.csv": "ff80ed4f744880033ba5cedf28c4711b04dc41e1aa943e1239cebb368163a775",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/fusion_proposals.csv": "8943f4b34855d3174de527472e2d9bd2c139bed6c6810b7c95031fd35ba9da51",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/fusion_diagnostics.csv": "c41483d32aa4ee7f4da4d70cdd7a39eb9347449d8ec61ef551e85d095524222e",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/baseline_roi_waveforms.csv": "6dda6a7e1448808bbb291f7a4e0d9f57d12cc7c1e38969a192a75ebfe6e49bca",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/branch_routing.csv": "2baa81f95a35e567562a960bcef646628ddfd37fca93bf955fcbef949d428082",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/baseline_branch_proposals.csv": "2c84fdf03519abc5ad0898f70b36165476a39b546b4fef946b8640dddac32797",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/baseline_branch_waveform.csv": "4b7634186c7e012921a70b4314a00d210ac6d6cb9251ae4f51afb4b68495e967",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/tracked_branch_proposals.csv": "dd6b55bfb5645297d5fd7b32edd8126dcd871a4c0fa71db631d459ece822b5bc",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/tracked_branch_waveform.csv": "ef775cc2781b8f1cc860678e617c8b463a4733767c09d10a0fb84ae6140e957b",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/summary.json": "9864e0b39cf1f16dbf0a2d0bff8397b77e3e3d2fcd4fc6b12bb92a5c43c6569d",
+    "/home/fengbujue/项目/rppg识别/results/motion_v24_20260910/validation/guarded_fusion_gap10/synthetic72/frame_trace.json": "a81d04459e9f71f6d9f73055d74415f14f4c727a8bd204c0ae29432ab97fb174"
+  },
+  "original_video_hashes": {
+    "ubfc": {
+      "path": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+      "sha256": "f6745be5e6b6fe2f00dd6f32dd234aa559bb30b45f38ec9d87cf9a1cc41f6954",
+      "bytes": 1425830568
+    },
+    "synthetic72": {
+      "path": "/home/fengbujue/项目/rppg识别/videos/self_test_72bpm.mp4",
+      "sha256": "d9b7998a7fd9a7b42ddf8090c983acbce875e135a45dc714ab98ae154a18c988",
+      "bytes": 3140871
+    }
+  }
+}

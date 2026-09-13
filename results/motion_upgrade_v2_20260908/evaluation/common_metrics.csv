@@ -1,0 +1,126 @@
+﻿case,branch,version,method,estimator,reference_kind,scope,comparison,Nplanned_original,Nref_original,Noutput_own,Nvalid_own,Ncommon_output,Ncommon_ref,Nscored,MAE_bpm,RMSE_bpm,Bias_bpm,SD_error_bpm_ddof1,Nwithin5,Nwithin10,P5_valid_pct,P10_valid_pct,LoA_lower_descriptive_bpm,LoA_upper_descriptive_bpm,P95_abs_error_bpm_linear,Max_abs_error_bpm
+user0904,old/pos/local_peak,old,pos,local_peak,none,all_9_branches_common,all_9_branches,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,old/pos/offline_ridge,old,pos,offline_ridge,none,all_9_branches_common,all_9_branches,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,old/chrom/local_peak,old,chrom,local_peak,none,all_9_branches_common,all_9_branches,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,old/chrom/offline_ridge,old,chrom,offline_ridge,none,all_9_branches_common,all_9_branches,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/pos/local_peak,new,pos,local_peak,none,all_9_branches_common,all_9_branches,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/pos/offline_ridge,new,pos,offline_ridge,none,all_9_branches_common,all_9_branches,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/chrom/local_peak,new,chrom,local_peak,none,all_9_branches_common,all_9_branches,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/chrom/offline_ridge,new,chrom,offline_ridge,none,all_9_branches_common,all_9_branches,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/fusion/forward_ridge,new,fusion,forward_ridge,none,all_9_branches_common,all_9_branches,39,0,31,0,31,0,0,,,,,0,0,,,,,,
+user0904,old/pos/local_peak,old,pos,local_peak,none,pair_common,new/pos/local_peak minus old/pos/local_peak,39,0,36,0,36,0,0,,,,,0,0,,,,,,
+user0904,new/pos/local_peak,new,pos,local_peak,none,pair_common,new/pos/local_peak minus old/pos/local_peak,39,0,36,0,36,0,0,,,,,0,0,,,,,,
+user0904,old/pos/offline_ridge,old,pos,offline_ridge,none,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,39,0,36,0,36,0,0,,,,,0,0,,,,,,
+user0904,new/pos/offline_ridge,new,pos,offline_ridge,none,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,39,0,36,0,36,0,0,,,,,0,0,,,,,,
+user0904,old/chrom/local_peak,old,chrom,local_peak,none,pair_common,new/chrom/local_peak minus old/chrom/local_peak,39,0,36,0,36,0,0,,,,,0,0,,,,,,
+user0904,new/chrom/local_peak,new,chrom,local_peak,none,pair_common,new/chrom/local_peak minus old/chrom/local_peak,39,0,36,0,36,0,0,,,,,0,0,,,,,,
+user0904,old/chrom/offline_ridge,old,chrom,offline_ridge,none,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,39,0,36,0,36,0,0,,,,,0,0,,,,,,
+user0904,new/chrom/offline_ridge,new,chrom,offline_ridge,none,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,39,0,36,0,36,0,0,,,,,0,0,,,,,,
+user0904,old/pos/offline_ridge,old,pos,offline_ridge,none,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,39,0,31,0,31,0,0,,,,,0,0,,,,,,
+user0904,old/chrom/offline_ridge,old,chrom,offline_ridge,none,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,39,0,31,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/pos/offline_ridge,new,pos,offline_ridge,none,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,39,0,31,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/chrom/offline_ridge,new,chrom,offline_ridge,none,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,39,0,36,0,31,0,0,,,,,0,0,,,,,,
+user0904,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,39,0,31,0,31,0,0,,,,,0,0,,,,,,
+user0907,old/pos/local_peak,old,pos,local_peak,none,all_9_branches_common,all_9_branches,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,old/pos/offline_ridge,old,pos,offline_ridge,none,all_9_branches_common,all_9_branches,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,old/chrom/local_peak,old,chrom,local_peak,none,all_9_branches_common,all_9_branches,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,old/chrom/offline_ridge,old,chrom,offline_ridge,none,all_9_branches_common,all_9_branches,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/pos/local_peak,new,pos,local_peak,none,all_9_branches_common,all_9_branches,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/pos/offline_ridge,new,pos,offline_ridge,none,all_9_branches_common,all_9_branches,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/chrom/local_peak,new,chrom,local_peak,none,all_9_branches_common,all_9_branches,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/chrom/offline_ridge,new,chrom,offline_ridge,none,all_9_branches_common,all_9_branches,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/fusion/forward_ridge,new,fusion,forward_ridge,none,all_9_branches_common,all_9_branches,42,0,12,0,12,0,0,,,,,0,0,,,,,,
+user0907,old/pos/local_peak,old,pos,local_peak,none,pair_common,new/pos/local_peak minus old/pos/local_peak,42,0,14,0,14,0,0,,,,,0,0,,,,,,
+user0907,new/pos/local_peak,new,pos,local_peak,none,pair_common,new/pos/local_peak minus old/pos/local_peak,42,0,14,0,14,0,0,,,,,0,0,,,,,,
+user0907,old/pos/offline_ridge,old,pos,offline_ridge,none,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,42,0,14,0,14,0,0,,,,,0,0,,,,,,
+user0907,new/pos/offline_ridge,new,pos,offline_ridge,none,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,42,0,14,0,14,0,0,,,,,0,0,,,,,,
+user0907,old/chrom/local_peak,old,chrom,local_peak,none,pair_common,new/chrom/local_peak minus old/chrom/local_peak,42,0,14,0,14,0,0,,,,,0,0,,,,,,
+user0907,new/chrom/local_peak,new,chrom,local_peak,none,pair_common,new/chrom/local_peak minus old/chrom/local_peak,42,0,14,0,14,0,0,,,,,0,0,,,,,,
+user0907,old/chrom/offline_ridge,old,chrom,offline_ridge,none,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,42,0,14,0,14,0,0,,,,,0,0,,,,,,
+user0907,new/chrom/offline_ridge,new,chrom,offline_ridge,none,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,42,0,14,0,14,0,0,,,,,0,0,,,,,,
+user0907,old/pos/offline_ridge,old,pos,offline_ridge,none,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,42,0,12,0,12,0,0,,,,,0,0,,,,,,
+user0907,old/chrom/offline_ridge,old,chrom,offline_ridge,none,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,42,0,12,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/pos/offline_ridge,new,pos,offline_ridge,none,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,42,0,12,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/chrom/offline_ridge,new,chrom,offline_ridge,none,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,42,0,14,0,12,0,0,,,,,0,0,,,,,,
+user0907,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,42,0,12,0,12,0,0,,,,,0,0,,,,,,
+ubfc,old/pos/local_peak,old,pos,local_peak,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,40,40,35,35,35,2.7885749800949475,3.447065984228934,-0.47487018493428773,3.464045056629024,28,35,80.0,100.0,-7.264398495927175,6.3146581260586,6.325174068657176,7.343965517241372
+ubfc,old/pos/offline_ridge,old,pos,offline_ridge,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,40,40,35,35,35,2.3620899291726043,2.896828445180363,-0.6462987563628592,2.8650374884188667,34,35,97.14285714285714,100.0,-6.261772233663838,4.96917472093812,4.666197231833917,5.343965517241372
+ubfc,old/chrom/local_peak,old,chrom,local_peak,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,40,40,35,35,35,2.683732464249019,3.537240173402004,-0.5034416135057163,3.5523459958099317,26,35,74.28571428571429,100.0,-7.466039765293182,6.45915653828175,6.672434893267642,7.91608996539793
+ubfc,old/chrom/offline_ridge,old,chrom,offline_ridge,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,40,40,35,35,35,2.4014328421070417,3.051928546489273,-0.47487018493428773,3.058771454703867,30,35,85.71428571428571,100.0,-6.470062236153867,5.5203218662852915,5.666197231833917,6.343965517241372
+ubfc,new/pos/local_peak,new,pos,local_peak,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,40,40,35,35,35,2.7885749800949475,3.447065984228934,-0.47487018493428773,3.464045056629024,28,35,80.0,100.0,-7.264398495927175,6.3146581260586,6.325174068657176,7.343965517241372
+ubfc,new/pos/offline_ridge,new,pos,offline_ridge,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,40,40,35,35,35,2.3620899291726043,2.896828445180363,-0.6462987563628592,2.8650374884188667,34,35,97.14285714285714,100.0,-6.261772233663838,4.96917472093812,4.666197231833917,5.343965517241372
+ubfc,new/chrom/local_peak,new,chrom,local_peak,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,40,40,35,35,35,2.683732464249019,3.537240173402004,-0.5034416135057163,3.5523459958099317,26,35,74.28571428571429,100.0,-7.466039765293182,6.45915653828175,6.672434893267642,7.91608996539793
+ubfc,new/chrom/offline_ridge,new,chrom,offline_ridge,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,40,40,35,35,35,2.4014328421070417,3.051928546489273,-0.47487018493428773,3.058771454703867,30,35,85.71428571428571,100.0,-6.470062236153867,5.5203218662852915,5.666197231833917,6.343965517241372
+ubfc,new/fusion/forward_ridge,new,fusion,forward_ridge,human_UBFC_device_HR,all_9_branches_common,all_9_branches,44,44,35,35,35,35,35,3.660212720834545,5.376493097537205,0.7822726722085694,5.396936664595646,24,32,68.57142857142857,91.42857142857143,-9.795723190398897,11.360268534816035,12.962601677441894,14.546655290102379
+ubfc,old/pos/local_peak,old,pos,local_peak,human_UBFC_device_HR,pair_common,new/pos/local_peak minus old/pos/local_peak,44,44,40,40,40,40,40,3.209058217721374,4.30546855769563,-0.9253926583732962,4.258410432837225,32,39,80.0,97.5,-9.271877106734257,7.421091789987665,6.937483742990101,16.363400673400676
+ubfc,new/pos/local_peak,new,pos,local_peak,human_UBFC_device_HR,pair_common,new/pos/local_peak minus old/pos/local_peak,44,44,40,40,40,40,40,3.209058217721374,4.30546855769563,-0.9253926583732962,4.258410432837225,32,39,80.0,97.5,-9.271877106734257,7.421091789987665,6.937483742990101,16.363400673400676
+ubfc,old/pos/offline_ridge,old,pos,offline_ridge,human_UBFC_device_HR,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,44,44,40,40,40,40,40,2.5608837981643235,3.0610386147775506,-0.7503926583732963,3.005442628678114,39,40,97.5,100.0,-6.641060210582399,5.140274893835807,4.629613776620415,5.343965517241372
+ubfc,new/pos/offline_ridge,new,pos,offline_ridge,human_UBFC_device_HR,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,44,44,40,40,40,40,40,2.5608837981643235,3.0610386147775506,-0.7503926583732963,3.005442628678114,39,40,97.5,100.0,-6.641060210582399,5.140274893835807,4.629613776620415,5.343965517241372
+ubfc,old/chrom/local_peak,old,chrom,local_peak,human_UBFC_device_HR,pair_common,new/chrom/local_peak minus old/chrom/local_peak,44,44,40,40,40,40,40,2.767321016356186,3.5635732593936837,-0.7003926583732962,3.5385792454125022,30,40,75.0,100.0,-7.636007979381801,6.235222662635208,6.432602527562739,7.91608996539793
+ubfc,new/chrom/local_peak,new,chrom,local_peak,human_UBFC_device_HR,pair_common,new/chrom/local_peak minus old/chrom/local_peak,44,44,40,40,40,40,40,2.767321016356186,3.5635732593936837,-0.7003926583732962,3.5385792454125022,30,40,75.0,100.0,-7.636007979381801,6.235222662635208,6.432602527562739,7.91608996539793
+ubfc,old/chrom/offline_ridge,old,chrom,offline_ridge,human_UBFC_device_HR,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,44,44,40,40,40,40,40,2.545308846981956,3.141175422904123,-0.6003926583732963,3.1225419778301005,35,40,87.5,100.0,-6.720574934920293,5.5197896181737,5.576949826989627,6.343965517241372
+ubfc,new/chrom/offline_ridge,new,chrom,offline_ridge,human_UBFC_device_HR,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,44,44,40,40,40,40,40,2.545308846981956,3.141175422904123,-0.6003926583732963,3.1225419778301005,35,40,87.5,100.0,-6.720574934920293,5.5197896181737,5.576949826989627,6.343965517241372
+ubfc,old/pos/offline_ridge,old,pos,offline_ridge,human_UBFC_device_HR,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,44,44,40,40,35,35,35,2.3620899291726043,2.896828445180363,-0.6462987563628592,2.8650374884188667,34,35,97.14285714285714,100.0,-6.261772233663838,4.96917472093812,4.666197231833917,5.343965517241372
+ubfc,new/fusion/forward_ridge,new,fusion,forward_ridge,human_UBFC_device_HR,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,44,44,35,35,35,35,35,3.660212720834545,5.376493097537205,0.7822726722085694,5.396936664595646,24,32,68.57142857142857,91.42857142857143,-9.795723190398897,11.360268534816035,12.962601677441894,14.546655290102379
+ubfc,old/chrom/offline_ridge,old,chrom,offline_ridge,human_UBFC_device_HR,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,44,44,40,40,35,35,35,2.4014328421070417,3.051928546489273,-0.47487018493428773,3.058771454703867,30,35,85.71428571428571,100.0,-6.470062236153867,5.5203218662852915,5.666197231833917,6.343965517241372
+ubfc,new/fusion/forward_ridge,new,fusion,forward_ridge,human_UBFC_device_HR,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,44,44,35,35,35,35,35,3.660212720834545,5.376493097537205,0.7822726722085694,5.396936664595646,24,32,68.57142857142857,91.42857142857143,-9.795723190398897,11.360268534816035,12.962601677441894,14.546655290102379
+ubfc,new/pos/offline_ridge,new,pos,offline_ridge,human_UBFC_device_HR,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,44,44,40,40,35,35,35,2.3620899291726043,2.896828445180363,-0.6462987563628592,2.8650374884188667,34,35,97.14285714285714,100.0,-6.261772233663838,4.96917472093812,4.666197231833917,5.343965517241372
+ubfc,new/fusion/forward_ridge,new,fusion,forward_ridge,human_UBFC_device_HR,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,44,44,35,35,35,35,35,3.660212720834545,5.376493097537205,0.7822726722085694,5.396936664595646,24,32,68.57142857142857,91.42857142857143,-9.795723190398897,11.360268534816035,12.962601677441894,14.546655290102379
+ubfc,new/chrom/offline_ridge,new,chrom,offline_ridge,human_UBFC_device_HR,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,44,44,40,40,35,35,35,2.4014328421070417,3.051928546489273,-0.47487018493428773,3.058771454703867,30,35,85.71428571428571,100.0,-6.470062236153867,5.5203218662852915,5.666197231833917,6.343965517241372
+ubfc,new/fusion/forward_ridge,new,fusion,forward_ridge,human_UBFC_device_HR,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,44,44,35,35,35,35,35,3.660212720834545,5.376493097537205,0.7822726722085694,5.396936664595646,24,32,68.57142857142857,91.42857142857143,-9.795723190398897,11.360268534816035,12.962601677441894,14.546655290102379
+kaggle_full,old/pos/local_peak,old,pos,local_peak,none,all_9_branches_common,all_9_branches,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,old/pos/offline_ridge,old,pos,offline_ridge,none,all_9_branches_common,all_9_branches,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,old/chrom/local_peak,old,chrom,local_peak,none,all_9_branches_common,all_9_branches,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,old/chrom/offline_ridge,old,chrom,offline_ridge,none,all_9_branches_common,all_9_branches,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/pos/local_peak,new,pos,local_peak,none,all_9_branches_common,all_9_branches,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/pos/offline_ridge,new,pos,offline_ridge,none,all_9_branches_common,all_9_branches,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/chrom/local_peak,new,chrom,local_peak,none,all_9_branches_common,all_9_branches,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/chrom/offline_ridge,new,chrom,offline_ridge,none,all_9_branches_common,all_9_branches,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/fusion/forward_ridge,new,fusion,forward_ridge,none,all_9_branches_common,all_9_branches,419,0,246,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,old/pos/local_peak,old,pos,local_peak,none,pair_common,new/pos/local_peak minus old/pos/local_peak,419,0,416,0,416,0,0,,,,,0,0,,,,,,
+kaggle_full,new/pos/local_peak,new,pos,local_peak,none,pair_common,new/pos/local_peak minus old/pos/local_peak,419,0,416,0,416,0,0,,,,,0,0,,,,,,
+kaggle_full,old/pos/offline_ridge,old,pos,offline_ridge,none,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,419,0,416,0,416,0,0,,,,,0,0,,,,,,
+kaggle_full,new/pos/offline_ridge,new,pos,offline_ridge,none,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,419,0,416,0,416,0,0,,,,,0,0,,,,,,
+kaggle_full,old/chrom/local_peak,old,chrom,local_peak,none,pair_common,new/chrom/local_peak minus old/chrom/local_peak,419,0,416,0,416,0,0,,,,,0,0,,,,,,
+kaggle_full,new/chrom/local_peak,new,chrom,local_peak,none,pair_common,new/chrom/local_peak minus old/chrom/local_peak,419,0,416,0,416,0,0,,,,,0,0,,,,,,
+kaggle_full,old/chrom/offline_ridge,old,chrom,offline_ridge,none,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,419,0,416,0,416,0,0,,,,,0,0,,,,,,
+kaggle_full,new/chrom/offline_ridge,new,chrom,offline_ridge,none,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,419,0,416,0,416,0,0,,,,,0,0,,,,,,
+kaggle_full,old/pos/offline_ridge,old,pos,offline_ridge,none,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,419,0,246,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,old/chrom/offline_ridge,old,chrom,offline_ridge,none,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,419,0,246,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/pos/offline_ridge,new,pos,offline_ridge,none,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,419,0,246,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/chrom/offline_ridge,new,chrom,offline_ridge,none,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,419,0,416,0,246,0,0,,,,,0,0,,,,,,
+kaggle_full,new/fusion/forward_ridge,new,fusion,forward_ridge,none,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,419,0,246,0,246,0,0,,,,,0,0,,,,,,
+synthetic72,old/pos/local_peak,old,pos,local_peak,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/pos/offline_ridge,old,pos,offline_ridge,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/chrom/local_peak,old,chrom,local_peak,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/chrom/offline_ridge,old,chrom,offline_ridge,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/pos/local_peak,new,pos,local_peak,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/pos/offline_ridge,new,pos,offline_ridge,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/chrom/local_peak,new,chrom,local_peak,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/chrom/offline_ridge,new,chrom,offline_ridge,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/fusion/forward_ridge,new,fusion,forward_ridge,synthetic_72bpm_modulation,all_9_branches_common,all_9_branches,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/pos/local_peak,old,pos,local_peak,synthetic_72bpm_modulation,pair_common,new/pos/local_peak minus old/pos/local_peak,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/pos/local_peak,new,pos,local_peak,synthetic_72bpm_modulation,pair_common,new/pos/local_peak minus old/pos/local_peak,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/pos/offline_ridge,old,pos,offline_ridge,synthetic_72bpm_modulation,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/pos/offline_ridge,new,pos,offline_ridge,synthetic_72bpm_modulation,pair_common,new/pos/offline_ridge minus old/pos/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/chrom/local_peak,old,chrom,local_peak,synthetic_72bpm_modulation,pair_common,new/chrom/local_peak minus old/chrom/local_peak,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/chrom/local_peak,new,chrom,local_peak,synthetic_72bpm_modulation,pair_common,new/chrom/local_peak minus old/chrom/local_peak,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/chrom/offline_ridge,old,chrom,offline_ridge,synthetic_72bpm_modulation,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/chrom/offline_ridge,new,chrom,offline_ridge,synthetic_72bpm_modulation,pair_common,new/chrom/offline_ridge minus old/chrom/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/pos/offline_ridge,old,pos,offline_ridge,synthetic_72bpm_modulation,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/fusion/forward_ridge,new,fusion,forward_ridge,synthetic_72bpm_modulation,pair_common,new/fusion/forward_ridge minus old/pos/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,old/chrom/offline_ridge,old,chrom,offline_ridge,synthetic_72bpm_modulation,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/fusion/forward_ridge,new,fusion,forward_ridge,synthetic_72bpm_modulation,pair_common,new/fusion/forward_ridge minus old/chrom/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/pos/offline_ridge,new,pos,offline_ridge,synthetic_72bpm_modulation,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/fusion/forward_ridge,new,fusion,forward_ridge,synthetic_72bpm_modulation,pair_common,new/fusion/forward_ridge minus new/pos/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/chrom/offline_ridge,new,chrom,offline_ridge,synthetic_72bpm_modulation,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0
+synthetic72,new/fusion/forward_ridge,new,fusion,forward_ridge,synthetic_72bpm_modulation,pair_common,new/fusion/forward_ridge minus new/chrom/offline_ridge,11,11,7,7,7,7,7,0.0,0.0,0.0,0.0,7,7,100.0,100.0,0.0,0.0,0.0,0.0

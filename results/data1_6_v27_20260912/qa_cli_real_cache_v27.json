@@ -1,0 +1,145 @@
+{
+  "created_utc": "2026-09-12T02:55:37.783738+00:00",
+  "passed": true,
+  "errors": [],
+  "reference_files_read": false,
+  "source_and_input_outputs_unchanged": true,
+  "source_sha256": "5ac62505051ace2f8ea36ad8558f62ced6f86e772508c6190e4416bf5370d4ac",
+  "input_hashes": {
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/manifest.json": "fa34d57ad147245d18757216a7fa1939666bd67066cd8884b710a2963fe543a7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/frontend_binding.json": "607922f7f17f84ffb3fd73635782888158598430424d675564d9eb5bfb42b378",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/variants/late_psd_cluster/primary_hr.csv": "75d3109624e3b4544f6159234b6906fa2a71a50a09df9a023af9c7cc64de84aa",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/variants/late_psd_cluster/patch_diagnostics.csv": "baa0ca0628c451748c1c3bbe13851752671d4cf3c098628621577d2b191aebe7",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/variants/late_psd_cluster/secondary_hr.csv": "38d9e6367025752a02143eea2e21cb0eee82ac50b041ddfcfa39c21d3ae3344e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/variants/late_psd_cluster/ppg_hr.png": "01fd3763480019d2ee855d7635d4b37d879d36bcfe40d7db0f6bbe5957e394b5",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/variants/late_psd_cluster/manifest.json": "b29235a1a73490a7df56a7c35303dabc53e5124b64e3b4c190fd58008d6d23d8",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/variants/late_psd_cluster/waveform.csv": "7a84b9c32de85ab3dfcd2cf5fc2f4d06fa1bd8c1deac95035f847de14314c36b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/frontend/patch_trace.csv": "7cedac571b70d466b96dadc6a8c0b52d1ca3b4aea029e6c3d70cd648960e72ab",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/frontend/landmark_trace.npz": "1c6c3821a982f85ac4d91c415cabc2fba1480793e7151f80a797eaf25dc92c35",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/frontend/frame_trace.csv": "447de83df5f432b3079fadf6e18add1d92af9255c461bc14bd615a00fc619c1c",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/frontend/metadata.json": "109f8f8833cf00fdecff3640810ba76faf97806237124d80977c98ebb2cf8731",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/frontend/patch_anchors.json": "62395fc992f6e9b3104ff240581cec88213087b3ac224aa54636d98f67c53b9d",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/signals/late_signals.json": "94d367bb46ff3ecea3c892189649180466d9bb7db43af6aec4f814ffd13cfe52",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/signals/anchored_patch_trace.csv": "fb46fb2cf9cde25e1f7120f4d83a5f32d376738279f8a9438378a21e8b216e69",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/signals/late_patch_waveforms.csv": "383141fd2c7e05d78648eef382236f822b4d575c452b8ca81ee54efad2355037",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/analyze_video_v27.py": "a6dfb672a3c2696adbd6b5f0e004b9e1b3d28078b32010531cb84410db4b743c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/stable_patch_frontend_v27.py": "e69787cd4c3a0148af01d704b97619bc9cf41e6107a0c7295ddb66fe839420d7",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/prepare_patch_signals_v27.py": "2316e789187727ba4a3dfab2464c1a4540a008c1dcbd31c7509097525bb8c4be",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/patch_hr_v27.py": "e88024369c13d1ab76711d5b6c20e8cbec7f2079546b0f92a649f069b401b4fa",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/run_v27.py": "90eee215a59723be2d6ef50d40f66ae95cb209204b48ed8efd2998c9aae96039",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "/mnt/c/Users/15011/Documents/ChatGPT/New project/rppg_motion_v27/motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/late_psd_cluster/data2/waveform.csv": "7a84b9c32de85ab3dfcd2cf5fc2f4d06fa1bd8c1deac95035f847de14314c36b",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/late_psd_cluster/data2/heart_rate.csv": "75d3109624e3b4544f6159234b6906fa2a71a50a09df9a023af9c7cc64de84aa",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/late_psd_cluster/data2/fusion_heart_rate.csv": "38d9e6367025752a02143eea2e21cb0eee82ac50b041ddfcfa39c21d3ae3344e",
+    "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/late_psd_cluster/data2/patch_diagnostics.csv": "baa0ca0628c451748c1c3bbe13851752671d4cf3c098628621577d2b191aebe7"
+  },
+  "smoke": "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2",
+  "batch": "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/late_psd_cluster/data2",
+  "comparisons": {
+    "waveform.csv": {
+      "byte_identical": true,
+      "rows": 1393,
+      "columns": 5,
+      "maximum_numeric_difference": 0.0,
+      "discrete_columns_exact": [
+        "covered",
+        "observed",
+        "interpolated"
+      ],
+      "all_missing_masks_exact": true,
+      "passed": true
+    },
+    "primary_hr.csv": {
+      "byte_identical": true,
+      "rows": 37,
+      "columns": 20,
+      "maximum_numeric_difference": 0.0,
+      "discrete_columns_exact": [
+        "accepted",
+        "status",
+        "hr_source",
+        "aggregation_mode",
+        "waveform_generated",
+        "selected_channels_json",
+        "region_medians_json",
+        "estimate_near_contributor_peak"
+      ],
+      "all_missing_masks_exact": true,
+      "passed": true
+    },
+    "secondary_hr.csv": {
+      "byte_identical": true,
+      "rows": 37,
+      "columns": 25,
+      "maximum_numeric_difference": 0.0,
+      "discrete_columns_exact": [
+        "accepted",
+        "status",
+        "evidence_candidates_json",
+        "evidence_reacquired",
+        "evidence_tracker_state",
+        "evidence_motion_available",
+        "hr_source"
+      ],
+      "all_missing_masks_exact": true,
+      "passed": true
+    },
+    "patch_diagnostics.csv": {
+      "byte_identical": true,
+      "rows": 2133,
+      "columns": 28,
+      "maximum_numeric_difference": 0.0,
+      "discrete_columns_exact": [
+        "record_type",
+        "channel",
+        "patch_id",
+        "region",
+        "branch",
+        "method",
+        "status",
+        "representative",
+        "patch_ids_json",
+        "regions_json",
+        "qualified",
+        "selected",
+        "medoid_channel"
+      ],
+      "all_missing_masks_exact": true,
+      "passed": true
+    }
+  },
+  "saved_wave_secondary_HR_replay": {
+    "rows": 37,
+    "columns": 25,
+    "maximum_numeric_difference": 7.105427357601002e-15,
+    "discrete_columns_exact": [
+      "accepted",
+      "status",
+      "evidence_candidates_json",
+      "evidence_reacquired",
+      "evidence_tracker_state",
+      "evidence_motion_available",
+      "hr_source"
+    ],
+    "all_missing_masks_exact": true,
+    "passed": true
+  },
+  "frames": 1393,
+  "fps": 30.00003000003,
+  "planned_windows": 37,
+  "primary_accepted_windows": 32,
+  "secondary_accepted_windows": 33,
+  "scope": "Runtime, binding and source consistency only; no physiological accuracy assessment.",
+  "PNG_manual_review": {
+    "passed": true,
+    "path": "/home/fengbujue/项目/rppg识别/results/data1_6_v27_20260912/cli_smoke_data2/variants/late_psd_cluster/ppg_hr.png",
+    "reviewed_png_sha256": "01fd3763480019d2ee855d7635d4b37d879d36bcfe40d7db0f6bbe5957e394b5",
+    "observations": "Three readable panels distinguish the saved relative-amplitude waveform, primary spatial patch HR statistic and secondary saved-wave HR; no reference; missing intervals remain blank; no clipping or label overlap observed."
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "model": "RhythmMamba.pure",
+  "open_rppg_version": "0.1.1",
+  "fps": 29.264106,
+  "model_meta": {
+    "fps": 30.0,
+    "input": [
+      160,
+      128,
+      128,
+      3
+    ]
+  },
+  "trace": "/home/fengbujue/项目/rppg识别/results/motion_upgrade_20260908/ubfc_robust/frame_trace.csv",
+  "input_identity": {
+    "video": "/home/fengbujue/项目/rppg识别/videos/ubfc_subject1/vid.avi",
+    "size": 1425830568,
+    "mtime_ns": 1788405743301475200,
+    "frontend": "robust",
+    "max_seconds": null,
+    "source_sha256": "5b6deab6e91ab3490f5f67efc39a07aa4fc6646b749eb90a1187eecf866dfc88"
+  },
+  "finite_prediction_fraction": 0.9392372333548804,
+  "segments": [
+    {
+      "start_frame": 0,
+      "stop_frame": 1547,
+      "statistics": {
+        "frames": 1586,
+        "key": 0,
+        "skipped": 0,
+        "filled": 39,
+        "dependent": 0,
+        "null": 0
+      }
+    }
+  ],
+  "packaged_weights": [
+    {
+      "name": "PhysFormer.rlap.weights.h5",
+      "sha256": "244b2b6330fdba41d358eabc53cb6dff406d5907150c0b8f784dabc0b9c7b522"
+    },
+    {
+      "name": "state.pkl",
+      "sha256": "d894487c5f0162dd798a8e7f8aabedb958b48cab8e4a31abdd433f97826c57f4"
+    },
+    {
+      "name": "blaze_face_full.onnx",
+      "sha256": "e2c0fa004fbf29c7868e8da2ccd6195b57ee8178052ccff7791f6ca05bab07fe"
+    },
+    {
+      "name": "physnet.rlap.weights.h5",
+      "sha256": "6006ec3e023e73a30ef5ff0086aa09d8cdf92245b19abb04449a4d2f73add4d5"
+    },
+    {
+      "name": "EfficientPhys.pure.weights.h5",
+      "sha256": "2a5ce6bc4d172583b94fefb02b33932c39723094614e09ce0cbf95223107c5ca"
+    },
+    {
+      "name": "FacePhys.rlap.weights.h5",
+      "sha256": "6cd99510bcc5771f9cebcdb0f47a5cb3692d19f1e3d6e2444af5e8fac0ee3c07"
+    },
+    {
+      "name": "EfficientPhys.rlap.weights.h5",
+      "sha256": "0aa2a5296e4f2d449dd09a5d86f1e85422f12c6a07258df242d1e8fc5e36c5a8"
+    },
+    {
+      "name": "RhythmMamba.pure.weights.h5",
+      "sha256": "dc2f9c8e421a70cf31db54a6b3334852f165d4ffa2cf1d15f493afc499ca7bcb"
+    },
+    {
+      "name": "ME.rlap.weights.h5",
+      "sha256": "d774c0fcca06255c6a59c774314751617731901c26dcc9e12519101f6a42f6dc"
+    },
+    {
+      "name": "TSCAN.rlap.weights.h5",
+      "sha256": "3aa4645b4747d6f083d0e3f2dde80ec7187336a26e6afd4e8e419155b2352a42"
+    },
+    {
+      "name": "ME.pure.weights.h5",
+      "sha256": "2135995cb4161d1d4c7c3aa45d333dc6b1f5818b0652d11da9fc0fb0b6e11bf0"
+    },
+    {
+      "name": "TSCAN.pure.weights.h5",
+      "sha256": "d8026492e68f6274e84cd35e45f0c423b0de37b1c124dfa2f826a48b943a2f05"
+    },
+    {
+      "name": "physnet.pure.weights.h5",
+      "sha256": "c4b89ae6d2b442f98d41239d6251608583a95471b6c0ac002932fd34d3dc28c9"
+    },
+    {
+      "name": "blaze_face_short_range.tflite",
+      "sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f"
+    },
+    {
+      "name": "blaze_face.onnx",
+      "sha256": "4b3aa1d55a638744c87bdec939cb63e3c3fe0887f792fe3da65c1bb227d630b7"
+    },
+    {
+      "name": "PhysFormer.pure.weights.h5",
+      "sha256": "4fdc8702eaa2bb4ca9683d9e66bcb37eb9581fe437129e1994e5878b1439b3ad"
+    },
+    {
+      "name": "PhysMamba.pure.weights.h5",
+      "sha256": "113b1189737cbc37933bb15e2af523c23f7f2fdc8fa13409f34586916a92f2a3"
+    },
+    {
+      "name": "PhysMamba.rlap.weights.h5",
+      "sha256": "e92c4c5817ff01b79be3ab5541c83f0a1b24f6afdc5fa212d2bc42e16d50a0c0"
+    },
+    {
+      "name": "RhythmMamba.rlap.weights.h5",
+      "sha256": "a713be668dfdcd93a21b35a5e5aedcfca42153cd2f69ac0911d63b4ee14f9e2a"
+    }
+  ],
+  "warning": "Independent converted-weight comparison. Not official PyTorch replication. No claim of exercise accuracy."
+}

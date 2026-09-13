@@ -1,0 +1,1024 @@
+{
+  "purpose": "Byte-preserving archive of project research materials previously outside the repository",
+  "source_workspace": "/mnt/c/Users/15011/Documents/ChatGPT/New project",
+  "files": [
+    {
+      "path": "rPPG_UBFC退步原因诊断_2026-09-09.md",
+      "bytes": 13950,
+      "sha256": "a0495fbae1ee6c19133e55a35145e4c89a85cb54602af91a82a9422f5ead9298"
+    },
+    {
+      "path": "rPPG_V2.1代码修复与指标变化_2026-09-09.md",
+      "bytes": 8635,
+      "sha256": "18d748e3d5b1cc377b30d96a0ec76c8bdd76891b1e7091bcceba4fd6656253ce"
+    },
+    {
+      "path": "rPPG抗运动研究_指标市场与视频分析_2026-09-08.md",
+      "bytes": 41213,
+      "sha256": "868f7b1cc18b112e32fa68d927cab7093aa72ed36e30961cd3b99b5e70bbfdf6"
+    },
+    {
+      "path": "rPPG研究_指标与算法更新_两张思维导图_2026-09-09.md",
+      "bytes": 5110,
+      "sha256": "e4bb3d086f938dd8b61731887e1b93a79ec9c1dc19e3a01d96e983a92e6328f8"
+    },
+    {
+      "path": "rPPG运动监测_V2升级与指标变化_2026-09-08.md",
+      "bytes": 12303,
+      "sha256": "7dfab7ca4cb61a00b7bbc073050b2914ee5ac9f92097f4898823d19a68ba29de"
+    },
+    {
+      "path": "replay_paper_methods.py",
+      "bytes": 11770,
+      "sha256": "f1a15ff1eb80424c88b1c45c6a2324551e39cfdd1adccd245b2e52d0f24053ab"
+    },
+    {
+      "path": "replay_usage.md",
+      "bytes": 5174,
+      "sha256": "678a63756c0d140f8b64da375b916b3a8696d27fd7d1585eed27c2c30dbbb541"
+    },
+    {
+      "path": "rppg_data1_20260909/share/alignment_protocol.json",
+      "bytes": 3274,
+      "sha256": "cdde1ebc76692ebe8dd88b7670c6dd1fb56d1a83048c939f5cdb791d5df0ddc5"
+    },
+    {
+      "path": "rppg_data1_20260909/share/bundle_manifest.json",
+      "bytes": 3104,
+      "sha256": "23e18b6a9dcd76faa2074e133613285dcb07f76667aa8f80d2f6a8a476cfb3d9"
+    },
+    {
+      "path": "rppg_data1_20260909/share/comparison_qa.json",
+      "bytes": 115990,
+      "sha256": "89289308f708de5094788338b2f6ce8eb9cb06e7acc7eb8d3bb76eb9d7e5dad9"
+    },
+    {
+      "path": "rppg_data1_20260909/share/comparison_qa.md",
+      "bytes": 3230,
+      "sha256": "0d82bbe1cfb03af8b8cdcac52e09a113e22140c8348e462ef44115fc7334d6f2"
+    },
+    {
+      "path": "rppg_data1_20260909/share/data1_分析与参考比较.md",
+      "bytes": 7648,
+      "sha256": "b20c186c71af12744aa536ab92dff0bbc034e1009ba4bacd2705ab13104ec319"
+    },
+    {
+      "path": "rppg_data1_20260909/share/data1_时间偏移敏感性.png",
+      "bytes": 138704,
+      "sha256": "8d46acbda71ba4bed7a2372e6cd59813f1441b0f64cd601e1329ec953b2ba378"
+    },
+    {
+      "path": "rppg_data1_20260909/share/data1_波形与心率对比.png",
+      "bytes": 383438,
+      "sha256": "4667ebc5d4586e7e5bc3fc52b978f3721244834edfb56be54e185060e16d29a7"
+    },
+    {
+      "path": "rppg_hschn58_review_20260910/motion_check.md",
+      "bytes": 6831,
+      "sha256": "09d523f2df9930bc2423f84bddaae4df11e01475ecf9914b43c68a24f359ead8"
+    },
+    {
+      "path": "rppg_hschn58_review_20260910/publication_check.md",
+      "bytes": 2721,
+      "sha256": "9f91524cfbb804eccbd2b7b63c26440201b0743587983f483248fc2e4f839ebb"
+    },
+    {
+      "path": "rppg_hschn58_review_20260910/revision.json",
+      "bytes": 13015,
+      "sha256": "6a10093ffecd07353f189d3ca490de0f482d27edc7d2bc0f269343631bac88c4"
+    },
+    {
+      "path": "rppg_hschn58_review_20260910/runtime_check.md",
+      "bytes": 6450,
+      "sha256": "e4a5e9e144d941f0e98ec1043342ef9395b1dd9c0df91c79a958b8a33464c47f"
+    },
+    {
+      "path": "rppg_hschn58_review_20260910/公开项目阅读笔记.md",
+      "bytes": 10215,
+      "sha256": "dcd583f9405b66923f97494bad7f683f59f2e87a4768022dd4c18550235fc8ca"
+    },
+    {
+      "path": "rppg_metric_explainer_20260910/audit_rejections.py",
+      "bytes": 3254,
+      "sha256": "a354bbdb3f3c2d5db368728b2456d73e3e9c10cce0f4fc91d1d6da1545fed9e7"
+    },
+    {
+      "path": "rppg_metric_explainer_20260910/explain_outputs.py",
+      "bytes": 5645,
+      "sha256": "0cf31a68cd9e59c57d45bf7004a87a485cd0b3d7fa7cc6735241eb3828450c2c"
+    },
+    {
+      "path": "rppg_metric_explainer_20260910/拒绝原因核对.json",
+      "bytes": 1013,
+      "sha256": "bb4ed5e81d97eb98eff963142db8bd0a8c4a7ffcefd07c3754a5c28c2c6bf197"
+    },
+    {
+      "path": "rppg_metric_explainer_20260910/拒绝原因逐窗核对.csv",
+      "bytes": 7310,
+      "sha256": "86550b5dd2e3fc3f69ca06c39e2d747e72a200d493020c1ff025fd622a6ab577"
+    },
+    {
+      "path": "rppg_metric_explainer_20260910/最新版本_输出与缺失时间轴.png",
+      "bytes": 330065,
+      "sha256": "3a827710a6a152dab0651454e946a10472c4d737dc243f000566f570482e4db8"
+    },
+    {
+      "path": "rppg_metric_explainer_20260910/核对数据.json",
+      "bytes": 2742,
+      "sha256": "f6c3f3f8457edf516a9febeadd0727a46d6b5d420463b44c610fc335dd7bc9c8"
+    },
+    {
+      "path": "rppg_metric_explainer_20260910/比例与输出文件说明.md",
+      "bytes": 9402,
+      "sha256": "ae2713aee89efed0d5a62211c8627cdb92139267b600bee150567eef3b423323"
+    },
+    {
+      "path": "rppg_metrics_review_20260908/hr_main_models_bland_altman.png",
+      "bytes": 254243,
+      "sha256": "14144a303520baf99e126d8781c031229f7776aad083868dc88372375bdfff48"
+    },
+    {
+      "path": "rppg_metrics_review_20260908/hr_main_models_curves.png",
+      "bytes": 288139,
+      "sha256": "a374142184a6b71f2706ee36c14a32757f89a2d55941c5538f0249ec5968def0"
+    },
+    {
+      "path": "rppg_metrics_review_20260908/user_analysis.png",
+      "bytes": 289647,
+      "sha256": "bc88938fbf75b00b25288eac4ce9f931566b9e06b3591c8b44025fccdd08c17a"
+    },
+    {
+      "path": "rppg_metrics_review_20260908/waveform_snr.png",
+      "bytes": 59686,
+      "sha256": "464ee5f05449fc5e3351b956e536d55759bd1e972d52098ef74dd0adb8ae6d3f"
+    },
+    {
+      "path": "rppg_motion_v2/evaluation/coverage_comparison.png",
+      "bytes": 111386,
+      "sha256": "9939483279e433f6040703ba018d30ceebb48c203614927b79611cfccc8c8477"
+    },
+    {
+      "path": "rppg_motion_v2/evaluation/ubfc_accuracy_and_snr.png",
+      "bytes": 124137,
+      "sha256": "ebbde949ce33b4a6bb0d134643d5e722c1061eb068dbd0061c5aa5237510e4dd"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/README.md",
+      "bytes": 5591,
+      "sha256": "d70a5cec7b95858c8159a17ba95e0022223524b2e120667f4180544e41c1aa83"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/LICENSE",
+      "bytes": 1086,
+      "sha256": "6465b9b60cfc7e74aa958c7cc1d58355c939bdd2f6fac028e05a9213bd2c6589"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/README.md",
+      "bytes": 7937,
+      "sha256": "aed0b8027e27d2f3fec8ee5394a1ae23d299c27ba2d9d604c68405ff4d6c663e"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/data_loaders.py",
+      "bytes": 4752,
+      "sha256": "d7c37022ca2c15e58c970c29a78e66cce93b7d50e3ea53208864aa0249ef2363"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/extract_rois.py",
+      "bytes": 13645,
+      "sha256": "19a80929f14cdb60698498ab10c0d3bf1be06240404af99204c88fc98a0a7634"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/homodyne.py",
+      "bytes": 1974,
+      "sha256": "a328e6fb6fda1d649a003145aca306d2da34063ed562d6da3769372477ebfb00"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/metrics.py",
+      "bytes": 6449,
+      "sha256": "8dbd6ddef79524c4620162a31c1b40259fdd8a5246d267da6c8bd80d949ab73a"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/pipeline.py",
+      "bytes": 6425,
+      "sha256": "f3d2d6a20203e715d4202908e07d51bc9029fac3806922656fc21a45332b79f7"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/projections.py",
+      "bytes": 18188,
+      "sha256": "2e6cd137b976382b49b6360ca81c2407a8fac53d8df8f4eaed8974fd091ae4f7"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/run_demo.py",
+      "bytes": 3026,
+      "sha256": "2de9c75786a9ad82c9284191a903326de84757210a708ce623ed6efa2167a671"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/run_ubfc_phys.py",
+      "bytes": 6985,
+      "sha256": "768462b40cf0d1f4e1df4a2c369687acdf94ef86e3380863a3b8b109c2b91f51"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/run_ubfc_rppg.py",
+      "bytes": 4100,
+      "sha256": "3f094edc8e186b458a0eea1038de6dc1dbcba9bd476618abc9193af7dfc35ec3"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/author_source/utils.py",
+      "bytes": 679,
+      "sha256": "72d2d6b7d5f00c39c274f1b31c6d79edc526d5e4f929d0818112864df838c806"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/output_verification.json",
+      "bytes": 3128,
+      "sha256": "1bec8a5c85b9631e6346404c63d4a2fc47049701765b74f46707d41765a44368"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/project_estimator/analyze_rppg.py",
+      "bytes": 11415,
+      "sha256": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/project_estimator/legacy_motion.py",
+      "bytes": 20359,
+      "sha256": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/protocol_before_inference.json",
+      "bytes": 3924,
+      "sha256": "db685e804e727207f6c591fee51a940cccf614f70bb70d8abc5fa7928104b78f"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/data1/heart_rate.csv",
+      "bytes": 5566,
+      "sha256": "2863773a36eef0b81ea77a81137237d896b993dd6d8a26ff40b16cd8f9976097"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/data1/roi_waveforms.csv",
+      "bytes": 103244,
+      "sha256": "39b592229aca5cdd4d11704e3229966b3722f0c94669cdabe002b55c0c2f6a20"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/data1/segment_diagnostics.json",
+      "bytes": 2339,
+      "sha256": "3d45cd267d95fab3a762303142c1d45c868690693da3c49a898855015765bf72"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/data1/summary.json",
+      "bytes": 4971,
+      "sha256": "f2af24029b1596f3d8c521661ac91a3e05648f685adb7f89204d1834507fe6ca"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/data1/waveform.csv",
+      "bytes": 71047,
+      "sha256": "34801bdfeae3b40fdb796decacbb7d87c71f3866b84f00c48955baf4ea096bbe"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/kaggle_full/heart_rate.csv",
+      "bytes": 48558,
+      "sha256": "2773bd9ca0f680691aa645bcd9e53ca49f667db22b40f1f18ef8ccdc30da986f"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/kaggle_full/roi_waveforms.csv",
+      "bytes": 954459,
+      "sha256": "c7309dc10d1cc934670093d16306939b3f4da51428cd3a25ae05a4ceb4f17dbe"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/kaggle_full/segment_diagnostics.json",
+      "bytes": 2139,
+      "sha256": "bddcc6e3f4b1dad5628f4049af9473519f2451ff545c43cf3d7a2f66ad71beb9"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/kaggle_full/summary.json",
+      "bytes": 4940,
+      "sha256": "2499f54132d8cc39bfe57191f2e2869ccef5feb02221531b16240245ab112d89"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/kaggle_full/waveform.csv",
+      "bytes": 657087,
+      "sha256": "fa0248bb5125446a032dc5002d9e1769124206f623a0ffb2fca11aba655f70e9"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/synthetic72/heart_rate.csv",
+      "bytes": 1261,
+      "sha256": "86bc1ed2e9980f5d9a82cde6b76febb37636d5d750dd21204fe84fe06fbf621f"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/synthetic72/roi_waveforms.csv",
+      "bytes": 38352,
+      "sha256": "eb3d4d0f9b25ff50f12a64f2b3d696e2dd2a619b4f71e1460b18af7d6e710f19"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/synthetic72/segment_diagnostics.json",
+      "bytes": 2096,
+      "sha256": "a4a656aff713c59716e7c503c14eae290bda11003f77030a87a814c1a0ce05d3"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/synthetic72/summary.json",
+      "bytes": 4875,
+      "sha256": "73904c80455ae0fbd24f32cec317db34dc22ccebc160b8d5d86fe44a590f1ff2"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/synthetic72/waveform.csv",
+      "bytes": 28168,
+      "sha256": "49ad3ae3bb80e86a27c230ae527e7380e8015a00c1d54fc1dd73748243ece70d"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/ubfc/heart_rate.csv",
+      "bytes": 5688,
+      "sha256": "6d61c2676837e98fe50520cfdaaa3f3d9a41763f96562d1ee17d38b45bfd7833"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/ubfc/roi_waveforms.csv",
+      "bytes": 114166,
+      "sha256": "2048479b4de70d89bf880366f032da305bf239eeb74476643bf8c58ec4069a15"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/ubfc/segment_diagnostics.json",
+      "bytes": 2136,
+      "sha256": "5937b00987065552a7ba62112b34c42718fdcb4e7cbebbc11c0e81801c1d59b7"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/ubfc/summary.json",
+      "bytes": 4904,
+      "sha256": "bfdf7f16ebeaad6412a716ca02e53f2101dfe77182ff7f3fc01a91b9048b2c25"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/ubfc/waveform.csv",
+      "bytes": 81864,
+      "sha256": "2c3d8431b84a1294326786d2cfffbedb7ce43c365e07081470511483e5523aea"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0904/heart_rate.csv",
+      "bytes": 4655,
+      "sha256": "74476894cc3444bff7546243f6a9d75c8719b1f0bf9da44555204d23394c6b0e"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0904/roi_waveforms.csv",
+      "bytes": 97346,
+      "sha256": "0780dcf4ca857b6f596441e6e40ef4b213733c192fc186b46842dcc0b99ab3c0"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0904/segment_diagnostics.json",
+      "bytes": 2132,
+      "sha256": "f6756d5cb5320e6b41d2c6dbd71a4b4d02d508a3af95b2385945bb603e52d420"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0904/summary.json",
+      "bytes": 4907,
+      "sha256": "06900432dd5dea923d1a6171cd347536e1368e39ff9e85ccf2c64a009ac40b26"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0904/waveform.csv",
+      "bytes": 66958,
+      "sha256": "60f4799666fe4cdad305d7ed253576f20c19df9da2ffad17616d12cf47a86eb8"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0907/heart_rate.csv",
+      "bytes": 5266,
+      "sha256": "3e2671e9092f5dc41756b058bcafb3a18570bf12afc3fb69cea65b92bf73c824"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0907/roi_waveforms.csv",
+      "bytes": 88421,
+      "sha256": "c86fec7a7a0580df0852388cd7b22c5c2132e71d276ee84dd5ee7d4a9b271cae"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0907/segment_diagnostics.json",
+      "bytes": 5653,
+      "sha256": "a72aaa1bf51a0e69a890bd2254b3caa0a1a597bfaeb4ecb622a861c5544729ad"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0907/summary.json",
+      "bytes": 5005,
+      "sha256": "61961ab5617ea6cf19f826c509245c2e35e47330297d07ecfb0de788c351888a"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results/user0907/waveform.csv",
+      "bytes": 66721,
+      "sha256": "6770e5914185e456a7f3f926cffd06d29ee88c34c4fbf6ccbf97b7d1fe34fa83"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/data1/heart_rate.csv",
+      "bytes": 5678,
+      "sha256": "eb177adffafa7f9b460a96d7c22387ca65d9f1869959beeff38762cc92adefb9"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/data1/roi_waveforms.csv",
+      "bytes": 110749,
+      "sha256": "eebaa0327fc80617923f6f23e25b751c17b178195163ecba99ffbee50681affd"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/data1/segment_diagnostics.json",
+      "bytes": 2339,
+      "sha256": "3d45cd267d95fab3a762303142c1d45c868690693da3c49a898855015765bf72"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/data1/summary.json",
+      "bytes": 4975,
+      "sha256": "8b2119de84254496e363a7d810f92875fd8c77e32223ef1f2091cd2f0861d227"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/data1/waveform.csv",
+      "bytes": 73709,
+      "sha256": "828b837996d8f255bbac8f6351a4cca3f4d89ffd8d461e86b3a53f47149fee05"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/kaggle_full/heart_rate.csv",
+      "bytes": 48879,
+      "sha256": "f0315f4666f1adbe2b27f9bd42c9ade18e5e14f2574b8475504e9c7aae7436ff"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/kaggle_full/roi_waveforms.csv",
+      "bytes": 1048152,
+      "sha256": "2b1caee10289588a01ef435a4cc00c520382c1983e7392e18623e2be4bd6487c"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/kaggle_full/segment_diagnostics.json",
+      "bytes": 2139,
+      "sha256": "bddcc6e3f4b1dad5628f4049af9473519f2451ff545c43cf3d7a2f66ad71beb9"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/kaggle_full/summary.json",
+      "bytes": 4973,
+      "sha256": "dc86233c5ea88aaab0e4e6ec3ec0445d17526e0b0f810244bfb369ef5e725d56"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/kaggle_full/waveform.csv",
+      "bytes": 688496,
+      "sha256": "da1ceec5ce9038c6ccca198048386e2e9a9888cbb1bc50771510ef3c20a9313d"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/synthetic72/heart_rate.csv",
+      "bytes": 1260,
+      "sha256": "cfe7e20c1a5d321bacb1a9a0dd30487c9bbb6903e442f94ecfc635d41c107b48"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/synthetic72/roi_waveforms.csv",
+      "bytes": 41021,
+      "sha256": "dfb027737db61ef3a47ac0d5590787d21cc373f5f9f00c78e73e26d5e0f4ece8"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/synthetic72/segment_diagnostics.json",
+      "bytes": 2096,
+      "sha256": "a4a656aff713c59716e7c503c14eae290bda11003f77030a87a814c1a0ce05d3"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/synthetic72/summary.json",
+      "bytes": 4880,
+      "sha256": "e1164180458f1988952e5b9f5d0d7903ae3b47dfc08aaf80e6f57b38d00edc90"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/synthetic72/waveform.csv",
+      "bytes": 29039,
+      "sha256": "62e220e363f712e9ad3f9014eb0d6c32b2a24b972b92e6fb1d8ac45c8646e354"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/ubfc/heart_rate.csv",
+      "bytes": 5703,
+      "sha256": "53ce6c618baae73b1764f5394ec412d5dd48a1817440b9c44c2f293aa8fb2672"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/ubfc/roi_waveforms.csv",
+      "bytes": 125928,
+      "sha256": "256979ee60b159a45fc514899d067fc322f3f0a2cf4ed7d5256fc87a7499b85a"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/ubfc/segment_diagnostics.json",
+      "bytes": 2136,
+      "sha256": "5937b00987065552a7ba62112b34c42718fdcb4e7cbebbc11c0e81801c1d59b7"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/ubfc/summary.json",
+      "bytes": 4907,
+      "sha256": "99084de44bd5f38c8a004ef317b60d380814b15d31ae8f0ff91688e782a0c46a"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/ubfc/waveform.csv",
+      "bytes": 85486,
+      "sha256": "585d511851423ff227e3cc6b395af5376ff4375b0fb796ac1e3f303c23d7e030"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0904/heart_rate.csv",
+      "bytes": 4686,
+      "sha256": "3994d19da4c29d2eee39b4afe1ece401dcdafc72f0d93f832e5b5bd40ebd0c6e"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0904/roi_waveforms.csv",
+      "bytes": 107336,
+      "sha256": "9e711e1be058f68b10e73bee7a18a63365afec71c0b02092f3a20b1290b803e2"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0904/segment_diagnostics.json",
+      "bytes": 2132,
+      "sha256": "f6756d5cb5320e6b41d2c6dbd71a4b4d02d508a3af95b2385945bb603e52d420"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0904/summary.json",
+      "bytes": 4913,
+      "sha256": "afb5bb8b21f0bc9a7963327fd5a3bd2f97682a7fa089a8856a5c63c7b1c50d98"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0904/waveform.csv",
+      "bytes": 70017,
+      "sha256": "7300dccbce367bc70adeb9df3482371bc4bc64714daee32b409797d8f4fc8eaa"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0907/heart_rate.csv",
+      "bytes": 5264,
+      "sha256": "ab5a3a2b03fba31726c1aa045b09503e6bb0b91c85fb701d9ffe0744afeb6b2e"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0907/roi_waveforms.csv",
+      "bytes": 93990,
+      "sha256": "313911bb4a39b544c08f22aef7d4ba76c46a3bba0e2f09d81b2a093d5c3f6884"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0907/segment_diagnostics.json",
+      "bytes": 5653,
+      "sha256": "a72aaa1bf51a0e69a890bd2254b3caa0a1a597bfaeb4ecb622a861c5544729ad"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0907/summary.json",
+      "bytes": 5010,
+      "sha256": "06e4b52a22e8951adea021557950293552fde977849cf1cfcfd29136fa4479ba"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/results_no_homodyne/user0907/waveform.csv",
+      "bytes": 68204,
+      "sha256": "4a5125c0fe923adba2ae98587b173adafac48cb56ce7518b5f63ad109352d21a"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/run_cpace_trial.py",
+      "bytes": 13727,
+      "sha256": "a325a92c86a98eb0352da0f3754b03a4a697365c21c04ed679970eefb1f008d4"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/run_summary.json",
+      "bytes": 4907,
+      "sha256": "44e4fbea5bca10562188a180587e06e4a522db31af4580887dc5195526caa4bc"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/synthetic_selfchecks.json",
+      "bytes": 2902,
+      "sha256": "25ff0893841f5fcafd3bc7259ebf67a74f54fda8d48f42a2fd4665766fae14ed"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/test_cpace_trial.py",
+      "bytes": 6634,
+      "sha256": "94fc43edfa73003de0dcbb0a059cc1757706fffd5fed9398a8465d52714d9db2"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/cpace/verify_outputs.py",
+      "bytes": 2050,
+      "sha256": "6e7b4521f1baf74a5511a5ee8717a5d8ca4394201baaa06285e9e3572c681200"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/entrypoint_verification.json",
+      "bytes": 1036,
+      "sha256": "26ca414dc616bb3723ea44a0d021b2a636cc515681509609e3bbe9f6012e2f82"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluate_trials.py",
+      "bytes": 28953,
+      "sha256": "dbaa92d09bdbc26ceeee3edae667db0042b0e86a5f72caecd89d1329350824f0"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/QA_notes.md",
+      "bytes": 5083,
+      "sha256": "55129f81501c0cb0559de68caf852a10057d7d47adfa14990fc89e916dae3dc9"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/aligned_windows.csv",
+      "bytes": 1066860,
+      "sha256": "f2329a2c61c99384aeedf077bcf2dc6d2e4755601f9e402bd9def5ccd9a849c1"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/baseline_reproduction.csv",
+      "bytes": 1604,
+      "sha256": "2200eb6c691ac333b2d6017f1212716cb10a148c42511308e94420b27f4a9313"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/common_metrics.csv",
+      "bytes": 31968,
+      "sha256": "a13a6249c15976852f0a65a1e73ee09afbea35c0a3e1b4be6515ce3a1c63098c"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/continuity.csv",
+      "bytes": 9363,
+      "sha256": "5934400d12bf85df06535480e597e580b32b7a82944a0c5310f406fc315fa439"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/deltas.csv",
+      "bytes": 36726,
+      "sha256": "d2849fe8683468de4779917c9c88ef156838a07826cf26ffe61c8880e5082bd8"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/fairness.json",
+      "bytes": 163532,
+      "sha256": "3b67c04215d7a261df2dfecc99cd0950d4bb67226952ba1cbe25cfef278f575d"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/metrics.csv",
+      "bytes": 15998,
+      "sha256": "4b39c6e054b690caf9b38c24ad199f611cb12bbee6d384927237c275968d73ce"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/paired_metrics.csv",
+      "bytes": 211580,
+      "sha256": "fbabf5f63d07e5ad8736b0172dc66141f220295dc6e8b67ce2a2dbf9cb0f20b5"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/readout_reproduction.csv",
+      "bytes": 2917,
+      "sha256": "a1985bc83a5f78e95b21404c4452b5dd994aad7bdc540406bc88074d2803e9df"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/reference_windows.csv",
+      "bytes": 81181,
+      "sha256": "06cf3276268be533be611ad8d1c42a8106af336193ea92c6db46faaa8856c632"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/sensitivity.csv",
+      "bytes": 27987,
+      "sha256": "49ec1eb86187e5373497ae0f9486582e1342c3d30d39337688cd3eb0ae8fe89c"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/sensitivity_common.csv",
+      "bytes": 29776,
+      "sha256": "f2b4ef70029402e34c2aa904dc041552615f92f40a8971a95d3adbc260274c95"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/summary.json",
+      "bytes": 554001,
+      "sha256": "22155603d153809fafdc1328efa9739e5e97343bfec0e38860e779bf1bbd0d30"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/waveform_deltas.csv",
+      "bytes": 6940,
+      "sha256": "92b950d66ef9f6d2ebc023e481bae756d81f7b8862c7181cd6b678a7f56b38c6"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/waveform_metrics.csv",
+      "bytes": 16701,
+      "sha256": "fbf14362233cd7d8ec5f65bdab3a0c69e2b1c801617a5e74fae1de898b5345a6"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/waveform_sensitivity.csv",
+      "bytes": 23601,
+      "sha256": "f4b568b28c73dcd02a9dbbcfdae5a72c5ddf1039241255ff65fb6d39dee5a64e"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation/waveform_windows.csv",
+      "bytes": 301308,
+      "sha256": "d2d03996d5ba31eba0c4633bab7b5a6dd4165e2455cbce4b2b0d1f63c4e53c08"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation_protocol.json",
+      "bytes": 6576,
+      "sha256": "a5ef0f4410f8cdf8ec5f1576bba950a798a2bf5c969641a1615b0632adfadef2"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/evaluation_protocol.md",
+      "bytes": 1474,
+      "sha256": "624afc22f165a0dbbd597879eba0794de076eef753a94db0d884c29463da1416"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/export_trial_tables.py",
+      "bytes": 7650,
+      "sha256": "a2aa8c7def55f63da9879e2ad0ed529ae243c6709f456b88768158bfc85feea2"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/install_trial_entry.py",
+      "bytes": 1756,
+      "sha256": "72db7872b3c7f8f2eea704f37355fe8187620fef6168c8b7f3dc04a54721bc89"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/package_verification.json",
+      "bytes": 383,
+      "sha256": "ad24707421d892c2b87b72834496fcb79396159befb1847560d56d85fbb819b6"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/report_table_verification.json",
+      "bytes": 134,
+      "sha256": "b4c53953a2b0867d99ec7c9c2c0a46e3fdaa7c42a430949701859b6760759982"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/report_verification.json",
+      "bytes": 8470,
+      "sha256": "fbbb763dc7b674c27f6d9f17cb6747dae2b6e318d9e965bacbbabbdf7b6093e3"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/README.md",
+      "bytes": 4422,
+      "sha256": "67f484969410708769ea647c68c426c0f2823f0351b3ffd0adfa07072688857c"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/attempt1_failure.json",
+      "bytes": 484,
+      "sha256": "926a5ab104c64958df6e5c0a1eed7d8a57a9cd2e4d6fa883b94d2420f9d25964"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/backend.py",
+      "bytes": 12229,
+      "sha256": "9866f0a8c674582ddfa8e3ab2df91f91f2daf5a2ba2f25326d8a6d21bdaf7d41"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/backend_test.py",
+      "bytes": 9172,
+      "sha256": "368fecb65d3a06d4e1f7a76cc43cb8cad4e5720161445da496a33e0e107f03a3"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/backend_verification.json",
+      "bytes": 5523,
+      "sha256": "a6fa527001002914ccebfc612e509498f0eca861ce2cfdfeb25cd1301fb12837"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/data1_diagnostic.json",
+      "bytes": 320830,
+      "sha256": "810cbe51bd80a8f8b059372cce3da167b5fff31837a66fd608831704a80f7fdb"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/data1_diagnostic.md",
+      "bytes": 6148,
+      "sha256": "a3dd40218efd12fe98bc2b877cef573dd42209c6e28799ad06e415530fc4e0f4"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/official_snapshot/LICENSE.txt",
+      "bytes": 1068,
+      "sha256": "cf1b3ce3d89374b2f09351f5288fcbadf8296b13c83abb99a8be4b5a60dc18c2"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/official_snapshot/configs/infer_configs/PURE_UBFC-rPPG_RHYTHMMAMBA.yaml",
+      "bytes": 3333,
+      "sha256": "675200ff3a04b776a3e41517363a56b9caf8cbc8fa8c1f7aa42bdd3dee1751a8"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/official_snapshot/dataset/data_loader/BaseLoader.py",
+      "bytes": 28517,
+      "sha256": "3269b44a9283743036589003f67cdc0836afca5c31c338d8191aacac7a818751"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/official_snapshot/neural_methods/model/RhythmMamba.py",
+      "bytes": 11539,
+      "sha256": "653476d8fb240f4673d73d8f2b86efdc1bcaef573ae883328366ced7544359c6"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/official_snapshot/neural_methods/trainer/RhythmMambaTrainer.py",
+      "bytes": 11209,
+      "sha256": "cc25a1469497f4c9a21ef4d91b7a70d5e3e034c4facc368c83b1bfa401989a5a"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/official_snapshot/requirements.txt",
+      "bytes": 353,
+      "sha256": "b500959f16313b21a59841391eb4a77455127641244ad5afb38039429a230f27"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/preprocessing_verification.json",
+      "bytes": 2834,
+      "sha256": "6729afbabac6cfc222395b176a8b74f9b870e8c60bac83641d20792e6fb97417"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/protocol_attempt1_failed_logging.json",
+      "bytes": 3077,
+      "sha256": "9570dd9dfc5910e91e00eae67f4d521bdbde487ec8be13c27c1757889ab8d7e0"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/protocol_before_inference.json",
+      "bytes": 3077,
+      "sha256": "62b9fcbc7e5391fa1836cb8b8577131c127c7cdd5f5e65bce4205c8352186607"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/requirements_frozen.txt",
+      "bytes": 1582,
+      "sha256": "412c45b3a4efc25aa0993007954cff19e3a9ea27f84a20dc6e41fec2d4f22158"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/data1/heart_rate.csv",
+      "bytes": 4974,
+      "sha256": "ddd5a6792bd5db0e4758bc24a78b310372d422a1c6d3c0bf5656364ad07eec9d"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/data1/raw_network.csv",
+      "bytes": 70651,
+      "sha256": "f42b2930b9acc053b476805e819933dd6ef60fdf382e2ab1c6c560ffdc717bcd"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/data1/segment_diagnostics.json",
+      "bytes": 249,
+      "sha256": "bb597df761aac86c468118314eaed68d3c3485ec681673641cbae3bb60e07ac9"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/data1/summary.json",
+      "bytes": 6791,
+      "sha256": "02b76c394ee2d0ba8d8dda23255633a956721c13ba62e616d3c8eed5870eab7e"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/data1/waveform.csv",
+      "bytes": 69255,
+      "sha256": "cee1d2321fe97c9e87c723d97be3b5de540c65eb768992c4ec5ba182e773a8aa"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/kaggle_full/heart_rate.csv",
+      "bytes": 43668,
+      "sha256": "44e5263efad7404ab95f2b719d238bca230d1ec2a3518c5f6910bc3efd8792c5"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/kaggle_full/raw_network.csv",
+      "bytes": 656536,
+      "sha256": "27b4c12e014395b657404f7aa6f42da5ddd67e65384973de279101c3a1969977"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/kaggle_full/segment_diagnostics.json",
+      "bytes": 252,
+      "sha256": "e7e4447dc3e17ea6dad9e6b6fdfe3aa4a664837dce16aa2c8401cca0f7faa507"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/kaggle_full/summary.json",
+      "bytes": 6779,
+      "sha256": "a49dea9a70ebcd671752cd5744df9d47434f24e3c8ce72128241a8a331968826"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/kaggle_full/waveform.csv",
+      "bytes": 654617,
+      "sha256": "3535049f3dc2db5c9817935a834aa4e13b6d1884167560bbbb71ad97dc05051f"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/synthetic72/heart_rate.csv",
+      "bytes": 1011,
+      "sha256": "9d18b2705215aca9c930e685aed2714484a4684fac4e6718ef5bf77ab10654e9"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/synthetic72/raw_network.csv",
+      "bytes": 27465,
+      "sha256": "a66723b25fcccffb910ad40c6c6fd453a117d6a599a81aefffd632f2d7c66355"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/synthetic72/segment_diagnostics.json",
+      "bytes": 249,
+      "sha256": "675f091de4b011cfd9549eac8b7802eef2f4d19dc4ca2b8ce90fd91c6e197242"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/synthetic72/summary.json",
+      "bytes": 6731,
+      "sha256": "28b1242c7c3f3048680c18b3aee32d728ccaf16ea29e0210c0eab48037d42f7d"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/synthetic72/waveform.csv",
+      "bytes": 26113,
+      "sha256": "d4109c6c6b2c47b0ca7ac4b692272de3882f81a89c39c8c3192aa643e6fd2cfa"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/ubfc/heart_rate.csv",
+      "bytes": 5018,
+      "sha256": "88c775630dfba13916ed68442d71b4f896c856c4f1adee1ce18ed374a6ce5091"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/ubfc/raw_network.csv",
+      "bytes": 81394,
+      "sha256": "4ea8b9d3912bbd6046eac07a18f3047a53cdf5fceab59f3bf72f2ad9d5bf54ec"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/ubfc/segment_diagnostics.json",
+      "bytes": 251,
+      "sha256": "fdc41036c9123fd10273c9e1a301c23ad2431b343ce055a93f235099880c09c0"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/ubfc/summary.json",
+      "bytes": 6739,
+      "sha256": "08cd9be929664f499e8f029ebf8bd9c4fd682e01ba9fcd7bcd0adb5267e961f9"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/ubfc/waveform.csv",
+      "bytes": 79957,
+      "sha256": "a9b7056a1455e952f32037173d4a1f1b13c849579148a7e43a40bfa454679a69"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0904/heart_rate.csv",
+      "bytes": 4186,
+      "sha256": "0b9a2278fa577de59b0167ba55293d184f8bb153e06333a2a64866bd15d8f31a"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0904/raw_network.csv",
+      "bytes": 68169,
+      "sha256": "23983539d2a3111c9ad3cdcd7d3c57c584a5737b3ffa7559037927a659fccd47"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0904/segment_diagnostics.json",
+      "bytes": 251,
+      "sha256": "4536dac5cb9e845fd4bda63fa4c4e0dbb27d24cba7a35f79540cfc97e664cb3f"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0904/summary.json",
+      "bytes": 6744,
+      "sha256": "24efb65bf569bd2ff9ef8ee25692025351ed9d1578a29cf199dc31d9fd14c359"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0904/waveform.csv",
+      "bytes": 66443,
+      "sha256": "403657400ae094d657a853ca576cb94fd16ce42154ca6668f66c57409f67bccf"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0907/heart_rate.csv",
+      "bytes": 4654,
+      "sha256": "e2414e290f61577b82cff08d9f38f0c4ebe31e7cccbc76774b7c569dd039cd37"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0907/raw_network.csv",
+      "bytes": 67597,
+      "sha256": "955691fcad0dab8ffbb57ff98b5cde85907d1965406eb0b84f0777608b4bd95f"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0907/segment_diagnostics.json",
+      "bytes": 863,
+      "sha256": "f378fae395dd72aaa94f9f3dd8b289ea233c3efacf46c94bace85c396e38e86d"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0907/summary.json",
+      "bytes": 6807,
+      "sha256": "fd7835bf6e68caee317d2688cfb994dc44c1d7056fbc31d56d1e00453bafd779"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/results/user0907/waveform.csv",
+      "bytes": 64975,
+      "sha256": "086d91ca0f098ca9fd8a9ef08644a51a070f664b61d4ab0ed5ef8a6f9fb30866"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/run_rhythm_trial.py",
+      "bytes": 12261,
+      "sha256": "674391e0590a1c83e9e2ce185493761578440a97b2024dda8a85f054b637d76c"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/run_summary.json",
+      "bytes": 48764,
+      "sha256": "4a9f252f5a564b2959f805bbbcbb1559ba03094b494278d156afd6f402c5f229"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/runtime_lock.json",
+      "bytes": 10065,
+      "sha256": "c724c1dcac262284e10da5718bea2bfb0ce06305f09c7d2866a616b2609c2fd2"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/test_preprocessing.py",
+      "bytes": 12624,
+      "sha256": "55fda3c86afae3ee7963bac083b97cb0177df1119baec80052c1cbb3ef3fe7e0"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/third_party_licenses/Mamba_LICENSE",
+      "bytes": 11348,
+      "sha256": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/third_party_licenses/Mamba_LICENSE_provenance.json",
+      "bytes": 1513,
+      "sha256": "a7cca9d91301a896d48b12b4dc91a9d002d537b0ae4d73b1b1ce894f557cd06d"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm/upstream_download.json",
+      "bytes": 2987,
+      "sha256": "9023f2a0916043bd7a5843024d620ba20673dbb0b08b4d761d30e3478fb6249d"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm_source_audit.json",
+      "bytes": 49137,
+      "sha256": "6a5e42b9b16be91e2b5a291748ffcda5f97eac3407d079fa7043f7308a07a0f3"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/rhythm_source_audit.md",
+      "bytes": 9062,
+      "sha256": "12e8be5abdaa18834dfcebe27bbe7b0d7e718ca54545ea4cb8e8a58482231698"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/两种论文方法_实测对比.png",
+      "bytes": 221796,
+      "sha256": "0093e9563ef5a139ae5a948c2735e8bea9e0d360ca794bd035aa30fc10fc9f46"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/两种论文方法实测报告.md",
+      "bytes": 13623,
+      "sha256": "164ad6dc01066f037fd84d6717804ceb398ae76a81b19e141bd050728ff77489"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/交付文件清单.json",
+      "bytes": 33135,
+      "sha256": "4ecc4aeb6537c7e5ad97a5fdf0cced58d66841ba5ebf35895c881e4c274bd00b"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/指标口径.md",
+      "bytes": 3288,
+      "sha256": "db65d13c56baa8af1ec8265c8b818eceb5ad0ea133c4dafa22d0e06afd3c1a0b"
+    },
+    {
+      "path": "rppg_paper_trials_20260909/结果明细表.md",
+      "bytes": 5763,
+      "sha256": "be0eaa1400a49447ed09106aa717cebee5c8a45e1d0a89db7d50a124d197b809"
+    }
+  ],
+  "excluded": [
+    "raw videos",
+    "human-subject preview frames",
+    "raw sensor files",
+    "environments",
+    "model weights",
+    "ZIP bundles"
+  ]
+}

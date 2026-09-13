@@ -1,0 +1,18 @@
+{
+  "kind": "derived_CDF_RGB_view_not_frontend_cache",
+  "original_trace_path": "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/frame_trace.csv",
+  "original_trace_sha256": "1f43aee4a224536933b58e7e616e60d00936e158d1260eb18fb44618fb74f5e3",
+  "original_metadata_path": "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data3/inference/frame_trace.json",
+  "original_metadata_sha256": "d8b92b8ca113d85f13682cb4d97db8c55accb850992315c250292c37b8ec50bb",
+  "derived_trace_sha256": "ca8cc4b7e531af78f749964b8c28e096af41064ba3a81f554bf48a1a5d6ba40a",
+  "cdf_config": {
+    "window_s": 10.0,
+    "step_s": 1.0,
+    "min_bpm": 42.0,
+    "max_bpm": 210.0
+  },
+  "protocol_path": "/home/fengbujue/项目/rppg识别/results/data1_6_v30_20260912/freeze_cdf.json",
+  "protocol_sha256": "225faabef64d15944123b2c83983efe38171768067ad425f58137b1968595053",
+  "reference_used": false,
+  "offline": true
+}

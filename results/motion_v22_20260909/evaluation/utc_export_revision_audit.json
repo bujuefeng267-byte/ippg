@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-09-09T12:11:01.897479+00:00",
+  "status": "passed",
+  "change": "Export optional UTC nanoseconds as nullable Int64 built from original integer records; HR/reference/SNR calculations and inference unchanged.",
+  "preserved_initial_evidence": "C:\\Users\\15011\\Documents\\ChatGPT\\New project\\rppg_motion_v22\\evaluation_initial_utc_export",
+  "preserved_initial_evaluator_hash_matches": true,
+  "CSV_comparison": {
+    "metrics.csv": {
+      "byte_identical": true,
+      "before_sha256": "7231a78beea18f20d6e5d432bdb52f5f5f36922bc173af8b2da70544b11015a0",
+      "after_sha256": "7231a78beea18f20d6e5d432bdb52f5f5f36922bc173af8b2da70544b11015a0"
+    },
+    "common_metrics.csv": {
+      "byte_identical": true,
+      "before_sha256": "fc66fddb8300c564f610d685d4f0caaa4c7d97662cbbab723e68c7c4d917068e",
+      "after_sha256": "fc66fddb8300c564f610d685d4f0caaa4c7d97662cbbab723e68c7c4d917068e"
+    },
+    "continuity.csv": {
+      "byte_identical": true,
+      "before_sha256": "41e065ed039a7664f1c97c50a505a3604b9c6e84414e7a3e363001a3895d95b0",
+      "after_sha256": "41e065ed039a7664f1c97c50a505a3604b9c6e84414e7a3e363001a3895d95b0"
+    },
+    "paired_metrics.csv": {
+      "byte_identical": true,
+      "before_sha256": "d363c07a6c2cd431d18e2ac5f1a7f5cb2ca963580a7cc745a10e7b3dd18c647b",
+      "after_sha256": "d363c07a6c2cd431d18e2ac5f1a7f5cb2ca963580a7cc745a10e7b3dd18c647b"
+    },
+    "deltas.csv": {
+      "byte_identical": true,
+      "before_sha256": "00d6c3814a9fc3b96213375271f96bbd5d613271ac018084f9d729ae26bdbc09",
+      "after_sha256": "00d6c3814a9fc3b96213375271f96bbd5d613271ac018084f9d729ae26bdbc09"
+    },
+    "frontend_audit.csv": {
+      "byte_identical": true,
+      "before_sha256": "9b7030bfa69fcb8a28274c89612d93403140e135d8f535e49c4265a053ed50e8",
+      "after_sha256": "9b7030bfa69fcb8a28274c89612d93403140e135d8f535e49c4265a053ed50e8"
+    },
+    "waveform_metrics.csv": {
+      "byte_identical": true,
+      "before_sha256": "2551fa7b3988205bf0675d312877ab4a7cc9208b298d9ecef94a68bea96933a7",
+      "after_sha256": "2551fa7b3988205bf0675d312877ab4a7cc9208b298d9ecef94a68bea96933a7"
+    },
+    "waveform_deltas.csv": {
+      "byte_identical": true,
+      "before_sha256": "028a7cbc41f9b8e756e66d55e0d90028d5ce29dd202bfaec5abfbea9abdf2715",
+      "after_sha256": "028a7cbc41f9b8e756e66d55e0d90028d5ce29dd202bfaec5abfbea9abdf2715"
+    },
+    "waveform_windows.csv": {
+      "byte_identical": true,
+      "before_sha256": "b900ec9c2ba411cb83fdecf475d271380ad256b1e87828b850148012f7313ef3",
+      "after_sha256": "b900ec9c2ba411cb83fdecf475d271380ad256b1e87828b850148012f7313ef3"
+    },
+    "aligned_windows.csv": {
+      "byte_identical": true,
+      "before_sha256": "28a1baa9789bfe0220bbc7fa1aadebfe45259cc3c3b49faba179051abc89304c",
+      "after_sha256": "28a1baa9789bfe0220bbc7fa1aadebfe45259cc3c3b49faba179051abc89304c"
+    },
+    "reference_windows.csv": {
+      "byte_identical": false,
+      "before_sha256": "96bfee70f87b46e21fc72307646e5f65ebd647c7236b33337b53a347a310e869",
+      "after_sha256": "a06bc796c7e4d93af448e039c6c13645709249e8216da625ea6bb084a08fe468"
+    },
+    "sensitivity.csv": {
+      "byte_identical": true,
+      "before_sha256": "8bbd3bcd750e9cf8e1a8cc5602c9d3d15b6c0dbacfb2da9f24012ef9c29aad5a",
+      "after_sha256": "8bbd3bcd750e9cf8e1a8cc5602c9d3d15b6c0dbacfb2da9f24012ef9c29aad5a"
+    },
+    "sensitivity_common.csv": {
+      "byte_identical": true,
+      "before_sha256": "7eb651d05ad618b271c8fe14ee509aa115cac91f019527bf14878e99f5eaec52",
+      "after_sha256": "7eb651d05ad618b271c8fe14ee509aa115cac91f019527bf14878e99f5eaec52"
+    },
+    "waveform_sensitivity.csv": {
+      "byte_identical": true,
+      "before_sha256": "4af3391f4bbb31d9d1b41570fd426f8c3491efc5dd1554485dbd35156131c617",
+      "after_sha256": "4af3391f4bbb31d9d1b41570fd426f8c3491efc5dd1554485dbd35156131c617"
+    }
+  },
+  "byte_identical_CSVs_excluding_reference_UTC": 13,
+  "all_non_UTC_reference_columns_exactly_equal": true,
+  "all_294_data1_UTC_values_exact": true,
+  "all_555_non_data1_UTC_values_missing": true,
+  "primary_common_paired_continuity_SNR_sensitivity_metrics_unchanged": true,
+  "new_inference_protocol_and_runs_unchanged": true,
+  "input_manifest_changed_only": [
+    "rppg_motion_v22/evaluate_v22.py"
+  ],
+  "before_evaluator_sha256": "8b0585024f8b5e1092b1dc6b43f7bb057ac200ce7c7bc7f4ac8ad68dfb6731b0",
+  "after_evaluator_sha256": "691a6c594c926892fab94fe69e197a391f39d27b22b3b28eaf972bc7aa7f733e"
+}

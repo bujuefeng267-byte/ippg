@@ -1,0 +1,154 @@
+{
+  "case": "data6",
+  "variant": "log_projection_baseline",
+  "fps": 30.00003000003,
+  "frames": 2148,
+  "source_hashes": {
+    "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+    "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+    "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+    "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+    "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+    "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+    "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+    "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+    "run_log_projection.py": "a3ce8be80b1ae01b4b5c97d0f41ac45a7cd2a83607f7ad4de8ebc1f109dcfb12",
+    "signal_candidates_v26.py": "17924aefbfda0a8afd2233ff0f70412e689141c794fa429937436f9b44079ada",
+    "development_protocol_v26.json": "13b4a3473bcb2b4728e5b245799f7f942d3b02ac59c27b35879ee412f3a7785b",
+    "evaluate_v26.py": "5ed2e421c99f5c7390eb06df507096a4a24093f4f602f45f5b5ccf4f14f625ab"
+  },
+  "trace_source": "/home/fengbujue/项目/rppg识别/results/data1_6_20260911/data6/inference/frame_trace.csv",
+  "trace_sha256": "c9f027f1cc90b87bfbb8a462e84b7bd72adf565a09ed313394bbb204c764c907",
+  "config": {
+    "created_utc": "2026-09-11T14:22:29.215778+00:00",
+    "source_hashes": {
+      "analyze_motion_v2.py": "a74f1180059288b2d8919cdf6cbfcc99de93235c8ef65b13f1e5b40a15f885da",
+      "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+      "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+      "motion_frontend.py": "42ad5e6a444b36b3a8bdd23754f72a30b3d868d3de83048032d93ee4c5adbac4",
+      "motion_fusion.py": "d4a7eeea5ea3f9ad9fe99fc31735d5ea275d7047fb96ef33433c11795cdc197a",
+      "stable_groups.py": "166ae00eb59bf5326b2f7971aa47191978b3558177088d187b2dc8ae14ca5070",
+      "waveform_hr.py": "3819767de1fa7b1f150cd7b58bee0b516be22b7046e0d31bea403c0e87cee647",
+      "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+      "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec",
+      "anchored_reconstruction.py": "599f0a5b1010a79ffcd2d919cb683d1a35b18fbfba4eb5101f0887798f96387c",
+      "guarded_fusion.py": "3173c95a3c165fec5be14523cb0f9e24a25f4c60ec9cf8495ba3ca7c408adc64",
+      "motion_evidence.py": "33c60b019fe4e4cdd55dfe02d398f1dfc94733840917db2499b8ec9cafd1d491",
+      "evidence_hr.py": "06ddbcb424443afdfc453e7ef206d63080371266b16d7ad298c3ce7f33f99ddd",
+      "run_log_projection.py": "a3ce8be80b1ae01b4b5c97d0f41ac45a7cd2a83607f7ad4de8ebc1f109dcfb12",
+      "signal_candidates_v26.py": "17924aefbfda0a8afd2233ff0f70412e689141c794fa429937436f9b44079ada",
+      "development_protocol_v26.json": "13b4a3473bcb2b4728e5b245799f7f942d3b02ac59c27b35879ee412f3a7785b",
+      "evaluate_v26.py": "5ed2e421c99f5c7390eb06df507096a4a24093f4f602f45f5b5ccf4f14f625ab"
+    },
+    "projection_config": {
+      "extraction_window_s": 1.6,
+      "hop_fraction": 0.5,
+      "min_alpha": 0.25,
+      "max_alpha": 4.0,
+      "cancellation_ratio": 0.1,
+      "min_identifiable_rank_ratio": 1e-08,
+      "edge_s": 1.6,
+      "min_run_s": 4.0,
+      "numerical_epsilon": 1e-12
+    },
+    "fusion_config": {
+      "roi_names": [
+        "forehead",
+        "left_cheek",
+        "right_cheek"
+      ],
+      "methods": [
+        "logpos",
+        "logchrom"
+      ],
+      "min_rois": 2,
+      "min_observed_fraction": 0.9,
+      "min_roi_quality": 0.2,
+      "min_signal_std": 1e-08,
+      "grid_step_bpm": 1.0,
+      "support_tolerance_bpm": 6.0,
+      "max_peaks_per_channel": 4,
+      "min_relative_power": 0.2,
+      "min_peak_concentration": 0.15,
+      "min_prominence_ratio": 0.08,
+      "single_method_factor": 0.65,
+      "min_consensus_quality": 0.2,
+      "ambiguity_ratio": 0.8,
+      "max_motion_penalty": 0.25,
+      "motion_evidence_mode": "legacy",
+      "reliable_motion_penalty": 0.75,
+      "max_slew_bpm_per_s": 12.0,
+      "rejected_windows_to_reset": 2,
+      "min_waveform_correlation": 0.15,
+      "normalize_clip": 8.0,
+      "huber_delta": 2.5
+    },
+    "guard_config": {
+      "min_tracked_fraction": 0.6,
+      "max_reset_fraction": 0.05,
+      "switch_score_ratio": 1.15,
+      "max_branch_disagreement_bpm": 12.0,
+      "routing_mode": "legacy",
+      "min_evidence_score": 0.2,
+      "max_motion_evidence_penalty": 0.45,
+      "disagreement_score_ratio": 1.35,
+      "min_disagreement_score_margin": 0.08
+    },
+    "variant": "baseline",
+    "reference_used": false,
+    "hr_mode": "evidence",
+    "window_s": 10,
+    "step_s": 1,
+    "min_bpm": 42,
+    "max_bpm": 210,
+    "max_gap_s": 0.1,
+    "hypothesis": "Remove multiplicative common illumination before chromatic synthesis; baseline-only is a fixed tracking-reconstruction ablation, not per-video routing",
+    "clips": [
+      {
+        "case": "data1",
+        "trace_sha256": "a72012d6920d64971833fbc0370138b3efad8cc0134f34ac5bb029e3d54122ac",
+        "metadata_sha256": "a9be0110543a8a25f3d6247bbe85f64a22a87cd41cd46984af9666ef5070b15e"
+      },
+      {
+        "case": "data2",
+        "trace_sha256": "b199f2d09dea171754ff6042688c0bfd2964d3672ef748a04c604a1ed1eb53c2",
+        "metadata_sha256": "8cdd6490cf924fef8782980996b5fe573c344a3b204011d242b9354d6c2e2835"
+      },
+      {
+        "case": "data3",
+        "trace_sha256": "1f43aee4a224536933b58e7e616e60d00936e158d1260eb18fb44618fb74f5e3",
+        "metadata_sha256": "d8b92b8ca113d85f13682cb4d97db8c55accb850992315c250292c37b8ec50bb"
+      },
+      {
+        "case": "data4",
+        "trace_sha256": "9ac57523f498642409c4217c5945f133619ba81568ca19010cfa36b91593053f",
+        "metadata_sha256": "12c74765510f8d350b85665b6644e88444787bab6f270a8f9580ab4f8627d587"
+      },
+      {
+        "case": "data5",
+        "trace_sha256": "9762dc041c7414e1d1dcb5e89535a4ecebd96cd5b79cc1da9aa925e21dc80c1d",
+        "metadata_sha256": "61551dbb6f325eb4d5609513111fc57bf5174807c43e7b18610aa274c7f346ba"
+      },
+      {
+        "case": "data6",
+        "trace_sha256": "c9f027f1cc90b87bfbb8a462e84b7bd72adf565a09ed313394bbb204c764c907",
+        "metadata_sha256": "71948127b59cbbe68407d2da6ed8945aa55ad462e26c7bc4b3f58559a885240f"
+      }
+    ]
+  },
+  "methods_actual": [
+    "logpos",
+    "logchrom"
+  ],
+  "waveform_coverage_pct": 69.83240223463687,
+  "hr_coverage_pct": 51.61290322580645,
+  "hr_from_saved_waveform": true,
+  "offline": true,
+  "reference_used": false,
+  "elapsed_s": 0.4638749949990597
+}

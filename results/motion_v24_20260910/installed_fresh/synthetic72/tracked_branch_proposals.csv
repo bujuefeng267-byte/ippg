@@ -1,0 +1,12 @@
+time_s,window_start_s,window_end_s,accepted,status,spectral_peak_bpm,ridge_bpm,roi_count,quality_proxy,state,available_roi_count,method_agreement,motion_overlap,consensus_score,runner_up_ratio,candidate_group_count,waveform_roi_count
+5.0,0.0,10.0,False,insufficient_rois,,,0,0.0,searching,0,0.0,0.0,0.0,0.0,0,0
+6.0,1.0,11.0,False,insufficient_rois,,,0,0.0,searching,0,0.0,0.0,0.0,0.0,0,0
+7.0,2.0,12.0,True,accepted_consensus,72.0,72.0,3,0.9154705031178967,acquired,3,1.0,1.0,2.0598086320152675,0.0,1,3
+8.0,3.0,13.0,True,accepted_consensus,72.0,72.0,3,0.9233147679860582,tracking,3,1.0,1.0,2.0774582279686307,0.0,1,3
+9.0,4.0,14.0,True,accepted_consensus,72.0,72.0,3,0.9350162907689065,tracking,3,1.0,1.0,2.1037866542300394,0.0,1,3
+10.0,5.0,15.0,True,accepted_consensus,72.0,72.0,3,0.9405578331741488,tracking,3,1.0,1.0,2.1162551246418344,0.0,1,3
+11.0,6.0,16.0,True,accepted_consensus,72.0,72.0,3,0.9361347162852711,tracking,3,1.0,1.0,2.10630311164186,0.0,1,3
+12.0,7.0,17.0,True,accepted_consensus,72.0,72.0,3,0.9312262767743492,tracking,3,1.0,1.0,2.0952591227422857,0.0,1,3
+13.0,8.0,18.0,True,accepted_consensus,72.0,72.0,3,0.9285694824798946,tracking,3,1.0,1.0,2.089281335579763,0.0,1,3
+14.0,9.0,19.0,False,insufficient_rois,,,0,0.0,uncertain,0,0.0,0.0,0.0,0.0,0,0
+15.0,10.0,20.0,False,insufficient_rois,,,0,0.0,lost,0,0.0,0.0,0.0,0.0,0,0

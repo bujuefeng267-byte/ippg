@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-09-09T03:08:22.125452+00:00",
+  "installed_manifest_verified": true,
+  "original_entry_unchanged": true,
+  "help_exit_code": 0,
+  "smoke_exit_code": 0,
+  "smoke": "Full 600-frame synthetic72 video freshly extracted with installed launcher; 7/11 HR windows, all accepted DP HR=72 bpm.",
+  "source": "New extraction, no trace cache",
+  "checks": [
+    {
+      "file": "frame_trace.csv",
+      "rows": 600,
+      "matched": true
+    },
+    {
+      "file": "roi_waveforms.csv",
+      "rows": 600,
+      "matched": true
+    },
+    {
+      "file": "fusion_diagnostics.csv",
+      "rows": 66,
+      "matched": true
+    },
+    {
+      "file": "fusion_proposals.csv",
+      "rows": 11,
+      "matched": true
+    },
+    {
+      "file": "pos_waveform.csv",
+      "rows": 600,
+      "matched": true
+    },
+    {
+      "file": "pos_heart_rate.csv",
+      "rows": 11,
+      "matched": true
+    },
+    {
+      "file": "chrom_waveform.csv",
+      "rows": 600,
+      "matched": true
+    },
+    {
+      "file": "chrom_heart_rate.csv",
+      "rows": 11,
+      "matched": true
+    },
+    {
+      "file": "fusion_waveform.csv",
+      "rows": 600,
+      "matched": true
+    },
+    {
+      "file": "fusion_heart_rate.csv",
+      "rows": 11,
+      "matched": true
+    }
+  ],
+  "tolerance": {
+    "rtol": 1e-12,
+    "atol": 1e-09
+  }
+}

@@ -1,0 +1,70 @@
+window_index,time_s,proposal_bpm,proposal_supported,reacquired,generated,contributing_rois,channels,score,window_start_s,window_end_s
+0,2.999997,,False,False,False,0,[],,0.0,5.999994
+1,3.999996,,False,False,False,0,[],,0.999999,6.999993
+2,4.999995,59.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.7287882340260534,1.999998,7.999992
+3,5.999994,58.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.776199055749965,2.999997,8.999991
+4,6.999993,58.0,True,False,True,2,"[""tracked/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.7037276576190817,3.999996,9.99999
+5,7.999992,59.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos""]",0.8093204410816499,4.999995,10.999989
+6,8.999991,60.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/left_cheek/chrom""]",0.4022231651546527,5.999994,11.999988
+7,9.99999,60.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/right_cheek/chrom""]",0.2760011650970072,6.999993,12.999986999999999
+8,10.999989,60.0,True,False,True,2,"[""tracked/left_cheek/pos"", ""baseline/right_cheek/pos""]",1.088316875811473,7.999992,13.999986
+9,11.999988,59.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""tracked/right_cheek/chrom""]",0.42349601765077227,8.999991,14.999984999999999
+10,12.999986999999999,58.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/right_cheek/pos""]",0.5407836757579373,9.99999,15.999984
+11,13.999986,57.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/right_cheek/chrom""]",0.5996052309550447,10.999989,16.999983
+12,14.999984999999999,56.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.5755802655220915,11.999988,17.999982
+13,15.999984,55.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/right_cheek/pos""]",0.5081754901544625,12.999986999999999,18.999981
+14,16.999983,53.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.16375578159433934,13.999986,19.99998
+15,17.999982,54.0,True,False,True,3,"[""tracked/forehead/chrom"", ""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.24469434752823213,14.999984999999999,20.999979
+16,18.999981,54.0,True,False,True,2,"[""tracked/forehead/chrom"", ""baseline/left_cheek/chrom""]",0.46789755633342056,15.999984,21.999978
+17,19.99998,54.0,True,False,True,3,"[""tracked/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.3929897153748237,16.999983,22.999976999999998
+18,20.999979,55.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.634464783014175,17.999982,23.999976
+19,21.999978,55.0,True,False,True,2,"[""tracked/forehead/pos"", ""baseline/left_cheek/chrom""]",0.5194543326707928,18.999981,24.999975
+20,22.999976999999998,54.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/left_cheek/chrom""]",0.605556431369354,19.99998,25.999973999999998
+21,23.999976,52.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.863445575829358,20.999979,26.999972999999997
+22,24.999975,51.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.3915901154946529,21.999978,27.999972
+23,25.999973999999998,51.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.4002816245318678,22.999976999999998,28.999971
+24,26.999972999999997,52.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.6084840519990543,23.999976,29.999969999999998
+25,27.999972,52.0,True,False,True,2,"[""baseline/forehead/chrom"", ""baseline/right_cheek/pos""]",0.5998971690553377,24.999975,30.999969
+26,28.999971,53.0,True,False,True,2,"[""baseline/forehead/pos"", ""baseline/right_cheek/chrom""]",0.6593800144640914,25.999973999999998,31.999968
+27,29.999969999999998,53.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.4299412491866027,26.999972999999997,32.999967
+28,30.999969,53.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""tracked/right_cheek/pos""]",0.5450041129781495,27.999972,33.999966
+29,31.999968,55.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.619736504967231,28.999971,34.999964999999996
+30,32.999967,58.0,True,False,True,2,"[""tracked/forehead/chrom"", ""tracked/right_cheek/pos""]",0.6021750484657296,29.999969999999998,35.999964
+31,33.999966,60.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""tracked/right_cheek/chrom""]",0.3460228639009352,30.999969,36.999963
+32,34.999964999999996,61.0,True,False,False,0,[],,31.999968,37.999962
+33,35.999964,59.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]",0.7747383182332543,32.999967,38.999961
+34,36.999963,59.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/right_cheek/chrom""]",0.7710522234876747,33.999966,39.99996
+35,37.999962,59.0,True,False,False,0,[],,34.999964999999996,40.999959
+36,38.999961,60.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/right_cheek/chrom""]",0.5805966581301631,35.999964,41.999958
+37,39.99996,61.0,True,False,True,3,"[""baseline/forehead/pos"", ""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.5287621489798192,36.999963,42.999956999999995
+38,40.999959,62.0,True,False,True,3,"[""baseline/forehead/pos"", ""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.6351522013421539,37.999962,43.999956
+39,41.999958,64.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.5658606381180047,38.999961,44.999955
+40,42.999956999999995,63.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/right_cheek/chrom""]",0.554937218450507,39.99996,45.999953999999995
+41,43.999956,61.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/left_cheek/chrom""]",1.0255589161165217,40.999959,46.999953
+42,44.999955,60.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/chrom"", ""tracked/right_cheek/chrom""]",0.6237534069023576,41.999958,47.999952
+43,45.999953999999995,58.0,True,False,True,3,"[""baseline/forehead/chrom"", ""tracked/left_cheek/pos"", ""tracked/right_cheek/chrom""]",0.5556568345056886,42.999956999999995,48.999950999999996
+44,46.999953,56.0,True,False,False,0,[],,43.999956,49.99995
+45,47.999952,55.0,True,False,True,2,"[""tracked/forehead/chrom"", ""tracked/left_cheek/chrom""]",0.35906071715765264,44.999955,50.999949
+46,48.999950999999996,54.0,True,False,True,2,"[""tracked/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.754561727097543,45.999953999999995,51.999947999999996
+47,49.99995,53.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom""]",0.9011034641301787,46.999953,52.999947
+48,50.999949,53.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom""]",0.8498558642316457,47.999952,53.999945999999994
+49,51.999947999999996,53.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom""]",0.5797312037016962,48.999950999999996,54.999945
+50,52.999947,53.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom""]",0.4145391916250553,49.99995,55.999944
+51,53.999945999999994,54.0,True,False,True,2,"[""tracked/forehead/pos"", ""tracked/left_cheek/chrom""]",0.11632197510956419,50.999949,56.999942999999995
+52,54.999945,55.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.4246828604339902,51.999947999999996,57.999942
+53,55.999944,53.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]",0.7367339361012907,52.999947,58.999941
+54,56.999942999999995,51.0,True,False,True,2,"[""baseline/left_cheek/pos"", ""tracked/right_cheek/pos""]",0.04605978649899839,53.999945999999994,59.999939999999995
+55,57.999942,50.0,True,False,False,0,[],,54.999945,60.999939
+56,58.999941,50.0,True,False,True,3,"[""tracked/forehead/chrom"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.5749406666771859,55.999944,61.999938
+57,59.999939999999995,49.0,True,False,True,3,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.34328681979672665,56.999942999999995,62.999936999999996
+58,60.999939,48.0,True,False,True,3,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos"", ""tracked/right_cheek/pos""]",0.26200403532124733,57.999942,63.999936
+59,61.999938,47.0,True,False,True,2,"[""tracked/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.08619396526073853,58.999941,64.999935
+60,62.999936999999996,45.0,True,False,True,2,"[""tracked/left_cheek/pos"", ""baseline/right_cheek/chrom""]",0.3092073185553216,59.999939999999995,65.999934
+61,63.999936,46.0,True,False,True,2,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.7789640454277533,60.999939,66.999933
+62,64.999935,48.0,True,False,True,3,"[""baseline/forehead/pos"", ""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]",0.8922211200015188,61.999938,67.999932
+63,65.999934,48.0,True,False,False,0,[],,62.999936999999996,68.99993099999999
+64,66.999933,48.0,True,False,True,2,"[""baseline/forehead/pos"", ""tracked/left_cheek/pos""]",0.9697863442102519,63.999936,69.99992999999999
+65,67.999932,47.0,True,False,True,2,"[""baseline/forehead/chrom"", ""tracked/left_cheek/pos""]",0.8477257836146379,64.999935,70.999929
+66,68.99993099999999,47.0,True,False,True,2,"[""tracked/forehead/chrom"", ""tracked/right_cheek/pos""]",0.7288060818921701,65.999934,71.999928
+67,69.99992999999999,,False,False,False,0,[],,66.999933,72.999927
+68,70.999929,,False,False,False,0,[],,67.999932,73.999926

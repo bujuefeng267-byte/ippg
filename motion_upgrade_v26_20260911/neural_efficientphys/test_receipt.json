@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "created_utc": "2026-09-11T14:23:42.642005+00:00",
+  "adapter_sha256": "253fb78317602cd6fbdcead58f25c6076cd1e4ef9d8e9a10c584597e707cedfa",
+  "tests_sha256": "f7ad931cd4a7614c7ada4d1346618c96332c350086c2e7f739ec7002b6c64d45",
+  "checkpoint_sha256": "e65a962e07bcac32a668e6acb9f8ed43cdb1b01cfb97262654dc5b55c0cf3a49",
+  "reference_used": false,
+  "invariants": [
+    "global time/frequency consistency",
+    "180Hz anti-alias negative control",
+    "bounded missing-face geometry",
+    "no bridging long gaps",
+    "complete overlap tails",
+    "derivative integration timing",
+    "explicit missing signal",
+    "official strict checkpoint CPU/GPU"
+  ]
+}

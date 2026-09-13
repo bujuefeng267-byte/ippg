@@ -1,0 +1,7 @@
+time_s,observed_fraction,interpolated_fraction,spectral_peak_bpm,peak_concentration,accepted,status,ridge_bpm,reference_bpm
+5.006132768928598,1.0,0.0,,,False,gap_or_filter_edge,,98.15305666666667
+5.997107856293304,1.0,0.0,,,False,gap_or_filter_edge,,98.45274161073826
+6.988082943658008,1.0,0.0,100.0,0.34544164090441687,True,candidate_only,100.0,98.73350511945392
+7.9790580310227135,1.0,0.0,102.0,0.21497282185445662,True,candidate_only,101.0,99.11957876712329
+8.97003311838742,1.0,0.0,,,False,gap_or_filter_edge,,99.61536394557824
+9.961008205752124,1.0,0.0,,,False,gap_or_filter_edge,,100.08391003460207

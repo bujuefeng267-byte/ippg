@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "output": "test_both_variants_resolve_independently (test_components_cli_v26.EntryContracts) ... ok\ntest_cache_rejects_foreign_content_or_changed_parameters (test_components_cli_v26.EntryContracts) ... ok\ntest_cache_rejects_tampered_trace_and_bad_timeline (test_components_cli_v26.EntryContracts) ... ok\ntest_known_colour_pulse_goes_through_saved_waveform_hr (test_components_cli_v26.EntryContracts) ... ok\ntest_reference_and_target_hr_are_not_cli_inputs (test_components_cli_v26.EntryContracts) ... ok\ntest_reuse_new_cache_and_no_output_overwrite (test_components_cli_v26.EntryContracts) ... ok\ntest_short_no_face_has_complete_time_and_missing_outputs (test_components_cli_v26.EntryContracts) ... ok\ntest_unbound_legacy_cache_cannot_invent_historical_video_hash (test_components_cli_v26.EntryContracts) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 1.973s\n\nOK\n",
+  "sources": {
+    "analyze_components_v26.py": "9df2e246236619636f49c5b5e0d882734c197099df85f01378d3b23a07e1236e",
+    "test_components_cli_v26.py": "911e0aed8b570d6ef5334314fa5b40561f4520673b2450a901551947ec1b0e14",
+    "qa_components_entry_v26.py": "72cf6545071799bc9c4f16c4e7e2476fd5d50f5bd7342da5ffec55ad433cc66c"
+  }
+}

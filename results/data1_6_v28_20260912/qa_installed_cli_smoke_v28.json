@@ -1,0 +1,145 @@
+{
+  "case": "data1",
+  "reference_used": false,
+  "installed": "/home/fengbujue/项目/rppg识别/motion_upgrade_v28_20260912",
+  "launched_entry": "/home/fengbujue/项目/rppg识别/run_motion_v28.sh",
+  "launcher_sha256": "83b0e3f1c9dca9e224205d6a72c49fd280d3f41318ba378b87a039a56b5d8c09",
+  "status": "complete",
+  "cli_sha256": "52880bfc562ff0872c9f63da78fb5cef2b3c8d7ebf1f5a095675b7af8a9497c8",
+  "sources_bound": true,
+  "outputs_bound": true,
+  "manifest_sha256": "6390292ee1edd0de9a61a642ff48f879c5c00e19843c9a43de616ae621f890db",
+  "installation_manifest_sha256": "c6332913c71e6ebecf28edcb5ab3faa231fc4b9370d810bca1af2d6b2ad18123",
+  "decoded_frames": 1555,
+  "route_eligible_equal": true,
+  "route_eligible_windows": 0,
+  "saved_waveform_absolute_tolerance": 1e-06,
+  "hr_tolerance_bpm": 0.0,
+  "comparisons": {
+    "final": {
+      "waveform": {
+        "actual": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/installed_cli_smoke_data1/waveform.csv",
+        "expected": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data1/waveform.csv",
+        "actual_sha256": "8923c045e1e1d79b96f842f548bf4080d17e18c580cde2e00355d164e2833f46",
+        "expected_sha256": "8923c045e1e1d79b96f842f548bf4080d17e18c580cde2e00355d164e2833f46",
+        "frames": 1555,
+        "same_clock": true,
+        "same_finite_mask": true,
+        "sampling_masks_equal": {
+          "covered": true,
+          "observed": true,
+          "interpolated": true
+        },
+        "max_abs_error": 0.0,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "heart_rate": {
+        "actual": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/installed_cli_smoke_data1/heart_rate.csv",
+        "expected": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/direct_guard/data1/heart_rate.csv",
+        "actual_sha256": "453ebf4526d5f4ec7b9c2611f4074b593c2d803b09681ea7528ef5259fa1b629",
+        "expected_sha256": "492d3e447ee21008065105fd696e54b60e12da1bbe8a8b9e81129f7d91877b0a",
+        "planned_windows": 42,
+        "same_clock": true,
+        "accepted_equal": true,
+        "finite_mask_equal": true,
+        "hr_exact": true,
+        "passed": true
+      }
+    },
+    "fallback": {
+      "waveform": {
+        "actual": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/installed_cli_smoke_data1/v25_fallback/waveform.csv",
+        "expected": "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/fusion_waveform.csv",
+        "actual_sha256": "e68a9132e0fa1d54aafde415ba4778d46a425272da4e44b3239ca7ecc0ecc9a9",
+        "expected_sha256": "e68a9132e0fa1d54aafde415ba4778d46a425272da4e44b3239ca7ecc0ecc9a9",
+        "frames": 1555,
+        "same_clock": true,
+        "same_finite_mask": true,
+        "sampling_masks_equal": {
+          "covered": true,
+          "observed": true,
+          "interpolated": true
+        },
+        "max_abs_error": 0.0,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "heart_rate": {
+        "actual": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/installed_cli_smoke_data1/v25_fallback/heart_rate.csv",
+        "expected": "/home/fengbujue/项目/rppg识别/results/data1_6_v25_20260911/stage4_preserve_waveform/data1/fusion_heart_rate.csv",
+        "actual_sha256": "be96716157a44256444a78e20906d215e5c9c82b6552f5453cba3b213ad34c4f",
+        "expected_sha256": "c17239940e85c5a639ad40cf9ebf6ade23653b1ef2923b68fe239b81846f5b43",
+        "planned_windows": 42,
+        "same_clock": true,
+        "accepted_equal": true,
+        "finite_mask_equal": true,
+        "hr_exact": true,
+        "passed": true
+      }
+    },
+    "candidate": {
+      "waveform": {
+        "actual": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/installed_cli_smoke_data1/v26_harmonic_candidate/waveform.csv",
+        "expected": "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/data1/waveform.csv",
+        "actual_sha256": "a0cadd17f73e7a4e5107362830fa4df245cd934d4ddf1d15428fd6a6fe4f29b0",
+        "expected_sha256": "fcafac95774f9b2beb375383e17e200be80b50dec0ce17b02b2024487a7cadc4",
+        "frames": 1555,
+        "same_clock": true,
+        "same_finite_mask": true,
+        "sampling_masks_equal": {
+          "covered": true,
+          "observed": true,
+          "interpolated": true
+        },
+        "max_abs_error": 1.2878587085651816e-14,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "heart_rate": {
+        "actual": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/installed_cli_smoke_data1/v26_harmonic_candidate/heart_rate.csv",
+        "expected": "/home/fengbujue/项目/rppg识别/results/data1_6_v26_20260911/component_harmonics/data1/heart_rate.csv",
+        "actual_sha256": "f578d3951c091e40732a6bf077b42f5ee2699c3a8e5d65fd91d90492cdc24037",
+        "expected_sha256": "7bc1a9e4e423e2ecbdbc1cdb9af331d5f00fd2f8e609f330d3eca970d49e683e",
+        "planned_windows": 42,
+        "same_clock": true,
+        "accepted_equal": true,
+        "finite_mask_equal": true,
+        "hr_exact": true,
+        "passed": true
+      }
+    },
+    "previous_cli": {
+      "waveform": {
+        "actual": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/installed_cli_smoke_data1/waveform.csv",
+        "expected": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/cli_smoke_data1/waveform.csv",
+        "actual_sha256": "8923c045e1e1d79b96f842f548bf4080d17e18c580cde2e00355d164e2833f46",
+        "expected_sha256": "8923c045e1e1d79b96f842f548bf4080d17e18c580cde2e00355d164e2833f46",
+        "frames": 1555,
+        "same_clock": true,
+        "same_finite_mask": true,
+        "sampling_masks_equal": {
+          "covered": true,
+          "observed": true,
+          "interpolated": true
+        },
+        "max_abs_error": 0.0,
+        "tolerance": 1e-06,
+        "passed": true
+      },
+      "heart_rate": {
+        "actual": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/installed_cli_smoke_data1/heart_rate.csv",
+        "expected": "/home/fengbujue/项目/rppg识别/results/data1_6_v28_20260912/cli_smoke_data1/heart_rate.csv",
+        "actual_sha256": "453ebf4526d5f4ec7b9c2611f4074b593c2d803b09681ea7528ef5259fa1b629",
+        "expected_sha256": "453ebf4526d5f4ec7b9c2611f4074b593c2d803b09681ea7528ef5259fa1b629",
+        "planned_windows": 42,
+        "same_clock": true,
+        "accepted_equal": true,
+        "finite_mask_equal": true,
+        "hr_exact": true,
+        "passed": true
+      }
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,171 @@
+{
+  "video_path": "/home/fengbujue/项目/rppg识别/videos/data1_6_20260911/data1/data1/Video_20260909_YJC_2_unpacked/Video_20260909_YJC_2.avi",
+  "video_sha256": "98b07c49be89d0f95086ca5c4f0c9824ecb0f2b4a5fee2be420edb15682fca4e",
+  "video_bytes": 843755520,
+  "fps": 30.00003000003,
+  "frames": 1555,
+  "declared_frames": 1555,
+  "duration_s": 51.8332815,
+  "max_seconds": null,
+  "source_hashes": {
+    "stable_patch_frontend_v27.py": "e69787cd4c3a0148af01d704b97619bc9cf41e6107a0c7295ddb66fe839420d7",
+    "legacy_motion.py": "4924eed93bc3ee6920f5ec447d4b2ac5deebe1289eb4ee4a379383a6f27d96fb",
+    "analyze_rppg.py": "3244e9d7956fed20f98dcf63a50287f0f5a4dbd16b034c66b929dd4eb1210e9e",
+    "baseline_frontend.py": "cc48d5505f4131053f067d06d843b587bbb4184c1ec29f7bf74cdbdb5485db09",
+    "pixel_tracking.py": "487ffc6c478b935c6c5115b4796984c5fed6ea3772002e59f5d064f263dcbdec"
+  },
+  "config": {
+    "rows": 2,
+    "columns": 2,
+    "local_landmarks": 12,
+    "cell_inset_fraction": 0.05,
+    "max_anchor_condition": 100.0,
+    "max_local_axis_ratio": 6.0,
+    "max_anchor_residual_face_fraction": 0.05,
+    "min_face_pixels": 40.0,
+    "min_valid_pixels": 25,
+    "points_per_side": 5,
+    "patch_radius": 3,
+    "min_tracks": 12,
+    "fb_max_px": 0.5,
+    "screen_z": 3.0,
+    "screen_floor": 0.003,
+    "tracking_width": 960,
+    "max_bridge_s": 0.2,
+    "trim_fraction": 0.1
+  },
+  "patch_ids": [
+    "forehead_0",
+    "forehead_1",
+    "forehead_2",
+    "forehead_3",
+    "left_cheek_0",
+    "left_cheek_1",
+    "left_cheek_2",
+    "left_cheek_3",
+    "right_cheek_0",
+    "right_cheek_1",
+    "right_cheek_2",
+    "right_cheek_3"
+  ],
+  "physical_regions": [
+    "forehead",
+    "left_cheek",
+    "right_cheek"
+  ],
+  "patch_count": 12,
+  "frame_source_counts": {
+    "missing": 41,
+    "mesh": 1397,
+    "flow_tracked": 112,
+    "redetected": 5
+  },
+  "valid_patch_frames": {
+    "forehead_0": 1514,
+    "forehead_1": 1514,
+    "forehead_2": 1514,
+    "forehead_3": 1514,
+    "left_cheek_0": 1514,
+    "left_cheek_1": 1308,
+    "left_cheek_2": 1510,
+    "left_cheek_3": 1514,
+    "right_cheek_0": 1514,
+    "right_cheek_1": 1514,
+    "right_cheek_2": 1514,
+    "right_cheek_3": 174
+  },
+  "patch_pixel_source_counts": {
+    "forehead_0": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 1297,
+      "tracked_ratio": 207
+    },
+    "forehead_1": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 1294,
+      "tracked_ratio": 210
+    },
+    "forehead_2": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 1186,
+      "tracked_ratio": 318
+    },
+    "forehead_3": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 901,
+      "tracked_ratio": 603
+    },
+    "left_cheek_0": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 1404,
+      "tracked_ratio": 100
+    },
+    "left_cheek_1": {
+      "missing": 247,
+      "baseline_reset": 85,
+      "baseline_ratio_fallback": 1218,
+      "tracked_ratio": 5
+    },
+    "left_cheek_2": {
+      "missing": 45,
+      "baseline_reset": 12,
+      "baseline_ratio_fallback": 1258,
+      "tracked_ratio": 240
+    },
+    "left_cheek_3": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 1485,
+      "tracked_ratio": 19
+    },
+    "right_cheek_0": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 1475,
+      "tracked_ratio": 29
+    },
+    "right_cheek_1": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 1468,
+      "tracked_ratio": 36
+    },
+    "right_cheek_2": {
+      "missing": 41,
+      "baseline_reset": 10,
+      "baseline_ratio_fallback": 1491,
+      "tracked_ratio": 13
+    },
+    "right_cheek_3": {
+      "missing": 1381,
+      "baseline_reset": 57,
+      "baseline_ratio_fallback": 114,
+      "tracked_ratio": 3
+    }
+  },
+  "versions": {
+    "python": "3.10.12",
+    "opencv": "4.11.0",
+    "numpy": "1.26.4",
+    "mediapipe": "0.10.21"
+  },
+  "reference_used": false,
+  "temporal_RGB_filling": false,
+  "RGB_aggregation_across_patches": false,
+  "anchors_reinitialized_after_gap": false,
+  "quality_definition": "valid_pixel_fraction * visible_polygon_area_fraction; >=25 valid measured pixels",
+  "tracked_RGB_kind": "unanchored paired relative colour; raw anchor ratio fallback; gap resets",
+  "landmark_trace_precision": "float64 image-pixel coordinates; identical to online anchor-geometry inputs",
+  "detector_policy": "inherited robust: width<=960; mesh then static redetection; FB-affine bridge <=round(.2*fps) frames",
+  "output_hashes": {
+    "patch_trace.csv": "12799ab653770153cd5546e83f4d3e31af4aa8b1ce6edf87811d313c3d047c2f",
+    "frame_trace.csv": "661c8ad89a169f534f49ebb36383d28ed421756514787ab1319388ee742e8511",
+    "patch_anchors.json": "a0e1b374d15605cd208103b80bd6b0fe0bce6178fe304f91ecc3eefd994d5bce",
+    "landmark_trace.npz": "bb9de104419ab206e431347c76b5914461bf0ae102723c3fdb412fe96d3e7f2b"
+  }
+}

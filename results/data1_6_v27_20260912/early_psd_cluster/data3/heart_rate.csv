@@ -1,0 +1,66 @@
+window_index,time_s,window_start_s,window_end_s,accepted,ridge_bpm,raw_estimate_bpm,status,hr_source,aggregation_mode,eligible_patches,eligible_regions,contributing_patches,contributing_regions,waveform_generated,selected_channels_json,region_medians_json,estimate_near_contributor_peak,region_median_spread_bpm,selected_cluster_score
+0,4.999995,0.0,9.99999,False,,,insufficient_regions,spatial_aggregation_of_saved_patch_BVP,psd_cluster,0,0,0,0,False,[],{},False,,
+1,5.999994,0.999999,10.999989,False,,,insufficient_regions,spatial_aggregation_of_saved_patch_BVP,psd_cluster,0,0,0,0,False,[],{},False,,
+2,6.999993,1.999998,11.999988,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+3,7.999992,2.999997,12.999986999999999,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+4,8.999991,3.999996,13.999986,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+5,9.99999,4.999995,14.999984999999999,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+6,10.999989,5.999994,15.999984,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+7,11.999988,6.999993,16.999983,True,58.5,58.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/chrom"", ""baseline/right_cheek/chrom""]","{""forehead"": 57.0, ""right_cheek"": 60.0}",True,3.0,0.0798370178302543
+8,12.999986999999999,7.999992,17.999982,True,57.5,57.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/chrom"", ""baseline/right_cheek/chrom""]","{""forehead"": 55.0, ""right_cheek"": 60.0}",True,5.0,0.07985775901652144
+9,13.999986,8.999991,18.999981,True,73.5,73.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]","{""forehead"": 75.0, ""left_cheek"": 72.0}",True,3.0,0.0725863407446
+10,14.999984999999999,9.99999,19.99998,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+11,15.999984,10.999989,20.999979,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+12,16.999983,11.999988,21.999978,True,88.0,88.0,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]","{""left_cheek"": 126.0, ""right_cheek"": 50.0}",False,76.0,0.0767770678995966
+13,17.999982,12.999986999999999,22.999976999999998,True,89.0,89.0,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]","{""left_cheek"": 129.0, ""right_cheek"": 49.0}",False,80.0,0.05955841289193615
+14,18.999981,13.999986,23.999976,True,47.5,47.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/pos"", ""baseline/right_cheek/chrom""]","{""forehead"": 48.0, ""right_cheek"": 47.0}",True,1.0,0.11366574582400125
+15,19.99998,14.999984999999999,24.999975,True,46.5,46.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/pos"", ""baseline/right_cheek/chrom""]","{""forehead"": 47.0, ""right_cheek"": 46.0}",True,1.0,0.12571506281411027
+16,20.999979,15.999984,25.999973999999998,True,46.0,46.0,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/pos"", ""baseline/right_cheek/chrom""]","{""forehead"": 47.0, ""right_cheek"": 45.0}",True,2.0,0.13029691493039727
+17,21.999978,16.999983,26.999972999999997,True,78.5,78.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]","{""left_cheek"": 64.0, ""right_cheek"": 93.0}",False,29.0,0.0762875958904488
+18,22.999976999999998,17.999982,27.999972,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+19,23.999976,18.999981,28.999971,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+20,24.999975,19.99998,29.999969999999998,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+21,25.999973999999998,20.999979,30.999969,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+22,26.999972999999997,21.999978,31.999968,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+23,27.999972,22.999976999999998,32.999967,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+24,28.999971,23.999976,33.999966,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+25,29.999969999999998,24.999975,34.999964999999996,True,100.5,100.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos""]","{""forehead"": 100.0, ""left_cheek"": 101.0}",True,1.0,0.06498362092806857
+26,30.999969,25.999973999999998,35.999964,True,80.0,80.0,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom""]","{""forehead"": 99.0, ""left_cheek"": 61.0}",False,38.0,0.08911555899329143
+27,31.999968,26.999972999999997,36.999963,True,60.5,60.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]","{""left_cheek"": 61.0, ""right_cheek"": 60.0}",True,1.0,0.0959704857690568
+28,32.999967,27.999972,37.999962,True,62.0,62.0,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/chrom""]","{""left_cheek"": 63.0, ""right_cheek"": 61.0}",True,2.0,0.09644044981348486
+29,33.999966,28.999971,38.999961,True,83.5,83.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/left_cheek/chrom"", ""baseline/right_cheek/pos""]","{""left_cheek"": 102.0, ""right_cheek"": 65.0}",False,37.0,0.11252686393747706
+30,34.999964999999996,29.999969999999998,39.99996,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+31,35.999964,30.999969,40.999959,True,47.5,47.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom""]","{""forehead"": 47.0, ""left_cheek"": 48.0}",True,1.0,0.11451320033341443
+32,36.999963,31.999968,41.999958,True,45.5,45.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/chrom"", ""baseline/left_cheek/pos""]","{""forehead"": 44.0, ""left_cheek"": 47.0}",True,3.0,0.08905855791762579
+33,37.999962,32.999967,42.999956999999995,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+34,38.999961,33.999966,43.999956,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+35,39.99996,34.999964999999996,44.999955,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+36,40.999959,35.999964,45.999953999999995,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+37,41.999958,36.999963,46.999953,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+38,42.999956999999995,37.999962,47.999952,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+39,43.999956,38.999961,48.999950999999996,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+40,44.999955,39.99996,49.99995,True,72.0,72.0,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]","{""forehead"": 54.0, ""left_cheek"": 90.0}",False,36.0,0.09781791127148792
+41,45.999953999999995,40.999959,50.999949,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+42,46.999953,41.999958,51.999947999999996,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+43,47.999952,42.999956999999995,52.999947,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+44,48.999950999999996,43.999956,53.999945999999994,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+45,49.99995,44.999955,54.999945,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+46,50.999949,45.999953999999995,55.999944,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+47,51.999947999999996,46.999953,56.999942999999995,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+48,52.999947,47.999952,57.999942,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+49,53.999945999999994,48.999950999999996,58.999941,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+50,54.999945,49.99995,59.999939999999995,True,79.0,79.0,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/chrom"", ""baseline/left_cheek/chrom""]","{""forehead"": 78.0, ""left_cheek"": 80.0}",True,2.0,0.10183958663943811
+51,55.999944,50.999949,60.999939,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+52,56.999942999999995,51.999947999999996,61.999938,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+53,57.999942,52.999947,62.999936999999996,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+54,58.999941,53.999945999999994,63.999936,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+55,59.999939999999995,54.999945,64.999935,True,92.5,92.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]","{""forehead"": 93.0, ""left_cheek"": 92.0}",True,1.0,0.12383790779651206
+56,60.999939,55.999944,65.999934,True,92.0,92.0,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/forehead/pos"", ""baseline/left_cheek/pos""]","{""forehead"": 92.0, ""left_cheek"": 92.0}",True,0.0,0.11850372280877923
+57,61.999938,56.999942999999995,66.999933,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+58,62.999936999999996,57.999942,67.999932,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+59,63.999936,58.999941,68.99993099999999,True,67.5,67.5,accepted,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,2,2,True,"[""baseline/left_cheek/pos"", ""baseline/right_cheek/pos""]","{""left_cheek"": 65.0, ""right_cheek"": 70.0}",True,5.0,0.09663201839513784
+60,64.999935,59.999939999999995,69.99992999999999,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+61,65.999934,60.999939,70.999929,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+62,66.999933,61.999938,71.999928,False,,,no_multiregion_psd_cluster,spatial_aggregation_of_saved_patch_BVP,psd_cluster,3,3,0,0,False,[],{},False,,
+63,67.999932,62.999936999999996,72.999927,False,,,insufficient_regions,spatial_aggregation_of_saved_patch_BVP,psd_cluster,0,0,0,0,False,[],{},False,,
+64,68.99993099999999,63.999936,73.999926,False,,,insufficient_regions,spatial_aggregation_of_saved_patch_BVP,psd_cluster,0,0,0,0,False,[],{},False,,

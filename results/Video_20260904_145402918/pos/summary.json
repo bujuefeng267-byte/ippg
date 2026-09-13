@@ -1,0 +1,13 @@
+{
+  "input_video": "/mnt/c/Users/15011/Desktop/Video_20260904_145402918.avi",
+  "method": "POS",
+  "fps": 30.00003000003,
+  "frames": 1461,
+  "duration_s": 48.699951299999995,
+  "face_detection_rate": 1.0,
+  "median_bpm": 65.91803466803468,
+  "mean_bpm": 65.17434402049788,
+  "bpm_std": 1.6235365082415458,
+  "median_snr_db": -2.1925799303386135,
+  "warning": "Camera-derived rPPG is an estimate, not contact-PPG ground truth."
+}
