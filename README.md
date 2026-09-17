@@ -2,9 +2,25 @@
 
 本目录用于验证：普通摄像头人脸视频可以通过现有开源 rPPG 方法得到估计波形和心率，并观察运动时的失效情况。
 
-早期 `run.sh` 基线采用 POS，另提供 CHROM；当前推荐使用下方的 V28 入口。算法路线参考开源项目 [pyVHR](https://github.com/phuselab/pyVHR)；人脸跟踪使用 MediaPipe。这里输出的是摄像头估计的 rPPG/BVP，不是接触式传感器测得的真实 PPG。
+早期 `run.sh` 基线采用 POS，另提供 CHROM；当前保留方案使用下方的 `run_retained_hr.sh` 入口。算法路线参考开源项目 [pyVHR](https://github.com/phuselab/pyVHR)；人脸跟踪使用 MediaPipe。这里输出的是摄像头估计的 rPPG/BVP，不是接触式传感器测得的真实 PPG。
 
-## 当前推荐：V28（2026-09-13 同步）
+## 当前保留方案：V28 连续波形＋V32 窗口心率（2026-09-17）
+
+新视频使用 `run_retained_hr.sh`。它保留 V28 的连续 rPPG 波形，同时从各自保存的实测十秒窗口输出 V32 心率。心率窗口不能拼接成一条新的连续 PPG。
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+./run_retained_hr.sh --video /完整路径/视频.mp4 --out results/新视频_retained
+```
+
+优先查看 `result_summary.json`、`window_hr/heart_rate.csv` 和 `window_hr/windows_manifest.csv`。输出目录必须尚不存在。原 `run_recommended.sh` 保持 V28 连续模式，窗口心率方案使用上面的明确入口。
+
+在同一批14段开发录像上，保留方案相对 V28 的 MAE 为 **34.24 → 33.05 bpm**，±5 bpm 内比例 **18.99% → 19.33%**，心率输出覆盖率均为 **86.40%**。收益主要来自 data5；后八段的大误差尚未解决。这不是14段视频上都最好的统一算法：V26 在 data5 更好，POS6 在 data8 更好，因此两条对照仍保留，不按参考心率自动挑选版本。
+
+[运行与版本选择](当前推荐版本.md) · [发布说明与统一对照](docs/retained_release_20260917.md) · [保留入口输出定义](motion_positive_refinement_20260917/README.md)
+
+## V28 连续模式与历史对照（2026-09-13）
 
 保留 V28 的 10 秒心率窗口和原质量门槛。V29、V30、V31 是独立实验，均未替换推荐版本；V31 的保护实验保住了原结果，但六段开发视频的最终波形、心率和精度没有提升。
 
@@ -44,7 +60,7 @@ python3 -m venv .venv
 
 同步项目源码、测试、启动入口、分析报告、导出的数值结果、折线图及实验核验记录。原始人脸视频、原始传感器参考文件、含人脸的检查截图、虚拟环境和下载的模型权重仅保留本地。合成测试视频可随仓库分发。
 
-历史冻结清单和部分报告保留当时的绝对路径及校验和，不因同步重写。GitHub 在线阅读请从本页相对链接进入；重跑旧批量实验仍需本地原始数据及原实验路径。查看新的输入视频可直接使用上面的 V28 入口。
+历史冻结清单和部分报告保留当时的绝对路径及校验和，不因同步重写。GitHub 在线阅读请从本页相对链接进入；重跑旧批量实验仍需本地原始数据及原实验路径。分析新的输入视频可使用上面的 `run_retained_hr.sh` 保留方案入口。
 
 ## 目录
 

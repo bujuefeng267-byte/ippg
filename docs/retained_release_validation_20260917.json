@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "isolated_source_copy": true,
+  "untracked_unselected_modules_excluded": true,
+  "shared_dependency_environment": true,
+  "raw_human_data_used": false,
+  "algorithm_hashes_unchanged": true,
+  "checks": [
+    {
+      "check": "motion_upgrade_v32_20260914",
+      "exit_code": 0,
+      "test_count": 22
+    },
+    {
+      "check": "motion_pos_ablation_20260916",
+      "exit_code": 0,
+      "test_count": 8
+    },
+    {
+      "check": "motion_dis_hybrid_v2_20260915",
+      "exit_code": 0,
+      "test_count": 16
+    },
+    {
+      "check": "motion_positive_refinement_20260917",
+      "exit_code": 0,
+      "test_count": 4
+    },
+    {
+      "check": "run_retained_hr.sh_syntax",
+      "exit_code": 0,
+      "test_count": null
+    },
+    {
+      "check": "run_retained_hr.sh_help",
+      "exit_code": 0,
+      "test_count": null
+    },
+    {
+      "check": "run_pos_experimental.sh_syntax",
+      "exit_code": 0,
+      "test_count": null
+    },
+    {
+      "check": "run_pos_experimental.sh_help",
+      "exit_code": 0,
+      "test_count": null
+    },
+    {
+      "check": "run_motion_v32_experimental.sh_syntax",
+      "exit_code": 0,
+      "test_count": null
+    },
+    {
+      "check": "run_motion_v32_experimental.sh_help",
+      "exit_code": 0,
+      "test_count": null
+    },
+    {
+      "check": "retained_wrapper_synthetic",
+      "exit_code": 0,
+      "test_count": null
+    }
+  ],
+  "unit_tests": 50,
+  "selected_source_sha256": {
+    "run_retained_hr.sh": "67ff18f9c8b10b21ba4bfc3378bb1b6c07163cf709af70c9c266af798cbf6fae",
+    "run_pos_experimental.sh": "e96104ebd5b2d972018a3287b15a21aa80f6e90ceabe7d22463e576f16ff9427",
+    "run_motion_v32_experimental.sh": "33a1c601b89e16d693e5fa9505afb1bc3a4b4883b96028aa8c5cc829fb79350c",
+    "motion_positive_refinement_20260917/analyze_retained.py": "0e5f761cec301a325760965872d7b908c33571faf9792fed14b349fa375f20fa",
+    "motion_positive_refinement_20260917/common.py": "e71d7b26a3c342555d8da0acdbf00ae3cf7bf685baeaf5e72cfc9593d873f637",
+    "motion_positive_refinement_20260917/README.md": "0192ad3afbb2b78e4d8bb03fc01f1238536cc9092164cc5d381396ef22d69406",
+    "motion_positive_refinement_20260917/test_io_contract.py": "9fe6383a87b25803f0005b928c921c9ec0a85541df52e02c36ff4b40acaa2ad7",
+    "motion_upgrade_v32_20260914/analyze_v28_result_v32.py": "ced16c73008562f2e160f7579e97abbaa83b1a9b17284909a3658580639002d8",
+    "motion_upgrade_v32_20260914/window_inference_v32.py": "92413115c31b37feb4ed6ceaefe994627c58313f49e2bcff7c1cd8a36b657482",
+    "motion_upgrade_v32_20260914/test_analyze_v28_result_v32.py": "6d1ea7b6cf220d204956d56869919eafd93599c6a103938d8f4054c23a6761ad",
+    "motion_upgrade_v32_20260914/test_window_inference_v32.py": "2a83af5f42b2228169a5feab791cb157b6c8ced19547a14c5942ac1d3159ba48",
+    "motion_upgrade_v32_20260914/README.md": "3a45c5ca3190179b53e050b80b846551dd6bac19dcbad8962a38e8b5d6c0a6dc",
+    "motion_pos_ablation_20260916/replay_pos_experimental.py": "7246f60b5030164c2e78db9625cc7d7415e87c21dcbd662504a02deb487e5ce1",
+    "motion_pos_ablation_20260916/frontend_ablation.py": "db64423cf46f3e44541cfa22dd2830beec0666e51107dd9f4fc53851c25854f6",
+    "motion_pos_ablation_20260916/test_frontend_ablation.py": "01259015fbd5aecf0454e0d04200e74a1abf732d47f6dba2fd6ae6ba18cd7035",
+    "motion_dis_hybrid_v2_20260915/dis_core.py": "7f5391894ef6a0b40f617327e56709f2b140926184860df2ebd7021e82a2b4eb",
+    "motion_dis_hybrid_v2_20260915/regional_motion.py": "e00ff6d2891047a3839603a296c2da0ada924ebbccb34593e4a952650156153b",
+    "motion_dis_hybrid_v2_20260915/test_dis_core.py": "eb18f6a6d5c7ce0b3616e1ce45fed36beec307a1f71a0dc6416283c10b869dd6",
+    "motion_dis_hybrid_v2_20260915/test_regional_motion.py": "2b6cce67f2cf691e90f7773d09e496644ff5539e794fa315ffaf3d62f75f5e6f",
+    "motion_dis_hybrid_v2_20260915/THIRD_PARTY_NOTICES.md": "68379a6096c9ed2da0cff78ae1520e4f580fabb82d9b25f1b025008b236b0eb1"
+  },
+  "source_commit_before_release": "973213495182440f81bf2e3ce70b6604905bed1b",
+  "note": "Runtime tests use generated RGB and saved signal windows. They verify execution/contracts, not physiological accuracy. Relocated copy shares installed dependencies only."
+}
