@@ -4,6 +4,20 @@
 
 早期 `run.sh` 基线采用 POS，另提供 CHROM；当前保留方案使用下方的 `run_retained_hr.sh` 入口。算法路线参考开源项目 [pyVHR](https://github.com/phuselab/pyVHR)；人脸跟踪使用 MediaPipe。这里输出的是摄像头估计的 rPPG/BVP，不是接触式传感器测得的真实 PPG。
 
+## 实时相机入口（2026-09-18）
+
+新增摄像头 → rPPG/BVP 波形 → 心率的本机实时入口。在仓库根目录创建 `.venv` 并安装 `requirements.txt` 后：
+
+```bash
+bash run_realtime.sh
+```
+
+在 Chrome / Edge 打开 <http://127.0.0.1:8765>，点击“开启摄像头”。默认约积累 10 秒后尝试输出，随后每秒更新一个 10 秒窗口；无有效信号时留空。输出默认保存在本地 `results/realtime/`，不保存摄像头画面。
+
+默认 `fast` 与原实时 R1 在 14 组缓存输入上数值等价；同进程对照的窗口计算中位耗时从 **95.46 降到 35.97 ms**。这次提升计算与传输效率，**没有因此提高该批输入的心率准确率**。融合实验存在部分视频退步，保留为可选模式。实体摄像头的同步精度尚未验证。
+
+[实时版安装、输出与测试](realtime_rppg_v2_20260918/README.md) · [发布与精度对照](docs/realtime_release_20260918.md) · [原 R1 对照](realtime_rppg_20260918/README.md)
+
 ## 当前保留方案：V28 连续波形＋V32 窗口心率（2026-09-17）
 
 新视频使用 `run_retained_hr.sh`。它保留 V28 的连续 rPPG 波形，同时从各自保存的实测十秒窗口输出 V32 心率。心率窗口不能拼接成一条新的连续 PPG。

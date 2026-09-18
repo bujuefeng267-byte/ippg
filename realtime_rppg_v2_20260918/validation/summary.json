@@ -1,0 +1,101 @@
+{
+  "schema": "realtime_rppg_release_summary_v1",
+  "release": "2026-09-18",
+  "default_mode": "fast",
+  "reference_used_by_inference": false,
+  "physical_camera_sync_validation_completed": false,
+  "evaluation_scope": {
+    "development_videos": 14,
+    "planned_windows": 691,
+    "reference_valid_windows": 688,
+    "reference_clock": "historical estimated alignment; not hardware synchronized",
+    "MAE_and_within5_denominator": "emitted HR windows with valid reference",
+    "coverage_denominator": "all planned windows"
+  },
+  "accuracy": [
+    {
+      "mode": "r1",
+      "mae_bpm": 38.726,
+      "within5_pct": 14.936,
+      "hr_coverage_pct": 79.884,
+      "within5_windows": 82
+    },
+    {
+      "mode": "fast",
+      "mae_bpm": 38.726,
+      "within5_pct": 14.936,
+      "hr_coverage_pct": 79.884,
+      "within5_windows": 82
+    },
+    {
+      "mode": "motion",
+      "mae_bpm": 35.532,
+      "within5_pct": 16.865,
+      "hr_coverage_pct": 73.082,
+      "within5_windows": 85
+    },
+    {
+      "mode": "guarded",
+      "mae_bpm": 38.236,
+      "within5_pct": 16.098,
+      "hr_coverage_pct": 76.556,
+      "within5_windows": 85
+    },
+    {
+      "mode": "offline_v32",
+      "mae_bpm": 33.049,
+      "within5_pct": 19.328,
+      "hr_coverage_pct": 86.397,
+      "within5_windows": 115
+    }
+  ],
+  "fast_equivalence": {
+    "events_compared": 690,
+    "waveform_max_absolute_difference": 0.0,
+    "hr_equal": true,
+    "acceptance_equal": true,
+    "timestamps_equal": true
+  },
+  "paired_backend_timing": {
+    "pairs": 42,
+    "original_median_ms": 95.45625799998447,
+    "fast_median_ms": 35.97305999997502,
+    "median_paired_speedup": 2.644790858097548,
+    "scope": "same-process alternating RGB-prefix calls; 3 videos x 2 rounds; exclude first inference; no camera/frontend/network"
+  },
+  "windows_wsl_timing": {
+    "frames_per_setting": 30,
+    "resolution": [
+      960,
+      540
+    ],
+    "jpeg_new_connection_fps": 25.4479172737639,
+    "jpeg_keepalive_fps": 28.589069388555334,
+    "rgba_keepalive_fps": 18.845453399684537,
+    "scope": "same prerecorded frame repeated, real frontend, browser/encoding excluded"
+  },
+  "initial_local_validation": {
+    "python_tests_passed": 44,
+    "browser_mock_tests_passed": 13
+  },
+  "runtime_sha256": {
+    "app.py": "ea445f14397fd6eea1552682909b45ee255935ca71eaa20e46ece42459462ddd",
+    "backend_registry.py": "08c0d8ab568583af8e1a26bf0024faf0647620d82b8af8bebb6e61f4b05954f9",
+    "frontend.py": "e9e0f8a704cb0332d925e2e8c4fa612967422cb9c8b5f408048a4bb582394462",
+    "fast_backend.py": "63b90e805de7ae31411157b9febb6f41a9fb71e9fb913cb80958549881c90ac9",
+    "fast_kernels.py": "b417b32fed93696eba6582aa4350724c47e117622b3a78525b512dc30d4664d8",
+    "frozen_r1_backend.py": "6074128f7f85a907510ac74c94b0015f5cb254ad9e7e20554248991f03cee35b",
+    "retained_backend.py": "3ad21c4cefcacf255489167096328f6180a7b71b5c3db9d7fbdd17320bd683cf",
+    "retained_fast_backend.py": "8fe6e9720d4e9923361b99da1217cc46a3848ba1d74f04b312f832eb8991439b",
+    "hybrid_backend.py": "59e527107b2560cd36925201e0b3fb91f584fcbf16e75e6a437814fda67d2fff",
+    "run_source.py": "122e4bddee40f0468f00def6f5377d459b5eae6dd99375b39e20ad0eb8be1d4e",
+    "index.html": "6d83e63acf5ae14765c31aa6a20313a34d5f61591b52a5b97aa2d5f2c9ca67d9"
+  },
+  "source_only_release_validation": {
+    "private_recordings_present": false,
+    "project_path_overrides_set": false,
+    "realtime_v2_python_tests_passed": 44,
+    "realtime_v1_python_tests_passed": 30,
+    "browser_mock_tests_passed": 13
+  }
+}

@@ -32,3 +32,11 @@ results/data1_6_20260911/data*/presentation/result_video.mp4
 results/data1_6_20260911/reference_audit/source_contact_sheet.jpg
 results/data1_6_v27_20260912/geometry_preview/
 results/data1_6_20260911/六组PPG心率结果分享包.zip
+
+# Live camera traces and local evaluation outputs remain on the capture machine.
+results/realtime*/
+realtime_rppg_v2_20260918/diagnostics/
+realtime_rppg_v2_20260918/live_loop_validation.json
+realtime_rppg_v2_20260918/release_manifest.json
+realtime_rppg_v2_20260918/retained_fast_equivalence.json
+realtime_rppg_v2_20260918/retained_pipeline_equivalence.json
